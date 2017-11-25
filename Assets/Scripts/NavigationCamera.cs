@@ -6,8 +6,11 @@ public class NavigationCamera : MonoBehaviour
 {
 	#region Serialized Fields
 	[Header("Navigation")]
-	[SerializeField, Range(0f, 1f)]
+	[SerializeField, Range(0f, 0.85f)]
 	private float view = 0.5f;
+
+	[SerializeField]
+	private NavigationSystem navigationSystem = null;
 
 	[Header("Settings")]
 	[SerializeField, Range(1f, 3f)]
@@ -32,9 +35,9 @@ public class NavigationCamera : MonoBehaviour
 	private const float CameraHeight = 30f;
 	private const float GroundHeight = 0f;
 	private const float MovementSpeedLowerLimit = 1.5f;
-	private const float MovementSpeedUpperLimit = 5f;
+	private const float MovementSpeedUpperLimit = 15f;
 	private const float ViewLowerLimit = 3f;
-	private const float ViewUpperLimit = 30f;
+	private const float ViewUpperLimit = 70f;
 	private const float TransitionDuration = 0.25f;
 	private const float ZoomDefault = 0.5f;
 	private const float ZoomDampTime = 0.15f;
@@ -108,7 +111,10 @@ public class NavigationCamera : MonoBehaviour
 
 	private void OnPress(Vector2 screenPoint)
 	{
-		
+		if(navigationSystem == null)
+			return;
+
+		navigationSystem.Navigate(Vector3.zero, GetPosition(screenPoint));
 	}
 	#endregion
 
