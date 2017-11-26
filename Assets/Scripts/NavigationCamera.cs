@@ -6,7 +6,7 @@ public class NavigationCamera : MonoBehaviour
 {
 	#region Serialized Fields
 	[Header("Navigation")]
-	[SerializeField, Range(0f, 0.85f)]
+	[SerializeField, Range(0f, 1f)]
 	private float view = 0.5f;
 
 	[SerializeField]
@@ -22,6 +22,9 @@ public class NavigationCamera : MonoBehaviour
 	[SerializeField]
 	private AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
+	[SerializeField]
+	private Vector2 boundary = new Vector2(100f, 170f);
+
 	[Header("Input")]
 	[SerializeField]
 	private LayerMask groundLayer;
@@ -36,8 +39,8 @@ public class NavigationCamera : MonoBehaviour
 	private const float GroundHeight = 0f;
 	private const float MovementSpeedLowerLimit = 1.5f;
 	private const float MovementSpeedUpperLimit = 15f;
-	private const float ViewLowerLimit = 3f;
-	private const float ViewUpperLimit = 70f;
+	private const float ViewLowerLimit = 10f;
+	private const float ViewUpperLimit = 100f;
 	private const float TransitionDuration = 0.25f;
 	private const float ZoomDefault = 0.5f;
 	private const float ZoomDampTime = 0.15f;
@@ -124,6 +127,13 @@ public class NavigationCamera : MonoBehaviour
 	{
 		delta *= -Mathf.Lerp(MovementSpeedUpperLimit, MovementSpeedLowerLimit, view);
 		transform.Translate(delta.x, delta.y, 0f);
+
+		Vector3 clampedPosition =
+			new Vector3(Mathf.Clamp(transform.position.x, -boundary.x, boundary.x),
+			CameraHeight,
+			Mathf.Clamp(transform.position.z, -boundary.y, boundary.y));
+		
+		transform.position = clampedPosition;
 	}
 
 	private void Rotate(float delta)
