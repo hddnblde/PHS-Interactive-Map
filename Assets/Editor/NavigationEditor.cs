@@ -6,15 +6,11 @@ using UnityEditor;
 [CustomEditor(typeof(NavigationSystem))]
 public class NavigationEditor : Editor
 {
-	private NavigationSystem navigationSystem = null;
-	private SerializedProperty originProperty = null;
-	private SerializedProperty destinationProperty = null;
+	private static Vector3 origin = Vector3.right * 7f;
+	private static Vector3 destination = Vector3.left * 7f;
 
 	private void OnEnable()
 	{
-		navigationSystem = target as NavigationSystem;
-		originProperty = serializedObject.FindProperty("origin");
-		destinationProperty = serializedObject.FindProperty("destination");
 		Tools.hidden = true;
 	}
 
@@ -30,8 +26,8 @@ public class NavigationEditor : Editor
 
 	private void OnSceneGUI()
 	{
-		DrawPositionGizmo(originProperty, Color.yellow);
-		DrawPositionGizmo(destinationProperty, Color.blue);
+		DrawPositionGizmo(ref origin, Color.yellow);
+		DrawPositionGizmo(ref destination, Color.blue);
 		Repaint();
 	}
 
@@ -46,20 +42,18 @@ public class NavigationEditor : Editor
 		if(!isPlaying)
 			buttonStyle.normal = buttonStyle.active;
 
+		origin = EditorGUILayout.Vector3Field("Origin", origin);
+		destination = EditorGUILayout.Vector3Field("Destination", destination);
+
 		if(GUILayout.Button("Navigate", buttonStyle) && isPlaying)
-			navigationSystem.Navigate();
+			NavigationSystem.Navigate(origin, destination);
 	}
 
-	private void DrawPositionGizmo(SerializedProperty position, Color color)
+	private void DrawPositionGizmo(ref Vector3 position, Color color)
 	{
-		EditorGUI.BeginChangeCheck();
 		Color previousColor = Handles.color;
 		Handles.color = color;
-		position.vector3Value = Handles.PositionHandle(position.vector3Value, Quaternion.identity);
-
+		position = Handles.PositionHandle(position, Quaternion.identity);
 		Handles.color = previousColor;
-
-		if(EditorGUI.EndChangeCheck())
-			serializedObject.ApplyModifiedProperties();
 	}
 }

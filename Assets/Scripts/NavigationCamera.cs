@@ -9,9 +9,6 @@ public class NavigationCamera : MonoBehaviour
 	[SerializeField, Range(0f, 1f)]
 	private float view = 0.5f;
 
-	[SerializeField]
-	private NavigationSystem navigationSystem = null;
-
 	[Header("Settings")]
 	[SerializeField, Range(1f, 3f)]
 	private float rotationSpeed = 1.25f;
@@ -32,6 +29,8 @@ public class NavigationCamera : MonoBehaviour
 
 
 	#region Hidden Fields
+	public delegate void ViewAdjust(float view);
+	public static event ViewAdjust OnViewAdjust;
 	private Camera m_camera = null;
 
 	private const float RaycastDistance = 100f;
@@ -54,6 +53,11 @@ public class NavigationCamera : MonoBehaviour
 	private void Awake()
 	{
 		m_camera = GetComponent<Camera>();
+	}
+
+	private void OnValidate()
+	{
+		Zoom(0f);
 	}
 
 	private void Update()
@@ -114,10 +118,7 @@ public class NavigationCamera : MonoBehaviour
 
 	private void OnPress(Vector2 screenPoint)
 	{
-		if(navigationSystem == null)
-			return;
-
-		navigationSystem.Navigate(Vector3.zero, GetPosition(screenPoint));
+		NavigationSystem.Navigate(Vector3.zero, GetPosition(screenPoint));
 	}
 	#endregion
 
@@ -147,6 +148,9 @@ public class NavigationCamera : MonoBehaviour
 	{
 		StopTransition();
 		view = Mathf.Clamp01(view + (delta * zoomSpeed));
+
+		if(OnViewAdjust != null)
+			OnViewAdjust(view);
 	}
 
 	private void ResetView()
