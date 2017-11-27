@@ -6,16 +6,10 @@ using UnityEngine.AI;
 [RequireComponent(typeof(LineRenderer))]
 public class NavigationSystem : MonoBehaviour
 {
-	#region Serialized Fields
-	[SerializeField]
-	private Vector3 origin = Vector3.zero;
-
-	[SerializeField]
-	private Vector3 destination = Vector3.forward;
-	#endregion
-
 	#region Hidden Fields
-	private LineRenderer lineRenderer = null;
+	private static LineRenderer m_lineRenderer = null;
+	private const float LineWidthLowerLimit = 3f;
+	private const float LineWidthUpperLimit = 7f;
 	#endregion
 
 
@@ -24,43 +18,60 @@ public class NavigationSystem : MonoBehaviour
 	{
 		Initialize();
 	}
+
+	private void OnEnable()
+	{
+		NavigationCamera.OnViewAdjust += OnViewAdjust;
+	}
+
+	private void OnDisable()
+	{
+		NavigationCamera.OnViewAdjust -= OnViewAdjust;
+	}
 	#endregion
 
 
 	#region Methods
 	private void Initialize()
 	{
-		lineRenderer = GetComponent<LineRenderer>();
+		m_lineRenderer = GetComponent<LineRenderer>();
 	}
 
-	public void Navigate(Vector3 origin, Vector3 destination)
+	private void OnViewAdjust(float view)
 	{
-		this.origin = origin;
-		this.destination = destination;
-		Navigate();
+		if(m_lineRenderer == null)
+			return;
+
+		m_lineRenderer.widthMultiplier  = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
+	}
+	#endregion
+
+
+	#region Static Implementation
+	public static void Navigate(Vector3 origin, Vector3 destination)
+	{
+		DrawNavigationPath(FindPath(origin, destination));
 	}
 
-	public void Navigate()
+	private static void DrawNavigationPath(Vector3[] path)
 	{
-		DrawNavigationPath(FindPath());
-	}
-
-	private void DrawNavigationPath(Vector3[] path)
-	{
-		if(lineRenderer == null)
+		if(m_lineRenderer == null)
 			return;
 
 		bool hasPath = (path != null) && (path.Length > 0);
-		lineRenderer.positionCount = (hasPath ? path.Length : 0);
+		m_lineRenderer.positionCount = (hasPath ? path.Length : 0);
 
 		if(hasPath)
-			lineRenderer.SetPositions(path);
+			m_lineRenderer.SetPositions(path);
 	}
 
-	private Vector3[] FindPath()
+	private static Vector3[] FindPath(Vector3 origin, Vector3 destination)
 	{
 		NavMeshPath navMeshPath = new NavMeshPath();
 		NavMeshHit hit;
+
+		GetNearestPointInNavMesh(ref origin);
+		GetNearestPointInNavMesh(ref destination);
 
 		if(NavMesh.Raycast(origin, destination, out hit, NavMesh.AllAreas))
 		{
@@ -71,6 +82,13 @@ public class NavigationSystem : MonoBehaviour
 		}
 		else
 			return new Vector3[] {origin, destination};
+	}
+
+	private static void GetNearestPointInNavMesh(ref Vector3 point)
+	{
+		NavMeshHit hit;
+		if(NavMesh.SamplePosition(point, out hit, 3f, NavMesh.AllAreas))
+			point = hit.position;
 	}
 	#endregion
 }
