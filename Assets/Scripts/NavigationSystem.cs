@@ -7,9 +7,12 @@ using UnityEngine.AI;
 public class NavigationSystem : MonoBehaviour
 {
 	#region Serialized Fields
+	[SerializeField]
+	private Vector3 origin = Vector3.zero;
 
+	[SerializeField]
+	private Vector3 destination = Vector3.forward;
 	#endregion
-
 
 	#region Hidden Fields
 	private LineRenderer lineRenderer = null;
@@ -32,7 +35,14 @@ public class NavigationSystem : MonoBehaviour
 
 	public void Navigate(Vector3 origin, Vector3 destination)
 	{
-		DrawNavigationPath(FindPath(origin, destination));
+		this.origin = origin;
+		this.destination = destination;
+		Navigate();
+	}
+
+	public void Navigate()
+	{
+		DrawNavigationPath(FindPath());
 	}
 
 	private void DrawNavigationPath(Vector3[] path)
@@ -47,14 +57,20 @@ public class NavigationSystem : MonoBehaviour
 			lineRenderer.SetPositions(path);
 	}
 
-	private Vector3[] FindPath(Vector3 origin, Vector3 destination)
+	private Vector3[] FindPath()
 	{
 		NavMeshPath navMeshPath = new NavMeshPath();
+		NavMeshHit hit;
 
-		if(NavMesh.CalculatePath(origin, destination, NavMesh.AllAreas, navMeshPath))
-			return navMeshPath.corners;
+		if(NavMesh.Raycast(origin, destination, out hit, NavMesh.AllAreas))
+		{
+			if(NavMesh.CalculatePath(origin, destination, NavMesh.AllAreas, navMeshPath))
+				return navMeshPath.corners;
+			else
+				return null;
+		}
 		else
-			return null;
+			return new Vector3[] {origin, destination};
 	}
 	#endregion
 }
