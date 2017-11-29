@@ -7,7 +7,7 @@ public class NavigationCamera : MonoBehaviour
 	#region Serialized Fields
 	[Header("Navigation")]
 	[SerializeField, Range(0f, 1f)]
-	private float view = 0.5f;
+	private float m_view = 0.5f;
 
 	[Header("Settings")]
 	[SerializeField, Range(1f, 3f)]
@@ -36,10 +36,10 @@ public class NavigationCamera : MonoBehaviour
 	private const float RaycastDistance = 100f;
 	private const float CameraHeight = 30f;
 	private const float GroundHeight = 0f;
-	private const float MovementSpeedLowerLimit = 1.5f;
-	private const float MovementSpeedUpperLimit = 15f;
+	private const float MovementSpeedLowerLimit = 2f;
+	private const float MovementSpeedUpperLimit = 8f;
 	private const float ViewLowerLimit = 10f;
-	private const float ViewUpperLimit = 100f;
+	private const float ViewUpperLimit = 170f;
 	private const float TransitionDuration = 0.25f;
 	private const float ZoomDefault = 0.5f;
 	private const float ZoomDampTime = 0.15f;
@@ -49,10 +49,30 @@ public class NavigationCamera : MonoBehaviour
 	#endregion
 
 
+	#region Property
+	private float view
+	{
+		get { return m_view; }
+		set
+		{
+			m_view = value;
+
+			if(OnViewAdjust != null)
+				OnViewAdjust(m_view);
+		}
+	}
+	#endregion
+
+
 	#region MonoBehaviour Implementation
 	private void Awake()
 	{
 		m_camera = GetComponent<Camera>();
+	}
+
+	private void Start()
+	{
+		view = view;
 	}
 
 	private void OnValidate()
@@ -85,6 +105,8 @@ public class NavigationCamera : MonoBehaviour
 		TouchGesture.OnRotate += OnRotate;
 		TouchGesture.OnPinch += OnPinch;
 		TouchGesture.OnPress += OnPress;
+
+		OnFocus += FocusFrame;
 	}
 
 	private void DeregisterEvents()
@@ -94,6 +116,8 @@ public class NavigationCamera : MonoBehaviour
 		TouchGesture.OnRotate -= OnRotate;
 		TouchGesture.OnPinch -= OnPinch;
 		TouchGesture.OnPress -= OnPress;
+
+		OnFocus -= FocusFrame;
 	}
 
 	private void OnDoubleTap(Vector2 screenPoint)
@@ -148,9 +172,6 @@ public class NavigationCamera : MonoBehaviour
 	{
 		StopTransition();
 		view = Mathf.Clamp01(view + (delta * zoomSpeed));
-
-		if(OnViewAdjust != null)
-			OnViewAdjust(view);
 	}
 
 	private void ResetView()
@@ -176,7 +197,7 @@ public class NavigationCamera : MonoBehaviour
 		if(m_camera == null)
 			return;
 
-		float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, view);
+		float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, m_view);
 
 		m_camera.orthographicSize = Mathf.SmoothDamp(m_camera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
 	}
@@ -186,7 +207,7 @@ public class NavigationCamera : MonoBehaviour
 	#region Coroutines
 	private IEnumerator ResetViewRoutine()
 	{
-		float currentZoom = view;
+		float currentZoom = m_view;
 		for(float current = TransitionDuration; current > 0f; current -= Time.deltaTime)
 		{
 			float t = Mathf.InverseLerp(TransitionDuration, 0f, current);
@@ -228,6 +249,18 @@ public class NavigationCamera : MonoBehaviour
 
 			return new Vector3(position.x, GroundHeight, position.z);
 		}
+	}
+	#endregion
+
+
+	#region Static Implementation
+	private delegate void FocusAction(Vector3 position);
+	private static event FocusAction OnFocus;
+
+	public static void FocusTo(Vector3 position)
+	{
+		if(OnFocus != null)
+			OnFocus(position);
 	}
 	#endregion
 }
