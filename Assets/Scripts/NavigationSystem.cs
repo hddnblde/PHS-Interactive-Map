@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class NavigationSystem : MonoBehaviour
 {
 	#region Hidden Fields
-	private static LineRenderer m_lineRenderer = null;
+	private LineRenderer lineRenderer = null;
 	private const float LineWidthLowerLimit = 3f;
 	private const float LineWidthUpperLimit = 7f;
 	#endregion
@@ -32,40 +32,37 @@ public class NavigationSystem : MonoBehaviour
 
 
 	#region Methods
+	public void Navigate(Vector3 origin, Vector3 destination)
+	{
+		DrawNavigationLine(FindPath(origin, destination));
+	}
+
 	private void Initialize()
 	{
-		m_lineRenderer = GetComponent<LineRenderer>();
+		lineRenderer = GetComponent<LineRenderer>();
 	}
 
 	private void OnViewAdjust(float view)
 	{
-		if(m_lineRenderer == null)
+		if(lineRenderer == null)
 			return;
 
-		m_lineRenderer.widthMultiplier  = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
-	}
-	#endregion
-
-
-	#region Static Implementation
-	public static void Navigate(Vector3 origin, Vector3 destination)
-	{
-		DrawNavigationPath(FindPath(origin, destination));
+		lineRenderer.widthMultiplier  = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
 	}
 
-	private static void DrawNavigationPath(Vector3[] path)
+	private void DrawNavigationLine(Vector3[] path)
 	{
-		if(m_lineRenderer == null)
+		if(lineRenderer == null)
 			return;
 
 		bool hasPath = (path != null) && (path.Length > 0);
-		m_lineRenderer.positionCount = (hasPath ? path.Length : 0);
+		lineRenderer.positionCount = (hasPath ? path.Length : 0);
 
 		if(hasPath)
-			m_lineRenderer.SetPositions(path);
+			lineRenderer.SetPositions(path);
 	}
 
-	private static Vector3[] FindPath(Vector3 origin, Vector3 destination)
+	private Vector3[] FindPath(Vector3 origin, Vector3 destination)
 	{
 		NavMeshPath navMeshPath = new NavMeshPath();
 		NavMeshHit hit;
@@ -84,7 +81,7 @@ public class NavigationSystem : MonoBehaviour
 			return new Vector3[] {origin, destination};
 	}
 
-	private static void GetNearestPointInNavMesh(ref Vector3 point)
+	private void GetNearestPointInNavMesh(ref Vector3 point)
 	{
 		NavMeshHit hit;
 		if(NavMesh.SamplePosition(point, out hit, 3f, NavMesh.AllAreas))

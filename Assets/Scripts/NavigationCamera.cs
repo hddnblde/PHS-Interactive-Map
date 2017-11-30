@@ -4,6 +4,37 @@ using UnityEngine;
 
 public class NavigationCamera : MonoBehaviour
 {
+	#region Static Implementation
+	private static Camera navigationCamera = null;
+	private static LayerMask groundLayer;
+	private delegate void FocusAction(Vector3 position);
+	private static event FocusAction OnFocus;
+
+	public static void FocusTo(Vector3 position)
+	{
+		if(OnFocus != null)
+			OnFocus(position);
+	}
+
+	public static Vector3 GetPosition(Vector2 screenPoint)
+	{
+		if(navigationCamera == null)
+			return Vector3.zero;
+		else
+		{
+			RaycastHit hit;
+			Ray ray = navigationCamera.ScreenPointToRay(screenPoint);
+			Vector3 position = ray.GetPoint(RaycastDistance);
+
+			if(Physics.Raycast(ray, out hit, RaycastDistance, groundLayer))
+				position = hit.point;
+
+			return new Vector3(position.x, GroundHeight, position.z);
+		}
+	}
+	#endregion
+
+
 	#region Serialized Fields
 	[Header("Navigation")]
 	[SerializeField, Range(0f, 1f)]
@@ -24,14 +55,13 @@ public class NavigationCamera : MonoBehaviour
 
 	[Header("Input")]
 	[SerializeField]
-	private LayerMask groundLayer;
+	private LayerMask m_groundLayer;
 	#endregion
 
 
 	#region Hidden Fields
 	public delegate void ViewAdjust(float view);
 	public static event ViewAdjust OnViewAdjust;
-	private Camera m_camera = null;
 
 	private const float RaycastDistance = 100f;
 	private const float CameraHeight = 30f;
@@ -56,9 +86,7 @@ public class NavigationCamera : MonoBehaviour
 		set
 		{
 			m_view = value;
-
-			if(OnViewAdjust != null)
-				OnViewAdjust(m_view);
+			ViewAdjustEvent();
 		}
 	}
 	#endregion
@@ -67,17 +95,17 @@ public class NavigationCamera : MonoBehaviour
 	#region MonoBehaviour Implementation
 	private void Awake()
 	{
-		m_camera = GetComponent<Camera>();
+		Initialize();
 	}
 
 	private void Start()
 	{
-		view = view;
+		ViewAdjustEvent();
 	}
 
 	private void OnValidate()
 	{
-		Zoom(0f);
+		ViewAdjustEvent();
 	}
 
 	private void Update()
@@ -104,7 +132,6 @@ public class NavigationCamera : MonoBehaviour
 		TouchGesture.OnDrag += OnDrag;
 		TouchGesture.OnRotate += OnRotate;
 		TouchGesture.OnPinch += OnPinch;
-		TouchGesture.OnPress += OnPress;
 
 		OnFocus += FocusFrame;
 	}
@@ -115,7 +142,6 @@ public class NavigationCamera : MonoBehaviour
 		TouchGesture.OnDrag -= OnDrag;
 		TouchGesture.OnRotate -= OnRotate;
 		TouchGesture.OnPinch -= OnPinch;
-		TouchGesture.OnPress -= OnPress;
 
 		OnFocus -= FocusFrame;
 	}
@@ -139,15 +165,16 @@ public class NavigationCamera : MonoBehaviour
 	{
 		Zoom(delta);
 	}
-
-	private void OnPress(Vector2 screenPoint)
-	{
-		NavigationSystem.Navigate(Vector3.zero, GetPosition(screenPoint));
-	}
 	#endregion
 
 
 	#region Methods
+	private void Initialize()
+	{
+		navigationCamera = GetComponent<Camera>();
+		groundLayer = m_groundLayer;
+	}
+
 	private void Pan(Vector2 delta)
 	{
 		delta *= -Mathf.Lerp(MovementSpeedUpperLimit, MovementSpeedLowerLimit, view);
@@ -180,7 +207,7 @@ public class NavigationCamera : MonoBehaviour
 		transitionRoutine = StartCoroutine(ResetViewRoutine());
 	}
 
-	public void FocusFrame(Vector3 frame)
+	private void FocusFrame(Vector3 frame)
 	{
 		StopTransition();
 		transitionRoutine = StartCoroutine(FocusFrameRoutine(frame));
@@ -194,12 +221,18 @@ public class NavigationCamera : MonoBehaviour
 
 	private void ZoomUpdate()
 	{
-		if(m_camera == null)
+		if(navigationCamera == null)
 			return;
 
 		float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, m_view);
 
-		m_camera.orthographicSize = Mathf.SmoothDamp(m_camera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
+		navigationCamera.orthographicSize = Mathf.SmoothDamp(navigationCamera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
+	}
+
+	private void ViewAdjustEvent()
+	{
+		if(OnViewAdjust != null)
+			OnViewAdjust(m_view);
 	}
 	#endregion
 
@@ -229,38 +262,6 @@ public class NavigationCamera : MonoBehaviour
 				view = Mathf.LerpUnclamped(currentZoom, ZoomDefault, transitionCurve.Evaluate(t));
 			yield return null;
 		}
-	}
-	#endregion
-
-
-	#region Function
-	public Vector3 GetPosition(Vector2 screenPoint)
-	{
-		if(m_camera == null)
-			return Vector3.zero;
-		else
-		{
-			RaycastHit hit;
-			Ray ray = m_camera.ScreenPointToRay(screenPoint);
-			Vector3 position = ray.GetPoint(RaycastDistance);
-
-			if(Physics.Raycast(ray, out hit, RaycastDistance, groundLayer))
-				position = hit.point;
-
-			return new Vector3(position.x, GroundHeight, position.z);
-		}
-	}
-	#endregion
-
-
-	#region Static Implementation
-	private delegate void FocusAction(Vector3 position);
-	private static event FocusAction OnFocus;
-
-	public static void FocusTo(Vector3 position)
-	{
-		if(OnFocus != null)
-			OnFocus(position);
 	}
 	#endregion
 }
