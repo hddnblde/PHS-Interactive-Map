@@ -57,6 +57,7 @@ public class TouchGesture : MonoBehaviour
 	private const float MaximumPressWaitTime = 3f;
 	private float currentPressTime = 0f;
 	private bool pressed = false;
+	private bool pressCancelled = false;
 	#endregion
 
 
@@ -108,8 +109,15 @@ public class TouchGesture : MonoBehaviour
 		
 		Touch currentTouch = Input.GetTouch(0);
 
-		if(currentTouch.phase == TouchPhase.Stationary)
+		if(currentTouch.phase == TouchPhase.Stationary && !pressCancelled)
 			currentPressTime = Mathf.Min(currentPressTime + Time.deltaTime, pressWaitTime);
+		else if(currentTouch.phase == TouchPhase.Moved)
+		{
+			pressCancelled = true;
+			currentPressTime = 0f;
+		}
+		else if(currentTouch.phase == TouchPhase.Ended || currentTouch.phase == TouchPhase.Canceled || currentTouch.phase == TouchPhase.Began)
+			pressCancelled = false;
 		
 		if(currentPressTime >= pressWaitTime)
 		{
