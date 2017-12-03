@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Gestures;
 
 namespace Navigation
 {
@@ -140,12 +141,12 @@ namespace Navigation
 
 		private void RegisterEvents()
 		{
-			TouchGesture.OnPress += OnPress;
+			TouchGestures.OnPress += OnPress;
 		}
 
 		private void DeregisterEvents()
 		{
-			TouchGesture.OnPress -= OnPress;
+			TouchGestures.OnPress -= OnPress;
 		}
 
 		private void OnPress(Vector2 point)

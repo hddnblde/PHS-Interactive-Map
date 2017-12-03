@@ -56,8 +56,7 @@ namespace Navigation
 		{
 			if(lineRenderer == null)
 				return;
-
-			lineRenderer.widthMultiplier  = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
+			lineRenderer.widthMultiplier = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
 		}
 
 		private void DrawNavigationLine(Vector3[] path)
