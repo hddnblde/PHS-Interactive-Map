@@ -10,7 +10,7 @@ namespace Map
 		private string m_displayedName;
 
 		[SerializeField]
-		private Vector3 m_position;
+		private Vector2 m_position;
 
 		#region Properties
 		public string displayedName
@@ -20,7 +20,7 @@ namespace Map
 
 		public Vector3 position
 		{
-			get { return m_position; }
+			get { return new Vector3(m_position.x, 0f, m_position.y); }
 		}
 		#endregion
 	}

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: PHSSSGO Office
+  m_Name: Clinic Office
   m_EditorClassIdentifier: 
-  m_displayedName: PHSSSGO Office
+  m_displayedName: Clinic Office
   m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
+  m_landmark: {fileID: 11400000, guid: ff8832e4fdd08664eb91a54ba1c35176, type: 2}
   m_rooms: []

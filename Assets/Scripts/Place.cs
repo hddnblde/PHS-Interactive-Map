@@ -125,7 +125,7 @@ namespace Map
 				EditorGUILayout.PropertyField(positionProperty);
 			else
 			{
-				GUIContent content = new GUIContent("Main Position");
+				GUIContent content = new GUIContent("General Position");
 				EditorGUILayout.PropertyField(positionProperty, content);
 			}
 
