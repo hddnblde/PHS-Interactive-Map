@@ -197,7 +197,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 25458983}
-  - component: {fileID: 25458984}
   m_Layer: 9
   m_Name: DM Court Stage
   m_TagString: Untagged
@@ -220,18 +219,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 2.0110002, z: 0}
---- !u!114 &25458984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25458982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &36104799
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +228,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 36104800}
-  - component: {fileID: 36104801}
   m_Layer: 9
   m_Name: Canteen 3
   m_TagString: Untagged
@@ -264,18 +250,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0.115, z: 0}
---- !u!114 &36104801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 36104799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &63416357
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +259,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 63416358}
-  - component: {fileID: 63416359}
   m_Layer: 9
   m_Name: Baliti
   m_TagString: Untagged
@@ -308,18 +281,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &63416359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 63416357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &75620747
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +290,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 75620748}
-  - component: {fileID: 75620749}
   m_Layer: 9
   m_Name: PTL
   m_TagString: Untagged
@@ -352,18 +312,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 1.8930001, z: 0}
---- !u!114 &75620749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 75620747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &80004870
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +321,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 80004871}
-  - component: {fileID: 80004872}
   m_Layer: 9
   m_Name: IA 11, 12, 13, 14
   m_TagString: Untagged
@@ -396,18 +343,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 1.978, z: 0}
---- !u!114 &80004872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 80004870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &94114578
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +352,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 94114579}
-  - component: {fileID: 94114580}
   m_Layer: 9
   m_Name: Aster
   m_TagString: Untagged
@@ -440,18 +374,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 35.498, z: 0}
---- !u!114 &94114580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 94114578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &103089876
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +383,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 103089877}
-  - component: {fileID: 103089878}
   m_Layer: 9
   m_Name: CR (IA)
   m_TagString: Untagged
@@ -484,18 +405,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 1.807, z: 0}
---- !u!114 &103089878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 103089876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &111778099
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +414,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 111778100}
-  - component: {fileID: 111778101}
   m_Layer: 9
   m_Name: Gumamela
   m_TagString: Untagged
@@ -528,18 +436,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 2.0570002, z: 0}
---- !u!114 &111778101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 111778099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &114018604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1122,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 221522656}
-  - component: {fileID: 221522657}
   m_Layer: 9
   m_Name: MRF
   m_TagString: Untagged
@@ -1249,18 +1144,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &221522657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 221522655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &222701452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,7 +1995,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 342191174}
-  - component: {fileID: 342191175}
   m_Layer: 9
   m_Name: Gardenia
   m_TagString: Untagged
@@ -2135,18 +2017,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 1.8130001, z: 0}
---- !u!114 &342191175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342191173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &347655414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,7 +2026,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 347655415}
-  - component: {fileID: 347655416}
   m_Layer: 9
   m_Name: Acacia
   m_TagString: Untagged
@@ -2179,18 +2048,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &347655416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 347655414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &359057668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,7 +2057,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 359057669}
-  - component: {fileID: 359057670}
   m_Layer: 9
   m_Name: CR (Aus Aid)
   m_TagString: Untagged
@@ -2223,18 +2079,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: -0.23500001, z: 0}
---- !u!114 &359057670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 359057668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &367914668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,7 +2088,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 367914669}
-  - component: {fileID: 367914670}
   m_Layer: 9
   m_Name: Science Office
   m_TagString: Untagged
@@ -2267,18 +2110,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 1.764, z: 0}
---- !u!114 &367914670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367914668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &377662693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,7 +2260,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 383748570}
-  - component: {fileID: 383748571}
   m_Layer: 9
   m_Name: Canteen 2
   m_TagString: Untagged
@@ -2452,18 +2282,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 1.695, z: 0}
---- !u!114 &383748571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 383748569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &387975611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,7 +2799,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 410170360}
-  - component: {fileID: 410170361}
   m_Layer: 9
   m_Name: Rene Medina Hall
   m_TagString: Untagged
@@ -3004,18 +2821,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 1.9920001, z: 0}
---- !u!114 &410170361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 410170359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &426740214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,7 +2830,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 426740215}
-  - component: {fileID: 426740216}
   m_Layer: 9
   m_Name: Anthurium
   m_TagString: Untagged
@@ -3048,18 +2852,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 1.83, z: 0}
---- !u!114 &426740216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 426740214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &430288235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,7 +3528,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 491259775}
-  - component: {fileID: 491259776}
   m_Layer: 9
   m_Name: Agri Lagoon
   m_TagString: Untagged
@@ -3759,18 +3550,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &491259776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 491259774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &506326031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,7 +3634,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 524133622}
-  - component: {fileID: 524133623}
   m_Layer: 9
   m_Name: Violeta Hall
   m_TagString: Untagged
@@ -3878,18 +3656,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 2.0700002, z: 0}
---- !u!114 &524133623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 524133621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &524509580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3974,7 +3740,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 537680091}
-  - component: {fileID: 537680092}
   m_Layer: 9
   m_Name: Dama De Noche 1
   m_TagString: Untagged
@@ -3997,18 +3762,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 1.8820001, z: 0}
---- !u!114 &537680092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 537680090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &544737217
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +3921,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 560855162}
-  - component: {fileID: 560855163}
   m_Layer: 9
   m_Name: Guidance 1, Clinic 1, Dental Offices
   m_TagString: Untagged
@@ -4191,18 +3943,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 1.7210001, z: 0}
---- !u!114 &560855163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 560855161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &568566035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,7 +3952,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 568566036}
-  - component: {fileID: 568566037}
   m_Layer: 9
   m_Name: Waling-waling
   m_TagString: Untagged
@@ -4235,18 +3974,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 35.498, z: 0}
---- !u!114 &568566037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 568566035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &575311149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4256,7 +3983,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 575311150}
-  - component: {fileID: 575311151}
   m_Layer: 9
   m_Name: Euphorbia
   m_TagString: Untagged
@@ -4279,18 +4005,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0.10700001, z: 0}
---- !u!114 &575311151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575311149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &576936547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4300,7 +4014,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 576936548}
-  - component: {fileID: 576936549}
   m_Layer: 9
   m_Name: Camia
   m_TagString: Untagged
@@ -4323,18 +4036,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0.115, z: 0}
---- !u!114 &576936549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 576936547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &579620361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,7 +4195,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 596972963}
-  - component: {fileID: 596972964}
   m_Layer: 9
   m_Name: Kamagong
   m_TagString: Untagged
@@ -4517,18 +4217,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &596972964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 596972962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &598696881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4729,7 +4417,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 621834942}
-  - component: {fileID: 621834943}
   m_Layer: 9
   m_Name: IA 4, 5, 6
   m_TagString: Untagged
@@ -4752,18 +4439,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 2.038, z: 0}
---- !u!114 &621834943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 621834941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &624962145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,7 +4523,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 636239444}
-  - component: {fileID: 636239445}
   m_Layer: 9
   m_Name: Rodriguez
   m_TagString: Untagged
@@ -4871,18 +4545,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: -0.18200001, z: 0}
---- !u!114 &636239445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 636239443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &638521668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,7 +4629,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 656590130}
-  - component: {fileID: 656590131}
   m_Layer: 9
   m_Name: Orchids
   m_TagString: Untagged
@@ -4990,18 +4651,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &656590131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 656590129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &663927945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5016,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 684595271}
-  - component: {fileID: 684595272}
   m_Layer: 9
   m_Name: Lotus
   m_TagString: Untagged
@@ -5390,18 +5038,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 1.71, z: 0}
---- !u!114 &684595272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 684595270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705932849
 GameObject:
   m_ObjectHideFlags: 0
@@ -5607,7 +5243,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 720020990}
-  - component: {fileID: 720020991}
   m_Layer: 9
   m_Name: CR (Calixto Library)
   m_TagString: Untagged
@@ -5630,18 +5265,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0.19100001, z: 0}
---- !u!114 &720020991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 720020989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &726499997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,7 +5274,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 726499998}
-  - component: {fileID: 726499999}
   m_Layer: 9
   m_Name: IA 15 and 16
   m_TagString: Untagged
@@ -5674,18 +5296,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 1.7760001, z: 0}
---- !u!114 &726499999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 726499997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &742025805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,7 +5380,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 746939351}
-  - component: {fileID: 746939352}
   m_Layer: 9
   m_Name: Values Multipurpose Hall
   m_TagString: Untagged
@@ -5793,18 +5402,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -0.314, z: 0}
---- !u!114 &746939352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 746939350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &752071102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,7 +5486,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 757717383}
-  - component: {fileID: 757717384}
   m_Layer: 9
   m_Name: DM Building 1
   m_TagString: Untagged
@@ -5912,18 +5508,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 1.764, z: 0}
---- !u!114 &757717384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 757717382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &767737603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,7 +5517,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 767737604}
-  - component: {fileID: 767737605}
   m_Layer: 9
   m_Name: Aus Aid
   m_TagString: Untagged
@@ -5956,18 +5539,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0.09200001, z: 0}
---- !u!114 &767737605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 767737603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &769388737
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,7 +5698,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 781053660}
-  - component: {fileID: 781053661}
   m_Layer: 9
   m_Name: Sunflower
   m_TagString: Untagged
@@ -6150,18 +5720,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 1.8130001, z: 0}
---- !u!114 &781053661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 781053659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &787499533
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,7 +5729,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 787499534}
-  - component: {fileID: 787499535}
   m_Layer: 9
   m_Name: Shed (Values)
   m_TagString: Untagged
@@ -6194,18 +5751,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0.052, z: 0}
---- !u!114 &787499535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 787499533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &790055366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6498,7 +6043,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 817933340}
-  - component: {fileID: 817933341}
   m_Layer: 9
   m_Name: CR (Rene Medina Hall)
   m_TagString: Untagged
@@ -6521,18 +6065,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 1.7950001, z: 0}
---- !u!114 &817933341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 817933339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &827101213
 GameObject:
   m_ObjectHideFlags: 0
@@ -6542,7 +6074,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 827101214}
-  - component: {fileID: 827101215}
   m_Layer: 9
   m_Name: Guard House
   m_TagString: Untagged
@@ -6565,18 +6096,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: -0.029000001, z: 0}
---- !u!114 &827101215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 827101213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &831227195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,7 +6180,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 850559872}
-  - component: {fileID: 850559873}
   m_Layer: 9
   m_Name: CR (Camia)
   m_TagString: Untagged
@@ -6684,18 +6202,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &850559873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 850559871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &851818775
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,7 +6657,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 901287685}
-  - component: {fileID: 901287686}
   m_Layer: 9
   m_Name: Molave
   m_TagString: Untagged
@@ -7174,18 +6679,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &901287686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 901287684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &904820881
 GameObject:
   m_ObjectHideFlags: 0
@@ -7195,7 +6688,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 904820882}
-  - component: {fileID: 904820883}
   m_Layer: 9
   m_Name: White Angel 2
   m_TagString: Untagged
@@ -7218,18 +6710,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 1.8930001, z: 0}
---- !u!114 &904820883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 904820881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &908296627
 GameObject:
   m_ObjectHideFlags: 0
@@ -7314,7 +6794,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 910982746}
-  - component: {fileID: 910982747}
   m_Layer: 9
   m_Name: Auditor's Office
   m_TagString: Untagged
@@ -7337,18 +6816,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 1.3160001, z: 0}
---- !u!114 &910982747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 910982745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &933436302
 GameObject:
   m_ObjectHideFlags: 0
@@ -8108,7 +7575,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 999802535}
-  - component: {fileID: 999802536}
   m_Layer: 9
   m_Name: MAPEH Multipurpose Hall
   m_TagString: Untagged
@@ -8131,18 +7597,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: -4.566, z: 0}
---- !u!114 &999802536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999802534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1056074168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8152,7 +7606,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1056074169}
-  - component: {fileID: 1056074170}
   m_Layer: 9
   m_Name: Gate 1
   m_TagString: Untagged
@@ -8175,18 +7628,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 1.3000001, z: 0}
---- !u!114 &1056074170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1056074168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1062879086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8421,7 +7862,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1151181232}
-  - component: {fileID: 1151181233}
   m_Layer: 9
   m_Name: Student Center
   m_TagString: Untagged
@@ -8444,18 +7884,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 1.8930001, z: 0}
---- !u!114 &1151181233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151181231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1151779255
 GameObject:
   m_ObjectHideFlags: 0
@@ -8465,7 +7893,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1151779256}
-  - component: {fileID: 1151779257}
   m_Layer: 9
   m_Name: Santan
   m_TagString: Untagged
@@ -8488,18 +7915,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1151779257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151779255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1157327290
 GameObject:
   m_ObjectHideFlags: 0
@@ -8509,7 +7924,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1157327291}
-  - component: {fileID: 1157327292}
   m_Layer: 9
   m_Name: Green House
   m_TagString: Untagged
@@ -8532,18 +7946,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1157327292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1157327290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1159654616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8553,7 +7955,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1159654617}
-  - component: {fileID: 1159654618}
   m_Layer: 9
   m_Name: IA 7 and 8
   m_TagString: Untagged
@@ -8576,18 +7977,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 1.9900001, z: 0}
---- !u!114 &1159654618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1159654616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1169044961
 GameObject:
   m_ObjectHideFlags: 0
@@ -8672,7 +8061,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1181265436}
-  - component: {fileID: 1181265437}
   m_Layer: 9
   m_Name: Caballero
   m_TagString: Untagged
@@ -8695,18 +8083,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1181265437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1181265435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1191930415
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,7 +8092,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1191930416}
-  - component: {fileID: 1191930417}
   m_Layer: 9
   m_Name: CR (Rene Medina Hall)
   m_TagString: Untagged
@@ -8739,18 +8114,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 1.7950001, z: 0}
---- !u!114 &1191930417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191930415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1200204797
 GameObject:
   m_ObjectHideFlags: 0
@@ -8760,7 +8123,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1200204798}
-  - component: {fileID: 1200204799}
   m_Layer: 9
   m_Name: Sampaguita 1
   m_TagString: Untagged
@@ -8783,18 +8145,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 2.062, z: 0}
---- !u!114 &1200204799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1200204797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1216146884
 GameObject:
   m_ObjectHideFlags: 0
@@ -8804,7 +8154,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1216146885}
-  - component: {fileID: 1216146886}
   m_Layer: 9
   m_Name: White Angel 1
   m_TagString: Untagged
@@ -8827,18 +8176,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 1.705, z: 0}
---- !u!114 &1216146886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216146884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1219281874
 GameObject:
   m_ObjectHideFlags: 0
@@ -8848,7 +8185,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1219281875}
-  - component: {fileID: 1219281876}
   m_Layer: 9
   m_Name: Ponsettia
   m_TagString: Untagged
@@ -8871,18 +8207,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 35.103, z: 0}
---- !u!114 &1219281876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1219281874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1224183877
 GameObject:
   m_ObjectHideFlags: 0
@@ -8892,7 +8216,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1224183878}
-  - component: {fileID: 1224183879}
   m_Layer: 9
   m_Name: Senior High Office
   m_TagString: Untagged
@@ -8915,18 +8238,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 2.0990002, z: 0}
---- !u!114 &1224183879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224183877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1230814528
 GameObject:
   m_ObjectHideFlags: 0
@@ -9184,7 +8495,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1242790110}
-  - component: {fileID: 1242790111}
   m_Layer: 9
   m_Name: Daisy
   m_TagString: Untagged
@@ -9207,18 +8517,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0.20400001, z: 0}
---- !u!114 &1242790111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1242790109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1243646095
 GameObject:
   m_ObjectHideFlags: 0
@@ -9298,7 +8596,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1246072523}
-  - component: {fileID: 1246072524}
   m_Layer: 9
   m_Name: Chrysantemum
   m_TagString: Untagged
@@ -9321,18 +8618,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: -0.18200001, z: 0}
---- !u!114 &1246072524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1246072522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1267739191
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,7 +8777,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1269958386}
-  - component: {fileID: 1269958387}
   m_Layer: 9
   m_Name: Main Library
   m_TagString: Untagged
@@ -9515,18 +8799,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 1.876, z: 0}
---- !u!114 &1269958387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1269958385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1285485022
 GameObject:
   m_ObjectHideFlags: 0
@@ -9536,7 +8808,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1285485023}
-  - component: {fileID: 1285485024}
   m_Layer: 9
   m_Name: Rose
   m_TagString: Untagged
@@ -9559,18 +8830,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 1.8220001, z: 0}
---- !u!114 &1285485024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1285485022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1294976220
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,7 +9064,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1326729465}
-  - component: {fileID: 1326729466}
   m_Layer: 9
   m_Name: Jasmine
   m_TagString: Untagged
@@ -9828,18 +9086,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 1.9390001, z: 0}
---- !u!114 &1326729466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326729464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1335605783
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,7 +9095,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1335605784}
-  - component: {fileID: 1335605785}
   m_Layer: 9
   m_Name: Canteen 1
   m_TagString: Untagged
@@ -9872,18 +9117,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 1.6660001, z: 0}
---- !u!114 &1335605785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1335605783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1343998039
 GameObject:
   m_ObjectHideFlags: 0
@@ -9968,7 +9201,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1355210636}
-  - component: {fileID: 1355210637}
   m_Layer: 9
   m_Name: CR (Home Economics)
   m_TagString: Untagged
@@ -9991,18 +9223,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0.052, z: 0}
---- !u!114 &1355210637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1355210635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1364510454
 GameObject:
   m_ObjectHideFlags: 0
@@ -10236,7 +9456,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1369156446}
-  - component: {fileID: 1369156447}
   m_Layer: 9
   m_Name: Music Room
   m_TagString: Untagged
@@ -10259,18 +9478,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 1.8930001, z: 0}
---- !u!114 &1369156447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1369156445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1373795404
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,7 +9487,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1373795405}
-  - component: {fileID: 1373795406}
   m_Layer: 9
   m_Name: Gate 3
   m_TagString: Untagged
@@ -10303,18 +9509,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: -4.441, z: 0}
---- !u!114 &1373795406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1373795404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1375108484
 GameObject:
   m_ObjectHideFlags: 0
@@ -10324,7 +9518,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1375108485}
-  - component: {fileID: 1375108486}
   m_Layer: 9
   m_Name: Mahogany
   m_TagString: Untagged
@@ -10347,18 +9540,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1375108486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1375108484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1375967268
 GameObject:
   m_ObjectHideFlags: 0
@@ -10368,7 +9549,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1375967269}
-  - component: {fileID: 1375967270}
   m_Layer: 9
   m_Name: Cattleya
   m_TagString: Untagged
@@ -10391,18 +9571,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: -4.971, z: 0}
---- !u!114 &1375967270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1375967268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1388106667
 GameObject:
   m_ObjectHideFlags: 0
@@ -10412,7 +9580,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1388106668}
-  - component: {fileID: 1388106669}
   m_Layer: 9
   m_Name: IA 3
   m_TagString: Untagged
@@ -10435,18 +9602,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 1.817, z: 0}
---- !u!114 &1388106669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1388106667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1393604807
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,7 +9611,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1393604808}
-  - component: {fileID: 1393604809}
   m_Layer: 9
   m_Name: Sampaguita 2
   m_TagString: Untagged
@@ -10479,18 +9633,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 1.889, z: 0}
---- !u!114 &1393604809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1393604807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1405298894
 GameObject:
   m_ObjectHideFlags: 0
@@ -10500,7 +9642,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1405298895}
-  - component: {fileID: 1405298896}
   m_Layer: 9
   m_Name: Gate 2
   m_TagString: Untagged
@@ -10523,18 +9664,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0.72700006, z: 0}
---- !u!114 &1405298896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1405298894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1407501744
 GameObject:
   m_ObjectHideFlags: 0
@@ -10619,7 +9748,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1409066953}
-  - component: {fileID: 1409066954}
   m_Layer: 9
   m_Name: Open High Room
   m_TagString: Untagged
@@ -10642,18 +9770,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 2.2310002, z: 0}
---- !u!114 &1409066954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1409066952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1446508409
 GameObject:
   m_ObjectHideFlags: 0
@@ -10663,7 +9779,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1446508410}
-  - component: {fileID: 1446508411}
   m_Layer: 9
   m_Name: Dama De Noche 2
   m_TagString: Untagged
@@ -10686,18 +9801,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 1.8820001, z: 0}
---- !u!114 &1446508411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1446508409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1456468068
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,7 +9810,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1456468069}
-  - component: {fileID: 1456468070}
   m_Layer: 9
   m_Name: IA 1 and 2
   m_TagString: Untagged
@@ -10730,18 +9832,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 2.023, z: 0}
---- !u!114 &1456468070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1456468068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1456758978
 GameObject:
   m_ObjectHideFlags: 0
@@ -10751,7 +9841,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1456758979}
-  - component: {fileID: 1456758980}
   m_Layer: 9
   m_Name: CR (Main Building)
   m_TagString: Untagged
@@ -10774,18 +9863,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 2.1880002, z: 0}
---- !u!114 &1456758980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1456758978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1463015604
 GameObject:
   m_ObjectHideFlags: 0
@@ -11084,7 +10161,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1477820103}
-  - component: {fileID: 1477820104}
   m_Layer: 9
   m_Name: Math Office
   m_TagString: Untagged
@@ -11107,18 +10183,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0.20400001, z: 0}
---- !u!114 &1477820104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1477820102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1487743121
 GameObject:
   m_ObjectHideFlags: 0
@@ -11203,7 +10267,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1505905181}
-  - component: {fileID: 1505905182}
   m_Layer: 9
   m_Name: Pump House
   m_TagString: Untagged
@@ -11226,18 +10289,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: -0.060000002, z: 0}
---- !u!114 &1505905182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1505905180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1510498797
 GameObject:
   m_ObjectHideFlags: 0
@@ -11540,7 +10591,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1528801066}
-  - component: {fileID: 1528801067}
   m_Layer: 9
   m_Name: CR (Sampaguita)
   m_TagString: Untagged
@@ -11563,18 +10613,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 1.9920001, z: 0}
---- !u!114 &1528801067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1528801065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1543808815
 GameObject:
   m_ObjectHideFlags: 0
@@ -11734,7 +10772,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1545072260}
-  - component: {fileID: 1545072261}
   m_Layer: 9
   m_Name: Shed (Home Economics)
   m_TagString: Untagged
@@ -11757,18 +10794,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0.052, z: 0}
---- !u!114 &1545072261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1545072259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1597851435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11778,7 +10803,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1597851436}
-  - component: {fileID: 1597851437}
   m_Layer: 9
   m_Name: Shed (Aster)
   m_TagString: Untagged
@@ -11801,18 +10825,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 34.925003, z: 0}
---- !u!114 &1597851437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597851435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1605660735
 GameObject:
   m_ObjectHideFlags: 0
@@ -12264,7 +11276,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1649603649}
-  - component: {fileID: 1649603650}
   m_Layer: 9
   m_Name: Infirmary
   m_TagString: Untagged
@@ -12287,18 +11298,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 34.929, z: 0}
---- !u!114 &1649603650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1649603648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1656119946
 GameObject:
   m_ObjectHideFlags: 0
@@ -12308,7 +11307,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1656119947}
-  - component: {fileID: 1656119948}
   m_Layer: 9
   m_Name: Shakespearean Hall
   m_TagString: Untagged
@@ -12331,18 +11329,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0.115, z: 0}
---- !u!114 &1656119948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656119946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1658021511
 GameObject:
   m_ObjectHideFlags: 0
@@ -12352,7 +11338,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1658021512}
-  - component: {fileID: 1658021513}
   m_Layer: 9
   m_Name: CR (Anthurium)
   m_TagString: Untagged
@@ -12375,18 +11360,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 1.621, z: 0}
---- !u!114 &1658021513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1658021511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1660091316
 GameObject:
   m_ObjectHideFlags: 0
@@ -12396,7 +11369,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1660091317}
-  - component: {fileID: 1660091318}
   m_Layer: 9
   m_Name: Gladiola Lab
   m_TagString: Untagged
@@ -12419,18 +11391,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: -4.303, z: 0}
---- !u!114 &1660091318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1660091316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1662909300
 GameObject:
   m_ObjectHideFlags: 0
@@ -12515,7 +11475,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1672123877}
-  - component: {fileID: 1672123878}
   m_Layer: 9
   m_Name: DM Covered Court
   m_TagString: Untagged
@@ -12538,18 +11497,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 2.0110002, z: 0}
---- !u!114 &1672123878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1672123876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1688665728
 GameObject:
   m_ObjectHideFlags: 0
@@ -12634,7 +11581,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1691061478}
-  - component: {fileID: 1691061479}
   m_Layer: 9
   m_Name: Principal's, Admin, HR, Promis Offices
   m_TagString: Untagged
@@ -12657,18 +11603,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 1.764, z: 0}
---- !u!114 &1691061479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1691061477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1691656976
 GameObject:
   m_ObjectHideFlags: 0
@@ -12753,7 +11687,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1712830603}
-  - component: {fileID: 1712830604}
   m_Layer: 9
   m_Name: Guidance Office 2
   m_TagString: Untagged
@@ -12776,18 +11709,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 34.925003, z: 0}
---- !u!114 &1712830604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1712830602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1716338806
 GameObject:
   m_ObjectHideFlags: 0
@@ -12947,7 +11868,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1745378978}
-  - component: {fileID: 1745378979}
   m_Layer: 9
   m_Name: IA Office
   m_TagString: Untagged
@@ -12970,18 +11890,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 1.8030001, z: 0}
---- !u!114 &1745378979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745378977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1748634599
 GameObject:
   m_ObjectHideFlags: 0
@@ -12991,7 +11899,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1748634600}
-  - component: {fileID: 1748634601}
   m_Layer: 9
   m_Name: Senior High School
   m_TagString: Untagged
@@ -13014,18 +11921,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 1.9, z: 0}
---- !u!114 &1748634601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748634599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1748777934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,7 +11930,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1748777935}
-  - component: {fileID: 1748777936}
   m_Layer: 9
   m_Name: DM Building 2
   m_TagString: Untagged
@@ -13058,18 +11952,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 1.764, z: 0}
---- !u!114 &1748777936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748777934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1757677147
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,7 +11961,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1757677148}
-  - component: {fileID: 1757677149}
   m_Layer: 9
   m_Name: Ipil-ipil
   m_TagString: Untagged
@@ -13102,18 +11983,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1757677149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1757677147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1768108439
 GameObject:
   m_ObjectHideFlags: 0
@@ -13123,7 +11992,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1768108440}
-  - component: {fileID: 1768108441}
   m_Layer: 9
   m_Name: Home Economics Lab
   m_TagString: Untagged
@@ -13146,18 +12014,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0.052, z: 0}
---- !u!114 &1768108441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1768108439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1768684048
 GameObject:
   m_ObjectHideFlags: 0
@@ -13699,7 +12555,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1799578262}
-  - component: {fileID: 1799578263}
   m_Layer: 9
   m_Name: DG Covered Court
   m_TagString: Untagged
@@ -13722,18 +12577,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 1.8930001, z: 0}
---- !u!114 &1799578263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1799578261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1821582095
 GameObject:
   m_ObjectHideFlags: 0
@@ -13818,7 +12661,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1853513161}
-  - component: {fileID: 1853513162}
   m_Layer: 9
   m_Name: Lagundi
   m_TagString: Untagged
@@ -13841,18 +12683,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &1853513162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1853513160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1854029513
 GameObject:
   m_ObjectHideFlags: 0
@@ -13937,7 +12767,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1855708747}
-  - component: {fileID: 1855708748}
   m_Layer: 9
   m_Name: CR (Student Center)
   m_TagString: Untagged
@@ -13960,18 +12789,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 1.7210001, z: 0}
---- !u!114 &1855708748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855708746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1868681941
 GameObject:
   m_ObjectHideFlags: 0
@@ -13981,7 +12798,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1868681942}
-  - component: {fileID: 1868681943}
   m_Layer: 9
   m_Name: IA 9 and 10
   m_TagString: Untagged
@@ -14004,18 +12820,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 1.9900001, z: 0}
---- !u!114 &1868681943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868681941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1893963288
 GameObject:
   m_ObjectHideFlags: 0
@@ -14325,7 +13129,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1954766224}
-  - component: {fileID: 1954766225}
   m_Layer: 9
   m_Name: Teatro
   m_TagString: Untagged
@@ -14348,18 +13151,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 1.866, z: 0}
---- !u!114 &1954766225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1954766223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1961617950
 GameObject:
   m_ObjectHideFlags: 0
@@ -14369,7 +13160,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1961617951}
-  - component: {fileID: 1961617952}
   m_Layer: 9
   m_Name: SPED
   m_TagString: Untagged
@@ -14392,18 +13182,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: -4.4550004, z: 0}
---- !u!114 &1961617952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1961617950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1963725796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14413,7 +13191,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1963725797}
-  - component: {fileID: 1963725798}
   m_Layer: 9
   m_Name: CR (White Angel)
   m_TagString: Untagged
@@ -14436,18 +13213,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 1.8390001, z: 0}
---- !u!114 &1963725798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1963725796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1969516507
 GameObject:
   m_ObjectHideFlags: 0
@@ -14532,7 +13297,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1995325684}
-  - component: {fileID: 1995325685}
   m_Layer: 9
   m_Name: Values and Filipino Offices
   m_TagString: Untagged
@@ -14555,18 +13319,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 2.0990002, z: 0}
---- !u!114 &1995325685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1995325683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2001707882
 GameObject:
   m_ObjectHideFlags: 0
@@ -14576,7 +13328,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2001707883}
-  - component: {fileID: 2001707884}
   m_Layer: 9
   m_Name: Quota
   m_TagString: Untagged
@@ -14599,18 +13350,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: -4.9620004, z: 0}
---- !u!114 &2001707884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2001707882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2011733825
 Prefab:
   m_ObjectHideFlags: 0
@@ -14687,7 +13426,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2015954794}
-  - component: {fileID: 2015954795}
   m_Layer: 9
   m_Name: Guidance Office
   m_TagString: Untagged
@@ -14710,18 +13448,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 1.3160001, z: 0}
---- !u!114 &2015954795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2015954793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2020675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -14731,7 +13457,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2020675274}
-  - component: {fileID: 2020675275}
   m_Layer: 9
   m_Name: Gerbera
   m_TagString: Untagged
@@ -14754,18 +13479,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 2.023, z: 0}
---- !u!114 &2020675275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2020675273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2024930087
 GameObject:
   m_ObjectHideFlags: 0
@@ -14775,7 +13488,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2024930088}
-  - component: {fileID: 2024930089}
   m_Layer: 9
   m_Name: CR (Main Building)
   m_TagString: Untagged
@@ -14798,18 +13510,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 2.5900002, z: 0}
---- !u!114 &2024930089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2024930087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2025624549
 GameObject:
   m_ObjectHideFlags: 0
@@ -14894,7 +13594,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2033390509}
-  - component: {fileID: 2033390510}
   m_Layer: 9
   m_Name: Gladiola
   m_TagString: Untagged
@@ -14917,18 +13616,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: -4.971, z: 0}
---- !u!114 &2033390510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2033390508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2037248283
 GameObject:
   m_ObjectHideFlags: 0
@@ -15080,7 +13767,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2045858118}
-  - component: {fileID: 2045858119}
   m_Layer: 9
   m_Name: CR (Mahogany)
   m_TagString: Untagged
@@ -15103,18 +13789,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &2045858119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2045858117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2074447555
 GameObject:
   m_ObjectHideFlags: 0
@@ -15124,7 +13798,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2074447556}
-  - component: {fileID: 2074447557}
   m_Layer: 9
   m_Name: CR (Ponsettia)
   m_TagString: Untagged
@@ -15147,18 +13820,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 35.103, z: 0}
---- !u!114 &2074447557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2074447555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2078527768
 GameObject:
   m_ObjectHideFlags: 0
@@ -15690,7 +14351,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2112619006}
-  - component: {fileID: 2112619007}
   m_Layer: 9
   m_Name: Calixto Library
   m_TagString: Untagged
@@ -15713,18 +14373,6 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0.115, z: 0}
---- !u!114 &2112619007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2112619005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2132404677
 GameObject:
   m_ObjectHideFlags: 0
@@ -15884,7 +14532,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2143078737}
-  - component: {fileID: 2143078738}
   m_Layer: 9
   m_Name: Narra
   m_TagString: Untagged
@@ -15907,15 +14554,3 @@ Transform:
   m_Father: {fileID: 790055367}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -0.185, z: 0}
---- !u!114 &2143078738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114140277876839712, guid: f3dd8b41089b801469b4380228e2be75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2143078736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf41b21d92fe2c846b4d3487a64c68a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
