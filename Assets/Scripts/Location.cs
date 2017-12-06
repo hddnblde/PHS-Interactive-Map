@@ -2,15 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Location : MonoBehaviour {
+namespace Map
+{
+	public class Location : ScriptableObject
+	{
+		[SerializeField]
+		private string m_displayedName;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		[SerializeField]
+		private Vector3 m_position;
+
+		#region Properties
+		public string displayedName
+		{
+			get { return m_displayedName; }
+		}
+
+		public Vector3 position
+		{
+			get { return m_position; }
+		}
+		#endregion
 	}
 }
