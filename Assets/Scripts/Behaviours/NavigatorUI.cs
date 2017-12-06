@@ -17,6 +17,12 @@ namespace Navigation
 		private Navigator navigator = null;
 
 		[SerializeField]
+		private SearchUI searchUI;
+
+		[SerializeField]
+		private Transform buildingsContainer = null;
+
+		[SerializeField]
 		private CanvasGroup chooseMarkerPanel = null;
 
 		[SerializeField]
@@ -24,6 +30,9 @@ namespace Navigation
 
 		[SerializeField]
 		private Text markerLabel = null;
+
+		[SerializeField]
+		private InputField searchField = null;
 
 		[Header("Animation")]
 		[SerializeField]
@@ -39,6 +48,11 @@ namespace Navigation
 
 
 		#region MonoBehaviour Implementation
+		private void Awake()
+		{
+			NavigationUtility.CacheLocations(buildingsContainer);
+		}
+
 		private void Start()
 		{
 			ChooseMarkerActivity();
@@ -59,6 +73,9 @@ namespace Navigation
 		#region Events
 		private void RegisterEvents()
 		{
+			if(searchField != null)
+				searchField.onValueChanged.AddListener(SearchForLocation);
+			
 			Navigator.OnActivityChange += OnActivityChange;
 			Navigator.OnMarkerChange += OnMarkerChange;
 			Navigator.OnMarkerAssignment += OnMarkerAssignment;
@@ -66,6 +83,9 @@ namespace Navigation
 
 		private void DeregisterEvents()
 		{
+			if(searchField != null)
+				searchField.onValueChanged.RemoveListener(SearchForLocation);
+			
 			Navigator.OnActivityChange -= OnActivityChange;
 			Navigator.OnMarkerChange -= OnMarkerChange;
 			Navigator.OnMarkerAssignment -= OnMarkerAssignment;
@@ -174,6 +194,20 @@ namespace Navigation
 		{
 			TransitionPanel(chooseMarkerPanelTransition, chooseMarkerPanel, false);
 			TransitionPanel(setMarkerPanelTransition, setMarkerPanel, true);
+		}
+
+		private void SearchForLocation(string location)
+		{
+			if(searchUI == null)
+				return;
+
+			if(location.Length == 0)
+				searchUI.Clear();
+			else
+			{
+				string[] foundLocations = NavigationUtility.FindLocation(location);
+				searchUI.SetItems(foundLocations);
+			}
 		}
 		#endregion
 

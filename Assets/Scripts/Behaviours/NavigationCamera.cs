@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Gestures;
 
 namespace Navigation
 {
@@ -77,8 +78,8 @@ namespace Navigation
 		private const float RaycastDistance = 100f;
 		private const float CameraHeight = 30f;
 		private const float GroundHeight = 0f;
-		private const float MovementSpeedLowerLimit = 2f;
-		private const float MovementSpeedUpperLimit = 8f;
+		private const float MovementSpeedLowerLimit = 1f;
+		private const float MovementSpeedUpperLimit = 10f;
 		private const float ViewLowerLimit = 10f;
 		private const float ViewUpperLimit = 170f;
 		private const float TransitionDuration = 0.25f;
@@ -139,20 +140,20 @@ namespace Navigation
 		#region Gestures Implementation
 		private void RegisterEvents()
 		{
-			TouchGesture.OnDoubleTap += OnDoubleTap;
-			TouchGesture.OnDrag += OnDrag;
-			TouchGesture.OnRotate += OnRotate;
-			TouchGesture.OnPinch += OnPinch;
+			TouchGestures.OnDoubleTap += OnDoubleTap;
+			TouchGestures.OnDrag += OnDrag;
+			TouchGestures.OnRotate += OnRotate;
+			TouchGestures.OnPinch += OnPinch;
 
 			OnFocus += FocusFrame;
 		}
 
 		private void DeregisterEvents()
 		{
-			TouchGesture.OnDoubleTap -= OnDoubleTap;
-			TouchGesture.OnDrag -= OnDrag;
-			TouchGesture.OnRotate -= OnRotate;
-			TouchGesture.OnPinch -= OnPinch;
+			TouchGestures.OnDoubleTap -= OnDoubleTap;
+			TouchGestures.OnDrag -= OnDrag;
+			TouchGestures.OnRotate -= OnRotate;
+			TouchGestures.OnPinch -= OnPinch;
 
 			OnFocus -= FocusFrame;
 		}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Gestures;
 
 namespace Navigation
 {
@@ -21,6 +22,8 @@ namespace Navigation
 
 
 		#region Hidden Fields
+		List<string> listOfBuildings = new List<string>();
+
 		public delegate void ActivityChange(Activity activity);
 		public delegate void MarkerChange(Marker marker);
 		public delegate void MarkerAssignment();
@@ -138,12 +141,12 @@ namespace Navigation
 
 		private void RegisterEvents()
 		{
-			TouchGesture.OnPress += OnPress;
+			TouchGestures.OnPress += OnPress;
 		}
 
 		private void DeregisterEvents()
 		{
-			TouchGesture.OnPress -= OnPress;
+			TouchGestures.OnPress -= OnPress;
 		}
 
 		private void OnPress(Vector2 point)
