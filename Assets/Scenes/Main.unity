@@ -2121,6 +2121,7 @@ GameObject:
   - component: {fileID: 377662696}
   - component: {fileID: 377662697}
   - component: {fileID: 377662694}
+  - component: {fileID: 377662698}
   m_Layer: 0
   m_Name: Navigation
   m_TagString: Untagged
@@ -2251,6 +2252,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   origin: {x: 7, y: 0, z: 0}
   destination: {x: -7, y: 0, z: 0}
+--- !u!114 &377662698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377662693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbfa7c92eb56e54eac5e09374ed744c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383748569
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,23 +26,9 @@ namespace Map
 			get { return new Vector3(m_position.x, 0f, m_position.y); }
 		}
 
-		public string[] tags
+		public string tags
 		{
-			get
-			{
-				char[] delimiter = {';'};
-				string[] t = m_tags.Split(delimiter);
-
-				if(t == null || t.Length == 0)
-					return null;
-				else
-					return t;
-			}
-		}
-
-		public bool HasTag(string keyword)
-		{
-			return m_tags.Contains(keyword);
+			get { return m_tags; }
 		}
 		#endregion
 	}

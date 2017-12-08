@@ -54,27 +54,6 @@ namespace Map
 					return m_landmark.hasRooms;
 			}
 		}
-
-		public void Search(string keyword)
-		{
-			if(!Application.isPlaying)
-				return;
-
-			if(displayedName.Contains(keyword) || HasTag(keyword))
-				MapTable.AddLocation(this as Location);
-			
-			if(hasRooms)
-			{
-				foreach(Room room in rooms)
-				{
-					if(room == null)
-						continue;
-					
-					if(room.displayedName.Contains(keyword) || room.HasTag(keyword))
-						MapTable.AddLocation(room as Location);
-				}
-			}
-		}
 	}
 
 
