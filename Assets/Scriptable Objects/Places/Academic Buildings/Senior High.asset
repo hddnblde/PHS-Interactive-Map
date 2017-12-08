@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Main Library
+  m_Name: Senior High
   m_EditorClassIdentifier: 
-  m_displayedName: Main Library (Gabaldon)
+  m_displayedName: Senior High
   m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 25d8e6bc41604c64489c93351f32d816, type: 2}
+  m_tags: 
+  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
   m_rooms: []

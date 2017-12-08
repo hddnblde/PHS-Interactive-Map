@@ -10,10 +10,13 @@ namespace Map
 		private string m_displayedName;
 
 		[SerializeField]
-		private Vector2 m_position;
+		private Vector3 m_position;
+
+		[SerializeField, Multiline]
+		private string m_tags;
 
 		#region Properties
-		public string displayedName
+		public virtual string displayedName
 		{
 			get { return m_displayedName; }
 		}
@@ -21,6 +24,25 @@ namespace Map
 		public Vector3 position
 		{
 			get { return new Vector3(m_position.x, 0f, m_position.y); }
+		}
+
+		public string[] tags
+		{
+			get
+			{
+				char[] delimiter = {';'};
+				string[] t = m_tags.Split(delimiter);
+
+				if(t == null || t.Length == 0)
+					return null;
+				else
+					return t;
+			}
+		}
+
+		public bool HasTag(string keyword)
+		{
+			return m_tags.Contains(keyword);
 		}
 		#endregion
 	}

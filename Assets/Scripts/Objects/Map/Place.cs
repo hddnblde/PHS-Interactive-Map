@@ -54,22 +54,26 @@ namespace Map
 					return m_landmark.hasRooms;
 			}
 		}
-	
-		public bool FindPlaces(string name, out Location[] places)
+
+		public void Search(string keyword)
 		{
+			if(!Application.isPlaying)
+				return;
+
+			if(displayedName.Contains(keyword) || HasTag(keyword))
+				MapTable.AddLocation(this as Location);
+			
 			if(hasRooms)
-				places = m_rooms.FindAll(l => l.displayedName.Contains(name)).ToArray();
-			else
 			{
-				if(place.displayedName.Contains(name))
+				foreach(Room room in rooms)
 				{
-					places = new Location[1];
-					places[0] = place;
+					if(room == null)
+						continue;
+					
+					if(room.displayedName.Contains(keyword) || room.HasTag(keyword))
+						MapTable.AddLocation(room as Location);
 				}
-				else
-					places = null;
 			}
-			return places != null && places.Length > 0;
 		}
 	}
 
@@ -85,6 +89,7 @@ namespace Map
 		private SerializedProperty
 		displayedNameProperty = null,
 		positionProperty = null,
+		tagsProperty = null,
 		landmarkProperty = null,
 		roomsProperty = null;
 		#endregion
@@ -110,6 +115,7 @@ namespace Map
 			location = target as Place;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			positionProperty = serializedObject.FindProperty("m_position");
+			tagsProperty = serializedObject.FindProperty("m_tags");
 			landmarkProperty = serializedObject.FindProperty("m_landmark");
 			roomsProperty = serializedObject.FindProperty("m_rooms");
 		}
@@ -137,7 +143,10 @@ namespace Map
 				EditorGUILayout.PropertyField(roomsProperty, true);
 				EditorGUI.indentLevel--;
 			}
-			
+
+			EditorGUILayout.Space();
+			EditorGUILayout.PropertyField(tagsProperty);
+
 			if(EditorGUI.EndChangeCheck())
 				serializedObject.ApplyModifiedProperties();
 		}
@@ -152,19 +161,44 @@ namespace Map
 
 			DrawTransformCopyTool();
 			DrawNameCopyTool();
+			SetBuildingNameToRooms();
 		}
 
 		private void DrawTransformCopyTool()
 		{
-			
+
 		}
 
 		private void DrawNameCopyTool()
 		{
-			if(GUILayout.Button("Copy name from this asset."))
+			if(GUILayout.Button("Copy name from this asset"))
 			{
 				displayedNameProperty.stringValue = target.name;
 				serializedObject.ApplyModifiedProperties();
+			}
+		}
+
+		private void SetBuildingNameToRooms()
+		{
+			if(!location.hasRooms || roomsProperty.arraySize == 0)
+				return;
+
+			if(GUILayout.Button("Set Building Name To Rooms"))
+			{
+				Debug.Log(serializedObject.FindProperty("m_rooms[0].m_floor").intValue);
+
+//				for(int i = 0; i < roomsProperty.arraySize; i++)
+//				{
+//					SerializedProperty room = roomsProperty.GetArrayElementAtIndex(i);
+//					Debug.Log(room.serializedObject.FindProperty(");
+//
+////					SerializedProperty buildingName = room.FindPropertyRelative("m_floor");
+//////					Debug.Log(buildingName.serializedObject.targetObject.name);
+////					if(buildingName != null)
+////						buildingName.stringValue = target.name;
+////					else
+////						Debug.Log("Failed");
+//				}
 			}
 		}
 		#endregion
