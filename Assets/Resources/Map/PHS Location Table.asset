@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8fb4d63b90d1d04cba08f88409a8273, type: 3}
+  m_Name: PHS Location Table
+  m_EditorClassIdentifier: 
+  clustersPath: Scriptable Objects/Places
+  clusters:
+  - m_name: Academic Buildings
+    m_places:
+    - {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
+    - {fileID: 11400000, guid: 120bc670a3845b84eb6951680a8f83e5, type: 2}
+    - {fileID: 11400000, guid: a6fff4a7d7ac4cb448c1d3e603a67ade, type: 2}
+    - {fileID: 11400000, guid: 707b7d93ac91e8844a3f7d992325bb6e, type: 2}
+    - {fileID: 11400000, guid: 8bfa3d10b608fbe4a959677f19d78f47, type: 2}
+    - {fileID: 11400000, guid: 49da9f87b99cd394bbeee36d40c875d2, type: 2}
+    - {fileID: 11400000, guid: 407fd195bb360cf469f5343dcd2519c5, type: 2}
+    - {fileID: 11400000, guid: 4932f50f3824f014f8a07da9d05ddb4e, type: 2}
+    - {fileID: 11400000, guid: 079e627e39673ca42af08e84d2369107, type: 2}
+    - {fileID: 11400000, guid: aa5efe08ad6235c45ae90c339ed219bb, type: 2}
+    - {fileID: 11400000, guid: b3cf754b930a106499ca3ea4799549e5, type: 2}
+    - {fileID: 11400000, guid: f1644b7bec17b1548b6b43c656cdd7ca, type: 2}
+    - {fileID: 11400000, guid: ea74767b91a2d3a449a4e706c3d32e91, type: 2}
+    - {fileID: 11400000, guid: 7d5cd5689bdbb2c45bbf1b030e119e11, type: 2}
+    - {fileID: 11400000, guid: 78341668eddbb644685af52f9404948c, type: 2}
+    - {fileID: 11400000, guid: cb9eacdaba4ce1b4596d8120315201c3, type: 2}
+    - {fileID: 11400000, guid: f50fb02393304ed4b8e19d3d1d036328, type: 2}
+    - {fileID: 11400000, guid: c2a668332ccd66742926b507dbd127b8, type: 2}
+    - {fileID: 11400000, guid: d7e2c81002e592b41b7f5f351c5db5ab, type: 2}
+    - {fileID: 11400000, guid: bdd00166f4ed60b4c8fb8d520ee48767, type: 2}
+    - {fileID: 11400000, guid: 058dc6da276aa994690a1e67b2c726d1, type: 2}
+    - {fileID: 11400000, guid: bca218f618f8889438e8eac1a5b33f69, type: 2}
+    - {fileID: 11400000, guid: d3e9326900f78cb45b9d9842534af288, type: 2}
+    - {fileID: 11400000, guid: a258c5aa0e6373444a4166331d058e5a, type: 2}
+    - {fileID: 11400000, guid: b3f64a4930e7e234788382392061ac3a, type: 2}
+    - {fileID: 11400000, guid: f7c3f31c03f634f4ba3f428ceb9422fe, type: 2}
+    - {fileID: 11400000, guid: 8dc58317ba9fa1142bf14ea1fa865c3b, type: 2}
+    - {fileID: 11400000, guid: 154a5b78aebbc7249b026da469bd3fe7, type: 2}
+    - {fileID: 11400000, guid: d39687dc28b9a89468edf52d99e938bb, type: 2}
+    - {fileID: 11400000, guid: f421cebc1155b7340947e2a1d137399c, type: 2}
+    - {fileID: 11400000, guid: 2b8dc06754f56e842ba5443c4048ee17, type: 2}
+    - {fileID: 11400000, guid: b3c4da3dc2b8e5145a688373462213d9, type: 2}
+    - {fileID: 11400000, guid: 5f9e6f2cbe2b82e4faa872cbd065fb51, type: 2}
+    - {fileID: 11400000, guid: 55841e46e149872499e7beff7302eca5, type: 2}
+    - {fileID: 11400000, guid: 4a826cf6cfd0c314d9018b21df213183, type: 2}
+    - {fileID: 11400000, guid: 1b1da64fefac5bd44ad3caf0de5da38a, type: 2}
+    - {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
+    - {fileID: 11400000, guid: 32a4b9c20e650964f800afac2c6bc8e9, type: 2}
+    - {fileID: 11400000, guid: db2d75b4dcec9f445aec547af379aeb2, type: 2}
+    - {fileID: 11400000, guid: 95103e3d44f073f45b1870bb853850af, type: 2}
+    - {fileID: 11400000, guid: d71af1931d9e6284988b0f3d3b14bb23, type: 2}
+  - m_name: Administrative Offices
+    m_places:
+    - {fileID: 11400000, guid: 461b7b81e2ba974478e4d3bd61d613a6, type: 2}
+    - {fileID: 11400000, guid: 962e5719bab036e48a2d20f52c53885d, type: 2}
+    - {fileID: 11400000, guid: d640d90f8a0daca4b91cc4dfe5988230, type: 2}
+    - {fileID: 11400000, guid: 09183beb58ea28544b7aebd2b07a4657, type: 2}
+    - {fileID: 11400000, guid: 690e1a2c744bfbb44af4f996f1db40c7, type: 2}
+    - {fileID: 11400000, guid: c071936594dac0d4ea254d1680b76924, type: 2}
+    - {fileID: 11400000, guid: 22f999a872ff71a4cacce228d7e64957, type: 2}
+    - {fileID: 11400000, guid: c66c88802a7afa0449ffc5bd2b08434f, type: 2}
+    - {fileID: 11400000, guid: 4bdf61cd14ccbed428b140852d7852f7, type: 2}
+    - {fileID: 11400000, guid: 38eb4c2d0cb1a22428985d7ebabe63d2, type: 2}
+    - {fileID: 11400000, guid: f9a99f767d1c0fe44bd6283dc6686736, type: 2}
+    - {fileID: 11400000, guid: 8cee08188a0d4464f8978ca9f3fe6586, type: 2}
+    - {fileID: 11400000, guid: f89c8b996a4e89b4d9f24e6a64c2496b, type: 2}
+    - {fileID: 11400000, guid: 21e094fd12c486844a68cceb4011a2da, type: 2}
+    - {fileID: 11400000, guid: 8635a08a2165960468236071978bf59b, type: 2}
+    - {fileID: 11400000, guid: b06e128db97e60b438e8dafd06aab33b, type: 2}
+    - {fileID: 11400000, guid: 433c24bc79cbe5545bcf9a8cd3e6968d, type: 2}
+  - m_name: Auditoriums
+    m_places:
+    - {fileID: 11400000, guid: acc03841f886bad4180affc3893f76e2, type: 2}
+    - {fileID: 11400000, guid: f2efe722d78f5164e939ed76bd878c81, type: 2}
+  - m_name: Canteens
+    m_places:
+    - {fileID: 11400000, guid: 9d6eeca35196e504f8f90ea0e9f18aea, type: 2}
+    - {fileID: 11400000, guid: 7e6f051ae9d80534986dd9e25204b4a8, type: 2}
+    - {fileID: 11400000, guid: 7b10347b8cdb1e445b83c79a9e7523ac, type: 2}
+  - m_name: Courts
+    m_places:
+    - {fileID: 11400000, guid: 83a23f35d3db9cb49ac44bbf525d6680, type: 2}
+    - {fileID: 11400000, guid: 022dff5991c562f4bb2d80cb3707c7e9, type: 2}
+  - m_name: Faculty Offices
+    m_places:
+    - {fileID: 11400000, guid: 228258229339a9341a5a931f00704388, type: 2}
+    - {fileID: 11400000, guid: df92b28e7d9e4e14e9b04a95b1f12df5, type: 2}
+    - {fileID: 11400000, guid: 27ce2a177f2158f44a71b4bc1ff114b3, type: 2}
+    - {fileID: 11400000, guid: 7c9e799dc688a8c4688af0f2fa2e0782, type: 2}
+    - {fileID: 11400000, guid: 39dc10dc199b1d94e9791afd58ec2ad3, type: 2}
+    - {fileID: 11400000, guid: 4a2ec44641d88bc488c351a92e63a7ab, type: 2}
+    - {fileID: 11400000, guid: 299eaed336e126e41bfa9c95a64fd5f0, type: 2}
+    - {fileID: 11400000, guid: 8e1048d6c788a3a4194135e9157fc2ce, type: 2}
+    - {fileID: 11400000, guid: d86634edee35e8348a3d09e53352ab4d, type: 2}
+  - m_name: Gates
+    m_places:
+    - {fileID: 11400000, guid: 93e52de34cbae024eb54007b4334ff7c, type: 2}
+    - {fileID: 11400000, guid: c5743218706db2c498e3c2ef07a5f07b, type: 2}
+    - {fileID: 11400000, guid: beded8a4f7354334ab157259b590b162, type: 2}
+  - m_name: Health Facilities
+    m_places:
+    - {fileID: 11400000, guid: 06fd250a70420b3489de3dcffced369b, type: 2}
+    - {fileID: 11400000, guid: fca4ddae67740274d907c488adb69a62, type: 2}
+    - {fileID: 11400000, guid: 7b13f65a631dd41469b75854e3f58c29, type: 2}
+  - m_name: Laboratories
+    m_places:
+    - {fileID: 11400000, guid: b66b2e40cc7737140b498c9d603084f8, type: 2}
+    - {fileID: 11400000, guid: 2455a9734b4b4f446b35d91174187e03, type: 2}
+    - {fileID: 11400000, guid: c56aa323eb242564685e709a951a001e, type: 2}
+    - {fileID: 11400000, guid: b6d192b0d7f4e694e8bc84d051dbff9d, type: 2}
+    - {fileID: 11400000, guid: 2b4916f1866c75f43a6a030a436c294f, type: 2}
+    - {fileID: 11400000, guid: 03f6a3abf042aaf45a62da8417f7d69d, type: 2}
+    - {fileID: 11400000, guid: dda535bc44364a74fa9f699138a34a4a, type: 2}
+  - m_name: Libraries
+    m_places:
+    - {fileID: 11400000, guid: 620dc4e2532a0764ab2c06322a1348e5, type: 2}
+    - {fileID: 11400000, guid: 34eb34caed8fa694c966ce915ce77962, type: 2}
+  - m_name: Open Areas
+    m_places:
+    - {fileID: 11400000, guid: 111fdc96852446c49a7c0f0e590639eb, type: 2}
+    - {fileID: 11400000, guid: 08ed21b8ac652a842bdfdfd2d04fc089, type: 2}
+    - {fileID: 11400000, guid: aed269928f2844542ad08cb370f5ceab, type: 2}
+    - {fileID: 11400000, guid: 846d814d3a37b4e4e9b0a6a986ef80cb, type: 2}
+  - m_name: Utility
+    m_places:
+    - {fileID: 11400000, guid: fae32d7cd54c51e44bb1df19c7865b27, type: 2}
+    - {fileID: 11400000, guid: 8b64b5120eba0d444ad286246e81fec1, type: 2}
+    - {fileID: 11400000, guid: cd7d43773d15d634881881a54a4c3a8a, type: 2}
+    - {fileID: 11400000, guid: b44b7d5e7c0c36b4c91fdc6b82d31c7c, type: 2}
+    - {fileID: 11400000, guid: 5442fb4ae00707448a4cab8dab87e89a, type: 2}
+  - m_name: Water Closet
+    m_places:
+    - {fileID: 11400000, guid: 6a853875df0033b4f88365de8c7fb202, type: 2}
+    - {fileID: 11400000, guid: 854177fac24e5bd448b0b9130035f21a, type: 2}
+    - {fileID: 11400000, guid: 251d1db612556fc4394e9786a4f14ea0, type: 2}
+    - {fileID: 11400000, guid: 883654ad6e91786449d3a2075fe86ec9, type: 2}
+    - {fileID: 11400000, guid: ed3a76fcceb97aa42a6d7c2da9cb64c5, type: 2}
+    - {fileID: 11400000, guid: af1ef7c0e9728de439adb3de5ec5a321, type: 2}
+    - {fileID: 11400000, guid: 02e79b11eeec821469633a0927938920, type: 2}
+    - {fileID: 11400000, guid: 95e196b891527ef4dbe4c7013c5aed9a, type: 2}
+    - {fileID: 11400000, guid: 1391ff0fd9ba4bb4b863784b86f2adc9, type: 2}
+    - {fileID: 11400000, guid: b8a914f3928ce1745b75720f40148535, type: 2}
+    - {fileID: 11400000, guid: f1dc597f40d56a14aa93d60048dfb218, type: 2}
+    - {fileID: 11400000, guid: 976bd8dd4d17e42458dc6368a6304eef, type: 2}
+    - {fileID: 11400000, guid: 6b8d21baf6a7f564ebbf27daf651660e, type: 2}
+    - {fileID: 11400000, guid: 5132695add15a784abd3a604c78aa208, type: 2}
+    - {fileID: 11400000, guid: bc2356bb7e2c44d40a690a5e07ee6071, type: 2}
+    - {fileID: 11400000, guid: 7bced4b8b5697d742a0cf23711a7e1c3, type: 2}

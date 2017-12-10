@@ -51,7 +51,7 @@ namespace Map
 				if(m_landmark == null)
 					return false;
 				else
-					return m_landmark.hasRooms;
+					return m_landmark.hasRooms;// && m_rooms != null && m_rooms.Count > 0;
 			}
 		}
 	}
@@ -78,12 +78,44 @@ namespace Map
 		private void OnEnable()
 		{
 			Initialize();
+			SceneView.onSceneGUIDelegate += OnSceneGUI;
+			Undo.undoRedoPerformed += Redo;
+		}
+
+		private void OnDisable()
+		{
+			SceneView.onSceneGUIDelegate -= OnSceneGUI;
+			Undo.undoRedoPerformed -= Redo;
 		}
 
 		public override void OnInspectorGUI()
 		{
 			DrawCustomInspector();
 			DrawTools();
+		}
+
+		private void OnSceneGUI(SceneView sceneView)
+		{
+			EditorGUI.BeginChangeCheck();
+
+			DrawHandle();
+
+			if(EditorGUI.EndChangeCheck())
+			{
+				serializedObject.ApplyModifiedProperties();
+				Repaint();
+			}
+		}
+
+		private void Redo()
+		{
+			DrawHandle();
+			Repaint();
+		}
+
+		private void DrawHandle()
+		{
+			positionProperty.vector3Value = Handles.PositionHandle(positionProperty.vector3Value, Quaternion.identity);
 		}
 		#endregion
 
@@ -164,20 +196,7 @@ namespace Map
 
 			if(GUILayout.Button("Set Building Name To Rooms"))
 			{
-				Debug.Log(serializedObject.FindProperty("m_rooms[0].m_floor").intValue);
-
-//				for(int i = 0; i < roomsProperty.arraySize; i++)
-//				{
-//					SerializedProperty room = roomsProperty.GetArrayElementAtIndex(i);
-//					Debug.Log(room.serializedObject.FindProperty(");
-//
-////					SerializedProperty buildingName = room.FindPropertyRelative("m_floor");
-//////					Debug.Log(buildingName.serializedObject.targetObject.name);
-////					if(buildingName != null)
-////						buildingName.stringValue = target.name;
-////					else
-////						Debug.Log("Failed");
-//				}
+				
 			}
 		}
 		#endregion

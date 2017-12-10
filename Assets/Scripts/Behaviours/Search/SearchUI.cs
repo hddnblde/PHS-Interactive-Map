@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Map;
 
 public class SearchUI : MonoBehaviour
 {
@@ -13,6 +14,43 @@ public class SearchUI : MonoBehaviour
 
 	[SerializeField]
 	private ScrollRect searchView = null;
+
+	private void OnEnable()
+	{
+		RegisterEvents();
+	}
+
+	private void OnDisable()
+	{
+		DeregisterEvents();
+	}
+
+	private void RegisterEvents()
+	{
+		Locator.OnFinishedSearch += OnSearch;
+	}
+
+	private void DeregisterEvents()
+	{
+		Locator.OnFinishedSearch -= OnSearch;
+	}
+
+	private void OnSearch(int matches)
+	{
+		Clear();
+		if(matches == 0)
+			return;
+
+		List<string> matchList = new List<string>();
+
+		for(int i = 0; i < matches; i++)
+		{
+			Location location = Locator.GetLocationFromSearchResult(i);
+			matchList.Add(location.displayedName);
+		}
+
+		SetItems(matchList.ToArray());
+	}
 
 	public void Clear()
 	{
