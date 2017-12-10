@@ -11,6 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7387a43cd6ce6f940bdaf64ba9e12e16, type: 3}
   m_Name: Water Closet
   m_EditorClassIdentifier: 
-  m_hasRooms: 0
   m_icon: {fileID: 0}
-  m_description: 
+  m_tags: 'water; cr; comfort; comfort room;
+
+    comfort rooms; banyo; wc; toilet; toilets;
+
+    wash; washing; washer; wash bin; wash bins;
+
+    faucet; faucets; water closet; water closets;'

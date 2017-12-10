@@ -61,8 +61,8 @@ namespace Map
 		#region Private Methods
 		private void LoadLocationTable()
 		{
-			LocationTable table = Resources.Load<LocationTable>(TablePath);
-			locationTable = table.GetTable();
+//			LocationTable table = Resources.Load<LocationTable>(TablePath);
+//			locationTable = new List<Location>(table.GetTable());
 		}
 
 		private void BeginSearch(string keyword, bool includeTags)

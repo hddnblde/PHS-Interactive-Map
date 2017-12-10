@@ -10,7 +10,7 @@ namespace Map
 		private string m_displayedName;
 
 		[SerializeField]
-		private Vector3 m_position;
+		private Vector3 m_position = Vector3.zero;
 
 		[SerializeField, Multiline]
 		private string m_tags;

@@ -13,75 +13,232 @@ namespace Map
 	[CreateAssetMenu(menuName = "Map/Location Table", order = 3, fileName = "Location Table")]
 	public class LocationTable : ScriptableObject
 	{
-		[SerializeField]
-		private string clustersPath = "";
-
+		#region Sub classes
 		[System.Serializable]
-		public class Cluster
+		private class LandmarkCluster
 		{
-			public Cluster(string name, List<Place> places)
+			public LandmarkCluster(Landmark landmark, List<PlaceCluster> places)
 			{
-				this.m_name = name;
-				this.m_places = places;
+				m_landmark = landmark;
+				m_places = places;
 			}
 
 			[SerializeField]
-			private string m_name = "Group";
+			private Landmark m_landmark = null;
 
 			[SerializeField]
-			private List<Place> m_places = new List<Place>();
+			private List<PlaceCluster> m_places = new List<PlaceCluster>();
 
-			public string name
+			private bool m_cachedTags = false;
+
+			public Landmark landmark
 			{
-				get { return m_name; }
+				get { return m_landmark; }
 			}
 
-			public List<Location> GetLocations()
+			public bool cachedTags
 			{
+				get { return m_cachedTags; }
+			}
+
+			private string tags;
+
+			public void CacheTags()
+			{
+				m_cachedTags = false;
+				tags = m_landmark.tags.Replace(" ", "");
+
 				if(m_places == null || m_places.Count == 0)
-					return null;
+					return;
 
-				List<Location> table = new List<Location>();
-
-				foreach(Place place in m_places)
+				foreach(PlaceCluster place in m_places)
 				{
-					table.Add(place as Location);
-
-					if(place.hasRooms && place.rooms != null && place.rooms.Length > 0)
+					foreach(string tag in place.GetTags())
 					{
-						foreach(Room room in place.rooms)
-							table.Add(room as Location);
+						if(!tags.Contains(tag))
+							tags += tag + ";";
 					}
 				}
 
-				return table;
+				m_cachedTags = true;
 			}
-		}
 
-		[SerializeField]
-		private List<Cluster> clusters = new List<Cluster>();
-
-		public List<Location> GetTable()
-		{
-			if(clusters == null || clusters.Count == 0)
-				return null;
-			
-			List<Location> table = new List<Location>();
-
-			foreach(Cluster cluster in clusters)
+			public Location GetLocation(int index)
 			{
-				List<Location> clusterList = cluster.GetLocations();
+				if(index < 0 || m_places == null || m_places.Count == 0 || index >= m_places.Count)
+					return null;
 
-				if(clusterList != null)
-					table.AddRange(clusterList);
+				return m_places[index].GetLocation(index);
 			}
 
-			return table;
+			public bool HasTag(string keyword)
+			{
+				if(!cachedTags)
+					return false;
+				else
+					return tags.Contains(keyword);
+			}
+		
+			public bool Contains(string keyword)
+			{
+				
+				return false;
+			}
 		}
-	
-		public void SetClusters(List<Cluster> clusters)
+
+		[System.Serializable]
+		private class PlaceCluster
 		{
-			this.clusters = clusters;
+			public PlaceCluster(Place place, List<Room> rooms)
+			{
+				m_place = place;
+				m_rooms = rooms;
+			}
+
+			[SerializeField]
+			private Place m_place = null;
+
+			[SerializeField]
+			private List<Room> m_rooms = new List<Room>();
+
+			private bool HasRooms()
+			{
+				return m_rooms != null && m_rooms.Count > 0;
+			}
+
+			public Location GetLocation(int index)
+			{
+				if(index < 0)
+					return null;
+				else if(!HasRooms())
+				{
+					if(index != null)
+						return null;
+					else
+						return m_place as Location;
+				}
+				else
+				{
+					if((index - 1) >= m_rooms.Count)
+						return null;
+					else
+						return m_rooms[index - 1] as Location;
+				}
+			}
+		
+			public string[] GetTags()
+			{
+				List<string> tags = new List<string>();
+
+				char[] separator = {';'};
+				foreach(string tag in m_place.tags.Replace(" ", "").Split(separator))
+				{
+					if(!tags.Contains(tag))
+						tags.Add(tag);
+				}
+
+				if(m_rooms == null || m_rooms.Count == 0)
+					return tags.ToArray();
+
+				foreach(Room room in m_rooms)
+				{
+					foreach(string tag in room.tags.Replace(" ", "").Split(separator))
+					{
+						if(!tags.Contains(tag))
+							tags.Add(tag);
+					}
+				}
+
+				return tags.ToArray();
+			}
+		}
+
+		private class SearchItem
+		{
+			public SearchItem()
+			{
+				Constructor(0, 0, 0);
+			}
+
+			public SearchItem(int mainIndex, int subIndex)
+			{
+				Constructor(mainIndex, subIndex, 0);
+			}
+
+			public SearchItem(int mainIndex, int subIndex, int strength)
+			{
+				Constructor(mainIndex, subIndex, strength);
+			}
+
+			private void Constructor(int mainIndex, int subIndex, int strength)
+			{
+				m_mainIndex = mainIndex;
+				m_subIndex = subIndex;
+				m_strength = strength;
+			}
+
+			private int m_mainIndex = -1;
+			private int m_subIndex = -1;
+			private int m_strength = 0;
+
+			public int mainIndex
+			{
+				get { return m_mainIndex; }
+			}
+
+			public int subIndex
+			{
+				get { return m_subIndex; }
+			}
+
+			public int strength
+			{
+				get { return m_strength; }
+			}
+		}
+		#endregion
+	
+		[SerializeField]
+		private List<LandmarkCluster> m_landmarkClusters = new List<LandmarkCluster>();
+
+		private List<SearchItem> m_searchResults = new List<SearchItem>();
+
+		public int searchResultCount
+		{
+			get
+			{
+				if(m_searchResults == null)
+					return 0;
+				else
+					return m_searchResults.Count;
+			}
+		}
+
+		public void Search(string keyword)
+		{
+			m_searchResults.Clear();
+
+			if(m_landmarkClusters == null || m_landmarkClusters.Count == 0)
+				return;
+
+			foreach(LandmarkCluster landmarkCluster in m_landmarkClusters)
+			{
+//				landmarkCluster.
+			}
+		}
+
+		public Location GetLocationFromSearch(int index)
+		{
+			if(index < 0 || m_searchResults == null || m_searchResults.Count == 0 || index >= m_searchResults.Count)
+				return null;
+
+			SearchItem searchItem = m_searchResults[index];
+
+			if(m_landmarkClusters == null || m_landmarkClusters.Count == 0 || searchItem.mainIndex >= m_landmarkClusters.Count || searchItem.mainIndex < 0)
+				return null;
+
+			LandmarkCluster landmark = m_landmarkClusters[searchItem.mainIndex];
+			return landmark.GetLocation(searchItem.subIndex);
 		}
 	}
 
@@ -89,68 +246,22 @@ namespace Map
 	[CustomEditor(typeof(LocationTable))]
 	public class LocationTableEditor : Editor
 	{
-		private SerializedProperty
-		clustersPathProperty = null,
-		clustersProperty = null;
-
-		private LocationTable table = null;
-
-		private void OnEnable()
-		{
-			table = target as LocationTable;
-			clustersPathProperty = serializedObject.FindProperty("clustersPath");
-			clustersProperty = serializedObject.FindProperty("clusters");
-		}
-
-		public override void OnInspectorGUI()
-		{
-			if(GUILayout.Button("Find clusters from path"))
-				FindClustersFromPath(clustersPathProperty.stringValue);
-			
-			DrawDefaultInspector();
-		}
-
-		private void FindClustersFromPath(string path)
-		{
-			char separator = '/';
-			string fullApplicationPath = Application.dataPath + separator + path;
-
-			if(!Directory.Exists(fullApplicationPath))
-				return;
-			
-			string[] directories = Directory.GetDirectories(fullApplicationPath);
-
-			clustersProperty.ClearArray();
-			clustersProperty.arraySize = (directories != null && directories.Length > 0 ? directories.Length : 0);
-
-			if(clustersProperty.arraySize == 0)
-			{
-				Debug.Log("Failed to load clusters.");
-				return;
-			}
-
-			List<LocationTable.Cluster> clusters = new List<LocationTable.Cluster>();
-
-			for(int i = 0; i < directories.Length; i++)
-			{
-				string directory = directories[i];
-				string[] assets = Directory.GetFiles(directory, "*.asset");
-
-				List<Place> places = new List<Place>();
-				foreach(string asset in assets)
-				{
-					string assetPath = "Assets/" + asset.Replace(Application.dataPath + "/", "").Replace("\\", "/");
-					Place place = AssetDatabase.LoadAssetAtPath<Place>(assetPath);
-					places.Add(place);
-				}
-
-				string clusterName = directory.Split(Path.DirectorySeparatorChar).Last();
-				LocationTable.Cluster cluster = new LocationTable.Cluster(clusterName, places);
-				clusters.Add(cluster);
-			}
-
-			table.SetClusters(clusters);
-		}
+//		private SerializedProperty landmarkClusterProperty = null;
+//
+//		private void OnEnable()
+//		{
+//			landmarkClusterProperty = serializedObject.FindProperty("m_landmarkCluster");
+//		}
+//
+//		public override void OnInspectorGUI()
+//		{
+//			DrawLandmarkCluster(landmarkClusterProperty);
+//		}
+//
+//		private void DrawLandmarkCluster(SerializedProperty property, bool show)
+//		{
+//			EditorGUILayout.LabelField(property.displayName);
+//		}
 	}
 	#endif
 }

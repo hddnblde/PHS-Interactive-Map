@@ -13,46 +13,19 @@ namespace Map
 	public class Place : Location
 	{
 		[SerializeField]
-		private Landmark m_landmark = null;
+		private Sprite m_thumbnail = null;
 
-		[SerializeField]
-		private List<Room> m_rooms = new List<Room>();
+		[SerializeField, Multiline]
+		private string m_description;
 
-		public Landmark landmark
+		public Sprite thumbnail
 		{
-			get { return m_landmark; }
+			get { return m_thumbnail; }
 		}
 
-		public Location place
+		public string description
 		{
-			get { return this; }
-		}
-
-		public Room[] rooms
-		{
-			get
-			{
-				if(!hasRooms)
-					return null;
-				else
-				{
-					if(m_rooms == null || m_rooms.Count == 0)
-						return null;
-					else
-						return m_rooms.ToArray();
-				}
-			}
-		}
-
-		public bool hasRooms
-		{
-			get
-			{
-				if(m_landmark == null)
-					return false;
-				else
-					return m_landmark.hasRooms;// && m_rooms != null && m_rooms.Count > 0;
-			}
+			get { return description; }
 		}
 	}
 
@@ -69,8 +42,8 @@ namespace Map
 		displayedNameProperty = null,
 		positionProperty = null,
 		tagsProperty = null,
-		landmarkProperty = null,
-		roomsProperty = null;
+		thumbnailProperty = null,
+		descriptionProperty = null;
 		#endregion
 
 
@@ -127,8 +100,8 @@ namespace Map
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
-			landmarkProperty = serializedObject.FindProperty("m_landmark");
-			roomsProperty = serializedObject.FindProperty("m_rooms");
+			thumbnailProperty = serializedObject.FindProperty("m_thumbnail");
+			descriptionProperty = serializedObject.FindProperty("m_description");
 		}
 
 		private void DrawCustomInspector()
@@ -137,23 +110,11 @@ namespace Map
 
 			EditorGUILayout.LabelField("Location", EditorStyles.boldLabel);
 			EditorGUILayout.PropertyField(displayedNameProperty);
+			EditorGUILayout.PropertyField(positionProperty);
 
-			if(!location.hasRooms)
-				EditorGUILayout.PropertyField(positionProperty);
-			else
-			{
-				GUIContent content = new GUIContent("General Position");
-				EditorGUILayout.PropertyField(positionProperty, content);
-			}
-
-			EditorGUILayout.PropertyField(landmarkProperty);
-
-			if(location.hasRooms)
-			{
-				EditorGUI.indentLevel++;
-				EditorGUILayout.PropertyField(roomsProperty, true);
-				EditorGUI.indentLevel--;
-			}
+			EditorGUILayout.LabelField("Place", EditorStyles.boldLabel);
+			EditorGUILayout.PropertyField(thumbnailProperty);
+			EditorGUILayout.PropertyField(descriptionProperty, true);
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);
@@ -170,14 +131,7 @@ namespace Map
 			EditorGUILayout.Space();
 			EditorGUILayout.LabelField("Tools", EditorStyles.boldLabel);
 
-			DrawTransformCopyTool();
 			DrawNameCopyTool();
-			SetBuildingNameToRooms();
-		}
-
-		private void DrawTransformCopyTool()
-		{
-
 		}
 
 		private void DrawNameCopyTool()
@@ -186,17 +140,6 @@ namespace Map
 			{
 				displayedNameProperty.stringValue = target.name;
 				serializedObject.ApplyModifiedProperties();
-			}
-		}
-
-		private void SetBuildingNameToRooms()
-		{
-			if(!location.hasRooms || roomsProperty.arraySize == 0)
-				return;
-
-			if(GUILayout.Button("Set Building Name To Rooms"))
-			{
-				
 			}
 		}
 		#endregion
