@@ -8,27 +8,19 @@ namespace Map
 	public class Landmark : ScriptableObject
 	{
 		[SerializeField]
-		private bool m_hasRooms = false;
-
-		[SerializeField]
 		private Sprite m_icon = null;
 
 		[SerializeField, Multiline]
-		private string m_description = "";
-
-		public bool hasRooms
-		{
-			get { return m_hasRooms; }
-		}
+		private string m_tags = "";
 
 		public Sprite icon
 		{
 			get { return m_icon; }
 		}
 
-		public string description
+		public string tags
 		{
-			get { return m_description; }
+			get { return m_tags; }
 		}
 	}
 }
