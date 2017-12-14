@@ -1,65 +1,75 @@
-﻿[System.Serializable]
-public class SearchKey
+﻿namespace Search
 {
-	public SearchKey()
+	public enum SearchCategory
 	{
-		Constructor(0, 0, 0, 0, 0);
+		Name,
+		MainTag,
+		SubTag
 	}
 
-	public SearchKey(int primaryIndex, int secondaryIndex, int tertiaryIndex)
+	[System.Serializable]
+	public class SearchKey
 	{
-		Constructor(primaryIndex, secondaryIndex, tertiaryIndex, 0, 0);
-	}
+		public SearchKey()
+		{
+			Constructor(0, 0, 0, 0, 0);
+		}
 
-	public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength)
-	{
-		Constructor(mainIndex, subIndex, tertiaryIndex, strength, 0);
-	}
+		public SearchKey(int primaryIndex, int secondaryIndex, int tertiaryIndex)
+		{
+			Constructor(primaryIndex, secondaryIndex, tertiaryIndex, 0, 0);
+		}
 
-	public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength, int nearestPoint)
-	{
-		Constructor(mainIndex, subIndex, tertiaryIndex, strength, nearestPoint);
-	}
+		public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength)
+		{
+			Constructor(mainIndex, subIndex, tertiaryIndex, strength, 0);
+		}
 
-	private void Constructor(int primaryIndex, int secondaryIndex, int tertiaryIndex, int strength, int nearestPoint)
-	{
-		m_primaryIndex = primaryIndex;
-		m_secondaryIndex = secondaryIndex;
-		m_tertiaryIndex = tertiaryIndex;
-		m_strength = strength;
-		m_nearestPoint = nearestPoint;
-	}
+		public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength, int nearestPoint)
+		{
+			Constructor(mainIndex, subIndex, tertiaryIndex, strength, nearestPoint);
+		}
 
-	private int m_primaryIndex = -1;
-	private int m_secondaryIndex = -1;
-	private int m_tertiaryIndex = -1;
-	private int m_strength = 0;
-	private int m_nearestPoint = -1;
+		private void Constructor(int primaryIndex, int secondaryIndex, int tertiaryIndex, int strength, int nearestPoint)
+		{
+			m_primaryIndex = primaryIndex;
+			m_secondaryIndex = secondaryIndex;
+			m_tertiaryIndex = tertiaryIndex;
+			m_strength = strength;
+			m_nearestPoint = nearestPoint;
+		}
 
-	public int primaryIndex
-	{
-		get { return m_primaryIndex; }
-	}
+		private int m_primaryIndex = -1;
+		private int m_secondaryIndex = -1;
+		private int m_tertiaryIndex = -1;
+		private int m_strength = 0;
+		private int m_nearestPoint = -1;
 
-	public int secondaryIndex
-	{
-		get { return m_secondaryIndex; }
-	}
+		public int primaryIndex
+		{
+			get { return m_primaryIndex; }
+		}
 
-	public int tertiaryIndex
-	{
-		get { return m_tertiaryIndex; }
-	}
+		public int secondaryIndex
+		{
+			get { return m_secondaryIndex; }
+		}
 
-	public int strength
-	{
-		get { return m_strength; }
-		set { m_strength = value; }
-	}
+		public int tertiaryIndex
+		{
+			get { return m_tertiaryIndex; }
+		}
 
-	public int nearestPoint
-	{
-		get { return m_nearestPoint; }
-		set { m_nearestPoint = value; }
+		public int strength
+		{
+			get { return m_strength; }
+			set { m_strength = value; }
+		}
+
+		public int nearestPoint
+		{
+			get { return m_nearestPoint; }
+			set { m_nearestPoint = value; }
+		}
 	}
 }

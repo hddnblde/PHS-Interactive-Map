@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
+using Search;
 
 namespace Map
 {
@@ -31,13 +32,6 @@ namespace Map
 		[SerializeField, HideInInspector]
 		private List<PlaceCluster> places = new List<PlaceCluster>();
 
-		private enum Category
-		{
-			Name,
-			MainTag,
-			SubTag
-		}
-
 		public Landmark landmark
 		{
 			get { return m_landmark; }
@@ -59,43 +53,17 @@ namespace Map
 			return places[secondaryIndex].GetLocation(tertiaryIndex);
 		}
 			
-		public void Search(string keyword, int primaryIndex, List<SearchKey> searchKeys, bool deepSearch)
+		public void Search(string keyword, int primaryIndex, List<SearchKey> keys, SearchCategory category, bool deepSearch)
 		{
 			if(!deepSearch)
-			{
-				ShallowSearch(keyword, Category.Name, primaryIndex, searchKeys);
-
-				if(SimilarKeysFound(searchKeys))
-					ShallowSearch(keyword, Category.SubTag, primaryIndex, searchKeys);
-
-				if(searchKeys.Count > 0)
-					return;
-
-				ShallowSearch(keyword, Category.MainTag, primaryIndex, searchKeys);
-
-				if(searchKeys.Count > 0)
-					return;
-			}
+				ShallowSearch(keyword, category, primaryIndex, keys);
 			else
-			{
-				DeepSearch(keyword, Category.Name, primaryIndex, searchKeys);
-
-				if(SimilarKeysFound(searchKeys))
-					DeepSearch(keyword, Category.SubTag, primaryIndex, searchKeys);
-
-				if(searchKeys.Count > 0)
-					return;
-
-				DeepSearch(keyword, Category.MainTag, primaryIndex, searchKeys);
-
-				if(searchKeys.Count > 0)
-					return;
-			}
+				DeepSearch(keyword, category, primaryIndex, keys);
 		}
 
-		private void ShallowSearch(string keyword, Category category, int primaryIndex, List<SearchKey> searchKeys)
+		private void ShallowSearch(string keyword, SearchCategory category, int primaryIndex, List<SearchKey> searchKeys)
 		{
-			if(category == Category.MainTag)
+			if(category == SearchCategory.MainTag)
 			{
 				if(m_tags.ToLower().Contains(' ' + keyword +';'))
 					AddAllKeys(primaryIndex, searchKeys);
@@ -116,11 +84,14 @@ namespace Map
 						{
 							SearchKey item = StrengthenSearchKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
 
-							if(category == Category.Name)
+							if(category == SearchCategory.Name)
 							{
 								char firstLetter = keyword.ToCharArray()[0];
 								List<char> characters = new List<char>(target.ToCharArray());
-								item.nearestPoint = characters.IndexOf(firstLetter);
+								int index = characters.IndexOf(firstLetter);
+
+								if(index > item.nearestPoint)
+									item.nearestPoint = index;
 							}
 						}
 					}
@@ -129,23 +100,29 @@ namespace Map
 			}
 		}
 
-		private void DeepSearch(string keyword, Category category, int primaryIndex, List<SearchKey> searchKeys)
+		private void DeepSearch(string keyword, SearchCategory category, int primaryIndex, List<SearchKey> searchKeys)
 		{
 			foreach(string word in keyword.Split(new char[] {' '}))
+			{
+				int numericValue;
+				if(int.TryParse(word, out numericValue))
+					continue;
+				
 				ShallowSearch(word, category, primaryIndex, searchKeys);
+			}
 		}
 		#endregion
 
 
 		#region Helpers
-		private void GetTargetAndKeyFromLocationByCategory(Location location, Category category, string keyword, ref string target, ref string key)
+		private void GetTargetAndKeyFromLocationByCategory(Location location, SearchCategory category, string keyword, ref string target, ref string key)
 		{
-			if(category == Category.Name)
+			if(category == SearchCategory.Name)
 			{
 				target = location.displayedName.ToLower();
 				key = keyword;
 			}
-			else if(category == Category.SubTag)
+			else if(category == SearchCategory.SubTag)
 			{
 				target = ' ' + location.tags.ToLower();
 				key = ' ' + keyword + ';';
@@ -186,11 +163,6 @@ namespace Map
 		private bool KeyExists(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
 		{
 			return FindKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys) != null;
-		}
-
-		private bool SimilarKeysFound(List<SearchKey> searchKeys)
-		{
-			return true;
 		}
 		#endregion
 

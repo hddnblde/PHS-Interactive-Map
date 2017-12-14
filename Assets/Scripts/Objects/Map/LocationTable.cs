@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Text;
+using Search;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -65,24 +66,35 @@ namespace Map
 			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
 				return;
 
+			SearchByCategory(keyword, SearchCategory.Name, false);
+
+			if(SimilarKeysFound() || searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.SubTag, false);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.MainTag, false);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.Name, true);
+
+			if(SimilarKeysFound() || searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.SubTag, true);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.MainTag, true);
+
+			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.primaryIndex).ToList();
+
+			PrintOutAllResults();
+		}
+
+		private void SearchByCategory(string keyword, SearchCategory category, bool deepSearch)
+		{
 			for(int i = 0; i < landmarkClusters.Count; i++)
 			{
 				LandmarkCluster landmarkCluster = landmarkClusters[i];
-				landmarkCluster.Search(keyword, i, searchKeys, false);
+				landmarkCluster.Search(keyword, i, searchKeys, category, deepSearch);
 			}
-
-			if(searchResultCount == 0)
-			{
-				for(int i = 0; i < landmarkClusters.Count; i++)
-				{
-					LandmarkCluster landmarkCluster = landmarkClusters[i];
-					landmarkCluster.Search(keyword, i, searchKeys, true);
-				}
-			}
-
-			searchKeys = searchKeys.OrderBy(s => s.nearestPoint).OrderByDescending(s => s.strength).ToList();
-
-			PrintOutAllResults();
 		}
 
 		public Location GetLocationFromSearch(int index)
@@ -103,6 +115,37 @@ namespace Map
 		{
 			for(int i = 0; i < searchResultCount; i++)
 				Debug.Log(GetLocationFromSearch(i).displayedName + ((" strength : @s  nearest : @n").Replace("@s", searchKeys[i].strength.ToString()).Replace("@n", searchKeys[i].nearestPoint.ToString())));
+		}
+
+		private bool SimilarKeysFound()
+		{
+			bool similarKeyFound = false;
+			char[] splitter = " ".ToCharArray();
+			for(int i = 0; i < searchResultCount; i++)
+			{
+				string firstString = GetLocationFromSearch(i).displayedName.ToLower();
+				for(int j = 0; j < searchResultCount; i++)
+				{
+					if(j == i)
+						continue;
+
+					string secondString = GetLocationFromSearch(j).displayedName.ToLower();
+
+					string[] split1 = firstString.Split(splitter);
+					string[] split2 = secondString.Split(splitter);
+
+					List<string> common = split1.Intersect(split2).ToList();
+
+					similarKeyFound = common.Count > 0;
+					if(similarKeyFound)
+						break;
+				}
+
+				if(similarKeyFound)
+					break;
+			}
+
+			return similarKeyFound;
 		}
 		#endregion
 
