@@ -18,16 +18,16 @@ namespace Map
 		[SerializeField]
 		private List<LandmarkCluster> landmarkClusters = new List<LandmarkCluster>();
 
-		private List<SearchItem> searchResults = new List<SearchItem>();
+		private List<SearchKey> searchKeys = new List<SearchKey>();
 
 		public int searchResultCount
 		{
 			get
 			{
-				if(searchResults == null)
+				if(searchKeys == null)
 					return 0;
 				else
-					return searchResults.Count;
+					return searchKeys.Count;
 			}
 		}
 
@@ -57,9 +57,9 @@ namespace Map
 			return stringBuilder.ToString().TrimEnd(' ');
 		}
 
-		public void Search(string keyword)
+		public void Search(string keyword, bool deepSearch = false)
 		{
-			searchResults.Clear();
+			searchKeys.Clear();
 			keyword = RemoveMultipleWhiteSpaces(keyword);
 
 			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
@@ -68,20 +68,29 @@ namespace Map
 			for(int i = 0; i < landmarkClusters.Count; i++)
 			{
 				LandmarkCluster landmarkCluster = landmarkClusters[i];
-				landmarkCluster.Search(i, keyword, searchResults);
+				landmarkCluster.Search(keyword, i, searchKeys, false);
 			}
 
-			searchResults = searchResults.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).ToList();
+			if(searchResultCount == 0)
+			{
+				for(int i = 0; i < landmarkClusters.Count; i++)
+				{
+					LandmarkCluster landmarkCluster = landmarkClusters[i];
+					landmarkCluster.Search(keyword, i, searchKeys, true);
+				}
+			}
+
+			searchKeys = searchKeys.OrderBy(s => s.nearestPoint).OrderByDescending(s => s.strength).ToList();
 
 			PrintOutAllResults();
 		}
 
 		public Location GetLocationFromSearch(int index)
 		{
-			if(index < 0 || searchResults == null || searchResults.Count == 0 || index >= searchResults.Count)
+			if(index < 0 || searchKeys == null || searchKeys.Count == 0 || index >= searchKeys.Count)
 				return null;
 
-			SearchItem searchItem = searchResults[index];
+			SearchKey searchItem = searchKeys[index];
 
 			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.primaryIndex >= landmarkClusters.Count || searchItem.primaryIndex < 0)
 				return null;
@@ -93,7 +102,7 @@ namespace Map
 		private void PrintOutAllResults()
 		{
 			for(int i = 0; i < searchResultCount; i++)
-				Debug.Log(GetLocationFromSearch(i).displayedName + ((" strength : @s  nearest : @n").Replace("@s", searchResults[i].strength.ToString()).Replace("@n", searchResults[i].nearestPoint.ToString())));
+				Debug.Log(GetLocationFromSearch(i).displayedName + ((" strength : @s  nearest : @n").Replace("@s", searchKeys[i].strength.ToString()).Replace("@n", searchKeys[i].nearestPoint.ToString())));
 		}
 		#endregion
 

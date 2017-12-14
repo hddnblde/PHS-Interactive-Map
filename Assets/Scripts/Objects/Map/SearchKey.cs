@@ -1,21 +1,22 @@
-﻿public class SearchItem
+﻿[System.Serializable]
+public class SearchKey
 {
-	public SearchItem()
+	public SearchKey()
 	{
 		Constructor(0, 0, 0, 0, 0);
 	}
 
-	public SearchItem(int primaryIndex, int secondaryIndex, int tertiaryIndex)
+	public SearchKey(int primaryIndex, int secondaryIndex, int tertiaryIndex)
 	{
 		Constructor(primaryIndex, secondaryIndex, tertiaryIndex, 0, 0);
 	}
 
-	public SearchItem(int mainIndex, int subIndex, int tertiaryIndex, int strength)
+	public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength)
 	{
 		Constructor(mainIndex, subIndex, tertiaryIndex, strength, 0);
 	}
 
-	public SearchItem(int mainIndex, int subIndex, int tertiaryIndex, int strength, int nearestPoint)
+	public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength, int nearestPoint)
 	{
 		Constructor(mainIndex, subIndex, tertiaryIndex, strength, nearestPoint);
 	}

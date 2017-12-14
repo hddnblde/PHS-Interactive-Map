@@ -12873,7 +12873,7 @@ MonoBehaviour:
       rooms: []
   - m_landmark: {fileID: 11400000, guid: a9cb1a81734147b47be51874be25c8f1, type: 2}
     m_names: "canteen 1\r\ncanteen 2\r\ncanteen 3\r"
-    m_tags: 
+    m_tags: rose; ia; industrial; industrial arts; gerbera;
     cacheCount: 3
     places:
     - place: {fileID: 11400000, guid: 9d6eeca35196e504f8f90ea0e9f18aea, type: 2}
@@ -13032,7 +13032,7 @@ MonoBehaviour:
   - m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
     m_names: "gladiola lab\r\nhome economics lab\r\nindustrial arts\r\nmapeh multipurpose\r\nshakespearean
       hall\r\nteatro\r\nvalues multipurpose\r"
-    m_tags: 
+    m_tags: ia;
     cacheCount: 7
     places:
     - place: {fileID: 11400000, guid: b66b2e40cc7737140b498c9d603084f8, type: 2}

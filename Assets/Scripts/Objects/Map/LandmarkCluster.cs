@@ -31,6 +31,13 @@ namespace Map
 		[SerializeField, HideInInspector]
 		private List<PlaceCluster> places = new List<PlaceCluster>();
 
+		private enum Category
+		{
+			Name,
+			MainTag,
+			SubTag
+		}
+
 		public Landmark landmark
 		{
 			get { return m_landmark; }
@@ -51,127 +58,139 @@ namespace Map
 
 			return places[secondaryIndex].GetLocation(tertiaryIndex);
 		}
-
-		public void Search(int primaryIndex, string keyword, List<SearchItem> results)
+			
+		public void Search(string keyword, int primaryIndex, List<SearchKey> searchKeys, bool deepSearch)
 		{
-			if(ContainsInMainTags(keyword))
+			if(!deepSearch)
 			{
-				for(int i = 0; i < places.Count; i++)
-				{
-					PlaceCluster place = places[i];
+				ShallowSearch(keyword, Category.Name, primaryIndex, searchKeys);
 
-					for(int j = 0; j < place.count; j++)
-					{
-						SearchItem item = new SearchItem(primaryIndex, i, j, 1);
-						results.Add(item);
-					}
-				}
+				if(SimilarKeysFound(searchKeys))
+					ShallowSearch(keyword, Category.SubTag, primaryIndex, searchKeys);
+
+				if(searchKeys.Count > 0)
+					return;
+
+				ShallowSearch(keyword, Category.MainTag, primaryIndex, searchKeys);
+
+				if(searchKeys.Count > 0)
+					return;
 			}
+			else
+			{
+				DeepSearch(keyword, Category.Name, primaryIndex, searchKeys);
 
-			FindTargetInKeyword(keyword, primaryIndex, results, true);
-			FindTargetInKeyword(keyword, primaryIndex, results, false);
+				if(SimilarKeysFound(searchKeys))
+					DeepSearch(keyword, Category.SubTag, primaryIndex, searchKeys);
+
+				if(searchKeys.Count > 0)
+					return;
+
+				DeepSearch(keyword, Category.MainTag, primaryIndex, searchKeys);
+
+				if(searchKeys.Count > 0)
+					return;
+			}
 		}
 
-
-		#region Helpers
-		private void FindTargetInKeyword(string keyword, int primaryIndex, List<SearchItem> results, bool isTag)
+		private void ShallowSearch(string keyword, Category category, int primaryIndex, List<SearchKey> searchKeys)
 		{
-			bool contains = (isTag ? ContainsInSubTags(ref keyword) : ContainsInNames(ref keyword));
-
-			if(contains)
+			if(category == Category.MainTag)
 			{
-				foreach(string word in keyword.Split(" ".ToCharArray()))
+				if(m_tags.ToLower().Contains(' ' + keyword +';'))
+					AddAllKeys(primaryIndex, searchKeys);
+			}
+			else
+			{
+				string target = "";
+				string key = "";
+
+				for(int secondaryIndex = 0; secondaryIndex < places.Count; secondaryIndex++)
 				{
-					for(int secondaryIndex = 0; secondaryIndex < places.Count; secondaryIndex++)
+					PlaceCluster place = places[secondaryIndex];
+					for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
 					{
-						PlaceCluster place = places[secondaryIndex];
+						GetTargetAndKeyFromLocationByCategory(place.GetLocation(tertiaryIndex), category, keyword, ref target, ref key);
 
-						for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
+						if(target.Contains(key))
 						{
-							Location location = place.GetLocation(tertiaryIndex);
+							SearchKey item = StrengthenSearchKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
 
-							string target = (isTag ? (' ' + location.tags) : location.displayedName).ToLower();
-							string key = word;
-
-							if(isTag)
-								key = " " + key + ";";
-
-							if(target.Contains(key))
+							if(category == Category.Name)
 							{
-								SearchItem item = results.Find(r => r.primaryIndex == primaryIndex && r.secondaryIndex == secondaryIndex && r.tertiaryIndex == tertiaryIndex);
-
-								if(item == null)
-								{
-									item = new SearchItem(primaryIndex, secondaryIndex, tertiaryIndex);
-									results.Add(item);
-								}
-
-								item.strength++;
-
-								if(!isTag)
-								{
-									char firstLetter = word.ToCharArray()[0];
-									List<char> characters = new List<char>(target.ToCharArray());
-									item.nearestPoint = characters.IndexOf(firstLetter);
-								}
+								char firstLetter = keyword.ToCharArray()[0];
+								List<char> characters = new List<char>(target.ToCharArray());
+								item.nearestPoint = characters.IndexOf(firstLetter);
 							}
 						}
 					}
 				}
+
 			}
 		}
 
-		private bool ContainsInNames(ref string keyword)
+		private void DeepSearch(string keyword, Category category, int primaryIndex, List<SearchKey> searchKeys)
 		{
-			bool foundName = false;
-			StringBuilder matchBuilder = new StringBuilder();
-
 			foreach(string word in keyword.Split(new char[] {' '}))
+				ShallowSearch(word, category, primaryIndex, searchKeys);
+		}
+		#endregion
+
+
+		#region Helpers
+		private void GetTargetAndKeyFromLocationByCategory(Location location, Category category, string keyword, ref string target, ref string key)
+		{
+			if(category == Category.Name)
 			{
-				foundName = m_names.Contains(word);
-
-				if(foundName)
-					matchBuilder.Append(word + ' ');
+				target = location.displayedName.ToLower();
+				key = keyword;
 			}
-
-			if(foundName)
-				keyword = matchBuilder.ToString().TrimEnd(' ');
-
-			return foundName;
+			else if(category == Category.SubTag)
+			{
+				target = ' ' + location.tags.ToLower();
+				key = ' ' + keyword + ';';
+			}
 		}
 
-		private bool ContainsInMainTags(string keyword)
+		private void AddAllKeys(int primaryIndex, List<SearchKey> searchKeys)
 		{
-			bool foundTag = false;
-			foreach(string word in keyword.Split(new char[] {' '}))
+			for(int secondaryIndex = 0; secondaryIndex < places.Count; secondaryIndex++)
 			{
-				string tags = " " + m_landmark.tags;
-				foundTag = tags.Contains(word + ';');
+				PlaceCluster place = places[secondaryIndex];
 
-				if(foundTag)
-					break;
+				for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
+					StrengthenSearchKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
 			}
-
-			return foundTag;
 		}
 
-		private bool ContainsInSubTags(ref string keyword)
+		private SearchKey StrengthenSearchKey(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys, int increment = 1)
 		{
-			bool foundTag = false;
-			StringBuilder matchBuilder = new StringBuilder();
-			foreach(string word in keyword.Split(new char[] {' '}))
-			{
-				string tags = " " + m_tags;
-				foundTag = tags.Contains(" " + word + ";");
+			SearchKey item = FindKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
 
-				if(foundTag)
-					matchBuilder.Append(word + ' ');
+			if(item == null)
+			{
+				item = new SearchKey(primaryIndex, secondaryIndex, tertiaryIndex);
+				searchKeys.Add(item);
 			}
 
-			if(foundTag)
-				keyword = matchBuilder.ToString().TrimEnd(' ');
+			item.strength += increment;
+			return item;
+		}
 
-			return foundTag;
+		private SearchKey FindKey(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
+		{
+			SearchKey key = searchKeys.Find(r => r.primaryIndex == primaryIndex && r.secondaryIndex == secondaryIndex && r.tertiaryIndex == tertiaryIndex);
+			return key;
+		}
+
+		private bool KeyExists(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
+		{
+			return FindKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys) != null;
+		}
+
+		private bool SimilarKeysFound(List<SearchKey> searchKeys)
+		{
+			return true;
 		}
 		#endregion
 
@@ -217,9 +236,8 @@ namespace Map
 			foreach(string item in stringList)
 				stringBuilder.Append(item + ' ');
 
-			return stringBuilder.ToString().TrimEnd(' ');
+			return stringBuilder.ToString().TrimEnd(' ').TrimStart(' ');
 		}
 		#endif
-		#endregion
 	}
 }
