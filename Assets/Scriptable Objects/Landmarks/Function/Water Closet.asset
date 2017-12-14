@@ -14,8 +14,8 @@ MonoBehaviour:
   m_icon: {fileID: 0}
   m_tags: 'water; cr; comfort; comfort room;
 
-    comfort rooms; banyo; wc; toilet; toilets;
+    cr; banyo; wc; toilet; toilets;
 
-    wash; washing; washer; wash bin; wash bins;
+    wash; washing; washer; faucet; faucets;
 
-    faucet; faucets; water closet; water closets;'
+    water;'

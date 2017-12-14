@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: Industrial Arts
   m_position: {x: 0, y: 0, z: 0}
-  m_tags: 
-  m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-  m_rooms: []
+  m_tags: ia;
+  m_thumbnail: {fileID: 0}
+  m_description: 

@@ -1,63 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using System.Text;
 
 #if UNITY_EDITOR
 using UnityEditor;
 using System.IO;
-using System.Linq;
 #endif
 
 namespace Map
 {
-	[CreateAssetMenu(menuName = "Map/Location Table", order = 3, fileName = "Location Table")]
-	public class LocationTable : ScriptableObject
+	[DisallowMultipleComponent]
+	public class LocationTable : MonoBehaviour
 	{
-		private class SearchItem
-		{
-			public SearchItem()
-			{
-				Constructor(0, 0, 0);
-			}
-
-			public SearchItem(int mainIndex, int subIndex)
-			{
-				Constructor(mainIndex, subIndex, 0);
-			}
-
-			public SearchItem(int mainIndex, int subIndex, int strength)
-			{
-				Constructor(mainIndex, subIndex, strength);
-			}
-
-			private void Constructor(int mainIndex, int subIndex, int strength)
-			{
-				m_mainIndex = mainIndex;
-				m_subIndex = subIndex;
-				m_strength = strength;
-			}
-
-			private int m_mainIndex = -1;
-			private int m_subIndex = -1;
-			private int m_strength = 0;
-
-			public int mainIndex
-			{
-				get { return m_mainIndex; }
-			}
-
-			public int subIndex
-			{
-				get { return m_subIndex; }
-			}
-
-			public int strength
-			{
-				get { return m_strength; }
-			}
-		}
-
 		#region Fields
 		[SerializeField]
 		private List<LandmarkCluster> landmarkClusters = new List<LandmarkCluster>();
@@ -90,29 +46,34 @@ namespace Map
 
 
 		#region Functions
-		public void SetLandmarkClusters(List<LandmarkCluster> landmarkClusters)
+		private string RemoveMultipleWhiteSpaces(string s)
 		{
-			this.landmarkClusters = landmarkClusters;
+			string[] words = s.Split(" ".ToCharArray(), System.StringSplitOptions.RemoveEmptyEntries);
+			StringBuilder stringBuilder = new StringBuilder();
+
+			foreach(string word in words)
+				stringBuilder.Append(word + ' ');
+
+			return stringBuilder.ToString().TrimEnd(' ');
 		}
 
 		public void Search(string keyword)
 		{
 			searchResults.Clear();
+			keyword = RemoveMultipleWhiteSpaces(keyword);
 
-			if(landmarkClusters == null || landmarkClusters.Count == 0)
+			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
 				return;
 
-			string[] keywords = keyword.Replace(' ', ',').Split(new char[] {','});
-
-			foreach(string word in keywords)
+			for(int i = 0; i < landmarkClusters.Count; i++)
 			{
-				
+				LandmarkCluster landmarkCluster = landmarkClusters[i];
+				landmarkCluster.Search(i, keyword, searchResults);
 			}
 
-			foreach(LandmarkCluster landmarkCluster in landmarkClusters)
-			{
-//				landmarkCluster.
-			}
+			searchResults = searchResults.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).ToList();
+
+			PrintOutAllResults();
 		}
 
 		public Location GetLocationFromSearch(int index)
@@ -122,139 +83,27 @@ namespace Map
 
 			SearchItem searchItem = searchResults[index];
 
-			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.mainIndex >= landmarkClusters.Count || searchItem.mainIndex < 0)
+			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.primaryIndex >= landmarkClusters.Count || searchItem.primaryIndex < 0)
 				return null;
 
-			LandmarkCluster landmark = landmarkClusters[searchItem.mainIndex];
-			return landmark.GetLocation(searchItem.subIndex);
+			LandmarkCluster landmark = landmarkClusters[searchItem.primaryIndex];
+			return landmark.GetLocation(searchItem.secondaryIndex, searchItem.tertiaryIndex);
 		}
 
-		private void SearchInNames(string keyword)
+		private void PrintOutAllResults()
 		{
-			
-		}
-
-		private void SearchInTags(string keyword)
-		{
-			
-		}
-		#endregion
-	}
-
-	[System.Serializable]
-	public class LandmarkCluster
-	{
-		#region Fields
-		public LandmarkCluster(Landmark landmark, List<PlaceCluster> places)
-		{
-			m_landmark = landmark;
-			this.places = places;
-		}
-
-		[SerializeField, HideInInspector]
-		private Landmark m_landmark = null;
-
-		[SerializeField, Multiline]
-		private string cachedPlaces;
-
-		[SerializeField, HideInInspector]
-		private int cacheCount = 0;
-
-		[SerializeField, HideInInspector]
-		private List<PlaceCluster> places = new List<PlaceCluster>();
-
-		public Landmark landmark
-		{
-			get { return m_landmark; }
-		}
-
-		public int count
-		{
-			get { return cacheCount; } 
+			for(int i = 0; i < searchResultCount; i++)
+				Debug.Log(GetLocationFromSearch(i).displayedName + ((" strength : @s  nearest : @n").Replace("@s", searchResults[i].strength.ToString()).Replace("@n", searchResults[i].nearestPoint.ToString())));
 		}
 		#endregion
 
 
-		#region Functions
-		public Location GetLocation(int index)
+		#if UNITY_EDITOR
+		public void SetLandmarkClusters(List<LandmarkCluster> landmarkClusters)
 		{
-			if(index < 0 || places == null || places.Count == 0 || index >= places.Count)
-				return null;
-
-			return places[index].GetLocation(index);
+			this.landmarkClusters = landmarkClusters;
 		}
-
-		public void CachePlaces()
-		{
-			StringBuilder stringBuilder = new StringBuilder();
-			cacheCount = 0;
-
-			foreach(PlaceCluster place in places)
-			{
-				for(int i = 0; i < place.count; i++)
-				{
-					string name = place.GetLocation(i).displayedName;
-					stringBuilder.AppendLine(name);
-					cacheCount++;
-				}
-			}
-
-			cachedPlaces = stringBuilder.ToString().TrimEnd('\n');
-		}
-		#endregion
-	}
-
-	[System.Serializable]
-	public class PlaceCluster
-	{
-		#region Fields
-		public PlaceCluster(Place place, List<Room> rooms)
-		{
-			this.place = place;
-			this.rooms = rooms;
-		}
-
-		[SerializeField]
-		private Place place = null;
-
-		[SerializeField]
-		private List<Room> rooms = new List<Room>();
-
-		public int count
-		{
-			get
-			{
-				int placeCount = (place != null ? 1 : 0);
-				if(HasRooms())
-					return rooms.Count + placeCount;
-				else
-					return placeCount;
-			}
-		}
-		#endregion
-
-
-		#region Functions
-		private bool HasRooms()
-		{
-			return rooms != null && rooms.Count > 0;
-		}
-
-		public Location GetLocation(int index)
-		{
-			if(index < 0)
-				return null;
-			else if(!HasRooms())
-				return place as Location;
-			else
-			{
-				if((index - 1) >= rooms.Count)
-					return null;
-				else
-					return rooms[index - 1] as Location;
-			}
-		}
-		#endregion
+		#endif
 	}
 
 	#if UNITY_EDITOR
@@ -266,7 +115,8 @@ namespace Map
 		private string
 		landmarkPath,
 		placesPath,
-		roomsPath;
+		roomsPath,
+		searchKeyword;
 
 		private LocationTable locationTable = null;
 
@@ -281,11 +131,11 @@ namespace Map
 
 		public override void OnInspectorGUI()
 		{
-			DrawLandmarks();
+			DrawInspector();
 			DrawTools();
 		}
 
-		private void DrawLandmarks()
+		private void DrawInspector()
 		{
 			EditorGUI.BeginChangeCheck();
 
@@ -312,7 +162,7 @@ namespace Map
 
 			if(EditorGUI.EndChangeCheck())
 				SavePrefs();
-			
+
 			EditorGUILayout.HelpBox("Location Count : " + locationTable.locationCount, MessageType.Info);
 		}
 
@@ -322,25 +172,46 @@ namespace Map
 			EditorGUI.BeginChangeCheck();
 
 			EditorGUILayout.LabelField("Tools", EditorStyles.boldLabel);
-			EditorGUILayout.LabelField("Paths");
 
-			EditorGUI.indentLevel++;
-			landmarkPath = EditorGUILayout.TextField("Landmarks", landmarkPath);
-			placesPath = EditorGUILayout.TextField("Places", placesPath);
-			roomsPath = EditorGUILayout.TextField("Rooms", roomsPath);
-			EditorGUI.indentLevel--;
+			if(Application.isPlaying)
+			{
+				EditorGUILayout.BeginHorizontal();
+
+				if(GUILayout.Button("Search"))
+					locationTable.Search(searchKeyword);
+				
+				searchKeyword = EditorGUILayout.TextField(searchKeyword);
+
+				if(GUILayout.Button("Clear"))
+				{
+					searchKeyword = "";
+					EditorGUILayout.TextField(searchKeyword);
+				}
+
+				EditorGUILayout.EndHorizontal();
+			}
+			else
+			{
+				EditorGUILayout.LabelField("Paths");
+
+				EditorGUI.indentLevel++;
+				landmarkPath = EditorGUILayout.TextField("Landmarks", landmarkPath);
+				placesPath = EditorGUILayout.TextField("Places", placesPath);
+				roomsPath = EditorGUILayout.TextField("Rooms", roomsPath);
+				EditorGUI.indentLevel--;
+
+				if(GUILayout.Button("Load Places"))
+				{
+					locationTable.SetLandmarkClusters(GetPlaces());
+					serializedObject.ApplyModifiedProperties();
+					serializedObject.Update();
+				}
+			}
 
 			if(EditorGUI.EndChangeCheck())
 				SavePrefs();
 
 			EditorGUILayout.Space();
-
-			if(GUILayout.Button("Load Places"))
-			{
-				locationTable.SetLandmarkClusters(GetPlaces());
-				serializedObject.ApplyModifiedProperties();
-				serializedObject.Update();
-			}
 		}
 
 		private void LoadPrefs()
@@ -349,6 +220,7 @@ namespace Map
 			placesPath = EditorPrefs.GetString("Location_PlacesPath", "Assets/Scriptable Objects/Places");
 			roomsPath = EditorPrefs.GetString("Location_RoomsPath", "Assets/Scriptable Objects/Rooms");
 			foldout = EditorPrefs.GetBool("Location_Folout", false);
+			searchKeyword = EditorPrefs.GetString("Location_SearchKeyword", "");
 		}
 
 		private void SavePrefs()
@@ -357,6 +229,7 @@ namespace Map
 			EditorPrefs.SetString("Location_PlacesPath", placesPath);
 			EditorPrefs.SetString("Location_RoomsPath", roomsPath);
 			EditorPrefs.SetBool("Location_Folout", foldout);
+			EditorPrefs.SetString("Location_SearchKeyword", searchKeyword);
 		}
 
 		private List<LandmarkCluster> GetPlaces()
