@@ -65,7 +65,7 @@ namespace Map
 		{
 			if(category == SearchCategory.MainTag)
 			{
-				if(m_tags.ToLower().Contains(' ' + keyword +';'))
+				if((' ' + m_landmark.tags.ToLower()).Contains(' ' + keyword +';'))
 					AddAllKeys(primaryIndex, searchKeys);
 			}
 			else
@@ -78,17 +78,16 @@ namespace Map
 					PlaceCluster place = places[secondaryIndex];
 					for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
 					{
-						GetTargetAndKeyFromLocationByCategory(place.GetLocation(tertiaryIndex), category, keyword, ref target, ref key);
+						GetTargetAndKeyFromLocationByCategory(place.GetLocation(tertiaryIndex), category, keyword, ref target, ref key);;
 
 						if(target.Contains(key))
 						{
 							SearchKey item = StrengthenSearchKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
-
 							if(category == SearchCategory.Name)
 							{
 								char firstLetter = keyword.ToCharArray()[0];
 								List<char> characters = new List<char>(target.ToCharArray());
-								int index = characters.IndexOf(firstLetter);
+								int index = characters.IndexOf(firstLetter) - 1;
 
 								if(index > item.nearestPoint)
 									item.nearestPoint = index;

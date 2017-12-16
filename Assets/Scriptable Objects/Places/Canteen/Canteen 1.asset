@@ -13,5 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: Canteen 1
   m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: a9cb1a81734147b47be51874be25c8f1, type: 2}
-  m_rooms: []
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: Canteen 1

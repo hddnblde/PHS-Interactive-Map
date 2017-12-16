@@ -25,7 +25,7 @@ namespace Map
 
 		public string description
 		{
-			get { return description; }
+			get { return m_description; }
 		}
 	}
 

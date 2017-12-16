@@ -13,9 +13,12 @@ using System.IO;
 namespace Map
 {
 	[DisallowMultipleComponent]
-	public class LocationTable : MonoBehaviour
+	public class LocationDatabase : MonoBehaviour
 	{
 		#region Fields
+		public delegate void ResultEvent(int count);
+		public event ResultEvent OnResult;
+
 		[SerializeField]
 		private List<LandmarkCluster> landmarkClusters = new List<LandmarkCluster>();
 
@@ -47,6 +50,63 @@ namespace Map
 
 
 		#region Functions
+		public Location GetLocationFromSearch(int index)
+		{
+			Landmark landmark;
+			return GetLocationFromSearch(index, out landmark);
+		}
+
+		public Location GetLocationFromSearch(int index, out Landmark landmark)
+		{
+			landmark = null;
+
+			if(index < 0 || searchKeys == null || searchKeys.Count == 0 || index >= searchKeys.Count)
+				return null;
+
+			SearchKey searchItem = searchKeys[index];
+
+			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.primaryIndex >= landmarkClusters.Count || searchItem.primaryIndex < 0)
+				return null;
+
+			LandmarkCluster landmarkCluster = landmarkClusters[searchItem.primaryIndex];
+			landmark = landmarkCluster.landmark;
+			return landmarkCluster.GetLocation(searchItem.secondaryIndex, searchItem.tertiaryIndex);
+		}
+
+		public void Search(string keyword)
+		{
+			searchKeys.Clear();
+			keyword = RemoveMultipleWhiteSpaces(keyword).ToLower();
+
+			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
+				return;
+
+			SearchByCategory(keyword, SearchCategory.Name, false);
+
+			if(searchResultCount == 0 || (SimilarKeysFound() && searchResultCount > 1))
+				SearchByCategory(keyword, SearchCategory.SubTag, false);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.MainTag, false);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.Name, true);
+
+			if(searchResultCount == 0 || (SimilarKeysFound() && searchResultCount > 1))
+				SearchByCategory(keyword, SearchCategory.SubTag, true);
+
+			if(searchResultCount == 0)
+				SearchByCategory(keyword, SearchCategory.MainTag, true);
+
+			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.primaryIndex).ToList();
+
+			if(OnResult != null)
+				OnResult(searchResultCount);
+		}
+		#endregion
+
+
+		#region Helpers
 		private string RemoveMultipleWhiteSpaces(string s)
 		{
 			string[] words = s.Split(" ".ToCharArray(), System.StringSplitOptions.RemoveEmptyEntries);
@@ -58,36 +118,6 @@ namespace Map
 			return stringBuilder.ToString().TrimEnd(' ');
 		}
 
-		public void Search(string keyword, bool deepSearch = false)
-		{
-			searchKeys.Clear();
-			keyword = RemoveMultipleWhiteSpaces(keyword);
-
-			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
-				return;
-
-			SearchByCategory(keyword, SearchCategory.Name, false);
-
-			if(SimilarKeysFound() || searchResultCount == 0)
-				SearchByCategory(keyword, SearchCategory.SubTag, false);
-
-			if(searchResultCount == 0)
-				SearchByCategory(keyword, SearchCategory.MainTag, false);
-
-			if(searchResultCount == 0)
-				SearchByCategory(keyword, SearchCategory.Name, true);
-
-			if(SimilarKeysFound() || searchResultCount == 0)
-				SearchByCategory(keyword, SearchCategory.SubTag, true);
-
-			if(searchResultCount == 0)
-				SearchByCategory(keyword, SearchCategory.MainTag, true);
-
-			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.primaryIndex).ToList();
-
-			PrintOutAllResults();
-		}
-
 		private void SearchByCategory(string keyword, SearchCategory category, bool deepSearch)
 		{
 			for(int i = 0; i < landmarkClusters.Count; i++)
@@ -95,20 +125,6 @@ namespace Map
 				LandmarkCluster landmarkCluster = landmarkClusters[i];
 				landmarkCluster.Search(keyword, i, searchKeys, category, deepSearch);
 			}
-		}
-
-		public Location GetLocationFromSearch(int index)
-		{
-			if(index < 0 || searchKeys == null || searchKeys.Count == 0 || index >= searchKeys.Count)
-				return null;
-
-			SearchKey searchItem = searchKeys[index];
-
-			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.primaryIndex >= landmarkClusters.Count || searchItem.primaryIndex < 0)
-				return null;
-
-			LandmarkCluster landmark = landmarkClusters[searchItem.primaryIndex];
-			return landmark.GetLocation(searchItem.secondaryIndex, searchItem.tertiaryIndex);
 		}
 
 		private void PrintOutAllResults()
@@ -159,7 +175,7 @@ namespace Map
 	}
 
 	#if UNITY_EDITOR
-	[CustomEditor(typeof(LocationTable))]
+	[CustomEditor(typeof(LocationDatabase))]
 	public class LocationTableEditor : Editor
 	{
 		private SerializedProperty landmarkClustersProperty = null;
@@ -170,13 +186,13 @@ namespace Map
 		roomsPath,
 		searchKeyword;
 
-		private LocationTable locationTable = null;
+		private LocationDatabase locationTable = null;
 
 		private bool foldout = false;
 
 		private void OnEnable()
 		{
-			locationTable = target as LocationTable;
+			locationTable = target as LocationDatabase;
 			landmarkClustersProperty = serializedObject.FindProperty("landmarkClusters");
 			LoadPrefs();
 		}
