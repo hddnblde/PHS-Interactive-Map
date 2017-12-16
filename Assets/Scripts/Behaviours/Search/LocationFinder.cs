@@ -9,6 +9,16 @@ namespace Map
 	public class LocationFinder : MonoBehaviour
 	{
 		#region Fields
+		[Header("References")]
+		[SerializeField]
+		private LocationDatabase database = null;
+
+		[SerializeField]
+		private InputField searchInput = null;
+
+		[SerializeField]
+		private CanvasGroup contentGroup = null;
+
 		[SerializeField]
 		private GameObject resultPrefab = null;
 
@@ -18,16 +28,15 @@ namespace Map
 		public delegate void LocationFound(Location location);
 		public static event LocationFound OnLocationFound;
 
-		private LocationDatabase database = null;
 		private Coroutine resultRoutine = null;
 		private const int ResultPoolLimit = 70;
+		private string previousKeyword = "";
 		#endregion
 
 
 		#region MonoBehaviour Implementation
 		private void Awake()
 		{
-			Initialize();
 			GenerateResultPool();
 		}
 
@@ -44,9 +53,18 @@ namespace Map
 
 
 		#region Methods
-		private void Initialize()
+		private void Search(string keyword)
 		{
-			database = GetComponent<LocationDatabase>();
+			if(contentGroup != null)
+			{
+				contentGroup.alpha = 0f;
+				contentGroup.blocksRaycasts = false;				
+			}
+
+			if(database != null && previousKeyword != keyword)
+				database.Search(keyword);
+
+			previousKeyword = keyword;
 		}
 
 		private void GenerateResultPool()
@@ -69,12 +87,18 @@ namespace Map
 
 		private void RegisterEvent()
 		{
+			if(searchInput != null)
+				searchInput.onValueChanged.AddListener(Search);
+			
 			if(database != null)
 				database.OnResult += OnResult;
 		}
 
 		private void DeregisterEvent()
 		{
+			if(searchInput != null)
+				searchInput.onValueChanged.RemoveListener(Search);
+			
 			if(database != null)
 				database.OnResult -= OnResult;
 		}
@@ -89,10 +113,10 @@ namespace Map
 			resultRoutine = StartCoroutine(GenerateResult(count));
 		}
 
-		private CanvasGroup AddResult(int index, Landmark landmark, Location location)
+		private void AddResult(int index, Landmark landmark, Location location)
 		{
 			if(index == -1 || resultContainer == null || index >= resultContainer.childCount)
-				return null;
+				return;
 
 			Place place = location as Place;
 			Transform result = resultContainer.GetChild(index);
@@ -112,10 +136,6 @@ namespace Map
 			}
 
 			result.gameObject.SetActive(true);
-			CanvasGroup canvasGroup = result.GetComponent<CanvasGroup>();
-			canvasGroup.alpha = 0f;
-
-			return canvasGroup;
 		}
 
 		private void HideAllResult()
@@ -126,6 +146,9 @@ namespace Map
 
 		private void OnSelectResult(int selected)
 		{
+			if(database == null)
+				return;
+			
 			Location location = database.GetLocationFromSearch(selected);
 
 			if(OnLocationFound != null)
@@ -137,31 +160,38 @@ namespace Map
 		#region Coroutine
 		private IEnumerator GenerateResult(int count)
 		{
+			if(contentGroup != null)
+			{
+				contentGroup.alpha = 0f;
+				contentGroup.blocksRaycasts = false;				
+			}
+
 			for(int i = 0; i < count; i++)
 			{
 				Landmark landmark;
 				Location location = database.GetLocationFromSearch(i, out landmark);
-				CanvasGroup result = AddResult(i, landmark, location);
-				yield return StartCoroutine(FadeInResult(result));
+				AddResult(i, landmark, location);
 			}
+
+			yield return StartCoroutine(FadeInResult());
 		}
 
-		private IEnumerator FadeInResult(CanvasGroup result)
+		private IEnumerator FadeInResult()
 		{
-			if(result != null)
+			if(contentGroup != null)
 			{
-				result.blocksRaycasts = false;
-				const float duration = 0.15f;
+				contentGroup.blocksRaycasts = false;
+				const float duration = 0.75f;
 
 				for(float current = 0f; current < duration; current += Time.deltaTime)
 				{
 					float t = Mathf.InverseLerp(0f, duration, current);
 
-					result.alpha = t;
+					contentGroup.alpha = t;
 					yield return null;
 				}
 
-				result.blocksRaycasts = true;
+				contentGroup.blocksRaycasts = true;
 			}
 		}
 		#endregion
