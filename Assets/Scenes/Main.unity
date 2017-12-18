@@ -11984,6 +11984,7 @@ GameObject:
   - component: {fileID: 1695310324}
   - component: {fileID: 1695310323}
   - component: {fileID: 1695310322}
+  - component: {fileID: 1695310325}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -12083,6 +12084,28 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695310320}
+--- !u!114 &1695310325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695310320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e8bc872eee90f4aa60ec1103f5d080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300002, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300004, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300006, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300010, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300016, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300022, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300034, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300044, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
+  - {fileID: 21300058, guid: b50a953d3fb15664786a872f5ea0805e, type: 3}
 --- !u!1 &1712830602
 GameObject:
   m_ObjectHideFlags: 0
