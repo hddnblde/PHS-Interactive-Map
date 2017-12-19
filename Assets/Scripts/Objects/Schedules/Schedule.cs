@@ -36,7 +36,7 @@ namespace Schedules
 	{
 		#region Serialized Fields
 		[SerializeField]
-		private TimeStamp m_timeStamp = null;
+		private Period m_period = null;
 
 		[Header("Daily Room Assignment")]
 		[SerializeField]
@@ -57,9 +57,9 @@ namespace Schedules
 
 
 		#region Properties
-		public TimeStamp timeStamp
+		public Period period
 		{
-			get { return m_timeStamp; }
+			get { return m_period; }
 		}
 
 		public Room monday
