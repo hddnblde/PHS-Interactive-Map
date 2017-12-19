@@ -1,0 +1,129 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Schedules;
+
+namespace Faculty
+{
+	public enum Month
+	{
+		January = 1,
+		February = 2,
+		March = 3,
+		April = 4,
+		May = 5,
+		June = 6,
+		July = 7,
+		August = 8,
+		September = 9,
+		October = 10,
+		November = 11,
+		December = 12
+	}
+
+	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Period")]
+	public class Teacher : ScriptableObject
+	{
+		[System.Serializable]
+		private class AppointmentDate
+		{
+			private Month m_month = Month.February;
+
+			[SerializeField, Range(1, 31)]
+			private int m_day = 1;
+
+			[SerializeField]
+			private int m_year = 1900;
+
+			public Month month
+			{
+				get { return m_month; }
+			}
+
+			public int day
+			{
+				get { return m_day; }
+			}
+
+			public int year
+			{
+				get { return m_year; }
+			}
+		}
+
+		#region Serialized Fields
+		[Header("Name")]
+		[SerializeField]
+		private string m_firstName = "First Name";
+
+		[SerializeField]
+		private string m_middleName = "Middle Name";
+
+		[SerializeField]
+		private string m_lastName = "Last Name";
+
+		[Header("Details")]
+		[SerializeField]
+		private Course m_course = null;
+
+		[SerializeField]
+		private Department m_department = null;
+
+		[SerializeField]
+		private AppointmentDate m_appointmentDate = null;
+
+		[SerializeField]
+		private Schedule m_schedule = null;
+		#endregion
+
+
+		#region Properties
+		public string firstName
+		{
+			get { return m_firstName; }
+		}
+
+		public string middleName
+		{
+			get { return m_middleName; }
+		}
+
+		public string lastName
+		{
+			get { return m_lastName; }
+		}
+
+		public Course course
+		{
+			get { return m_course; }
+		}
+
+		public Department department
+		{
+			get { return m_department; }
+		}
+
+		public Schedule schedule
+		{
+			get { return m_schedule; }
+		}
+		#endregion
+
+		public string GetFullName(bool useMiddleNameInitials = true)
+		{
+			string middle = (useMiddleNameInitials ? (m_middleName.Substring(0, 1) + ".") : m_middleName);
+			return "@f @m @l".Replace("@f", m_firstName).Replace("@l", m_lastName).Replace("@m", middle);
+		}
+
+		public string GetAppointmentDate()
+		{
+			if(m_appointmentDate == null)
+				return "";
+			else
+			{
+				string pattern = "@m @d @y";
+				return pattern.Replace("@m", m_appointmentDate.month.ToString()).Replace("@d", m_appointmentDate.day.ToString("##")).Replace("@y", m_appointmentDate.year.ToString("####"));
+			}
+		}
+	}
+}

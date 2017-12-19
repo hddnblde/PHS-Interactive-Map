@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3c400784a94afc444ad8ebae73b1681b
+timeCreated: 1513647564
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Material-Design-Iconic-Font
+  fontNames:
+  - Material-Design-Iconic-Font
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
