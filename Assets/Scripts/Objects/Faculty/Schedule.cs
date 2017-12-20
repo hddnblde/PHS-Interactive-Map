@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Map;
 
-namespace Schedules
+namespace Faculty
 {
-	[CreateAssetMenu(menuName = "Schedules/Schedule", order = 2, fileName = "Schedule")]
+	[CreateAssetMenu(menuName = "Faculty/Schedule", order = 1, fileName = "Schedule")]
 	public class Schedule : ScriptableObject
 	{
 		[SerializeField]

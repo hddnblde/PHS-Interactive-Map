@@ -9,6 +9,90 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec337016270616141b2d1af4f44932b2, type: 3}
-  m_Name: Junior High School
+  m_Name: Junior High School (Main Copy)
   m_EditorClassIdentifier: 
-  table: []
+  table:
+  - m_period: {fileID: 11400000, guid: 57a489d521b312b49a30a24d6e5c51ad, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 0e98a3380a06b5a48be9d393eca2cd6c, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 73e46363f9ed90c498348c1a11d3e012, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: d99606e3bc7a5a5409c65fc8f66d7689, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: a109a5dbe05b4864e83b1dcc2fa9a79c, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: f9c8ff36465ce4e4c9895d0717eee25d, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: e341ffc68d6e1fb498d3c484d40ada84, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 25ce86292d620fd48b166326cfd5caf0, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 399f31150d7ec9c489dfe572d805e70f, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: deeef1639848ce54190c6f8c92d08e4b, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: c5e308a1c6418834583fef1ebfdb5918, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: bd702d057eccc474e987635d1cf328ca, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: ca4510cb965a8114b870d5b6674a0ff4, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 3ca266ab9a63fa34abb5c095e742305e, type: 2}
+    m_monday: {fileID: 0}
+    m_tuesday: {fileID: 0}
+    m_wednesday: {fileID: 0}
+    m_thursday: {fileID: 0}
+    m_friday: {fileID: 0}

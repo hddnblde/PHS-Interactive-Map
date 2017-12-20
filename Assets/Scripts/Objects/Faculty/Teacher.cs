@@ -1,32 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Schedules;
+using Faculty;
 
 namespace Faculty
 {
-	public enum Month
-	{
-		January = 1,
-		February = 2,
-		March = 3,
-		April = 4,
-		May = 5,
-		June = 6,
-		July = 7,
-		August = 8,
-		September = 9,
-		October = 10,
-		November = 11,
-		December = 12
-	}
-
-	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Period")]
+	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 2, fileName = "Teacher")]
 	public class Teacher : ScriptableObject
 	{
+		#region Data Structures
 		[System.Serializable]
-		private class AppointmentDate
+		public class Date
 		{
+			public enum Month
+			{
+				January = 1,
+				February = 2,
+				March = 3,
+				April = 4,
+				May = 5,
+				June = 6,
+				July = 7,
+				August = 8,
+				September = 9,
+				October = 10,
+				November = 11,
+				December = 12
+			}
+
 			private Month m_month = Month.February;
 
 			[SerializeField, Range(1, 31)]
@@ -51,6 +52,48 @@ namespace Faculty
 			}
 		}
 
+		[System.Serializable]
+		public class Course
+		{
+			#region Serialized Fields
+			[SerializeField]
+			private string m_title;
+
+			[SerializeField]
+			private string m_majorSubject;
+
+			[SerializeField]
+			private string m_minorSubject;
+			#endregion
+
+
+			#region Properties
+			private string title
+			{
+				get { return m_title; }
+			}
+
+			private string majorSubject
+			{
+				get { return m_majorSubject; }
+			}
+
+			private string minorSubject
+			{
+				get { return m_minorSubject; }
+			}
+			#endregion
+		}
+
+		public enum Department
+		{
+			Aralin,
+			Science,
+			English
+		}
+		#endregion
+
+
 		#region Serialized Fields
 		[Header("Name")]
 		[SerializeField]
@@ -64,13 +107,13 @@ namespace Faculty
 
 		[Header("Details")]
 		[SerializeField]
-		private Course m_course = null;
+		private Course m_course = new Course();
 
 		[SerializeField]
-		private Department m_department = null;
+		private Department m_department = Department.Aralin;
 
 		[SerializeField]
-		private AppointmentDate m_appointmentDate = null;
+		private Date m_appointmentDate = new Date();
 
 		[SerializeField]
 		private Schedule m_schedule = null;
