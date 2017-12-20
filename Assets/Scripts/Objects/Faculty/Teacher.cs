@@ -28,6 +28,7 @@ namespace Faculty
 				December = 12
 			}
 
+			[SerializeField]
 			private Month m_month = Month.February;
 
 			[SerializeField, Range(1, 31)]
@@ -111,14 +112,15 @@ namespace Faculty
 
 		[Header("Details")]
 		[SerializeField]
-		private Course m_course = new Course();
+		private Department m_department = Department.Aralin;
 
 		[SerializeField]
-		private Department m_department = Department.Aralin;
+		private Course m_course = new Course();
 
 		[SerializeField]
 		private Date m_appointmentDate = new Date();
 
+		[Header("Schedule Table")]
 		[SerializeField]
 		private Schedule m_schedule = null;
 		#endregion
