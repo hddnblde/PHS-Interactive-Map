@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Faculty;
+using Faculty.Schedules;
 
 namespace Faculty
 {
-	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 2, fileName = "Teacher")]
+	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Teacher")]
 	public class Teacher : ScriptableObject
 	{
 		#region Data Structures
@@ -88,8 +88,12 @@ namespace Faculty
 		public enum Department
 		{
 			Aralin,
+			English,
+			Filipino,
+			MAPEH,
+			Math,
 			Science,
-			English
+			Values
 		}
 		#endregion
 

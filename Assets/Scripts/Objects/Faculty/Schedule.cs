@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Map;
 
-namespace Faculty
+namespace Faculty.Schedules
 {
-	[CreateAssetMenu(menuName = "Faculty/Schedule", order = 1, fileName = "Schedule")]
+	[CreateAssetMenu(menuName = "Faculty/Schedules/Schedule", order = 2, fileName = "Schedule")]
 	public class Schedule : ScriptableObject
 	{
 		[SerializeField]
@@ -40,19 +40,19 @@ namespace Faculty
 
 		[Header("Daily Room Assignment")]
 		[SerializeField]
-		private Room m_monday = null;
+		private ScheduledRoom m_monday = new ScheduledRoom();
 
 		[SerializeField]
-		private Room m_tuesday = null;
+		private ScheduledRoom m_tuesday = new ScheduledRoom();
 
 		[SerializeField]
-		private Room m_wednesday = null;
+		private ScheduledRoom m_wednesday = new ScheduledRoom();
 
 		[SerializeField]
-		private Room m_thursday = null;
+		private ScheduledRoom m_thursday = new ScheduledRoom();
 
 		[SerializeField]
-		private Room m_friday = null;
+		private ScheduledRoom m_friday = new ScheduledRoom();
 		#endregion
 
 
@@ -62,27 +62,27 @@ namespace Faculty
 			get { return m_period; }
 		}
 
-		public Room monday
+		public ScheduledRoom monday
 		{
 			get { return m_monday; }
 		}
 
-		public Room tuesday
+		public ScheduledRoom tuesday
 		{
 			get { return m_tuesday; }
 		}
 
-		public Room wednesday
+		public ScheduledRoom wednesday
 		{
 			get { return m_wednesday; }
 		}
 
-		public Room thursday
+		public ScheduledRoom thursday
 		{
 			get { return m_thursday; }
 		}
 
-		public Room friday
+		public ScheduledRoom friday
 		{
 			get { return m_friday; }
 		}

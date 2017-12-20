@@ -6,9 +6,9 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace Faculty
+namespace Faculty.Schedules
 {
-	[CreateAssetMenu(menuName = "Faculty/Period", order = 0, fileName = "Period")]
+	[CreateAssetMenu(menuName = "Faculty/Schedules/Period", order = 0, fileName = "Period")]
 	public class Period : ScriptableObject
 	{
 		[SerializeField]

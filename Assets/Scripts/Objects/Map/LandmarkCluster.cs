@@ -65,11 +65,16 @@ namespace Map
 		{
 			if(category == SearchCategory.MainTag)
 			{
-				if((' ' + m_landmark.tags.ToLower()).Contains(' ' + keyword +';'))
+				if((' ' + m_landmark.tags.ToLower()).Contains(' ' + keyword + ';'))
 					AddAllKeys(primaryIndex, searchKeys);
 			}
 			else
 			{
+				if(category == SearchCategory.Name && !m_names.Contains(keyword))
+					return;
+				else if(category == SearchCategory.SubTag && !m_tags.Contains(' ' + keyword + ';'))
+					return;
+				
 				string target = "";
 				string key = "";
 
