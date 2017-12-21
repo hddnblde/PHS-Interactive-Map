@@ -6,9 +6,20 @@ using Students;
 
 namespace Faculty.Schedules
 {
-	[CreateAssetMenu(menuName = "Faculty/Schedules/Scheduled Room", order = 1, fileName = "Scheduled Room")]
-	public class ScheduledRoom : ScriptableObject
+	[System.Serializable]
+	public class ScheduledRoom
 	{
+		public ScheduledRoom()
+		{
+			
+		}
+
+		public ScheduledRoom(Room room, SectionCluster sectionCluster)
+		{
+			m_room = room;
+			m_sectionCluster = sectionCluster;
+		}
+
 		[SerializeField]
 		private Room m_room = null;
 

@@ -5,54 +5,33 @@ using Map;
 
 namespace Faculty.Schedules
 {
-	[CreateAssetMenu(menuName = "Faculty/Schedules/Table", order = 0, fileName = "Schedule Table")]
-	public class ScheduleTable : ScriptableObject
-	{
-		[SerializeField]
-		private List<ScheduleItem> items = new List<ScheduleItem>();
-
-		public int periodCount
-		{
-			get
-			{
-				if(items == null)
-					return 0;
-				else
-					return items.Count;
-			}
-		}
-
-		public ScheduleItem GetItem(int period)
-		{
-			if(period == -1 || periodCount == 0 || period >= periodCount)
-				return null;
-			else
-				return items[period];
-		}
-	}
-
 	[System.Serializable]
 	public class ScheduleItem
 	{
+		public ScheduleItem(Period period)
+		{
+			m_period = period;
+		}
+
 		#region Serialized Fields
 		[SerializeField]
 		private Period m_period = null;
 
 		[Header("Daily Room Assignment")]
 		[SerializeField]
-		private ScheduledRoom m_monday = null;
+		private ScheduledRoom m_monday = new ScheduledRoom();
 
 		[SerializeField]
-		private ScheduledRoom m_tuesday = null;
+		private ScheduledRoom m_tuesday = new ScheduledRoom();
 
 		[SerializeField]
-		private ScheduledRoom m_wednesday = null;
+		private ScheduledRoom m_wednesday = new ScheduledRoom();
 
 		[SerializeField]
-		private ScheduledRoom m_thursday = null;
+		private ScheduledRoom m_thursday = new ScheduledRoom();
 
 		[SerializeField]
-		private ScheduledRoom m_friday = null;
+		private ScheduledRoom m_friday = new ScheduledRoom();
 		#endregion
 
 

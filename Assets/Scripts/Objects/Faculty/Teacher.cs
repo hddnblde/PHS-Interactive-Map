@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Faculty.Schedules;
 
+#if UNITY_EDITOR
+using UnityEditor;
+using System.IO;
+using System.Linq;
+#endif
+
 namespace Faculty
 {
 	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Teacher")]
@@ -12,7 +18,7 @@ namespace Faculty
 		[System.Serializable]
 		public class Date
 		{
-			public enum Month
+			private enum Month
 			{
 				January = 1,
 				February = 2,
@@ -37,9 +43,9 @@ namespace Faculty
 			[SerializeField]
 			private int m_year = 1900;
 
-			public Month month
+			public string month
 			{
-				get { return m_month; }
+				get { return m_month.ToString(); }
 			}
 
 			public int day
@@ -120,9 +126,8 @@ namespace Faculty
 		[SerializeField]
 		private Date m_appointmentDate = new Date();
 
-		[Header("Schedule Table")]
 		[SerializeField]
-		private ScheduleTable m_scheduleTable = null;
+		private List<ScheduleItem> m_scheduleTable = new List<ScheduleItem>();
 		#endregion
 
 
@@ -152,11 +157,35 @@ namespace Faculty
 			get { return m_department; }
 		}
 
-		public ScheduleTable scheduleTable
+		public ScheduleItem GetScheduleItem(int period)
 		{
-			get { return m_scheduleTable; }
+			if(period < 0 || period >= m_scheduleTable.Count)
+				return null;
+			else
+				return m_scheduleTable[period];
 		}
 		#endregion
+
+
+		#region Methods
+		public void GenerateSchedule(string schedulePeriodPath)
+		{
+			#if UNITY_EDITOR
+			if(!Directory.Exists(schedulePeriodPath))
+				return;
+
+			string endDirectory = schedulePeriodPath.Split("/\\".ToCharArray()).Last() + " Period ";
+
+			string[] files = Directory.GetFiles(schedulePeriodPath, "*.asset");//.OrderBy(f => int.Parse(f.Replace(endDirectory, ""))).ToArray();
+
+			foreach(string file in files)
+			{
+				string period = file.Replace(schedulePeriodPath + '\\', "").Replace(".asset", "");
+//				Debug.Log(period.Replace(endDirectory, ""));
+				Debug.Log(period);
+			}
+			#endif
+		}
 
 		public string GetFullName(bool useMiddleNameInitials = true)
 		{
@@ -174,5 +203,47 @@ namespace Faculty
 				return pattern.Replace("@m", m_appointmentDate.month.ToString()).Replace("@d", m_appointmentDate.day.ToString("##")).Replace("@y", m_appointmentDate.year.ToString("####"));
 			}
 		}
+		#endregion
 	}
+
+	#if UNITY_EDITOR
+	[CustomEditor(typeof(Teacher))]
+	public class TeacherEditor : Editor
+	{
+		private Teacher teacher = null;
+		private static string schedulePeriodPath = "";
+
+		private void OnEnable()
+		{
+			teacher = target as Teacher;
+			LoadPref();
+		}
+
+		private void OnDisable()
+		{
+			SavePref();
+		}
+
+		private void LoadPref()
+		{
+			schedulePeriodPath = EditorPrefs.GetString("Teacher_SchedulePeriodPath", "Assets/Scriptable Objects/Schedules/Periods");
+		}
+
+		private void SavePref()
+		{
+			if(schedulePeriodPath.Length > 0)
+				EditorPrefs.SetString("Teacher_SchedulePeriodPath", schedulePeriodPath);
+		}
+
+		public override void OnInspectorGUI()
+		{
+			DrawDefaultInspector();
+
+			EditorGUILayout.Space();
+			schedulePeriodPath = EditorGUILayout.TextField(schedulePeriodPath);
+			if(GUILayout.Button("Generate Schedule"))
+				teacher.GenerateSchedule(schedulePeriodPath);
+		}
+	}
+	#endif
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: Senior High Period 3
   m_EditorClassIdentifier: 
   m_start:
-    m_hour: 12
-    m_minute: 0
+    m_hour: 8
+    m_minute: 25
     m_meridiem: 0
   m_end:
-    m_hour: 12
-    m_minute: 0
+    m_hour: 8
+    m_minute: 40
     m_meridiem: 0
