@@ -23,4 +23,4 @@ MonoBehaviour:
     m_month: 2
     m_day: 1
     m_year: 1900
-  m_schedule: {fileID: 0}
+  m_scheduleTable: {fileID: 0}

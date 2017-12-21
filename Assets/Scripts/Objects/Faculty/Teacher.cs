@@ -122,7 +122,7 @@ namespace Faculty
 
 		[Header("Schedule Table")]
 		[SerializeField]
-		private Schedule m_schedule = null;
+		private ScheduleTable m_scheduleTable = null;
 		#endregion
 
 
@@ -152,9 +152,9 @@ namespace Faculty
 			get { return m_department; }
 		}
 
-		public Schedule schedule
+		public ScheduleTable scheduleTable
 		{
-			get { return m_schedule; }
+			get { return m_scheduleTable; }
 		}
 		#endregion
 
