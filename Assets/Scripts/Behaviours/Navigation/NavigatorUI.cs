@@ -9,9 +9,6 @@ namespace Navigation
 	public class NavigatorUI : MonoBehaviour
 	{
 		#region Serialized Fields
-		[SerializeField]
-		private bool isActive = false;
-
 		[Header("References")]
 		[SerializeField]
 		private Navigator navigator = null;
@@ -126,8 +123,6 @@ namespace Navigation
 		#region Methods
 		public void Activate(bool isActive)
 		{
-			this.isActive = isActive;
-
 			if(isActive)
 				ChooseMarkerActivity();
 			else

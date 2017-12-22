@@ -41,7 +41,6 @@ namespace Map
 	public class RoomEditor : Editor
 	{
 		#region Fields
-		Room room = null;
 		private SerializedProperty
 		displayedNameProperty = null,
 		positionProperty = null,
@@ -68,7 +67,6 @@ namespace Map
 		#region Methods
 		private void Initialize()
 		{
-			room = target as Room;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");

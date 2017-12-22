@@ -22,8 +22,6 @@ namespace Navigation
 
 
 		#region Hidden Fields
-		List<string> listOfBuildings = new List<string>();
-
 		public delegate void ActivityChange(Activity activity);
 		public delegate void MarkerChange(Marker marker);
 		public delegate void MarkerAssignment();

@@ -37,7 +37,6 @@ namespace Map
 		private static bool useTools = true;
 
 		#region Fields
-		private Place location = null;
 		private SerializedProperty
 		displayedNameProperty = null,
 		positionProperty = null,
@@ -96,7 +95,6 @@ namespace Map
 		#region Methods
 		private void Initialize()
 		{
-			location = target as Place;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
