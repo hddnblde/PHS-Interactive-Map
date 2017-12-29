@@ -82,7 +82,7 @@ public class FacultyScheduler : EditorWindow
 			{
 				boxRect.y = rect.position.y + ((spacing * 1.5f) * (row + 1)) + (height * row);
 
-				Room selectedRoom = null;
+//				Room selectedRoom = null;
 
 				GUI.color = Color.clear;
 				if(!currentSelectedItem.NoneSelected() && GUI.Button(boxRect, ""))

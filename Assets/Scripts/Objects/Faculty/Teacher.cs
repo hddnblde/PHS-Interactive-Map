@@ -174,7 +174,7 @@ namespace Faculty
 			if(!Directory.Exists(schedulePeriodPath))
 				return;
 
-			string endDirectory = schedulePeriodPath.Split("/\\".ToCharArray()).Last() + " Period ";
+//			string endDirectory = schedulePeriodPath.Split("/\\".ToCharArray()).Last() + " Period ";
 
 			string[] files = Directory.GetFiles(schedulePeriodPath, "*.asset");//.OrderBy(f => int.Parse(f.Replace(endDirectory, ""))).ToArray();
 
