@@ -4,6 +4,10 @@ using UnityEngine;
 using Faculty;
 using Map;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 namespace Students
 {
 	[CreateAssetMenu(menuName = "Students/Section Cluster", order = 1, fileName = "Section Cluster")]
@@ -43,4 +47,57 @@ namespace Students
 			get { return m_room; }
 		}
 	}
+
+	#if UNITY_EDITOR
+	[CustomEditor(typeof(SectionCluster))]
+	public class SectionClusterEditor : Editor
+	{
+		private SerializedProperty
+		sectionProperty = null,
+		rankProperty = null,
+		adviserProperty = null,
+		roomProperty = null;
+
+		private void OnEnable()
+		{
+			Initialize();
+		}
+
+		public override void OnInspectorGUI()
+		{
+			DrawCustomInspector();
+		}
+
+		private void Initialize()
+		{
+			sectionProperty = serializedObject.FindProperty("m_section");
+			rankProperty = serializedObject.FindProperty("m_rank");
+			adviserProperty = serializedObject.FindProperty("m_adviser");
+			roomProperty = serializedObject.FindProperty("m_room");
+		}
+
+		private void DrawCustomInspector()
+		{
+			EditorGUI.BeginChangeCheck();
+			EditorGUILayout.PropertyField(sectionProperty);
+
+			int totalRanks = 1;
+
+			if(sectionProperty != null)
+			{
+				SerializedObject countObject = new SerializedObject(sectionProperty.objectReferenceValue);
+				SerializedProperty countProperty = countObject.FindProperty("m_count");
+				if(countProperty != null)
+					totalRanks = countProperty.intValue;				
+			}
+			
+			rankProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField(rankProperty.displayName, rankProperty.intValue), 1, totalRanks);
+			EditorGUILayout.PropertyField(adviserProperty);
+			EditorGUILayout.PropertyField(roomProperty);
+
+			if(EditorGUI.EndChangeCheck())
+				serializedObject.ApplyModifiedProperties();
+		}
+	}
+	#endif
 }

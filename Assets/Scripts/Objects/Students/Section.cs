@@ -22,16 +22,24 @@ namespace Students
 		private Grade m_grade = Grade.Grade7;
 
 		[SerializeField]
-		private int m_rank = 1;
+		private int m_order = 1;
+
+		[SerializeField]
+		private int m_count = 1;
 
 		public Grade grade
 		{
 			get { return m_grade; }
 		}
 
-		public int rank
+		public int order
 		{
-			get { return m_rank; }
+			get { return m_order; }
+		}
+
+		public int count
+		{
+			get { return m_count; }
 		}
 	}
 }
