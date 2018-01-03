@@ -16202,6 +16202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f59e202a9245c4a81fdf8cf9d96c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  items: []
   transitionCurve:
     serializedVersion: 2
     m_Curve:

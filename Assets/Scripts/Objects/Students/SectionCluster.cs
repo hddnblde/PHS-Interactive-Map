@@ -83,15 +83,16 @@ namespace Students
 
 			int totalRanks = 1;
 
-			if(sectionProperty != null)
+			if(sectionProperty.objectReferenceValue != null)
 			{
 				SerializedObject countObject = new SerializedObject(sectionProperty.objectReferenceValue);
 				SerializedProperty countProperty = countObject.FindProperty("m_count");
 				if(countProperty != null)
-					totalRanks = countProperty.intValue;				
+					totalRanks = countProperty.intValue;
+
+				rankProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField(rankProperty.displayName, rankProperty.intValue), 1, totalRanks);
 			}
 			
-			rankProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField(rankProperty.displayName, rankProperty.intValue), 1, totalRanks);
 			EditorGUILayout.PropertyField(adviserProperty);
 			EditorGUILayout.PropertyField(roomProperty);
 

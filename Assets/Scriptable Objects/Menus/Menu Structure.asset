@@ -8,9 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f08923b630c8b6478bd0f3ee38eca27, type: 3}
-  m_Name: Open High 8
+  m_Script: {fileID: 11500000, guid: 47e4b2b1825be0e46adbeb90d014c344, type: 3}
+  m_Name: Menu Structure
   m_EditorClassIdentifier: 
-  m_grade: 8
-  m_order: 12
-  m_count: 1
+  items:
+  - m_title: Navigation
+    m_depth: 0
+    m_toggleable: 1
+  - m_title: Information
+    m_depth: 0
+    m_toggleable: 1
