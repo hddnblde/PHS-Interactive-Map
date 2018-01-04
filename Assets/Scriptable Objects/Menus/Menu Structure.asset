@@ -87,8 +87,86 @@ MonoBehaviour:
   - m_title: By Faculty
     m_depth: 2
     m_toggleable: 0
-  - m_title: By Faculty
+  - m_title: Math
     m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Aralin
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: English
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Filipino
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: MAPEH
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Science
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Specialization
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: TLE
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Values
+    m_depth: 3
+    m_toggleable: 1
+  - m_title: Teacher 1
+    m_depth: 4
+    m_toggleable: 0
+  - m_title: Teacher 2
+    m_depth: 4
     m_toggleable: 0
   - m_title: Buildings
     m_depth: 1

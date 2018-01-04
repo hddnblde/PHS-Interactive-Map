@@ -9,6 +9,28 @@ using UnityEditor;
 
 namespace Menus
 {
+	public class MenuContent
+	{
+		private Sprite m_icon = null;
+		private string m_text = "";
+
+		public MenuContent(Sprite icon, string text)
+		{
+			m_icon = icon;
+			m_text = text;
+		}
+
+		public Sprite icon
+		{
+			get { return m_icon; }
+		}
+
+		public string text
+		{
+			get { return m_text; }
+		}
+	}
+
 	public class MenuLayout : MonoBehaviour
 	{
 		#region Data Structures
@@ -18,9 +40,11 @@ namespace Menus
 			Secondary
 		}
 
+		public delegate void ContentClick(int index);
 		public delegate void ButtonClick();
 		public delegate void TextInput(string text);
 
+		public static event ContentClick OnContentClick;
 		public static event ButtonClick OnPrimaryClick;
 		public static event ButtonClick OnSecondaryClick;
 		public static event TextInput OnTextInput;
@@ -29,6 +53,16 @@ namespace Menus
 
 
 		#region Serialized Fields
+		[Header("References")]
+		[SerializeField]
+		private MenuContentLayout contentLayoutPrefab = null;
+
+		[SerializeField]
+		private RectTransform contentContainer = null;
+
+		[SerializeField]
+		private int itemPoolCount = 70;
+
 		[Header("Colors")]
 		[SerializeField]
 		private AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
@@ -102,6 +136,56 @@ namespace Menus
 		private void Initialize()
 		{
 			RegisterInputEvents();
+			PoolMenuItems();
+		}
+
+		private void PoolMenuItems()
+		{
+			if(contentLayoutPrefab == null || contentContainer == null)
+				return;
+			
+			for(int i = 0; i < itemPoolCount; i++)
+			{
+				MenuContentLayout menuItem = Instantiate<MenuContentLayout>(contentLayoutPrefab, contentContainer);
+				menuItem.OnSelect += Event_ContentClick;
+				menuItem.gameObject.SetActive(false);
+			}
+		}
+
+		private MenuContentLayout[] GenerateItemLayout(int count)
+		{
+			if(contentContainer.childCount == 0)
+				return null;
+			
+			List<MenuContentLayout> items = new List<MenuContentLayout>();
+
+			foreach(Transform item in contentContainer)
+			{
+				if(!item.gameObject.activeInHierarchy)
+				{
+					item.gameObject.SetActive(true);
+					MenuContentLayout currentItem = item.GetComponent<MenuContentLayout>();
+
+					if(currentItem == null)
+					{
+						item.gameObject.SetActive(false);
+						continue;
+					}
+
+					items.Add(currentItem);
+				}
+
+				if(items.Count >= count)
+					break;
+			}
+
+			return items.ToArray();
+		}
+
+		private void Event_ContentClick(int index)
+		{
+			if(OnContentClick != null)
+				OnContentClick(index);
 		}
 		#endregion
 
@@ -160,9 +244,50 @@ namespace Menus
 
 
 		#region Actions
+		public void SetContent(MenuContent[] items)
+		{
+			SetContent(items, "");
+		}
+
+		public void SetContent(MenuContent[] items, string title)
+		{
+			ClearContent();
+			SetLabel(title);
+
+			if(items == null || items.Length == 0)
+				return;
+			
+			MenuContentLayout[] itemLayoutList = GenerateItemLayout(items.Length);
+
+			for(int i = 0; i < itemLayoutList.Length; i++)
+			{
+				MenuContentLayout currentLayout = itemLayoutList[i];
+				MenuContent currentItem = items[i];
+
+				currentLayout.Set(currentItem.icon, currentItem.text);
+			}
+		}
+
+		public void ClearContent()
+		{
+			if(contentContainer.childCount == 0)
+				return;
+
+			foreach(Transform item in contentContainer)
+				item.gameObject.SetActive(false);
+		}
+
 		public void ClearText()
 		{
 			EnterText("", false);
+		}
+
+		public void SetLabel(string label)
+		{
+			m_catchTextInput = false;
+			textField.text = label;
+			textField.interactable = false;
+			m_catchTextInput = true;
 		}
 
 		public void EnterText(string text)
@@ -175,6 +300,7 @@ namespace Menus
 			if(textField == null)
 				return;
 
+			textField.interactable = true;
 			m_catchTextInput = catchTextInput;
 			textField.text = text;
 		}

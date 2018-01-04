@@ -14,9 +14,10 @@ namespace Menus
 
 
 		#region Hidden Fields
-		private List<int> contextList = new List<int>();
-
+		private MenuLayout layout = null;
 		private MenuNode rootNode = null;
+		private bool isOpen = false;
+		private List<int> contextList = new List<int>();
 		#endregion
 
 
@@ -24,7 +25,16 @@ namespace Menus
 		private void Awake()
 		{
 			Initialize();
-			PrintCurrentContext();
+		}
+
+		private void OnEnable()
+		{
+			RegisterEvent();
+		}
+
+		private void OnDisable()
+		{
+			DeregisterEvent();
 		}
 		#endregion
 
@@ -33,28 +43,47 @@ namespace Menus
 		private void Initialize()
 		{
 			rootNode = MenuNode.CreateNode(menuStructure.GetItems());
+			layout = GetComponent<MenuLayout>();
 		}
 
-		private void PrintCurrentContext()
+		private void RegisterEvent()
 		{
-			MenuNode[] currentItems = GetCurrentContextItems();
-
-			if(currentItems == null)
-			{
-				Debug.Log("EMPTY!");
-				return;
-			}
-
-			string items = "CURRENT CONTEXT:";
-			foreach(MenuNode node in currentItems)
-			{
-				items += '\n' + node.label;
-			}
-
-			Debug.Log(items);
+			MenuLayout.OnContentClick += OnContentClick;
+			MenuLayout.OnPrimaryClick += OnPrimaryClick;
+//			MenuLayout.OnSecondaryClick += OnSecondaryClick;
 		}
 
-		private MenuNode[] GetCurrentContextItems()
+		private void DeregisterEvent()
+		{
+			MenuLayout.OnContentClick -= OnContentClick;
+			MenuLayout.OnPrimaryClick -= OnPrimaryClick;
+//			MenuLayout.OnSecondaryClick -= OnSecondaryClick;
+		}
+
+		private void Open()
+		{
+			MenuNode currentNode = GetCurrentNode();
+			MenuNode[] currentNodes = currentNode.GetAll();
+			List<MenuContent> content = new List<MenuContent>();
+
+			if(currentNodes != null)
+			{
+				foreach(MenuNode node in currentNodes)
+					content.Add(node.ToContent());
+			}
+
+			string label = (currentNode == rootNode ? "" : currentNode.label);
+			layout.SetContent(content.ToArray(), label);
+		}
+
+		private void Clear()
+		{
+			contextList.Clear();
+			layout.ClearContent();
+			layout.ClearText();
+		}
+
+		private MenuNode GetCurrentNode()
 		{
 			MenuNode currentNode = rootNode;
 
@@ -70,8 +99,43 @@ namespace Menus
 			if(currentNode == null)
 				return null;
 			else
-				return currentNode.GetAll();
+				return currentNode;
 		}
+		#endregion
+
+
+		#region Events
+		private void OnPrimaryClick()
+		{
+			if(contextList.Count > 0)
+				isOpen = true;
+			else
+				isOpen = !isOpen;
+			
+			if(!isOpen)
+				Clear();
+			else
+			{
+				if(contextList.Count > 0)
+					contextList.RemoveAt(contextList.Count - 1);
+				Open();
+			}
+
+			layout.ShowBackground(isOpen);
+		}
+
+		private void OnSecondaryClick()
+		{
+			
+		}
+
+		private void OnContentClick(int index)
+		{
+			contextList.Add(index);
+			Open();
+		}
+
+
 		#endregion
 	}
 }

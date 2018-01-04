@@ -12,22 +12,14 @@ namespace Menus.DataStructure
 				return null;
 
 			MenuNode rootNode = new MenuNode("Root", false);
-			int previousDepth = 0;
 
 			for(int i = 0; i < items.Length; i++)
 			{
 				MenuItem item = items[i];
 				MenuNode node = new MenuNode(item.title, item.toggleable);
 
-				int difference = item.depth - previousDepth;
-
-				if(item.depth == 0)
-					rootNode.Add(node);
-				else
-				{
-					MenuNode lastNode = GetLastNode(rootNode, item.depth);
-					lastNode.Add(node);
-				}
+				MenuNode lastNode = GetLastNode(rootNode, item.depth);
+				lastNode.Add(node);
 			}
 
 			return rootNode;
@@ -99,6 +91,11 @@ namespace Menus.DataStructure
 		public MenuNode[] GetAll()
 		{
 			return m_nodes.ToArray();
+		}
+	
+		public MenuContent ToContent()
+		{
+			return new MenuContent(null, m_label);
 		}
 	}
 }
