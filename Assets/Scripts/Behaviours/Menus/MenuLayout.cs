@@ -11,10 +11,6 @@ namespace Menus
 {
 	public class MenuLayout : MonoBehaviour
 	{
-		[Header("Menu Items")]
-		[SerializeField]
-		private List<MenuItem> items = new List<MenuItem>();
-
 		#region Data Structures
 		private enum ButtonType
 		{
@@ -91,6 +87,7 @@ namespace Menus
 			get { return m_showBackground; }
 		}
 		#endregion
+
 
 		#region MonoBehaviour Implementation
 		private void Awake()

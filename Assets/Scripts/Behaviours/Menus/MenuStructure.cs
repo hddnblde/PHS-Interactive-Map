@@ -12,11 +12,16 @@ namespace Menus
 	public class MenuStructure : ScriptableObject
 	{
 		[SerializeField]
-		private List<MenuItem> items = new List<MenuItem>();
+		private List<Menus.DataStructure.MenuItem> items = new List<Menus.DataStructure.MenuItem>();
 
-		public MenuItem[] GetContext(int[] contextTable)
+		public Menus.DataStructure.MenuItem[] GetContext(int[] contextTable)
 		{
 			return null;
+		}
+
+		public Menus.DataStructure.MenuItem[] GetItems()
+		{
+			return items.ToArray();
 		}
 	}
 

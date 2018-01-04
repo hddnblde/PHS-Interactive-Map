@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Menus
+namespace Menus.DataStructure
 {
 	[System.Serializable]
 	public class MenuItem
