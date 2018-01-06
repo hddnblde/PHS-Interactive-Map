@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Open High 8
   m_EditorClassIdentifier: 
   m_grade: 8
-  m_order: 0
+  m_order: 12
   m_count: 1
