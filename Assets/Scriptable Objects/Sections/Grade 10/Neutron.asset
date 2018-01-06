@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f08923b630c8b6478bd0f3ee38eca27, type: 3}
-  m_Name: Proton
+  m_Name: Neutron
   m_EditorClassIdentifier: 
   m_grade: 10
   m_order: 9
