@@ -104,25 +104,9 @@ namespace Gestures
 
 		#region Main Activities
 		private void EvaluateActivity()
-		{
-			bool isOnUI = false;
-			for(int i = 0; i < Input.touchCount; i++)
-			{
-				isOnUI = TouchIsOnUI(i);
-				if(isOnUI)
-					break;;
-			}
-
-			if(isOnUI)
-				return;
-			
+		{			
 			if(OnEvaluate != null)
 				OnEvaluate(Input.touchCount, Time.deltaTime);
-		}
-
-		private bool TouchIsOnUI(int touchID)
-		{
-			return EventSystem.current.IsPointerOverGameObject(touchID);
 		}
 
 		private void SingleTouchActivity(int touchCount, float deltaTime)
@@ -191,7 +175,6 @@ namespace Gestures
 			if(!pressed && pressDetected)
 			{
 				pressed = true;
-				Debug.Log("pressed!");
 				if(OnPress != null)
 					OnPress(position);
 			}

@@ -90,9 +90,6 @@ namespace Menus
 		private Image background = null;
 
 		[SerializeField]
-		private Image textUnderline = null;
-
-		[SerializeField]
 		private Image headerUnderline = null;
 
 		[Header("Sprites")]
@@ -108,7 +105,7 @@ namespace Menus
 
 
 		#region Hidden Fields
-		private const float TransitionTime = 0.29f;
+		private const float TransitionTime = 0.25f;
 		private bool m_showBackground = false;
 		private bool m_catchTextInput = true;
 		private Coroutine backgroundTransitionRoutine = null;
@@ -372,7 +369,6 @@ namespace Menus
 			SetColor(secondaryButton.image, targetColor);
 			SetColor(textField.textComponent, targetColor);
 			SetColor(textField.placeholder, targetColor);
-			SetColor(textUnderline, targetColor);
 		}
 
 		private void SetColor(Graphic graphic, Color color)
