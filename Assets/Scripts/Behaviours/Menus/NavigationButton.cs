@@ -31,6 +31,8 @@ namespace Menus
 		{
 			this.normal = normal;
 			this.highlight = highlight;
+
+			SetActive(false);
 		}
 
 		public void SetActive(bool active)

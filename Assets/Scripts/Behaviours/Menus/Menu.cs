@@ -27,7 +27,7 @@ namespace Menus
 
 		[Header("References")]
 		[SerializeField]
-		private RectTransform background = null;
+		private Graphic background = null;
 
 		[SerializeField]
 		private NavigationButton infoButton = null;
@@ -38,12 +38,20 @@ namespace Menus
 		[SerializeField]
 		private NavigationButton menuButton = null;
 
+		[SerializeField]
+		private Outline outline = null;
+
 		private const Context DefaultContext = Context.Map;
 
 		private void Awake()
 		{
 			Initialize();
 			SelectContext(DefaultContext);
+		}
+
+		private void OnValidate()
+		{
+			Initialize();
 		}
 
 		private void OnEnable()
@@ -62,6 +70,12 @@ namespace Menus
 			SetButtonColor(infoButton);
 			SetButtonColor(mapButton);
 			SetButtonColor(menuButton);
+
+			if(background != null)
+				background.color = backgroundColor;
+
+			if(outline != null)
+				outline.effectColor = normalColor;
 		}
 
 		private void RegisterEvents()

@@ -83,6 +83,7 @@ namespace Navigation
 		private const float ViewLowerLimit = 10f;
 		private const float ViewUpperLimit = 170f;
 		private const float TransitionDuration = 0.25f;
+		private const float DefaultTranslateSpeed = 10f;
 		private const float ZoomDefault = 0.5f;
 		private const float ZoomDampTime = 0.15f;
 
@@ -189,7 +190,11 @@ namespace Navigation
 
 		private void Pan(Vector2 delta)
 		{
-			delta *= -Mathf.Lerp(MovementSpeedUpperLimit, MovementSpeedLowerLimit, view);
+//			delta *= -Mathf.Lerp(MovementSpeedUpperLimit, MovementSpeedLowerLimit, view);
+
+			float speedRatio = ViewUpperLimit / navigationCamera.orthographicSize;
+			delta *= -(speedRatio * DefaultTranslateSpeed) * Time.deltaTime;
+
 			transform.Translate(delta.x, delta.y, 0f);
 
 			Vector3 clampedPosition =
