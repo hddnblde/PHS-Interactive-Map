@@ -104,7 +104,7 @@ public class FacultyScheduler : EditorWindow
 			return;
 
 		Room selectedRoom = null;
-		SectionCluster selectedSectionCluster = null;
+		StudentClass selectedStudentClass = null;
 
 		if(!objectPickerWindowOpen)
 		{
@@ -113,7 +113,7 @@ public class FacultyScheduler : EditorWindow
 			if(selectionDepth == SelectionDepth.SelectRoom)
 				EditorGUIUtility.ShowObjectPicker<Room>(selectedRoom, false, "", controlID);
 			else
-				EditorGUIUtility.ShowObjectPicker<SectionCluster>(selectedSectionCluster, false, "", controlID);
+				EditorGUIUtility.ShowObjectPicker<StudentClass>(selectedStudentClass, false, "", controlID);
 
 			objectPickerWindowOpen = true;
 		}
@@ -126,12 +126,12 @@ public class FacultyScheduler : EditorWindow
 				selectedRoom = (Room)EditorGUIUtility.GetObjectPickerObject();
 			else
 			{
-				selectedSectionCluster = (SectionCluster)EditorGUIUtility.GetObjectPickerObject();
+				selectedStudentClass = (StudentClass)EditorGUIUtility.GetObjectPickerObject();
 				currentSelectedItem.column = -1;
 				currentSelectedItem.row = -1;
 
 				Debug.Log("SELECTED ROOM : " + selectedRoom.name);
-				Debug.Log("SELECTED SECTION : " + selectedSectionCluster.name);
+				Debug.Log("SELECTED SECTION : " + selectedStudentClass.name);
 			}
 
 			objectPickerWindowOpen = false;

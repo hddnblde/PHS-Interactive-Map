@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Faculty;
 using Map;
+using Students;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,8 +11,8 @@ using UnityEditor;
 
 namespace Students
 {
-	[CreateAssetMenu(menuName = "Students/Section Cluster", order = 1, fileName = "Section Cluster")]
-	public class SectionCluster : ScriptableObject
+	[CreateAssetMenu(menuName = "Students/Student Class", order = 1, fileName = "Student Class")]
+	public class StudentClass : ScriptableObject
 	{
 		[Header("Description")]
 		[SerializeField]
@@ -49,7 +50,7 @@ namespace Students
 	}
 
 	#if UNITY_EDITOR
-	[CustomEditor(typeof(SectionCluster))]
+	[CustomEditor(typeof(StudentClass))]
 	public class SectionClusterEditor : Editor
 	{
 		private SerializedProperty

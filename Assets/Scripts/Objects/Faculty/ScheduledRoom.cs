@@ -10,30 +10,36 @@ namespace Faculty.Schedules
 	public class ScheduledRoom
 	{
 		public ScheduledRoom()
-		{
-			
-		}
+		{}
 
-		public ScheduledRoom(Room room, SectionCluster sectionCluster)
+		public ScheduledRoom(Room room, StudentClass studentClass)
 		{
 			m_room = room;
-			m_sectionCluster = sectionCluster;
+			m_studentClass = studentClass;
 		}
+
+		[SerializeField]
+		private Day m_day = Day.Monday;
 
 		[SerializeField]
 		private Room m_room = null;
 
 		[SerializeField]
-		private SectionCluster m_sectionCluster = null;
+		private StudentClass m_studentClass = null;
+
+		public Day day
+		{
+			get { return m_day; }
+		}
 
 		public Room room
 		{
 			get { return m_room; }
 		}
 
-		public SectionCluster sectionCluster
+		public StudentClass studentClass
 		{
-			get { return m_sectionCluster; }
+			get { return m_studentClass; }
 		}
 	}
 }

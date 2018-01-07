@@ -5,6 +5,15 @@ using Map;
 
 namespace Faculty.Schedules
 {
+	public enum Day
+	{
+		Monday = 1,
+		Tuesday = 2,
+		Wednesday = 3,
+		Thursday = 4,
+		Friday = 5
+	}
+
 	[System.Serializable]
 	public class ScheduleItem
 	{
@@ -17,53 +26,26 @@ namespace Faculty.Schedules
 		[SerializeField]
 		private Period m_period = null;
 
-		[Header("Daily Room Assignment")]
 		[SerializeField]
-		private ScheduledRoom m_monday = new ScheduledRoom();
-
-		[SerializeField]
-		private ScheduledRoom m_tuesday = new ScheduledRoom();
-
-		[SerializeField]
-		private ScheduledRoom m_wednesday = new ScheduledRoom();
-
-		[SerializeField]
-		private ScheduledRoom m_thursday = new ScheduledRoom();
-
-		[SerializeField]
-		private ScheduledRoom m_friday = new ScheduledRoom();
+		private List<ScheduledRoom> scheduledRooms = new List<ScheduledRoom>();
 		#endregion
 
 
-		#region Properties
-		public Period period
+		#region Function
+		public ScheduledRoom GetRoom(Day day)
 		{
-			get { return m_period; }
-		}
+			ScheduledRoom room = null;
 
-		public ScheduledRoom monday
-		{
-			get { return m_monday; }
-		}
+			foreach(ScheduledRoom scheduledRoom in scheduledRooms)
+			{
+				if(scheduledRoom.day == day)
+				{
+					room = scheduledRoom;
+					break;
+				}
+			}
 
-		public ScheduledRoom tuesday
-		{
-			get { return m_tuesday; }
-		}
-
-		public ScheduledRoom wednesday
-		{
-			get { return m_wednesday; }
-		}
-
-		public ScheduledRoom thursday
-		{
-			get { return m_thursday; }
-		}
-
-		public ScheduledRoom friday
-		{
-			get { return m_friday; }
+			return room;
 		}
 		#endregion
 	}
