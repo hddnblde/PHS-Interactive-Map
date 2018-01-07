@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace Faculty.Schedules
+namespace Schedules
 {
 	[CreateAssetMenu(menuName = "Faculty/Schedules/Period", order = 0, fileName = "Period")]
 	public class Period : ScriptableObject

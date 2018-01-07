@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Faculty;
+using PampangaHighSchool.Faculty;
 using Map;
-using Students;
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-namespace Students
+namespace PampangaHighSchool.Students
 {
 	[CreateAssetMenu(menuName = "Students/Student Class", order = 1, fileName = "Student Class")]
 	public class StudentClass : ScriptableObject

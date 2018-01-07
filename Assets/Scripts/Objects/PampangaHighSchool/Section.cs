@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Students
+namespace PampangaHighSchool.Students
 {
 	public enum Grade
 	{

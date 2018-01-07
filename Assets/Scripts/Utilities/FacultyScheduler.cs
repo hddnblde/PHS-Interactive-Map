@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Faculty.Schedules;
-using Students;
+using PampangaHighSchool.Students;
 using Map;
 
 public class FacultyScheduler : EditorWindow

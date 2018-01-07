@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Faculty;
-using Faculty.Schedules;
-using Students;
+using PampangaHighSchool;
+using Schedules;
+using PampangaHighSchool.Faculty;
+using PampangaHighSchool.Students;
 
 public class ScheduleMenu : MonoBehaviour
 {
@@ -12,10 +13,6 @@ public class ScheduleMenu : MonoBehaviour
 		ByFaculty,
 		ByStudent
 	}
-
-	private Context currentContext = Context.ByFaculty;
-
-	private Teacher teacher = null;
 
 	public void ViewTeacher(Teacher teacher)
 	{

@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-using Faculty;
+using PampangaHighSchool.Faculty;
 
 public class FacultyLoader : EditorWindow
 {
 	private static string listPath;
 	private static string scriptableObjectsPath;
-	private static Teacher.Department department = Teacher.Department.Aralin;
+	private static Department department = Department.Aralin;
 
 	[MenuItem("Tools/Faculty Loader")]
 	private static void Initialize()
@@ -39,7 +39,7 @@ public class FacultyLoader : EditorWindow
 	{
 		listPath = EditorPrefs.GetString("FacultyLoader_ListPath", "");
 		scriptableObjectsPath = EditorPrefs.GetString("FacultyLoader_ScriptableObjectsPath", "Scriptable Objects\\Faculty\\");
-		department = (Teacher.Department)EditorPrefs.GetInt("FacultyLoader_Department", 0);
+		department = (Department)EditorPrefs.GetInt("FacultyLoader_Department", 0);
 	}
 
 	private void SavePrefs()
@@ -51,7 +51,7 @@ public class FacultyLoader : EditorWindow
 
 	private void DrawPath()
 	{
-		department = (Teacher.Department)EditorGUILayout.EnumPopup((System.Enum)department);
+		department = (Department)EditorGUILayout.EnumPopup((System.Enum)department);
 		EditorGUILayout.LabelField("Paths", EditorStyles.boldLabel);
 		listPath = EditorGUILayout.TextField("Root List Path", listPath);
 		scriptableObjectsPath = EditorGUILayout.TextField("Scriptable Objects Path", scriptableObjectsPath);

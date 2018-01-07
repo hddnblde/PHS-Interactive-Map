@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Map;
 
-namespace Faculty.Schedules
+namespace Schedules
 {
 	public enum Day
 	{
@@ -31,7 +31,7 @@ namespace Faculty.Schedules
 		#endregion
 
 
-		#region Function
+		#region Functions
 		public ScheduledRoom GetRoom(Day day)
 		{
 			ScheduledRoom room = null;
@@ -46,6 +46,11 @@ namespace Faculty.Schedules
 			}
 
 			return room;
+		}
+
+		public Period period
+		{
+			get { return m_period; }
 		}
 		#endregion
 	}

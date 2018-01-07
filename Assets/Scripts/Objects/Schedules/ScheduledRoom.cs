@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Map;
-using Students;
+using PampangaHighSchool.Students;
 
-namespace Faculty.Schedules
+namespace Schedules
 {
 	[System.Serializable]
 	public class ScheduledRoom
