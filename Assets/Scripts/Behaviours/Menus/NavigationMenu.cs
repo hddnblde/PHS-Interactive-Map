@@ -79,9 +79,7 @@ namespace Menus
 			SetButtonColor(infoButton);
 			SetButtonColor(mapButton);
 			SetButtonColor(menuButton);
-
-			if(background != null)
-				background.color = backgroundColor;
+			SetBackgroundColor();
 		}
 
 		private void RegisterEvents()
@@ -137,6 +135,15 @@ namespace Menus
 				button.Initialize(normalColor, highlightColor, pressedColor, transitionCurve);
 		}
 
+		private void SetBackgroundColor()
+		{
+			if(background != null)
+				background.color = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, background.color.a);
+
+			if(backgroundOverlay != null)
+				backgroundOverlay.color = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundOverlay.color.a);
+		}
+
 		private void HighlightButton(NavigationButton button, bool highlighted)
 		{
 			if(button != null)
@@ -161,18 +168,18 @@ namespace Menus
 		private IEnumerator BackgroundOverlayTransition(bool show)
 		{
 			const float duration = 0.15f;
-			Color a = backgroundOverlay.color;
-			Color b = new Color(a.r, a.g, a.b, (show ? 1f : 0f));
+			float a = backgroundOverlay.color.a;
+			float b =(show ? 1f : 0f);
 
 			for(float current = 0f; current < duration; current += Time.deltaTime)
 			{
 				float t = Mathf.InverseLerp(0f, duration, current);
-				Color color = Color.Lerp(a, b, t);
-				backgroundOverlay.color = color;
+				float alpha = Mathf.Lerp(a, b, transitionCurve.Evaluate(t));
+				backgroundOverlay.color = new Color(backgroundOverlay.color.r, backgroundOverlay.color.g, backgroundOverlay.color.b, alpha);
 				yield return null;
 			}
 
-			backgroundOverlay.color = b;
+			backgroundOverlay.color = new Color(backgroundOverlay.color.r, backgroundOverlay.color.g, backgroundOverlay.color.b, b);
 		}
 		#endregion
 	}

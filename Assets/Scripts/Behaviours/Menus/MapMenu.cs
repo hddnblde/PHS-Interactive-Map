@@ -42,6 +42,9 @@ namespace Menus
 		}
 
 		[SerializeField]
+		private RectTransform markerPanel = null;
+
+		[SerializeField]
 		private Button setOriginButton = null;
 
 		[SerializeField]
@@ -56,8 +59,13 @@ namespace Menus
 		[SerializeField]
 		private NavigationSystem navigationSystem = null;
 
+		[SerializeField]
+		private NavigationMenu navigationMenu = null;
+
 		private LocationMarker originMarker = null;
 		private LocationMarker destinationMarker = null;
+		private Text originText = null;
+		private Text destinationText = null;
 		private Context currentContext = Context.SetOrigin;
 
 		private enum Context
@@ -73,17 +81,20 @@ namespace Menus
 
 		private void Initialize()
 		{
-			RegisterButton(setOriginButton, Context.SetOrigin);
-			RegisterButton(setDestinationButton, Context.SetDestination);
+			RegisterButton(setOriginButton, ref originText, Context.SetOrigin);
+			RegisterButton(setDestinationButton, ref destinationText, Context.SetDestination);
 
 			if(locationDatabase != null)
 				locationDatabase.OnResult += OnResult;
+			
 		}
 
 		private void OnSearch(string text)
 		{
-			locationDatabase.Search(text);
+			if(locationDatabase == null)
+				return;
 
+			locationDatabase.Search(text);
 		}
 
 		private void OnSelect(int index)
@@ -95,14 +106,26 @@ namespace Menus
 			LocationMarker marker = new LocationMarker(location);
 
 			if(currentContext == Context.SetDestination)
+			{
 				destinationMarker = marker;
+
+				if(destinationText != null)
+					destinationText.text = marker.displayedName;
+			}
 			else
+			{
 				originMarker = marker;
+
+				if(originText != null)
+					originText.text = marker.displayedName;
+			}
+
+			CloseContext();
 		}
 
 		private void OnResult(int count)
 		{
-			if(count <= 0 || searchMenu == null)
+			if(count <= 0 || locationDatabase == null || searchMenu == null)
 				return;
 
 			MenuContent[] contents = new MenuContent[count];
@@ -116,29 +139,38 @@ namespace Menus
 			searchMenu.SetContent(contents);
 		}
 
-		private void RegisterButton(Button button, Context context)
+		private void RegisterButton(Button button, ref Text text, Context context)
 		{
 			if(button == null)
 				return;
 
 			button.onClick.AddListener(() => SetContext(context));
+			text = button.transform.GetChild(1).GetChild(0).GetComponent<Text>();
 		}
 
 		private void SetContext(Context context)
 		{
 			currentContext = context;
+			ToggleSearch(true);
 		}
 
-		private void OpenSearch()
+		private void CloseContext()
 		{
-			if(searchMenu != null)
+			ToggleSearch(false);
+		}
+
+		private void ToggleSearch(bool show)
+		{
+			if(searchMenu == null || navigationMenu == null || markerPanel == null)
+				return;
+
+			if(show)
 				searchMenu.Open(OnSearch, OnSelect);
-		}
-
-		private void CloseSearch()
-		{
-			if(searchMenu != null)
+			else
 				searchMenu.Close();
+
+			navigationMenu.ShowBackground(show);
+			markerPanel.gameObject.SetActive(!show);
 		}
 
 		private void Navigate()
