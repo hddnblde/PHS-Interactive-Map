@@ -5,6 +5,29 @@ using UnityEngine.UI;
 
 namespace Menus
 {
+	public class MenuContent
+	{
+		public MenuContent(Sprite thumbnail, string text)
+		{
+			m_thumbnail = thumbnail;
+			m_text = text;
+		}
+
+		private Sprite m_thumbnail = null;
+
+		private string m_text = "";
+
+		public Sprite thumbnail
+		{
+			get { return m_thumbnail; }
+		}
+
+		public string text
+		{
+			get { return m_text; }
+		}
+	}
+
 	public class MenuContentLayout : MonoBehaviour
 	{
 		[SerializeField]

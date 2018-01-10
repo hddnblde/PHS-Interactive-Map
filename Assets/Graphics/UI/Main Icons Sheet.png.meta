@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6bfe94c3f20b9f34aa93ae9163bc6179
-timeCreated: 1515233463
+timeCreated: 1515550845
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,12 +16,12 @@ TextureImporter:
     21300018: Building
     21300020: Search
     21300022: Clear
-    21300024: Options
+    21300024: More Vertical
     21300026: Settings
     21300028: Exit
     21300030: Menu
     21300032: Map
-    21300034: Menu-to-Back_2
+    21300034: Check
     21300036: Menu-to-Back_3
     21300038: Menu-to-Back_4
     21300040: Menu-to-Back_5
@@ -29,6 +29,7 @@ TextureImporter:
     21300044: Menu-to-Back_7
     21300046: Menu-to-Back_8
     21300048: Back
+    21300050: More
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -303,7 +304,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Options
+      name: More
       rect:
         serializedVersion: 2
         x: 384
@@ -373,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_2
+      name: Check
       rect:
         serializedVersion: 2
         x: 384

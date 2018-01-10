@@ -53,7 +53,7 @@ namespace Map
 
 
 		#region Methods
-		private void Search(string keyword)
+		public void Search(string keyword)
 		{
 			if(contentGroup != null)
 			{
