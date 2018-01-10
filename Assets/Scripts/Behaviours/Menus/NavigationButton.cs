@@ -8,12 +8,12 @@ namespace Menus
 {
 	public class NavigationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 	{
-		public delegate void ContextSelect(Menu.Context context);
+		public delegate void ContextSelect(NavigationMenu.Context context);
 		public event ContextSelect OnContextSelect;
 
 		[Header("Navigation")]
 		[SerializeField]
-		private Menu.Context context = Menu.Context.Map;
+		private NavigationMenu.Context context = NavigationMenu.Context.Map;
 
 		[SerializeField]
 		private Graphic background = null;

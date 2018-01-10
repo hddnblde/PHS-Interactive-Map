@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 namespace Menus
 {
-	public class Menu : MonoBehaviour
+	public class NavigationMenu : MonoBehaviour
 	{
 		public enum Context
 		{
@@ -44,6 +44,10 @@ namespace Menus
 		[SerializeField]
 		private NavigationButton menuButton = null;
 
+		[SerializeField]
+		private Image backgroundOverlay = null;
+
+		private Coroutine backgroundOverlayTransitionRoutine = null;
 		private const Context DefaultContext = Context.Map;
 
 		private void Awake()
@@ -99,6 +103,9 @@ namespace Menus
 			HighlightButton(infoButton, context == Context.Info);
 			HighlightButton(mapButton, context == Context.Map);
 			HighlightButton(menuButton, context == Context.Menu);
+
+			bool showBackground = context != Context.Map;
+			ShowBackground(showBackground);
 		}
 
 		private void DisableImmersiveModeForAndroid()
@@ -134,6 +141,38 @@ namespace Menus
 		{
 			if(button != null)
 				button.Select(highlighted);
+		}
+		#endregion
+
+
+		#region Background Helpers
+		public void ShowBackground(bool show)
+		{
+			if(backgroundOverlayTransitionRoutine != null)
+				StopCoroutine(backgroundOverlayTransitionRoutine);
+
+			if(backgroundOverlay == null)
+				return;
+			
+			backgroundOverlay.raycastTarget = show;
+			backgroundOverlayTransitionRoutine = StartCoroutine(BackgroundOverlayTransition(show));
+		}
+
+		private IEnumerator BackgroundOverlayTransition(bool show)
+		{
+			const float duration = 0.15f;
+			Color a = backgroundOverlay.color;
+			Color b = new Color(a.r, a.g, a.b, (show ? 1f : 0f));
+
+			for(float current = 0f; current < duration; current += Time.deltaTime)
+			{
+				float t = Mathf.InverseLerp(0f, duration, current);
+				Color color = Color.Lerp(a, b, t);
+				backgroundOverlay.color = color;
+				yield return null;
+			}
+
+			backgroundOverlay.color = b;
 		}
 		#endregion
 	}

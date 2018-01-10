@@ -22,6 +22,9 @@ namespace Menus
 		private RectTransform contentContainer = null;
 
 		[SerializeField]
+		private NavigationMenu navigationMenu = null;
+
+		[SerializeField]
 		private int poolCount = 70;
 
 		private List<MenuContentLayout> contentLayoutList = new List<MenuContentLayout>();
@@ -42,6 +45,7 @@ namespace Menus
 				MenuContentLayout contentLayout = Instantiate(contentPrefab, contentContainer);
 				contentLayout.OnSelect += OnContentClicked;
 				contentLayoutList.Add(contentLayout);
+				contentLayout.gameObject.SetActive(false);
 			}
 		}
 
@@ -88,7 +92,8 @@ namespace Menus
 
 		private void ShowBackground(bool show)
 		{
-			Debug.Log("Show background = " + show);
+//			if(navigationMenu != null)
+//				navigationMenu.
 		}
 
 		public void Open(Search searchAction, Select selectAction)
