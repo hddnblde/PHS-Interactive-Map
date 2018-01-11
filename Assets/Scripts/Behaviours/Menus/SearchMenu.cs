@@ -36,8 +36,15 @@ namespace Menus
 		[SerializeField]
 		private int poolCount = 70;
 
+		private CanvasGroup canvasGroup = null;
+
 		private List<MenuContentLayout> contentLayoutList = new List<MenuContentLayout>();
-		private bool isOpen = false;
+		private bool m_isOpen = false;
+
+		public bool isOpen
+		{
+			get { return m_isOpen; }
+		}
 
 		private void Awake()
 		{
@@ -69,6 +76,8 @@ namespace Menus
 
 			if(clearButton != null)
 				clearButton.onClick.AddListener(OnClearButtonClicked);
+
+			canvasGroup = GetComponent<CanvasGroup>();
 		}
 
 		private void OnTextEdit(string text)
@@ -87,6 +96,8 @@ namespace Menus
 		{
 			if(OnQuit != null)
 				OnQuit();
+			
+			Close();
 		}
 
 		private void OnClearButtonClicked()
@@ -120,7 +131,7 @@ namespace Menus
 
 		public void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
 		{
-			if(isOpen)
+			if(m_isOpen)
 			{
 				Debug.Log("Search menu is already opened by another activity! Make sure to close it before opening on this activity.");
 				return;
@@ -132,12 +143,13 @@ namespace Menus
 			OnSelect = selectAction;
 			OnQuit = quitAction;
 
-			isOpen = true;
+			m_isOpen = true;
+			Show(true);
 		}
 
 		public void Close()
 		{
-			if(!isOpen)
+			if(!m_isOpen)
 			{
 				Debug.Log("Search menu is already closed.");
 				return;
@@ -148,7 +160,8 @@ namespace Menus
 			OnQuit = null;
 			ClearContentLayout();
 
-			isOpen = false;
+			m_isOpen = false;
+			Show(false);
 		}
 
 		private void InitializeTextField(string placeholder)
@@ -175,6 +188,16 @@ namespace Menus
 
 				layout.Set(content.thumbnail, content.text);
 			}
+		}
+
+		private void Show(bool shown)
+		{
+			if(canvasGroup == null)
+				return;
+
+			canvasGroup.alpha = (shown ? 1f : 0f);
+			canvasGroup.blocksRaycasts = shown;
+			canvasGroup.interactable = shown;
 		}
 	}
 }

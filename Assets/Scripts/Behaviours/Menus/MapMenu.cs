@@ -7,42 +7,44 @@ using Navigation;
 
 namespace Menus
 {
-	public class MapMenu : MonoBehaviour
+	public class LocationMarker
 	{
-		private class LocationMarker
+		public LocationMarker(string displayedName, Vector3 position)
 		{
-			public LocationMarker(Location location)
-			{
-				this.location = location;
-			}
-
-			private Location location = null;
-
-			public Vector3 position
-			{
-				get
-				{
-					if(location == null)
-						return Vector3.zero;
-					else
-						return location.position;
-				}
-			}
-
-			public string displayedName
-			{
-				get
-				{
-					if(location == null)
-						return "";
-					else
-						return location.displayedName;
-				}
-			}
+			m_position = position;
+			m_displayedName = displayedName;
 		}
 
+		public LocationMarker(Location location)
+		{
+			if(location == null)
+				return;
+			
+			m_position = location.position;
+			m_displayedName = location.displayedName;
+		}
+
+		private Vector3 m_position = Vector3.zero;
+		private string m_displayedName = "Marker";
+
+		public Vector3 position
+		{
+			get { return m_position; }
+		}
+
+		public string displayedName
+		{
+			get { return m_displayedName; }
+		}
+	}
+
+	public class MapMenu : MonoBehaviour
+	{
 		[SerializeField]
-		private RectTransform markerPanel = null;
+		private CanvasGroup markerPanel = null;
+
+		[SerializeField]
+		private Button chooseOnMapButton = null;
 
 		[SerializeField]
 		private MapMenuMarkerButton originMarkerButton = null;
@@ -51,10 +53,10 @@ namespace Menus
 		private MapMenuMarkerButton destinationMarkerButton = null;
 
 		[SerializeField]
-		private Button chooseOnMapButton = null;
+		private SearchMenu searchMenu = null;
 
 		[SerializeField]
-		private SearchMenu searchMenu = null;
+		private MarkerMenu markerMenu = null;
 
 		[SerializeField]
 		private LocationDatabase locationDatabase = null;
@@ -113,7 +115,6 @@ namespace Menus
 				return;
 
 			SetMarker(marker, currentContext);
-			CloseContext();
 		}
 
 		private void OnResult(int count)
@@ -153,11 +154,20 @@ namespace Menus
 		{
 			currentContext = context;
 			ToggleSearch(true);
+			ShowMarkerPanel(false);
 		}
 
 		private void MarkLocation()
 		{
-			
+			ToggleSearch(false);
+			ShowMarkerPanel(false);
+			string displayedName = "Mark " + (currentContext == Context.SetDestination ? "destination" : "starting point");
+			markerMenu.Open(displayedName, SetMarker, () => ToggleSearch(true));
+		}
+
+		private void SetMarker(LocationMarker marker)
+		{
+			SetMarker(marker, currentContext);
 		}
 
 		private void SetMarker(LocationMarker marker, Context context)
@@ -176,16 +186,18 @@ namespace Menus
 			}
 
 			Navigate();
+			CloseContext();
 		}
 
 		private void CloseContext()
 		{
 			ToggleSearch(false);
+			ShowMarkerPanel(true);
 		}
 
 		private void ToggleSearch(bool show)
 		{
-			if(searchMenu == null || navigationMenu == null || markerPanel == null || chooseOnMapButton != null)
+			if(searchMenu == null || navigationMenu == null)
 				return;
 
 			if(show)
@@ -193,12 +205,21 @@ namespace Menus
 				string placeholder = "Choose " + (currentContext == Context.SetDestination ? "destination" : "starting point");
 				searchMenu.Open(OnSearch, OnSelect, CloseContext, placeholder);
 			}
-			else
+			else if(searchMenu.isOpen)
 				searchMenu.Close();
 
 			navigationMenu.ShowBackground(show);
 			chooseOnMapButton.gameObject.SetActive(show);
-			markerPanel.gameObject.SetActive(!show);
+		}
+
+		private void ShowMarkerPanel(bool show)
+		{
+			if(markerPanel == null)
+				return;
+			
+			markerPanel.alpha = (show ? 1f : 0f);
+			markerPanel.interactable = show;
+			markerPanel.blocksRaycasts = show;
 		}
 
 		private void Navigate()
