@@ -45,10 +45,13 @@ namespace Menus
 		private RectTransform markerPanel = null;
 
 		[SerializeField]
-		private Button setOriginButton = null;
+		private MapMenuMarkerButton originMarkerButton = null;
 
 		[SerializeField]
-		private Button setDestinationButton = null;
+		private MapMenuMarkerButton destinationMarkerButton = null;
+
+		[SerializeField]
+		private Button chooseOnMapButton = null;
 
 		[SerializeField]
 		private SearchMenu searchMenu = null;
@@ -64,8 +67,6 @@ namespace Menus
 
 		private LocationMarker originMarker = null;
 		private LocationMarker destinationMarker = null;
-		private Text originText = null;
-		private Text destinationText = null;
 		private Context currentContext = Context.SetOrigin;
 
 		private enum Context
@@ -81,8 +82,11 @@ namespace Menus
 
 		private void Initialize()
 		{
-			RegisterButton(setOriginButton, ref originText, Context.SetOrigin);
-			RegisterButton(setDestinationButton, ref destinationText, Context.SetDestination);
+			RegisterButton(originMarkerButton, "Choose starting point", Context.SetOrigin);
+			RegisterButton(destinationMarkerButton, "Choose destination", Context.SetDestination);
+
+			if(chooseOnMapButton != null)
+				chooseOnMapButton.onClick.AddListener(MarkLocation);
 
 			if(locationDatabase != null)
 				locationDatabase.OnResult += OnResult;
@@ -105,28 +109,23 @@ namespace Menus
 			Location location = locationDatabase.GetLocationFromSearch(index);
 			LocationMarker marker = new LocationMarker(location);
 
-			if(currentContext == Context.SetDestination)
-			{
-				destinationMarker = marker;
+			if(marker == null)
+				return;
 
-				if(destinationText != null)
-					destinationText.text = marker.displayedName;
-			}
-			else
-			{
-				originMarker = marker;
-
-				if(originText != null)
-					originText.text = marker.displayedName;
-			}
-
+			SetMarker(marker, currentContext);
 			CloseContext();
 		}
 
 		private void OnResult(int count)
 		{
-			if(count <= 0 || locationDatabase == null || searchMenu == null)
+			if(locationDatabase == null || searchMenu == null)
 				return;
+
+			if(count == 0)
+			{
+				searchMenu.SetContent(null);
+				return;
+			}
 
 			MenuContent[] contents = new MenuContent[count];
 
@@ -139,19 +138,44 @@ namespace Menus
 			searchMenu.SetContent(contents);
 		}
 
-		private void RegisterButton(Button button, ref Text text, Context context)
+		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
 		{
 			if(button == null)
 				return;
 
-			button.onClick.AddListener(() => SetContext(context));
-			text = button.transform.GetChild(1).GetChild(0).GetComponent<Text>();
+			UnityEngine.Events.UnityAction selectAction = () => SearchLocation(context);
+			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
+
+			button.AddListener(selectAction, clearAction, placeholder);
 		}
 
-		private void SetContext(Context context)
+		private void SearchLocation(Context context)
 		{
 			currentContext = context;
 			ToggleSearch(true);
+		}
+
+		private void MarkLocation()
+		{
+			
+		}
+
+		private void SetMarker(LocationMarker marker, Context context)
+		{
+			string displayedName = (marker != null ? marker.displayedName : "");
+
+			if(context == Context.SetDestination)
+			{
+				destinationMarker = marker;
+				destinationMarkerButton.SetDisplayedText(displayedName);
+			}
+			else
+			{
+				originMarker = marker;
+				originMarkerButton.SetDisplayedText(displayedName);
+			}
+
+			Navigate();
 		}
 
 		private void CloseContext()
@@ -161,24 +185,31 @@ namespace Menus
 
 		private void ToggleSearch(bool show)
 		{
-			if(searchMenu == null || navigationMenu == null || markerPanel == null)
+			if(searchMenu == null || navigationMenu == null || markerPanel == null || chooseOnMapButton != null)
 				return;
 
 			if(show)
-				searchMenu.Open(OnSearch, OnSelect);
+			{
+				string placeholder = "Choose " + (currentContext == Context.SetDestination ? "destination" : "starting point");
+				searchMenu.Open(OnSearch, OnSelect, CloseContext, placeholder);
+			}
 			else
 				searchMenu.Close();
 
 			navigationMenu.ShowBackground(show);
+			chooseOnMapButton.gameObject.SetActive(show);
 			markerPanel.gameObject.SetActive(!show);
 		}
 
 		private void Navigate()
 		{
-			if(navigationSystem == null || originMarker == null || destinationMarker == null)
+			if(navigationSystem == null)
 				return;
 
-			navigationSystem.Navigate(originMarker.position, destinationMarker.position);
+			if(originMarker == null || destinationMarker == null)
+				navigationSystem.Clear();
+			else
+				navigationSystem.Navigate(originMarker.position, destinationMarker.position);
 		}
 	}
 }
