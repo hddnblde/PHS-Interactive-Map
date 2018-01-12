@@ -82,7 +82,7 @@ namespace Gestures
 
 		private void Update()
 		{
-			EvaluateActivity();
+			EvaluateTouches();
 		}
 		#endregion
 
@@ -103,15 +103,15 @@ namespace Gestures
 
 
 		#region Main Activities
-		private void EvaluateActivity()
-		{			
+		private void EvaluateTouches()
+		{
 			if(OnEvaluate != null)
 				OnEvaluate(Input.touchCount, Time.deltaTime);
 		}
 
 		private void SingleTouchActivity(int touchCount, float deltaTime)
 		{
-			if(touchCount != 1)
+			if(touchCount != 1 || TouchIsOverGameObject(0))
 			{
 				ResetPress();
 				ResetTouchTime();
@@ -135,6 +135,9 @@ namespace Gestures
 		private void DoubleTouchActivity(int touchCount, float deltaTime)
 		{
 			if(touchCount != 2)
+				return;
+
+			if(TouchIsOverGameObject(0) || TouchIsOverGameObject(1))
 				return;
 
 			Touch touch1 = Input.GetTouch(0);
@@ -264,6 +267,18 @@ namespace Gestures
 				deltaPosition = Vector2.MoveTowards(deltaPosition, Vector2.zero, 10f * deltaTime);
 				yield return null;
 			}
+		}
+		#endregion
+	
+
+		#region Helper
+		private bool TouchIsOverGameObject(int touchID)
+		{
+			EventSystem eventSystem = EventSystem.current;
+			if(eventSystem == null)
+				return false;
+			else
+				return eventSystem.IsPointerOverGameObject(touchID);
 		}
 		#endregion
 	}
