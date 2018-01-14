@@ -79,7 +79,7 @@ namespace Navigation
 		private const float CameraHeight = 30f;
 		private const float GroundHeight = 0f;
 		private const float ViewLowerLimit = 10f;
-		private const float ViewUpperLimit = 170f;
+		private const float ViewUpperLimit = 270f;
 		private const float TransitionDuration = 0.25f;
 		private const float TranslateSpeed = 7f;
 		private const float ZoomDefault = 0.5f;
