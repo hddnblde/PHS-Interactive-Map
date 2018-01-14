@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 namespace Menus
 {
-	public class Menu : MonoBehaviour
+	public class NavigationMenu : MonoBehaviour
 	{
 		public enum Context
 		{
@@ -44,6 +44,10 @@ namespace Menus
 		[SerializeField]
 		private NavigationButton menuButton = null;
 
+		[SerializeField]
+		private Image backgroundOverlay = null;
+
+		private Coroutine backgroundOverlayTransitionRoutine = null;
 		private const Context DefaultContext = Context.Map;
 
 		private void Awake()
@@ -75,9 +79,7 @@ namespace Menus
 			SetButtonColor(infoButton);
 			SetButtonColor(mapButton);
 			SetButtonColor(menuButton);
-
-			if(background != null)
-				background.color = backgroundColor;
+			SetBackgroundColor();
 		}
 
 		private void RegisterEvents()
@@ -99,6 +101,9 @@ namespace Menus
 			HighlightButton(infoButton, context == Context.Info);
 			HighlightButton(mapButton, context == Context.Map);
 			HighlightButton(menuButton, context == Context.Menu);
+
+			bool showBackground = context != Context.Map;
+			ShowBackground(showBackground);
 		}
 
 		private void DisableImmersiveModeForAndroid()
@@ -130,10 +135,51 @@ namespace Menus
 				button.Initialize(normalColor, highlightColor, pressedColor, transitionCurve);
 		}
 
+		private void SetBackgroundColor()
+		{
+			if(background != null)
+				background.color = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, background.color.a);
+
+			if(backgroundOverlay != null)
+				backgroundOverlay.color = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundOverlay.color.a);
+		}
+
 		private void HighlightButton(NavigationButton button, bool highlighted)
 		{
 			if(button != null)
 				button.Select(highlighted);
+		}
+		#endregion
+
+
+		#region Background Helpers
+		public void ShowBackground(bool show)
+		{
+			if(backgroundOverlayTransitionRoutine != null)
+				StopCoroutine(backgroundOverlayTransitionRoutine);
+
+			if(backgroundOverlay == null)
+				return;
+			
+			backgroundOverlay.raycastTarget = show;
+			backgroundOverlayTransitionRoutine = StartCoroutine(BackgroundOverlayTransition(show));
+		}
+
+		private IEnumerator BackgroundOverlayTransition(bool show)
+		{
+			const float duration = 0.15f;
+			float a = backgroundOverlay.color.a;
+			float b =(show ? 1f : 0f);
+
+			for(float current = 0f; current < duration; current += Time.deltaTime)
+			{
+				float t = Mathf.InverseLerp(0f, duration, current);
+				float alpha = Mathf.Lerp(a, b, transitionCurve.Evaluate(t));
+				backgroundOverlay.color = new Color(backgroundOverlay.color.r, backgroundOverlay.color.g, backgroundOverlay.color.b, alpha);
+				yield return null;
+			}
+
+			backgroundOverlay.color = new Color(backgroundOverlay.color.r, backgroundOverlay.color.g, backgroundOverlay.color.b, b);
 		}
 		#endregion
 	}

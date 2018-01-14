@@ -47,6 +47,14 @@ namespace Navigation
 			DrawNavigationLine(FindPath(origin, destination));
 		}
 
+		public void Clear()
+		{
+			if(lineRenderer == null)
+				return;
+			
+			lineRenderer.positionCount = 0;
+		}
+
 		private void Initialize()
 		{
 			lineRenderer = GetComponent<LineRenderer>();
