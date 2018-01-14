@@ -11,25 +11,30 @@ ModelImporter:
     100006: Roads
     100008: Walkable
     100010: PHS
+    100012: AgricultureArea
     400000: Borders
     400002: Buildings
     400004: //RootNode
     400006: Roads
     400008: Walkable
     400010: PHS
+    400012: AgricultureArea
     2100000: lambert1
     2300000: Borders
     2300002: Buildings
     2300004: Roads
     2300006: Walkable
+    2300008: AgricultureArea
     3300000: Borders
     3300002: Buildings
     3300004: Roads
     3300006: Walkable
+    3300008: AgricultureArea
     4300000: Roads
     4300002: Borders
     4300004: Buildings
     4300006: Walkable
+    4300008: AgricultureArea
   externalObjects: {}
   materials:
     importMaterials: 0
