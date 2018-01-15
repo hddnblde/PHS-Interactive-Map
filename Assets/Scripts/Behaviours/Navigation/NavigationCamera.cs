@@ -53,12 +53,6 @@ namespace Navigation
 		private float m_view = 0.5f;
 
 		[Header("Settings")]
-		[SerializeField, Range(1f, 3f)]
-		private float rotationSpeed = 1.25f;
-
-		[SerializeField, Range(0.25f, 2f)]
-		private float zoomSpeed = 1f;
-
 		[SerializeField]
 		private AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
@@ -79,7 +73,7 @@ namespace Navigation
 		private const float CameraHeight = 30f;
 		private const float GroundHeight = 0f;
 		private const float ViewLowerLimit = 10f;
-		private const float ViewUpperLimit = 270f;
+		private const float ViewUpperLimit = 300f;
 		private const float TransitionDuration = 0.25f;
 		private const float TranslateSpeed = 7f;
 		private const float ZoomDefault = 0.5f;
@@ -204,14 +198,14 @@ namespace Navigation
 		private void Rotate(float delta)
 		{
 			StopTransition();
-			float yaw = transform.eulerAngles.y - (delta * rotationSpeed);
+			float yaw = transform.eulerAngles.y - delta;
 			transform.eulerAngles = (Vector3.up * yaw) + (Vector3.right * 90f);
 		}
 
 		private void Zoom(float delta)
 		{
 			StopTransition();
-			view = Mathf.Clamp01(view + (delta * zoomSpeed));
+			view = Mathf.Clamp01(view + delta);
 		}
 
 		private void ResetView()

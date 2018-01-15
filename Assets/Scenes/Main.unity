@@ -1619,8 +1619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_view: 0.5
-  rotationSpeed: 1.15
-  zoomSpeed: 0.35
   transitionCurve:
     serializedVersion: 2
     m_Curve:
@@ -4774,7 +4772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1719834272
 Transform:
   m_ObjectHideFlags: 0
@@ -5878,11 +5876,13 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: d86634edee35e8348a3d09e53352ab4d, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4, type: 2}
-    m_names: "dg covered court\r\ndm covered court\r"
+    m_names: "dg covered court\r\ndm covered court stage\r\ndm covered court\r"
     m_tags: dm; dm court;
-    cacheCount: 2
+    cacheCount: 3
     places:
     - place: {fileID: 11400000, guid: 83a23f35d3db9cb49ac44bbf525d6680, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 771fdb63b5abc1c45964a267dfdea569, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 022dff5991c562f4bb2d80cb3707c7e9, type: 2}
       rooms: []

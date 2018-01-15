@@ -147,10 +147,10 @@ namespace Gestures
 			Vector2 previousTouch2 = touch2.position - touch2.deltaPosition;
 
 			if(pinch)
-				DetectPinch(previousTouch1, previousTouch2, touch1.position, touch2.position, deltaTime);
+				DetectPinch(previousTouch1, previousTouch2, touch1.position, touch2.position);
 
 			if(rotate)
-				DetectRotation(previousTouch1, previousTouch2, touch1.position, touch2.position, deltaTime);
+				DetectRotation(previousTouch1, previousTouch2, touch1.position, touch2.position);
 		}
 		#endregion
 
@@ -195,17 +195,17 @@ namespace Gestures
 		}
 
 		// Double touch Gestures
-		private void DetectPinch(Vector2 previousTouch1, Vector2 previousTouch2, Vector2 currentTouch1, Vector2 currentTouch2, float deltaTime)
+		private void DetectPinch(Vector2 previousTouch1, Vector2 previousTouch2, Vector2 currentTouch1, Vector2 currentTouch2)
 		{
 			float previousDelta = (previousTouch1 - previousTouch2).magnitude;
 			float currentDelta = (currentTouch1 - currentTouch2).magnitude;
-			float pinchDelta = currentDelta - previousDelta;
+			float pinchDelta = (currentDelta - previousDelta) / previousDelta;
 
 			if(Mathf.Abs(pinchDelta) > 0f && OnPinch != null)
-				OnPinch(pinchDelta * deltaTime);
+				OnPinch(pinchDelta);
 		}
 
-		private void DetectRotation(Vector2 previousTouch1, Vector2 previousTouch2, Vector2 currentTouch1, Vector2 currentTouch2, float deltaTime)
+		private void DetectRotation(Vector2 previousTouch1, Vector2 previousTouch2, Vector2 currentTouch1, Vector2 currentTouch2)
 		{
 			Vector2 previousDirection = previousTouch1 - previousTouch2;
 			Vector2 currentDirection = currentTouch1 - currentTouch2;
