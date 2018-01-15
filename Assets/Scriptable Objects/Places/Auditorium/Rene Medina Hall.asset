@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: Rene Medina Hall
   m_position: {x: 115, y: 0, z: -235}
-  m_tags: 
+  m_tags: bulwagan; stage; court; hall;
   m_thumbnail: {fileID: 0}
   m_description: 

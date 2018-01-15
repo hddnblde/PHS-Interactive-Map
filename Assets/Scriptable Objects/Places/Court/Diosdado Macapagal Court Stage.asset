@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: DM Covered Court Stage
   m_position: {x: -5, y: 0, z: -138}
-  m_tags: dm; dm court stage; stage; bulwagan;
+  m_tags: dm; dm court stage; stage;
   m_thumbnail: {fileID: 0}
   m_description: 
