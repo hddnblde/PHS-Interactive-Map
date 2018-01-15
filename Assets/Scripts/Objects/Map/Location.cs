@@ -23,7 +23,7 @@ namespace Map
 
 		public Vector3 position
 		{
-			get { return new Vector3(m_position.x, 0f, m_position.y); }
+			get { return m_position; }
 		}
 
 		public string tags

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Rodriguez
   m_EditorClassIdentifier: 
   m_displayedName: Rodriguez
-  m_position: {x: 0, y: 0, z: 0}
+  m_position: {x: 24, y: 0, z: 140}
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_thumbnail: {fileID: 0}
+  m_description: 

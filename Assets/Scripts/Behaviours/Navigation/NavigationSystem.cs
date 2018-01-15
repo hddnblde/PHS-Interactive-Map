@@ -15,6 +15,7 @@ namespace Navigation
 		private LineRenderer lineRenderer = null;
 		private const float LineWidthLowerLimit = 3f;
 		private const float LineWidthUpperLimit = 7f;
+		private const float NearestPointThreshold = 300f;
 		#endregion
 
 
@@ -82,26 +83,20 @@ namespace Navigation
 		private Vector3[] FindPath(Vector3 origin, Vector3 destination)
 		{
 			NavMeshPath navMeshPath = new NavMeshPath();
-			NavMeshHit hit;
 
 			GetNearestPointInNavMesh(ref origin);
 			GetNearestPointInNavMesh(ref destination);
 
-			if(NavMesh.Raycast(origin, destination, out hit, NavMesh.AllAreas))
-			{
-				if(NavMesh.CalculatePath(origin, destination, NavMesh.AllAreas, navMeshPath))
+			if(NavMesh.CalculatePath(origin, destination, NavMesh.AllAreas, navMeshPath))
 					return navMeshPath.corners;
 				else
 					return null;
-			}
-			else
-				return new Vector3[] {origin, destination};
 		}
 
 		private void GetNearestPointInNavMesh(ref Vector3 point)
 		{
 			NavMeshHit hit;
-			if(NavMesh.SamplePosition(point, out hit, 3f, NavMesh.AllAreas))
+			if(NavMesh.SamplePosition(point, out hit, NearestPointThreshold, NavMesh.AllAreas))
 				point = hit.position;
 		}
 		#endregion
