@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PTL
   m_EditorClassIdentifier: 
   m_displayedName: PTL
-  m_position: {x: -99, y: 0, z: -199}
+  m_position: {x: -99, y: 0, z: -195}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

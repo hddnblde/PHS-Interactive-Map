@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Parking Area 2
+  m_Name: Guidance Office
   m_EditorClassIdentifier: 
-  m_displayedName: Parking Area 2
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d, type: 2}
-  m_rooms: []
+  m_displayedName: Guidance Office
+  m_position: {x: 80, y: 0, z: -240}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

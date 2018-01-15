@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Name: Calixto Library
   m_EditorClassIdentifier: 
   m_displayedName: Calixto Library
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 25d8e6bc41604c64489c93351f32d816, type: 2}
-  m_rooms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_position: {x: -20, y: 0, z: 30}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

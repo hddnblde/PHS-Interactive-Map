@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Senior High Office
   m_EditorClassIdentifier: 
   m_displayedName: Senior High Office
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0, type: 2}
-  m_rooms: []
+  m_position: {x: 30, y: 0, z: -60}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

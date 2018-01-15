@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Dental Office
   m_EditorClassIdentifier: 
   m_displayedName: Dental Office
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: ff8832e4fdd08664eb91a54ba1c35176, type: 2}
-  m_rooms: []
+  m_position: {x: -105, y: 0, z: -173}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

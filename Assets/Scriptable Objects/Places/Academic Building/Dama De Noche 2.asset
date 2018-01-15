@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Dama De Noche 2
   m_EditorClassIdentifier: 
   m_displayedName: Dama De Noche 2
-  m_position: {x: 84, y: 0, z: -14}
+  m_position: {x: 84, y: 0, z: -17}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

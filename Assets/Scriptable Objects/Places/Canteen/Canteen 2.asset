@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Canteen 2
   m_EditorClassIdentifier: 
   m_displayedName: Canteen 2
-  m_position: {x: 0, y: 0, z: 0}
+  m_position: {x: -91, y: 0, z: -52}
   m_tags: rose; ia; industrial; industrial arts; gerbera;
   m_thumbnail: {fileID: 0}
   m_description: Canteen 2

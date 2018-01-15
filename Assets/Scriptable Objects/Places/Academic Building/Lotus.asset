@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Lotus
   m_EditorClassIdentifier: 
   m_displayedName: Lotus
-  m_position: {x: 85, y: 0, z: 6}
+  m_position: {x: 91, y: 0, z: 6}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

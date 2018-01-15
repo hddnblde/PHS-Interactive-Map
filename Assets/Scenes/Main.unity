@@ -3306,7 +3306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1101417145
 Transform:
   m_ObjectHideFlags: 0
@@ -3314,7 +3314,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101417144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1294029317}
@@ -5624,6 +5624,19 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 34eb34caed8fa694c966ce915ce77962, type: 2}
       rooms: []
+  - m_landmark: {fileID: 11400000, guid: 6832cc034e20bd24ca93fb0bd4e6fd45, type: 2}
+    m_names: "shed 1\r\nshed 2\r\nshed 3\r\nstudent center\r"
+    m_tags: 
+    cacheCount: 4
+    places:
+    - place: {fileID: 11400000, guid: fd6b922ebcf237945bc7624e323d5490, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 48e245d3a8ce7bd49bdb027f0adff5b2, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 1a1afbacadf15194fbfb6fc9970967c4, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 7c4d8b82911aee64591a662034712ff4, type: 2}
+      rooms: []
   - m_landmark: {fileID: 11400000, guid: 096317cb47da83e4dbebe977c6284a03, type: 2}
     m_names: "cr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r"
     m_tags: 
@@ -5752,16 +5765,39 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: d71af1931d9e6284988b0f3d3b14bb23, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-    m_names: "gladiola lab\r\nhome economics lab\r\nindustrial arts\r\nmapeh multipurpose\r\nshakespearean
+    m_names: "gladiola lab\r\nhome economics lab\r\nindustrial arts 1 & 2\r\nindustrial
+      arts 11\r\nindustrial arts 12\r\nindustrial arts 13\r\nindustrial arts 14\r\nindustrial
+      arts 15\r\nindustrial arts 16\r\nindustrial arts 3\r\nindustrial arts 4, 5 &
+      6\r\nindustrial arts 7 & 8\r\nindustrial arts 9 & 10\r\nmapeh multipurpose\r\nshakespearean
       hall\r\nteatro\r\nvalues multipurpose\r"
     m_tags: ia;
-    cacheCount: 7
+    cacheCount: 17
     places:
     - place: {fileID: 11400000, guid: b66b2e40cc7737140b498c9d603084f8, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 2455a9734b4b4f446b35d91174187e03, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: c56aa323eb242564685e709a951a001e, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 4c21e968e389b4a4fa193dd65bcfcf26, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 2de98d2cc547b82419ac8d546177307c, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 37176377dc866084c83670e481b97681, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 32fd7fdb72d2c3d409d0ca34ac09d65f, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 1256a2420f3a134459c7e6611048b6a1, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: ac6996f8c54874d46856c614852d1e19, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: d7404e7eb920b3146b755507c8ff81e3, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 857b75f9e1f9f3348b9b09d9d1e75e06, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 19781faab2b9f0b46b5329e7461a0127, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 6119c4fdb3ef12946b0cae89c319387f, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: b6d192b0d7f4e694e8bc84d051dbff9d, type: 2}
       rooms: []
@@ -5773,12 +5809,12 @@ MonoBehaviour:
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
     m_names: "administrative office\r\nauditor's office\r\nfinance office\r\nguidance
-      office 1\r\nguidance office 2\r\nhuman resource office\r\npampangan office\r\npta
-      office\r\nphs-mpc office\r\nphsfec office\r\nprincipal's office\r\nprinting
+      office 1\r\nguidance office 2\r\nguidance office\r\nhuman resource office\r\npampangan
+      office\r\npta office\r\nphs-mpc office\r\nphsfec office\r\nprincipal's office\r\nprinting
       office\r\npromis office\r\nrecords office\r\nsinukuan office\r\nsupply office\r\nphsssgo
       office\r"
     m_tags: 
-    cacheCount: 17
+    cacheCount: 18
     places:
     - place: {fileID: 11400000, guid: 461b7b81e2ba974478e4d3bd61d613a6, type: 2}
       rooms: []
@@ -5789,6 +5825,8 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 09183beb58ea28544b7aebd2b07a4657, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 690e1a2c744bfbb44af4f996f1db40c7, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 109d7615a0cb2ec47ac9632802e1bdeb, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: c071936594dac0d4ea254d1680b76924, type: 2}
       rooms: []
@@ -5858,6 +5896,17 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: c5743218706db2c498e3c2ef07a5f07b, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: beded8a4f7354334ab157259b590b162, type: 2}
+      rooms: []
+  - m_landmark: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d, type: 2}
+    m_names: "parking area 1\r\nparking area 2\r\nparking area 3\r"
+    m_tags: 
+    cacheCount: 3
+    places:
+    - place: {fileID: 11400000, guid: 08ed21b8ac652a842bdfdfd2d04fc089, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: aed269928f2844542ad08cb370f5ceab, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 846d814d3a37b4e4e9b0a6a986ef80cb, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 7b0e7625768341547a37906dd90ddf3e, type: 2}
     m_names: "green house\r\nguard house\r\nmaintenance room\r\nmrf\r\npump house\r"

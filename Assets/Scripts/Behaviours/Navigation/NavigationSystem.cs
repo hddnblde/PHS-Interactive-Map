@@ -92,7 +92,6 @@ namespace Navigation
 				else
 					return null;
 		}
-
 		private void GetNearestPointInNavMesh(ref Vector3 point)
 		{
 			NavMeshHit hit;

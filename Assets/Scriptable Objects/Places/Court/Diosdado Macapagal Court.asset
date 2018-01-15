@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Diosdado Macapagal Court
   m_EditorClassIdentifier: 
   m_displayedName: DM Covered Court
-  m_position: {x: 0, y: 0, z: 0}
+  m_position: {x: -5, y: 0, z: -105}
   m_tags: dm; dm court;
   m_thumbnail: {fileID: 0}
   m_description: 

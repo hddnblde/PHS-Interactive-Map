@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Violeta Hall
   m_EditorClassIdentifier: 
   m_displayedName: Violeta Hall
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 04a7cf7af39653c45b1c3a0e25a52b01, type: 2}
-  m_rooms: []
+  m_position: {x: 115, y: 0, z: -110}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

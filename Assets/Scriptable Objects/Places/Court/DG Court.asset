@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: DG Court
   m_EditorClassIdentifier: 
   m_displayedName: DG Covered Court
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4, type: 2}
-  m_rooms: []
+  m_position: {x: -130, y: 0, z: -240}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 

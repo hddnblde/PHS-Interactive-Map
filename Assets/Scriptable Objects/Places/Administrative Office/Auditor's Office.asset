@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Auditor's Office
   m_EditorClassIdentifier: 
   m_displayedName: Auditor's Office
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
-  m_rooms: []
+  m_position: {x: 84.28136, y: 0, z: -249.94138}
+  m_tags: 
+  m_thumbnail: {fileID: 0}
+  m_description: 
