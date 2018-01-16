@@ -14,6 +14,6 @@ MonoBehaviour:
   m_displayedName: Gladiola
   m_position: {x: 80.88798, y: 0, z: 226.9314}
   m_tags: 
-  m_oneStoryOnly: 1
-  m_floor: 1
+  m_standalone: 1
+  m_floor: 2
   m_room: 4

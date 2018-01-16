@@ -14,6 +14,6 @@ MonoBehaviour:
   m_displayedName: Gardenia
   m_position: {x: 91.37638, y: 0, z: -54.33224}
   m_tags: 
-  m_oneStoryOnly: 1
-  m_floor: 1
+  m_standalone: 1
+  m_floor: 2
   m_room: 4

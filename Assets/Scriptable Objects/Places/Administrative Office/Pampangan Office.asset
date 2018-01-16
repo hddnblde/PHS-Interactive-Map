@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: Pampangan Office
   m_EditorClassIdentifier: 
-  m_displayedName: Pampangan Office
-  m_position: {x: -64, y: 0, z: 96}
+  m_displayedName: Speech Laboratory
+  m_position: {x: -64.99932, y: 0, z: 97.332436}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

@@ -8,11 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Industrial Arts 1 & 2
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: Rose 3
   m_EditorClassIdentifier: 
-  m_displayedName: Industrial Arts 1 & 2
-  m_position: {x: -125, y: 0, z: 4}
-  m_tags: ia;
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_displayedName: Rose
+  m_position: {x: -68.23009, y: 0, z: 21.80745}
+  m_tags: 
+  m_standalone: 1
+  m_floor: 1
+  m_room: 3
