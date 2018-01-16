@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -12,13 +13,18 @@ namespace Map
 	public class Room : Location
 	{
 		[SerializeField]
-		private bool m_oneStoryOnly = false;
+		private bool m_standalone = false;
 
 		[SerializeField]
 		private int m_floor = 1;
 
 		[SerializeField]
 		private int m_room = 1;
+
+		public int floor
+		{
+			get { return m_floor; }
+		}
 
 		public override string displayedName
 		{
@@ -29,7 +35,7 @@ namespace Map
 		{
 			string baseName = base.displayedName + ' ';
 
-			if(m_oneStoryOnly)
+			if(m_standalone)
 				return baseName + m_room.ToString();
 			else
 				return baseName + m_floor.ToString() + m_room.ToString("00");
@@ -40,12 +46,13 @@ namespace Map
 	[CustomEditor(typeof(Room))]
 	public class RoomEditor : Editor
 	{
+		private Room room = null;
 		#region Fields
 		private SerializedProperty
 		displayedNameProperty = null,
 		positionProperty = null,
 		tagsProperty = null,
-		oneStoryOnlyProperty = null,
+		standaloneProperty = null,
 		floorProperty = null,
 		roomProperty = null;
 		#endregion
@@ -73,10 +80,11 @@ namespace Map
 		#region Methods
 		private void Initialize()
 		{
+			room = target as Room;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
-			oneStoryOnlyProperty = serializedObject.FindProperty("m_oneStoryOnly");
+			standaloneProperty = serializedObject.FindProperty("m_standalone");
 			floorProperty = serializedObject.FindProperty("m_floor");
 			roomProperty = serializedObject.FindProperty("m_room");
 		}
@@ -111,15 +119,16 @@ namespace Map
 
 			EditorGUILayout.Space();
 			EditorGUILayout.LabelField("Room", EditorStyles.boldLabel);
-			EditorGUILayout.PropertyField(oneStoryOnlyProperty);
+			EditorGUILayout.PropertyField(standaloneProperty);
 
-			if(!oneStoryOnlyProperty.boolValue)
-				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 1);
+			floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 1);
 			
 			roomProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField("Room", roomProperty.intValue), 1, 99);
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);
+
+			EditorGUILayout.HelpBox(room.displayedName, MessageType.Info);
 
 			if(EditorGUI.EndChangeCheck())
 				serializedObject.ApplyModifiedProperties();
