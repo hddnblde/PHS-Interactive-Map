@@ -5584,7 +5584,7 @@ MonoBehaviour:
   landmarkClusters:
   - m_landmark: {fileID: 11400000, guid: 04a7cf7af39653c45b1c3a0e25a52b01, type: 2}
     m_names: "rene medina hall\r\nvioleta hall\r"
-    m_tags: 
+    m_tags: bulwagan; stage; court; hall;
     cacheCount: 2
     places:
     - place: {fileID: 11400000, guid: acc03841f886bad4180affc3893f76e2, type: 2}
@@ -5675,10 +5675,10 @@ MonoBehaviour:
   - m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
     m_names: "acacia\r\nanthurium\r\naster\r\naus aid\r\nbaliti\r\ncaballero\r\ncamia\r\ncattleya\r\nchrysanthemum\r\ndaisy\r\ndama
       de noche 1\r\ndama de noche 2\r\neuphorbia\r\ngardenia\r\ngerbera\r\ngladiola\r\ngumamela\r\nipil-ipil\r\njasmine\r\nkamagong\r\nlagundi\r\nlotus\r\nmahogany\r\nmain\r\nmolave\r\nmusic
-      room\r\nnarra\r\nopen high room\r\norchids\r\npagcor\r\npoinsettia\r\nptl\r\nquota\r\nrodriguez\r\nrose\r\nsampaguita\r\nsenior
+      room\r\nnarra\r\nopen high room\r\norchids\r\npagcor\r\npoinsettia\r\nptl\r\nquota\r\nrodriguez\r\nrose\r\nsampaguita\r\nsantan\r\nsenior
       high\r\nsped\r\nsunflower\r\nwaling-waling\r\nwhite angel\r"
     m_tags: 
-    cacheCount: 41
+    cacheCount: 42
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -5751,6 +5751,8 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 4a826cf6cfd0c314d9018b21df213183, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 1b1da64fefac5bd44ad3caf0de5da38a, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 9af418503338136499b98368afaa84f7, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
       rooms: []
@@ -5877,7 +5879,7 @@ MonoBehaviour:
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4, type: 2}
     m_names: "dg covered court\r\ndm covered court stage\r\ndm covered court\r"
-    m_tags: dm; dm court;
+    m_tags: dm; dm court stage; court;
     cacheCount: 3
     places:
     - place: {fileID: 11400000, guid: 83a23f35d3db9cb49ac44bbf525d6680, type: 2}
