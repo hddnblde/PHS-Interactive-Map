@@ -55,6 +55,12 @@ namespace Map
 		private void OnEnable()
 		{
 			Initialize();
+			SceneView.onSceneGUIDelegate += OnSceneGUI;
+		}
+
+		private void OnDisable()
+		{
+			SceneView.onSceneGUIDelegate -= OnSceneGUI;
 		}
 
 		public override void OnInspectorGUI()
@@ -73,6 +79,24 @@ namespace Map
 			oneStoryOnlyProperty = serializedObject.FindProperty("m_oneStoryOnly");
 			floorProperty = serializedObject.FindProperty("m_floor");
 			roomProperty = serializedObject.FindProperty("m_room");
+		}
+
+		private void OnSceneGUI(SceneView sceneView)
+		{
+			EditorGUI.BeginChangeCheck();
+
+			DrawHandle();
+
+			if(EditorGUI.EndChangeCheck())
+			{
+				serializedObject.ApplyModifiedProperties();
+				Repaint();
+			}
+		}
+
+		private void DrawHandle()
+		{
+			positionProperty.vector3Value = Handles.PositionHandle(positionProperty.vector3Value, Quaternion.identity);
 		}
 
 		private void DrawCustomInspector()

@@ -8,11 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Values Office
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: White Angel 104
   m_EditorClassIdentifier: 
-  m_displayedName: Values Office
-  m_position: {x: -36.326504, y: 0, z: -58.26525}
+  m_displayedName: White Angel
+  m_position: {x: -104.167015, y: 0, z: -126.76221}
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_oneStoryOnly: 0
+  m_floor: 1
+  m_room: 4

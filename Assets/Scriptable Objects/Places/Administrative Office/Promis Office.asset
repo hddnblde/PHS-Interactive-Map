@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Promis Office
   m_EditorClassIdentifier: 
   m_displayedName: Promis Office
-  m_position: {x: 28, y: 0, z: -131}
+  m_position: {x: 28.86964, y: 0, z: -135.69666}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

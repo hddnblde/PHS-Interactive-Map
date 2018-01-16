@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Values Office
+  m_Name: Science Lab 3
   m_EditorClassIdentifier: 
-  m_displayedName: Values Office
-  m_position: {x: -36.326504, y: 0, z: -58.26525}
+  m_displayedName: Science Lab 3
+  m_position: {x: 30.613138, y: 0, z: -99.35031}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

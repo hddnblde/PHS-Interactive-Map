@@ -8,10 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc7e8858911d1b4393753058ab2ea86, type: 3}
-  m_Name: Cluster 1
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: White Angel 102
   m_EditorClassIdentifier: 
-  m_section: {fileID: 0}
-  m_rank: 1
-  m_adviser: {fileID: 0}
-  m_room: {fileID: 0}
+  m_displayedName: White Angel
+  m_position: {x: -105.31936, y: 0, z: -149.42514}
+  m_tags: 
+  m_oneStoryOnly: 0
+  m_floor: 1
+  m_room: 2

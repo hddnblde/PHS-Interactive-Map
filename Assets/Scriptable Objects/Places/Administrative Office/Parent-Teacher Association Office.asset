@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Parent-Teacher Association Office
   m_EditorClassIdentifier: 
   m_displayedName: PTA Office
-  m_position: {x: 30, y: 0, z: -15}
+  m_position: {x: 26.510239, y: 0, z: -15.387751}
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
