@@ -45,7 +45,9 @@ namespace Navigation
 		/// <param name="destination">The goal position.</param>
 		public void Navigate(Vector3 origin, Vector3 destination)
 		{
-			DrawNavigationLine(FindPath(origin, destination));
+			Vector3[] path = FindPath(origin, destination);
+			DrawNavigationLine(path);
+			FocusCameraToPath(path);
 		}
 
 		public void Clear()
@@ -78,6 +80,19 @@ namespace Navigation
 
 			if(hasPath)
 				lineRenderer.SetPositions(path);
+		}
+
+		private void FocusCameraToPath(Vector3[] path)
+		{
+			if(path.Length == 0)
+				return;
+
+			Bounds frame = new Bounds();
+
+			foreach(Vector3 corner in path)
+				frame.Encapsulate(corner);
+
+			NavigationCamera.FrameTo(frame);
 		}
 
 		private Vector3[] FindPath(Vector3 origin, Vector3 destination)

@@ -14,7 +14,9 @@ namespace Navigation
 		private static Camera navigationCamera = null;
 		private static LayerMask groundLayer;
 		private delegate void FocusAction(Vector3 position);
+		private delegate void FrameAction(Bounds frame);
 		private static event FocusAction OnFocus;
+		private static event FrameAction OnFrame;
 
 		/// <summary>
 		/// Focuses the navigation camera to a specified position on the map.
@@ -23,6 +25,12 @@ namespace Navigation
 		{
 			if(OnFocus != null)
 				OnFocus(position);
+		}
+
+		public static void FrameTo(Bounds frame)
+		{
+			if(OnFrame != null)
+				OnFrame(frame);
 		}
 
 		/// <summary>
@@ -139,6 +147,7 @@ namespace Navigation
 			TouchGestures.OnPinch += OnPinch;
 
 			OnFocus += FocusFrame;
+			OnFrame += FrameByBounds;
 		}
 
 		private void DeregisterEvents()
@@ -149,6 +158,7 @@ namespace Navigation
 			TouchGestures.OnPinch -= OnPinch;
 
 			OnFocus -= FocusFrame;
+			OnFrame -= FrameByBounds;
 		}
 
 		private void OnDoubleTap(Vector2 screenPoint)
@@ -216,8 +226,19 @@ namespace Navigation
 
 		private void FocusFrame(Vector3 frame)
 		{
+			FocusFrame(frame, ZoomDefault);
+		}
+		private void FocusFrame(Vector3 frame, float targetZoom)
+		{
+			frame = new Vector3(frame.x, CameraHeight, frame.z);
 			StopTransition();
-			transitionRoutine = StartCoroutine(FocusFrameRoutine(frame));
+			transitionRoutine = StartCoroutine(FocusFrameRoutine(frame, targetZoom));
+		}
+
+		private void FrameByBounds(Bounds frame)
+		{
+			float targetView = Mathf.Lerp(1f, 0f, frame.size.magnitude / ViewUpperLimit) - 0.25f;
+			FocusFrame(frame.center, targetView);
 		}
 
 		private void StopTransition()
@@ -256,7 +277,7 @@ namespace Navigation
 			}
 		}
 
-		private IEnumerator FocusFrameRoutine(Vector3 frame, bool resetView = true)
+		private IEnumerator FocusFrameRoutine(Vector3 frame, float targetZoom)
 		{
 			Vector3 currentPosition = transform.position;
 			float currentZoom = view;
@@ -265,8 +286,7 @@ namespace Navigation
 				float t = Mathf.InverseLerp(TransitionDuration, 0f, current);
 				transform.position = Vector3.LerpUnclamped(currentPosition, frame, t);
 
-				if(resetView)
-					view = Mathf.LerpUnclamped(currentZoom, ZoomDefault, transitionCurve.Evaluate(t));
+				view = Mathf.LerpUnclamped(currentZoom, targetZoom, transitionCurve.Evaluate(t));
 				yield return null;
 			}
 		}
