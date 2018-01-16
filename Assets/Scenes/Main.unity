@@ -2848,7 +2848,7 @@ MonoBehaviour:
   contentContainer: {fileID: 419626836}
   quitButton: {fileID: 1868354196}
   clearButton: {fileID: 1925659070}
-  poolCount: 70
+  poolCount: 100
 --- !u!225 &861286733
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2878,7 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 419626836}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -2979,6 +2979,8 @@ GameObject:
   m_Component:
   - component: {fileID: 931192557}
   - component: {fileID: 931192559}
+  - component: {fileID: 931192560}
+  - component: {fileID: 931192558}
   m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
@@ -3005,12 +3007,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -176}
   m_SizeDelta: {x: 0, y: -282}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &931192558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931192556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!222 &931192559
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931192556}
+--- !u!114 &931192560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931192556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!1 &1015119019
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,61 +5714,169 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 7bced4b8b5697d742a0cf23711a7e1c3, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-    m_names: "acacia\r\nanthurium\r\naster\r\naus aid\r\nbaliti\r\ncaballero\r\ncamia\r\ncattleya\r\nchrysanthemum\r\ndaisy\r\ndama
-      de noche 1\r\ndama de noche 2\r\neuphorbia\r\ngardenia\r\ngerbera\r\ngladiola\r\ngumamela\r\nipil-ipil\r\njasmine\r\nkamagong\r\nlagundi\r\nlotus\r\nmahogany\r\nmain\r\nmolave\r\nmusic
-      room\r\nnarra\r\nopen high room\r\norchids\r\npagcor\r\npoinsettia\r\nptl\r\nquota\r\nrodriguez\r\nrose\r\nsampaguita\r\nsantan\r\nsenior
-      high\r\nsped\r\nsunflower\r\nwaling-waling\r\nwhite angel\r"
+    m_names: "acacia\r\nanthurium\r\nanthurium 1\r\nanthurium 2\r\nanthurium 3\r\nanthurium
+      4\r\naster\r\naster 101\r\naster 102\r\naus aid\r\naus aid 101\r\naus aid 102\r\naus
+      aid 3\r\naus aid 4\r\nbaliti\r\ncaballero\r\ncamia\r\ncamia 101\r\ncamia 102\r\ncamia
+      103\r\ncattleya\r\ncattleya 1\r\ncattleya 2\r\ncattleya 3\r\ncattleya 4\r\ncattleya
+      5\r\ncattleya 6\r\nchrysanthemum\r\nchrysanthemum 101\r\nchrysanthemum 102\r\nchrysanthemum
+      103\r\nchrysanthemum 104\r\ndaisy\r\ndaisy 101\r\ndaisy 102\r\ndama de noche
+      1\r\ndama 101\r\ndama 102\r\ndama 103\r\ndama 104\r\ndama 105\r\ndama de noche
+      2\r\ndama 110\r\ndama 107\r\ndama 108\r\ndama 109\r\neuphorbia\r\neuphorbia
+      101\r\neuphorbia 102\r\neuphorbia 103\r\neuphorbia 104\r\neuphorbia 5\r\neuphorbia
+      6\r\neuphorbia 7\r\neuphorbia 8\r\ngardenia\r\ngardenia 101\r\ngardenia 102\r\ngardenia
+      3\r\ngardenia 4\r\ngerbera\r\ngerbera 101\r\ngerbera 102\r\ngladiola\r\ngladiola
+      101\r\ngladiola 102\r\ngladiola 3\r\ngladiola 4\r\ngumamela\r\ngumamela 1\r\ngumamela
+      2\r\ngumamela 3\r\ngumamela 4\r\nipil-ipil\r\njasmine\r\njasmine 101\r\njasmine
+      102\r\njasmine 103\r\njasmine 104\r\njasmine 105\r\njasmine 106\r\njasmine 107\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
+      101\r\nlotus 102\r\nlotus 103\r\nmahogany\r\nmahogany 101\r\nmahogany 102\r\nmahogany
+      103\r\nmain\r\nmain 101\r\nmain 102\r\nmain 103\r\nmain 104\r\nmain 105\r\nmain
+      106\r\nmolave\r\nmusic room\r\nnarra\r\nopen high room\r\norchids\r\norchids
+      101\r\norchids 102\r\norchids 103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids
+      203\r\norchids 204\r\norchids 301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor
+      101\r\npagcor 102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor
+      201\r\npagcor 202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor
+      301\r\npagcor 302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor
+      401\r\npagcor 402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
+      101\r\npoinsettia 102\r\npoinsettia 3\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
+      101\r\nrodriguez 102\r\nrose\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose 4\r\nrose
+      5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nsampaguita\r\nsampaguita 101\r\nsampaguita
+      110\r\nsampaguita 111\r\nsampaguita 112\r\nsampaguita 113\r\nsampaguita 114\r\nsampaguita
+      115\r\nsampaguita 102\r\nsampaguita 103\r\nsampaguita 104\r\nsampaguita 105\r\nsampaguita
+      106\r\nsampaguita 107\r\nsampaguita 108\r\nsampaguita 109\r\nsantan\r\nsantan
+      101\r\nsantan 102\r\nsantan 103\r\nsantan 104\r\nsantan 201\r\nsantan 202\r\nsantan
+      203\r\nsantan 204\r\nsantan 301\r\nsantan 302\r\nsantan 303\r\nsantan 304\r\nsenior
+      high\r\nsped\r\nsped 101\r\nsped 102\r\nsped 103\r\nsunflower\r\nsunflower 101\r\nsunflower
+      102\r\nsunflower 103\r\nwaling-waling\r\nwaling-waling 101\r\nwaling-waling
+      102\r\nwhite angel\r\nwhite angel 101\r\nwhite angel 102\r\nwhite angel 103\r\nwhite
+      angel 104\r\nwhite angel 105\r\nwhite angel 106\r\nwhite angel 201\r\nwhite
+      angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite angel 205\r\nwhite
+      angel 206\r"
     m_tags: 
-    cacheCount: 42
+    cacheCount: 214
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 120bc670a3845b84eb6951680a8f83e5, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: c167fb1b3dc38c9469e7a41066ea6e2a, type: 2}
+      - {fileID: 11400000, guid: ddd77b68c9bc4854ebe3087e5cf1e006, type: 2}
+      - {fileID: 11400000, guid: 6c4e49ed7d8fd9b48b8a9e5e5bcbbd6d, type: 2}
+      - {fileID: 11400000, guid: d135340f0ef019f4aac757485a061d06, type: 2}
     - place: {fileID: 11400000, guid: a6fff4a7d7ac4cb448c1d3e603a67ade, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 5ec89897b9a41bd4da02636dbb9d2dcc, type: 2}
+      - {fileID: 11400000, guid: 9db78a6a98e3fea40bfc97433bbc24d9, type: 2}
     - place: {fileID: 11400000, guid: 707b7d93ac91e8844a3f7d992325bb6e, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: a0f6dbd20f797ea45bdefa5fd96744a9, type: 2}
+      - {fileID: 11400000, guid: ae3e9c2030939a448992b65f0a6e2959, type: 2}
+      - {fileID: 11400000, guid: b4fbf97a6336b2947878d3f3a01783a3, type: 2}
+      - {fileID: 11400000, guid: a7dde1e8ea09cd44a88fb653219af22c, type: 2}
     - place: {fileID: 11400000, guid: 8bfa3d10b608fbe4a959677f19d78f47, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 49da9f87b99cd394bbeee36d40c875d2, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 407fd195bb360cf469f5343dcd2519c5, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 85531d3c38d468b46a589a973cc5db10, type: 2}
+      - {fileID: 11400000, guid: a82aa9c5728cf32499579b3dad97d5ae, type: 2}
+      - {fileID: 11400000, guid: abddb604f9d42334590d6af4596fba7d, type: 2}
     - place: {fileID: 11400000, guid: 4932f50f3824f014f8a07da9d05ddb4e, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 70bb578ac22a2e040b9c4d126508cc9e, type: 2}
+      - {fileID: 11400000, guid: ee9b512ba4e6ffe47b400da6564d9363, type: 2}
+      - {fileID: 11400000, guid: 013c73567a818f748bccca7672c5a2fa, type: 2}
+      - {fileID: 11400000, guid: b6dc9a6ebd2aa114f9f3bfe49db23769, type: 2}
+      - {fileID: 11400000, guid: 7f565970b3333ee47af4c14fe0fe10d1, type: 2}
+      - {fileID: 11400000, guid: ca1262471b9ebaf4c82c4fd00aaa033c, type: 2}
     - place: {fileID: 11400000, guid: 079e627e39673ca42af08e84d2369107, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 203a1315baa6d7a4cacdc8502ceba594, type: 2}
+      - {fileID: 11400000, guid: 5b4ff26dbb86f9647bf3cead879f0541, type: 2}
+      - {fileID: 11400000, guid: 2a62d131edfe54e4f85bdcf24da7b112, type: 2}
+      - {fileID: 11400000, guid: 31c83dd19641bc14f982603ef24d739f, type: 2}
     - place: {fileID: 11400000, guid: aa5efe08ad6235c45ae90c339ed219bb, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}
+      - {fileID: 11400000, guid: 3e213ffc9b55b5247959d4984bc2d027, type: 2}
     - place: {fileID: 11400000, guid: b3cf754b930a106499ca3ea4799549e5, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: f7e250a0e6b98164084e6fe9dff669a8, type: 2}
+      - {fileID: 11400000, guid: a15dfa51b8e4c0f459891e79c1e5e18f, type: 2}
+      - {fileID: 11400000, guid: 9b1c8c907450f0b4b9b607baca6edbbd, type: 2}
+      - {fileID: 11400000, guid: d00b1746211f4de40b9877a0bd753b14, type: 2}
+      - {fileID: 11400000, guid: c9da40d697770fb498d47db4a28a8494, type: 2}
     - place: {fileID: 11400000, guid: f1644b7bec17b1548b6b43c656cdd7ca, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      - {fileID: 11400000, guid: 16a8655ec7b2dde4ca47f9f5824acb83, type: 2}
+      - {fileID: 11400000, guid: 9c88d6ff9e4455e469fdce3d66fcb6a7, type: 2}
+      - {fileID: 11400000, guid: 18d5c8847418bc3419e4c60ddc37282c, type: 2}
     - place: {fileID: 11400000, guid: ea74767b91a2d3a449a4e706c3d32e91, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 2815a5c8708949a4097ab25c6e805ebf, type: 2}
+      - {fileID: 11400000, guid: 497b4ec354db9b948bd24a87f1ee6448, type: 2}
+      - {fileID: 11400000, guid: a737faa451e1c344cbe1b0cae4bf9151, type: 2}
+      - {fileID: 11400000, guid: 09f130f21f5f6204987e1185a56e6284, type: 2}
+      - {fileID: 11400000, guid: 87a9a0c1def3b4445974784505c8fce0, type: 2}
+      - {fileID: 11400000, guid: 91f024c8c70cc8449a70d61df789a758, type: 2}
+      - {fileID: 11400000, guid: f37d5a0d5fe6de44ebc256a5928247fb, type: 2}
+      - {fileID: 11400000, guid: ad0d8ee1f085ee845a46c2b81fbd57b9, type: 2}
     - place: {fileID: 11400000, guid: 7d5cd5689bdbb2c45bbf1b030e119e11, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 23d38df29f0ae9d46bc104f37e1c7da2, type: 2}
+      - {fileID: 11400000, guid: 21b1c2309f3ff3143bd4e968bcb7578e, type: 2}
+      - {fileID: 11400000, guid: b32e76439819bd34a945408adf975188, type: 2}
+      - {fileID: 11400000, guid: fba46c83b8398ef408e0ac51d70fef79, type: 2}
     - place: {fileID: 11400000, guid: 78341668eddbb644685af52f9404948c, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 3fd0075775f8f0f48b2d61dd14cb0249, type: 2}
+      - {fileID: 11400000, guid: 0c9bec42b9ac23a44a7f686bcd608ecd, type: 2}
     - place: {fileID: 11400000, guid: cb9eacdaba4ce1b4596d8120315201c3, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: c8f9d58d313de0743a1c6c1819510126, type: 2}
+      - {fileID: 11400000, guid: 22269862bdcb77545b2c7c6d473d1581, type: 2}
+      - {fileID: 11400000, guid: 0afaf19b3ebfa174fa234089ae30bd0c, type: 2}
+      - {fileID: 11400000, guid: 1589898f7967d7645acf90e62d369fb2, type: 2}
     - place: {fileID: 11400000, guid: f50fb02393304ed4b8e19d3d1d036328, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      - {fileID: 11400000, guid: 6c31d32fc2ce4634aaf2d10dbdad31d6, type: 2}
+      - {fileID: 11400000, guid: c8950cfd6ee09034f8a87ae723030585, type: 2}
+      - {fileID: 11400000, guid: 234e05162828d414d88ea86f82181b75, type: 2}
     - place: {fileID: 11400000, guid: c2a668332ccd66742926b507dbd127b8, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: d7e2c81002e592b41b7f5f351c5db5ab, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 5c0a056d08fc02648b9011dae47a4638, type: 2}
+      - {fileID: 11400000, guid: cdb62f722888db84ab5c2ad4108547d1, type: 2}
+      - {fileID: 11400000, guid: 8ef27b27e97353c458659ac1adf8ee03, type: 2}
+      - {fileID: 11400000, guid: 4b1ab475a3db12b45ba86d04c2033f64, type: 2}
+      - {fileID: 11400000, guid: 686dbde843be41a4d89c3839b1f12b82, type: 2}
+      - {fileID: 11400000, guid: d47c70a2ca6f5994cb7a9ac4ce7005fd, type: 2}
+      - {fileID: 11400000, guid: 9151c738f03b31d45add6bef281b6b6c, type: 2}
     - place: {fileID: 11400000, guid: bdd00166f4ed60b4c8fb8d520ee48767, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 058dc6da276aa994690a1e67b2c726d1, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: bca218f618f8889438e8eac1a5b33f69, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 0ffc633fc2153354b83ca15d01770169, type: 2}
+      - {fileID: 11400000, guid: 8b0cdb82a33a39240a7217c52076032d, type: 2}
+      - {fileID: 11400000, guid: 1f3b47317af6af844a5ab8a45793c394, type: 2}
     - place: {fileID: 11400000, guid: d3e9326900f78cb45b9d9842534af288, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: a7d3b7b6ea018a34890f312cf3b6ab93, type: 2}
+      - {fileID: 11400000, guid: 45dab7d4b3208df42818a1cdde54dd62, type: 2}
+      - {fileID: 11400000, guid: deb17a38d7f890949bdebae1a4d4c165, type: 2}
     - place: {fileID: 11400000, guid: a258c5aa0e6373444a4166331d058e5a, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 7b74bb0931daff04c910c7fbab8385fa, type: 2}
+      - {fileID: 11400000, guid: 2072ede11245b274d9a7c60c438d8fef, type: 2}
+      - {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
+      - {fileID: 11400000, guid: 4510c97d86b4cdf4da6e0a6fb2bca5c6, type: 2}
+      - {fileID: 11400000, guid: 8d325eab532f1f54facc397b0836fe38, type: 2}
+      - {fileID: 11400000, guid: 7660e6cf4dfe96c45a499952c89ff1a5, type: 2}
     - place: {fileID: 11400000, guid: b3f64a4930e7e234788382392061ac3a, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: f7c3f31c03f634f4ba3f428ceb9422fe, type: 2}
@@ -5737,47 +5886,152 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 154a5b78aebbc7249b026da469bd3fe7, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: d39687dc28b9a89468edf52d99e938bb, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      - {fileID: 11400000, guid: d24018b05f04bbe4984aeb49bd11bc2e, type: 2}
+      - {fileID: 11400000, guid: bb09ea3df822fef46af2b3d7983e0eea, type: 2}
+      - {fileID: 11400000, guid: 2dd77c3df58180042a96a5186b28c6d0, type: 2}
+      - {fileID: 11400000, guid: 7d357101dd78e874182c103442306635, type: 2}
+      - {fileID: 11400000, guid: f547674a7197cec42aedf7f767cf3633, type: 2}
+      - {fileID: 11400000, guid: a4aa24a23e320674596677a1d8d39d38, type: 2}
+      - {fileID: 11400000, guid: 750e2048a7568294d8a1ee0df3ba0407, type: 2}
+      - {fileID: 11400000, guid: 3d2fa27aa89bbd1428330da04352365c, type: 2}
+      - {fileID: 11400000, guid: 84c5744c296a68b4d894397cad1bd232, type: 2}
+      - {fileID: 11400000, guid: e44dfe2f42bf961459592f813e840ae4, type: 2}
+      - {fileID: 11400000, guid: 3baa21b70802bc6419609155545da0b3, type: 2}
     - place: {fileID: 11400000, guid: f421cebc1155b7340947e2a1d137399c, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 63266f4ff99374e429992a32846c1848, type: 2}
+      - {fileID: 11400000, guid: 7771cce9cf4503842bf3b493d4e9980d, type: 2}
+      - {fileID: 11400000, guid: 8a3f31808cc2cd54ba7bbd82676abd59, type: 2}
+      - {fileID: 11400000, guid: cab3e4ddcf243a745ba2de211028f6f7, type: 2}
+      - {fileID: 11400000, guid: 8c820f27008a8f34186550c34a586706, type: 2}
+      - {fileID: 11400000, guid: 69e417076c0e80845acc0a0bb718f545, type: 2}
+      - {fileID: 11400000, guid: 1cbb9158a5e3a6446b6f4a870dc84cea, type: 2}
+      - {fileID: 11400000, guid: 22f246d273074fd4e91e335b2cc8e453, type: 2}
+      - {fileID: 11400000, guid: 4d13eb049f8f1ab41be1ff8a38cbb4b3, type: 2}
+      - {fileID: 11400000, guid: b971cfd680781694e990118782666e2b, type: 2}
+      - {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
+      - {fileID: 11400000, guid: 10f1969bed1bc964b824b478684a7715, type: 2}
+      - {fileID: 11400000, guid: 3834b2f54e6b00a499c45b1f4a1403e1, type: 2}
+      - {fileID: 11400000, guid: 67ff8330020e8dc4190099df03b0b2ac, type: 2}
+      - {fileID: 11400000, guid: 61abc5fa60b7ef240a67721c8f4893ba, type: 2}
+      - {fileID: 11400000, guid: 03d64d377742a254ca096e5a74e1e0e4, type: 2}
+      - {fileID: 11400000, guid: 4f34f60a85fda6246ab4fc452b33dd4a, type: 2}
+      - {fileID: 11400000, guid: c4c6c80587f879648be2d3f2c93d8c59, type: 2}
+      - {fileID: 11400000, guid: b7f894384a727dd4180ddb55e76902d7, type: 2}
+      - {fileID: 11400000, guid: 4b89d42434030dc41ac266fae9f8925d, type: 2}
+      - {fileID: 11400000, guid: 8167dc047229f9b4b945eadd2236da90, type: 2}
+      - {fileID: 11400000, guid: e1e076be1956aba4ca0d562e96a0964c, type: 2}
+      - {fileID: 11400000, guid: 5ce7266a12327254fb1c81e43ddead38, type: 2}
+      - {fileID: 11400000, guid: ebe6176b8e32c1246aa1c27682ad9db1, type: 2}
     - place: {fileID: 11400000, guid: 2b8dc06754f56e842ba5443c4048ee17, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: fa7a205bcc3a5b34186791babc1b3e55, type: 2}
+      - {fileID: 11400000, guid: 850b58589acc7594c8617b59555dd58b, type: 2}
+      - {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
     - place: {fileID: 11400000, guid: b3c4da3dc2b8e5145a688373462213d9, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 5f9e6f2cbe2b82e4faa872cbd065fb51, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 55841e46e149872499e7beff7302eca5, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 8a25d49f11b8b0c4aa46ebd80706c95a, type: 2}
+      - {fileID: 11400000, guid: e20852a94e6a31e469489938665f2758, type: 2}
     - place: {fileID: 11400000, guid: 4a826cf6cfd0c314d9018b21df213183, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 17c998071f3ca15468264c8096c493c5, type: 2}
+      - {fileID: 11400000, guid: 293cc65838cf7ed4dabae5429f1e385d, type: 2}
+      - {fileID: 11400000, guid: 8514c669ba5ffa84f947af7b231d68bd, type: 2}
+      - {fileID: 11400000, guid: 0678811ba823d4a49bb79e108a66922e, type: 2}
+      - {fileID: 11400000, guid: 1901251b1be11534bbbc4e953e774a72, type: 2}
+      - {fileID: 11400000, guid: e31c23776dadb50498ba407d254c493b, type: 2}
+      - {fileID: 11400000, guid: 89a7039098b81ef41a9d8e356968a500, type: 2}
+      - {fileID: 11400000, guid: bddb2b3a41abb53408035083931d09b0, type: 2}
+      - {fileID: 11400000, guid: 496b5c50ba78d51449757216d0eabb18, type: 2}
     - place: {fileID: 11400000, guid: 1b1da64fefac5bd44ad3caf0de5da38a, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: f2ac509005facca48bffa6d657adc261, type: 2}
+      - {fileID: 11400000, guid: d8215aac3f649f5438b87dc67a9f58e6, type: 2}
+      - {fileID: 11400000, guid: 99601d6383fb76340b25494c59225c72, type: 2}
+      - {fileID: 11400000, guid: 000c37c9a2e8c2d4f8e836a48f93c11e, type: 2}
+      - {fileID: 11400000, guid: 17414c5c80e03374a9220f764fc5435d, type: 2}
+      - {fileID: 11400000, guid: 1fc79f7c28d32124c853022505823e4d, type: 2}
+      - {fileID: 11400000, guid: 051f9e1a429be8f4084c1eeb2c8ce680, type: 2}
+      - {fileID: 11400000, guid: a1a7af3fb990f3f4db1e31c7251fdf0a, type: 2}
+      - {fileID: 11400000, guid: cca3b0216135ac34bb01d68fe56f055c, type: 2}
+      - {fileID: 11400000, guid: e03f288617705f44782521dba992cf83, type: 2}
+      - {fileID: 11400000, guid: 05eca54ce2a0ef842bc810ff0b33292d, type: 2}
+      - {fileID: 11400000, guid: 9da01eea14f3de74ca7252b1f2861281, type: 2}
+      - {fileID: 11400000, guid: 72db5f294ceacb34eb905a146ebcc283, type: 2}
+      - {fileID: 11400000, guid: 251fa3e3e25f1db4683e4923a75c9232, type: 2}
+      - {fileID: 11400000, guid: 9c7356fdf6245a84dbf4f9971ecdffc7, type: 2}
     - place: {fileID: 11400000, guid: 9af418503338136499b98368afaa84f7, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: db86d91e2ff222f48b81cab644fc6073, type: 2}
+      - {fileID: 11400000, guid: 15707efd4a52a37478b020846c7f52ae, type: 2}
+      - {fileID: 11400000, guid: f256eac03bc03524b8ada46db810dbda, type: 2}
+      - {fileID: 11400000, guid: 6e9b5debfd011f246a5b34edd40273c6, type: 2}
+      - {fileID: 11400000, guid: 5a2cd00ea5e248348a9490b582fa536c, type: 2}
+      - {fileID: 11400000, guid: c3ccba9331da27e4b9c7955cb769a5b4, type: 2}
+      - {fileID: 11400000, guid: 6b6bfadb424e770408751d7a9915dc21, type: 2}
+      - {fileID: 11400000, guid: 9383a59857be1344bab0a3ba17a24ecf, type: 2}
+      - {fileID: 11400000, guid: e3c7a359748840047817adedb03f1ca5, type: 2}
+      - {fileID: 11400000, guid: 6a93c504067c4e14a975efd7e71c9e1a, type: 2}
+      - {fileID: 11400000, guid: 8d4ff69869b150a46837ccdc9ef16b14, type: 2}
+      - {fileID: 11400000, guid: afd02607b438b3346889e9f7def61ff7, type: 2}
     - place: {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 32a4b9c20e650964f800afac2c6bc8e9, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 585e0f13cb6e1ed4bbf41b788f018cb3, type: 2}
+      - {fileID: 11400000, guid: 351c78fd3e33dea4ea1d12fbc96af88a, type: 2}
+      - {fileID: 11400000, guid: 5e1bbeb3ecefab84d9bc9261af437df9, type: 2}
     - place: {fileID: 11400000, guid: db2d75b4dcec9f445aec547af379aeb2, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 24b0372e4d833e04ea3774f9172c899c, type: 2}
+      - {fileID: 11400000, guid: d091f49b22cfd1d498601312df5e5335, type: 2}
+      - {fileID: 11400000, guid: 439061bc2a58310429ce36ebf1e5babe, type: 2}
     - place: {fileID: 11400000, guid: 95103e3d44f073f45b1870bb853850af, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 146b2fa1fde482d42861c5422fade459, type: 2}
+      - {fileID: 11400000, guid: c1faea53f22948144ac664e4cb4bb710, type: 2}
     - place: {fileID: 11400000, guid: d71af1931d9e6284988b0f3d3b14bb23, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: c95b5187b336c3b42bb7e2167c03ad74, type: 2}
+      - {fileID: 11400000, guid: 85b7daaac77384043847978d17a0a7a2, type: 2}
+      - {fileID: 11400000, guid: 2cb64fc06c817a84bb825e36b3866425, type: 2}
+      - {fileID: 11400000, guid: 23978cf1182a36743aede6350d31503a, type: 2}
+      - {fileID: 11400000, guid: 8dcf9863dfa59854a97de5d3a389a929, type: 2}
+      - {fileID: 11400000, guid: b8f1489e4b9e31e46a4f1166881b08bc, type: 2}
+      - {fileID: 11400000, guid: a5b22815b8e258f4c94a04fd0d3ba021, type: 2}
+      - {fileID: 11400000, guid: 799d9bc27943b6e49af3889197a0bebe, type: 2}
+      - {fileID: 11400000, guid: 2db9a2b63ecc0dc41b03238d617b0886, type: 2}
+      - {fileID: 11400000, guid: a6cd7451056ccdf4f977fa81bec38a85, type: 2}
+      - {fileID: 11400000, guid: ac49f2f144d36c54bb0913b86ec68289, type: 2}
+      - {fileID: 11400000, guid: c7f9b91d784a95a4c82f4bfa7595af3e, type: 2}
   - m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-    m_names: "gladiola lab\r\nhome economics lab\r\nindustrial arts 1 & 2\r\nindustrial
-      arts 11\r\nindustrial arts 12\r\nindustrial arts 13\r\nindustrial arts 14\r\nindustrial
-      arts 15\r\nindustrial arts 16\r\nindustrial arts 3\r\nindustrial arts 4, 5 &
-      6\r\nindustrial arts 7 & 8\r\nindustrial arts 9 & 10\r\nmapeh multipurpose\r\nshakespearean
-      hall\r\nteatro\r\nvalues multipurpose\r"
+    m_names: "gladiola lab\r\ngladiola lab 101\r\ngladiola lab 102\r\nhome economics
+      lab\r\nindustrial arts 1\r\nindustrial arts 10\r\nindustrial arts 11\r\nindustrial
+      arts 12\r\nindustrial arts 13\r\nindustrial arts 14\r\nindustrial arts 15\r\nindustrial
+      arts 16\r\nindustrial arts 2\r\nindustrial arts 3\r\nindustrial arts 4\r\nindustrial
+      arts 5\r\nindustrial arts 6\r\nindustrial arts 7\r\nindustrial arts 8\r\nindustrial
+      arts 9\r\nmapeh multipurpose\r\nmapeh multipurpose 1\r\nmapeh multipurpose 2\r\nmapeh
+      multipurpose 3\r\nscience lab 1\r\nscience lab 2\r\nscience lab 3\r\nscience
+      lab 4\r\nshakespearean hall\r\nteatro\r\nvalues multipurpose\r\nvalues multipurpose
+      101\r\nvalues multipurpose 102\r"
     m_tags: ia;
-    cacheCount: 17
+    cacheCount: 33
     places:
     - place: {fileID: 11400000, guid: b66b2e40cc7737140b498c9d603084f8, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 3c89bde11cacfe441b6b3a147aa16933, type: 2}
+      - {fileID: 11400000, guid: 132896df817bc32469940bb5eb69af69, type: 2}
     - place: {fileID: 11400000, guid: 2455a9734b4b4f446b35d91174187e03, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: c56aa323eb242564685e709a951a001e, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: cd75e81dc369a01469cb7b6db9d4938a, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 4c21e968e389b4a4fa193dd65bcfcf26, type: 2}
       rooms: []
@@ -5791,26 +6045,47 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: ac6996f8c54874d46856c614852d1e19, type: 2}
       rooms: []
+    - place: {fileID: 11400000, guid: 417a5e3178c6cf145b2d8189e340eebd, type: 2}
+      rooms: []
     - place: {fileID: 11400000, guid: d7404e7eb920b3146b755507c8ff81e3, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 857b75f9e1f9f3348b9b09d9d1e75e06, type: 2}
       rooms: []
+    - place: {fileID: 11400000, guid: 2b982ee6cbcfcf042aaadfb9cb924e7f, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: ab2e0cf11ca619345a733f555bbdb98f, type: 2}
+      rooms: []
     - place: {fileID: 11400000, guid: 19781faab2b9f0b46b5329e7461a0127, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 5420ba362d5d2d44c874231763099087, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 6119c4fdb3ef12946b0cae89c319387f, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: b6d192b0d7f4e694e8bc84d051dbff9d, type: 2}
+      rooms:
+      - {fileID: 11400000, guid: cd1cc31a96b2f8148a176cb9490bb6ee, type: 2}
+      - {fileID: 11400000, guid: ec6a8864266628d4abfb8b20052b7b26, type: 2}
+      - {fileID: 11400000, guid: b9820228da58fa64abd505dde6672211, type: 2}
+    - place: {fileID: 11400000, guid: cdab19558e0951f4bb512f70b1d24cc2, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 6a563efa289a3eb42aa8026f26d52e24, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: 68f486e1f80d2f7449ca166189354354, type: 2}
+      rooms: []
+    - place: {fileID: 11400000, guid: a519438b80896884caed19194dba927b, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 2b4916f1866c75f43a6a030a436c294f, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 03f6a3abf042aaf45a62da8417f7d69d, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: dda535bc44364a74fa9f699138a34a4a, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
+      - {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
   - m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
     m_names: "administrative office\r\nauditor's office\r\nfinance office\r\nguidance
-      office 1\r\nguidance office 2\r\nguidance office\r\nhuman resource office\r\npampangan
-      office\r\npta office\r\nphs-mpc office\r\nphsfec office\r\nprincipal's office\r\nprinting
+      office 1\r\nguidance office 2\r\nguidance office\r\nhuman resource office\r\nspeech
+      laboratory\r\npta office\r\nphs-mpc office\r\nphsfec office\r\nprincipal's office\r\nprinting
       office\r\npromis office\r\nrecords office\r\nsinukuan office\r\nsupply office\r\nphsssgo
       office\r"
     m_tags: 

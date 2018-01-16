@@ -78,8 +78,8 @@ namespace Map
 			searchKeys.Clear();
 			keyword = RemoveMultipleWhiteSpaces(keyword).ToLower();
 
-			if(keyword.Length == 0 || landmarkClusters == null || landmarkClusters.Count == 0)
-				return;
+			if(string.IsNullOrEmpty(keyword) || landmarkClusters == null || landmarkClusters.Count == 0)
+				goto result;
 
 			SearchByCategory(keyword, SearchCategory.Name, false);
 
@@ -100,6 +100,7 @@ namespace Map
 
 			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.primaryIndex).ToList();
 
+			result:
 			if(OnResult != null)
 				OnResult(searchResultCount);
 		}
@@ -361,12 +362,34 @@ namespace Map
 			foreach(string file in files)
 			{
 				Place place = AssetDatabase.LoadAssetAtPath<Place>(file);
+				List<Room> rooms = GetRooms(place, landmark);
 
 				if(place != null)
-					placeCluster.Add(new PlaceCluster(place, null));
+					placeCluster.Add(new PlaceCluster(place, rooms));
 			}
 
 			return placeCluster;
+		}
+
+		private List<Room> GetRooms(Place place, Landmark landmark)
+		{
+			string currentPath = roomsPath + '\\' + landmark.name + '\\' + place.name;
+
+			if(!Directory.Exists(currentPath))
+				return null;
+
+			string[] files = Directory.GetFiles(currentPath, "*.asset");
+			List<Room> rooms = new List<Room>();
+
+			foreach(string file in files)
+			{
+				Room room = AssetDatabase.LoadAssetAtPath<Room>(file);
+
+				if(room != null)
+					rooms.Add(room);
+			}
+
+			return rooms;
 		}
 	}
 	#endif

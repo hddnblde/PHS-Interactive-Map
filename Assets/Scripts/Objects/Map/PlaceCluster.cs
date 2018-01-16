@@ -48,8 +48,8 @@ namespace Map
 				return place as Location;
 			else
 			{
-				if((index - 1) >= rooms.Count)
-					return null;
+				if(index == 0)
+					return place as Location;
 				else
 					return rooms[index - 1] as Location;
 			}
