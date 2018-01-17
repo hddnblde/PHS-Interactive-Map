@@ -52,6 +52,26 @@ namespace Map
 
 			return places[secondaryIndex].GetLocation(tertiaryIndex);
 		}
+
+		public Location[] GetAllLocation()
+		{
+			if(places == null || places.Count == 0)
+				return null;
+
+			List<Location> locations = new List<Location>();
+
+			foreach(PlaceCluster place in places)
+			{
+				for(int i = 0; i < place.count; i++)
+				{
+					Location location = place.GetLocation(i);
+					if(location != null)
+						locations.Add(location);
+				}
+			}
+
+			return locations.ToArray();
+		}
 			
 		public void Search(string keyword, int primaryIndex, List<SearchKey> keys, SearchCategory category, bool deepSearch)
 		{

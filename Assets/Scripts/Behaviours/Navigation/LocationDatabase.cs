@@ -73,6 +73,19 @@ namespace Map
 			return landmarkCluster.GetLocation(searchItem.secondaryIndex, searchItem.tertiaryIndex);
 		}
 
+		public Location[] GetAllLocations()
+		{
+			if(landmarkClusters == null || landmarkClusters.Count == 0)
+				return null;
+
+			List<Location> database = new List<Location>();
+
+			foreach(LandmarkCluster cluster in landmarkClusters)
+				database.AddRange(cluster.GetAllLocation());
+
+			return database.ToArray();
+		}
+
 		public void Search(string keyword)
 		{
 			searchKeys.Clear();
@@ -126,12 +139,6 @@ namespace Map
 				LandmarkCluster landmarkCluster = landmarkClusters[i];
 				landmarkCluster.Search(keyword, i, searchKeys, category, deepSearch);
 			}
-		}
-
-		private void PrintOutAllResults()
-		{
-			for(int i = 0; i < searchResultCount; i++)
-				Debug.Log(GetLocationFromSearch(i).displayedName + ((" strength : @s  nearest : @n").Replace("@s", searchKeys[i].strength.ToString()).Replace("@n", searchKeys[i].nearestPoint.ToString())));
 		}
 
 		private bool SimilarKeysFound()

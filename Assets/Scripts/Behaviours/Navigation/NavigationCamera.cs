@@ -78,7 +78,7 @@ namespace Navigation
 		public static event ViewAdjust OnViewAdjust;
 
 		private const float RaycastDistance = 100f;
-		private const float CameraHeight = 30f;
+		public const float CameraHeight = 30f;
 		private const float GroundHeight = 0f;
 		private const float ViewLowerLimit = 10f;
 		private const float ViewUpperLimit = 300f;
@@ -203,6 +203,7 @@ namespace Navigation
 				Mathf.Clamp(transform.position.z, -boundary.y, boundary.y));
 			
 			transform.position = clampedPosition;
+			ViewAdjustEvent();
 		}
 
 		private void Rotate(float delta)
@@ -228,6 +229,7 @@ namespace Navigation
 		{
 			FocusFrame(frame, ZoomDefault);
 		}
+		
 		private void FocusFrame(Vector3 frame, float targetZoom)
 		{
 			frame = new Vector3(frame.x, CameraHeight, frame.z);
