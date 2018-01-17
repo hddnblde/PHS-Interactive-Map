@@ -89,6 +89,7 @@ namespace Navigation
 
 		private Coroutine transitionRoutine = null;
 		private float zoomVelocity = 0f;
+		private float currentView = 0f;
 		#endregion
 
 
@@ -99,7 +100,7 @@ namespace Navigation
 			set
 			{
 				m_view = value;
-				ViewAdjustEvent();
+				// ViewAdjustEvent();
 			}
 		}
 		#endregion
@@ -254,15 +255,19 @@ namespace Navigation
 			if(navigationCamera == null)
 				return;
 
-			float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, m_view);
+			if(!Mathf.Approximately(currentView, m_view))
+				ViewAdjustEvent();
 
-			navigationCamera.orthographicSize = Mathf.SmoothDamp(navigationCamera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
+			currentView = Mathf.SmoothDamp(currentView, m_view, ref zoomVelocity, ZoomDampTime);
+			float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, currentView);
+
+			navigationCamera.orthographicSize = targetView;// Mathf.SmoothDamp(navigationCamera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
 		}
 
 		private void ViewAdjustEvent()
 		{
 			if(OnViewAdjust != null)
-				OnViewAdjust(m_view);
+				OnViewAdjust(currentView); //OnViewAdjust(m_view);
 		}
 		#endregion
 
