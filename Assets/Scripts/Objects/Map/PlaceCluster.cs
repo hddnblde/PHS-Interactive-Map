@@ -35,7 +35,7 @@ namespace Map
 
 
 		#region Functions
-		private bool HasRooms()
+		public bool HasRooms()
 		{
 			return rooms != null && rooms.Count > 0;
 		}

@@ -15,49 +15,49 @@
 			Constructor(0, 0, 0, 0, 0);
 		}
 
-		public SearchKey(int primaryIndex, int secondaryIndex, int tertiaryIndex)
+		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex)
 		{
-			Constructor(primaryIndex, secondaryIndex, tertiaryIndex, 0, 0);
+			Constructor(landmarkIndex, placeIndex, locationIndex, 0, 0);
 		}
 
-		public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength)
+		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex, int strength)
 		{
-			Constructor(mainIndex, subIndex, tertiaryIndex, strength, 0);
+			Constructor(landmarkIndex, placeIndex, locationIndex, strength, 0);
 		}
 
-		public SearchKey(int mainIndex, int subIndex, int tertiaryIndex, int strength, int nearestPoint)
+		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
 		{
-			Constructor(mainIndex, subIndex, tertiaryIndex, strength, nearestPoint);
+			Constructor(landmarkIndex, placeIndex, locationIndex, strength, nearestPoint);
 		}
 
-		private void Constructor(int primaryIndex, int secondaryIndex, int tertiaryIndex, int strength, int nearestPoint)
+		private void Constructor(int landmarkIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
 		{
-			m_primaryIndex = primaryIndex;
-			m_secondaryIndex = secondaryIndex;
-			m_tertiaryIndex = tertiaryIndex;
+			m_landmarkIndex = landmarkIndex;
+			m_placeIndex = placeIndex;
+			m_locationIndex = locationIndex;
 			m_strength = strength;
 			m_nearestPoint = nearestPoint;
 		}
 
-		private int m_primaryIndex = -1;
-		private int m_secondaryIndex = -1;
-		private int m_tertiaryIndex = -1;
+		private int m_landmarkIndex = -1;
+		private int m_placeIndex = -1;
+		private int m_locationIndex = -1;
 		private int m_strength = 0;
 		private int m_nearestPoint = -1;
 
-		public int primaryIndex
+		public int landmarkIndex
 		{
-			get { return m_primaryIndex; }
+			get { return m_landmarkIndex; }
 		}
 
-		public int secondaryIndex
+		public int placeIndex
 		{
-			get { return m_secondaryIndex; }
+			get { return m_placeIndex; }
 		}
 
-		public int tertiaryIndex
+		public int locationIndex
 		{
-			get { return m_tertiaryIndex; }
+			get { return m_locationIndex; }
 		}
 
 		public int strength

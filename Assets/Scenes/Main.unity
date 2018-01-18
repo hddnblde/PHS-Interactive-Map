@@ -257,6 +257,12 @@ MonoBehaviour:
   locationDatabase: {fileID: 1882231225}
   mapMarkerPrefab: {fileID: 1325977398379466, guid: de97993b52609f84cbbefc4d0fe63dca,
     type: 2}
+  placeViewingBounds:
+    m_lowerLimit: 0
+    m_upperLimit: 0.85
+  roomViewingBounds:
+    m_lowerLimit: 0.85
+    m_upperLimit: 1
 --- !u!1 &98970059
 GameObject:
   m_ObjectHideFlags: 0

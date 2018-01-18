@@ -7,6 +7,26 @@ namespace Menus
 {
 	public class MapMarkerSystem : MonoBehaviour
 	{
+		[System.Serializable]
+		private class ViewingBounds
+		{
+			[SerializeField]
+			private float m_lowerLimit = 0f;
+
+			[SerializeField]
+			private float m_upperLimit = 1f;
+
+			public float lowerLimit
+			{
+				get { return m_lowerLimit; }
+			}
+
+			public float upperLimit
+			{
+				get { return m_upperLimit; }
+			}
+		}
+
 		[SerializeField]
 		private Transform markerContainer = null;
 
@@ -15,6 +35,13 @@ namespace Menus
 
 		[SerializeField]
 		private GameObject mapMarkerPrefab = null;
+
+		[Header("Viewing Bounds")]
+		[SerializeField]
+		private ViewingBounds placeViewingBounds = new ViewingBounds();
+
+		[SerializeField]
+		private ViewingBounds roomViewingBounds = new ViewingBounds();
 
 		private void Awake()
 		{
@@ -37,15 +64,13 @@ namespace Menus
 					continue;
 
 				bool isRoom = (location as Room) != null;
+				ViewingBounds viewingBounds = (isRoom ? roomViewingBounds : placeViewingBounds);
 
-				if(isRoom)
-					continue;
-
-				CreateMarker(location);
+				CreateMarker(location, viewingBounds);
 			}
 		}
 
-		private void CreateMarker(Location location)
+		private void CreateMarker(Location location, ViewingBounds viewingBounds)
 		{
 			if(location == null || mapMarkerPrefab == null)
 				return;
@@ -54,7 +79,7 @@ namespace Menus
 			MapMarker marker = markerObject.GetComponent<MapMarker>();
 
 			if(marker != null)
-				marker.Set(GetThumbnailFromLocation(location), location.displayedName, location.position);
+				marker.Set(GetThumbnailFromLocation(location), location.displayedName, location.position, viewingBounds.lowerLimit, viewingBounds.upperLimit);
 		}
 
 		private Sprite GetThumbnailFromLocation(Location location)

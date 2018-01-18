@@ -45,12 +45,20 @@ namespace Map
 
 
 		#region Functions
-		public Location GetLocation(int secondaryIndex, int tertiaryIndex)
+		public bool PlaceHasRooms(int placeIndex)
 		{
-			if(secondaryIndex < 0 || places == null || places.Count == 0 || secondaryIndex >= places.Count)
+			if(placeIndex < 0 || places == null || places.Count == 0 || placeIndex >= places.Count)
+				return false;
+			else
+				return places[placeIndex].HasRooms();
+		}
+
+		public Location GetLocationFromPlace(int placeIndex, int index)
+		{
+			if(placeIndex < 0 || places == null || places.Count == 0 || placeIndex >= places.Count)
 				return null;
 
-			return places[secondaryIndex].GetLocation(tertiaryIndex);
+			return places[placeIndex].GetLocation(index);
 		}
 
 		public Location[] GetAllLocation()
@@ -180,7 +188,7 @@ namespace Map
 
 		private SearchKey FindKey(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
 		{
-			SearchKey key = searchKeys.Find(r => r.primaryIndex == primaryIndex && r.secondaryIndex == secondaryIndex && r.tertiaryIndex == tertiaryIndex);
+			SearchKey key = searchKeys.Find(r => r.landmarkIndex == primaryIndex && r.placeIndex == secondaryIndex && r.locationIndex == tertiaryIndex);
 			return key;
 		}
 

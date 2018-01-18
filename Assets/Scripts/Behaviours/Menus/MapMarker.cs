@@ -14,6 +14,9 @@ namespace Menus
 		[SerializeField]
 		private Image icon = null;
 
+		private float viewLowerBounds = 0f;
+		private float viewUpperBounds = 1f;
+
 		private const float MinScale = 0.35f;
 		private const float MaxScale = 0.05f;
 
@@ -35,7 +38,12 @@ namespace Menus
 			NavigationCamera.OnViewAdjust -= OnViewAdjust;
 		}
 
-		public void Set(Sprite icon, string text, Vector3 position, float requiredView = 0f)
+		public void Set(Sprite icon, string text, Vector3 position)
+		{
+			Set(icon, text, position, 0f, 1f);
+		}
+
+		public void Set(Sprite icon, string text, Vector3 position, float viewLowerBounds, float viewUpperBounds)
 		{
 			if(this.icon != null)
 			{
@@ -47,6 +55,9 @@ namespace Menus
 				this.text.text = text;
 
 			transform.position = new Vector3(position.x, NavigationCamera.CameraHeight - 1f, position.z);
+
+			this.viewLowerBounds = viewLowerBounds;
+			this.viewUpperBounds = viewUpperBounds;
 		}
 
 		private void OnViewAdjust(float view)
@@ -57,6 +68,14 @@ namespace Menus
 			transform.rotation = cameraTransform.rotation;
 			Vector3 scale = Vector3.Lerp(Vector3.one * MinScale, Vector3.one * MaxScale, view);
 			transform.localScale = scale;
+			
+			if(text != null)
+				text.enabled = WithinViewingBounds(view);
+		}
+
+		private bool WithinViewingBounds(float view)
+		{
+			return (view >= viewLowerBounds) && (view <= viewUpperBounds);
 		}
 	}
 }

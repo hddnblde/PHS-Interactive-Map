@@ -65,12 +65,17 @@ namespace Map
 
 			SearchKey searchItem = searchKeys[index];
 
-			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.primaryIndex >= landmarkClusters.Count || searchItem.primaryIndex < 0)
+			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.landmarkIndex >= landmarkClusters.Count || searchItem.landmarkIndex < 0)
 				return null;
 
-			LandmarkCluster landmarkCluster = landmarkClusters[searchItem.primaryIndex];
+			LandmarkCluster landmarkCluster = landmarkClusters[searchItem.landmarkIndex];
 			landmark = landmarkCluster.landmark;
-			return landmarkCluster.GetLocation(searchItem.secondaryIndex, searchItem.tertiaryIndex);
+			return landmarkCluster.GetLocationFromPlace(searchItem.placeIndex, searchItem.locationIndex);
+		}
+
+		public LandmarkCluster[] GetCopy()
+		{
+			return landmarkClusters.ToArray();
 		}
 
 		public Location[] GetAllLocations()
@@ -111,7 +116,7 @@ namespace Map
 			if(searchResultCount == 0)
 				SearchByCategory(keyword, SearchCategory.MainTag, true);
 
-			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.primaryIndex).ToList();
+			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.landmarkIndex).ToList();
 
 			result:
 			if(OnResult != null)
