@@ -7,15 +7,15 @@ using Search;
 namespace Map
 {
 	[System.Serializable]
-	public class LandmarkCluster
+	public class LandmarkCollection
 	{
-		#region Fields
-		public LandmarkCluster(Landmark landmark, List<PlaceCluster> places)
+		public LandmarkCollection(Landmark landmark, List<PlaceCollection> places)
 		{
 			m_landmark = landmark;
 			this.places = places;
 		}
 
+		#region Fields
 		[SerializeField, HideInInspector]
 		private Landmark m_landmark = null;
 
@@ -30,14 +30,14 @@ namespace Map
 		private int cacheCount = 0;
 
 		[SerializeField, HideInInspector]
-		private List<PlaceCluster> places = new List<PlaceCluster>();
+		private List<PlaceCollection> places = new List<PlaceCollection>();
 
 		public Landmark landmark
 		{
 			get { return m_landmark; }
 		}
 
-		public int count
+		public int placeCollectionCount
 		{
 			get { return cacheCount; } 
 		}
@@ -45,42 +45,14 @@ namespace Map
 
 
 		#region Functions
-		public bool PlaceHasRooms(int placeIndex)
+		public PlaceCollection GetPlaceCollection(int index)
 		{
-			if(placeIndex < 0 || places == null || places.Count == 0 || placeIndex >= places.Count)
-				return false;
+			if(index < 0 || places == null || places.Count == 0 || index >= places.Count)
+				return null;
 			else
-				return places[placeIndex].HasRooms();
+				return places[index];
 		}
 
-		public Location GetLocationFromPlace(int placeIndex, int index)
-		{
-			if(placeIndex < 0 || places == null || places.Count == 0 || placeIndex >= places.Count)
-				return null;
-
-			return places[placeIndex].GetLocation(index);
-		}
-
-		public Location[] GetAllLocation()
-		{
-			if(places == null || places.Count == 0)
-				return null;
-
-			List<Location> locations = new List<Location>();
-
-			foreach(PlaceCluster place in places)
-			{
-				for(int i = 0; i < place.count; i++)
-				{
-					Location location = place.GetLocation(i);
-					if(location != null)
-						locations.Add(location);
-				}
-			}
-
-			return locations.ToArray();
-		}
-			
 		public void Search(string keyword, int primaryIndex, List<SearchKey> keys, SearchCategory category, bool deepSearch)
 		{
 			if(!deepSearch)
@@ -108,7 +80,7 @@ namespace Map
 
 				for(int secondaryIndex = 0; secondaryIndex < places.Count; secondaryIndex++)
 				{
-					PlaceCluster place = places[secondaryIndex];
+					PlaceCollection place = places[secondaryIndex];
 					for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
 					{
 						GetTargetAndKeyFromLocationByCategory(place.GetLocation(tertiaryIndex), category, keyword, ref target, ref key);;
@@ -165,7 +137,7 @@ namespace Map
 		{
 			for(int secondaryIndex = 0; secondaryIndex < places.Count; secondaryIndex++)
 			{
-				PlaceCluster place = places[secondaryIndex];
+				PlaceCollection place = places[secondaryIndex];
 
 				for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
 					StrengthenSearchKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys);
@@ -205,7 +177,7 @@ namespace Map
 			List<string> tagsList = new List<string>();
 			cacheCount = 0;
 
-			foreach(PlaceCluster place in places)
+			foreach(PlaceCollection place in places)
 			{
 				for(int i = 0; i < place.count; i++)
 				{

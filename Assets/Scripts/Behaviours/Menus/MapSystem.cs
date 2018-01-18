@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Map;
+using Menus;
 
-namespace Menus
+namespace Map
 {
-	public class MapMarkerSystem : MonoBehaviour
+	public class MapSystem : MonoBehaviour
 	{
 		[System.Serializable]
 		private class ViewingBounds
 		{
+			public static ViewingBounds Default
+			{
+				get { return new ViewingBounds(); }
+			}
+
 			[SerializeField]
 			private float m_lowerLimit = 0f;
 
@@ -53,20 +58,30 @@ namespace Menus
 			if(locationDatabase == null)
 				return;
 
-			Location[] locationTable = locationDatabase.GetAllLocations();
-
-			if(locationTable == null || locationTable.Length == 0)
-				return;
-
-			foreach(Location location in locationTable)
+			for(int i = 0; i < locationDatabase.landmarkCollectionCount; i++)
 			{
-				if(location == null)
-					continue;
+				LandmarkCollection landmarkCollection = locationDatabase.GetLandmarkCollection(i);
+				
+				for(int j = 0; j < landmarkCollection.placeCollectionCount; j++)
+				{
+					PlaceCollection placeCollection = landmarkCollection.GetPlaceCollection(j);
+					if(placeCollection == null)
+						continue;
 
-				bool isRoom = (location as Room) != null;
-				ViewingBounds viewingBounds = (isRoom ? roomViewingBounds : placeViewingBounds);
+					bool hasRooms = placeCollection.hasRooms;
 
-				CreateMarker(location, viewingBounds);
+					Location placeLocation = placeCollection.GetPlaceLocation();
+					CreateMarker(placeLocation, (hasRooms ? placeViewingBounds : ViewingBounds.Default));
+
+					if(!hasRooms)
+						continue;
+
+					for(int k = 0; k < placeCollection.roomCount; k++)
+					{
+						Location roomLocation = placeCollection.GetRoomLocation(k);
+						CreateMarker(roomLocation, roomViewingBounds);
+					}					
+				}
 			}
 		}
 
@@ -76,6 +91,7 @@ namespace Menus
 				return;
 
 			GameObject markerObject = Instantiate(mapMarkerPrefab, markerContainer) as GameObject;
+			markerObject.name = location.displayedName + " Marker";
 			MapMarker marker = markerObject.GetComponent<MapMarker>();
 
 			if(marker != null)

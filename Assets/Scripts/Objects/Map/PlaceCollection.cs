@@ -5,15 +5,15 @@ using UnityEngine;
 namespace Map
 {
 	[System.Serializable]
-	public class PlaceCluster
+	public class PlaceCollection
 	{
-		#region Fields
-		public PlaceCluster(Place place, List<Room> rooms)
+		public PlaceCollection(Place place, List<Room> rooms)
 		{
 			this.place = place;
 			this.rooms = rooms;
 		}
 
+		#region Fields
 		[SerializeField]
 		private Place place = null;
 
@@ -25,26 +25,61 @@ namespace Map
 			get
 			{
 				int placeCount = (place != null ? 1 : 0);
-				if(HasRooms())
+				if(hasRooms)
 					return rooms.Count + placeCount;
 				else
 					return placeCount;
 			}
 		}
+
+		public int roomCount
+		{
+			get { return (rooms != null ? rooms.Count : 0); }
+		}
+
+		public bool hasRooms
+		{
+			get { return roomCount > 0; }
+		}
 		#endregion
 
 
 		#region Functions
-		public bool HasRooms()
+		
+
+		public Location GetPlaceLocation()
 		{
-			return rooms != null && rooms.Count > 0;
+			return place as Location;
 		}
 
+		public Place GetPlace()
+		{
+			return place;
+		}
+
+		public Room GetRoom(int index)
+		{
+			if(index < 0 || !hasRooms || index >= rooms.Count)
+				return null;
+			else
+				return rooms[index];
+		}
+
+		public Location GetRoomLocation(int index)
+		{
+			Room room = GetRoom(index);
+			if(room == null)
+				return null;
+			else
+				return room as Location;
+		}
+
+		// TODO: Remove
 		public Location GetLocation(int index)
 		{
 			if(index < 0)
 				return null;
-			else if(!HasRooms())
+			else if(!hasRooms)
 				return place as Location;
 			else
 			{

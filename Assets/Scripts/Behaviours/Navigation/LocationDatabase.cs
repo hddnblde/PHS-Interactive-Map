@@ -20,7 +20,7 @@ namespace Map
 		public event ResultEvent OnResult;
 
 		[SerializeField]
-		private List<LandmarkCluster> landmarkClusters = new List<LandmarkCluster>();
+		private List<LandmarkCollection> landmarkCollectionList = new List<LandmarkCollection>();
 
 		private List<SearchKey> searchKeys = new List<SearchKey>();
 
@@ -35,13 +35,24 @@ namespace Map
 			}
 		}
 
+		public int landmarkCollectionCount
+		{
+			get
+			{
+				if(landmarkCollectionList == null)
+					return 0;
+				else
+					return landmarkCollectionList.Count;
+			}
+		}
+
 		public int locationCount
 		{
 			get
 			{
 				int count = 0;
-				foreach(LandmarkCluster cluster in landmarkClusters)
-					count += cluster.count;
+				foreach(LandmarkCollection cluster in landmarkCollectionList)
+					count += cluster.placeCollectionCount;
 				
 				return count;
 			}
@@ -65,30 +76,38 @@ namespace Map
 
 			SearchKey searchItem = searchKeys[index];
 
-			if(landmarkClusters == null || landmarkClusters.Count == 0 || searchItem.landmarkIndex >= landmarkClusters.Count || searchItem.landmarkIndex < 0)
+			if(landmarkCollectionList == null || landmarkCollectionList.Count == 0 || searchItem.landmarkIndex >= landmarkCollectionList.Count || searchItem.landmarkIndex < 0)
 				return null;
 
-			LandmarkCluster landmarkCluster = landmarkClusters[searchItem.landmarkIndex];
-			landmark = landmarkCluster.landmark;
-			return landmarkCluster.GetLocationFromPlace(searchItem.placeIndex, searchItem.locationIndex);
-		}
+			LandmarkCollection landmarkCollection = landmarkCollectionList[searchItem.landmarkIndex];
 
-		public LandmarkCluster[] GetCopy()
-		{
-			return landmarkClusters.ToArray();
-		}
-
-		public Location[] GetAllLocations()
-		{
-			if(landmarkClusters == null || landmarkClusters.Count == 0)
+			if(landmarkCollection == null)
 				return null;
 
-			List<Location> database = new List<Location>();
+			landmark = landmarkCollection.landmark;
 
-			foreach(LandmarkCluster cluster in landmarkClusters)
-				database.AddRange(cluster.GetAllLocation());
+			PlaceCollection placeCollection = landmarkCollection.GetPlaceCollection(searchItem.placeIndex);
+			Location location = null;
+			
+			if(placeCollection == null)
+				return null;
 
-			return database.ToArray();
+			int locationIndex = searchItem.locationIndex - 1;
+
+			if(locationIndex == -1)
+				location = placeCollection.GetPlaceLocation();
+			else
+				location = placeCollection.GetRoomLocation(locationIndex);
+
+			return location;
+		}
+
+		public LandmarkCollection GetLandmarkCollection(int index)
+		{
+			if(index < 0 || landmarkCollectionList.Count == 0 || landmarkCollectionList == null || index >= landmarkCollectionList.Count)
+				return null;
+			else
+				return landmarkCollectionList[index];
 		}
 
 		public void Search(string keyword)
@@ -96,7 +115,7 @@ namespace Map
 			searchKeys.Clear();
 			keyword = RemoveMultipleWhiteSpaces(keyword).ToLower();
 
-			if(string.IsNullOrEmpty(keyword) || landmarkClusters == null || landmarkClusters.Count == 0)
+			if(string.IsNullOrEmpty(keyword) || landmarkCollectionList == null || landmarkCollectionList.Count == 0)
 				goto result;
 
 			SearchByCategory(keyword, SearchCategory.Name, false);
@@ -139,9 +158,9 @@ namespace Map
 
 		private void SearchByCategory(string keyword, SearchCategory category, bool deepSearch)
 		{
-			for(int i = 0; i < landmarkClusters.Count; i++)
+			for(int i = 0; i < landmarkCollectionList.Count; i++)
 			{
-				LandmarkCluster landmarkCluster = landmarkClusters[i];
+				LandmarkCollection landmarkCluster = landmarkCollectionList[i];
 				landmarkCluster.Search(keyword, i, searchKeys, category, deepSearch);
 			}
 		}
@@ -180,9 +199,9 @@ namespace Map
 
 
 		#if UNITY_EDITOR
-		public void SetLandmarkClusters(List<LandmarkCluster> landmarkClusters)
+		public void SetLandmarkCollectionList(List<LandmarkCollection> landmarkCollectionList)
 		{
-			this.landmarkClusters = landmarkClusters;
+			this.landmarkCollectionList = landmarkCollectionList;
 		}
 		#endif
 	}
@@ -206,7 +225,7 @@ namespace Map
 		private void OnEnable()
 		{
 			locationTable = target as LocationDatabase;
-			landmarkClustersProperty = serializedObject.FindProperty("landmarkClusters");
+			landmarkClustersProperty = serializedObject.FindProperty("landmarkCollectionList");
 			LoadPrefs();
 		}
 
@@ -283,7 +302,7 @@ namespace Map
 
 				if(GUILayout.Button("Load Places"))
 				{
-					locationTable.SetLandmarkClusters(GetPlaces());
+					locationTable.SetLandmarkCollectionList(GetPlaces());
 					serializedObject.ApplyModifiedProperties();
 					serializedObject.Update();
 				}
@@ -313,22 +332,22 @@ namespace Map
 			EditorPrefs.SetString("Location_SearchKeyword", searchKeyword);
 		}
 
-		private List<LandmarkCluster> GetPlaces()
+		private List<LandmarkCollection> GetPlaces()
 		{
 			List<Landmark> landmarks = GetLandmarks();
 
 			if(landmarks == null || landmarks.Count == 0)
 				return null;
 
-			List<LandmarkCluster> landmarkClusters = new List<LandmarkCluster>();
+			List<LandmarkCollection> landmarkClusters = new List<LandmarkCollection>();
 
 			foreach(Landmark landmark in landmarks)
 			{
-				List<PlaceCluster> places = GetPlaceCluster(landmark);
+				List<PlaceCollection> places = GetPlaceCluster(landmark);
 
 				if(places != null)
 				{
-					LandmarkCluster landmarkCluster = new LandmarkCluster(landmark, places);
+					LandmarkCollection landmarkCluster = new LandmarkCollection(landmark, places);
 					landmarkCluster.CachePlaces();
 					landmarkClusters.Add(landmarkCluster);
 				}
@@ -361,7 +380,7 @@ namespace Map
 			return landmarks;
 		}
 	
-		private List<PlaceCluster> GetPlaceCluster(Landmark landmark)
+		private List<PlaceCollection> GetPlaceCluster(Landmark landmark)
 		{
 			string currentPath = placesPath + '\\' + landmark.name;
 
@@ -369,7 +388,7 @@ namespace Map
 				return null;
 
 			string[] files = Directory.GetFiles(currentPath, "*.asset");
-			List<PlaceCluster> placeCluster = new List<PlaceCluster>();
+			List<PlaceCollection> placeCluster = new List<PlaceCollection>();
 
 			foreach(string file in files)
 			{
@@ -377,7 +396,7 @@ namespace Map
 				List<Room> rooms = GetRooms(place, landmark);
 
 				if(place != null)
-					placeCluster.Add(new PlaceCluster(place, rooms));
+					placeCluster.Add(new PlaceCollection(place, rooms));
 			}
 
 			return placeCluster;

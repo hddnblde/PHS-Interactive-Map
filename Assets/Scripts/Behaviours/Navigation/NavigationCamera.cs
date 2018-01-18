@@ -204,7 +204,6 @@ namespace Navigation
 				Mathf.Clamp(transform.position.z, -boundary.y, boundary.y));
 			
 			transform.position = clampedPosition;
-			ViewAdjustEvent();
 		}
 
 		private void Rotate(float delta)

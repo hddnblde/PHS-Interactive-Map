@@ -69,8 +69,15 @@ namespace Menus
 			Vector3 scale = Vector3.Lerp(Vector3.one * MinScale, Vector3.one * MaxScale, view);
 			transform.localScale = scale;
 			
-			if(text != null)
-				text.enabled = WithinViewingBounds(view);
+			ShowText(WithinViewingBounds(view));
+		}
+
+		private void ShowText(bool show)
+		{
+			if(text == null)
+				return;
+				
+			text.CrossFadeAlpha((show ? 1f : 0f), 0.1f, true);
 		}
 
 		private bool WithinViewingBounds(float view)
