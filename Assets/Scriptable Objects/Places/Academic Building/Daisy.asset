@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Daisy
   m_EditorClassIdentifier: 
   m_displayedName: Daisy
-  m_position: {x: 132, y: 0, z: -9}
+  m_displayPosition: {x: 133.45776, y: 0, z: -10.3119755}
+  m_position: {x: 125.148575, y: 0, z: -10.166199}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

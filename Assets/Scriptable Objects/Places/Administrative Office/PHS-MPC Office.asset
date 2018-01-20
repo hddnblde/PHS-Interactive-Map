@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: PHS-MPC Office
   m_EditorClassIdentifier: 
   m_displayedName: PHS-MPC Office
-  m_position: {x: 82, y: 0, z: -194}
+  m_displayPosition: {x: 79.989426, y: 0, z: -196.43568}
+  m_position: {x: 79.989426, y: 0, z: -196.43568}
+  m_useDisplayPosition: 0
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

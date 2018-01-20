@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Main 4
   m_EditorClassIdentifier: 
   m_displayedName: Main
-  m_position: {x: -38.01057, y: 0, z: -108.95449}
+  m_displayPosition: {x: -36.556553, y: 0, z: -107.47499}
+  m_position: {x: -28.8, y: 0, z: -107.47499}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 4

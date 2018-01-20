@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Main
   m_EditorClassIdentifier: 
   m_displayedName: Main
-  m_position: {x: -7, y: 0, z: -157}
+  m_displayPosition: {x: -5.209944, y: 0, z: -154.75415}
+  m_position: {x: -5.209944, y: 0, z: -154.75415}
+  m_useDisplayPosition: 0
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

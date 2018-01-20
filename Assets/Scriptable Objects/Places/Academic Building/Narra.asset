@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Narra
   m_EditorClassIdentifier: 
   m_displayedName: Narra
-  m_position: {x: 63, y: 0, z: 45}
+  m_displayPosition: {x: 62.46558, y: 0, z: 43.68069}
+  m_position: {x: 70.1125, y: 0, z: 44.72108}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

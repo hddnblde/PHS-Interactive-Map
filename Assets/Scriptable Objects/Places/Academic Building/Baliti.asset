@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Baliti
   m_EditorClassIdentifier: 
   m_displayedName: Baliti
-  m_position: {x: 31, y: 0, z: 8}
+  m_displayPosition: {x: 30.036274, y: 0, z: 6.246483}
+  m_position: {x: 29.936766, y: 0, z: 10.392271}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

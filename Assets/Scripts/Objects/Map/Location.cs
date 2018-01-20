@@ -10,7 +10,13 @@ namespace Map
 		private string m_displayedName;
 
 		[SerializeField]
+		private Vector3 m_displayPosition = Vector3.zero;
+
+		[SerializeField]
 		private Vector3 m_position = Vector3.zero;
+
+		[SerializeField]
+		private bool m_useDisplayPosition = true;
 
 		[SerializeField, Multiline]
 		private string m_tags;
@@ -24,6 +30,11 @@ namespace Map
 		public Vector3 position
 		{
 			get { return m_position; }
+		}
+
+		public Vector3 displayPosition
+		{
+			get { return (m_useDisplayPosition ? m_displayPosition : position); }
 		}
 
 		public string tags

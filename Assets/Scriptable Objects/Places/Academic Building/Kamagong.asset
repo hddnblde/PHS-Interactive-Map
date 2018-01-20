@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Kamagong
   m_EditorClassIdentifier: 
   m_displayedName: Kamagong
-  m_position: {x: 63, y: 0, z: 73}
+  m_displayPosition: {x: 62.50231, y: 0, z: 72.83413}
+  m_position: {x: 72.620865, y: 0, z: 72.83413}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

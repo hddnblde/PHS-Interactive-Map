@@ -39,7 +39,9 @@ namespace Map
 		#region Fields
 		private SerializedProperty
 		displayedNameProperty = null,
+		displayPositionProperty = null,
 		positionProperty = null,
+		useDisplayPositionProperty = null,
 		tagsProperty = null,
 		thumbnailProperty = null,
 		descriptionProperty = null;
@@ -87,7 +89,24 @@ namespace Map
 
 		private void DrawHandle()
 		{
+			Color color = GUI.color;
+
+			GUI.color = Color.red;
 			positionProperty.vector3Value = Handles.PositionHandle(positionProperty.vector3Value, Quaternion.identity);
+			
+			string positionLabel = (!useDisplayPositionProperty.boolValue ? "[" + displayedNameProperty.stringValue + "]" : "[Position]");
+			Handles.Label(positionProperty.vector3Value, positionLabel);
+
+			if(useDisplayPositionProperty.boolValue)
+			{
+				GUI.color = Color.magenta;
+				displayPositionProperty.vector3Value = Handles.PositionHandle(displayPositionProperty.vector3Value, Quaternion.identity);
+				Handles.Label(displayPositionProperty.vector3Value, "[" + displayedNameProperty.stringValue + "]");
+			}
+			else
+				displayPositionProperty.vector3Value = positionProperty.vector3Value;
+
+			GUI.color = color;
 		}
 		#endregion
 
@@ -96,6 +115,8 @@ namespace Map
 		private void Initialize()
 		{
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
+			displayPositionProperty = serializedObject.FindProperty("m_displayPosition");
+			useDisplayPositionProperty = serializedObject.FindProperty("m_useDisplayPosition");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
 			thumbnailProperty = serializedObject.FindProperty("m_thumbnail");
@@ -109,6 +130,19 @@ namespace Map
 			EditorGUILayout.LabelField("Location", EditorStyles.boldLabel);
 			EditorGUILayout.PropertyField(displayedNameProperty);
 			EditorGUILayout.PropertyField(positionProperty);
+
+			EditorGUI.indentLevel++;
+			EditorGUILayout.PropertyField(useDisplayPositionProperty);
+
+			if(useDisplayPositionProperty.boolValue)
+			{
+				EditorGUILayout.PropertyField(displayPositionProperty);
+
+				if(GUILayout.Button("Copy from position"))
+					displayPositionProperty.vector3Value = positionProperty.vector3Value;
+			}
+			
+			EditorGUI.indentLevel--;
 
 			EditorGUILayout.LabelField("Place", EditorStyles.boldLabel);
 			EditorGUILayout.PropertyField(thumbnailProperty);

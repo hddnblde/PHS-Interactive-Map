@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Daisy 2
   m_EditorClassIdentifier: 
   m_displayedName: Daisy
-  m_position: {x: 132.95418, y: 0, z: -2.216734}
+  m_displayPosition: {x: 133.68306, y: 0, z: -2.3625107}
+  m_position: {x: 123.8, y: 0, z: -2.3625107}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 0
   m_floor: 1
   m_room: 2

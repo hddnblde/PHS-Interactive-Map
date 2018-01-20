@@ -13,7 +13,10 @@ namespace Map
 	public class Room : Location
 	{
 		[SerializeField]
-		private bool m_standalone = false;
+		private bool m_standaloneName = false;
+
+		[SerializeField]
+		private bool m_standaloneNumber = false;
 
 		[SerializeField]
 		private int m_floor = 1;
@@ -33,9 +36,12 @@ namespace Map
 
 		private string FloorNamingConvention()
 		{
+			if(m_standaloneName)
+				return base.displayedName;
+			
 			string baseName = base.displayedName + ' ';
 
-			if(m_standalone)
+			if(m_standaloneNumber)
 				return baseName + m_room.ToString();
 			else
 				return baseName + m_floor.ToString() + m_room.ToString("00");
@@ -50,9 +56,12 @@ namespace Map
 		#region Fields
 		private SerializedProperty
 		displayedNameProperty = null,
+		displayPositionProperty = null,
 		positionProperty = null,
+		useDisplayPositionProperty = null,
 		tagsProperty = null,
-		standaloneProperty = null,
+		standaloneNameProperty = null,
+		standaloneNumberProperty = null,
 		floorProperty = null,
 		roomProperty = null;
 		#endregion
@@ -82,9 +91,12 @@ namespace Map
 		{
 			room = target as Room;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
+			displayPositionProperty = serializedObject.FindProperty("m_displayPosition");
 			positionProperty = serializedObject.FindProperty("m_position");
+			useDisplayPositionProperty = serializedObject.FindProperty("m_useDisplayPosition");
 			tagsProperty = serializedObject.FindProperty("m_tags");
-			standaloneProperty = serializedObject.FindProperty("m_standalone");
+			standaloneNumberProperty = serializedObject.FindProperty("m_standaloneNumber");
+			standaloneNameProperty = serializedObject.FindProperty("m_standaloneName");
 			floorProperty = serializedObject.FindProperty("m_floor");
 			roomProperty = serializedObject.FindProperty("m_room");
 		}
@@ -104,7 +116,24 @@ namespace Map
 
 		private void DrawHandle()
 		{
+			Color color = GUI.color;
+
+			GUI.color = Color.red;
 			positionProperty.vector3Value = Handles.PositionHandle(positionProperty.vector3Value, Quaternion.identity);
+
+			string positionLabel = (!useDisplayPositionProperty.boolValue ? "[" + room.displayedName + "]" : "[Position]");
+			Handles.Label(positionProperty.vector3Value, positionLabel);
+			
+			if(useDisplayPositionProperty.boolValue)
+			{
+				GUI.color = Color.magenta;
+				displayPositionProperty.vector3Value = Handles.PositionHandle(displayPositionProperty.vector3Value, Quaternion.identity);
+				Handles.Label(displayPositionProperty.vector3Value, "[" + room.displayedName + "]");
+			}
+			else
+				displayPositionProperty.vector3Value = positionProperty.vector3Value;
+
+			GUI.color = color;	
 		}
 
 		private void DrawCustomInspector()
@@ -115,15 +144,35 @@ namespace Map
 
 			GUIContent label = new GUIContent("Building Name");
 			EditorGUILayout.PropertyField(displayedNameProperty, label);
+
+			EditorGUI.indentLevel++;
+			EditorGUILayout.PropertyField(standaloneNameProperty);
+			EditorGUI.indentLevel--;
+
 			EditorGUILayout.PropertyField(positionProperty);
 
-			EditorGUILayout.Space();
-			EditorGUILayout.LabelField("Room", EditorStyles.boldLabel);
-			EditorGUILayout.PropertyField(standaloneProperty);
+			EditorGUI.indentLevel++;
+			EditorGUILayout.PropertyField(useDisplayPositionProperty);
 
-			floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 1);
-			
-			roomProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField("Room", roomProperty.intValue), 1, 99);
+			if(useDisplayPositionProperty.boolValue)
+			{
+				EditorGUILayout.PropertyField(displayPositionProperty);
+
+				if(GUILayout.Button("Copy from position"))
+					displayPositionProperty.vector3Value = positionProperty.vector3Value;
+			}
+
+			EditorGUI.indentLevel--;
+
+			if(!standaloneNameProperty.boolValue)
+			{
+				EditorGUILayout.Space();
+				EditorGUILayout.LabelField("Room", EditorStyles.boldLabel);
+
+				EditorGUILayout.PropertyField(standaloneNumberProperty);
+				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 1);
+				roomProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField("Room", roomProperty.intValue), 1, 99);
+			}
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);

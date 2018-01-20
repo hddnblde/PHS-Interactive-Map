@@ -8,11 +8,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
   m_Name: Maintenance Room
   m_EditorClassIdentifier: 
   m_displayedName: Maintenance Room
-  m_position: {x: -13.690227, y: 0, z: -13.125581}
+  m_displayPosition: {x: -11.828978, y: 0, z: -12.68967}
+  m_position: {x: -11.828978, y: 0, z: -15.8}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_standaloneName: 1
+  m_standaloneNumber: 0
+  m_floor: 1
+  m_room: 1

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: White Angel 205
   m_EditorClassIdentifier: 
   m_displayedName: White Angel
-  m_position: {x: -101.96033, y: 0, z: -88.8073}
+  m_displayPosition: {x: -101.96033, y: 0, z: -88.8073}
+  m_position: {x: -98.3, y: 0, z: -88.8073}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 0
+  m_standaloneName: 0
+  m_standaloneNumber: 0
   m_floor: 2
   m_room: 5

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Shed 1
   m_EditorClassIdentifier: 
   m_displayedName: Shed 1
-  m_position: {x: 140, y: 0, z: -65}
+  m_displayPosition: {x: 132.5, y: 0, z: -65}
+  m_position: {x: 132.5, y: 0, z: -65}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

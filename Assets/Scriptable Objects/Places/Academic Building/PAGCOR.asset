@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: PAGCOR
   m_EditorClassIdentifier: 
   m_displayedName: PAGCOR
-  m_position: {x: -129, y: 0, z: -120}
+  m_displayPosition: {x: -129.60472, y: 0, z: -119.79843}
+  m_position: {x: -129.60472, y: 0, z: -119.79843}
+  m_useDisplayPosition: 0
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

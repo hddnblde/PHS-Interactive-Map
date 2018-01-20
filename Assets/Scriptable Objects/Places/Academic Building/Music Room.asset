@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Music Room
   m_EditorClassIdentifier: 
   m_displayedName: Music Room
-  m_position: {x: -100, y: 0, z: -228}
+  m_displayPosition: {x: -100.40749, y: 0, z: -229.28975}
+  m_position: {x: -92.9, y: 0, z: -229.28975}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

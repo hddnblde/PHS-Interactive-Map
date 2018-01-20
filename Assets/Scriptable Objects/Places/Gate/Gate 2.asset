@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Gate 2
   m_EditorClassIdentifier: 
   m_displayedName: Gate 2
-  m_position: {x: -67, y: 0, z: -252}
+  m_displayPosition: {x: -77.5637, y: 0, z: -252.35608}
+  m_position: {x: -69.64392, y: 0, z: -251.88132}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

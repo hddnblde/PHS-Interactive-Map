@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Ipil-ipil
   m_EditorClassIdentifier: 
   m_displayedName: Ipil-ipil
-  m_position: {x: 63, y: 0, z: 59}
+  m_displayPosition: {x: 62.537556, y: 0, z: 58.517426}
+  m_position: {x: 72.06776, y: 0, z: 58.211502}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

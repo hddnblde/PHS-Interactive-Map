@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Sampaguita 10
   m_EditorClassIdentifier: 
   m_displayedName: Sampaguita
-  m_position: {x: 62.548485, y: 0, z: -123.76706}
+  m_displayPosition: {x: 63.87474, y: 0, z: -123.76706}
+  m_position: {x: 69.8, y: 0, z: -123.76706}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 10

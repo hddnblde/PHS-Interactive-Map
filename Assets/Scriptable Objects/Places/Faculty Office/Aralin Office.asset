@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Aralin Office
   m_EditorClassIdentifier: 
   m_displayedName: Aralin Office
-  m_position: {x: 49.6735, y: 0, z: -16.775505}
+  m_displayPosition: {x: 53.92428, y: 0, z: -14.150155}
+  m_position: {x: 53.31702, y: 0, z: -18.232914}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

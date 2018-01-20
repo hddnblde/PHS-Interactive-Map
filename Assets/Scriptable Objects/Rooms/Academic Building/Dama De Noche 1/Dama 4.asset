@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Dama 4
   m_EditorClassIdentifier: 
   m_displayedName: Dama
-  m_position: {x: 4.898958, y: 0, z: -14.251892}
+  m_displayPosition: {x: 8.715969, y: 0, z: -13.234022}
+  m_position: {x: 8.715969, y: 0, z: -17.4}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 4

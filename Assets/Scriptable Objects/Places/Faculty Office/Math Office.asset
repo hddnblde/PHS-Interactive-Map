@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Math Office
   m_EditorClassIdentifier: 
   m_displayedName: Math Office
-  m_position: {x: 143, y: 0, z: -21}
+  m_displayPosition: {x: 143.92596, y: 0, z: -21.572557}
+  m_position: {x: 132.55081, y: 0, z: -27.298143}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

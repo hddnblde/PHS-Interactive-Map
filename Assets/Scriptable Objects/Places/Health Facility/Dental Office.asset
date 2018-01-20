@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: Dental Office
   m_EditorClassIdentifier: 
   m_displayedName: Dental Office
-  m_position: {x: -105, y: 0, z: -173}
+  m_displayPosition: {x: -105.966896, y: 0, z: -175.63948}
+  m_position: {x: -105.96689, y: 0, z: -166.67033}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 

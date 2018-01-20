@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Sunflower 2
   m_EditorClassIdentifier: 
   m_displayedName: Sunflower
-  m_position: {x: 117.11483, y: 0, z: -75.55754}
+  m_displayPosition: {x: 117.11483, y: 0, z: -75.55754}
+  m_position: {x: 124.7, y: 0, z: -75.55754}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 0
   m_floor: 1
   m_room: 2
