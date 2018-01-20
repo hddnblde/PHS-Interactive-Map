@@ -14,11 +14,15 @@ namespace Menus
 		[SerializeField]
 		private Image icon = null;
 
+		private bool isVisible = true;
+
 		private float viewLowerBounds = 0f;
 		private float viewUpperBounds = 1f;
+		private int floor = 0;
+		private int currentFloor = 1;
 
 		private const float MinScale = 0.35f;
-		private const float MaxScale = 0.05f;
+		private const float MaxScale = 0.15f;
 
 		private Transform cameraTransform = null;
 
@@ -38,17 +42,28 @@ namespace Menus
 			NavigationCamera.OnViewAdjust -= OnViewAdjust;
 		}
 
-		public void Set(Sprite icon, string text, Vector3 position)
+		private void OnSelectLayer(int index)
 		{
-			Set(icon, text, position, 0f, 1f);
+			if(this.floor == 0)
+				return;
+			
+			this.currentFloor = index;
+			ShowText(isVisible);
 		}
 
-		public void Set(Sprite icon, string text, Vector3 position, float viewLowerBounds, float viewUpperBounds)
+		public void Set(Sprite icon, string text, Vector3 position, int floor = 0)
 		{
+			Set(icon, text, position, 0f, 1f, floor);
+		}
+
+		public void Set(Sprite icon, string text, Vector3 position, float viewLowerBounds, float viewUpperBounds, int floor = 0)
+		{
+			this.floor = floor;
+
 			if(this.icon != null)
 			{
 				this.icon.sprite = icon;
-				this.icon.enabled = icon != null;
+				this.icon.gameObject.SetActive(icon != null);
 			}
 
 			if(this.text != null)
@@ -74,10 +89,12 @@ namespace Menus
 
 		private void ShowText(bool show)
 		{
-			if(text == null)
+			if(text == null || show == isVisible)
 				return;
-				
-			text.CrossFadeAlpha((show ? 1f : 0f), 0.1f, true);
+
+			bool showFloor = (floor == 0 ? true : currentFloor == floor);
+			isVisible = show & showFloor;				
+			text.CrossFadeAlpha((isVisible ? 1f : 0f), 0.1f, true);
 		}
 
 		private bool WithinViewingBounds(float view)

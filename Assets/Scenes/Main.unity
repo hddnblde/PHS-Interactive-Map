@@ -301,10 +301,10 @@ MonoBehaviour:
   mapMarkerPrefab: {fileID: 1325977398379466, guid: de97993b52609f84cbbefc4d0fe63dca,
     type: 2}
   placeViewingBounds:
-    m_lowerLimit: 0
-    m_upperLimit: 0.85
+    m_lowerLimit: 0.35
+    m_upperLimit: 0.65
   roomViewingBounds:
-    m_lowerLimit: 0.85
+    m_lowerLimit: 0.65
     m_upperLimit: 1
 --- !u!1 &98970059
 GameObject:
@@ -1494,7 +1494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000012393454, y: 0.000051286803}
+  m_AnchoredPosition: {x: 0.000012393454, y: 0.0000278862}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -6452,48 +6452,45 @@ MonoBehaviour:
   - m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
     m_names: "acacia\r\nanthurium\r\nanthurium 101\r\nanthurium 102\r\nanthurium 103\r\nanthurium
       104\r\naster\r\naster 101\r\naster 102\r\naus aid\r\naus aid 101\r\naus aid
-      102\r\naus aid 203\r\naus aid 204\r\nbaliti\r\ncaballero\r\ncamia\r\ncamia 101\r\ncamia
-      102\r\ncamia 103\r\ncattleya\r\ncattleya 101\r\ncattleya 102\r\ncattleya 103\r\ncattleya
+      102\r\naus aid 203\r\naus aid 204\r\nbaliti\r\ncaballero\r\ncamia\r\ncamia 1\r\ncamia
+      2\r\ncamia 3\r\ncattleya\r\ncattleya 101\r\ncattleya 102\r\ncattleya 103\r\ncattleya
       104\r\ncattleya 105\r\ncattleya 106\r\nchrysanthemum\r\nchrysanthemum 101\r\nchrysanthemum
-      102\r\nchrysanthemum 103\r\nchrysanthemum 104\r\ndaisy\r\ndaisy 101\r\ndaisy
-      102\r\ndama de noche 1\r\nagriculture office\r\ndama 1\r\ndama 2\r\ndama 3\r\ndama
-      4\r\ndama 5\r\nmaintenance room\r\npta office\r\ndama de noche 2\r\ndama 10\r\ndama
-      7\r\ndama 8\r\ndama 9\r\neuphorbia\r\neuphorbia 101\r\neuphorbia 102\r\neuphorbia
-      103\r\neuphorbia 104\r\neuphorbia 205\r\neuphorbia 206\r\neuphorbia 207\r\neuphorbia
-      208\r\ngardenia\r\ngardenia 1\r\ngardenia 2\r\ngardenia 3\r\ngardenia 4\r\ngerbera\r\ngerbera
-      101\r\ngerbera 102\r\ngladiola\r\ngladiola 101\r\ngladiola 102\r\ngladiola 203\r\ngladiola
-      204\r\ngumamela\r\ngumamela 101\r\ngumamela 102\r\ngumamela 103\r\ngumamela
-      104\r\nipil-ipil\r\njasmine\r\njasmine 101\r\njasmine 102\r\njasmine 103\r\njasmine
-      104\r\njasmine 105\r\njasmine 106\r\njasmine 107\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
-      101\r\nlotus 102\r\nlotus 103\r\nmahogany\r\nmahogany 101\r\nmahogany 102\r\nmahogany
-      103\r\nmain\r\nadministrative office\r\nfilipino office\r\nfinance office\r\nhuman
-      resource office\r\nmain 1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain
-      library\r\nprincipal's office\r\nprinting office\r\npromis office\r\nrecords
-      office\r\nscience lab 1\r\nscience lab 2\r\nscience lab 3\r\nscience lab 4\r\nscience
-      office\r\nsenior high office\r\nsupply office\r\nvalues office\r\nmolave\r\nmusic
-      room\r\nnarra\r\nopen high room\r\norchids\r\norchids 101\r\norchids 102\r\norchids
-      103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids 203\r\norchids 204\r\norchids
-      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor 101\r\npagcor
+      102\r\nchrysanthemum 103\r\nchrysanthemum 104\r\ndaisy\r\ndaisy 1\r\ndaisy 2\r\ndama
+      de noche 1\r\nagriculture office\r\ndama 1\r\ndama 2\r\ndama 3\r\ndama 4\r\ndama
+      5\r\nmaintenance room\r\npta office\r\ndama de noche 2\r\ndama 10\r\ndama 7\r\ndama
+      8\r\ndama 9\r\neuphorbia\r\neuphorbia 101\r\neuphorbia 102\r\neuphorbia 103\r\neuphorbia
+      104\r\neuphorbia 205\r\neuphorbia 206\r\neuphorbia 207\r\neuphorbia 208\r\ngardenia\r\ngardenia
+      1\r\ngardenia 2\r\ngardenia 3\r\ngardenia 4\r\ngerbera\r\ngerbera 1\r\ngerbera
+      2\r\ngladiola\r\ngladiola 101\r\ngladiola 102\r\ngladiola 203\r\ngladiola 204\r\ngumamela\r\ngumamela
+      101\r\ngumamela 102\r\ngumamela 103\r\ngumamela 104\r\nipil-ipil\r\njasmine\r\njasmine
+      1\r\njasmine 2\r\njasmine 3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine
+      7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus 1\r\nlotus 2\r\nlotus 3\r\nmahogany\r\nmahogany
+      101\r\nmahogany 102\r\nmahogany 103\r\nmain\r\nadmin/finance office\r\nfilipino\noffice\r\nhr/supply
+      office\r\nmain 1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain library\r\nprincipal's
+      office\r\nprinting office\r\npromis office\r\nrecords office\r\nscience lab
+      1\r\nscience lab 2\r\nscience lab 3\r\nscience lab 4\r\nscience office\r\nsenior
+      high office\r\nvalues office\r\nmolave\r\nmusic room\r\nnarra\r\norchids\r\norchids
+      101\r\norchids 102\r\norchids 103\r\norchids 104\r\npagcor\r\npagcor 101\r\npagcor
       102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor 201\r\npagcor
       202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor 301\r\npagcor
       302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor 401\r\npagcor
       402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
       101\r\npoinsettia 102\r\npoinsettia 203\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
-      101\r\nrodriguez 102\r\nrose\r\nrose 101\r\nrose 102\r\nrose 103\r\nrose 104\r\nrose
-      105\r\nrose 106\r\nrose 107\r\nrose 108\r\nrose 109\r\nsampaguita\r\nsampaguita
-      1\r\nsampaguita 10\r\nsampaguita 11\r\nsampaguita 12\r\nsampaguita 13\r\nsampaguita
-      14\r\nsampaguita 15\r\nsampaguita 2\r\nsampaguita 3\r\nsampaguita 4\r\nsampaguita
-      5\r\nsampaguita 6\r\nsampaguita 7\r\nsampaguita 8\r\nsampaguita 9\r\nsantan\r\nsantan
-      101\r\nsantan 102\r\nsantan 103\r\nsantan 104\r\nsantan 201\r\nsantan 202\r\nsantan
-      203\r\nsantan 204\r\nsantan 301\r\nsantan 302\r\nsantan 303\r\nsantan 304\r\nsenior
-      high\r\nsped\r\nsped 101\r\nsped 102\r\nsped 103\r\nsunflower\r\nsunflower 101\r\nsunflower
-      102\r\nsunflower 103\r\nwaling-waling\r\nwaling-waling 101\r\nwaling-waling
-      102\r\nwhite angel\r\nwhite angel 101\r\nwhite angel 102\r\nwhite angel 103\r\nwhite
-      angel 104\r\nwhite angel 105\r\nwhite angel 106\r\nwhite angel 201\r\nwhite
-      angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite angel 205\r\nwhite
-      angel 206\r"
+      101\r\nrodriguez 102\r\nrose\r\nenglish office\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose
+      4\r\nrose 5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nspeech laboratory\r\nsampaguita\r\nopen
+      high\nroom\r\nsampaguita 1\r\nsampaguita 10\r\nsampaguita 11\r\nsampaguita 12\r\nsampaguita
+      13\r\nsampaguita 14\r\nsampaguita 15\r\nsampaguita 2\r\nsampaguita 3\r\nsampaguita
+      4\r\nsampaguita 5\r\nsampaguita 6\r\nsampaguita 7\r\nsampaguita 8\r\nsampaguita
+      9\r\nsantan\r\nsantan 101\r\nsantan 102\r\nsantan 103\r\nsantan 104\r\nsantan
+      201\r\nsantan 202\r\nsantan 203\r\nsantan 204\r\nsantan 301\r\nsantan 302\r\nsantan
+      303\r\nsantan 304\r\nsenior high\r\nsped\r\nsped 101\r\nsped 102\r\nsped 103\r\nsunflower\r\nsunflower
+      1\r\nsunflower 2\r\nsunflower 3\r\nwaling-waling\r\nwaling-waling 101\r\nwaling-waling
+      102\r\nwhite angel\r\nphsfec office\r\nwhite angel 101\r\nwhite angel 102\r\nwhite
+      angel 103\r\nwhite angel 104\r\nwhite angel 105\r\nwhite angel 106\r\nwhite
+      angel 201\r\nwhite angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite
+      angel 205\r\nwhite angel 206\r"
     m_tags: 
-    cacheCount: 234
+    cacheCount: 227
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -6615,9 +6612,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: deb17a38d7f890949bdebae1a4d4c165, type: 2}
     - place: {fileID: 11400000, guid: a258c5aa0e6373444a4166331d058e5a, type: 2}
       rooms:
-      - {fileID: 11400000, guid: a5a695e20013e2c43a480fd28254a5ad, type: 2}
-      - {fileID: 11400000, guid: d5cb4e8996745c64ebbffda40f958426, type: 2}
       - {fileID: 11400000, guid: e35807d56a0944743a6ee431f29d3b2b, type: 2}
+      - {fileID: 11400000, guid: d5cb4e8996745c64ebbffda40f958426, type: 2}
       - {fileID: 11400000, guid: 6bbbcd6add8ad204591d1d115c11d806, type: 2}
       - {fileID: 11400000, guid: 7b74bb0931daff04c910c7fbab8385fa, type: 2}
       - {fileID: 11400000, guid: 2072ede11245b274d9a7c60c438d8fef, type: 2}
@@ -6636,7 +6632,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: c4126ab1f1e8fb344bf3024c770b89da, type: 2}
       - {fileID: 11400000, guid: aa2bdcad157020841ba178976ec0b2c7, type: 2}
       - {fileID: 11400000, guid: 95ae9511ad3f1a549ab7faca762045c7, type: 2}
-      - {fileID: 11400000, guid: 330bd063d82ff244a9ba0cfe37c883b1, type: 2}
       - {fileID: 11400000, guid: ccc63f9bca8a9784ab73ce225056ce73, type: 2}
     - place: {fileID: 11400000, guid: b3f64a4930e7e234788382392061ac3a, type: 2}
       rooms: []
@@ -6644,22 +6639,12 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 8dc58317ba9fa1142bf14ea1fa865c3b, type: 2}
       rooms: []
-    - place: {fileID: 11400000, guid: 154a5b78aebbc7249b026da469bd3fe7, type: 2}
-      rooms: []
     - place: {fileID: 11400000, guid: d39687dc28b9a89468edf52d99e938bb, type: 2}
       rooms:
       - {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
       - {fileID: 11400000, guid: d24018b05f04bbe4984aeb49bd11bc2e, type: 2}
       - {fileID: 11400000, guid: bb09ea3df822fef46af2b3d7983e0eea, type: 2}
       - {fileID: 11400000, guid: 2dd77c3df58180042a96a5186b28c6d0, type: 2}
-      - {fileID: 11400000, guid: 7d357101dd78e874182c103442306635, type: 2}
-      - {fileID: 11400000, guid: f547674a7197cec42aedf7f767cf3633, type: 2}
-      - {fileID: 11400000, guid: a4aa24a23e320674596677a1d8d39d38, type: 2}
-      - {fileID: 11400000, guid: 750e2048a7568294d8a1ee0df3ba0407, type: 2}
-      - {fileID: 11400000, guid: 3d2fa27aa89bbd1428330da04352365c, type: 2}
-      - {fileID: 11400000, guid: 84c5744c296a68b4d894397cad1bd232, type: 2}
-      - {fileID: 11400000, guid: e44dfe2f42bf961459592f813e840ae4, type: 2}
-      - {fileID: 11400000, guid: 3baa21b70802bc6419609155545da0b3, type: 2}
     - place: {fileID: 11400000, guid: f421cebc1155b7340947e2a1d137399c, type: 2}
       rooms:
       - {fileID: 11400000, guid: 63266f4ff99374e429992a32846c1848, type: 2}
@@ -6701,6 +6686,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: e20852a94e6a31e469489938665f2758, type: 2}
     - place: {fileID: 11400000, guid: 4a826cf6cfd0c314d9018b21df213183, type: 2}
       rooms:
+      - {fileID: 11400000, guid: 740947ac23780cd40b27a592a5201045, type: 2}
       - {fileID: 11400000, guid: 17c998071f3ca15468264c8096c493c5, type: 2}
       - {fileID: 11400000, guid: 293cc65838cf7ed4dabae5429f1e385d, type: 2}
       - {fileID: 11400000, guid: 8514c669ba5ffa84f947af7b231d68bd, type: 2}
@@ -6710,8 +6696,10 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 89a7039098b81ef41a9d8e356968a500, type: 2}
       - {fileID: 11400000, guid: bddb2b3a41abb53408035083931d09b0, type: 2}
       - {fileID: 11400000, guid: 496b5c50ba78d51449757216d0eabb18, type: 2}
+      - {fileID: 11400000, guid: be9555af213260040acb416589355a08, type: 2}
     - place: {fileID: 11400000, guid: 1b1da64fefac5bd44ad3caf0de5da38a, type: 2}
       rooms:
+      - {fileID: 11400000, guid: 29c6af00465397e4ba47e629a1ab60c3, type: 2}
       - {fileID: 11400000, guid: f2ac509005facca48bffa6d657adc261, type: 2}
       - {fileID: 11400000, guid: d8215aac3f649f5438b87dc67a9f58e6, type: 2}
       - {fileID: 11400000, guid: 99601d6383fb76340b25494c59225c72, type: 2}
@@ -6733,14 +6721,14 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 15707efd4a52a37478b020846c7f52ae, type: 2}
       - {fileID: 11400000, guid: f256eac03bc03524b8ada46db810dbda, type: 2}
       - {fileID: 11400000, guid: 6e9b5debfd011f246a5b34edd40273c6, type: 2}
-      - {fileID: 11400000, guid: 5a2cd00ea5e248348a9490b582fa536c, type: 2}
-      - {fileID: 11400000, guid: c3ccba9331da27e4b9c7955cb769a5b4, type: 2}
-      - {fileID: 11400000, guid: 6b6bfadb424e770408751d7a9915dc21, type: 2}
-      - {fileID: 11400000, guid: 9383a59857be1344bab0a3ba17a24ecf, type: 2}
-      - {fileID: 11400000, guid: e3c7a359748840047817adedb03f1ca5, type: 2}
-      - {fileID: 11400000, guid: 6a93c504067c4e14a975efd7e71c9e1a, type: 2}
-      - {fileID: 11400000, guid: 8d4ff69869b150a46837ccdc9ef16b14, type: 2}
-      - {fileID: 11400000, guid: afd02607b438b3346889e9f7def61ff7, type: 2}
+      - {fileID: 11400000, guid: 68eff396ca8e56442ad7a2b453aaea10, type: 2}
+      - {fileID: 11400000, guid: 81a0b4b3cf29f72468939a5edaa95878, type: 2}
+      - {fileID: 11400000, guid: 230c23afcff01b8449c1d43edd4e429b, type: 2}
+      - {fileID: 11400000, guid: c83ab6a0e511e4947a16b231a7e488c5, type: 2}
+      - {fileID: 11400000, guid: fb8b882b2400bd247a3e79bce0d5b489, type: 2}
+      - {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
+      - {fileID: 11400000, guid: 26000a85512bc294a9863429569b948e, type: 2}
+      - {fileID: 11400000, guid: b3b4fcd205dfea54ebf052e19d16ede9, type: 2}
     - place: {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 32a4b9c20e650964f800afac2c6bc8e9, type: 2}
@@ -6759,6 +6747,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: c1faea53f22948144ac664e4cb4bb710, type: 2}
     - place: {fileID: 11400000, guid: d71af1931d9e6284988b0f3d3b14bb23, type: 2}
       rooms:
+      - {fileID: 11400000, guid: 4d823c2f1d9e4694fad52344945a7a05, type: 2}
       - {fileID: 11400000, guid: c95b5187b336c3b42bb7e2167c03ad74, type: 2}
       - {fileID: 11400000, guid: 85b7daaac77384043847978d17a0a7a2, type: 2}
       - {fileID: 11400000, guid: 2cb64fc06c817a84bb825e36b3866425, type: 2}
@@ -6779,7 +6768,7 @@ MonoBehaviour:
       arts 5\r\nindustrial arts 6\r\nindustrial arts 7\r\nindustrial arts 8\r\nindustrial
       arts 9\r\nmapeh multipurpose\r\nmapeh multipurpose 101\r\nmapeh multipurpose
       102\r\nmapeh multipurpose 103\r\nshakespearean hall\r\nteatro\r\nvalues multipurpose\r\nvalues
-      multipurpose 101\r\nvalues multipurpose 102\r"
+      multipurpose 1\r\nvalues multipurpose 2\r"
     m_tags: ia;
     cacheCount: 29
     places:
@@ -6836,10 +6825,9 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
   - m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
     m_names: "auditor's office\r\nguidance office 1\r\nguidance office 2\r\nguidance
-      office\r\nspeech laboratory\r\nphs-mpc office\r\nphsfec office\r\nsinukuan office\r\nphsssgo
-      office\r"
+      office\r\nphs-mpc office\r"
     m_tags: 
-    cacheCount: 9
+    cacheCount: 5
     places:
     - place: {fileID: 11400000, guid: 962e5719bab036e48a2d20f52c53885d, type: 2}
       rooms: []
@@ -6849,31 +6837,21 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 109d7615a0cb2ec47ac9632802e1bdeb, type: 2}
       rooms: []
-    - place: {fileID: 11400000, guid: 22f999a872ff71a4cacce228d7e64957, type: 2}
-      rooms: []
     - place: {fileID: 11400000, guid: 4bdf61cd14ccbed428b140852d7852f7, type: 2}
       rooms: []
-    - place: {fileID: 11400000, guid: 38eb4c2d0cb1a22428985d7ebabe63d2, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 8635a08a2165960468236071978bf59b, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 433c24bc79cbe5545bcf9a8cd3e6968d, type: 2}
-      rooms: []
   - m_landmark: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0, type: 2}
-    m_names: "aralin office\r\nenglish office\r\nindustrial arts office\r\nmath office\r"
+    m_names: "aralin\noffice\r\nindustrial arts office\r\nmath office\r"
     m_tags: 
-    cacheCount: 4
+    cacheCount: 3
     places:
     - place: {fileID: 11400000, guid: df92b28e7d9e4e14e9b04a95b1f12df5, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 27ce2a177f2158f44a71b4bc1ff114b3, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 39dc10dc199b1d94e9791afd58ec2ad3, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 4a2ec44641d88bc488c351a92e63a7ab, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4, type: 2}
-    m_names: "dg covered court\r\ndm covered court stage\r\ndm covered court\r"
+    m_names: "dg covered court\r\ndm court stage\r\ndm covered court\r"
     m_tags: dm; dm court stage; court;
     cacheCount: 3
     places:
@@ -6895,7 +6873,7 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: beded8a4f7354334ab157259b590b162, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d, type: 2}
-    m_names: "parking area 1\r\nparking area 2\r\nparking area 3\r"
+    m_names: "parking\narea 1\r\nparking\narea 2\r\nparking\narea 3\r"
     m_tags: 
     cacheCount: 3
     places:

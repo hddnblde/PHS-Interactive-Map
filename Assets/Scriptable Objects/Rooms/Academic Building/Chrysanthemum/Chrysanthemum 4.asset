@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Chrysanthemum 4
   m_EditorClassIdentifier: 
   m_displayedName: Chrysanthemum
-  m_position: {x: -36.30828, y: 0, z: 140.04071}
+  m_displayPosition: {x: -34.67734, y: 0, z: 141.80214}
+  m_position: {x: -34.677338, y: 0, z: 148.5}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 4
+  m_mapName: 4

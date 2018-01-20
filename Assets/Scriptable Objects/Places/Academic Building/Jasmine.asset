@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Jasmine
   m_EditorClassIdentifier: 
   m_displayedName: Jasmine
-  m_position: {x: 138, y: 0, z: -136}
+  m_displayPosition: {x: 138.65457, y: 0, z: -139.0636}
+  m_position: {x: 130.8, y: 0, z: -139.0636}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: Jasmine

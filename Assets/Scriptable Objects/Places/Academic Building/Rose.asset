@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Rose
   m_EditorClassIdentifier: 
   m_displayedName: Rose
-  m_position: {x: -66, y: 0, z: 40}
+  m_displayPosition: {x: -66.12447, y: 0, z: 42.277035}
+  m_position: {x: -54.19, y: 0, z: 41.093666}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: Rose

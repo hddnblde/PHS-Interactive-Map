@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: Parking Area 1
   m_EditorClassIdentifier: 
-  m_displayedName: Parking Area 1
+  m_displayedName: 'Parking
+
+    Area 1'
   m_displayPosition: {x: -75, y: 0, z: -89}
   m_position: {x: -75, y: 0, z: -89}
   m_useDisplayPosition: 0

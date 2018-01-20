@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Chrysanthemum
   m_EditorClassIdentifier: 
   m_displayedName: Chrysanthemum
-  m_position: {x: -16, y: 0, z: 142}
+  m_displayPosition: {x: -16, y: 0, z: 142}
+  m_position: {x: -16, y: 0, z: 147.9}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: Chrysanthemum

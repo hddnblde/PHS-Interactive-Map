@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Rose 6
   m_EditorClassIdentifier: 
   m_displayedName: Rose
-  m_position: {x: -66.36412, y: 0, z: 56.890358}
+  m_displayPosition: {x: -66.78677, y: 0, z: 56.256374}
+  m_position: {x: -66.78677, y: 0, z: 56.256374}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 6
+  m_mapName: 6

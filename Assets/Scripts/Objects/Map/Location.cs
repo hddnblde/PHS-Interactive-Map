@@ -6,7 +6,7 @@ namespace Map
 {
 	public class Location : ScriptableObject
 	{
-		[SerializeField]
+		[SerializeField, Multiline]
 		private string m_displayedName;
 
 		[SerializeField]

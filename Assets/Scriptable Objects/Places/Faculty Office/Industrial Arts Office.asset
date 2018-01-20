@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Name: Industrial Arts Office
   m_EditorClassIdentifier: 
   m_displayedName: Industrial Arts Office
-  m_position: {x: -92, y: 0, z: -4}
+  m_displayPosition: {x: -90.7963, y: 0, z: -3.6388917}
+  m_position: {x: -98.8, y: 0, z: -3.6388917}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'IA
+
+    Office'

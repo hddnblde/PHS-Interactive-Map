@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Jasmine 1
   m_EditorClassIdentifier: 
   m_displayedName: Jasmine
-  m_position: {x: 135.65555, y: 0, z: -178.26878}
+  m_displayPosition: {x: 138.12965, y: 0, z: -178.43745}
+  m_position: {x: 128.87584, y: 0, z: -177.88159}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 1

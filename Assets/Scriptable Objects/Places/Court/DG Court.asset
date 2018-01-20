@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Name: DG Court
   m_EditorClassIdentifier: 
   m_displayedName: DG Covered Court
-  m_displayPosition: {x: -130.11241, y: 0, z: -231.11311}
-  m_position: {x: -130.11241, y: 0, z: -231.11311}
+  m_displayPosition: {x: -130.11241, y: 0, z: -230.57678}
+  m_position: {x: -130.11241, y: 0, z: -230.57678}
   m_useDisplayPosition: 0
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'DG
+
+    Covered
+
+    Court'

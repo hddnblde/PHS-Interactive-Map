@@ -17,6 +17,7 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 0
-  m_standaloneNumber: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 3
+  m_mapName: 3

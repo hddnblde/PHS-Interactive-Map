@@ -9,14 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
-  m_Name: Finance Office
+  m_Name: Speech Laboratory
   m_EditorClassIdentifier: 
-  m_displayedName: Finance Office
-  m_displayPosition: {x: 27.673273, y: 0, z: -154.528}
-  m_position: {x: 19.42894, y: 0, z: -151.95198}
-  m_useDisplayPosition: 1
+  m_displayedName: Speech Laboratory
+  m_displayPosition: {x: -65.06143, y: 0, z: 98.01908}
+  m_position: {x: -65.06143, y: 0, z: 98.01908}
+  m_useDisplayPosition: 0
   m_tags: 
   m_standaloneName: 1
   m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 'Speech
+
+    Laboratory'

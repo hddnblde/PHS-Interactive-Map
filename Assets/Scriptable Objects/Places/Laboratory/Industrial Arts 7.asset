@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Industrial Arts 7
   m_EditorClassIdentifier: 
   m_displayedName: Industrial Arts 7
-  m_position: {x: -124.54612, y: 0, z: 105.20961}
+  m_displayPosition: {x: -125.65547, y: 0, z: 106.70781}
+  m_position: {x: -116.24646, y: 0, z: 96.68631}
+  m_useDisplayPosition: 1
   m_tags: ia;
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: IA 7

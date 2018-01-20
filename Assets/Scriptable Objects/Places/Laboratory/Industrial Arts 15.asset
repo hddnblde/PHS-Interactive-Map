@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Industrial Arts 15
   m_EditorClassIdentifier: 
   m_displayedName: Industrial Arts 15
-  m_position: {x: -90, y: 0, z: -1}
+  m_displayPosition: {x: -92.98744, y: 0, z: -19.850973}
+  m_position: {x: -102.63928, y: 0, z: -25.330204}
+  m_useDisplayPosition: 1
   m_tags: ia;
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: IA 15

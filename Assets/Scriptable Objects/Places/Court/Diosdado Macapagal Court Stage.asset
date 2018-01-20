@@ -11,8 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: Diosdado Macapagal Court Stage
   m_EditorClassIdentifier: 
-  m_displayedName: DM Covered Court Stage
-  m_position: {x: -5, y: 0, z: -138}
+  m_displayedName: DM Court Stage
+  m_displayPosition: {x: -4.3413515, y: 0, z: -138.32933}
+  m_position: {x: -4.3413515, y: 0, z: -138.32933}
+  m_useDisplayPosition: 0
   m_tags: dm; dm court stage; stage;
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'DM Court
+
+    Stage'

@@ -24,6 +24,9 @@ namespace Map
 		[SerializeField]
 		private int m_room = 1;
 
+		[SerializeField, Multiline]
+		private string m_mapName;
+
 		public int floor
 		{
 			get { return m_floor; }
@@ -32,6 +35,11 @@ namespace Map
 		public override string displayedName
 		{
 			get { return FloorNamingConvention(); }
+		}
+
+		public string mapName
+		{
+			get { return m_mapName; }
 		}
 
 		private string FloorNamingConvention()
@@ -56,6 +64,7 @@ namespace Map
 		#region Fields
 		private SerializedProperty
 		displayedNameProperty = null,
+		mapNameProperty = null,
 		displayPositionProperty = null,
 		positionProperty = null,
 		useDisplayPositionProperty = null,
@@ -91,6 +100,7 @@ namespace Map
 		{
 			room = target as Room;
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
+			mapNameProperty = serializedObject.FindProperty("m_mapName");
 			displayPositionProperty = serializedObject.FindProperty("m_displayPosition");
 			positionProperty = serializedObject.FindProperty("m_position");
 			useDisplayPositionProperty = serializedObject.FindProperty("m_useDisplayPosition");
@@ -142,11 +152,14 @@ namespace Map
 
 			EditorGUILayout.LabelField("Location", EditorStyles.boldLabel);
 
-			GUIContent label = new GUIContent("Building Name");
+			string labelString = (standaloneNameProperty.boolValue ? "Room Name" : "Building Name");
+			GUIContent label = new GUIContent(labelString);
 			EditorGUILayout.PropertyField(displayedNameProperty, label);
 
 			EditorGUI.indentLevel++;
 			EditorGUILayout.PropertyField(standaloneNameProperty);
+			EditorGUILayout.PropertyField(mapNameProperty);
+				
 			EditorGUI.indentLevel--;
 
 			EditorGUILayout.PropertyField(positionProperty);

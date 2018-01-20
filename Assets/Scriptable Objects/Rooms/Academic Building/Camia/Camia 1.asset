@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Camia 1
   m_EditorClassIdentifier: 
   m_displayedName: Camia
-  m_position: {x: -25.746126, y: 0, z: 48.00124}
+  m_displayPosition: {x: -24.690056, y: 0, z: 51.169453}
+  m_position: {x: -39.14, y: 0, z: 51.169453}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 1

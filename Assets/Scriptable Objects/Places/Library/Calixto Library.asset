@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Name: Calixto Library
   m_EditorClassIdentifier: 
   m_displayedName: Calixto Library
-  m_position: {x: -20, y: 0, z: 30}
+  m_displayPosition: {x: -20.578516, y: 0, z: 31.157032}
+  m_position: {x: -20.867773, y: 0, z: 22.589258}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'Calixto
+
+    Library'

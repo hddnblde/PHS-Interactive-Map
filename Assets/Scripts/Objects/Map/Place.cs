@@ -18,6 +18,9 @@ namespace Map
 		[SerializeField, Multiline]
 		private string m_description;
 
+		[SerializeField, Multiline]
+		private string m_mapName;
+
 		public Sprite thumbnail
 		{
 			get { return m_thumbnail; }
@@ -26,6 +29,11 @@ namespace Map
 		public string description
 		{
 			get { return m_description; }
+		}
+
+		public string mapName
+		{
+			get { return m_mapName; }
 		}
 	}
 
@@ -39,6 +47,7 @@ namespace Map
 		#region Fields
 		private SerializedProperty
 		displayedNameProperty = null,
+		mapNameProperty = null,
 		displayPositionProperty = null,
 		positionProperty = null,
 		useDisplayPositionProperty = null,
@@ -116,6 +125,7 @@ namespace Map
 		{
 			displayedNameProperty = serializedObject.FindProperty("m_displayedName");
 			displayPositionProperty = serializedObject.FindProperty("m_displayPosition");
+			mapNameProperty = serializedObject.FindProperty("m_mapName");
 			useDisplayPositionProperty = serializedObject.FindProperty("m_useDisplayPosition");
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
@@ -129,6 +139,7 @@ namespace Map
 
 			EditorGUILayout.LabelField("Location", EditorStyles.boldLabel);
 			EditorGUILayout.PropertyField(displayedNameProperty);
+			EditorGUILayout.PropertyField(mapNameProperty);
 			EditorGUILayout.PropertyField(positionProperty);
 
 			EditorGUI.indentLevel++;
@@ -141,7 +152,7 @@ namespace Map
 				if(GUILayout.Button("Copy from position"))
 					displayPositionProperty.vector3Value = positionProperty.vector3Value;
 			}
-			
+
 			EditorGUI.indentLevel--;
 
 			EditorGUILayout.LabelField("Place", EditorStyles.boldLabel);

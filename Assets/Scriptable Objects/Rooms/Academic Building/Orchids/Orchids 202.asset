@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Orchids 202
   m_EditorClassIdentifier: 
   m_displayedName: Orchids
-  m_position: {x: 133.45038, y: 0, z: 164.93927}
+  m_displayPosition: {x: 133.45038, y: 0, z: 162.28769}
+  m_position: {x: 133.45038, y: 0, z: 162.28769}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_oneStoryOnly: 0
+  m_standaloneName: 0
+  m_standaloneNumber: 0
   m_floor: 2
   m_room: 2
+  m_mapName: 202

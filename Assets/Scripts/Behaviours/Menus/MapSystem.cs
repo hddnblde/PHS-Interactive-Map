@@ -7,12 +7,23 @@ namespace Map
 {
 	public class MapSystem : MonoBehaviour
 	{
+		public delegate void SelectLayerAction(int index);
+		public event SelectLayerAction OnSelectLayer;
+
 		[System.Serializable]
 		private class ViewingBounds
 		{
 			public static ViewingBounds Default
 			{
-				get { return new ViewingBounds(); }
+				get { return new ViewingBounds(0.35f, 1f); }
+			}
+
+			public ViewingBounds(){}
+
+			public ViewingBounds(float lowerLimit, float upperLimit)
+			{
+				m_lowerLimit = lowerLimit;
+				m_upperLimit = upperLimit;
 			}
 
 			[SerializeField]
@@ -53,6 +64,12 @@ namespace Map
 			CreateMarkers();
 		}
 
+		public void SelectLayer(int index)
+		{
+			if(OnSelectLayer != null)
+				OnSelectLayer(index);
+		}
+
 		private void CreateMarkers()
 		{
 			if(locationDatabase == null)
@@ -70,32 +87,32 @@ namespace Map
 
 					bool hasRooms = placeCollection.hasRooms;
 
-					Location placeLocation = placeCollection.GetPlaceLocation();
-					CreateMarker(placeLocation, (hasRooms ? placeViewingBounds : ViewingBounds.Default));
+					Place place = placeCollection.GetPlace();
+					CreateMarker(place.thumbnail, place.displayedName, place.mapName, place.displayPosition, (hasRooms ? placeViewingBounds : ViewingBounds.Default), 0);
 
 					if(!hasRooms)
 						continue;
 
 					for(int k = 0; k < placeCollection.roomCount; k++)
 					{
-						Location roomLocation = placeCollection.GetRoomLocation(k);
-						CreateMarker(roomLocation, roomViewingBounds);
+						Room room = placeCollection.GetRoom(k);
+						CreateMarker(null, room.displayedName, room.mapName, room.displayPosition, roomViewingBounds, room.floor);
 					}					
 				}
 			}
 		}
 
-		private void CreateMarker(Location location, ViewingBounds viewingBounds)
+		private void CreateMarker(Sprite thumbnail, string displayedName, string mapName, Vector3 position, ViewingBounds viewingBounds, int floor)
 		{
-			if(location == null || mapMarkerPrefab == null)
+			if(mapMarkerPrefab == null)
 				return;
 
 			GameObject markerObject = Instantiate(mapMarkerPrefab, markerContainer) as GameObject;
-			markerObject.name = location.displayedName + " Marker";
+			markerObject.name = displayedName + " Marker";
 			MapMarker marker = markerObject.GetComponent<MapMarker>();
 
 			if(marker != null)
-				marker.Set(GetThumbnailFromLocation(location), location.displayedName, location.position, viewingBounds.lowerLimit, viewingBounds.upperLimit);
+				marker.Set(thumbnail, mapName, position, viewingBounds.lowerLimit, viewingBounds.upperLimit, floor);
 		}
 
 		private Sprite GetThumbnailFromLocation(Location location)

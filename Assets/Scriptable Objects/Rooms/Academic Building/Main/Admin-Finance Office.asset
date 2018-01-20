@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
-  m_Name: Administrative Office
+  m_Name: Admin-Finance Office
   m_EditorClassIdentifier: 
-  m_displayedName: Administrative Office
-  m_displayPosition: {x: 27.673273, y: 0, z: -149.08884}
+  m_displayedName: Admin/Finance Office
+  m_displayPosition: {x: 27.673273, y: 0, z: -153.06467}
   m_position: {x: 19.42894, y: 0, z: -151.95198}
   m_useDisplayPosition: 1
   m_tags: 
@@ -20,3 +20,8 @@ MonoBehaviour:
   m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 'Admin/
+
+    Finance
+
+    Office'

@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Euphorbia 8
   m_EditorClassIdentifier: 
   m_displayedName: Euphorbia
-  m_position: {x: 98.12701, y: 0, z: 144.80974}
+  m_displayPosition: {x: 100.032104, y: 0, z: 144.80974}
+  m_position: {x: 100.032104, y: 0, z: 144.80974}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 2
   m_room: 8
+  m_mapName: 8

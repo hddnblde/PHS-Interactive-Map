@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Mahogany 3
   m_EditorClassIdentifier: 
   m_displayedName: Mahogany
-  m_position: {x: 98.271645, y: 0, z: 105.33635}
+  m_displayPosition: {x: 98.271645, y: 0, z: 107.8499}
+  m_position: {x: 106.6, y: 0, z: 107.8499}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 3
+  m_mapName: 3

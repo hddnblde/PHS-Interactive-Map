@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
   m_Name: Human Resource Office
   m_EditorClassIdentifier: 
-  m_displayedName: Human Resource Office
-  m_displayPosition: {x: 27.673273, y: 0, z: -137.43347}
+  m_displayedName: HR/Supply Office
+  m_displayPosition: {x: 28.054083, y: 0, z: -142.0032}
   m_position: {x: 20.05056, y: 0, z: -142.16144}
   m_useDisplayPosition: 1
   m_tags: 
@@ -20,3 +20,6 @@ MonoBehaviour:
   m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 'HR/Supply
+
+    Office'
