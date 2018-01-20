@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
-  m_Name: Main 3
+  m_Name: Science Lab 4
   m_EditorClassIdentifier: 
-  m_displayedName: Main
-  m_displayPosition: {x: -38.44943, y: 0, z: -127.90824}
-  m_position: {x: -30.581802, y: 0, z: -127.38959}
+  m_displayedName: Science Lab
+  m_displayPosition: {x: 30.884272, y: 0, z: -71.57934}
+  m_position: {x: 23.186012, y: 0, z: -71.75088}
   m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 0
   m_standaloneNumber: 1
   m_floor: 1
-  m_room: 3
+  m_room: 4

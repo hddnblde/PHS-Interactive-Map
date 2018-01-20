@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Main 6
   m_EditorClassIdentifier: 
   m_displayedName: Main
-  m_displayPosition: {x: -35.644573, y: 0, z: -78.932556}
-  m_position: {x: -28.223492, y: 0, z: -79.35605}
+  m_displayPosition: {x: -36.378372, y: 0, z: -82.19843}
+  m_position: {x: -28.216272, y: 0, z: -81.763054}
   m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 0
