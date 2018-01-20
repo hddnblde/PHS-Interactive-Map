@@ -12,6 +12,18 @@ ModelImporter:
     100008: Walkable
     100010: PHS
     100012: AgricultureArea
+    100014: AcademicBuildings
+    100016: Canteens
+    100018: Courts
+    100020: Gates
+    100022: Laboratories
+    100024: Offices
+    100026: polySurface115
+    100028: Sheds
+    100030: Utility
+    100032: Vegetation
+    100034: WaterClosets
+    100036: Halls
     400000: Borders
     400002: Buildings
     400004: //RootNode
@@ -19,22 +31,70 @@ ModelImporter:
     400008: Walkable
     400010: PHS
     400012: AgricultureArea
+    400014: AcademicBuildings
+    400016: Canteens
+    400018: Courts
+    400020: Gates
+    400022: Laboratories
+    400024: Offices
+    400026: polySurface115
+    400028: Sheds
+    400030: Utility
+    400032: Vegetation
+    400034: WaterClosets
+    400036: Halls
     2100000: lambert1
     2300000: Borders
     2300002: Buildings
     2300004: Roads
     2300006: Walkable
     2300008: AgricultureArea
+    2300010: AcademicBuildings
+    2300012: Canteens
+    2300014: Courts
+    2300016: Gates
+    2300018: Laboratories
+    2300020: Offices
+    2300022: polySurface115
+    2300024: Sheds
+    2300026: Utility
+    2300028: Vegetation
+    2300030: WaterClosets
+    2300032: Halls
     3300000: Borders
     3300002: Buildings
     3300004: Roads
     3300006: Walkable
     3300008: AgricultureArea
+    3300010: AcademicBuildings
+    3300012: Canteens
+    3300014: Courts
+    3300016: Gates
+    3300018: Laboratories
+    3300020: Offices
+    3300022: polySurface115
+    3300024: Sheds
+    3300026: Utility
+    3300028: Vegetation
+    3300030: WaterClosets
+    3300032: Halls
     4300000: Roads
     4300002: Borders
     4300004: Buildings
     4300006: Walkable
     4300008: AgricultureArea
+    4300010: Vegetation
+    4300012: polySurface115
+    4300014: Courts
+    4300016: Sheds
+    4300018: Canteens
+    4300020: Gates
+    4300022: Utility
+    4300024: Offices
+    4300026: Laboratories
+    4300028: AcademicBuildings
+    4300030: WaterClosets
+    4300032: Halls
   externalObjects: {}
   materials:
     importMaterials: 0
