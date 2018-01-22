@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: Aralin Office
   m_EditorClassIdentifier: 
-  m_displayedName: 'Aralin
-
-    Office'
+  m_displayedName: Aralin Office
   m_displayPosition: {x: 53.92428, y: 0, z: -14.150155}
   m_position: {x: 53.31702, y: 0, z: -18.232914}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'Aralin
+
+    Office'
