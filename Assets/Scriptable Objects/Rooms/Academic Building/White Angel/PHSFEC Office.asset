@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Name: PHSFEC Office
   m_EditorClassIdentifier: 
   m_displayedName: PHSFEC Office
-  m_displayPosition: {x: -104.45211, y: 0, z: -113.56079}
-  m_position: {x: -99.10142, y: 0, z: -118.726425}
+  m_displayPosition: {x: -102.45263, y: 0, z: -113.56079}
+  m_position: {x: -99.10142, y: 0, z: -113.34318}
   m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 1
   m_standaloneNumber: 0
   m_floor: 1
   m_room: 1
+  m_mapName: 'PHSFEC
+
+    Office'

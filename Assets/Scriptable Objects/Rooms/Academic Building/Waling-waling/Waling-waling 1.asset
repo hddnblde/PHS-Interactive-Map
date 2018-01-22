@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Waling-waling 1
   m_EditorClassIdentifier: 
   m_displayedName: Waling-waling
-  m_position: {x: -3.0704575, y: 0, z: 183.84819}
+  m_displayPosition: {x: -3.8159966, y: 0, z: 185.44577}
+  m_position: {x: -9.037903, y: 0, z: 178.84276}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_oneStoryOnly: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 1

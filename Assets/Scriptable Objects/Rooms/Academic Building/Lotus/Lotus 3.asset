@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Lotus 3
   m_EditorClassIdentifier: 
   m_displayedName: Lotus
-  m_displayPosition: {x: 99.66784, y: 0, z: 5.207934}
+  m_displayPosition: {x: 100.32355, y: 0, z: 6.847225}
   m_position: {x: 99.95123, y: 0, z: -1.09}
   m_useDisplayPosition: 1
   m_tags: 

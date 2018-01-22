@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Pump House
   m_EditorClassIdentifier: 
   m_displayedName: Pump House
-  m_displayPosition: {x: 0, y: 0, z: 0}
-  m_position: {x: 42, y: 0, z: 142}
+  m_displayPosition: {x: 42.19827, y: 0, z: 142.5948}
+  m_position: {x: 42.19827, y: 0, z: 148.4}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}

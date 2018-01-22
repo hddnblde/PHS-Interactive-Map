@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: PAGCOR 103
   m_EditorClassIdentifier: 
   m_displayedName: PAGCOR
-  m_position: {x: -130.83966, y: 0, z: -125.59781}
+  m_displayPosition: {x: -129.85068, y: 0, z: -125.59781}
+  m_position: {x: -129.85068, y: 0, z: -125.59781}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_oneStoryOnly: 0
+  m_standaloneName: 0
+  m_standaloneNumber: 0
   m_floor: 1
   m_room: 3
+  m_mapName: 103

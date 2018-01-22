@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: MAPEH Multipurpose 1
   m_EditorClassIdentifier: 
   m_displayedName: MAPEH Multipurpose
-  m_position: {x: -119.5559, y: 0, z: 206.08492}
+  m_displayPosition: {x: -119.98614, y: 0, z: 208.9532}
+  m_position: {x: -110.670715, y: 0, z: 199.20103}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 1

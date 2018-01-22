@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Name: MAPEH Multipurpose
   m_EditorClassIdentifier: 
   m_displayedName: MAPEH Multipurpose
-  m_position: {x: -105, y: 0, z: 208}
+  m_displayPosition: {x: -107.17752, y: 0, z: 210.17752}
+  m_position: {x: -105.08438, y: 0, z: 199.85168}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'MAPEH
+
+    Multipurpose'

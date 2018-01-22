@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Cattleya 1
   m_EditorClassIdentifier: 
   m_displayedName: Cattleya
-  m_position: {x: -74.66223, y: 0, z: 208.96156}
+  m_displayPosition: {x: -75.23589, y: 0, z: 211.11278}
+  m_position: {x: -74.66224, y: 0, z: 202.72488}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
+  m_mapName: 1

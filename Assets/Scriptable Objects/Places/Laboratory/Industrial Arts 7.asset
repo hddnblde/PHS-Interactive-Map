@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Industrial Arts 7
   m_EditorClassIdentifier: 
   m_displayedName: Industrial Arts 7
-  m_displayPosition: {x: -125.65547, y: 0, z: 106.70781}
+  m_displayPosition: {x: -124.468315, y: 0, z: 106.538216}
   m_position: {x: -116.24646, y: 0, z: 96.68631}
   m_useDisplayPosition: 1
   m_tags: ia;

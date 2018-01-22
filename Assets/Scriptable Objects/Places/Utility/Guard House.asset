@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Name: Guard House
   m_EditorClassIdentifier: 
   m_displayedName: Guard House
-  m_position: {x: 134, y: 0, z: 234}
+  m_displayPosition: {x: 135.3489, y: 0, z: 235.51753}
+  m_position: {x: 119.9723, y: 0, z: 229.61601}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'Guard
+
+    House'

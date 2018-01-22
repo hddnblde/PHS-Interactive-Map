@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: SPED 3
   m_EditorClassIdentifier: 
   m_displayedName: SPED
-  m_position: {x: 27.207218, y: 0, z: 222.24406}
+  m_displayPosition: {x: 27.924286, y: 0, z: 224.96895}
+  m_position: {x: 29.645254, y: 0, z: 215.73413}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 1
   m_room: 3
+  m_mapName: 3

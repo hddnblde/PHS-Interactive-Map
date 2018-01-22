@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Gate 3
   m_EditorClassIdentifier: 
   m_displayedName: Gate 3
-  m_displayPosition: {x: 0, y: 0, z: 0}
-  m_position: {x: 117, y: 0, z: 233}
+  m_displayPosition: {x: 118.011696, y: 0, z: 235.86644}
+  m_position: {x: 118.34893, y: 0, z: 228.73723}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: PAGCOR
   m_displayPosition: {x: -129.60472, y: 0, z: -119.79843}
-  m_position: {x: -129.60472, y: 0, z: -119.79843}
-  m_useDisplayPosition: 0
+  m_position: {x: -120.74128, y: 0, z: -119.829544}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: PAGCOR

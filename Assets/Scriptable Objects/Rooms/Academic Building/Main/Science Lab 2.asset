@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Science Lab 2
   m_EditorClassIdentifier: 
   m_displayedName: Science Lab
-  m_displayPosition: {x: 30.81484, y: 0, z: -101.07709}
+  m_displayPosition: {x: 29.880484, y: 0, z: -101.544266}
   m_position: {x: 22.74493, y: 0, z: -101.3672}
   m_useDisplayPosition: 1
   m_tags: 

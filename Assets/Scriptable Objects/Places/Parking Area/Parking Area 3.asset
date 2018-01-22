@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: Parking Area 3
   m_EditorClassIdentifier: 
-  m_displayedName: 'Parking
-
-    Area 3'
+  m_displayedName: Parking Area 3
   m_displayPosition: {x: 133.85905, y: 0, z: 210.51982}
   m_position: {x: 120.63965, y: 0, z: 211.29956}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: 'Parking
+
+    Area 3'

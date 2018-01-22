@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Name: Poinsettia 3
   m_EditorClassIdentifier: 
   m_displayedName: Poinsettia
-  m_position: {x: -37.12799, y: 0, z: 173.336}
+  m_displayPosition: {x: -37.37321, y: 0, z: 175.543}
+  m_position: {x: -42.890736, y: 0, z: 167.77133}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_standalone: 1
+  m_standaloneName: 0
+  m_standaloneNumber: 1
   m_floor: 2
   m_room: 3
+  m_mapName: 3

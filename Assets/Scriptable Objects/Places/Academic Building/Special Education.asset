@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Name: Special Education
   m_EditorClassIdentifier: 
   m_displayedName: SPED
-  m_position: {x: 18, y: 0, z: 223}
+  m_displayPosition: {x: 16.565859, y: 0, z: 224.00389}
+  m_position: {x: 18.286829, y: 0, z: 215.08293}
+  m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
+  m_mapName: SPED
