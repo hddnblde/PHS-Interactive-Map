@@ -23,7 +23,7 @@ namespace PampangaHighSchool.Faculty
 	}
 
 	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Teacher")]
-	public class Teacher : ScriptableObject
+	public class Teacher : ScheduleObject
 	{
 		#region Data Structures
 		[System.Serializable]
@@ -153,6 +153,16 @@ namespace PampangaHighSchool.Faculty
 		public Department department
 		{
 			get { return m_department; }
+		}
+
+		public override string title
+		{
+			get { return department.ToString(); }
+		}
+
+		public override string subtitle
+		{
+			get { return GetFullName(true); }
 		}
 		#endregion
 

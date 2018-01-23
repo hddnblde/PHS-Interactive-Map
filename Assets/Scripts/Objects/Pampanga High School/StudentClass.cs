@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PampangaHighSchool.Faculty;
+using Schedules;
 using Map;
 
 #if UNITY_EDITOR
@@ -11,7 +12,7 @@ using UnityEditor;
 namespace PampangaHighSchool.Students
 {
 	[CreateAssetMenu(menuName = "Students/Student Class", order = 1, fileName = "Student Class")]
-	public class StudentClass : ScriptableObject
+	public class StudentClass : ScheduleObject
 	{
 		[Header("Description")]
 		[SerializeField]
@@ -45,6 +46,16 @@ namespace PampangaHighSchool.Students
 		public Room advisoryRoom
 		{
 			get { return m_room; }
+		}
+
+		public override string title
+		{
+			get { return "Grade " + (int)section.grade; }
+		}
+
+		public override string subtitle
+		{
+			get { return section.name + ' ' + m_rank; }
 		}
 	}
 
