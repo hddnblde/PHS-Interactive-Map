@@ -10,7 +10,7 @@ namespace Schedules
 	public class Schedule : ScriptableObject
 	{
 		[SerializeField]
-		private ScheduleObject m_object = null;
+		private ScheduleObject target = null;
 
 		[SerializeField]
 		private List<PeriodGroup> m_periods = PeriodGroup.DefaultList;
@@ -18,6 +18,28 @@ namespace Schedules
 		public PeriodGroup[] periods
 		{
 			get { return m_periods.ToArray(); }
+		}
+
+		public string title
+		{
+			get
+			{
+				if(target == null)
+					return "";
+				else
+					return target.title;
+			}
+		}
+
+		public string subtitle
+		{
+			get
+			{
+				if(target == null)
+					return "";
+				else
+					return target.subtitle;
+			}
 		}
 	}
 }

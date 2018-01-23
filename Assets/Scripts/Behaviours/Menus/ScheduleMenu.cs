@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using PampangaHighSchool;
 using Schedules;
 using PampangaHighSchool.Faculty;
@@ -8,19 +9,162 @@ using PampangaHighSchool.Students;
 
 public class ScheduleMenu : MonoBehaviour
 {
-	public enum Context
+	[Header("References")]
+	[SerializeField]
+	private Text titleText = null;
+
+	[SerializeField]
+	private Schedule schedule = null;
+
+	[SerializeField]
+	private GameObject scheduleItemPrefab = null;
+
+	[SerializeField]
+	private Transform entryContainer = null;
+
+	[SerializeField]
+	private Day currentDay = Day.Monday;
+
+	[Header("Buttons")]
+	[SerializeField]
+	private Button mondayButton = null;
+
+	[SerializeField]
+	private Button tuesdayButton = null;
+
+	[SerializeField]
+	private Button wednesdayButton = null;
+
+	[SerializeField]
+	private Button thursdayButton = null;
+
+	[SerializeField]
+	private Button fridayButton = null;
+
+	[Header("Text Colors")]
+	[SerializeField, ColorUsage(false)]
+	private Color normalColor = Color.black;
+
+	[SerializeField, ColorUsage(false)]
+	private Color highlightedColor = Color.white;
+
+	private List<ScheduleItem> items = new List<ScheduleItem>();
+	private Graphic mondayText = null;
+	private Graphic tuesdayText = null;
+	private Graphic wednesdayText = null;
+	private Graphic thursdayText = null;
+	private Graphic fridayText = null;
+
+	#region MonoBehaviour Implementation
+	private void Awake()
 	{
-		ByFaculty,
-		ByStudent
+		GenerateEntries();
+		SetupButtons();
+		Open(schedule);
+	}
+	#endregion
+
+
+	#region Methods
+	public void Open(Schedule schedule)
+	{
+		this.schedule = schedule;
+		SetTitle();
+		SetPeriods();
+		SelectDay(currentDay);
 	}
 
-	public void ViewTeacher(Teacher teacher)
+	private void SetTitle()
 	{
-//		teacher.GetScheduleItem
+		if(schedule == null || titleText == null)
+			return;
+
+		string pattern = "<b>@title</b>\n@subtitle".Replace("@title", schedule.title).Replace("@subtitle", schedule.subtitle);
+		titleText.text = pattern;
 	}
 
-	public void ViewStudent(StudentClass studentClass)
+	private void SetPeriods()
 	{
+		if(items == null || items.Count == 0)
+			return;
 		
+		for(int i = 0; i < items.Count; i++)
+		{
+			ScheduleItem item = items[i];
+			PeriodGroup period = schedule.periods[i];
+			item.Set(period);
+		}
 	}
+
+	private void SelectDay(Day day)
+	{
+		currentDay = day;
+		SelectButton(mondayButton, mondayText, day == Day.Monday);
+		SelectButton(tuesdayButton, tuesdayText, day == Day.Tuesday);
+		SelectButton(wednesdayButton, wednesdayText, day == Day.Wednesday);
+		SelectButton(thursdayButton, thursdayText, day == Day.Thursday);
+		SelectButton(fridayButton, fridayText, day == Day.Friday);
+		ViewEntries();
+	}
+
+	private void ViewEntries()
+	{
+		if(items == null || items.Count == 0)
+			return;
+		
+		foreach(ScheduleItem item in items)
+			item.ViewEntry(currentDay);
+	}
+	#endregion
+
+
+	#region Helpers
+	private void SelectButton(Button button, Graphic text, bool selected)
+	{
+		if(button == null || text == null)
+			return;
+
+		button.interactable = !selected;
+		Color textColor = (selected ? highlightedColor : normalColor);
+		text.color = textColor;
+	}
+
+	private void GenerateEntries()
+	{
+		if(scheduleItemPrefab == null || entryContainer == null)
+			return;
+
+		const int EntryCount = 14;
+
+		for(int i = 0; i < EntryCount; i++)
+		{
+			GameObject entry = Instantiate(scheduleItemPrefab, entryContainer) as GameObject;
+			ScheduleItem item = entry.GetComponent<ScheduleItem>();
+			items.Add(item);
+		}
+	}
+
+	private void SetupButtons()
+	{
+		SetupButton(mondayButton, ref mondayText, Day.Monday);
+		SetupButton(tuesdayButton, ref tuesdayText, Day.Tuesday);
+		SetupButton(wednesdayButton, ref wednesdayText, Day.Wednesday);
+		SetupButton(thursdayButton, ref thursdayText, Day.Thursday);
+		SetupButton(fridayButton, ref fridayText, Day.Friday);
+	}
+
+	private void SetupButton(Button button, ref Graphic textGraphic, Day day)
+	{
+		if(button == null)
+			return;
+
+		button.onClick.AddListener(() => SelectDay(day));
+		Transform textTransform = button.transform.GetChild(0);
+
+		if(textTransform == null)
+			return;
+
+		textGraphic = textTransform.GetComponent<Graphic>();
+	}
+	#endregion
 }

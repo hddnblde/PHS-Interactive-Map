@@ -84,6 +84,11 @@ namespace Schedules
 		{
 			get { return m_meridiem; }
 		}
+
+		public override string ToString()
+		{
+			return m_hour.ToString("D2") + ':' + m_minute.ToString("D2") + ' ' + meridiem.ToString();
+		}
 	}
 
 	#if UNITY_EDITOR

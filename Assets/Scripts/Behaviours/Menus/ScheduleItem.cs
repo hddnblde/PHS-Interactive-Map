@@ -12,25 +12,50 @@ public class ScheduleItem : MonoBehaviour
 	[SerializeField]
 	private Text entryText = null;
 
-	private Schedule m_schedule = null;
+	private PeriodGroup period = null;
 
-	public void Set()
+	public void Set(PeriodGroup period)
 	{
-		// m_schedule.periods[0].rooms[0].entity.subtitle;
+		if(period == null)
+			return;
+
+		this.period = period;
+		SetTime(period.period);
 	}
 
+	public void ViewEntry(Day day)
+	{
+		ScheduleEntry entry = period.GetEntry(day);
+		SetEntry(entry);
+	}
 
-	private void SetTime(string time)
+	private void SetTime(Period period)
 	{
 		if(timeText == null)
 			return;
+
+		if(period == null)
+		{
+			timeText.text = "";
+			return;
+		}
+
+		string time = "@start - @end".Replace("@start", period.start.ToString()).Replace("@end", period.end.ToString());
+		timeText.text = time;
 	}
 
-	private void SetEntry(string entry)
+	private void SetEntry(ScheduleEntry entry)
 	{
 		if(entryText == null)
 			return;
 
-		entryText.text = entry;
+		if(entry == null)
+		{
+			entryText.text = "";
+			return;
+		}
+
+		string entryPattern = "@title\n@subtitle".Replace("@title", entry.title).Replace("@subtitle", entry.subtitle);
+		entryText.text = entryPattern;
 	}
 }

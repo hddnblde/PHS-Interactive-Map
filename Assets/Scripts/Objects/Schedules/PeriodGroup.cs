@@ -42,45 +42,45 @@ namespace Schedules
 		private Period m_period = null;
 
 		[SerializeField]
-		private List<RoomGroup> m_rooms = RoomGroup.DefaultList;
+		private List<ScheduleEntry> m_entries = ScheduleEntry.DefaultList;
 		#endregion
 
 
 		#region Functions
-		private RoomGroup GetRoom(Day day)
+		public ScheduleEntry GetEntry(Day day)
 		{
-			RoomGroup room = null;
+			ScheduleEntry entry = null;
 
-			foreach(RoomGroup scheduledRoom in m_rooms)
+			foreach(ScheduleEntry e in m_entries)
 			{
-				if(scheduledRoom.day == day)
+				if(e.day == day)
 				{
-					room = scheduledRoom;
+					entry = e;
 					break;
 				}
 			}
 
-			return room;
+			return entry;
 		}
 		#endregion
 
 
 		#region Properties
-		public RoomGroup[] rooms
+		public ScheduleEntry[] entries
 		{
 			get
 			{
-				List<RoomGroup> rooms = new List<RoomGroup>();
+				List<ScheduleEntry> entries = new List<ScheduleEntry>();
 				
 				const int days = 5;
 				for(int dayIndex = 0; dayIndex < days; dayIndex++)
 				{
 					Day day = (Day)dayIndex;
-					RoomGroup room = GetRoom(day);
-					rooms.Add(room);
+					ScheduleEntry entry = GetEntry(day);
+					entries.Add(entry);
 				}
 
-				return rooms.ToArray();
+				return entries.ToArray();
 			}
 		}
 

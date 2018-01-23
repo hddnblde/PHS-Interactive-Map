@@ -170,7 +170,7 @@ namespace PampangaHighSchool.Faculty
 		#region Functions
 		public string GetFullName(bool useMiddleNameInitials = true)
 		{
-			string middle = (useMiddleNameInitials ? (m_middleName.Substring(0, 1) + ".") : m_middleName);
+			string middle = ((useMiddleNameInitials && !string.IsNullOrEmpty(middleName)) ? (m_middleName.Substring(0, 1) + ".") : m_middleName);
 			return "@f @m @l".Replace("@f", m_firstName).Replace("@l", m_lastName).Replace("@m", middle);
 		}
 
