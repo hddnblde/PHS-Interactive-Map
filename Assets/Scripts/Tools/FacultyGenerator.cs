@@ -6,16 +6,16 @@ using UnityEditor;
 using System.IO;
 using PampangaHighSchool.Faculty;
 
-public class FacultyLoader : EditorWindow
+public class FacultyGenerator : EditorWindow
 {
 	private static string listPath;
 	private static string scriptableObjectsPath;
 	private static Department department = Department.Aralin;
 
-	[MenuItem("Tools/Faculty Loader")]
+	[MenuItem("Tools/Faculty Generator")]
 	private static void Initialize()
 	{
-		FacultyLoader facultyLoader = (FacultyLoader)EditorWindow.GetWindow(typeof(FacultyLoader));
+		FacultyGenerator facultyLoader = (FacultyGenerator)EditorWindow.GetWindow(typeof(FacultyGenerator));
 		facultyLoader.Show();
 	}
 
