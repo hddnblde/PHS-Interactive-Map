@@ -61,19 +61,19 @@ MonoBehaviour:
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 2
       m_room: {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 3
       m_room: {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 4
       m_room: {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 5
       m_room: {fileID: 11400000, guid: d17d88ba7a28c6b4d83b2dbe0f19b153, type: 2}

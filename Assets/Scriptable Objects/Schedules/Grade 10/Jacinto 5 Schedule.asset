@@ -109,19 +109,19 @@ MonoBehaviour:
       m_subtitle: Math
     - m_day: 2
       m_room: {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 3
       m_room: {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 4
       m_room: {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 5
       m_room: {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
   - m_period: {fileID: 11400000, guid: 7b1d5962aa531184899bbff94c681c2d, type: 2}
     m_entries:

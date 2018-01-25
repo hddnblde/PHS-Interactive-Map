@@ -72,7 +72,7 @@ namespace Schedules
 			get { return m_room; }
 		}
 
-		public string title
+		private string title
 		{
 			get
 			{
@@ -83,9 +83,32 @@ namespace Schedules
 			}
 		}
 
-		public string subtitle
+		private string subtitle
 		{
 			get { return m_subtitle; }
+		}
+
+		private string roomName
+		{
+			get
+			{
+				if(m_room == null)
+					return "";
+				else
+					return m_room.displayedName;
+			}
+		}
+
+		public override string ToString()
+		{
+			string header = subtitle + (string.IsNullOrEmpty(subtitle) ? "" : " ") + roomName;
+			bool headerIsEmpty = string.IsNullOrEmpty(header);
+			if(!headerIsEmpty)
+				header = "<b>" + header + "</b>";
+
+			string footer = title;
+			string pattern = header + (!headerIsEmpty ? "\n" : "") + footer;
+			return pattern;
 		}
 	}
 }

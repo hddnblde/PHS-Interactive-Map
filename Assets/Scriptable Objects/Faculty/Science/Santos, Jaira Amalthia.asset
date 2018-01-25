@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bc4c5fdd9017304c895e625586a0fb3, type: 3}
-  m_Name: Santos, Jaira Amalth
+  m_Name: Santos, Jaira Amalthia
   m_EditorClassIdentifier: 
-  m_firstName: Jaira Amalth
+  m_firstName: Jaira Amalthia
   m_middleName: 
   m_lastName: Santos
   m_department: 5
@@ -23,4 +23,3 @@ MonoBehaviour:
     m_month: 2
     m_day: 1
     m_year: 1900
-  m_schedule: {fileID: 0}

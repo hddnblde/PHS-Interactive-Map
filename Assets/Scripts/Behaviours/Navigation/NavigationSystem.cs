@@ -11,6 +11,15 @@ namespace Navigation
 	[RequireComponent(typeof(LineRenderer))]
 	public class NavigationSystem : MonoBehaviour
 	{
+		#region Serialized Fields
+		[SerializeField]
+		private Transform originMarker = null;
+
+		[SerializeField]
+		private Transform destinationMarker = null;
+		#endregion
+
+
 		#region Hidden Fields
 		private LineRenderer lineRenderer = null;
 		private const float LineWidthLowerLimit = 3f;
@@ -48,6 +57,24 @@ namespace Navigation
 			Vector3[] path = FindPath(origin, destination);
 			DrawNavigationLine(path);
 			FocusCameraToPath(path);
+			DrawMarker(originMarker, origin);
+			DrawMarker(destinationMarker, destination);
+		}
+
+		private void DrawMarker(Transform marker, Vector3 position)
+		{
+			if(marker == null)
+				return;
+
+			marker.gameObject.SetActive(true);
+			marker.position = new Vector3(position.x, NavigationCamera.CameraHeight - 1f, position.z);
+			marker.SetAsLastSibling();
+		}
+
+		private void ClearMarker(Transform marker)
+		{
+			if(marker != null)
+				marker.gameObject.SetActive(false);
 		}
 
 		public void Clear()
@@ -56,6 +83,8 @@ namespace Navigation
 				return;
 			
 			lineRenderer.positionCount = 0;
+			ClearMarker(originMarker);
+			ClearMarker(destinationMarker);
 		}
 
 		private void Initialize()

@@ -149,11 +149,11 @@ MonoBehaviour:
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 2
       m_room: {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 3
       m_room: {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
@@ -161,11 +161,11 @@ MonoBehaviour:
       m_subtitle: Math
     - m_day: 4
       m_room: {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 5562b5acc01b2cc40b9c9f6b873ff8ef, type: 2}
       m_subtitle: Science
   - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
     m_entries:

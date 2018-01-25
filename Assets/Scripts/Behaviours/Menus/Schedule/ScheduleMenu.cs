@@ -74,6 +74,11 @@ public class ScheduleMenu : MonoBehaviour
 		SelectDay(currentDay);
 	}
 
+	public void Close()
+	{
+		
+	}
+
 	private void SetTitle()
 	{
 		if(schedule == null || titleText == null)

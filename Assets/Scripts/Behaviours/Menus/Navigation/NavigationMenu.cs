@@ -8,6 +8,9 @@ namespace Menus
 {
 	public class NavigationMenu : MonoBehaviour
 	{
+		public delegate void ContextSelect(Context context);
+		public static event ContextSelect OnContextSelect;
+
 		public enum Context
 		{
 			Info,
@@ -31,9 +34,12 @@ namespace Menus
 		[SerializeField]
 		private AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
-		[Header("References")]
+		[Header("GUI References")]
 		[SerializeField]
 		private Graphic background = null;
+
+		[SerializeField]
+		private Image backgroundOverlay = null;
 
 		[SerializeField]
 		private NavigationButton infoButton = null;
@@ -44,16 +50,29 @@ namespace Menus
 		[SerializeField]
 		private NavigationButton menuButton = null;
 
+		[Header("Menu References")]
 		[SerializeField]
-		private Image backgroundOverlay = null;
+		private CanvasGroup infoCanvasGroup = null;
+		
+		[SerializeField]
+		private CanvasGroup mapCanvasGroup = null;
+		
+		[SerializeField]
+		private CanvasGroup menuCanvasGroup = null;
 
 		private Coroutine backgroundOverlayTransitionRoutine = null;
 		private const Context DefaultContext = Context.Map;
+		private Context currentContext = Context.Map;
 
 		private void Awake()
 		{
 			Initialize();
 			SelectContext(DefaultContext);
+		}
+
+		private void Start()
+		{
+			SelectContext(currentContext);
 		}
 
 		private void OnValidate()
@@ -98,12 +117,31 @@ namespace Menus
 
 		private void SelectContext(Context context)
 		{
+			currentContext = context;
+
 			HighlightButton(infoButton, context == Context.Info);
 			HighlightButton(mapButton, context == Context.Map);
 			HighlightButton(menuButton, context == Context.Menu);
 
 			bool showBackground = context != Context.Map;
 			ShowBackground(showBackground);
+
+			if(OnContextSelect != null)
+				OnContextSelect(context);
+
+			ShowMenu(infoCanvasGroup, context == Context.Info);
+			ShowMenu(mapCanvasGroup, context == Context.Map);
+			ShowMenu(menuCanvasGroup, context == Context.Menu);
+		}
+
+		private void ShowMenu(CanvasGroup menu, bool shown)
+		{
+			if(menu == null)
+				return;
+
+			menu.alpha = (shown ? 1f : 0f);
+			menu.blocksRaycasts = shown;
+			// menu.interactable = shown;
 		}
 
 		private void DisableImmersiveModeForAndroid()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Gestures;
+using Menus;
 
 namespace Navigation
 {
@@ -129,18 +130,20 @@ namespace Navigation
 
 		private void OnEnable()
 		{
-			RegisterEvents();
+			RegisterGestureEvents();
+			RegisterMenuContextEvent();
 		}
 
 		private void OnDisable()
 		{
-			DeregisterEvents();
+			DeregisterGestureEvents();
+			DeregisterMenuContextEvent();
 		}
 		#endregion
 
 
 		#region Gestures Implementation
-		private void RegisterEvents()
+		private void RegisterGestureEvents()
 		{
 			TouchGestures.OnDoubleTap += OnDoubleTap;
 			TouchGestures.OnDrag += OnDrag;
@@ -151,7 +154,7 @@ namespace Navigation
 			OnFrame += FrameByBounds;
 		}
 
-		private void DeregisterEvents()
+		private void DeregisterGestureEvents()
 		{
 			TouchGestures.OnDoubleTap -= OnDoubleTap;
 			TouchGestures.OnDrag -= OnDrag;
@@ -164,21 +167,33 @@ namespace Navigation
 
 		private void OnDoubleTap(Vector2 screenPoint)
 		{
+			if(!listenToGestures)
+				return;
+
 			ResetView();
 		}
 
 		private void OnDrag(Vector2 deltaPosition)
 		{
+			if(!listenToGestures)
+				return;
+
 			Pan(deltaPosition);
 		}
 
 		private void OnRotate(float delta)
 		{
+			if(!listenToGestures)
+				return;
+
 			Rotate(delta);
 		}
 
 		private void OnPinch(float delta)
 		{
+			if(!listenToGestures)
+				return;
+
 			Zoom(delta);
 		}
 		#endregion
@@ -295,6 +310,26 @@ namespace Navigation
 				view = Mathf.LerpUnclamped(currentZoom, targetZoom, transitionCurve.Evaluate(t));
 				yield return null;
 			}
+		}
+		#endregion
+	
+
+		#region Menu Context Implementation
+		private bool listenToGestures = true;
+
+		private void RegisterMenuContextEvent()
+		{
+			NavigationMenu.OnContextSelect += OnContextSelect;
+		}
+
+		private void DeregisterMenuContextEvent()
+		{
+			NavigationMenu.OnContextSelect -= OnContextSelect;
+		}
+
+		private void OnContextSelect(NavigationMenu.Context context)
+		{
+			listenToGestures = context == NavigationMenu.Context.Map;
 		}
 		#endregion
 	}

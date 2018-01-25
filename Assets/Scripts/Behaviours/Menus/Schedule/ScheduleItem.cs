@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Schedules;
+using System.Text;
 
 public class ScheduleItem : MonoBehaviour
 {
@@ -50,12 +51,10 @@ public class ScheduleItem : MonoBehaviour
 			return;
 
 		if(entry == null)
-		{
 			entryText.text = "";
-			return;
-		}
+		else
+			entryText.text = entry.ToString();
 
-		string entryPattern = "@title\n@subtitle".Replace("@title", entry.title).Replace("@subtitle", entry.subtitle);
-		entryText.text = entryPattern;
+		gameObject.SetActive(!string.IsNullOrEmpty(entryText.text));
 	}
 }
