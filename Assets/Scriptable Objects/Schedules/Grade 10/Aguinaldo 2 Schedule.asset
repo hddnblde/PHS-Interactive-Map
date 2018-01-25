@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   m_periods:
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 6027985fb48508b4b83d8c8010b04b41, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: d76a035d50d163d4c82a5cd9e9ef2262, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: 5d35180f5e588a743b68287c0689c858, type: 2}
       m_subtitle: Math
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: c3505ad2e7df0724e9b0a3355b140657, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -79,7 +79,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: TLE
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 1bb7006eaa7f80a45a9446d5b5d364ee, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
       m_subtitle: Science
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: ed956dff7e733384588c31d4aad395d6, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: 52ba79a9db6bd444b9ad819b72dc6eb3, type: 2}
       m_subtitle: Values
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 7b1d5962aa531184899bbff94c681c2d, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -145,7 +145,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 45395a52893043349ab81122a3a3608d, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: 928a1db18b97d9340b5925177115cf1f, type: 2}
       m_subtitle: Filipino
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: 11c8daa3d346b2d4189766c391836639, type: 2}
       m_subtitle: English
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 5f41e340c2e191745a799adb73549054, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -211,7 +211,7 @@ MonoBehaviour:
       m_room: {fileID: 11400000, guid: 251fa3e3e25f1db4683e4923a75c9232, type: 2}
       m_title: {fileID: 11400000, guid: c4cb6b5dd715b0f409076ea4e915eae6, type: 2}
       m_subtitle: Aralin
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: a400d0f174e5d094fbfa4ddf80c8b576, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -233,7 +233,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 272d53742c653be45b796b09f93cb78a, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -255,7 +255,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 67b68cdcf759d72418e53470143b7e9a, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -277,7 +277,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: 140366d4f8cb2e7469caa858a63b6528, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
-  - m_period: {fileID: 0}
+  - m_period: {fileID: 11400000, guid: c3635dd6977c38640b44ec090884249c, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}

@@ -14,6 +14,9 @@ public class ScheduleGenerator : EditorWindow
 	[SerializeField]
 	private TextAsset textAsset = null;
 
+	[SerializeField]
+	private Schedule scheduleTemplate = null;
+
 	[MenuItem("Tools/Schedule Generator")]
 	private static void Initialize()
 	{
@@ -25,9 +28,11 @@ public class ScheduleGenerator : EditorWindow
 	{
 		SerializedObject target = new SerializedObject(this);
 		SerializedProperty textAssetProperty = target.FindProperty("textAsset");
+		SerializedProperty scheduleTemplateProperty = target.FindProperty("scheduleTemplate");
 
 		EditorGUI.BeginChangeCheck();
 		EditorGUILayout.PropertyField(textAssetProperty);
+		EditorGUILayout.PropertyField(scheduleTemplateProperty);
 
 		if(EditorGUI.EndChangeCheck())
 		{
@@ -142,7 +147,12 @@ public class ScheduleGenerator : EditorWindow
 
 	private void SetSchedule(SerializedObject schedule, ScheduleObject target, int index, string entryText)
 	{
+		SerializedProperty targetProperty = schedule.FindProperty("m_target");
 		SerializedProperty periodsProperty = schedule.FindProperty("m_periods");
+
+		targetProperty.objectReferenceValue = target;
+		schedule.ApplyModifiedPropertiesWithoutUndo();
+
 		if(index < 0 || index >= periodsProperty.arraySize)
 			return;
 
@@ -220,7 +230,8 @@ public class ScheduleGenerator : EditorWindow
 		string path = "Assets/Scriptable Objects/Schedules/" + grade + '/';
 		string name = target.name + " Schedule";
 
-		Schedule schedule = ScriptableObject.CreateInstance<Schedule>();
+		Schedule schedule = (scheduleTemplate != null ? ScriptableObject.Instantiate<Schedule>(scheduleTemplate) : ScriptableObject.CreateInstance<Schedule>());
+		
 		if(!AssetDatabase.IsValidFolder(path))
 			Directory.CreateDirectory(path);
 				
