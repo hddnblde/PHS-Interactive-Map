@@ -147,7 +147,7 @@ public class ScheduleGenerator : EditorWindow
 
 	private void SetSchedule(SerializedObject schedule, ScheduleObject target, int index, string entryText)
 	{
-		SerializedProperty targetProperty = schedule.FindProperty("m_target");
+		SerializedProperty targetProperty = schedule.FindProperty("target");
 		SerializedProperty periodsProperty = schedule.FindProperty("m_periods");
 
 		targetProperty.objectReferenceValue = target;

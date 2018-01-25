@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bd777a146ed8e45a9e4754a9d7cc67, type: 3}
   m_Name: Orange 4 Schedule
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 11400000, guid: 1533825b9fbddcc4a93624f4e4d78e78, type: 2}
   m_periods:
   - m_period: {fileID: 11400000, guid: 6027985fb48508b4b83d8c8010b04b41, type: 2}
     m_entries:
