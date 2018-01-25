@@ -53,13 +53,13 @@ public class ScheduleGenerator : EditorWindow
 		if(textAsset == null)
 			return;
 
-		const int sampledIndex = 7;
+		// const int sampledIndex = 7;
 
 		string[] lines = textAsset.text.Split("\n".ToCharArray());
 		for(int i = 0; i < lines.Length; i++)
 		{
-			if(i != sampledIndex)
-				continue;
+			// if(i != sampledIndex)
+			// 	continue;
 			
 			string scheduleText = AssembleScheduleText(lines[i]);
 			GenerateSchedule(scheduleText);
@@ -79,11 +79,11 @@ public class ScheduleGenerator : EditorWindow
 		string grade = entries[3];
 		string section = entries[4];
 
-		string monday = AssembleSchedule("1", entries[5], entries[6], entries[7]);
-		string tuesday = AssembleSchedule("2", entries[8], entries[9], entries[10]);
-		string wednesday = AssembleSchedule("3", entries[11], entries[12], entries[13]);
-		string thursday = AssembleSchedule("4", entries[14], entries[15], entries[16]);
-		string friday = AssembleSchedule("5", entries[17], entries[18], entries[19]);
+		string monday = AssembleSchedule(entries[5], entries[6], entries[7]);
+		string tuesday = AssembleSchedule(entries[8], entries[9], entries[10]);
+		string wednesday = AssembleSchedule(entries[11], entries[12], entries[13]);
+		string thursday = AssembleSchedule(entries[14], entries[15], entries[16]);
+		string friday = AssembleSchedule(entries[17], entries[18], entries[19]);
 
 		string scheduleText = "@period (@timeIn - @timeOut)~Grade @grade~@section~@mon|@tue|@wed|@thu|@fri"
 			.Replace("@period", period).Replace("@timeIn", timeIn).Replace("@timeOut", timeOut)
@@ -94,10 +94,10 @@ public class ScheduleGenerator : EditorWindow
 		return scheduleText;
 	}
 
-	private string AssembleSchedule(string header, string subject, string room, string teacher)
+	private string AssembleSchedule(string subject, string room, string teacher)
 	{
-		string message = "@subject/@room/@teacher" //"@header=@subject/@room/@teacher"
-			.Replace("@header", header).Replace("@subject", subject)
+		string message = "@subject/@room/@teacher"
+			.Replace("@subject", subject)
 			.Replace("@room", room).Replace("@teacher", teacher);
 		
 		return message;
@@ -118,7 +118,7 @@ public class ScheduleGenerator : EditorWindow
 		string section = items[2];
 		string entry = items[3];
 		
-		Schedule schedule = GetSchedule(section);
+		Schedule schedule = GetSchedule(section, grade);
 		ScheduleObject target = GetTarget(section, typeof(StudentClass).ToString());
 		SetSchedule(new SerializedObject(schedule), target, periodIndex, entry);
 	}
@@ -194,24 +194,24 @@ public class ScheduleGenerator : EditorWindow
 		return room;
 	}
 	
-	private Schedule GetSchedule(string section)
+	private Schedule GetSchedule(string section, string grade)
 	{
 		string[] result = AssetDatabase.FindAssets(section + " t:" + typeof(Schedule).ToString());
 
 		if(result == null || result.Length != 1)
-			return CreateNewSchedule(GetTarget(section, typeof(StudentClass).ToString()));
+			return CreateNewSchedule(GetTarget(section, typeof(StudentClass).ToString()), grade);
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
 		Schedule schedule = AssetDatabase.LoadAssetAtPath<Schedule>(assetPath);
 		return schedule;
 	}
 
-	private Schedule CreateNewSchedule(ScheduleObject target)
+	private Schedule CreateNewSchedule(ScheduleObject target, string grade)
 	{
 		if(target == null)
 			return null;
 		
-		string path = AssetDatabase.GetAssetPath(target).Replace(".asset", "/");
+		string path = "Assets/Scriptable Objects/Schedules/" + grade + '/' + target.name + '/';
 		string name = target.name + " Schedule";
 
 		Schedule schedule = ScriptableObject.CreateInstance<Schedule>();

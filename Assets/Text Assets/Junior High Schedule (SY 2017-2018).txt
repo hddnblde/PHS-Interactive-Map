@@ -187,13 +187,13 @@
 5	09:30 AM	10:25 AM	8	Dahlia 2															
 6	10:25 AM	11:20 AM	8	Dahlia 2															
 7	11:20 AM	12:15 PM	8	Dahlia 2															
-8	12:15 PM	01:10 PM	8	Dahlia 2	Mapeh	IA Room 02	Franz Philip Tulabut	Mapeh	IA Room 02	Franz Philip Tulabut	Mapeh	IA Room 02	Franz Philip Tulabut	Mapeh	IA Room 02	Franz Philip Tulabut	Math	IA Room 02	Anastacia Timoteo
+8	12:15 PM	01:10 PM	8	Dahlia 2	Mapeh	Industrial Arts 2	Franz Philip Tulabut	Mapeh	Industrial Arts 2	Franz Philip Tulabut	Mapeh	Industrial Arts 2	Franz Philip Tulabut	Mapeh	Industrial Arts 2	Franz Philip Tulabut	Math	Industrial Arts 2	Anastacia Timoteo
 9	01:10 PM	02:05 PM	8	Dahlia 2	TLE			TLE			TLE			TLE			TLE		
-10	02:05 PM	03:00 PM	8	Dahlia 2	Science	IA Room 02	Jocelyn Canlas	Math	IA Room 02	Anastacia Timoteo	Science	IA Room 02	Jocelyn Canlas	Science	IA Room 02	Jocelyn Canlas	Science	IA Room 02	Jocelyn Canlas
+10	02:05 PM	03:00 PM	8	Dahlia 2	Science	Industrial Arts 2	Jocelyn Canlas	Math	Industrial Arts 2	Anastacia Timoteo	Science	Industrial Arts 2	Jocelyn Canlas	Science	Industrial Arts 2	Jocelyn Canlas	Science	Industrial Arts 2	Jocelyn Canlas
 11	03:00 PM	03:15 PM	8	Dahlia 2															
-12	03:15 PM	04:10 PM	8	Dahlia 2	English	IA Room 02	Susana Sinohin	English	IA Room 02	Susana Sinohin	Math	IA Room 02	Anastacia Timoteo	English	IA Room 02	Susana Sinohin	English	IA Room 02	Susana Sinohin
-13	04:10 PM	05:05 PM	8	Dahlia 2	Math	IA Room 02	Anastacia Timoteo	Filipino	IA Room 02	Henry Andrade	Filipino	IA Room 02	Henry Andrade	Filipino	IA Room 02	Henry Andrade	Filipino	IA Room 02	Henry Andrade
-14	05:05 PM	06:00 PM	8	Dahlia 2	Values	IA Room 02	Joyce Jimenez	Values	IA Room 02	Joyce Jimenez	Aralin	IA Room 02	Pamela Ramos	Aralin	IA Room 02	Pamela Ramos	Aralin	IA Room 02	Pamela Ramos
+12	03:15 PM	04:10 PM	8	Dahlia 2	English	Industrial Arts 2	Susana Sinohin	English	Industrial Arts 2	Susana Sinohin	Math	Industrial Arts 2	Anastacia Timoteo	English	Industrial Arts 2	Susana Sinohin	English	Industrial Arts 2	Susana Sinohin
+13	04:10 PM	05:05 PM	8	Dahlia 2	Math	Industrial Arts 2	Anastacia Timoteo	Filipino	Industrial Arts 2	Henry Andrade	Filipino	Industrial Arts 2	Henry Andrade	Filipino	Industrial Arts 2	Henry Andrade	Filipino	Industrial Arts 2	Henry Andrade
+14	05:05 PM	06:00 PM	8	Dahlia 2	Values	Industrial Arts 2	Joyce Jimenez	Values	Industrial Arts 2	Joyce Jimenez	Aralin	Industrial Arts 2	Pamela Ramos	Aralin	Industrial Arts 2	Pamela Ramos	Aralin	Industrial Arts 2	Pamela Ramos
 1	06:30 AM	07:25 AM	8	Dahlia 3															
 2	07:25 AM	08:20 AM	8	Dahlia 3															
 3	08:20 AM	09:15 AM	8	Dahlia 3															
@@ -201,12 +201,12 @@
 5	09:30 AM	10:25 AM	8	Dahlia 3															
 6	10:25 AM	11:20 AM	8	Dahlia 3															
 7	11:20 AM	12:15 PM	8	Dahlia 3															
-8	12:15 PM	01:10 PM	8	Dahlia 3	Math	IA Room 07	Anastacia Timoteo	English	IA Room 07	Susana Sinohin	English	IA Room 07	Susana Sinohin	English	IA Room 07	Susana Sinohin	English	IA Room 07	Susana Sinohin
-9	01:10 PM	02:05 PM	8	Dahlia 3	Science	IA Room 07	Jocelyn Canlas	Science	IA Room 07	Jocelyn Canlas	Science	IA Room 07	Jocelyn Canlas	Science	IA Room 07	Jocelyn Canlas	Math	IA Room 07	Anastacia Timoteo
-10	02:05 PM	03:00 PM	8	Dahlia 3	Mapeh	IA Room 07	Franz Philip Tulabut	Mapeh	IA Room 07	Franz Philip Tulabut	Mapeh	IA Room 07	Franz Philip Tulabut	Math	IA Room 07	Anastacia Timoteo	Mapeh	IA Room 07	Franz Philip Tulabut
+8	12:15 PM	01:10 PM	8	Dahlia 3	Math	Industrial Arts 7	Anastacia Timoteo	English	Industrial Arts 7	Susana Sinohin	English	Industrial Arts 7	Susana Sinohin	English	Industrial Arts 7	Susana Sinohin	English	Industrial Arts 7	Susana Sinohin
+9	01:10 PM	02:05 PM	8	Dahlia 3	Science	Industrial Arts 7	Jocelyn Canlas	Science	Industrial Arts 7	Jocelyn Canlas	Science	Industrial Arts 7	Jocelyn Canlas	Science	Industrial Arts 7	Jocelyn Canlas	Math	Industrial Arts 7	Anastacia Timoteo
+10	02:05 PM	03:00 PM	8	Dahlia 3	Mapeh	Industrial Arts 7	Franz Philip Tulabut	Mapeh	Industrial Arts 7	Franz Philip Tulabut	Mapeh	Industrial Arts 7	Franz Philip Tulabut	Math	Industrial Arts 7	Anastacia Timoteo	Mapeh	Industrial Arts 7	Franz Philip Tulabut
 11	03:00 PM	03:15 PM	8	Dahlia 3															
-12	03:15 PM	04:10 PM	8	Dahlia 3	Filipino	IA Room 07	Henry Andrade	Math	IA Room 07	Anastacia Timoteo	Filipino	IA Room 07	Henry Andrade	Filipino	IA Room 07	Henry Andrade	Filipino	IA Room 07	Henry Andrade
-13	04:10 PM	05:05 PM	8	Dahlia 3	Values	IA Room 07	Sheena Dizon	Values	IA Room 07	Sheena Dizon	Aralin	IA Room 07	Pamela Ramos	Aralin	IA Room 07	Pamela Ramos	Aralin	IA Room 07	Pamela Ramos
+12	03:15 PM	04:10 PM	8	Dahlia 3	Filipino	Industrial Arts 7	Henry Andrade	Math	Industrial Arts 7	Anastacia Timoteo	Filipino	Industrial Arts 7	Henry Andrade	Filipino	Industrial Arts 7	Henry Andrade	Filipino	Industrial Arts 7	Henry Andrade
+13	04:10 PM	05:05 PM	8	Dahlia 3	Values	Industrial Arts 7	Sheena Dizon	Values	Industrial Arts 7	Sheena Dizon	Aralin	Industrial Arts 7	Pamela Ramos	Aralin	Industrial Arts 7	Pamela Ramos	Aralin	Industrial Arts 7	Pamela Ramos
 14	05:05 PM	06:00 PM	8	Dahlia 3	TLE			TLE			TLE			TLE			TLE		
 1	06:30 AM	07:25 AM	8	Dahlia 4															
 2	07:25 AM	08:20 AM	8	Dahlia 4															
@@ -215,13 +215,13 @@
 5	09:30 AM	10:25 AM	8	Dahlia 4															
 6	10:25 AM	11:20 AM	8	Dahlia 4															
 7	11:20 AM	12:15 PM	8	Dahlia 4															
-8	12:15 PM	01:10 PM	8	Dahlia 4	Filipino	IA Room 08	Henry Andrade	Math	IA Room 08	Anastacia Timoteo	Filipino	IA Room 08	Henry Andrade	Filipino	IA Room 08	Henry Andrade	Filipino	IA Room 08	Henry Andrade
-9	01:10 PM	02:05 PM	8	Dahlia 4	Mapeh	IA Room 08	Franz Philip Tulabut	Mapeh	IA Room 08	Franz Philip Tulabut	Math	IA Room 08	Anastacia Timoteo	Mapeh	IA Room 08	Franz Philip Tulabut	Mapeh	IA Room 08	Franz Philip Tulabut
-10	02:05 PM	03:00 PM	8	Dahlia 4	Math	IA Room 08	Anastacia Timoteo	English	IA Room 08	Susana Sinohin	English	IA Room 08	Susana Sinohin	English	IA Room 08	Susana Sinohin	English	IA Room 08	Susana Sinohin
+8	12:15 PM	01:10 PM	8	Dahlia 4	Filipino	Industrial Arts 8	Henry Andrade	Math	Industrial Arts 8	Anastacia Timoteo	Filipino	Industrial Arts 8	Henry Andrade	Filipino	Industrial Arts 8	Henry Andrade	Filipino	Industrial Arts 8	Henry Andrade
+9	01:10 PM	02:05 PM	8	Dahlia 4	Mapeh	Industrial Arts 8	Franz Philip Tulabut	Mapeh	Industrial Arts 8	Franz Philip Tulabut	Math	Industrial Arts 8	Anastacia Timoteo	Mapeh	Industrial Arts 8	Franz Philip Tulabut	Mapeh	Industrial Arts 8	Franz Philip Tulabut
+10	02:05 PM	03:00 PM	8	Dahlia 4	Math	Industrial Arts 8	Anastacia Timoteo	English	Industrial Arts 8	Susana Sinohin	English	Industrial Arts 8	Susana Sinohin	English	Industrial Arts 8	Susana Sinohin	English	Industrial Arts 8	Susana Sinohin
 11	03:00 PM	03:15 PM	8	Dahlia 4															
-12	03:15 PM	04:10 PM	8	Dahlia 4	Aralin	IA Room 08	Pamela Ramos	Aralin	IA Room 08	Pamela Ramos	Values	IA Room 08	Rona Lyn Santos	Values	IA Room 08	Rona Lyn Santos	Aralin	IA Room 08	Pamela Ramos
+12	03:15 PM	04:10 PM	8	Dahlia 4	Aralin	Industrial Arts 8	Pamela Ramos	Aralin	Industrial Arts 8	Pamela Ramos	Values	Industrial Arts 8	Rona Lyn Santos	Values	Industrial Arts 8	Rona Lyn Santos	Aralin	Industrial Arts 8	Pamela Ramos
 13	04:10 PM	05:05 PM	8	Dahlia 4	TLE			TLE			TLE			TLE			TLE		
-14	05:05 PM	06:00 PM	8	Dahlia 4	Science	IA Room 08	Jocelyn Canlas	Science	IA Room 08	Jocelyn Canlas	Science	IA Room 08	Jocelyn Canlas	Science	IA Room 08	Jocelyn Canlas	Math	IA Room 08	Anastacia Timoteo
+14	05:05 PM	06:00 PM	8	Dahlia 4	Science	Industrial Arts 8	Jocelyn Canlas	Science	Industrial Arts 8	Jocelyn Canlas	Science	Industrial Arts 8	Jocelyn Canlas	Science	Industrial Arts 8	Jocelyn Canlas	Math	Industrial Arts 8	Anastacia Timoteo
 1	06:30 AM	07:25 AM	8	Dahlia 5															
 2	07:25 AM	08:20 AM	8	Dahlia 5															
 3	08:20 AM	09:15 AM	8	Dahlia 5															
@@ -229,13 +229,13 @@
 5	09:30 AM	10:25 AM	8	Dahlia 5															
 6	10:25 AM	11:20 AM	8	Dahlia 5															
 7	11:20 AM	12:15 PM	8	Dahlia 5															
-8	12:15 PM	01:10 PM	8	Dahlia 5	Aralin	IA Room 09	Pamela Ramos	Aralin	IA Room 09	Pamela Ramos	Aralin	IA Room 09	Pamela Ramos	Values	Lotus 2	Mercedita Tiomico	Values	Lotus 2	Mercedita Tiomico
-9	01:10 PM	02:05 PM	8	Dahlia 5	Math	IA Room 09	Anastacia Timoteo	English	IA Room 09	Susana Sinohin	English	IA Room 09	Susana Sinohin	English	IA Room 09	Susana Sinohin	English	IA Room 09	Susana Sinohin
-10	02:05 PM	03:00 PM	8	Dahlia 5	Filipino	IA Room 09	Henry Andrade	Filipino	IA Room 09	Henry Andrade	Filipino	IA Room 09	Henry Andrade	Filipino	IA Room 09	Henry Andrade	Math	IA Room 09	Anastacia Timoteo
+8	12:15 PM	01:10 PM	8	Dahlia 5	Aralin	Industrial Arts 9	Pamela Ramos	Aralin	Industrial Arts 9	Pamela Ramos	Aralin	Industrial Arts 9	Pamela Ramos	Values	Lotus 2	Mercedita Tiomico	Values	Lotus 2	Mercedita Tiomico
+9	01:10 PM	02:05 PM	8	Dahlia 5	Math	Industrial Arts 9	Anastacia Timoteo	English	Industrial Arts 9	Susana Sinohin	English	Industrial Arts 9	Susana Sinohin	English	Industrial Arts 9	Susana Sinohin	English	Industrial Arts 9	Susana Sinohin
+10	02:05 PM	03:00 PM	8	Dahlia 5	Filipino	Industrial Arts 9	Henry Andrade	Filipino	Industrial Arts 9	Henry Andrade	Filipino	Industrial Arts 9	Henry Andrade	Filipino	Industrial Arts 9	Henry Andrade	Math	Industrial Arts 9	Anastacia Timoteo
 11	03:00 PM	03:15 PM	8	Dahlia 5															
 12	03:15 PM	04:10 PM	8	Dahlia 5	TLE			TLE			TLE			TLE			TLE		
-13	04:10 PM	05:05 PM	8	Dahlia 5	Science	IA Room 09	Jocelyn Canlas	Science	IA Room 09	Jocelyn Canlas	Math	IA Room 09	Anastacia Timoteo	Science	IA Room 09	Jocelyn Canlas	Science	IA Room 09	Jocelyn Canlas
-14	05:05 PM	06:00 PM	8	Dahlia 5	Mapeh	IA Room 09	Franz Philip Tulabut	Mapeh	IA Room 09	Franz Philip Tulabut	Mapeh	IA Room 09	Franz Philip Tulabut	Math	IA Room 09	Anastacia Timoteo	Mapeh	IA Room 09	Franz Philip Tulabut
+13	04:10 PM	05:05 PM	8	Dahlia 5	Science	Industrial Arts 9	Jocelyn Canlas	Science	Industrial Arts 9	Jocelyn Canlas	Math	Industrial Arts 9	Anastacia Timoteo	Science	Industrial Arts 9	Jocelyn Canlas	Science	Industrial Arts 9	Jocelyn Canlas
+14	05:05 PM	06:00 PM	8	Dahlia 5	Mapeh	Industrial Arts 9	Franz Philip Tulabut	Mapeh	Industrial Arts 9	Franz Philip Tulabut	Mapeh	Industrial Arts 9	Franz Philip Tulabut	Math	Industrial Arts 9	Anastacia Timoteo	Mapeh	Industrial Arts 9	Franz Philip Tulabut
 1	06:30 AM	07:25 AM	8	Dahlia 6															
 2	07:25 AM	08:20 AM	8	Dahlia 6															
 3	08:20 AM	09:15 AM	8	Dahlia 6															
@@ -244,12 +244,12 @@
 6	10:25 AM	11:20 AM	8	Dahlia 6															
 7	11:20 AM	12:15 PM	8	Dahlia 6															
 8	12:15 PM	01:10 PM	8	Dahlia 6	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	8	Dahlia 6	Filipino	IA Room 13	Henry Andrade	Math	IA Room 13	Anastacia Timoteo	Filipino	IA Room 13	Henry Andrade	Filipino	IA Room 13	Henry Andrade	Filipino	IA Room 13	Henry Andrade
-10	02:05 PM	03:00 PM	8	Dahlia 6	Aralin	IA Room 13	Pamela Ramos	Aralin	IA Room 13	Pamela Ramos	Aralin	IA Room 13	Pamela Ramos	Values	IA Room 13	Sheena Dizon	Values	IA Room 13	Sheena Dizon
+9	01:10 PM	02:05 PM	8	Dahlia 6	Filipino	Industrial Arts 13	Henry Andrade	Math	Industrial Arts 13	Anastacia Timoteo	Filipino	Industrial Arts 13	Henry Andrade	Filipino	Industrial Arts 13	Henry Andrade	Filipino	Industrial Arts 13	Henry Andrade
+10	02:05 PM	03:00 PM	8	Dahlia 6	Aralin	Industrial Arts 13	Pamela Ramos	Aralin	Industrial Arts 13	Pamela Ramos	Aralin	Industrial Arts 13	Pamela Ramos	Values	Industrial Arts 13	Sheena Dizon	Values	Industrial Arts 13	Sheena Dizon
 11	03:00 PM	03:15 PM	8	Dahlia 6															
-12	03:15 PM	04:10 PM	8	Dahlia 6	Science	IA Room 13	Jocelyn Canlas	Science	IA Room 13	Jocelyn Canlas	Science	IA Room 13	Jocelyn Canlas	Science	IA Room 13	Jocelyn Canlas	Math	IA Room 13	Anastacia Timoteo
-13	04:10 PM	05:05 PM	8	Dahlia 6	Mapeh	IA Room 13	Franz Philip Tulabut	Mapeh	IA Room 13	Franz Philip Tulabut	Mapeh	IA Room 13	Franz Philip Tulabut	Math	IA Room 13	Anastacia Timoteo	Mapeh	IA Room 13	Franz Philip Tulabut
-14	05:05 PM	06:00 PM	8	Dahlia 6	English	IA Room 13	Susana Sinohin	English	IA Room 13	Susana Sinohin	Math	IA Room 13	Anastacia Timoteo	English	IA Room 13	Susana Sinohin	English	IA Room 13	Susana Sinohin
+12	03:15 PM	04:10 PM	8	Dahlia 6	Science	Industrial Arts 13	Jocelyn Canlas	Science	Industrial Arts 13	Jocelyn Canlas	Science	Industrial Arts 13	Jocelyn Canlas	Science	Industrial Arts 13	Jocelyn Canlas	Math	Industrial Arts 13	Anastacia Timoteo
+13	04:10 PM	05:05 PM	8	Dahlia 6	Mapeh	Industrial Arts 13	Franz Philip Tulabut	Mapeh	Industrial Arts 13	Franz Philip Tulabut	Mapeh	Industrial Arts 13	Franz Philip Tulabut	Math	Industrial Arts 13	Anastacia Timoteo	Mapeh	Industrial Arts 13	Franz Philip Tulabut
+14	05:05 PM	06:00 PM	8	Dahlia 6	English	Industrial Arts 13	Susana Sinohin	English	Industrial Arts 13	Susana Sinohin	Math	Industrial Arts 13	Anastacia Timoteo	English	Industrial Arts 13	Susana Sinohin	English	Industrial Arts 13	Susana Sinohin
 1	06:30 AM	07:25 AM	8	Carnation 1															
 2	07:25 AM	08:20 AM	8	Carnation 1															
 3	08:20 AM	09:15 AM	8	Carnation 1															
@@ -522,7 +522,7 @@
 4	09:15 AM	09:30 AM	8	Stargazer 2															
 5	09:30 AM	10:25 AM	8	Stargazer 2															
 6	10:25 AM	11:20 AM	8	Stargazer 2															
-7	11:20 AM	12:15 PM	8	Stargazer 2	Aralin	IA Room 13	Jannet Laxamana												
+7	11:20 AM	12:15 PM	8	Stargazer 2	Aralin	Industrial Arts 13	Jannet Laxamana												
 8	12:15 PM	01:10 PM	8	Stargazer 2	---			Values	Lotus 2	Mercedita Tiomico	Values	Lotus 2	Mercedita Tiomico	Aralin	Anthurium 2	Jannet Laxamana	Aralin	Anthurium 2	Jannet Laxamana
 9	01:10 PM	02:05 PM	8	Stargazer 2	Filipino	Anthurium 2	Maria Angelica Yumul	Filipino	Anthurium 2	Maria Angelica Yumul	Math	Anthurium 2	Katherina Joy Francisco	Filipino	Anthurium 2	Maria Angelica Yumul	Filipino	Anthurium 2	Maria Angelica Yumul
 10	02:05 PM	03:00 PM	8	Stargazer 2	English	Anthurium 2	Alona Prado	Math	Anthurium 2	Katherina Joy Francisco	English	Anthurium 2	Alona Prado	English	Anthurium 2	Alona Prado	English	Anthurium 2	Alona Prado
@@ -536,7 +536,7 @@
 4	09:15 AM	09:30 AM	8	Stargazer 3															
 5	09:30 AM	10:25 AM	8	Stargazer 3															
 6	10:25 AM	11:20 AM	8	Stargazer 3															
-7	11:20 AM	12:15 PM	8	Stargazer 3				Aralin	IA Room 13	Jannet Laxamana	Aralin	IA Room 13	Jannet Laxamana	Aralin	IA Room 13	Jannet Laxamana			
+7	11:20 AM	12:15 PM	8	Stargazer 3				Aralin	Industrial Arts 13	Jannet Laxamana	Aralin	Industrial Arts 13	Jannet Laxamana	Aralin	Industrial Arts 13	Jannet Laxamana			
 8	12:15 PM	01:10 PM	8	Stargazer 3	TLE			TLE			TLE			TLE			TLE		
 9	01:10 PM	02:05 PM	8	Stargazer 3				Values	Anthurium 3	Marlet Santos	Values	Anthurium 3	Marlet Santos						
 10	02:05 PM	03:00 PM	8	Stargazer 3	Math	Anthurium 3	Katherina Joy Francisco	Filipino	Anthurium 3	Maria Angelica Yumul	Filipino	Anthurium 3	Maria Angelica Yumul	Filipino	Anthurium 3	Maria Angelica Yumul	Filipino	Anthurium 3	Maria Angelica Yumul
@@ -915,7 +915,7 @@
 5	10:10 AM	10:25 AM	10	Bonifacio 3															
 6	10:25 AM	11:20 AM	10	Bonifacio 3	Science	Pagcor 403	Consuelo Viray	Science	Pagcor 403	Consuelo Viray	Science	Pagcor 403	Consuelo Viray	Science	Pagcor 403	Consuelo Viray	Math	Pagcor 403	Bernadette Delos Santos
 7	11:20 AM	12:15 PM	10	Bonifacio 3	Aralin	Pagcor 403	Carolina Chu	Values	Pagcor 403	Michelle Lingat	Values	Pagcor 403	Michelle Lingat	Aralin	Pagcor 403	Carolina Chu			
-8	12:15 PM	01:10 PM	10	Bonifacio 3													Aralin	IA Room 09	Carolina Chu
+8	12:15 PM	01:10 PM	10	Bonifacio 3													Aralin	Industrial Arts 9	Carolina Chu
 9	01:10 PM	02:05 PM	10	Bonifacio 3															
 10	02:05 PM	03:00 PM	10	Bonifacio 3															
 11	03:00 PM	03:55 PM	10	Bonifacio 3															
@@ -1188,13 +1188,13 @@
 12	03:55 PM	04:10 PM	10	Jacinto 4															
 13	04:10 PM	05:05 PM	10	Jacinto 4															
 14	05:05 PM	06:00 PM	10	Jacinto 4															
-1	06:30 AM	07:25 AM	10	Jacinto 5	Filipino	VMP 1	Winnie Nugoy	Filipino	VMP 1	Winnie Nugoy	Filipino	VMP 1	Winnie Nugoy	Math	VMP 1	Edyson Pangilinan	Filipino	VMP 1	Winnie Nugoy
-2	07:25 AM	08:20 AM	10	Jacinto 5	English	VMP 1	Jocelyn Pabalan	English	VMP 1	Jocelyn Pabalan	Math	VMP 1	Edyson Pangilinan	English	VMP 1	Jocelyn Pabalan	English	VMP 1	Jocelyn Pabalan
-3	08:20 AM	09:15 AM	10	Jacinto 5	Mapeh	VMP 1	Erwin Arnedo	Mapeh	VMP 1	Erwin Arnedo	Mapeh	VMP 1	Erwin Arnedo	Mapeh	VMP 1	Erwin Arnedo	Math	VMP 1	Edyson Pangilinan
-4	09:15 AM	10:10 AM	10	Jacinto 5	Math	VMP 1	Edyson Pangilinan	Science	VMP 1	Jaira Amalthia Santos	Science	VMP 1	Jaira Amalthia Santos	Science	VMP 1	Jaira Amalthia Santos	Science	VMP 1	Jaira Amalthia Santos
+1	06:30 AM	07:25 AM	10	Jacinto 5	Filipino	Values Multipurpose 1	Winnie Nugoy	Filipino	Values Multipurpose 1	Winnie Nugoy	Filipino	Values Multipurpose 1	Winnie Nugoy	Math	Values Multipurpose 1	Edyson Pangilinan	Filipino	Values Multipurpose 1	Winnie Nugoy
+2	07:25 AM	08:20 AM	10	Jacinto 5	English	Values Multipurpose 1	Jocelyn Pabalan	English	Values Multipurpose 1	Jocelyn Pabalan	Math	Values Multipurpose 1	Edyson Pangilinan	English	Values Multipurpose 1	Jocelyn Pabalan	English	Values Multipurpose 1	Jocelyn Pabalan
+3	08:20 AM	09:15 AM	10	Jacinto 5	Mapeh	Values Multipurpose 1	Erwin Arnedo	Mapeh	Values Multipurpose 1	Erwin Arnedo	Mapeh	Values Multipurpose 1	Erwin Arnedo	Mapeh	Values Multipurpose 1	Erwin Arnedo	Math	Values Multipurpose 1	Edyson Pangilinan
+4	09:15 AM	10:10 AM	10	Jacinto 5	Math	Values Multipurpose 1	Edyson Pangilinan	Science	Values Multipurpose 1	Jaira Amalthia Santos	Science	Values Multipurpose 1	Jaira Amalthia Santos	Science	Values Multipurpose 1	Jaira Amalthia Santos	Science	Values Multipurpose 1	Jaira Amalthia Santos
 5	10:10 AM	10:25 AM	10	Jacinto 5															
 6	10:25 AM	11:20 AM	10	Jacinto 5	TLE			TLE			TLE			TLE			TLE		
-7	11:20 AM	12:15 PM	10	Jacinto 5	Aralin	VMP 1	Jesusa Garcia	Values	VMP 1	Mariquita Reyes	Values	VMP 1	Mariquita Reyes	Aralin	VMP 1	Jesusa Garcia	Aralin	VMP 1	Jesusa Garcia
+7	11:20 AM	12:15 PM	10	Jacinto 5	Aralin	Values Multipurpose 1	Jesusa Garcia	Values	Values Multipurpose 1	Mariquita Reyes	Values	Values Multipurpose 1	Mariquita Reyes	Aralin	Values Multipurpose 1	Jesusa Garcia	Aralin	Values Multipurpose 1	Jesusa Garcia
 8	12:15 PM	01:10 PM	10	Jacinto 5															
 9	01:10 PM	02:05 PM	10	Jacinto 5															
 10	02:05 PM	03:00 PM	10	Jacinto 5															
@@ -1202,14 +1202,14 @@
 12	03:55 PM	04:10 PM	10	Jacinto 5															
 13	04:10 PM	05:05 PM	10	Jacinto 5															
 14	05:05 PM	06:00 PM	10	Jacinto 5															
-1	06:30 AM	07:25 AM	10	Jacinto 6	Values	VMP 2	Clare Anne Soccorro Dungo				Values	VMP 2	Clare Anne Soccorro Dungo	Aralin	VMP 2	Jesusa Garcia	Aralin	VMP 2	Jesusa Garcia
-2	07:25 AM	08:20 AM	10	Jacinto 6	Math	VMP 2	Edyson Pangilinan	Filipino	VMP 2	Winnie Nugoy	Filipino	VMP 2	Winnie Nugoy	Filipino	VMP 2	Winnie Nugoy	Filipino	VMP 2	Winnie Nugoy
-3	08:20 AM	09:15 AM	10	Jacinto 6	English	VMP 2	Jocelyn Pabalan	English	VMP 2	Jocelyn Pabalan	English	VMP 2	Jocelyn Pabalan	Math	VMP 2	Edyson Pangilinan	English	VMP 2	Jocelyn Pabalan
-4	09:15 AM	10:10 AM	10	Jacinto 6	Mapeh	VMP 2	Erwin Arnedo	Math	VMP 2	Edyson Pangilinan	Mapeh	VMP 2	Erwin Arnedo	Mapeh	VMP 2	Erwin Arnedo	Mapeh	VMP 2	Erwin Arnedo
+1	06:30 AM	07:25 AM	10	Jacinto 6	Values	Values Multipurpose 2	Clare Anne Soccorro Dungo				Values	Values Multipurpose 2	Clare Anne Soccorro Dungo	Aralin	Values Multipurpose 2	Jesusa Garcia	Aralin	Values Multipurpose 2	Jesusa Garcia
+2	07:25 AM	08:20 AM	10	Jacinto 6	Math	Values Multipurpose 2	Edyson Pangilinan	Filipino	Values Multipurpose 2	Winnie Nugoy	Filipino	Values Multipurpose 2	Winnie Nugoy	Filipino	Values Multipurpose 2	Winnie Nugoy	Filipino	Values Multipurpose 2	Winnie Nugoy
+3	08:20 AM	09:15 AM	10	Jacinto 6	English	Values Multipurpose 2	Jocelyn Pabalan	English	Values Multipurpose 2	Jocelyn Pabalan	English	Values Multipurpose 2	Jocelyn Pabalan	Math	Values Multipurpose 2	Edyson Pangilinan	English	Values Multipurpose 2	Jocelyn Pabalan
+4	09:15 AM	10:10 AM	10	Jacinto 6	Mapeh	Values Multipurpose 2	Erwin Arnedo	Math	Values Multipurpose 2	Edyson Pangilinan	Mapeh	Values Multipurpose 2	Erwin Arnedo	Mapeh	Values Multipurpose 2	Erwin Arnedo	Mapeh	Values Multipurpose 2	Erwin Arnedo
 5	10:10 AM	10:25 AM	10	Jacinto 6															
-6	10:25 AM	11:20 AM	10	Jacinto 6	Science	VMP 2	Jaira Amalthia Santos	Science	VMP 2	Jaira Amalthia Santos	Math	VMP 2	Edyson Pangilinan	Science	VMP 2	Jaira Amalthia Santos	Science	VMP 2	Jaira Amalthia Santos
+6	10:25 AM	11:20 AM	10	Jacinto 6	Science	Values Multipurpose 2	Jaira Amalthia Santos	Science	Values Multipurpose 2	Jaira Amalthia Santos	Math	Values Multipurpose 2	Edyson Pangilinan	Science	Values Multipurpose 2	Jaira Amalthia Santos	Science	Values Multipurpose 2	Jaira Amalthia Santos
 7	11:20 AM	12:15 PM	10	Jacinto 6	TLE			TLE			TLE			TLE			TLE		
-8	12:15 PM	01:10 PM	10	Jacinto 6							Aralin	VMP 1	Jesusa Garcia						
+8	12:15 PM	01:10 PM	10	Jacinto 6							Aralin	Values Multipurpose 1	Jesusa Garcia						
 9	01:10 PM	02:05 PM	10	Jacinto 6															
 10	02:05 PM	03:00 PM	10	Jacinto 6															
 11	03:00 PM	03:55 PM	10	Jacinto 6															
@@ -1328,13 +1328,13 @@
 12	03:55 PM	04:10 PM	10	Mabini 2															
 13	04:10 PM	05:05 PM	10	Mabini 2															
 14	05:05 PM	06:00 PM	10	Mabini 2															
-1	06:30 AM	07:25 AM	10	Mabini 3	Science	IA Room 15	Jover Canlas	Math	IA Room 15	Arzen Dave Buan	Science	IA Room 15	Jover Canlas	Science	IA Room 15	Jover Canlas	Science	IA Room 15	Jover Canlas
+1	06:30 AM	07:25 AM	10	Mabini 3	Science	Industrial Arts 15	Jover Canlas	Math	Industrial Arts 15	Arzen Dave Buan	Science	Industrial Arts 15	Jover Canlas	Science	Industrial Arts 15	Jover Canlas	Science	Industrial Arts 15	Jover Canlas
 2	07:25 AM	08:20 AM	10	Mabini 3	TLE			TLE			TLE			TLE			TLE		
-3	08:20 AM	09:15 AM	10	Mabini 3	Values	IA Room 15	Mariquita Reyes										Values	IA Room 15	Mariquita Reyes
-4	09:15 AM	10:10 AM	10	Mabini 3	Filipino	IA Room 15	Kimberly Manalili	Filipino	IA Room 15	Kimberly Manalili	Filipino	IA Room 15	Kimberly Manalili	Math	IA Room 15	Arzen Dave Buan	Filipino	IA Room 15	Kimberly Manalili
+3	08:20 AM	09:15 AM	10	Mabini 3	Values	Industrial Arts 15	Mariquita Reyes										Values	Industrial Arts 15	Mariquita Reyes
+4	09:15 AM	10:10 AM	10	Mabini 3	Filipino	Industrial Arts 15	Kimberly Manalili	Filipino	Industrial Arts 15	Kimberly Manalili	Filipino	Industrial Arts 15	Kimberly Manalili	Math	Industrial Arts 15	Arzen Dave Buan	Filipino	Industrial Arts 15	Kimberly Manalili
 5	10:10 AM	10:25 AM	10	Mabini 3															
-6	10:25 AM	11:20 AM	10	Mabini 3	Mapeh	IA Room 15	Gloria Mendoza	Mapeh	IA Room 15	Gloria Mendoza	Mapeh	IA Room 15	Gloria Mendoza	Mapeh	IA Room 15	Gloria Mendoza	Math	IA Room 15	Arzen Dave Buan
-7	11:20 AM	12:15 PM	10	Mabini 3	English	IA Room 15	Mary Rosecoeli Patdu	English	IA Room 15	Mary Rosecoeli Patdu	Math	IA Room 15	Arzen Dave Buan	English	IA Room 15	Mary Rosecoeli Patdu	English	IA Room 15	Mary Rosecoeli Patdu
+6	10:25 AM	11:20 AM	10	Mabini 3	Mapeh	Industrial Arts 15	Gloria Mendoza	Mapeh	Industrial Arts 15	Gloria Mendoza	Mapeh	Industrial Arts 15	Gloria Mendoza	Mapeh	Industrial Arts 15	Gloria Mendoza	Math	Industrial Arts 15	Arzen Dave Buan
+7	11:20 AM	12:15 PM	10	Mabini 3	English	Industrial Arts 15	Mary Rosecoeli Patdu	English	Industrial Arts 15	Mary Rosecoeli Patdu	Math	Industrial Arts 15	Arzen Dave Buan	English	Industrial Arts 15	Mary Rosecoeli Patdu	English	Industrial Arts 15	Mary Rosecoeli Patdu
 8	12:15 PM	01:10 PM	10	Mabini 3	Aralin	Pagcor 205	Mark Anthony Sawal	Aralin	Pagcor 205	Mark Anthony Sawal				Aralin	Pagcor 205	Mark Anthony Sawal			
 9	01:10 PM	02:05 PM	10	Mabini 3															
 10	02:05 PM	03:00 PM	10	Mabini 3															
@@ -1342,13 +1342,13 @@
 12	03:55 PM	04:10 PM	10	Mabini 3															
 13	04:10 PM	05:05 PM	10	Mabini 3															
 14	05:05 PM	06:00 PM	10	Mabini 3															
-1	06:30 AM	07:25 AM	10	Mabini 4	Mapeh	IA Room 16	Gloria Mendoza	Mapeh	IA Room 16	Gloria Mendoza	Mapeh	IA Room 16	Gloria Mendoza	Math	IA Room 16	Arzen Dave Buan	Mapeh	IA Room 16	Gloria Mendoza
-2	07:25 AM	08:20 AM	10	Mabini 4	Science	IA Room 16	Jover Canlas	Science	IA Room 16	Jover Canlas	Math	IA Room 16	Arzen Dave Buan	Science	IA Room 16	Jover Canlas	Science	IA Room 16	Jover Canlas
+1	06:30 AM	07:25 AM	10	Mabini 4	Mapeh	Industrial Arts 16	Gloria Mendoza	Mapeh	Industrial Arts 16	Gloria Mendoza	Mapeh	Industrial Arts 16	Gloria Mendoza	Math	Industrial Arts 16	Arzen Dave Buan	Mapeh	Industrial Arts 16	Gloria Mendoza
+2	07:25 AM	08:20 AM	10	Mabini 4	Science	Industrial Arts 16	Jover Canlas	Science	Industrial Arts 16	Jover Canlas	Math	Industrial Arts 16	Arzen Dave Buan	Science	Industrial Arts 16	Jover Canlas	Science	Industrial Arts 16	Jover Canlas
 3	08:20 AM	09:15 AM	10	Mabini 4	TLE			TLE			TLE			TLE			TLE		
-4	09:15 AM	10:10 AM	10	Mabini 4	Aralin	IA Room 16	Arlene Valiente	Aralin	IA Room 16	Arlene Valiente	Aralin	IA Room 16	Arlene Valiente	Values	IA Room 16	Mariquita Reyes	Values	IA Room 16	Mariquita Reyes
+4	09:15 AM	10:10 AM	10	Mabini 4	Aralin	Industrial Arts 16	Arlene Valiente	Aralin	Industrial Arts 16	Arlene Valiente	Aralin	Industrial Arts 16	Arlene Valiente	Values	Industrial Arts 16	Mariquita Reyes	Values	Industrial Arts 16	Mariquita Reyes
 5	10:10 AM	10:25 AM	10	Mabini 4															
-6	10:25 AM	11:20 AM	10	Mabini 4	English	IA Room 16	Mary Rosecoeli Patdu	Math	IA Room 16	Arzen Dave Buan	English	IA Room 16	Mary Rosecoeli Patdu	English	IA Room 16	Mary Rosecoeli Patdu	English	IA Room 16	Mary Rosecoeli Patdu
-7	11:20 AM	12:15 PM	10	Mabini 4	Math	IA Room 16	Arzen Dave Buan	Filipino	IA Room 16	Kimberly Manalili	Filipino	IA Room 16	Kimberly Manalili	Filipino	IA Room 16	Kimberly Manalili	Filipino	IA Room 16	Kimberly Manalili
+6	10:25 AM	11:20 AM	10	Mabini 4	English	Industrial Arts 16	Mary Rosecoeli Patdu	Math	Industrial Arts 16	Arzen Dave Buan	English	Industrial Arts 16	Mary Rosecoeli Patdu	English	Industrial Arts 16	Mary Rosecoeli Patdu	English	Industrial Arts 16	Mary Rosecoeli Patdu
+7	11:20 AM	12:15 PM	10	Mabini 4	Math	Industrial Arts 16	Arzen Dave Buan	Filipino	Industrial Arts 16	Kimberly Manalili	Filipino	Industrial Arts 16	Kimberly Manalili	Filipino	Industrial Arts 16	Kimberly Manalili	Filipino	Industrial Arts 16	Kimberly Manalili
 8	12:15 PM	01:10 PM	10	Mabini 4															
 9	01:10 PM	02:05 PM	10	Mabini 4															
 10	02:05 PM	03:00 PM	10	Mabini 4															
@@ -1910,12 +1910,12 @@
 6	10:25 AM	11:20 AM	9	Pearl 5															
 7	11:20 AM	12:15 PM	9	Pearl 5															
 8	12:15 PM	01:10 PM	9	Pearl 5	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	9	Pearl 5	Math	VMP 1	Allan Limin	Mapeh	VMP 1	Sammy Catu	Mapeh	VMP 1	Sammy Catu	Mapeh	VMP 1	Sammy Catu	Mapeh	VMP 1	Sammy Catu
-10	02:05 PM	03:00 PM	9	Pearl 5	Filipino	VMP 1	Charito Picarzos	Filipino	VMP 1	Charito Picarzos	Filipino	VMP 1	Charito Picarzos	Math	VMP 1	Allan Limin	Filipino	VMP 1	Charito Picarzos
-11	03:00 PM	03:55 PM	9	Pearl 5	Science	VMP 1	Loreta Jurado	Math	VMP 1	Allan Limin	Science	VMP 1	Loreta Jurado	Science	VMP 1	Loreta Jurado	Science	VMP 1	Loreta Jurado
+9	01:10 PM	02:05 PM	9	Pearl 5	Math	Values Multipurpose 1	Allan Limin	Mapeh	Values Multipurpose 1	Sammy Catu	Mapeh	Values Multipurpose 1	Sammy Catu	Mapeh	Values Multipurpose 1	Sammy Catu	Mapeh	Values Multipurpose 1	Sammy Catu
+10	02:05 PM	03:00 PM	9	Pearl 5	Filipino	Values Multipurpose 1	Charito Picarzos	Filipino	Values Multipurpose 1	Charito Picarzos	Filipino	Values Multipurpose 1	Charito Picarzos	Math	Values Multipurpose 1	Allan Limin	Filipino	Values Multipurpose 1	Charito Picarzos
+11	03:00 PM	03:55 PM	9	Pearl 5	Science	Values Multipurpose 1	Loreta Jurado	Math	Values Multipurpose 1	Allan Limin	Science	Values Multipurpose 1	Loreta Jurado	Science	Values Multipurpose 1	Loreta Jurado	Science	Values Multipurpose 1	Loreta Jurado
 12	03:55 PM	04:10 PM	9	Pearl 5															
-13	04:10 PM	05:05 PM	9	Pearl 5	English	VMP 1	Jovita Lazatin	English	VMP 1	Jovita Lazatin	Math	VMP 1	Allan Limin	English	VMP 1	Jovita Lazatin	English	VMP 1	Jovita Lazatin
-14	05:05 PM	06:00 PM	9	Pearl 5	Values	VMP 1	Annabelle Alfaro	Aralin	VMP 1	Camile Tobias	Aralin	VMP 1	Camile Tobias	Values	VMP 1	Annabelle Alfaro	Aralin	VMP 1	Camile Tobias
+13	04:10 PM	05:05 PM	9	Pearl 5	English	Values Multipurpose 1	Jovita Lazatin	English	Values Multipurpose 1	Jovita Lazatin	Math	Values Multipurpose 1	Allan Limin	English	Values Multipurpose 1	Jovita Lazatin	English	Values Multipurpose 1	Jovita Lazatin
+14	05:05 PM	06:00 PM	9	Pearl 5	Values	Values Multipurpose 1	Annabelle Alfaro	Aralin	Values Multipurpose 1	Camile Tobias	Aralin	Values Multipurpose 1	Camile Tobias	Values	Values Multipurpose 1	Annabelle Alfaro	Aralin	Values Multipurpose 1	Camile Tobias
 1	06:30 AM	07:25 AM	9	Pearl 6															
 2	07:25 AM	08:20 AM	9	Pearl 6															
 3	08:20 AM	09:15 AM	9	Pearl 6															
@@ -1923,12 +1923,12 @@
 5	10:10 AM	10:25 AM	9	Pearl 6															
 6	10:25 AM	11:20 AM	9	Pearl 6															
 7	11:20 AM	12:15 PM	9	Pearl 6															
-8	12:15 PM	01:10 PM	9	Pearl 6	Math	VMP 2	Allan Limin	Filipino	VMP 2	Rose Esparas	Filipino	VMP 2	Rose Esparas	Filipino	VMP 2	Rose Esparas	Filipino	VMP 2	Rose Esparas
-9	01:10 PM	02:05 PM	9	Pearl 6	Science	VMP 2	Loreta Jurado	Science	VMP 2	Loreta Jurado	Science	VMP 2	Loreta Jurado	Math	VMP 2	Allan Limin	Science	VMP 2	Loreta Jurado
-10	02:05 PM	03:00 PM	9	Pearl 6	Mapeh	VMP 2	Sammy Catu	Mapeh	VMP 2	Sammy Catu	Mapeh	VMP 2	Sammy Catu	Mapeh	VMP 2	Sammy Catu	Math	VMP 2	Allan Limin
-11	03:00 PM	03:55 PM	9	Pearl 6	English	VMP 2	Jovita Lazatin	English	VMP 2	Jovita Lazatin	Math	VMP 2	Allan Limin	English	VMP 2	Jovita Lazatin	English	VMP 2	Jovita Lazatin
+8	12:15 PM	01:10 PM	9	Pearl 6	Math	Values Multipurpose 2	Allan Limin	Filipino	Values Multipurpose 2	Rose Esparas	Filipino	Values Multipurpose 2	Rose Esparas	Filipino	Values Multipurpose 2	Rose Esparas	Filipino	Values Multipurpose 2	Rose Esparas
+9	01:10 PM	02:05 PM	9	Pearl 6	Science	Values Multipurpose 2	Loreta Jurado	Science	Values Multipurpose 2	Loreta Jurado	Science	Values Multipurpose 2	Loreta Jurado	Math	Values Multipurpose 2	Allan Limin	Science	Values Multipurpose 2	Loreta Jurado
+10	02:05 PM	03:00 PM	9	Pearl 6	Mapeh	Values Multipurpose 2	Sammy Catu	Mapeh	Values Multipurpose 2	Sammy Catu	Mapeh	Values Multipurpose 2	Sammy Catu	Mapeh	Values Multipurpose 2	Sammy Catu	Math	Values Multipurpose 2	Allan Limin
+11	03:00 PM	03:55 PM	9	Pearl 6	English	Values Multipurpose 2	Jovita Lazatin	English	Values Multipurpose 2	Jovita Lazatin	Math	Values Multipurpose 2	Allan Limin	English	Values Multipurpose 2	Jovita Lazatin	English	Values Multipurpose 2	Jovita Lazatin
 12	03:55 PM	04:10 PM	9	Pearl 6															
-13	04:10 PM	05:05 PM	9	Pearl 6	Values	VMP 2	Marites de Leon	Aralin	VMP 2	Camile Tobias	Aralin	VMP 2	Camile Tobias	Values	VMP 2	Marites de Leon	Aralin	VMP 2	Camile Tobias
+13	04:10 PM	05:05 PM	9	Pearl 6	Values	Values Multipurpose 2	Marites de Leon	Aralin	Values Multipurpose 2	Camile Tobias	Aralin	Values Multipurpose 2	Camile Tobias	Values	Values Multipurpose 2	Marites de Leon	Aralin	Values Multipurpose 2	Camile Tobias
 14	05:05 PM	06:00 PM	9	Pearl 6	TLE			TLE			TLE			TLE			TLE		
 1	06:30 AM	07:25 AM	9	Emerald 1															
 2	07:25 AM	08:20 AM	9	Emerald 1															
@@ -2049,13 +2049,13 @@
 5	10:10 AM	10:25 AM	9	Sapphire 3															
 6	10:25 AM	11:20 AM	9	Sapphire 3															
 7	11:20 AM	12:15 PM	9	Sapphire 3	Aralin	Gerbera 2	Mariel Tulabut	Aralin	Gerbera 2	Mariel Tulabut	Aralin	Gerbera 2	Mariel Tulabut						
-8	12:15 PM	01:10 PM	9	Sapphire 3	English	IA Room 15	Kimberly Malang	Math	IA Room 15	Richelle Yabut	English	IA Room 15	Kimberly Malang	English	IA Room 15	Kimberly Malang	English	IA Room 15	Kimberly Malang
+8	12:15 PM	01:10 PM	9	Sapphire 3	English	Industrial Arts 15	Kimberly Malang	Math	Industrial Arts 15	Richelle Yabut	English	Industrial Arts 15	Kimberly Malang	English	Industrial Arts 15	Kimberly Malang	English	Industrial Arts 15	Kimberly Malang
 9	01:10 PM	02:05 PM	9	Sapphire 3	TLE			TLE			TLE			TLE			TLE		
-10	02:05 PM	03:00 PM	9	Sapphire 3	Science	IA Room 15	Ken Paul Cortez	Science	IA Room 15	Ken Paul Cortez	Science	IA Room 15	Ken Paul Cortez	Math	IA Room 15	Richelle Yabut	Science	IA Room 15	Ken Paul Cortez
-11	03:00 PM	03:55 PM	9	Sapphire 3	Filipino	IA Room 15	Annabelle Alburo	Filipino	IA Room 15	Annabelle Alburo	Filipino	IA Room 15	Annabelle Alburo	Filipino	IA Room 15	Annabelle Alburo	Math	IA Room 15	Richelle Yabut
+10	02:05 PM	03:00 PM	9	Sapphire 3	Science	Industrial Arts 15	Ken Paul Cortez	Science	Industrial Arts 15	Ken Paul Cortez	Science	Industrial Arts 15	Ken Paul Cortez	Math	Industrial Arts 15	Richelle Yabut	Science	Industrial Arts 15	Ken Paul Cortez
+11	03:00 PM	03:55 PM	9	Sapphire 3	Filipino	Industrial Arts 15	Annabelle Alburo	Filipino	Industrial Arts 15	Annabelle Alburo	Filipino	Industrial Arts 15	Annabelle Alburo	Filipino	Industrial Arts 15	Annabelle Alburo	Math	Industrial Arts 15	Richelle Yabut
 12	03:55 PM	04:10 PM	9	Sapphire 3															
-13	04:10 PM	05:05 PM	9	Sapphire 3							Values	IA Room 15	Marites de Leon				Values	IA Room 15	Marites de Leon
-14	05:05 PM	06:00 PM	9	Sapphire 3	Mapeh	IA Room 15	Mapeh Teacher A	Mapeh	IA Room 15	Mapeh Teacher A	Math	IA Room 15	Richelle Yabut	Mapeh	IA Room 15	Mapeh Teacher A	Mapeh	IA Room 15	Mapeh Teacher A
+13	04:10 PM	05:05 PM	9	Sapphire 3							Values	Industrial Arts 15	Marites de Leon				Values	Industrial Arts 15	Marites de Leon
+14	05:05 PM	06:00 PM	9	Sapphire 3	Mapeh	Industrial Arts 15	Mapeh Teacher A	Mapeh	Industrial Arts 15	Mapeh Teacher A	Math	Industrial Arts 15	Richelle Yabut	Mapeh	Industrial Arts 15	Mapeh Teacher A	Mapeh	Industrial Arts 15	Mapeh Teacher A
 1	06:30 AM	07:25 AM	9	Sapphire 4															
 2	07:25 AM	08:20 AM	9	Sapphire 4															
 3	08:20 AM	09:15 AM	9	Sapphire 4															
@@ -2063,13 +2063,13 @@
 5	10:10 AM	10:25 AM	9	Sapphire 4															
 6	10:25 AM	11:20 AM	9	Sapphire 4															
 7	11:20 AM	12:15 PM	9	Sapphire 4															
-8	12:15 PM	01:10 PM	9	Sapphire 4	Filipino	IA Room 16	Annabelle Alburo	Filipino	IA Room 16	Annabelle Alburo	Math	IA Room 16	Richelle Yabut	Filipino	IA Room 16	Annabelle Alburo	Filipino	IA Room 16	Annabelle Alburo
-9	01:10 PM	02:05 PM	9	Sapphire 4	Science	IA Room 16	Ken Paul Cortez	Science	IA Room 16	Ken Paul Cortez	Science	IA Room 16	Ken Paul Cortez	Science	IA Room 16	Ken Paul Cortez	Math	IA Room 16	Richelle Yabut
-10	02:05 PM	03:00 PM	9	Sapphire 4	Values	IA Room 16	Annabelle Alfaro	Aralin	IA Room 16	Mariel Tulabut	Aralin	IA Room 16	Mariel Tulabut	Values	IA Room 16	Annabelle Alfaro	Aralin	IA Room 16	Mariel Tulabut
+8	12:15 PM	01:10 PM	9	Sapphire 4	Filipino	Industrial Arts 16	Annabelle Alburo	Filipino	Industrial Arts 16	Annabelle Alburo	Math	Industrial Arts 16	Richelle Yabut	Filipino	Industrial Arts 16	Annabelle Alburo	Filipino	Industrial Arts 16	Annabelle Alburo
+9	01:10 PM	02:05 PM	9	Sapphire 4	Science	Industrial Arts 16	Ken Paul Cortez	Science	Industrial Arts 16	Ken Paul Cortez	Science	Industrial Arts 16	Ken Paul Cortez	Science	Industrial Arts 16	Ken Paul Cortez	Math	Industrial Arts 16	Richelle Yabut
+10	02:05 PM	03:00 PM	9	Sapphire 4	Values	Industrial Arts 16	Annabelle Alfaro	Aralin	Industrial Arts 16	Mariel Tulabut	Aralin	Industrial Arts 16	Mariel Tulabut	Values	Industrial Arts 16	Annabelle Alfaro	Aralin	Industrial Arts 16	Mariel Tulabut
 11	03:00 PM	03:55 PM	9	Sapphire 4	TLE			TLE			TLE			TLE			TLE		
 12	03:55 PM	04:10 PM	9	Sapphire 4															
-13	04:10 PM	05:05 PM	9	Sapphire 4	Math	IA Room 16	Richelle Yabut	Mapeh	IA Room 16	Mapeh Teacher A	Mapeh	IA Room 16	Mapeh Teacher A	Mapeh	IA Room 16	Mapeh Teacher A	Mapeh	IA Room 16	Mapeh Teacher A
-14	05:05 PM	06:00 PM	9	Sapphire 4	English	IA Room 16	Kimberly Malang	English	IA Room 16	Kimberly Malang	English	IA Room 16	Kimberly Malang	Math	IA Room 16	Richelle Yabut	English	IA Room 16	Kimberly Malang
+13	04:10 PM	05:05 PM	9	Sapphire 4	Math	Industrial Arts 16	Richelle Yabut	Mapeh	Industrial Arts 16	Mapeh Teacher A	Mapeh	Industrial Arts 16	Mapeh Teacher A	Mapeh	Industrial Arts 16	Mapeh Teacher A	Mapeh	Industrial Arts 16	Mapeh Teacher A
+14	05:05 PM	06:00 PM	9	Sapphire 4	English	Industrial Arts 16	Kimberly Malang	English	Industrial Arts 16	Kimberly Malang	English	Industrial Arts 16	Kimberly Malang	Math	Industrial Arts 16	Richelle Yabut	English	Industrial Arts 16	Kimberly Malang
 1	06:30 AM	07:25 AM	9	Sapphire 5															
 2	07:25 AM	08:20 AM	9	Sapphire 5															
 3	08:20 AM	09:15 AM	9	Sapphire 5															
@@ -2189,13 +2189,13 @@
 5	10:10 AM	10:25 AM	9	Jade 1															
 6	10:25 AM	11:20 AM	9	Jade 1															
 7	11:20 AM	12:15 PM	9	Jade 1															
-8	12:15 PM	01:10 PM	9	Jade 1	Science	MMP 1	Angela Joy Galang	Science	MMP 1	Angela Joy Galang	Science	MMP 1	Angela Joy Galang	Science	MMP 1	Angela Joy Galang	Math	MMP 1	Cherill Cunanan
-9	01:10 PM	02:05 PM	9	Jade 1	Mapeh	MMP 1	Tomas Gamboa	Math	MMP 1	Cherill Cunanan	Mapeh	MMP 1	Tomas Gamboa	Mapeh	MMP 1	Tomas Gamboa	Mapeh	MMP 1	Tomas Gamboa
+8	12:15 PM	01:10 PM	9	Jade 1	Science	MAPEH Multipurpose 1	Angela Joy Galang	Science	MAPEH Multipurpose 1	Angela Joy Galang	Science	MAPEH Multipurpose 1	Angela Joy Galang	Science	MAPEH Multipurpose 1	Angela Joy Galang	Math	MAPEH Multipurpose 1	Cherill Cunanan
+9	01:10 PM	02:05 PM	9	Jade 1	Mapeh	MAPEH Multipurpose 1	Tomas Gamboa	Math	MAPEH Multipurpose 1	Cherill Cunanan	Mapeh	MAPEH Multipurpose 1	Tomas Gamboa	Mapeh	MAPEH Multipurpose 1	Tomas Gamboa	Mapeh	MAPEH Multipurpose 1	Tomas Gamboa
 10	02:05 PM	03:00 PM	9	Jade 1	TLE			TLE			TLE			TLE			TLE		
-11	03:00 PM	03:55 PM	9	Jade 1	English	MMP 1	Monique Anne Villero	English	MMP 1	Monique Anne Villero	English	MMP 1	Monique Anne Villero	Math	MMP 1	Cherill Cunanan	English	MMP 1	Monique Anne Villero
+11	03:00 PM	03:55 PM	9	Jade 1	English	MAPEH Multipurpose 1	Monique Anne Villero	English	MAPEH Multipurpose 1	Monique Anne Villero	English	MAPEH Multipurpose 1	Monique Anne Villero	Math	MAPEH Multipurpose 1	Cherill Cunanan	English	MAPEH Multipurpose 1	Monique Anne Villero
 12	03:55 PM	04:10 PM	9	Jade 1															
-13	04:10 PM	05:05 PM	9	Jade 1	Math	MMP 1	Cherill Cunanan	Filipino	MMP 1	Argierom Bungay	Filipino	MMP 1	Argierom Bungay	Filipino	MMP 1	Argierom Bungay	Filipino	MMP 1	Argierom Bungay
-14	05:05 PM	06:00 PM	9	Jade 1	Aralin	MMP 1	Ruel Ramirez	Aralin	MMP 1	Ruel Ramirez	Aralin	MMP 1	Ruel Ramirez	Values	MMP 1	Carmina Garcia	Values	MMP 1	Carmina Garcia
+13	04:10 PM	05:05 PM	9	Jade 1	Math	MAPEH Multipurpose 1	Cherill Cunanan	Filipino	MAPEH Multipurpose 1	Argierom Bungay	Filipino	MAPEH Multipurpose 1	Argierom Bungay	Filipino	MAPEH Multipurpose 1	Argierom Bungay	Filipino	MAPEH Multipurpose 1	Argierom Bungay
+14	05:05 PM	06:00 PM	9	Jade 1	Aralin	MAPEH Multipurpose 1	Ruel Ramirez	Aralin	MAPEH Multipurpose 1	Ruel Ramirez	Aralin	MAPEH Multipurpose 1	Ruel Ramirez	Values	MAPEH Multipurpose 1	Carmina Garcia	Values	MAPEH Multipurpose 1	Carmina Garcia
 1	06:30 AM	07:25 AM	9	Jade 2															
 2	07:25 AM	08:20 AM	9	Jade 2															
 3	08:20 AM	09:15 AM	9	Jade 2															
@@ -2203,13 +2203,13 @@
 5	10:10 AM	10:25 AM	9	Jade 2															
 6	10:25 AM	11:20 AM	9	Jade 2															
 7	11:20 AM	12:15 PM	9	Jade 2															
-8	12:15 PM	01:10 PM	9	Jade 2	Mapeh	MMP 2	Tomas Gamboa	Mapeh	MMP 2	Tomas Gamboa	Mapeh	MMP 2	Tomas Gamboa	Math	MMP 2	Cherill Cunanan	Mapeh	MMP 2	Tomas Gamboa
-9	01:10 PM	02:05 PM	9	Jade 2	English	MMP 2	Monique Anne Villero	English	MMP 2	Monique Anne Villero	Math	MMP 2	Cherill Cunanan	English	MMP 2	Monique Anne Villero	English	MMP 2	Monique Anne Villero
-10	02:05 PM	03:00 PM	9	Jade 2	Filipino	MMP 2	Argierom Bungay	Math	MMP 2	Cherill Cunanan	Filipino	MMP 2	Argierom Bungay	Filipino	MMP 2	Argierom Bungay	Filipino	MMP 2	Argierom Bungay
-11	03:00 PM	03:55 PM	9	Jade 2	Aralin	MMP 2	Mariel Tulabut	Values	MMP 2	Carmina Garcia	Values	MMP 2	Carmina Garcia	Aralin	MMP 2	Mariel Tulabut	Aralin	MMP 2	Mariel Tulabut
+8	12:15 PM	01:10 PM	9	Jade 2	Mapeh	MAPEH Multipurpose 2	Tomas Gamboa	Mapeh	MAPEH Multipurpose 2	Tomas Gamboa	Mapeh	MAPEH Multipurpose 2	Tomas Gamboa	Math	MAPEH Multipurpose 2	Cherill Cunanan	Mapeh	MAPEH Multipurpose 2	Tomas Gamboa
+9	01:10 PM	02:05 PM	9	Jade 2	English	MAPEH Multipurpose 2	Monique Anne Villero	English	MAPEH Multipurpose 2	Monique Anne Villero	Math	MAPEH Multipurpose 2	Cherill Cunanan	English	MAPEH Multipurpose 2	Monique Anne Villero	English	MAPEH Multipurpose 2	Monique Anne Villero
+10	02:05 PM	03:00 PM	9	Jade 2	Filipino	MAPEH Multipurpose 2	Argierom Bungay	Math	MAPEH Multipurpose 2	Cherill Cunanan	Filipino	MAPEH Multipurpose 2	Argierom Bungay	Filipino	MAPEH Multipurpose 2	Argierom Bungay	Filipino	MAPEH Multipurpose 2	Argierom Bungay
+11	03:00 PM	03:55 PM	9	Jade 2	Aralin	MAPEH Multipurpose 2	Mariel Tulabut	Values	MAPEH Multipurpose 2	Carmina Garcia	Values	MAPEH Multipurpose 2	Carmina Garcia	Aralin	MAPEH Multipurpose 2	Mariel Tulabut	Aralin	MAPEH Multipurpose 2	Mariel Tulabut
 12	03:55 PM	04:10 PM	9	Jade 2															
 13	04:10 PM	05:05 PM	9	Jade 2	TLE			TLE			TLE			TLE			TLE		
-14	05:05 PM	06:00 PM	9	Jade 2	Math	MMP 2	Cherill Cunanan	Science	MMP 2	Angela Joy Galang	Science	MMP 2	Angela Joy Galang	Science	MMP 2	Angela Joy Galang	Science	MMP 2	Angela Joy Galang
+14	05:05 PM	06:00 PM	9	Jade 2	Math	MAPEH Multipurpose 2	Cherill Cunanan	Science	MAPEH Multipurpose 2	Angela Joy Galang	Science	MAPEH Multipurpose 2	Angela Joy Galang	Science	MAPEH Multipurpose 2	Angela Joy Galang	Science	MAPEH Multipurpose 2	Angela Joy Galang
 1	06:30 AM	07:25 AM	9	Jade 3															
 2	07:25 AM	08:20 AM	9	Jade 3															
 3	08:20 AM	09:15 AM	9	Jade 3															
@@ -2217,13 +2217,13 @@
 5	10:10 AM	10:25 AM	9	Jade 3															
 6	10:25 AM	11:20 AM	9	Jade 3															
 7	11:20 AM	12:15 PM	9	Jade 3															
-8	12:15 PM	01:10 PM	9	Jade 3	English	MMP 3	Monique Anne Villero	Math	MMP 3	Cherill Cunanan	English	MMP 3	Monique Anne Villero	English	MMP 3	Monique Anne Villero	English	MMP 3	Monique Anne Villero
+8	12:15 PM	01:10 PM	9	Jade 3	English	MAPEH Multipurpose 3	Monique Anne Villero	Math	MAPEH Multipurpose 3	Cherill Cunanan	English	MAPEH Multipurpose 3	Monique Anne Villero	English	MAPEH Multipurpose 3	Monique Anne Villero	English	MAPEH Multipurpose 3	Monique Anne Villero
 9	01:10 PM	02:05 PM	9	Jade 3	TLE			TLE			TLE			TLE			TLE		
-10	02:05 PM	03:00 PM	9	Jade 3	Science	MMP 3	Angela Joy Galang	Science	MMP 3	Angela Joy Galang	Science	MMP 3	Angela Joy Galang	Math	MMP 3	Cherill Cunanan	Science	MMP 3	Angela Joy Galang
-11	03:00 PM	03:55 PM	9	Jade 3	Mapeh	MMP 3	Tomas Gamboa	Mapeh	MMP 3	Tomas Gamboa	Math	MMP 3	Cherill Cunanan	Mapeh	MMP 3	Tomas Gamboa	Mapeh	MMP 3	Tomas Gamboa
+10	02:05 PM	03:00 PM	9	Jade 3	Science	MAPEH Multipurpose 3	Angela Joy Galang	Science	MAPEH Multipurpose 3	Angela Joy Galang	Science	MAPEH Multipurpose 3	Angela Joy Galang	Math	MAPEH Multipurpose 3	Cherill Cunanan	Science	MAPEH Multipurpose 3	Angela Joy Galang
+11	03:00 PM	03:55 PM	9	Jade 3	Mapeh	MAPEH Multipurpose 3	Tomas Gamboa	Mapeh	MAPEH Multipurpose 3	Tomas Gamboa	Math	MAPEH Multipurpose 3	Cherill Cunanan	Mapeh	MAPEH Multipurpose 3	Tomas Gamboa	Mapeh	MAPEH Multipurpose 3	Tomas Gamboa
 12	03:55 PM	04:10 PM	9	Jade 3															
-13	04:10 PM	05:05 PM	9	Jade 3	Values	MMP 3	Carmina Garcia	Values	MMP 3	Carmina Garcia	Aralin	MMP 3	Mariel Tulabut	Aralin	MMP 3	Mariel Tulabut	Aralin	MMP 3	Mariel Tulabut
-14	05:05 PM	06:00 PM	9	Jade 3	Filipino	MMP 3	Argierom Bungay	Filipino	MMP 3	Argierom Bungay	Filipino	MMP 3	Argierom Bungay	Filipino	MMP 3	Argierom Bungay	Math	MMP 3	Cherill Cunanan
+13	04:10 PM	05:05 PM	9	Jade 3	Values	MAPEH Multipurpose 3	Carmina Garcia	Values	MAPEH Multipurpose 3	Carmina Garcia	Aralin	MAPEH Multipurpose 3	Mariel Tulabut	Aralin	MAPEH Multipurpose 3	Mariel Tulabut	Aralin	MAPEH Multipurpose 3	Mariel Tulabut
+14	05:05 PM	06:00 PM	9	Jade 3	Filipino	MAPEH Multipurpose 3	Argierom Bungay	Filipino	MAPEH Multipurpose 3	Argierom Bungay	Filipino	MAPEH Multipurpose 3	Argierom Bungay	Filipino	MAPEH Multipurpose 3	Argierom Bungay	Math	MAPEH Multipurpose 3	Cherill Cunanan
 1	06:30 AM	07:25 AM	9	Jade 4															
 2	07:25 AM	08:20 AM	9	Jade 4															
 3	08:20 AM	09:15 AM	9	Jade 4															
@@ -2231,13 +2231,13 @@
 5	10:10 AM	10:25 AM	9	Jade 4															
 6	10:25 AM	11:20 AM	9	Jade 4															
 7	11:20 AM	12:15 PM	9	Jade 4															
-8	12:15 PM	01:10 PM	9	Jade 4	Filipino	MMP 4	Argierom Bungay	Filipino	MMP 4	Argierom Bungay	Math	MMP 4	Cherill Cunanan	Filipino	MMP 4	Argierom Bungay	Filipino	MMP 4	Argierom Bungay
-9	01:10 PM	02:05 PM	9	Jade 4	Math	MMP 4	Cherill Cunanan	Science	MMP 4	Angela Joy Galang	Science	MMP 4	Angela Joy Galang	Science	MMP 4	Angela Joy Galang	Science	MMP 4	Angela Joy Galang
-10	02:05 PM	03:00 PM	9	Jade 4	Aralin	MMP 4	Ruel Ramirez	Aralin	MMP 4	Ruel Ramirez	Values	MMP 4	Annabelle Alfaro	Aralin	MMP 4	Ruel Ramirez	Values	MMP 4	Annabelle Alfaro
+8	12:15 PM	01:10 PM	9	Jade 4	Filipino	MAPEH Multipurpose 4	Argierom Bungay	Filipino	MAPEH Multipurpose 4	Argierom Bungay	Math	MAPEH Multipurpose 4	Cherill Cunanan	Filipino	MAPEH Multipurpose 4	Argierom Bungay	Filipino	MAPEH Multipurpose 4	Argierom Bungay
+9	01:10 PM	02:05 PM	9	Jade 4	Math	MAPEH Multipurpose 4	Cherill Cunanan	Science	MAPEH Multipurpose 4	Angela Joy Galang	Science	MAPEH Multipurpose 4	Angela Joy Galang	Science	MAPEH Multipurpose 4	Angela Joy Galang	Science	MAPEH Multipurpose 4	Angela Joy Galang
+10	02:05 PM	03:00 PM	9	Jade 4	Aralin	MAPEH Multipurpose 4	Ruel Ramirez	Aralin	MAPEH Multipurpose 4	Ruel Ramirez	Values	MAPEH Multipurpose 4	Annabelle Alfaro	Aralin	MAPEH Multipurpose 4	Ruel Ramirez	Values	MAPEH Multipurpose 4	Annabelle Alfaro
 11	03:00 PM	03:55 PM	9	Jade 4	TLE			TLE			TLE			TLE			TLE		
 12	03:55 PM	04:10 PM	9	Jade 4															
-13	04:10 PM	05:05 PM	9	Jade 4	Mapeh	MMP 4	Tomas Gamboa	Mapeh	MMP 4	Tomas Gamboa	Mapeh	MMP 4	Tomas Gamboa	Math	MMP 4	Cherill Cunanan	Mapeh	MMP 4	Tomas Gamboa
-14	05:05 PM	06:00 PM	9	Jade 4	English	MMP 4	Monique Anne Villero	Math	MMP 4	Cherill Cunanan	English	MMP 4	Monique Anne Villero	English	MMP 4	Monique Anne Villero	English	MMP 4	Monique Anne Villero
+13	04:10 PM	05:05 PM	9	Jade 4	Mapeh	MAPEH Multipurpose 4	Tomas Gamboa	Mapeh	MAPEH Multipurpose 4	Tomas Gamboa	Mapeh	MAPEH Multipurpose 4	Tomas Gamboa	Math	MAPEH Multipurpose 4	Cherill Cunanan	Mapeh	MAPEH Multipurpose 4	Tomas Gamboa
+14	05:05 PM	06:00 PM	9	Jade 4	English	MAPEH Multipurpose 4	Monique Anne Villero	Math	MAPEH Multipurpose 4	Cherill Cunanan	English	MAPEH Multipurpose 4	Monique Anne Villero	English	MAPEH Multipurpose 4	Monique Anne Villero	English	MAPEH Multipurpose 4	Monique Anne Villero
 1	06:30 AM	07:25 AM	9	Jade 5															
 2	07:25 AM	08:20 AM	9	Jade 5															
 3	08:20 AM	09:15 AM	9	Jade 5															
@@ -2266,13 +2266,13 @@
 12	03:55 PM	04:10 PM	9	Jade 6															
 13	04:10 PM	05:05 PM	9	Jade 6	Science	Cattleya 2	Angela Joy Galang	Science	Cattleya 2	Angela Joy Galang	Science	Cattleya 2	Angela Joy Galang	Science	Cattleya 2	Angela Joy Galang	Math	Cattleya 2	Maya Renea Bondoc
 14	05:05 PM	06:00 PM	9	Jade 6	Mapeh	Cattleya 2	Tomas Gamboa	English	Cattleya 2	Monique Anne Villero	Mapeh	Cattleya 2	Tomas Gamboa	Mapeh	Cattleya 2	Tomas Gamboa	Mapeh	Cattleya 2	Tomas Gamboa
-1	06:30 AM	07:25 AM	9	E. Murros	English	IA Room 10	Maureen Medina				English	IA Room 10	Maureen Medina	English	IA Room 10	Maureen Medina	English	IA Room 10	Maureen Medina
-2	07:25 AM	08:20 AM	9	E. Murros	Mapeh	IA Room 10	Mary Rose Razote	Mapeh	IA Room 10	Mary Rose Razote				Mapeh	IA Room 10	Mary Rose Razote	Mapeh	IA Room 10	Mary Rose Razote
-3	08:20 AM	09:15 AM	9	E. Murros	Science	IA Room 10	Arnel Gomez	Science	IA Room 10	Arnel Gomez	Science	IA Room 10	Arnel Gomez	Science	IA Room 10	Arnel Gomez			
-4	09:15 AM	10:10 AM	9	E. Murros				Math	IA Room 10	Ivan Salas				Math	IA Room 10	Ivan Salas	Math	IA Room 10	Ivan Salas
+1	06:30 AM	07:25 AM	9	E. Murros	English	Industrial Arts 10	Maureen Medina				English	Industrial Arts 10	Maureen Medina	English	Industrial Arts 10	Maureen Medina	English	Industrial Arts 10	Maureen Medina
+2	07:25 AM	08:20 AM	9	E. Murros	Mapeh	Industrial Arts 10	Mary Rose Razote	Mapeh	Industrial Arts 10	Mary Rose Razote				Mapeh	Industrial Arts 10	Mary Rose Razote	Mapeh	Industrial Arts 10	Mary Rose Razote
+3	08:20 AM	09:15 AM	9	E. Murros	Science	Industrial Arts 10	Arnel Gomez	Science	Industrial Arts 10	Arnel Gomez	Science	Industrial Arts 10	Arnel Gomez	Science	Industrial Arts 10	Arnel Gomez			
+4	09:15 AM	10:10 AM	9	E. Murros				Math	Industrial Arts 10	Ivan Salas				Math	Industrial Arts 10	Ivan Salas	Math	Industrial Arts 10	Ivan Salas
 5	10:10 AM	10:25 AM	9	E. Murros															
-6	10:25 AM	11:20 AM	9	E. Murros	Aralin	IA Room 10	Amelie Anne Santos	Aralin	IA Room 10	Amelie Anne Santos	Aralin	IA Room 10	Amelie Anne Santos	Values	IA Room 10	Arvin Jay Paule	Values	IA Room 10	Arvin Jay Paule
-7	11:20 AM	12:15 PM	9	E. Murros	Filipino	IA Room 10	Filipino Teacher D	Filipino	IA Room 10	Filipino Teacher D	Math	IA Room 10	Ivan Salas	Filipino	IA Room 10	Filipino Teacher D	Filipino	IA Room 10	Filipino Teacher D
+6	10:25 AM	11:20 AM	9	E. Murros	Aralin	Industrial Arts 10	Amelie Anne Santos	Aralin	Industrial Arts 10	Amelie Anne Santos	Aralin	Industrial Arts 10	Amelie Anne Santos	Values	Industrial Arts 10	Arvin Jay Paule	Values	Industrial Arts 10	Arvin Jay Paule
+7	11:20 AM	12:15 PM	9	E. Murros	Filipino	Industrial Arts 10	Filipino Teacher D	Filipino	Industrial Arts 10	Filipino Teacher D	Math	Industrial Arts 10	Ivan Salas	Filipino	Industrial Arts 10	Filipino Teacher D	Filipino	Industrial Arts 10	Filipino Teacher D
 8	12:15 PM	01:10 PM	9	E. Murros	TLE			TLE			TLE			TLE			TLE		
 9	01:10 PM	02:05 PM	9	E. Murros				---											
 10	02:05 PM	03:00 PM	9	E. Murros	Specialization			Specialization			Specialization			Specialization			Specialization		
@@ -2574,27 +2574,27 @@
 12	03:15 PM	04:10 PM	7	Orange 1															
 13	04:10 PM	05:05 PM	7	Orange 1															
 14	05:05 PM	06:00 PM	7	Orange 1															
-1	06:30 AM	07:25 AM	7	Orange 2	Filipino	IA Room 02	Eva Gabucay	Filipino	IA Room 02	Eva Gabucay	Math	IA Room 02	Lorna Guintu	Filipino	IA Room 02	Eva Gabucay	Filipino	IA Room 02	Eva Gabucay
-2	07:25 AM	08:20 AM	7	Orange 2	English	IA Room 02	Maureen Medina	Math	IA Room 02	Lorna Guintu	English	IA Room 02	Maureen Medina	English	IA Room 02	Maureen Medina	English	IA Room 02	Maureen Medina
-3	08:20 AM	09:15 AM	7	Orange 2	Math	IA Room 02	Lorna Guintu	Science	IA Room 02	Richel Sunga	Science	IA Room 02	Richel Sunga	Science	IA Room 02	Richel Sunga	Science	IA Room 02	Richel Sunga
+1	06:30 AM	07:25 AM	7	Orange 2	Filipino	Industrial Arts 2	Eva Gabucay	Filipino	Industrial Arts 2	Eva Gabucay	Math	Industrial Arts 2	Lorna Guintu	Filipino	Industrial Arts 2	Eva Gabucay	Filipino	Industrial Arts 2	Eva Gabucay
+2	07:25 AM	08:20 AM	7	Orange 2	English	Industrial Arts 2	Maureen Medina	Math	Industrial Arts 2	Lorna Guintu	English	Industrial Arts 2	Maureen Medina	English	Industrial Arts 2	Maureen Medina	English	Industrial Arts 2	Maureen Medina
+3	08:20 AM	09:15 AM	7	Orange 2	Math	Industrial Arts 2	Lorna Guintu	Science	Industrial Arts 2	Richel Sunga	Science	Industrial Arts 2	Richel Sunga	Science	Industrial Arts 2	Richel Sunga	Science	Industrial Arts 2	Richel Sunga
 4	09:15 AM	09:30 AM	7	Orange 2															
-5	09:30 AM	10:25 AM	7	Orange 2	Aralin	IA Room 02	Ronaldo Catacutan	Aralin	IA Room 02	Ronaldo Catacutan				Values	IA Room 02	Cherrylyn Quiambao	Values	IA Room 02	Cherrylyn Quiambao
+5	09:30 AM	10:25 AM	7	Orange 2	Aralin	Industrial Arts 2	Ronaldo Catacutan	Aralin	Industrial Arts 2	Ronaldo Catacutan				Values	Industrial Arts 2	Cherrylyn Quiambao	Values	Industrial Arts 2	Cherrylyn Quiambao
 6	10:25 AM	11:20 AM	7	Orange 2	TLE			TLE			TLE			TLE			TLE		
-7	11:20 AM	12:15 PM	7	Orange 2	Mapeh	IA Room 02	Juinette Che'rie Salas	Mapeh	IA Room 02	Juinette Che'rie Salas	Mapeh	IA Room 02	Juinette Che'rie Salas	Math	IA Room 02	Lorna Guintu	Mapeh	IA Room 02	Juinette Che'rie Salas
-8	12:15 PM	01:10 PM	7	Orange 2										Aralin	IA Room 09	Ronaldo Catacutan			
+7	11:20 AM	12:15 PM	7	Orange 2	Mapeh	Industrial Arts 2	Juinette Che'rie Salas	Mapeh	Industrial Arts 2	Juinette Che'rie Salas	Mapeh	Industrial Arts 2	Juinette Che'rie Salas	Math	Industrial Arts 2	Lorna Guintu	Mapeh	Industrial Arts 2	Juinette Che'rie Salas
+8	12:15 PM	01:10 PM	7	Orange 2										Aralin	Industrial Arts 9	Ronaldo Catacutan			
 9	01:10 PM	02:05 PM	7	Orange 2															
 10	02:05 PM	03:00 PM	7	Orange 2															
 11	03:00 PM	03:15 PM	7	Orange 2															
 12	03:15 PM	04:10 PM	7	Orange 2															
 13	04:10 PM	05:05 PM	7	Orange 2															
 14	05:05 PM	06:00 PM	7	Orange 2															
-1	06:30 AM	07:25 AM	7	Orange 3	Science	IA Room 07	Richel Sunga	Science	IA Room 07	Richel Sunga	Science	IA Room 07	Richel Sunga	Math	IA Room 07	Lorna Guintu	Science	IA Room 07	Richel Sunga
+1	06:30 AM	07:25 AM	7	Orange 3	Science	Industrial Arts 7	Richel Sunga	Science	Industrial Arts 7	Richel Sunga	Science	Industrial Arts 7	Richel Sunga	Math	Industrial Arts 7	Lorna Guintu	Science	Industrial Arts 7	Richel Sunga
 2	07:25 AM	08:20 AM	7	Orange 3	TLE			TLE			TLE			TLE			TLE		
-3	08:20 AM	09:15 AM	7	Orange 3	Aralin	IA Room 07	Ronaldo Catacutan	Aralin	IA Room 07	Ronaldo Catacutan	Aralin	IA Room 07	Ronaldo Catacutan	Values	IA Room 07	Ma. Theresa Quizon	Values	IA Room 07	Ma. Theresa Quizon
+3	08:20 AM	09:15 AM	7	Orange 3	Aralin	Industrial Arts 7	Ronaldo Catacutan	Aralin	Industrial Arts 7	Ronaldo Catacutan	Aralin	Industrial Arts 7	Ronaldo Catacutan	Values	Industrial Arts 7	Ma. Theresa Quizon	Values	Industrial Arts 7	Ma. Theresa Quizon
 4	09:15 AM	09:30 AM	7	Orange 3															
-5	09:30 AM	10:25 AM	7	Orange 3	Mapeh	IA Room 07	Arlyn Galay	Mapeh	IA Room 07	Arlyn Galay	Mapeh	IA Room 07	Arlyn Galay	Mapeh	IA Room 07	Arlyn Galay	Math	IA Room 07	Lorna Guintu
-6	10:25 AM	11:20 AM	7	Orange 3	Math	IA Room 07	Lorna Guintu	Filipino	IA Room 07	Eva Gabucay	Filipino	IA Room 07	Eva Gabucay	Filipino	IA Room 07	Eva Gabucay	Filipino	IA Room 07	Eva Gabucay
-7	11:20 AM	12:15 PM	7	Orange 3	English	IA Room 07	Maureen Medina	Math	IA Room 07	Lorna Guintu	English	IA Room 07	Maureen Medina	English	IA Room 07	Maureen Medina	English	IA Room 07	Maureen Medina
+5	09:30 AM	10:25 AM	7	Orange 3	Mapeh	Industrial Arts 7	Arlyn Galay	Mapeh	Industrial Arts 7	Arlyn Galay	Mapeh	Industrial Arts 7	Arlyn Galay	Mapeh	Industrial Arts 7	Arlyn Galay	Math	Industrial Arts 7	Lorna Guintu
+6	10:25 AM	11:20 AM	7	Orange 3	Math	Industrial Arts 7	Lorna Guintu	Filipino	Industrial Arts 7	Eva Gabucay	Filipino	Industrial Arts 7	Eva Gabucay	Filipino	Industrial Arts 7	Eva Gabucay	Filipino	Industrial Arts 7	Eva Gabucay
+7	11:20 AM	12:15 PM	7	Orange 3	English	Industrial Arts 7	Maureen Medina	Math	Industrial Arts 7	Lorna Guintu	English	Industrial Arts 7	Maureen Medina	English	Industrial Arts 7	Maureen Medina	English	Industrial Arts 7	Maureen Medina
 8	12:15 PM	01:10 PM	7	Orange 3															
 9	01:10 PM	02:05 PM	7	Orange 3															
 10	02:05 PM	03:00 PM	7	Orange 3															
@@ -2602,13 +2602,13 @@
 12	03:15 PM	04:10 PM	7	Orange 3															
 13	04:10 PM	05:05 PM	7	Orange 3															
 14	05:05 PM	06:00 PM	7	Orange 3															
-1	06:30 AM	07:25 AM	7	Orange 4	Mapeh	IA Room 08	Juinette Che'rie Salas	Math	IA Room 08	Lorna Guintu	Mapeh	IA Room 08	Juinette Che'rie Salas	Mapeh	IA Room 08	Juinette Che'rie Salas	Mapeh	IA Room 08	Juinette Che'rie Salas
-2	07:25 AM	08:20 AM	7	Orange 4	Values	IA Room 08	Cherrylyn Quiambao	Values	IA Room 08	Cherrylyn Quiambao	Aralin	IA Room 08	Ronaldo Catacutan	Aralin	IA Room 08	Ronaldo Catacutan	Aralin	IA Room 08	Ronaldo Catacutan
-3	08:20 AM	09:15 AM	7	Orange 4	English	IA Room 08	Maureen Medina	English	IA Room 08	Maureen Medina	English	IA Room 08	Maureen Medina	Math	IA Room 08	Lorna Guintu	English	IA Room 08	Maureen Medina
+1	06:30 AM	07:25 AM	7	Orange 4	Mapeh	Industrial Arts 8	Juinette Che'rie Salas	Math	Industrial Arts 8	Lorna Guintu	Mapeh	Industrial Arts 8	Juinette Che'rie Salas	Mapeh	Industrial Arts 8	Juinette Che'rie Salas	Mapeh	Industrial Arts 8	Juinette Che'rie Salas
+2	07:25 AM	08:20 AM	7	Orange 4	Values	Industrial Arts 8	Cherrylyn Quiambao	Values	Industrial Arts 8	Cherrylyn Quiambao	Aralin	Industrial Arts 8	Ronaldo Catacutan	Aralin	Industrial Arts 8	Ronaldo Catacutan	Aralin	Industrial Arts 8	Ronaldo Catacutan
+3	08:20 AM	09:15 AM	7	Orange 4	English	Industrial Arts 8	Maureen Medina	English	Industrial Arts 8	Maureen Medina	English	Industrial Arts 8	Maureen Medina	Math	Industrial Arts 8	Lorna Guintu	English	Industrial Arts 8	Maureen Medina
 4	09:15 AM	09:30 AM	7	Orange 4															
 5	09:30 AM	10:25 AM	7	Orange 4	TLE			TLE			TLE			TLE			TLE		
-6	10:25 AM	11:20 AM	7	Orange 4	Science	IA Room 08	Richel Sunga	Science	IA Room 08	Richel Sunga	Science	IA Room 08	Richel Sunga	Science	IA Room 08	Richel Sunga	Math	IA Room 08	Lorna Guintu
-7	11:20 AM	12:15 PM	7	Orange 4	Math	IA Room 08	Lorna Guintu	Filipino	IA Room 08	Eva Gabucay	Filipino	IA Room 08	Eva Gabucay	Filipino	IA Room 08	Eva Gabucay	Filipino	IA Room 08	Eva Gabucay
+6	10:25 AM	11:20 AM	7	Orange 4	Science	Industrial Arts 8	Richel Sunga	Science	Industrial Arts 8	Richel Sunga	Science	Industrial Arts 8	Richel Sunga	Science	Industrial Arts 8	Richel Sunga	Math	Industrial Arts 8	Lorna Guintu
+7	11:20 AM	12:15 PM	7	Orange 4	Math	Industrial Arts 8	Lorna Guintu	Filipino	Industrial Arts 8	Eva Gabucay	Filipino	Industrial Arts 8	Eva Gabucay	Filipino	Industrial Arts 8	Eva Gabucay	Filipino	Industrial Arts 8	Eva Gabucay
 8	12:15 PM	01:10 PM	7	Orange 4															
 9	01:10 PM	02:05 PM	7	Orange 4															
 10	02:05 PM	03:00 PM	7	Orange 4															
@@ -2617,12 +2617,12 @@
 13	04:10 PM	05:05 PM	7	Orange 4															
 14	05:05 PM	06:00 PM	7	Orange 4															
 1	06:30 AM	07:25 AM	7	Orange 5	TLE			TLE			TLE			TLE			TLE		
-2	07:25 AM	08:20 AM	7	Orange 5	Math	IA Room 09	Lorna Guintu	Mapeh	IA Room 09	Juinette Che'rie Salas	Mapeh	IA Room 09	Juinette Che'rie Salas	Mapeh	IA Room 09	Juinette Che'rie Salas	Mapeh	IA Room 09	Juinette Che'rie Salas
-3	08:20 AM	09:15 AM	7	Orange 5	Filipino	IA Room 09	Filipino Teacher A	Math	IA Room 09	Lorna Guintu	Filipino	IA Room 09	Filipino Teacher A	Filipino	IA Room 09	Filipino Teacher A	Filipino	IA Room 09	Filipino Teacher A
+2	07:25 AM	08:20 AM	7	Orange 5	Math	Industrial Arts 9	Lorna Guintu	Mapeh	Industrial Arts 9	Juinette Che'rie Salas	Mapeh	Industrial Arts 9	Juinette Che'rie Salas	Mapeh	Industrial Arts 9	Juinette Che'rie Salas	Mapeh	Industrial Arts 9	Juinette Che'rie Salas
+3	08:20 AM	09:15 AM	7	Orange 5	Filipino	Industrial Arts 9	Filipino Teacher A	Math	Industrial Arts 9	Lorna Guintu	Filipino	Industrial Arts 9	Filipino Teacher A	Filipino	Industrial Arts 9	Filipino Teacher A	Filipino	Industrial Arts 9	Filipino Teacher A
 4	09:15 AM	09:30 AM	7	Orange 5															
-5	09:30 AM	10:25 AM	7	Orange 5	Science	IA Room 09	Richel Sunga	Science	IA Room 09	Richel Sunga	Science	IA Room 09	Richel Sunga	Math	IA Room 09	Lorna Guintu	Science	IA Room 09	Richel Sunga
-6	10:25 AM	11:20 AM	7	Orange 5	English	IA Room 09	Carlo Noriega	English	IA Room 09	Carlo Noriega	Math	IA Room 09	Lorna Guintu	English	IA Room 09	Carlo Noriega	English	IA Room 09	Carlo Noriega
-7	11:20 AM	12:15 PM	7	Orange 5	Aralin	IA Room 09	Ronaldo Catacutan	Aralin	IA Room 09	Ronaldo Catacutan	Aralin	IA Room 09	Ronaldo Catacutan	Values	IA Room 09	Carmencita Limbitco	Values	IA Room 09	Carmencita Limbitco
+5	09:30 AM	10:25 AM	7	Orange 5	Science	Industrial Arts 9	Richel Sunga	Science	Industrial Arts 9	Richel Sunga	Science	Industrial Arts 9	Richel Sunga	Math	Industrial Arts 9	Lorna Guintu	Science	Industrial Arts 9	Richel Sunga
+6	10:25 AM	11:20 AM	7	Orange 5	English	Industrial Arts 9	Carlo Noriega	English	Industrial Arts 9	Carlo Noriega	Math	Industrial Arts 9	Lorna Guintu	English	Industrial Arts 9	Carlo Noriega	English	Industrial Arts 9	Carlo Noriega
+7	11:20 AM	12:15 PM	7	Orange 5	Aralin	Industrial Arts 9	Ronaldo Catacutan	Aralin	Industrial Arts 9	Ronaldo Catacutan	Aralin	Industrial Arts 9	Ronaldo Catacutan	Values	Industrial Arts 9	Carmencita Limbitco	Values	Industrial Arts 9	Carmencita Limbitco
 8	12:15 PM	01:10 PM	7	Orange 5															
 9	01:10 PM	02:05 PM	7	Orange 5															
 10	02:05 PM	03:00 PM	7	Orange 5															
@@ -2630,12 +2630,12 @@
 12	03:15 PM	04:10 PM	7	Orange 5															
 13	04:10 PM	05:05 PM	7	Orange 5															
 14	05:05 PM	06:00 PM	7	Orange 5															
-1	06:30 AM	07:25 AM	7	Orange 6	Math	IA Room 13	Lorna Guintu	English	IA Room 13	Carlo Noriega	English	IA Room 13	Carlo Noriega	English	IA Room 13	Carlo Noriega	English	IA Room 13	Carlo Noriega
-2	07:25 AM	08:20 AM	7	Orange 6	Science	IA Room 13	Richel Sunga	Science	IA Room 13	Richel Sunga	Science	IA Room 13	Richel Sunga	Science	IA Room 13	Richel Sunga	Math	IA Room 13	Lorna Guintu
-3	08:20 AM	09:15 AM	7	Orange 6	Mapeh	IA Room 13	Joel Gueco	Mapeh	IA Room 13	Joel Gueco	Math	IA Room 13	Lorna Guintu	Mapeh	IA Room 13	Joel Gueco	Mapeh	IA Room 13	Joel Gueco
+1	06:30 AM	07:25 AM	7	Orange 6	Math	Industrial Arts 13	Lorna Guintu	English	Industrial Arts 13	Carlo Noriega	English	Industrial Arts 13	Carlo Noriega	English	Industrial Arts 13	Carlo Noriega	English	Industrial Arts 13	Carlo Noriega
+2	07:25 AM	08:20 AM	7	Orange 6	Science	Industrial Arts 13	Richel Sunga	Science	Industrial Arts 13	Richel Sunga	Science	Industrial Arts 13	Richel Sunga	Science	Industrial Arts 13	Richel Sunga	Math	Industrial Arts 13	Lorna Guintu
+3	08:20 AM	09:15 AM	7	Orange 6	Mapeh	Industrial Arts 13	Joel Gueco	Mapeh	Industrial Arts 13	Joel Gueco	Math	Industrial Arts 13	Lorna Guintu	Mapeh	Industrial Arts 13	Joel Gueco	Mapeh	Industrial Arts 13	Joel Gueco
 4	09:15 AM	09:30 AM	7	Orange 6															
-5	09:30 AM	10:25 AM	7	Orange 6	Filipino	IA Room 13	Eva Gabucay	Math	IA Room 13	Lorna Guintu	Filipino	IA Room 13	Eva Gabucay	Filipino	IA Room 13	Eva Gabucay	Filipino	IA Room 13	Eva Gabucay
-6	10:25 AM	11:20 AM	7	Orange 6	Aralin	IA Room 13	Ronaldo Catacutan	Aralin	IA Room 13	Ronaldo Catacutan	Values	IA Room 13	Cherrylyn Quiambao	Values	IA Room 13	Cherrylyn Quiambao	Aralin	IA Room 13	Ronaldo Catacutan
+5	09:30 AM	10:25 AM	7	Orange 6	Filipino	Industrial Arts 13	Eva Gabucay	Math	Industrial Arts 13	Lorna Guintu	Filipino	Industrial Arts 13	Eva Gabucay	Filipino	Industrial Arts 13	Eva Gabucay	Filipino	Industrial Arts 13	Eva Gabucay
+6	10:25 AM	11:20 AM	7	Orange 6	Aralin	Industrial Arts 13	Ronaldo Catacutan	Aralin	Industrial Arts 13	Ronaldo Catacutan	Values	Industrial Arts 13	Cherrylyn Quiambao	Values	Industrial Arts 13	Cherrylyn Quiambao	Aralin	Industrial Arts 13	Ronaldo Catacutan
 7	11:20 AM	12:15 PM	7	Orange 6	TLE			TLE			TLE			TLE			TLE		
 8	12:15 PM	01:10 PM	7	Orange 6															
 9	01:10 PM	02:05 PM	7	Orange 6															
@@ -3148,13 +3148,13 @@
 12	03:15 PM	04:10 PM	7	Cream 6															
 13	04:10 PM	05:05 PM	7	Cream 6															
 14	05:05 PM	06:00 PM	7	Cream 6															
-1	06:30 AM	07:25 AM	7	C. Loyzaga	Science	MMP 4	Maria Kristina Palma				Science	MMP 4	Maria Kristina Palma	Science	MMP 4	Maria Kristina Palma	Science	MMP 4	Maria Kristina Palma
-2	07:25 AM	08:20 AM	7	C. Loyzaga	Aralin	MMP 4	Catherine Anicete	Aralin	MMP 4	Catherine Anicete	Values	MMP 4	Nestor Solomon Jr.	Values	MMP 4	Nestor Solomon Jr.	Aralin	MMP 4	Catherine Anicete
-3	08:20 AM	09:15 AM	7	C. Loyzaga	Mapeh	MMP 4	Arlyn Galay	Mapeh	MMP 4	Arlyn Galay	Mapeh	MMP 4	Arlyn Galay	Mapeh	MMP 4	Arlyn Galay	Math	MMP 4	Vina Reyes
+1	06:30 AM	07:25 AM	7	C. Loyzaga	Science	MAPEH Multipurpose 4	Maria Kristina Palma				Science	MAPEH Multipurpose 4	Maria Kristina Palma	Science	MAPEH Multipurpose 4	Maria Kristina Palma	Science	MAPEH Multipurpose 4	Maria Kristina Palma
+2	07:25 AM	08:20 AM	7	C. Loyzaga	Aralin	MAPEH Multipurpose 4	Catherine Anicete	Aralin	MAPEH Multipurpose 4	Catherine Anicete	Values	MAPEH Multipurpose 4	Nestor Solomon Jr.	Values	MAPEH Multipurpose 4	Nestor Solomon Jr.	Aralin	MAPEH Multipurpose 4	Catherine Anicete
+3	08:20 AM	09:15 AM	7	C. Loyzaga	Mapeh	MAPEH Multipurpose 4	Arlyn Galay	Mapeh	MAPEH Multipurpose 4	Arlyn Galay	Mapeh	MAPEH Multipurpose 4	Arlyn Galay	Mapeh	MAPEH Multipurpose 4	Arlyn Galay	Math	MAPEH Multipurpose 4	Vina Reyes
 4	09:15 AM	09:30 AM	7	C. Loyzaga															
-5	09:30 AM	10:25 AM	7	C. Loyzaga	Math	MMP 4	Vina Reyes	English	MMP 4	Jeddalyn Musni	English	MMP 4	Jeddalyn Musni	English	MMP 4	Jeddalyn Musni	English	MMP 4	Jeddalyn Musni
+5	09:30 AM	10:25 AM	7	C. Loyzaga	Math	MAPEH Multipurpose 4	Vina Reyes	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni
 6	10:25 AM	11:20 AM	7	C. Loyzaga	TLE			TLE			TLE			TLE			TLE		
-7	11:20 AM	12:15 PM	7	C. Loyzaga				Math	MMP 4	Vina Reyes	Math	MMP 4	Vina Reyes						
+7	11:20 AM	12:15 PM	7	C. Loyzaga				Math	MAPEH Multipurpose 4	Vina Reyes	Math	MAPEH Multipurpose 4	Vina Reyes						
 8	12:15 PM	01:10 PM	7	C. Loyzaga	Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C	---			Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C
 9	01:10 PM	02:05 PM	7	C. Loyzaga															
 10	02:05 PM	03:00 PM	7	C. Loyzaga	Specialization			Specialization			Specialization			Specialization			Specialization		
@@ -3162,12 +3162,12 @@
 12	03:15 PM	04:10 PM	7	C. Loyzaga															
 13	04:10 PM	05:05 PM	7	C. Loyzaga															
 14	05:05 PM	06:00 PM	7	C. Loyzaga															
-1	06:30 AM	07:25 AM	7	R. Fernandez	Aralin	MMP 3	Catherine Anicete	Values	MMP 3	Nestor Solomon Jr.	Values	MMP 3	Nestor Solomon Jr.	Aralin	MMP 3	Catherine Anicete			
-2	07:25 AM	08:20 AM	7	R. Fernandez	Filipino	MMP 3	Filipino Teacher C	Filipino	MMP 3	Filipino Teacher C	Aralin	MMP 3	Catherine Anicete	Filipino	MMP 3	Filipino Teacher C	Filipino	MMP 3	Filipino Teacher C
-3	08:20 AM	09:15 AM	7	R. Fernandez	English	MMP 3	Carlo Noriega	English	MMP 3	Carlo Noriega				English	MMP 3	Carlo Noriega	English	MMP 3	Carlo Noriega
+1	06:30 AM	07:25 AM	7	R. Fernandez	Aralin	MAPEH Multipurpose 3	Catherine Anicete	Values	MAPEH Multipurpose 3	Nestor Solomon Jr.	Values	MAPEH Multipurpose 3	Nestor Solomon Jr.	Aralin	MAPEH Multipurpose 3	Catherine Anicete			
+2	07:25 AM	08:20 AM	7	R. Fernandez	Filipino	MAPEH Multipurpose 3	Filipino Teacher C	Filipino	MAPEH Multipurpose 3	Filipino Teacher C	Aralin	MAPEH Multipurpose 3	Catherine Anicete	Filipino	MAPEH Multipurpose 3	Filipino Teacher C	Filipino	MAPEH Multipurpose 3	Filipino Teacher C
+3	08:20 AM	09:15 AM	7	R. Fernandez	English	MAPEH Multipurpose 3	Carlo Noriega	English	MAPEH Multipurpose 3	Carlo Noriega				English	MAPEH Multipurpose 3	Carlo Noriega	English	MAPEH Multipurpose 3	Carlo Noriega
 4	09:15 AM	09:30 AM	7	R. Fernandez															
-5	09:30 AM	10:25 AM	7	R. Fernandez	Mapeh	MMP 3	Juinette Che'rie Salas	Mapeh	MMP 3	Juinette Che'rie Salas				Mapeh	MMP 3	Juinette Che'rie Salas	Mapeh	MMP 3	Juinette Che'rie Salas
-6	10:25 AM	11:20 AM	7	R. Fernandez	Math	MMP 3	Vina Reyes				Math	MMP 3	Vina Reyes	Math	MMP 3	Vina Reyes	Math	MMP 3	Vina Reyes
+5	09:30 AM	10:25 AM	7	R. Fernandez	Mapeh	MAPEH Multipurpose 3	Juinette Che'rie Salas	Mapeh	MAPEH Multipurpose 3	Juinette Che'rie Salas				Mapeh	MAPEH Multipurpose 3	Juinette Che'rie Salas	Mapeh	MAPEH Multipurpose 3	Juinette Che'rie Salas
+6	10:25 AM	11:20 AM	7	R. Fernandez	Math	MAPEH Multipurpose 3	Vina Reyes				Math	MAPEH Multipurpose 3	Vina Reyes	Math	MAPEH Multipurpose 3	Vina Reyes	Math	MAPEH Multipurpose 3	Vina Reyes
 7	11:20 AM	12:15 PM	7	R. Fernandez	TLE			TLE			TLE			TLE			TLE		
 8	12:15 PM	01:10 PM	7	R. Fernandez	Science	Rose 9	Rodolfo Eric Angat	Science	Rose 9	Rodolfo Eric Angat	Science	Rose 9	Rodolfo Eric Angat				Science	Rose 9	Rodolfo Eric Angat
 9	01:10 PM	02:05 PM	7	R. Fernandez	---			---			---			---					
@@ -3176,12 +3176,12 @@
 12	03:15 PM	04:10 PM	7	R. Fernandez															
 13	04:10 PM	05:05 PM	7	R. Fernandez															
 14	05:05 PM	06:00 PM	7	R. Fernandez															
-1	06:30 AM	07:25 AM	7	L. Macuja	Science	MMP 2	Adrian Reyes	English	MMP 2	Jeddalyn Musni	English	MMP 2	Jeddalyn Musni	English	MMP 2	Jeddalyn Musni	English	MMP 2	Jeddalyn Musni
+1	06:30 AM	07:25 AM	7	L. Macuja	Science	MAPEH Multipurpose 2	Adrian Reyes	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni
 2	07:25 AM	08:20 AM	7	L. Macuja	Math	Lotus 3	Ramoncito Tagudar	Math	Lotus 3	Ramoncito Tagudar				Math	Lotus 3	Ramoncito Tagudar	Math	Lotus 3	Ramoncito Tagudar
-3	08:20 AM	09:15 AM	7	L. Macuja	Aralin	MMP 2	Catherine Anicete	Aralin	MMP 2	Catherine Anicete	Aralin	MMP 2	Catherine Anicete	---			Science	MMP 2	Adrian Reyes
+3	08:20 AM	09:15 AM	7	L. Macuja	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	---			Science	MAPEH Multipurpose 2	Adrian Reyes
 4	09:15 AM	09:30 AM	7	L. Macuja															
-5	09:30 AM	10:25 AM	7	L. Macuja	Filipino	MMP 2	Marilyn de Jesus	Filipino	MMP 2	Marilyn de Jesus	Filipino	MMP 2	Marilyn de Jesus	Science	MMP 2	Adrian Reyes	Filipino	MMP 2	Marilyn de Jesus
-6	10:25 AM	11:20 AM	7	L. Macuja	Values	MMP 2	Nestor Solomon Jr.	Values	MMP 2	Nestor Solomon Jr.	Science	MMP 2	Adrian Reyes	---			---		
+5	09:30 AM	10:25 AM	7	L. Macuja	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Science	MAPEH Multipurpose 2	Adrian Reyes	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus
+6	10:25 AM	11:20 AM	7	L. Macuja	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Science	MAPEH Multipurpose 2	Adrian Reyes	---			---		
 7	11:20 AM	12:15 PM	7	L. Macuja	TLE			TLE			TLE			TLE			TLE		
 8	12:15 PM	01:10 PM	7	L. Macuja	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	---		
 9	01:10 PM	02:05 PM	7	L. Macuja															
@@ -3191,12 +3191,12 @@
 13	04:10 PM	05:05 PM	7	L. Macuja															
 14	05:05 PM	06:00 PM	7	L. Macuja															
 1	06:30 AM	07:25 AM	7	L. Avellana	---			---						---			Math	Lotus 3	Ramoncito Tagudar
-2	07:25 AM	08:20 AM	7	L. Avellana	English	MMP 1	Jeddalyn Musni	English	MMP 1	Jeddalyn Musni	Math	Lotus 3	Ramoncito Tagudar	English	MMP 1	Jeddalyn Musni	English	MMP 1	Jeddalyn Musni
-3	08:20 AM	09:15 AM	7	L. Avellana	Filipino	MMP 1	Gladyz Gonzales	Filipino	MMP 1	Gladyz Gonzales	Filipino	MMP 1	Gladyz Gonzales	Math	Lotus 3	Ramoncito Tagudar	Filipino	MMP 1	Gladyz Gonzales
+2	07:25 AM	08:20 AM	7	L. Avellana	English	MAPEH Multipurpose 1	Jeddalyn Musni	English	MAPEH Multipurpose 1	Jeddalyn Musni	Math	Lotus 3	Ramoncito Tagudar	English	MAPEH Multipurpose 1	Jeddalyn Musni	English	MAPEH Multipurpose 1	Jeddalyn Musni
+3	08:20 AM	09:15 AM	7	L. Avellana	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Math	Lotus 3	Ramoncito Tagudar	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales
 4	09:15 AM	09:30 AM	7	L. Avellana															
 5	09:30 AM	10:25 AM	7	L. Avellana	TLE			TLE			TLE			TLE			TLE		
-6	10:25 AM	11:20 AM	7	L. Avellana	Mapeh	MMP 1	Alma Manalo	Math	Lotus 3	Ramoncito Tagudar	Mapeh	MMP 1	Alma Manalo	Mapeh	MMP 1	Alma Manalo	Mapeh	MMP 1	Alma Manalo
-7	11:20 AM	12:15 PM	7	L. Avellana	Values	MMP 1	Nestor Solomon Jr.	Values	MMP 1	Nestor Solomon Jr.	Aralin	MMP 1	Catherine Anicete	Aralin	MMP 1	Catherine Anicete	Aralin	MMP 1	Catherine Anicete
+6	10:25 AM	11:20 AM	7	L. Avellana	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Math	Lotus 3	Ramoncito Tagudar	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Mapeh	MAPEH Multipurpose 1	Alma Manalo
+7	11:20 AM	12:15 PM	7	L. Avellana	Values	MAPEH Multipurpose 1	Nestor Solomon Jr.	Values	MAPEH Multipurpose 1	Nestor Solomon Jr.	Aralin	MAPEH Multipurpose 1	Catherine Anicete	Aralin	MAPEH Multipurpose 1	Catherine Anicete	Aralin	MAPEH Multipurpose 1	Catherine Anicete
 8	12:15 PM	01:10 PM	7	L. Avellana	---			Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes
 9	01:10 PM	02:05 PM	7	L. Avellana															
 10	02:05 PM	03:00 PM	7	L. Avellana	Specialization			Specialization			Specialization			Specialization			Specialization		

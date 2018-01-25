@@ -1493,7 +1493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000012393454, y: -0.0000003426804}
+  m_AnchoredPosition: {x: 0.000012393454, y: -0.000017768023}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -3105,7 +3105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1271181479}
-  schedule: {fileID: 11400000, guid: 008af23f7e164604b9ffaf4ea0a9ac73, type: 2}
+  schedule: {fileID: 0}
   scheduleItemPrefab: {fileID: 1356018251016628, guid: 7e6d3fa2179f63146998981e7bcce0b4,
     type: 2}
   entryContainer: {fileID: 1848296490}
@@ -5414,13 +5414,13 @@ GameObject:
   - component: {fileID: 1626505047}
   - component: {fileID: 1626505049}
   - component: {fileID: 1626505048}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Cross Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1626505047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5429,7 +5429,7 @@ RectTransform:
   m_GameObject: {fileID: 1626505046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.38, y: 5.38, z: 5.38}
+  m_LocalScale: {x: 5.36, y: 5.36, z: 5.36}
   m_Children: []
   m_Father: {fileID: 92544644}
   m_RootOrder: 0
@@ -6114,7 +6114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1848296492
@@ -6457,17 +6457,18 @@ MonoBehaviour:
       3\r\ngumamela 4\r\nipil-ipil\r\njasmine\r\njasmine 1\r\njasmine 2\r\njasmine
       3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine 7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
       1\r\nlotus 2\r\nlotus 3\r\nmahogany\r\nmahogany 1\r\nmahogany 2\r\nmahogany
-      3\r\nmain\r\nadmin/finance office\r\nfilipino\noffice\r\nhr/supply office\r\nmain
+      3\r\nmain\r\nadmin/finance office\r\nfilipino office\r\nhr/supply office\r\nmain
       1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain library\r\nprincipal's
       office\r\nprinting office\r\npromis office\r\nrecords office\r\nscience lab
       1\r\nscience lab 2\r\nscience lab 3\r\nscience lab 4\r\nscience office\r\nsenior
-      high office\r\nvalues office\r\nmolave\r\nmusic room\r\nnarra\r\norchids\r\norchids
-      101\r\norchids 102\r\norchids 103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids
-      203\r\norchids 204\r\norchids 301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor
-      101\r\npagcor 102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor
-      201\r\npagcor 202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor
-      301\r\npagcor 302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor
-      401\r\npagcor 402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
+      high office\r\nvalues office\r\nmolave\r\nmusic room\r\nmusic room 1\r\nmusic
+      room 2\r\nmusic room 3\r\nnarra\r\norchids\r\norchids 101\r\norchids 102\r\norchids
+      103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids 203\r\norchids 204\r\norchids
+      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor 101\r\npagcor
+      102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor 201\r\npagcor
+      202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor 301\r\npagcor
+      302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor 401\r\npagcor
+      402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
       1\r\npoinsettia 2\r\npoinsettia 3\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
       1\r\nrodriguez 2\r\nrose\r\nenglish office\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose
       4\r\nrose 5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nspeech laboratory\r\nsampaguita\r\nopen
@@ -6483,7 +6484,7 @@ MonoBehaviour:
       angel 201\r\nwhite angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite
       angel 205\r\nwhite angel 206\r"
     m_tags: 
-    cacheCount: 235
+    cacheCount: 238
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -6629,7 +6630,10 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: b3f64a4930e7e234788382392061ac3a, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: f7c3f31c03f634f4ba3f428ceb9422fe, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 3cbb2dd94ba1bc84f87bc8992a702978, type: 2}
+      - {fileID: 11400000, guid: d609912490205be479546452bda5d3da, type: 2}
+      - {fileID: 11400000, guid: d275710d195fdbe46ae5fd1ef458f43f, type: 2}
     - place: {fileID: 11400000, guid: 8dc58317ba9fa1142bf14ea1fa865c3b, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: d39687dc28b9a89468edf52d99e938bb, type: 2}
@@ -6841,7 +6845,7 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 4bdf61cd14ccbed428b140852d7852f7, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0, type: 2}
-    m_names: "aralin\noffice\r\nindustrial arts office\r\nmath office\r"
+    m_names: "aralin office\r\nindustrial arts office\r\nmath office\r"
     m_tags: 
     cacheCount: 3
     places:
@@ -6874,7 +6878,7 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: beded8a4f7354334ab157259b590b162, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d, type: 2}
-    m_names: "parking\narea 1\r\nparking\narea 2\r\nparking\narea 3\r"
+    m_names: "parking area 1\r\nparking area 2\r\nparking area 3\r"
     m_tags: 
     cacheCount: 3
     places:
