@@ -120,6 +120,12 @@ public class ScheduleGenerator : EditorWindow
 		
 		Schedule schedule = GetSchedule(section, grade);
 		ScheduleObject target = GetTarget(section, typeof(StudentClass).ToString());
+		
+		if(schedule == null)
+		{
+			Debug.Log("Failed to create schedule.");
+			return;
+		}
 		SetSchedule(new SerializedObject(schedule), target, periodIndex, entry);
 	}
 
@@ -211,7 +217,7 @@ public class ScheduleGenerator : EditorWindow
 		if(target == null)
 			return null;
 		
-		string path = "Assets/Scriptable Objects/Schedules/" + grade + '/' + target.name + '/';
+		string path = "Assets/Scriptable Objects/Schedules/" + grade + '/';
 		string name = target.name + " Schedule";
 
 		Schedule schedule = ScriptableObject.CreateInstance<Schedule>();
