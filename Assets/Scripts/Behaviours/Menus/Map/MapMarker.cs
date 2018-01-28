@@ -35,20 +35,22 @@ namespace Menus
 		private void OnEnable()
 		{
 			NavigationCamera.OnViewAdjust += OnViewAdjust;
+			MapMenu.OnFloorSelect += OnFloorSelect;
 		}
 
 		private void OnDisable()
 		{
 			NavigationCamera.OnViewAdjust -= OnViewAdjust;
+			MapMenu.OnFloorSelect -= OnFloorSelect;
 		}
 
-		private void OnSelectLayer(int index)
+		private void OnFloorSelect(int index)
 		{
 			if(this.floor == 0)
 				return;
 			
 			this.currentFloor = index;
-			ShowText(isVisible);
+			ShowText(this.currentFloor == floor);
 		}
 
 		public void Set(Sprite icon, string text, Vector3 position, int floor = 0)

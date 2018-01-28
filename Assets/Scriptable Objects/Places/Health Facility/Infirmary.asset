@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Infirmary
   m_EditorClassIdentifier: 
   m_displayedName: Infirmary
-  m_displayPosition: {x: 17.79827, y: 0, z: 188.4862}
-  m_position: {x: 27.91379, y: 0, z: 189.72472}
+  m_displayPosition: {x: 17.082497, y: 0, z: 188.4862}
+  m_position: {x: 21.650766, y: 0, z: 194.01935}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}

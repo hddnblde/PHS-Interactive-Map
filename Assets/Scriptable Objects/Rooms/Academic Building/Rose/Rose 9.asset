@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_displayedName: Rose
   m_displayPosition: {x: -64.94743, y: 0, z: 91.23061}
-  m_position: {x: -64.94743, y: 0, z: 91.23061}
-  m_useDisplayPosition: 0
+  m_position: {x: -60.12, y: 0, z: 91.23061}
+  m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 0
   m_standaloneNumber: 1

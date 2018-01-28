@@ -40,6 +40,9 @@ namespace Menus
 
 	public class MapMenu : MonoBehaviour
 	{
+		public delegate void FloorSelect(int index);
+		public static event FloorSelect OnFloorSelect;
+
 		[SerializeField]
 		private CanvasGroup markerPanel = null;
 
@@ -66,6 +69,9 @@ namespace Menus
 
 		[SerializeField]
 		private NavigationMenu navigationMenu = null;
+
+		[SerializeField]
+		private int currentFloor = 1;
 
 		private LocationMarker originMarker = null;
 		private LocationMarker destinationMarker = null;
@@ -231,6 +237,18 @@ namespace Menus
 				navigationSystem.Clear();
 			else
 				navigationSystem.Navigate(originMarker.position, destinationMarker.position);
+		}
+
+		private void FloorSelectEvent()
+		{
+			if(OnFloorSelect != null)
+				OnFloorSelect(currentFloor);
+		}
+
+		private void Update()
+		{
+			if(Input.GetKeyDown(KeyCode.Space))
+				FloorSelectEvent();
 		}
 	}
 }

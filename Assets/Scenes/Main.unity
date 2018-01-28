@@ -98,7 +98,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.29
+    agentRadius: 0.3
     agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
@@ -106,7 +106,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.096666664
+    cellSize: 0.1
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -741,6 +741,7 @@ MonoBehaviour:
   locationDatabase: {fileID: 1882231225}
   navigationSystem: {fileID: 377662696}
   navigationMenu: {fileID: 823897368}
+  currentFloor: 1
 --- !u!225 &180853602
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1521,7 +1522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000012393454, y: 0.0000048635584}
+  m_AnchoredPosition: {x: 0.000012393454, y: 0.00004766252}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -2086,7 +2087,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294966267
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5191,7 +5192,7 @@ GameObject:
   - component: {fileID: 1406502332}
   - component: {fileID: 1406502334}
   - component: {fileID: 1406502333}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Walkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5998,7 +5999,7 @@ GameObject:
   - component: {fileID: 1626505047}
   - component: {fileID: 1626505049}
   - component: {fileID: 1626505048}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: Cross Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6833,7 +6834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1848296492
@@ -7167,14 +7168,14 @@ MonoBehaviour:
       3\r\ncattleya\r\ncattleya 1\r\ncattleya 2\r\ncattleya 3\r\ncattleya 4\r\ncattleya
       5\r\ncattleya 6\r\nchrysanthemum\r\nchrysanthemum 1\r\nchrysanthemum 2\r\nchrysanthemum
       3\r\nchrysanthemum 4\r\ndaisy\r\ndaisy 1\r\ndaisy 2\r\ndama de noche 1\r\nagriculture
-      office\r\ndama 1\r\ndama 2\r\ndama 3\r\ndama 4\r\ndama 5\r\nmaintenance room\r\npta
-      office\r\ndama de noche 2\r\ndama 10\r\ndama 7\r\ndama 8\r\ndama 9\r\neuphorbia\r\neuphorbia
-      1\r\neuphorbia 2\r\neuphorbia 3\r\neuphorbia 4\r\neuphorbia 5\r\neuphorbia 6\r\neuphorbia
-      7\r\neuphorbia 8\r\ngardenia\r\ngardenia 1\r\ngardenia 2\r\ngardenia 3\r\ngardenia
-      4\r\ngerbera\r\ngerbera 1\r\ngerbera 2\r\ngladiola\r\ngladiola 1\r\ngladiola
-      2\r\ngladiola 3\r\ngladiola 4\r\ngumamela\r\ngumamela 1\r\ngumamela 2\r\ngumamela
-      3\r\ngumamela 4\r\nipil-ipil\r\njasmine\r\njasmine 1\r\njasmine 2\r\njasmine
-      3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine 7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
+      office\r\naralin office\r\ndama 1\r\ndama 2\r\ndama 3\r\ndama 4\r\ndama 5\r\nmaintenance
+      room\r\npta office\r\ndama de noche 2\r\ndama 10\r\ndama 7\r\ndama 8\r\ndama
+      9\r\neuphorbia\r\neuphorbia 1\r\neuphorbia 2\r\neuphorbia 3\r\neuphorbia 4\r\neuphorbia
+      5\r\neuphorbia 6\r\neuphorbia 7\r\neuphorbia 8\r\ngardenia\r\ngardenia 1\r\ngardenia
+      2\r\ngardenia 3\r\ngardenia 4\r\ngerbera\r\ngerbera 1\r\ngerbera 2\r\ngladiola\r\ngladiola
+      1\r\ngladiola 2\r\ngladiola 3\r\ngladiola 4\r\ngumamela\r\ngumamela 1\r\ngumamela
+      2\r\ngumamela 3\r\ngumamela 4\r\nipil-ipil\r\njasmine\r\njasmine 1\r\njasmine
+      2\r\njasmine 3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine 7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
       1\r\nlotus 2\r\nlotus 3\r\nmahogany\r\nmahogany 1\r\nmahogany 2\r\nmahogany
       3\r\nmain\r\nadmin/finance office\r\nfilipino office\r\nhr/supply office\r\nmain
       1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain library\r\nprincipal's
@@ -7203,7 +7204,7 @@ MonoBehaviour:
       angel 201\r\nwhite angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite
       angel 205\r\nwhite angel 206\r"
     m_tags: 
-    cacheCount: 238
+    cacheCount: 239
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -7253,6 +7254,7 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: b3cf754b930a106499ca3ea4799549e5, type: 2}
       rooms:
       - {fileID: 11400000, guid: 2ad382a211e272443af3fccd9f825c6f, type: 2}
+      - {fileID: 11400000, guid: f8eada5dec9158540b292acdaa428fed, type: 2}
       - {fileID: 11400000, guid: f7e250a0e6b98164084e6fe9dff669a8, type: 2}
       - {fileID: 11400000, guid: a15dfa51b8e4c0f459891e79c1e5e18f, type: 2}
       - {fileID: 11400000, guid: 9b1c8c907450f0b4b9b607baca6edbbd, type: 2}
@@ -7564,12 +7566,10 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 4bdf61cd14ccbed428b140852d7852f7, type: 2}
       rooms: []
   - m_landmark: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0, type: 2}
-    m_names: "aralin office\r\nindustrial arts office\r\nmath office\r"
+    m_names: "industrial arts office\r\nmath office\r"
     m_tags: 
-    cacheCount: 3
+    cacheCount: 2
     places:
-    - place: {fileID: 11400000, guid: df92b28e7d9e4e14e9b04a95b1f12df5, type: 2}
-      rooms: []
     - place: {fileID: 11400000, guid: 39dc10dc199b1d94e9791afd58ec2ad3, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 4a2ec44641d88bc488c351a92e63a7ab, type: 2}
