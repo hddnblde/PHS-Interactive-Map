@@ -36,7 +36,16 @@ namespace Menus
 		private event Mark OnMark;
 		private event Quit OnQuit;
 
-		private CanvasGroup canvasGroup = null;		
+		private CanvasGroup canvasGroup = null;
+		private static bool m_isOpen = false;
+		#endregion
+
+
+		#region Property
+		public static bool isOpen
+		{
+			get { return m_isOpen; }
+		}
 		#endregion
 
 
@@ -104,14 +113,30 @@ namespace Menus
 		#region Actions
 		public static void Open(string displayedText, Mark markAction, Quit quitAction)
 		{
+			if(m_isOpen)
+			{
+				Debug.Log("Marker menu is already opened.");
+				return;
+			}
+
 			if(OnOpenMenu != null)
 				OnOpenMenu(displayedText, markAction, quitAction);
+
+			m_isOpen = true;
 		}
 
 		public static void Close()
 		{
+			if(!m_isOpen)
+			{
+				Debug.Log("Marker menu is already opened.");
+				return;
+			}
+
 			if(OnCloseMenu != null)
 				OnCloseMenu();
+
+			m_isOpen = false;
 		}
 
 		private void Internal_Open(string displayedText, Mark markAction, Quit quitAction)

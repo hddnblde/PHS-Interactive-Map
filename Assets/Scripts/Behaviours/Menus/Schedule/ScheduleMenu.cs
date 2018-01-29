@@ -66,6 +66,16 @@ namespace Menus
 		private Graphic wednesdayText = null;
 		private Graphic thursdayText = null;
 		private Graphic fridayText = null;
+
+		private static bool m_isOpen = false;
+		#endregion
+
+
+		#region Property
+		public static bool isOpen
+		{
+			get { return m_isOpen; }
+		}
 		#endregion
 
 
@@ -129,14 +139,30 @@ namespace Menus
 		#region Actions
 		public static void Open(Schedule schedule)
 		{
+			if(m_isOpen)
+			{
+				Debug.Log("Schedule is already opened.");
+				return;
+			}
+
 			if(OnOpenMenu != null)
 				OnOpenMenu(schedule);
+
+			m_isOpen = true;
 		}
 
 		public static void Close()
 		{
+			if(!m_isOpen)
+			{
+				Debug.Log("Schedule is already closed.");
+				return;
+			}
+
 			if(OnCloseMenu != null)
 				OnCloseMenu();
+
+			m_isOpen = false;
 		}
 
 		private void Internal_Open(Schedule schedule)

@@ -114,14 +114,14 @@ namespace Menus
 		{
 			OnOpenMenu += Internal_Open;
 			OnCloseMenu += Internal_Close;
-			OnSetContent += Internal_SetContent;
+			OnSetContent += Internal_SetContents;
 		}
 
 		private void DeregisterInternalEvents()
 		{
 			OnOpenMenu -= Internal_Open;
 			OnCloseMenu -= Internal_Close;
-			OnSetContent -= Internal_SetContent;
+			OnSetContent -= Internal_SetContents;
 		}
 		#endregion
 
@@ -158,18 +158,40 @@ namespace Menus
 		#region Actions
 		public static void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
 		{
+			if(m_isOpen)
+			{
+				Debug.Log("Search menu is already opened.");
+				return;
+			}
+
 			if(OnOpenMenu != null)
 				OnOpenMenu(searchAction, selectAction, quitAction, placeholder);
+		
+			m_isOpen = true;
 		}
 
 		public static void Close()
 		{
+			if(!m_isOpen)
+			{
+				Debug.Log("Search menu is already closed.");
+				return;
+			}
+
 			if(OnCloseMenu != null)
 				OnCloseMenu();
+
+			m_isOpen = false;
 		}
 
-		public static void SetContent(MenuContent[] contents)
+		public static void SetContents(MenuContent[] contents)
 		{
+			if(!isOpen)
+			{
+				Debug.Log("Cannot set contents. Search menu isn't open.");
+				return;
+			}
+
 			if(OnSetContent != null)
 				OnSetContent(contents);
 		}
@@ -209,7 +231,7 @@ namespace Menus
 			Show(false);
 		}		
 
-		private void Internal_SetContent(MenuContent[] contents)
+		private void Internal_SetContents(MenuContent[] contents)
 		{
 			ClearContentLayout();
 

@@ -89,7 +89,7 @@ namespace Menus
 		{
 			if(count == 0)
 			{
-				SearchMenu.SetContent(null);
+				SearchMenu.SetContents(null);
 				return;
 			}
 
@@ -101,7 +101,7 @@ namespace Menus
 				contents[i] = new MenuContent(null, location.displayedName);
 			}
 
-			SearchMenu.SetContent(contents);
+			SearchMenu.SetContents(contents);
 		}
 		#endregion
 
