@@ -160,7 +160,7 @@ namespace Menus
 			if(show)
 			{
 				string placeholder = "Choose " + (currentContext == Context.SetDestination ? "destination" : "starting point");
-				SearchMenu.Open(this.OnSearch, this.OnSelect, this.CloseContext, placeholder);
+				SearchMenu.Open(this.OnSearch, this.OnSelect, this.CloseContext, placeholder, true);
 			}
 			else if(SearchMenu.isOpen)
 				SearchMenu.Close();

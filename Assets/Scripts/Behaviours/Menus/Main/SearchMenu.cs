@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace Menus
 {
@@ -32,7 +33,7 @@ namespace Menus
 
 
 		#region Hidden Fields
-		private delegate void OpenAction(Search searchAction, Select selectAction, Quit quitAction, string placeholder);
+		private delegate void OpenAction(Search searchAction, Select selectAction, Quit quitAction, string placeholder, bool focused);
 		private delegate void CloseAction();
 		private delegate void SetContentAction(MenuContent[] contents);
 
@@ -156,7 +157,7 @@ namespace Menus
 		
 
 		#region Actions
-		public static void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
+		public static void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search", bool focused = false)
 		{
 			if(m_isOpen)
 			{
@@ -165,7 +166,7 @@ namespace Menus
 			}
 
 			if(OnOpenMenu != null)
-				OnOpenMenu(searchAction, selectAction, quitAction, placeholder);
+				OnOpenMenu(searchAction, selectAction, quitAction, placeholder, focused);
 		
 			m_isOpen = true;
 		}
@@ -196,7 +197,7 @@ namespace Menus
 				OnSetContent(contents);
 		}
 
-		private void Internal_Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder)
+		private void Internal_Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder, bool focused)
 		{
 			if(m_isOpen)
 			{
@@ -212,6 +213,9 @@ namespace Menus
 
 			m_isOpen = true;
 			Show(true);
+
+			if(focused)
+				FocusOnText();
 		}
 
 		private void Internal_Close()
@@ -265,6 +269,12 @@ namespace Menus
 			canvasGroup.alpha = (shown ? 1f : 0f);
 			canvasGroup.blocksRaycasts = shown;
 			canvasGroup.interactable = shown;
+		}
+
+		private void FocusOnText()
+		{
+			if(textField != null)
+				textField.Select();
 		}
 
 		private MenuContentLayout GetContentLayout()

@@ -84,6 +84,10 @@ namespace Menus
 		{
 			GenerateEntries();
 			SetupButtons();
+		}
+
+		private void Start()
+		{
 			Open(schedule);
 		}
 
