@@ -736,7 +736,6 @@ MonoBehaviour:
   chooseOnMapButton: {fileID: 2140516324}
   originMarkerButton: {fileID: 2081505855}
   destinationMarkerButton: {fileID: 337138762}
-  markerMenu: {fileID: 1959378878}
   locationDatabase: {fileID: 1882231225}
   navigationSystem: {fileID: 377662696}
   navigationMenu: {fileID: 823897368}
@@ -1520,7 +1519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000012393454, y: -0.000027750206}
+  m_AnchoredPosition: {x: 0.000012393454, y: -0.000047898484}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837

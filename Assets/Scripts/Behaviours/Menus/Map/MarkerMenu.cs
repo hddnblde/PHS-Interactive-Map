@@ -8,6 +8,7 @@ namespace Menus
 {
 	public class MarkerMenu : MonoBehaviour
 	{
+		#region Serialized Fields
 		[SerializeField]
 		private Text displayedText = null;
 
@@ -19,20 +20,45 @@ namespace Menus
 
 		[SerializeField]
 		private RectTransform cursor = null;
+		#endregion
 
-		private CanvasGroup canvasGroup = null;
+
+		#region Hidden Fields
+		private delegate void OpenAction(string displayedText, Mark markAction, Quit quitAction);
+		private delegate void CloseAction();
 
 		public delegate void Mark(LocationMarker marker);
 		public delegate void Quit();
 
+		private static event OpenAction OnOpenMenu;
+		private static event CloseAction OnCloseMenu;
+
 		private event Mark OnMark;
 		private event Quit OnQuit;
 
+		private CanvasGroup canvasGroup = null;		
+		#endregion
+
+
+		#region MonoBehaviour Implementation
 		private void Awake()
 		{
 			Initialize();
 		}
 
+		private void OnEnable()
+		{
+			RegisterInternalEvents();
+		}
+
+		private void OnDisable()
+		{
+			DeregisterInternalEvents();
+		}
+		#endregion
+
+
+		#region Initializers
 		private void Initialize()
 		{
 			if(checkButton != null)
@@ -44,6 +70,21 @@ namespace Menus
 			canvasGroup = GetComponent<CanvasGroup>();
 		}
 
+		private void RegisterInternalEvents()
+		{
+			OnOpenMenu += Internal_Open;
+			OnCloseMenu += Internal_Close;
+		}
+
+		private void DeregisterInternalEvents()
+		{
+			OnOpenMenu -= Internal_Open;
+			OnCloseMenu -= Internal_Close;
+		}
+		#endregion
+
+		
+		#region Events
 		private void QuitButtonClicked()
 		{
 			if(OnQuit != null)
@@ -57,7 +98,40 @@ namespace Menus
 			MarkByCursor();
 			Close();
 		}
+		#endregion
 
+
+		#region Actions
+		public static void Open(string displayedText, Mark markAction, Quit quitAction)
+		{
+			if(OnOpenMenu != null)
+				OnOpenMenu(displayedText, markAction, quitAction);
+		}
+
+		public static void Close()
+		{
+			if(OnCloseMenu != null)
+				OnCloseMenu();
+		}
+
+		private void Internal_Open(string displayedText, Mark markAction, Quit quitAction)
+		{
+			this.displayedText.text = displayedText;
+			OnMark = markAction;
+			OnQuit = quitAction;
+			Show(true);
+		}
+
+		private void Internal_Close()
+		{
+			OnMark = null;
+			OnQuit = null;
+			Show(false);
+		}
+		#endregion
+
+
+		#region Helpers
 		private Rect RectTransformToScreenSpace(RectTransform rectTransform)
 		{
 			Vector2 position = new Vector2(rectTransform.position.x, Screen.height - rectTransform.position.y);
@@ -78,21 +152,6 @@ namespace Menus
 				OnMark(marker);
 		}
 
-		public void Open(string displayedText, Mark markAction, Quit quitAction)
-		{
-			this.displayedText.text = displayedText;
-			OnMark = markAction;
-			OnQuit = quitAction;
-			Show(true);
-		}
-
-		private void Close()
-		{
-			OnMark = null;
-			OnQuit = null;
-			Show(false);
-		}
-
 		private void Show(bool shown)
 		{
 			if(canvasGroup == null)
@@ -102,5 +161,6 @@ namespace Menus
 			canvasGroup.blocksRaycasts = shown;
 			canvasGroup.interactable = shown;
 		}
+		#endregion
 	}
 }

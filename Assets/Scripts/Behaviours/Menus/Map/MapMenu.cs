@@ -54,9 +54,6 @@ namespace Menus
 		private MapMenuMarkerButton destinationMarkerButton = null;
 
 		[SerializeField]
-		private MarkerMenu markerMenu = null;
-
-		[SerializeField]
 		private LocationDatabase locationDatabase = null;
 
 		[SerializeField]
@@ -155,20 +152,6 @@ namespace Menus
 		#endregion
 
 
-		#region Helpers
-		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
-		{
-			if(button == null)
-				return;
-
-			UnityEngine.Events.UnityAction selectAction = () => SearchLocation(context);
-			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
-
-			button.AddListener(selectAction, clearAction, placeholder);
-		}
-		#endregion
-
-
 		#region Actions
 		private void SearchLocation(Context context)
 		{
@@ -182,7 +165,7 @@ namespace Menus
 			ToggleSearch(false);
 			ShowMarkerPanel(false);
 			string displayedName = "Mark " + (currentContext == Context.SetDestination ? "destination" : "starting point");
-			markerMenu.Open(displayedName, SetMarker, () => ToggleSearch(true));
+			MarkerMenu.Open(displayedName, SetMarker, () => ToggleSearch(true));
 		}
 
 		private void SetMarker(LocationMarker marker)
@@ -257,6 +240,20 @@ namespace Menus
 		{
 			if(OnFloorSelect != null)
 				OnFloorSelect(currentFloor);
+		}
+		#endregion
+
+
+		#region Helpers
+		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
+		{
+			if(button == null)
+				return;
+
+			UnityEngine.Events.UnityAction selectAction = () => SearchLocation(context);
+			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
+
+			button.AddListener(selectAction, clearAction, placeholder);
 		}
 		#endregion
 	}

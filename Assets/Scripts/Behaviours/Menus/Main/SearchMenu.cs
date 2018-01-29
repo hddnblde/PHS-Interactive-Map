@@ -153,54 +153,9 @@ namespace Menus
 				textField.text = null;
 		}
 		#endregion
+		
 
-
-		#region Helpers
-		private void ClearContentLayout()
-		{
-			foreach(MenuContentLayout contentLayout in contentLayoutList)
-				contentLayout.gameObject.SetActive(false);
-		}
-
-		private void Show(bool shown)
-		{
-			if(canvasGroup == null)
-				return;
-
-			canvasGroup.alpha = (shown ? 1f : 0f);
-			canvasGroup.blocksRaycasts = shown;
-			canvasGroup.interactable = shown;
-		}
-
-		private MenuContentLayout GetContentLayout()
-		{
-			MenuContentLayout currentContentLayout = null;
-
-			foreach(MenuContentLayout contentLayout in contentLayoutList)
-			{
-				if(contentLayout.gameObject.activeInHierarchy)
-					continue;
-
-				contentLayout.gameObject.SetActive(true);
-				currentContentLayout = contentLayout;
-				break;
-			}
-
-			return currentContentLayout;
-		}
-
-		private void InitializeTextField(string placeholder)
-		{
-			if(textField != null)
-				textField.text = "";
-
-			if(placeholderText != null)
-				placeholderText.text = placeholder;
-		}
-		#endregion
-
-
-		#region Internal and External Actions
+		#region Actions
 		public static void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
 		{
 			if(OnOpenMenu != null)
@@ -270,8 +225,51 @@ namespace Menus
 				layout.Set(content.thumbnail, content.text);
 			}
 		}
+		#endregion
 
-		
+
+		#region Helpers
+		private void ClearContentLayout()
+		{
+			foreach(MenuContentLayout contentLayout in contentLayoutList)
+				contentLayout.gameObject.SetActive(false);
+		}
+
+		private void Show(bool shown)
+		{
+			if(canvasGroup == null)
+				return;
+
+			canvasGroup.alpha = (shown ? 1f : 0f);
+			canvasGroup.blocksRaycasts = shown;
+			canvasGroup.interactable = shown;
+		}
+
+		private MenuContentLayout GetContentLayout()
+		{
+			MenuContentLayout currentContentLayout = null;
+
+			foreach(MenuContentLayout contentLayout in contentLayoutList)
+			{
+				if(contentLayout.gameObject.activeInHierarchy)
+					continue;
+
+				contentLayout.gameObject.SetActive(true);
+				currentContentLayout = contentLayout;
+				break;
+			}
+
+			return currentContentLayout;
+		}
+
+		private void InitializeTextField(string placeholder)
+		{
+			if(textField != null)
+				textField.text = "";
+
+			if(placeholderText != null)
+				placeholderText.text = placeholder;
+		}
 		#endregion
 	}
 }
