@@ -9,6 +9,7 @@ using PampangaHighSchool.Students;
 
 public class ScheduleMenu : MonoBehaviour
 {
+	#region Serialized Fields
 	[Header("References")]
 	[SerializeField]
 	private Text titleText = null;
@@ -47,6 +48,15 @@ public class ScheduleMenu : MonoBehaviour
 
 	[SerializeField, ColorUsage(false)]
 	private Color highlightedColor = Color.white;
+	#endregion
+
+
+	#region Hidden Fields
+	private delegate void OpenAction(Schedule schedule);
+	private delegate void CloseAction();
+
+	private static event OpenAction OnOpenMenu;
+	private static event CloseAction OnCloseMenu;
 
 	private List<ScheduleItem> items = new List<ScheduleItem>();
 	private Graphic mondayText = null;
@@ -54,6 +64,8 @@ public class ScheduleMenu : MonoBehaviour
 	private Graphic wednesdayText = null;
 	private Graphic thursdayText = null;
 	private Graphic fridayText = null;
+	#endregion
+
 
 	#region MonoBehaviour Implementation
 	private void Awake()
@@ -62,11 +74,70 @@ public class ScheduleMenu : MonoBehaviour
 		SetupButtons();
 		Open(schedule);
 	}
+
+	private void OnEnable()
+	{
+		RegisterInternalEvents();
+	}
+
+	private void OnDisable()
+	{
+		DeregisterInternalEvents();
+	}
 	#endregion
 
 
-	#region Methods
-	public void Open(Schedule schedule)
+	#region Initializers
+	private void GenerateEntries()
+	{
+		if(scheduleItemPrefab == null || entryContainer == null)
+			return;
+
+		const int EntryCount = 14;
+
+		for(int i = 0; i < EntryCount; i++)
+		{
+			GameObject entry = Instantiate(scheduleItemPrefab, entryContainer) as GameObject;
+			ScheduleItem item = entry.GetComponent<ScheduleItem>();
+			items.Add(item);
+		}
+	}
+
+	private void SetupButtons()
+	{
+		SetupButton(mondayButton, ref mondayText, Day.Monday);
+		SetupButton(tuesdayButton, ref tuesdayText, Day.Tuesday);
+		SetupButton(wednesdayButton, ref wednesdayText, Day.Wednesday);
+		SetupButton(thursdayButton, ref thursdayText, Day.Thursday);
+		SetupButton(fridayButton, ref fridayText, Day.Friday);
+	}
+
+	private void RegisterInternalEvents()
+	{
+		OnOpenMenu += Internal_Open;
+	}
+
+	private void DeregisterInternalEvents()
+	{
+		OnOpenMenu -= Internal_Open;
+	}
+	#endregion
+
+
+	#region Actions
+	public static void Open(Schedule schedule)
+	{
+		if(OnOpenMenu != null)
+			OnOpenMenu(schedule);
+	}
+
+	public static void Close()
+	{
+		if(OnCloseMenu != null)
+			OnCloseMenu();
+	}
+
+	private void Internal_Open(Schedule schedule)
 	{
 		this.schedule = schedule;
 		SetTitle();
@@ -74,11 +145,14 @@ public class ScheduleMenu : MonoBehaviour
 		SelectDay(currentDay);
 	}
 
-	public void Close()
+	private void Internal_Close()
 	{
 		
 	}
+	#endregion
 
+
+	#region Helpers
 	private void SetTitle()
 	{
 		if(schedule == null || titleText == null)
@@ -120,10 +194,7 @@ public class ScheduleMenu : MonoBehaviour
 		foreach(ScheduleItem item in items)
 			item.ViewEntry(currentDay);
 	}
-	#endregion
 
-
-	#region Helpers
 	private void SelectButton(Button button, Graphic text, bool selected)
 	{
 		if(button == null || text == null)
@@ -132,30 +203,6 @@ public class ScheduleMenu : MonoBehaviour
 		button.interactable = !selected;
 		Color textColor = (selected ? highlightedColor : normalColor);
 		text.color = textColor;
-	}
-
-	private void GenerateEntries()
-	{
-		if(scheduleItemPrefab == null || entryContainer == null)
-			return;
-
-		const int EntryCount = 14;
-
-		for(int i = 0; i < EntryCount; i++)
-		{
-			GameObject entry = Instantiate(scheduleItemPrefab, entryContainer) as GameObject;
-			ScheduleItem item = entry.GetComponent<ScheduleItem>();
-			items.Add(item);
-		}
-	}
-
-	private void SetupButtons()
-	{
-		SetupButton(mondayButton, ref mondayText, Day.Monday);
-		SetupButton(tuesdayButton, ref tuesdayText, Day.Tuesday);
-		SetupButton(wednesdayButton, ref wednesdayText, Day.Wednesday);
-		SetupButton(thursdayButton, ref thursdayText, Day.Thursday);
-		SetupButton(fridayButton, ref fridayText, Day.Friday);
 	}
 
 	private void SetupButton(Button button, ref Graphic textGraphic, Day day)
