@@ -4,40 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using Map;
 using Navigation;
+using Databases;
 
 namespace Menus
 {
-	public class LocationMarker
-	{
-		public LocationMarker(string displayedName, Vector3 position)
-		{
-			m_position = position;
-			m_displayedName = displayedName;
-		}
-
-		public LocationMarker(Location location)
-		{
-			if(location == null)
-				return;
-			
-			m_position = location.position;
-			m_displayedName = location.displayedName;
-		}
-
-		private Vector3 m_position = Vector3.zero;
-		private string m_displayedName = "Marker";
-
-		public Vector3 position
-		{
-			get { return m_position; }
-		}
-
-		public string displayedName
-		{
-			get { return m_displayedName; }
-		}
-	}
-
 	public class MapMenu : MonoBehaviour
 	{
 		#region Serialized Fields
@@ -52,9 +22,6 @@ namespace Menus
 
 		[SerializeField]
 		private MapMenuMarkerButton destinationMarkerButton = null;
-
-		[SerializeField]
-		private LocationDatabase locationDatabase = null;
 
 		[SerializeField]
 		private NavigationSystem navigationSystem = null;
@@ -98,8 +65,7 @@ namespace Menus
 			if(chooseOnMapButton != null)
 				chooseOnMapButton.onClick.AddListener(MarkLocation);
 
-			if(locationDatabase != null)
-				locationDatabase.OnResult += OnResult;
+			LocationDatabase.OnResult += OnResult;
 			
 		}
 		#endregion
@@ -108,18 +74,12 @@ namespace Menus
 		#region Events
 		private void OnSearch(string text)
 		{
-			if(locationDatabase == null)
-				return;
-
-			locationDatabase.Search(text);
+			LocationDatabase.Search(text);
 		}
 
 		private void OnSelect(int index)
 		{
-			if(locationDatabase == null)
-				return;
-			
-			Location location = locationDatabase.GetLocationFromSearch(index);
+            Location location = LocationDatabase.GetLocationFromSearch(index);
 			LocationMarker marker = new LocationMarker(location);
 
 			if(marker == null)
@@ -130,9 +90,6 @@ namespace Menus
 
 		private void OnResult(int count)
 		{
-			if(locationDatabase == null)
-				return;
-
 			if(count == 0)
 			{
 				SearchMenu.SetContent(null);
@@ -143,7 +100,7 @@ namespace Menus
 
 			for(int i = 0; i < count; i++)
 			{
-				Location location = locationDatabase.GetLocationFromSearch(i);
+                Location location = LocationDatabase.GetLocationFromSearch(i);
 				contents[i] = new MenuContent(null, location.displayedName);
 			}
 

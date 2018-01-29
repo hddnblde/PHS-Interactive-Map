@@ -4,27 +4,68 @@ using UnityEngine;
 using System.Linq;
 using System.Text;
 using Search;
+using Map;
 
 #if UNITY_EDITOR
 using UnityEditor;
 using System.IO;
 #endif
 
-namespace Map
+namespace Databases
 {
 	[DisallowMultipleComponent]
 	public class LocationDatabase : MonoBehaviour
 	{
-		#region Fields
-		public delegate void ResultEvent(int count);
-		public event ResultEvent OnResult;
-
+		#region Serialized Fields
 		[SerializeField]
 		private List<LandmarkCollection> landmarkCollectionList = new List<LandmarkCollection>();
+		#endregion
 
+
+		#region Hidden Fields
+		private static LocationDatabase instance = null;
+
+		public delegate void ResultEvent(int count);
+		public static event ResultEvent OnResult;
 		private List<SearchKey> searchKeys = new List<SearchKey>();
+		#endregion
 
-		public int searchResultCount
+
+		#region Properties
+		public static int searchResultCount
+		{
+			get
+			{
+				if(instance == null)
+					return 0;
+				else
+					return instance.Internal_searchResultCount;
+			}
+		}
+
+		public static int landmarkCollectionCount
+		{
+			get
+			{
+				if(instance == null)
+					return 0;
+				else
+					return instance.Internal_landmarkCollectionCount;
+			}
+		}
+
+		public static int locationCount
+		{
+			get
+			{
+				if(instance == null)
+					return 0;
+				else
+					return instance.Internal_locationCount;
+			}
+		}
+
+		private int Internal_searchResultCount
 		{
 			get
 			{
@@ -35,7 +76,7 @@ namespace Map
 			}
 		}
 
-		public int landmarkCollectionCount
+		private int Internal_landmarkCollectionCount
 		{
 			get
 			{
@@ -46,7 +87,7 @@ namespace Map
 			}
 		}
 
-		public int locationCount
+		private int Internal_locationCount
 		{
 			get
 			{
@@ -60,14 +101,78 @@ namespace Map
 		#endregion
 
 
-		#region Functions
-		public Location GetLocationFromSearch(int index)
+		#region MonoBehaviour Implementation
+		private void OnEnable()
+		{
+			InitializeSingleton();
+		}
+
+		private void OnDisable()
+		{
+			UninitializeSingleton();
+		}
+		#endregion
+
+
+		#region Initializers
+		private void InitializeSingleton()
+		{
+			if(instance == null)
+				instance = this;
+			else
+			{
+				Destroy(gameObject);
+				return;
+			}
+		}
+
+		private void UninitializeSingleton()
+		{
+			if(instance == this)
+				instance = null;
+		}
+		#endregion
+
+
+		#region Actions
+		public static Location GetLocationFromSearch(int index)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetLocationFromSearch(index);
+		}
+
+		public static Location GetLocationFromSearch(int index, out Landmark landmark)
+		{
+			landmark = null;
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetLocationFromSearch(index, out landmark);
+		}
+
+		public static LandmarkCollection GetLandmarkCollection(int index)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetLandmarkCollection(index);
+		}
+
+		public static void Search(string keyword)
+		{
+			if(instance != null)
+				instance.Internal_Search(keyword);
+		}
+
+		private Location Internal_GetLocationFromSearch(int index)
 		{
 			Landmark landmark;
 			return GetLocationFromSearch(index, out landmark);
 		}
 
-		public Location GetLocationFromSearch(int index, out Landmark landmark)
+		private Location Internal_GetLocationFromSearch(int index, out Landmark landmark)
 		{
 			landmark = null;
 
@@ -102,7 +207,7 @@ namespace Map
 			return location;
 		}
 
-		public LandmarkCollection GetLandmarkCollection(int index)
+		private LandmarkCollection Internal_GetLandmarkCollection(int index)
 		{
 			if(index < 0 || landmarkCollectionList.Count == 0 || landmarkCollectionList == null || index >= landmarkCollectionList.Count)
 				return null;
@@ -110,7 +215,7 @@ namespace Map
 				return landmarkCollectionList[index];
 		}
 
-		public void Search(string keyword)
+		private void Internal_Search(string keyword)
 		{
 			searchKeys.Clear();
 			keyword = RemoveMultipleWhiteSpaces(keyword).ToLower();
@@ -145,6 +250,11 @@ namespace Map
 
 
 		#region Helpers
+		public int GetLocationCount()
+		{
+			return Internal_locationCount;
+		}
+		
 		private string RemoveMultipleWhiteSpaces(string s)
 		{
 			string[] words = s.Split(" ".ToCharArray(), System.StringSplitOptions.RemoveEmptyEntries);
@@ -218,13 +328,13 @@ namespace Map
 		roomsPath,
 		searchKeyword;
 
-		private LocationDatabase locationTable = null;
+		private LocationDatabase locationDatabase = null;
 
 		private bool foldout = false;
 
 		private void OnEnable()
 		{
-			locationTable = target as LocationDatabase;
+			locationDatabase = target as LocationDatabase;
 			landmarkClustersProperty = serializedObject.FindProperty("landmarkCollectionList");
 			LoadPrefs();
 		}
@@ -263,7 +373,7 @@ namespace Map
 			if(EditorGUI.EndChangeCheck())
 				SavePrefs();
 
-			EditorGUILayout.HelpBox("Location Count : " + locationTable.locationCount, MessageType.Info);
+			EditorGUILayout.HelpBox("Location Count : " + locationDatabase.GetLocationCount(), MessageType.Info);
 		}
 
 		private void DrawTools()
@@ -278,7 +388,7 @@ namespace Map
 				EditorGUILayout.BeginHorizontal();
 
 				if(GUILayout.Button("Search"))
-					locationTable.Search(searchKeyword);
+					LocationDatabase.Search(searchKeyword);
 				
 				searchKeyword = EditorGUILayout.TextField(searchKeyword);
 
@@ -302,7 +412,7 @@ namespace Map
 
 				if(GUILayout.Button("Load Places"))
 				{
-					locationTable.SetLandmarkCollectionList(GetPlaces());
+					locationDatabase.SetLandmarkCollectionList(GetPlaces());
 					serializedObject.ApplyModifiedProperties();
 					serializedObject.Update();
 				}

@@ -299,7 +299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markerContainer: {fileID: 92544644}
-  locationDatabase: {fileID: 1882231225}
   mapMarkerPrefab: {fileID: 1325977398379466, guid: de97993b52609f84cbbefc4d0fe63dca,
     type: 2}
   placeViewingBounds:
@@ -736,7 +735,6 @@ MonoBehaviour:
   chooseOnMapButton: {fileID: 2140516324}
   originMarkerButton: {fileID: 2081505855}
   destinationMarkerButton: {fileID: 337138762}
-  locationDatabase: {fileID: 1882231225}
   navigationSystem: {fileID: 377662696}
   navigationMenu: {fileID: 823897368}
 --- !u!225 &180853602
@@ -1519,7 +1517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000012393454, y: -0.000047898484}
+  m_AnchoredPosition: {x: 0.000012393454, y: -0.00005835278}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
