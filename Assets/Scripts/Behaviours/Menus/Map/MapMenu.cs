@@ -40,9 +40,7 @@ namespace Menus
 
 	public class MapMenu : MonoBehaviour
 	{
-		public delegate void FloorSelect(int index);
-		public static event FloorSelect OnFloorSelect;
-
+		#region Serialized Fields
 		[SerializeField]
 		private CanvasGroup markerPanel = null;
 
@@ -66,25 +64,35 @@ namespace Menus
 
 		[SerializeField]
 		private NavigationMenu navigationMenu = null;
+		#endregion
 
-		[SerializeField]
-		private int currentFloor = 1;
 
-		private LocationMarker originMarker = null;
-		private LocationMarker destinationMarker = null;
-		private Context currentContext = Context.SetOrigin;
+		#region Hidden Fields
+		public delegate void FloorSelect(int index);
+		public static event FloorSelect OnFloorSelect;
 
 		private enum Context
 		{
 			SetOrigin,
 			SetDestination
 		}
+		
+		private LocationMarker originMarker = null;
+		private LocationMarker destinationMarker = null;
+		private Context currentContext = Context.SetOrigin;
+		private int currentFloor = 1;
+		#endregion
 
+		
+		#region MonoBehaviour Implementation
 		private void Awake()
 		{
 			Initialize();
 		}
+		#endregion
 
+
+		#region Initializers
 		private void Initialize()
 		{
 			RegisterButton(originMarkerButton, "Choose starting point", Context.SetOrigin);
@@ -97,7 +105,10 @@ namespace Menus
 				locationDatabase.OnResult += OnResult;
 			
 		}
+		#endregion
 
+
+		#region Events
 		private void OnSearch(string text)
 		{
 			if(locationDatabase == null)
@@ -141,7 +152,10 @@ namespace Menus
 
 			SearchMenu.SetContent(contents);
 		}
+		#endregion
 
+
+		#region Helpers
 		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
 		{
 			if(button == null)
@@ -152,7 +166,10 @@ namespace Menus
 
 			button.AddListener(selectAction, clearAction, placeholder);
 		}
+		#endregion
 
+
+		#region Actions
 		private void SearchLocation(Context context)
 		{
 			currentContext = context;
@@ -241,11 +258,6 @@ namespace Menus
 			if(OnFloorSelect != null)
 				OnFloorSelect(currentFloor);
 		}
-
-		private void Update()
-		{
-			if(Input.GetKeyDown(KeyCode.Space))
-				FloorSelectEvent();
-		}
+		#endregion
 	}
 }
