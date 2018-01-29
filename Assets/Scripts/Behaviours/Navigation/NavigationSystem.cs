@@ -21,6 +21,12 @@ namespace Navigation
 
 
 		#region Hidden Fields
+		private delegate void NavigateAction(Vector3 origin, Vector3 destination);
+		private delegate void ClearAction();
+
+		private static event NavigateAction OnNavigate;
+		private static event ClearAction OnClear;
+
 		private LineRenderer lineRenderer = null;
 		private const float LineWidthLowerLimit = 3f;
 		private const float LineWidthUpperLimit = 7f;
@@ -36,23 +42,70 @@ namespace Navigation
 
 		private void OnEnable()
 		{
-			NavigationCamera.OnViewAdjust += OnViewAdjust;
+			RegisterInternalEvents();
 		}
 
 		private void OnDisable()
 		{
-			NavigationCamera.OnViewAdjust -= OnViewAdjust;
+			DeregisterInternalEvents();
 		}
 		#endregion
 
 
-		#region Methods
+		#region Initializers
+		private void Initialize()
+		{
+			lineRenderer = GetComponent<LineRenderer>();
+		}
+
+		private void RegisterInternalEvents()
+		{
+			NavigationCamera.OnViewAdjust += OnViewAdjust;
+			OnNavigate += Internal_Navigate;
+			OnClear += Internal_Clear;
+		}
+
+		private void DeregisterInternalEvents()
+		{
+			NavigationCamera.OnViewAdjust -= OnViewAdjust;
+			OnNavigate -= Internal_Navigate;
+			OnClear -= Internal_Clear;
+		}
+		#endregion
+
+
+		#region Events
+		private void OnViewAdjust(float view)
+		{
+			if(lineRenderer == null)
+				return;
+			lineRenderer.widthMultiplier = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
+		}
+		#endregion
+
+
+		#region Actions
 		/// <summary>
 		/// Navigates the map and draw a line from the origin to destination.
 		/// </summary>
 		/// <param name="origin">The start position.</param>
 		/// <param name="destination">The goal position.</param>
-		public void Navigate(Vector3 origin, Vector3 destination)
+		public static void Navigate(Vector3 origin, Vector3 destination)
+		{
+			if(OnNavigate != null)
+				OnNavigate(origin, destination);
+		}
+
+		/// <summary>
+		/// Clears the map from drawn lines.
+		/// </summary>
+		public static void Clear()
+		{
+			if(OnClear != null)
+				OnClear();
+		}		
+
+		private void Internal_Navigate(Vector3 origin, Vector3 destination)
 		{
 			Vector3[] path = FindPath(origin, destination);
 			DrawNavigationLine(path);
@@ -61,6 +114,19 @@ namespace Navigation
 			DrawMarker(destinationMarker, destination);
 		}
 
+		private void Internal_Clear()
+		{
+			if(lineRenderer == null)
+				return;
+			
+			lineRenderer.positionCount = 0;
+			ClearMarker(originMarker);
+			ClearMarker(destinationMarker);
+		}
+		#endregion
+
+		
+		#region Helpers
 		private void DrawMarker(Transform marker, Vector3 position)
 		{
 			if(marker == null)
@@ -75,28 +141,6 @@ namespace Navigation
 		{
 			if(marker != null)
 				marker.gameObject.SetActive(false);
-		}
-
-		public void Clear()
-		{
-			if(lineRenderer == null)
-				return;
-			
-			lineRenderer.positionCount = 0;
-			ClearMarker(originMarker);
-			ClearMarker(destinationMarker);
-		}
-
-		private void Initialize()
-		{
-			lineRenderer = GetComponent<LineRenderer>();
-		}
-
-		private void OnViewAdjust(float view)
-		{
-			if(lineRenderer == null)
-				return;
-			lineRenderer.widthMultiplier = Mathf.Lerp(LineWidthUpperLimit, LineWidthLowerLimit, view);
 		}
 
 		private void DrawNavigationLine(Vector3[] path)

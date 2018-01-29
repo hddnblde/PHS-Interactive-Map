@@ -24,9 +24,6 @@ namespace Menus
 		private MapMenuMarkerButton destinationMarkerButton = null;
 
 		[SerializeField]
-		private NavigationSystem navigationSystem = null;
-
-		[SerializeField]
 		private NavigationMenu navigationMenu = null;
 		#endregion
 
@@ -184,13 +181,10 @@ namespace Menus
 
 		private void Navigate()
 		{
-			if(navigationSystem == null)
-				return;
-
 			if(originMarker == null || destinationMarker == null)
-				navigationSystem.Clear();
+				NavigationSystem.Clear();
 			else
-				navigationSystem.Navigate(originMarker.position, destinationMarker.position);
+				NavigationSystem.Navigate(originMarker.position, destinationMarker.position);
 		}
 
 		private void FloorSelectEvent()
