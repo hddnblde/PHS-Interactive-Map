@@ -7,14 +7,7 @@ namespace Menus
 {
 	public class SearchMenu : MonoBehaviour
 	{
-		public delegate void Search(string text);
-		public delegate void Select(int index);
-		public delegate void Quit();
-
-		private event Search OnSearch;
-		private event Select OnSelect;
-		private event Quit OnQuit;
-
+		#region Serialized Fields
 		[SerializeField]
 		private InputField textField = null;
 
@@ -35,37 +28,60 @@ namespace Menus
 
 		[SerializeField]
 		private int poolCount = 70;
+		#endregion
+
+
+		#region Hidden Fields
+		private delegate void OpenAction(Search searchAction, Select selectAction, Quit quitAction, string placeholder);
+		private delegate void CloseAction();
+		private delegate void SetContentAction(MenuContent[] contents);
+
+		public delegate void Search(string text);
+		public delegate void Select(int index);
+		public delegate void Quit();
+
+		private static event OpenAction OnOpenMenu;
+		private static event CloseAction OnCloseMenu;
+		private static event SetContentAction OnSetContent;
+
+		private event Search OnSearch;
+		private event Select OnSelect;
+		private event Quit OnQuit;
 
 		private CanvasGroup canvasGroup = null;
-
 		private List<MenuContentLayout> contentLayoutList = new List<MenuContentLayout>();
-		private bool m_isOpen = false;
+		private static bool m_isOpen = false;
+		#endregion
 
-		public bool isOpen
+
+		#region Property
+		public static bool isOpen
 		{
 			get { return m_isOpen; }
 		}
+		#endregion
 
+
+		#region MonoBehaviour Implementation
 		private void Awake()
 		{
 			Initialize();
-			PoolContent();
+			PoolContents();
 		}
 
-		private void PoolContent()
+		private void OnEnable()
 		{
-			if(contentPrefab == null || contentContainer == null)
-				return;
-
-			for(int i = 0; i < poolCount; i++)
-			{
-				MenuContentLayout contentLayout = Instantiate(contentPrefab, contentContainer);
-				contentLayout.OnSelect += OnContentClicked;
-				contentLayoutList.Add(contentLayout);
-				contentLayout.gameObject.SetActive(false);
-			}
+			RegisterInternalEvents();
 		}
 
+		private void OnDisable()
+		{
+			DeregisterInternalEvents();
+		}
+		#endregion
+
+
+		#region Initializers
 		private void Initialize()
 		{
 			if(textField != null)
@@ -80,6 +96,37 @@ namespace Menus
 			canvasGroup = GetComponent<CanvasGroup>();
 		}
 
+		private void PoolContents()
+		{
+			if(contentPrefab == null || contentContainer == null)
+				return;
+
+			for(int i = 0; i < poolCount; i++)
+			{
+				MenuContentLayout contentLayout = Instantiate(contentPrefab, contentContainer);
+				contentLayout.OnSelect += OnContentClicked;
+				contentLayoutList.Add(contentLayout);
+				contentLayout.gameObject.SetActive(false);
+			}
+		}
+
+		private void RegisterInternalEvents()
+		{
+			OnOpenMenu += Internal_Open;
+			OnCloseMenu += Internal_Close;
+			OnSetContent += Internal_SetContent;
+		}
+
+		private void DeregisterInternalEvents()
+		{
+			OnOpenMenu -= Internal_Open;
+			OnCloseMenu -= Internal_Close;
+			OnSetContent -= Internal_SetContent;
+		}
+		#endregion
+
+
+		#region Events
 		private void OnTextEdit(string text)
 		{
 			if(OnSearch != null)
@@ -105,11 +152,24 @@ namespace Menus
 			if(textField != null)
 				textField.text = null;
 		}
+		#endregion
 
+
+		#region Helpers
 		private void ClearContentLayout()
 		{
 			foreach(MenuContentLayout contentLayout in contentLayoutList)
 				contentLayout.gameObject.SetActive(false);
+		}
+
+		private void Show(bool shown)
+		{
+			if(canvasGroup == null)
+				return;
+
+			canvasGroup.alpha = (shown ? 1f : 0f);
+			canvasGroup.blocksRaycasts = shown;
+			canvasGroup.interactable = shown;
 		}
 
 		private MenuContentLayout GetContentLayout()
@@ -129,7 +189,37 @@ namespace Menus
 			return currentContentLayout;
 		}
 
-		public void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
+		private void InitializeTextField(string placeholder)
+		{
+			if(textField != null)
+				textField.text = "";
+
+			if(placeholderText != null)
+				placeholderText.text = placeholder;
+		}
+		#endregion
+
+
+		#region Internal and External Actions
+		public static void Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder = "Search")
+		{
+			if(OnOpenMenu != null)
+				OnOpenMenu(searchAction, selectAction, quitAction, placeholder);
+		}
+
+		public static void Close()
+		{
+			if(OnCloseMenu != null)
+				OnCloseMenu();
+		}
+
+		public static void SetContent(MenuContent[] contents)
+		{
+			if(OnSetContent != null)
+				OnSetContent(contents);
+		}
+
+		private void Internal_Open(Search searchAction, Select selectAction, Quit quitAction, string placeholder)
 		{
 			if(m_isOpen)
 			{
@@ -147,7 +237,7 @@ namespace Menus
 			Show(true);
 		}
 
-		public void Close()
+		private void Internal_Close()
 		{
 			if(!m_isOpen)
 			{
@@ -162,18 +252,9 @@ namespace Menus
 
 			m_isOpen = false;
 			Show(false);
-		}
+		}		
 
-		private void InitializeTextField(string placeholder)
-		{
-			if(textField != null)
-				textField.text = "";
-
-			if(placeholderText != null)
-				placeholderText.text = placeholder;
-		}
-
-		public void SetContent(MenuContent[] contents)
+		private void Internal_SetContent(MenuContent[] contents)
 		{
 			ClearContentLayout();
 
@@ -190,14 +271,7 @@ namespace Menus
 			}
 		}
 
-		private void Show(bool shown)
-		{
-			if(canvasGroup == null)
-				return;
-
-			canvasGroup.alpha = (shown ? 1f : 0f);
-			canvasGroup.blocksRaycasts = shown;
-			canvasGroup.interactable = shown;
-		}
+		
+		#endregion
 	}
 }

@@ -56,9 +56,6 @@ namespace Menus
 		private MapMenuMarkerButton destinationMarkerButton = null;
 
 		[SerializeField]
-		private SearchMenu searchMenu = null;
-
-		[SerializeField]
 		private MarkerMenu markerMenu = null;
 
 		[SerializeField]
@@ -125,12 +122,12 @@ namespace Menus
 
 		private void OnResult(int count)
 		{
-			if(locationDatabase == null || searchMenu == null)
+			if(locationDatabase == null)
 				return;
 
 			if(count == 0)
 			{
-				searchMenu.SetContent(null);
+				SearchMenu.SetContent(null);
 				return;
 			}
 
@@ -142,7 +139,7 @@ namespace Menus
 				contents[i] = new MenuContent(null, location.displayedName);
 			}
 
-			searchMenu.SetContent(contents);
+			SearchMenu.SetContent(contents);
 		}
 
 		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
@@ -203,16 +200,16 @@ namespace Menus
 
 		private void ToggleSearch(bool show)
 		{
-			if(searchMenu == null || navigationMenu == null)
+			if(navigationMenu == null)
 				return;
 
 			if(show)
 			{
 				string placeholder = "Choose " + (currentContext == Context.SetDestination ? "destination" : "starting point");
-				searchMenu.Open(OnSearch, OnSelect, CloseContext, placeholder);
+				SearchMenu.Open(this.OnSearch, this.OnSelect, this.CloseContext, placeholder);
 			}
-			else if(searchMenu.isOpen)
-				searchMenu.Close();
+			else if(SearchMenu.isOpen)
+				SearchMenu.Close();
 
 			navigationMenu.ShowBackground(show);
 			chooseOnMapButton.gameObject.SetActive(show);
