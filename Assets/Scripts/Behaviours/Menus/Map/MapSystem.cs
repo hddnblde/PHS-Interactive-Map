@@ -57,7 +57,7 @@ namespace Map
 		[SerializeField]
 		private ViewingBounds roomViewingBounds = new ViewingBounds();
 
-		private void Awake()
+		private void Start()
 		{
 			CreateMarkers();
 		}

@@ -36,10 +36,16 @@ namespace Menus
 			placeholderText = placeholder;
 
 			if(selectionButton != null)
-				selectionButton.onClick.AddListener(selectAction);
+				selectionButton.onClick.AddListener(() => { selectAction(); ResetSelectionButton(); });
 
 			if(clearButton != null)
-				clearButton.onClick.AddListener(clearAction);
+				clearButton.onClick.AddListener(() => { clearAction(); ResetSelectionButton(); } );
+		}
+
+		private void ResetSelectionButton()
+		{
+			selectionButton.enabled = false;
+			selectionButton.enabled = true;
 		}
 
 		public void SetDisplayedText(string text, bool isEmpty)
