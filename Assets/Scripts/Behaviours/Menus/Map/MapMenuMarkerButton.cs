@@ -18,6 +18,7 @@ namespace Menus
 		private Text displayedText = null;
 
 		private string placeholderText = "Choose marker";
+		private bool isEmpty = true;
 
 		private void Awake()
 		{
@@ -27,7 +28,7 @@ namespace Menus
 		private void Initialize()
 		{
 			if(clearButton != null)
-				clearButton.onClick.AddListener(() => SetDisplayedText(placeholderText));
+				clearButton.onClick.AddListener(() => SetDisplayedText(placeholderText, true));
 		}
 
 		public void AddListener(UnityAction selectAction, UnityAction clearAction, string placeholder)
@@ -41,10 +42,21 @@ namespace Menus
 				clearButton.onClick.AddListener(clearAction);
 		}
 
-		public void SetDisplayedText(string text)
+		public void SetDisplayedText(string text, bool isEmpty)
 		{
-			if(displayedText != null && !string.IsNullOrEmpty(text))
+			isEmpty |= string.IsNullOrEmpty(text);
+
+			if(isEmpty)
+				text = placeholderText;
+
+			if(displayedText != null)
+			{
 				displayedText.text = text;
+				displayedText.CrossFadeAlpha((isEmpty ? 0.75f : 1f), 0.1f, true);
+			}
+
+			if(clearButton != null)
+				clearButton.gameObject.SetActive(!isEmpty);
 		}
 	}
 }

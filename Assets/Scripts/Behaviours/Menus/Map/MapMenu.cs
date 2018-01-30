@@ -134,12 +134,12 @@ namespace Menus
 			if(context == Context.SetDestination)
 			{
 				destinationMarker = marker;
-				destinationMarkerButton.SetDisplayedText(displayedName);
+				destinationMarkerButton.SetDisplayedText(displayedName, false);
 			}
 			else
 			{
 				originMarker = marker;
-				originMarkerButton.SetDisplayedText(displayedName);
+				originMarkerButton.SetDisplayedText(displayedName, false);
 			}
 
 			Navigate();
@@ -205,6 +205,7 @@ namespace Menus
 			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
 
 			button.AddListener(selectAction, clearAction, placeholder);
+			button.SetDisplayedText(placeholder, true);
 		}
 		#endregion
 	}
