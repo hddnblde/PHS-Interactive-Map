@@ -132,6 +132,9 @@ namespace Menus
 		{
 			if(OnSearch != null)
 				OnSearch(text);
+
+			if(clearButton != null)
+				clearButton.gameObject.SetActive(!string.IsNullOrEmpty(text));
 		}
 
 		private void OnContentClicked(int index)
@@ -301,6 +304,9 @@ namespace Menus
 
 			if(placeholderText != null)
 				placeholderText.text = placeholder;
+
+			if(clearButton != null)
+				clearButton.gameObject.SetActive(false);
 		}
 		#endregion
 	}
