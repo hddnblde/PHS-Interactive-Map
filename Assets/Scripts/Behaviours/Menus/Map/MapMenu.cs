@@ -18,6 +18,12 @@ namespace Menus
 		private Button chooseOnMapButton = null;
 
 		[SerializeField]
+		private Button floorButton = null;
+
+		[SerializeField]
+		private Button directionsButton = null;
+
+		[SerializeField]
 		private MapMenuMarkerButton originMarkerButton = null;
 
 		[SerializeField]
@@ -29,9 +35,6 @@ namespace Menus
 
 
 		#region Hidden Fields
-		public delegate void FloorSelect(int index);
-		public static event FloorSelect OnFloorSelect;
-
 		private enum Context
 		{
 			SetOrigin,
@@ -41,7 +44,6 @@ namespace Menus
 		private LocationMarker originMarker = null;
 		private LocationMarker destinationMarker = null;
 		private Context currentContext = Context.SetOrigin;
-		private int currentFloor = 1;
 		#endregion
 
 		
@@ -61,6 +63,9 @@ namespace Menus
 
 			if(chooseOnMapButton != null)
 				chooseOnMapButton.onClick.AddListener(MarkLocation);
+
+			if(floorButton != null)
+				floorButton.onClick.AddListener(FloorMenu.Open);
 
 			LocationDatabase.OnResult += OnResult;
 			
@@ -185,12 +190,6 @@ namespace Menus
 				NavigationSystem.Clear();
 			else
 				NavigationSystem.Navigate(originMarker.position, destinationMarker.position);
-		}
-
-		private void FloorSelectEvent()
-		{
-			if(OnFloorSelect != null)
-				OnFloorSelect(currentFloor);
 		}
 		#endregion
 

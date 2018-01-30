@@ -35,13 +35,13 @@ namespace Menus
 		private void OnEnable()
 		{
 			NavigationCamera.OnViewAdjust += OnViewAdjust;
-			MapMenu.OnFloorSelect += OnFloorSelect;
+			FloorMenu.OnFloorSelect += OnFloorSelect;
 		}
 
 		private void OnDisable()
 		{
 			NavigationCamera.OnViewAdjust -= OnViewAdjust;
-			MapMenu.OnFloorSelect -= OnFloorSelect;
+			FloorMenu.OnFloorSelect -= OnFloorSelect;
 		}
 
 		private void OnFloorSelect(int index)

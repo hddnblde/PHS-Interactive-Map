@@ -7,7 +7,10 @@ namespace Menus
 {
 	public class FloorMenu : MonoBehaviour
 	{
-		#region Serialized Field
+		#region Serialized Fields
+		[SerializeField]
+		private Button closeButton = null;
+
 		[SerializeField]
 		private List<Button> buttons = new List<Button>();
 		#endregion
@@ -72,6 +75,9 @@ namespace Menus
 				Button button = buttons[i];
 				RegisterButtonEvent(button, i + 1);
 			}
+
+			if(closeButton != null)
+				closeButton.onClick.AddListener(Internal_Close);
 		}
 
 		private void RegisterInternalEvents()
@@ -115,12 +121,18 @@ namespace Menus
 
 		private void Internal_Open()
 		{
+			if(canvasGroup == null)
+				return;
 
+			Show(true);
 		}
 
 		private void Internal_Close()
 		{
+			if(canvasGroup == null)
+				return;
 
+			Show(false);
 		}
 		#endregion
 
