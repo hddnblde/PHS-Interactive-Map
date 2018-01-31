@@ -8108,8 +8108,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1882231224}
   - component: {fileID: 1882231225}
+  - component: {fileID: 1882231226}
   m_Layer: 0
-  m_Name: Location Database
+  m_Name: Databases
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8689,6 +8690,17 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 5442fb4ae00707448a4cab8dab87e89a, type: 2}
       rooms: []
+--- !u!114 &1882231226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882231223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb2f367cb0ab4146a1623fad9521798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1902193318
 GameObject:
   m_ObjectHideFlags: 0
