@@ -937,6 +937,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 189543179}
+--- !u!1 &228314824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 228314825}
+  - component: {fileID: 228314827}
+  - component: {fileID: 228314826}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &228314825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228314824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1823867151}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 23}
+  m_SizeDelta: {x: 0, y: 30}
+  m_Pivot: {x: 0.49999997, y: 0}
+--- !u!114 &228314826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228314824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3c400784a94afc444ad8ebae73b1681b, type: 3}
+    m_FontSize: 17
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Directions
+--- !u!222 &228314827
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228314824}
 --- !u!1 &254958459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,7 +1828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000029894942}
+  m_AnchoredPosition: {x: 0, y: -0.00003188822}
   m_SizeDelta: {x: -8, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -2953,11 +3027,11 @@ RectTransform:
   m_Father: {fileID: 1823867151}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -32, y: -32}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -24}
+  m_SizeDelta: {x: 60, y: 60}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &735956517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4676,6 +4750,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1043925483}
+--- !u!1 &1120185441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1120185442}
+  - component: {fileID: 1120185444}
+  - component: {fileID: 1120185443}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1120185442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1120185441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091162445}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: 0, y: 30}
+  m_Pivot: {x: 0.49999997, y: 0}
+--- !u!114 &1120185443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1120185441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3c400784a94afc444ad8ebae73b1681b, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Floors
+--- !u!222 &1120185444
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1120185441}
 --- !u!1 &1171616718
 GameObject:
   m_ObjectHideFlags: 0
@@ -7423,6 +7571,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 735956516}
+  - {fileID: 228314825}
   m_Father: {fileID: 180853599}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8140,8 +8289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86268b22a122e2747a96b7f34c96f760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landmarkCollectionList:
-  - m_landmark: {fileID: 11400000, guid: 04a7cf7af39653c45b1c3a0e25a52b01, type: 2}
+  pointsOfInterestGroup:
+  - m_pointOfInterest: {fileID: 11400000, guid: 04a7cf7af39653c45b1c3a0e25a52b01,
+      type: 2}
     m_names: "rene medina hall\r\nvioleta hall\r"
     m_tags: bulwagan; stage; court; hall;
     cacheCount: 2
@@ -8150,7 +8300,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: f2efe722d78f5164e939ed76bd878c81, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: a9cb1a81734147b47be51874be25c8f1, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: a9cb1a81734147b47be51874be25c8f1,
+      type: 2}
     m_names: "canteen 1\r\ncanteen 2\r\ncanteen 3\r"
     m_tags: rose; ia; industrial; industrial arts; gerbera;
     cacheCount: 3
@@ -8161,7 +8312,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 7b10347b8cdb1e445b83c79a9e7523ac, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: ff8832e4fdd08664eb91a54ba1c35176, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: ff8832e4fdd08664eb91a54ba1c35176,
+      type: 2}
     m_names: "clinic office\r\ndental office\r\ninfirmary\r"
     m_tags: 
     cacheCount: 3
@@ -8172,14 +8324,16 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 7b13f65a631dd41469b75854e3f58c29, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 25d8e6bc41604c64489c93351f32d816, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 25d8e6bc41604c64489c93351f32d816,
+      type: 2}
     m_names: "calixto library\r"
     m_tags: 
     cacheCount: 1
     places:
     - place: {fileID: 11400000, guid: 620dc4e2532a0764ab2c06322a1348e5, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 6832cc034e20bd24ca93fb0bd4e6fd45, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 6832cc034e20bd24ca93fb0bd4e6fd45,
+      type: 2}
     m_names: "shed 1\r\nshed 2\r\nshed 3\r\nstudent center\r"
     m_tags: 
     cacheCount: 4
@@ -8192,7 +8346,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 7c4d8b82911aee64591a662034712ff4, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 096317cb47da83e4dbebe977c6284a03, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 096317cb47da83e4dbebe977c6284a03,
+      type: 2}
     m_names: "cr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r\ncr\r"
     m_tags: 
     cacheCount: 16
@@ -8229,7 +8384,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 7bced4b8b5697d742a0cf23711a7e1c3, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4,
+      type: 2}
     m_names: "acacia\r\nanthurium\r\nanthurium 1\r\nanthurium 2\r\nanthurium 3\r\nanthurium
       4\r\naster\r\naster 101\r\naster 102\r\naus aid\r\naus aid 1\r\naus aid 2\r\naus
       aid 3\r\naus aid 4\r\nbaliti\r\ncaballero\r\ncamia\r\ncamia 1\r\ncamia 2\r\ncamia
@@ -8554,7 +8710,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: a6cd7451056ccdf4f977fa81bec38a85, type: 2}
       - {fileID: 11400000, guid: ac49f2f144d36c54bb0913b86ec68289, type: 2}
       - {fileID: 11400000, guid: c7f9b91d784a95a4c82f4bfa7595af3e, type: 2}
-  - m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d,
+      type: 2}
     m_names: "gladiola lab\r\ngladiola lab 1\r\ngladiola lab 2\r\nhome economics lab\r\nindustrial
       arts 1\r\nindustrial arts 10\r\nindustrial arts 11\r\nindustrial arts 12\r\nindustrial
       arts 13\r\nindustrial arts 14\r\nindustrial arts 15\r\nindustrial arts 16\r\nindustrial
@@ -8617,7 +8774,8 @@ MonoBehaviour:
       rooms:
       - {fileID: 11400000, guid: 7d06e97f7cec41348be895ba635f0180, type: 2}
       - {fileID: 11400000, guid: 1aeb1e0bf573a914ca1a7d6839b1d706, type: 2}
-  - m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0,
+      type: 2}
     m_names: "auditor's office\r\nguidance office 1\r\nguidance office 2\r\nguidance
       office\r\nphs-mpc office\r"
     m_tags: 
@@ -8633,7 +8791,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 4bdf61cd14ccbed428b140852d7852f7, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: fb0910d9ebbfbbc4a9979a7bd17784e0,
+      type: 2}
     m_names: "industrial arts office\r\nmath office\r"
     m_tags: 
     cacheCount: 2
@@ -8642,7 +8801,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 4a2ec44641d88bc488c351a92e63a7ab, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 7f4a98c759e932548b708bd06ee89ae4,
+      type: 2}
     m_names: "dg covered court\r\ndm court stage\r\ndm covered court\r"
     m_tags: dm; dm court stage; court;
     cacheCount: 3
@@ -8653,7 +8813,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 022dff5991c562f4bb2d80cb3707c7e9, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: aff70aade19891c47b90618414a4b184, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: aff70aade19891c47b90618414a4b184,
+      type: 2}
     m_names: "gate 1\r\ngate 2\r\ngate 3\r"
     m_tags: 
     cacheCount: 3
@@ -8664,7 +8825,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: beded8a4f7354334ab157259b590b162, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 896f1c36b375f514e8ea54654d54e12d,
+      type: 2}
     m_names: "parking area 1\r\nparking area 2\r\nparking area 3\r"
     m_tags: 
     cacheCount: 3
@@ -8675,7 +8837,8 @@ MonoBehaviour:
       rooms: []
     - place: {fileID: 11400000, guid: 846d814d3a37b4e4e9b0a6a986ef80cb, type: 2}
       rooms: []
-  - m_landmark: {fileID: 11400000, guid: 7b0e7625768341547a37906dd90ddf3e, type: 2}
+  - m_pointOfInterest: {fileID: 11400000, guid: 7b0e7625768341547a37906dd90ddf3e,
+      type: 2}
     m_names: "agriculture lagoon\r\ngreen house\r\nguard house\r\nmrf\r\npump house\r"
     m_tags: 
     cacheCount: 5
@@ -9358,11 +9521,11 @@ RectTransform:
   m_Father: {fileID: 2091162445}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -32, y: -32}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -24}
+  m_SizeDelta: {x: 60, y: 60}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2026431269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9927,6 +10090,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2026431268}
+  - {fileID: 1120185442}
   m_Father: {fileID: 180853599}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

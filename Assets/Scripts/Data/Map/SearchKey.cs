@@ -15,39 +15,39 @@
 			Constructor(0, 0, 0, 0, 0);
 		}
 
-		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex)
+		public SearchKey(int poiIndex, int placeIndex, int locationIndex)
 		{
-			Constructor(landmarkIndex, placeIndex, locationIndex, 0, 0);
+			Constructor(poiIndex, placeIndex, locationIndex, 0, 0);
 		}
 
-		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex, int strength)
+		public SearchKey(int poiIndex, int placeIndex, int locationIndex, int strength)
 		{
-			Constructor(landmarkIndex, placeIndex, locationIndex, strength, 0);
+			Constructor(poiIndex, placeIndex, locationIndex, strength, 0);
 		}
 
-		public SearchKey(int landmarkIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
+		public SearchKey(int poiIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
 		{
-			Constructor(landmarkIndex, placeIndex, locationIndex, strength, nearestPoint);
+			Constructor(poiIndex, placeIndex, locationIndex, strength, nearestPoint);
 		}
 
-		private void Constructor(int landmarkIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
+		private void Constructor(int poiIndex, int placeIndex, int locationIndex, int strength, int nearestPoint)
 		{
-			m_landmarkIndex = landmarkIndex;
+			m_poiIndex = poiIndex;
 			m_placeIndex = placeIndex;
 			m_locationIndex = locationIndex;
 			m_strength = strength;
 			m_nearestPoint = nearestPoint;
 		}
 
-		private int m_landmarkIndex = -1;
+		private int m_poiIndex = -1;
 		private int m_placeIndex = -1;
 		private int m_locationIndex = -1;
 		private int m_strength = 0;
 		private int m_nearestPoint = -1;
 
-		public int landmarkIndex
+		public int poiIndex
 		{
-			get { return m_landmarkIndex; }
+			get { return m_poiIndex; }
 		}
 
 		public int placeIndex

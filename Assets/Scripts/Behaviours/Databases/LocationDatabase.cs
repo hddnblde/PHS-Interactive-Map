@@ -18,7 +18,7 @@ namespace Databases
 	{
 		#region Serialized Fields
 		[SerializeField]
-		private List<LandmarkCollection> landmarkCollectionList = new List<LandmarkCollection>();
+		private List<PointOfInterestGroup> pointsOfInterestGroup = new List<PointOfInterestGroup>();
 		#endregion
 
 
@@ -43,14 +43,14 @@ namespace Databases
 			}
 		}
 
-		public static int landmarkCollectionCount
+		public static int pointsOfInterestCount
 		{
 			get
 			{
 				if(instance == null)
 					return 0;
 				else
-					return instance.Internal_landmarkCollectionCount;
+					return instance.Internal_pointsOfInterestCount;
 			}
 		}
 
@@ -76,14 +76,14 @@ namespace Databases
 			}
 		}
 
-		private int Internal_landmarkCollectionCount
+		private int Internal_pointsOfInterestCount
 		{
 			get
 			{
-				if(landmarkCollectionList == null)
+				if(pointsOfInterestGroup == null)
 					return 0;
 				else
-					return landmarkCollectionList.Count;
+					return pointsOfInterestGroup.Count;
 			}
 		}
 
@@ -92,7 +92,7 @@ namespace Databases
 			get
 			{
 				int count = 0;
-				foreach(LandmarkCollection cluster in landmarkCollectionList)
+				foreach(PointOfInterestGroup cluster in pointsOfInterestGroup)
 					count += cluster.placeCollectionCount;
 				
 				return count;
@@ -143,21 +143,21 @@ namespace Databases
 				return instance.Internal_GetLocationFromSearch(index);
 		}
 
-		public static Location GetLocationFromSearch(int index, out Landmark landmark)
+		public static Location GetLocationFromSearch(int index, out PointOfInterest pointOfInterest)
 		{
-			landmark = null;
+			pointOfInterest = null;
 			if(instance == null)
 				return null;
 			else
-				return instance.Internal_GetLocationFromSearch(index, out landmark);
+				return instance.Internal_GetLocationFromSearch(index, out pointOfInterest);
 		}
 
-		public static LandmarkCollection GetLandmarkCollection(int index)
+		public static PointOfInterestGroup GetPointOfInterestGroup(int index)
 		{
 			if(instance == null)
 				return null;
 			else
-				return instance.Internal_GetLandmarkCollection(index);
+				return instance.Internal_GetPointOfInterestGroup(index);
 		}
 
 		public static void Search(string keyword)
@@ -168,30 +168,30 @@ namespace Databases
 
 		private Location Internal_GetLocationFromSearch(int index)
 		{
-			Landmark landmark;
-			return GetLocationFromSearch(index, out landmark);
+			PointOfInterest pointOfInterest;
+			return GetLocationFromSearch(index, out pointOfInterest);
 		}
 
-		private Location Internal_GetLocationFromSearch(int index, out Landmark landmark)
+		private Location Internal_GetLocationFromSearch(int index, out PointOfInterest pointOfInterest)
 		{
-			landmark = null;
+			pointOfInterest = null;
 
 			if(index < 0 || searchKeys == null || searchKeys.Count == 0 || index >= searchKeys.Count)
 				return null;
 
 			SearchKey searchItem = searchKeys[index];
 
-			if(landmarkCollectionList == null || landmarkCollectionList.Count == 0 || searchItem.landmarkIndex >= landmarkCollectionList.Count || searchItem.landmarkIndex < 0)
+			if(pointsOfInterestGroup == null || pointsOfInterestGroup.Count == 0 || searchItem.poiIndex >= pointsOfInterestGroup.Count || searchItem.poiIndex < 0)
 				return null;
 
-			LandmarkCollection landmarkCollection = landmarkCollectionList[searchItem.landmarkIndex];
+			PointOfInterestGroup pointOfInterestGroup = pointsOfInterestGroup[searchItem.poiIndex];
 
-			if(landmarkCollection == null)
+			if(pointOfInterestGroup == null)
 				return null;
 
-			landmark = landmarkCollection.landmark;
+			pointOfInterest = pointOfInterestGroup.pointOfInterest;
 
-			PlaceCollection placeCollection = landmarkCollection.GetPlaceCollection(searchItem.placeIndex);
+			PlaceCollection placeCollection = pointOfInterestGroup.GetPlaceCollection(searchItem.placeIndex);
 			Location location = null;
 			
 			if(placeCollection == null)
@@ -207,12 +207,12 @@ namespace Databases
 			return location;
 		}
 
-		private LandmarkCollection Internal_GetLandmarkCollection(int index)
+		private PointOfInterestGroup Internal_GetPointOfInterestGroup(int index)
 		{
-			if(index < 0 || landmarkCollectionList.Count == 0 || landmarkCollectionList == null || index >= landmarkCollectionList.Count)
+			if(index < 0 || pointsOfInterestGroup.Count == 0 || pointsOfInterestGroup == null || index >= pointsOfInterestGroup.Count)
 				return null;
 			else
-				return landmarkCollectionList[index];
+				return pointsOfInterestGroup[index];
 		}
 
 		private void Internal_Search(string keyword)
@@ -220,7 +220,7 @@ namespace Databases
 			searchKeys.Clear();
 			keyword = RemoveMultipleWhiteSpaces(keyword).ToLower();
 
-			if(string.IsNullOrEmpty(keyword) || landmarkCollectionList == null || landmarkCollectionList.Count == 0)
+			if(string.IsNullOrEmpty(keyword) || pointsOfInterestGroup == null || pointsOfInterestGroup.Count == 0)
 				goto result;
 
 			SearchByCategory(keyword, SearchCategory.Name, false);
@@ -240,7 +240,7 @@ namespace Databases
 			if(searchResultCount == 0)
 				SearchByCategory(keyword, SearchCategory.MainTag, true);
 
-			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.landmarkIndex).ToList();
+			searchKeys = searchKeys.OrderByDescending(s => s.strength).OrderBy(s => s.nearestPoint).OrderBy(s => s.poiIndex).ToList();
 
 			result:
 			if(OnResult != null)
@@ -268,10 +268,10 @@ namespace Databases
 
 		private void SearchByCategory(string keyword, SearchCategory category, bool deepSearch)
 		{
-			for(int i = 0; i < landmarkCollectionList.Count; i++)
+			for(int i = 0; i < pointsOfInterestGroup.Count; i++)
 			{
-				LandmarkCollection landmarkCluster = landmarkCollectionList[i];
-				landmarkCluster.Search(keyword, i, searchKeys, category, deepSearch);
+				PointOfInterestGroup pointOfInterestGroup = pointsOfInterestGroup[i];
+				pointOfInterestGroup.Search(keyword, i, searchKeys, category, deepSearch);
 			}
 		}
 
@@ -309,9 +309,9 @@ namespace Databases
 
 
 		#if UNITY_EDITOR
-		public void SetLandmarkCollectionList(List<LandmarkCollection> landmarkCollectionList)
+		public void SetPointsOfInterestGroup(List<PointOfInterestGroup> pointsOfInterestGroup)
 		{
-			this.landmarkCollectionList = landmarkCollectionList;
+			this.pointsOfInterestGroup = pointsOfInterestGroup;
 		}
 		#endif
 	}
@@ -320,10 +320,10 @@ namespace Databases
 	[CustomEditor(typeof(LocationDatabase))]
 	public class LocationTableEditor : Editor
 	{
-		private SerializedProperty landmarkClustersProperty = null;
+		private SerializedProperty pointsOfInterestProperty = null;
 
 		private string
-		landmarkPath,
+		pointsOfInterestPath,
 		placesPath,
 		roomsPath,
 		searchKeyword;
@@ -335,7 +335,7 @@ namespace Databases
 		private void OnEnable()
 		{
 			locationDatabase = target as LocationDatabase;
-			landmarkClustersProperty = serializedObject.FindProperty("landmarkCollectionList");
+			pointsOfInterestProperty = serializedObject.FindProperty("pointsOfInterestGroup");
 			LoadPrefs();
 		}
 
@@ -349,23 +349,23 @@ namespace Databases
 		{
 			EditorGUI.BeginChangeCheck();
 
-			if(landmarkClustersProperty.arraySize == 0)
+			if(pointsOfInterestProperty.arraySize == 0)
 			{
 				EditorGUILayout.HelpBox("Table is empty. Please load data from assets. Make sure that all paths below are correct.", MessageType.Warning);
 				return;
 			}
 
-			foldout = EditorGUILayout.Foldout(foldout, "Landmarks");
+			foldout = EditorGUILayout.Foldout(foldout, "Points of Interest");
 
 			if(foldout)
 			{
 				EditorGUI.indentLevel++;
-				for(int i = 0; i < landmarkClustersProperty.arraySize; i++)
+				for(int i = 0; i < pointsOfInterestProperty.arraySize; i++)
 				{
-					SerializedProperty landmarkCluster = landmarkClustersProperty.GetArrayElementAtIndex(i);
-					SerializedProperty landmark = landmarkCluster.FindPropertyRelative("m_landmark");
-					string displayedName = landmark.objectReferenceValue.name;
-					EditorGUILayout.PropertyField(landmarkCluster, new GUIContent(displayedName), true);
+					SerializedProperty pointsOfInterestGroup = pointsOfInterestProperty.GetArrayElementAtIndex(i);
+					SerializedProperty pointOfInterest = pointsOfInterestGroup.FindPropertyRelative("m_pointOfInterest");
+					string displayedName = pointOfInterest.objectReferenceValue.name;
+					EditorGUILayout.PropertyField(pointsOfInterestGroup, new GUIContent(displayedName), true);
 				}
 				EditorGUI.indentLevel--;
 			}
@@ -405,14 +405,14 @@ namespace Databases
 				EditorGUILayout.LabelField("Paths");
 
 				EditorGUI.indentLevel++;
-				landmarkPath = EditorGUILayout.TextField("Landmarks", landmarkPath);
+				pointsOfInterestPath = EditorGUILayout.TextField("Points of Interest", pointsOfInterestPath);
 				placesPath = EditorGUILayout.TextField("Places", placesPath);
 				roomsPath = EditorGUILayout.TextField("Rooms", roomsPath);
 				EditorGUI.indentLevel--;
 
 				if(GUILayout.Button("Load Places"))
 				{
-					locationDatabase.SetLandmarkCollectionList(GetPlaces());
+					locationDatabase.SetPointsOfInterestGroup(GetPlaces());
 					serializedObject.ApplyModifiedProperties();
 					serializedObject.Update();
 				}
@@ -426,7 +426,7 @@ namespace Databases
 
 		private void LoadPrefs()
 		{
-			landmarkPath = EditorPrefs.GetString("Location_LandmarkPath", "Assets/Scriptable Objects/Landmarks");
+			pointsOfInterestPath = EditorPrefs.GetString("Location_LandmarkPath", "Assets/Scriptable Objects/Points of Interest");
 			placesPath = EditorPrefs.GetString("Location_PlacesPath", "Assets/Scriptable Objects/Places");
 			roomsPath = EditorPrefs.GetString("Location_RoomsPath", "Assets/Scriptable Objects/Rooms");
 			foldout = EditorPrefs.GetBool("Location_Folout", false);
@@ -435,44 +435,44 @@ namespace Databases
 
 		private void SavePrefs()
 		{
-			EditorPrefs.SetString("Location_LandmarkPath", landmarkPath);
+			EditorPrefs.SetString("Location_LandmarkPath", pointsOfInterestPath);
 			EditorPrefs.SetString("Location_PlacesPath", placesPath);
 			EditorPrefs.SetString("Location_RoomsPath", roomsPath);
 			EditorPrefs.SetBool("Location_Folout", foldout);
 			EditorPrefs.SetString("Location_SearchKeyword", searchKeyword);
 		}
 
-		private List<LandmarkCollection> GetPlaces()
+		private List<PointOfInterestGroup> GetPlaces()
 		{
-			List<Landmark> landmarks = GetLandmarks();
+			List<PointOfInterest> pointsOfInterest = GetPointsOfInterest();
 
-			if(landmarks == null || landmarks.Count == 0)
+			if(pointsOfInterest == null || pointsOfInterest.Count == 0)
 				return null;
 
-			List<LandmarkCollection> landmarkClusters = new List<LandmarkCollection>();
+			List<PointOfInterestGroup> pointsOfInterestGroup = new List<PointOfInterestGroup>();
 
-			foreach(Landmark landmark in landmarks)
+			foreach(PointOfInterest pointOfInterest in pointsOfInterest)
 			{
-				List<PlaceCollection> places = GetPlaceCluster(landmark);
+				List<PlaceCollection> places = GetPlaceCluster(pointOfInterest);
 
 				if(places != null)
 				{
-					LandmarkCollection landmarkCluster = new LandmarkCollection(landmark, places);
-					landmarkCluster.CachePlaces();
-					landmarkClusters.Add(landmarkCluster);
+					PointOfInterestGroup pointOfInterestGroup = new PointOfInterestGroup(pointOfInterest, places);
+					pointOfInterestGroup.CachePlaces();
+					pointsOfInterestGroup.Add(pointOfInterestGroup);
 				}
 			}
 	
-			return landmarkClusters;
+			return pointsOfInterestGroup;
 		}
 
-		private List<Landmark> GetLandmarks()
+		private List<PointOfInterest> GetPointsOfInterest()
 		{
-			if(!Directory.Exists(landmarkPath))
+			if(!Directory.Exists(pointsOfInterestPath))
 				return null;
 
-			string[] directories = Directory.GetDirectories(landmarkPath);
-			List<Landmark> landmarks = new List<Landmark>();
+			string[] directories = Directory.GetDirectories(pointsOfInterestPath);
+			List<PointOfInterest> pointsOfInterest = new List<PointOfInterest>();
 
 			foreach(string directory in directories)
 			{
@@ -480,19 +480,19 @@ namespace Databases
 
 				foreach(string file in files)
 				{
-					Landmark landmark = AssetDatabase.LoadAssetAtPath<Landmark>(file);
+					PointOfInterest pointOfInterest = AssetDatabase.LoadAssetAtPath<PointOfInterest>(file);
 
-					if(landmark != null)
-						landmarks.Add(landmark);
+					if(pointOfInterest != null)
+						pointsOfInterest.Add(pointOfInterest);
 				}
 			}
 
-			return landmarks;
+			return pointsOfInterest;
 		}
 	
-		private List<PlaceCollection> GetPlaceCluster(Landmark landmark)
+		private List<PlaceCollection> GetPlaceCluster(PointOfInterest pointOfInterest)
 		{
-			string currentPath = placesPath + '\\' + landmark.name;
+			string currentPath = placesPath + '\\' + pointOfInterest.name;
 
 			if(!Directory.Exists(currentPath))
 				return null;
@@ -503,7 +503,7 @@ namespace Databases
 			foreach(string file in files)
 			{
 				Place place = AssetDatabase.LoadAssetAtPath<Place>(file);
-				List<Room> rooms = GetRooms(place, landmark);
+				List<Room> rooms = GetRooms(place, pointOfInterest);
 
 				if(place != null)
 					placeCluster.Add(new PlaceCollection(place, rooms));
@@ -512,9 +512,9 @@ namespace Databases
 			return placeCluster;
 		}
 
-		private List<Room> GetRooms(Place place, Landmark landmark)
+		private List<Room> GetRooms(Place place, PointOfInterest pointOfInterest)
 		{
-			string currentPath = roomsPath + '\\' + landmark.name + '\\' + place.name;
+			string currentPath = roomsPath + '\\' + pointOfInterest.name + '\\' + place.name;
 
 			if(!Directory.Exists(currentPath))
 				return null;

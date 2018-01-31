@@ -18,7 +18,6 @@ namespace Menus
 		private Text displayedText = null;
 
 		private string placeholderText = "Choose marker";
-		private bool isEmpty = true;
 
 		private void Awake()
 		{

@@ -70,13 +70,13 @@ namespace Map
 
 		private void CreateMarkers()
 		{
-			for(int i = 0; i < LocationDatabase.landmarkCollectionCount; i++)
+			for(int i = 0; i < LocationDatabase.pointsOfInterestCount; i++)
 			{
-				LandmarkCollection landmarkCollection = LocationDatabase.GetLandmarkCollection(i);
+				PointOfInterestGroup pointOfInterestGroup = LocationDatabase.GetPointOfInterestGroup(i);
 				
-				for(int j = 0; j < landmarkCollection.placeCollectionCount; j++)
+				for(int j = 0; j < pointOfInterestGroup.placeCollectionCount; j++)
 				{
-					PlaceCollection placeCollection = landmarkCollection.GetPlaceCollection(j);
+					PlaceCollection placeCollection = pointOfInterestGroup.GetPlaceCollection(j);
 					if(placeCollection == null)
 						continue;
 

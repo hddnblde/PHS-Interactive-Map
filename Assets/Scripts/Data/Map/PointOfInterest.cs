@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Map
 {
-	[CreateAssetMenu(menuName = "Map/Landmark", order = 0, fileName = "Landmark")]
-	public class Landmark : ScriptableObject
+	[CreateAssetMenu(menuName = "Map/Point of Interest", order = 0, fileName = "Point Of Interest")]
+	public class PointOfInterest : ScriptableObject
 	{
 		[SerializeField]
 		private Sprite m_icon = null;

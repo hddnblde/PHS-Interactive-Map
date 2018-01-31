@@ -7,17 +7,17 @@ using Search;
 namespace Map
 {
 	[System.Serializable]
-	public class LandmarkCollection
+	public class PointOfInterestGroup
 	{
-		public LandmarkCollection(Landmark landmark, List<PlaceCollection> places)
+		public PointOfInterestGroup(PointOfInterest pointOfInterest, List<PlaceCollection> places)
 		{
-			m_landmark = landmark;
+			m_pointOfInterest = pointOfInterest;
 			this.places = places;
 		}
 
 		#region Fields
 		[SerializeField, HideInInspector]
-		private Landmark m_landmark = null;
+		private PointOfInterest m_pointOfInterest = null;
 
 		[Header("Cached Words")]
 		[SerializeField, TextArea(1, 4)]
@@ -32,9 +32,9 @@ namespace Map
 		[SerializeField, HideInInspector]
 		private List<PlaceCollection> places = new List<PlaceCollection>();
 
-		public Landmark landmark
+		public PointOfInterest pointOfInterest
 		{
-			get { return m_landmark; }
+			get { return m_pointOfInterest; }
 		}
 
 		public int placeCollectionCount
@@ -65,7 +65,7 @@ namespace Map
 		{
 			if(category == SearchCategory.MainTag)
 			{
-				if((' ' + m_landmark.tags.ToLower()).Contains(' ' + keyword + ';'))
+				if((' ' + m_pointOfInterest.tags.ToLower()).Contains(' ' + keyword + ';'))
 					AddAllKeys(primaryIndex, searchKeys);
 			}
 			else
@@ -158,15 +158,15 @@ namespace Map
 			return item;
 		}
 
-		private SearchKey FindKey(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
+		private SearchKey FindKey(int poiIndex, int placeIndex, int locationIndex, List<SearchKey> searchKeys)
 		{
-			SearchKey key = searchKeys.Find(r => r.landmarkIndex == primaryIndex && r.placeIndex == secondaryIndex && r.locationIndex == tertiaryIndex);
+			SearchKey key = searchKeys.Find(r => r.poiIndex == poiIndex && r.placeIndex == placeIndex && r.locationIndex == locationIndex);
 			return key;
 		}
 
-		private bool KeyExists(int primaryIndex, int secondaryIndex, int tertiaryIndex, List<SearchKey> searchKeys)
+		private bool KeyExists(int poiIndex, int placeIndex, int locationIndex, List<SearchKey> searchKeys)
 		{
-			return FindKey(primaryIndex, secondaryIndex, tertiaryIndex, searchKeys) != null;
+			return FindKey(poiIndex, placeIndex, locationIndex, searchKeys) != null;
 		}
 		#endregion
 
