@@ -54,17 +54,6 @@ namespace Databases
 			}
 		}
 
-		public static int locationCount
-		{
-			get
-			{
-				if(instance == null)
-					return 0;
-				else
-					return instance.Internal_locationCount;
-			}
-		}
-
 		private int Internal_searchResultCount
 		{
 			get
@@ -84,18 +73,6 @@ namespace Databases
 					return 0;
 				else
 					return pointsOfInterestGroup.Count;
-			}
-		}
-
-		private int Internal_locationCount
-		{
-			get
-			{
-				int count = 0;
-				foreach(PointOfInterestGroup cluster in pointsOfInterestGroup)
-					count += cluster.placeCollectionCount;
-				
-				return count;
 			}
 		}
 		#endregion
@@ -252,7 +229,11 @@ namespace Databases
 		#region Helpers
 		public int GetLocationCount()
 		{
-			return Internal_locationCount;
+			int count = 0;
+			foreach(PointOfInterestGroup cluster in pointsOfInterestGroup)
+				count += cluster.placeCollectionCount;
+				
+			return count;
 		}
 		
 		private string RemoveMultipleWhiteSpaces(string s)

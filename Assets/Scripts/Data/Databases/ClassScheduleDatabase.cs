@@ -87,6 +87,9 @@ namespace Databases
 
 
 		#region Hidden Fields
+		public delegate void ResultEvent(Schedule schedule);
+		public static event ResultEvent OnResult;
+
 		public enum SelectionDepth
 		{
 			Grades = 0,
@@ -108,6 +111,7 @@ namespace Databases
 			get { return selectionDepth; }	
 		}
 		#endregion
+
 
 		#region Actions
 		public string[] GetItems()
@@ -135,12 +139,6 @@ namespace Databases
 
 		public void MoveIn(int selectedIndex)
 		{
-			if(selectionDepth == SelectionDepth.Schedule)
-			{
-				Debug.Log("Cannot move in any further, selection depth is already deep.");
-				return;
-			}
-
 			switch(selectionDepth)
 			{
 				case SelectionDepth.Grades:
@@ -155,7 +153,14 @@ namespace Databases
 				scheduleIndex = selectedIndex;
 				break;
 			}
-		}		
+
+			MoveSelection(1);
+		}
+
+		public void MoveOut()
+		{
+			MoveSelection(-1);
+		}
 		#endregion
 
 
@@ -249,6 +254,13 @@ namespace Databases
 
 			SectionGroup section = grade.GetSectionGroup(sectionIndex);
 			return section;
+		}
+
+		private void MoveSelection(int direction)
+		{
+			int currentDepth = (int)selectionDepth;
+			currentDepth = Mathf.Clamp(0, 3, currentDepth + direction);
+			selectionDepth = (SelectionDepth)currentDepth;
 		}
 		#endregion
 	}
