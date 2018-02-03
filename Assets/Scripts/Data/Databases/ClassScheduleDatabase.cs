@@ -4,14 +4,17 @@ using UnityEngine;
 using Schedules;
 using PampangaHighSchool.Students;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 namespace Databases
 {
-	
-
 	[DisallowMultipleComponent]
 	public class ClassScheduleDatabase : MonoBehaviour
 	{
 		#region Data Structure
+		[System.Serializable]
 		private class GradeGroup
 		{
 			[SerializeField]
@@ -45,6 +48,7 @@ namespace Databases
 			}
 		}
 
+		[System.Serializable]
 		private class SectionGroup
 		{
 			[SerializeField]
@@ -87,103 +91,74 @@ namespace Databases
 
 
 		#region Hidden Fields
-		public delegate void ResultEvent(Schedule schedule);
-		public static event ResultEvent OnResult;
-
-		public enum SelectionDepth
-		{
-			Grades = 0,
-			Sections = 1,
-			Schedules = 2,
-			Schedule = 3
-		}
-
-		private SelectionDepth selectionDepth = SelectionDepth.Grades;
-		private Grade currentGrade = Grade.Grade7;
-		private int sectionIndex = -1;
-		private int scheduleIndex = -1;
+		private static ClassScheduleDatabase instance = null;
 		#endregion
 
 
-		#region Property
-		public SelectionDepth currentSelectionDepth
+		#region MonoBehaviour Implementation
+		private void OnEnable()
 		{
-			get { return selectionDepth; }	
+			InitializeSingleton();
+		}
+
+		private void OnDisable()
+		{
+			UninitializeSingleton();
 		}
 		#endregion
 
 
-		#region Actions
-		public string[] GetItems()
+		#region Initializers
+		private void InitializeSingleton()
 		{
-			switch(selectionDepth)
-			{
-				case SelectionDepth.Grades:
-				return GetGradeItems();
-
-				case SelectionDepth.Sections:
-				return GetSectionItems();
-
-				case SelectionDepth.Schedules:
-				return GetScheduleItems();
-
-				default:
-				return null;
-			}
-		}
-
-		public void ResetSelection()
-		{
-			selectionDepth = SelectionDepth.Grades;
-		}
-
-		public void MoveIn(int selectedIndex)
-		{
-			switch(selectionDepth)
-			{
-				case SelectionDepth.Grades:
-				currentGrade = GetGradeFromIndex(selectedIndex);
-				break;
-
-				case SelectionDepth.Sections:
-				sectionIndex = selectedIndex;
-				break;
-
-				case SelectionDepth.Schedules:
-				scheduleIndex = selectedIndex;
-				break;
-			}
-
-			MoveSelection(1);
-		}
-
-		public void MoveOut()
-		{
-			MoveSelection(-1);
-		}
-		#endregion
-
-
-		#region Helpers
-		private Grade GetGradeFromIndex(int index)
-		{
-			index = Mathf.Clamp(index, 0, 5);
-			
-			if(index == 0)
-				return Grade.Grade7;
-			else if(index == 1)
-				return Grade.Grade8;
-			else if(index == 2)
-				return Grade.Grade9;
-			else if(index == 3)
-				return Grade.Grade10;
-			else if(index == 4)
-				return Grade.Grade11;
+			if(instance == null)
+				instance = this;
 			else
-				return Grade.Grade12;
+				Destroy(gameObject);
 		}
 
-		private string[] GetGradeItems()
+		private void UninitializeSingleton()
+		{
+			if(instance == this)
+				instance = null;
+		}
+		#endregion		
+
+
+		#region Functions
+		public static string[] GetGradeItems()
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetGradeItems();
+		}
+
+		public static string[] GetSectionItems(Grade grade)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetSectionItems(grade);
+		}
+
+		public static string[] GetScheduleItems(Grade grade, int section)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetScheduleItems(grade, section);
+		}
+
+		public static Schedule GetSchedule(Grade grade, int section, int index)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetSchedule(grade, section, index);
+		}
+		
+		private string[] Internal_GetGradeItems()
 		{
 			if(gradesGroup == null || gradesGroup.Count == 0)
 					return null;
@@ -196,36 +171,49 @@ namespace Databases
 				return grades.ToArray();
 		}
 
-		private string[] GetSectionItems()
+		private string[] Internal_GetSectionItems(Grade grade)
 		{
-			GradeGroup grade = GetGradeGroup(currentGrade);
+			GradeGroup gradeGroup = GetGradeGroup(grade);
 
-			if(grade == null)
+			if(gradeGroup == null)
 				return null;
 
 			List<string> sections = new List<string>();
 
-			for(int i = 0; i < grade.sectionCount; i++)
-				sections.Add(grade.GetSectionGroup(i).section.name);
+			for(int i = 0; i < gradeGroup.sectionCount; i++)
+				sections.Add(gradeGroup.GetSectionGroup(i).section.name);
 
 			return sections.ToArray();
 		}
 
-		private string[] GetScheduleItems()
+		private string[] Internal_GetScheduleItems(Grade grade, int section)
 		{
-			SectionGroup section = GetSectionGroup(sectionIndex);
+			SectionGroup sectionGroup = GetSectionGroup(grade, section);
 
-			if(section == null)
+			if(sectionGroup == null)
 				return null;
 
 			List<string> schedules = new List<string>();
 
-			for(int i = 0; i < section.scheduleCount; i++)
-				schedules.Add(section.GetSchedule(i).name.Replace(" Schedule", ""));
+			for(int i = 0; i < sectionGroup.scheduleCount; i++)
+				schedules.Add(sectionGroup.GetSchedule(i).name.Replace(" Schedule", ""));
 			
 			return schedules.ToArray();
 		}
 
+		private Schedule Internal_GetSchedule(Grade grade, int section, int index)
+		{
+			SectionGroup sectionGroup = GetSectionGroup(grade, section);
+
+			if(sectionGroup == null)
+				return null;
+			else
+				return sectionGroup.GetSchedule(index);
+		}
+		#endregion
+
+
+		#region Helpers
 		private GradeGroup GetGradeGroup(Grade grade)
 		{
 			if(gradesGroup == null || gradesGroup.Count == 0)
@@ -245,23 +233,94 @@ namespace Databases
 			return gradeGroup;
 		}
 
-		private SectionGroup GetSectionGroup(int sectionIndex)
+		private SectionGroup GetSectionGroup(Grade grade, int section)
 		{
-			GradeGroup grade = GetGradeGroup(currentGrade);
+			GradeGroup gradeGroup = GetGradeGroup(grade);
 
-			if(grade == null)
+			if(gradeGroup == null)
 				return null;
 
-			SectionGroup section = grade.GetSectionGroup(sectionIndex);
-			return section;
-		}
-
-		private void MoveSelection(int direction)
-		{
-			int currentDepth = (int)selectionDepth;
-			currentDepth = Mathf.Clamp(0, 3, currentDepth + direction);
-			selectionDepth = (SelectionDepth)currentDepth;
+			SectionGroup sectionGroup = gradeGroup.GetSectionGroup(section);
+			return sectionGroup;
 		}
 		#endregion
 	}
+
+	#if UNITY_EDITOR
+	[CustomEditor(typeof(ClassScheduleDatabase))]
+	public class ClassScheduleDatabaseEditor : Editor
+	{
+		private SerializedProperty gradesListProperty = null;
+		private bool foldout = false;
+
+		private void OnEnable()
+		{
+			Initialize();
+		}
+
+		public override void OnInspectorGUI()
+		{
+			DrawCustomGUI();
+		}
+
+		private void Initialize()
+		{
+			gradesListProperty = serializedObject.FindProperty("gradesGroup");
+		}
+
+		private void DrawCustomGUI()
+		{
+			EditorGUI.BeginChangeCheck();
+
+			if(gradesListProperty.arraySize == 0)
+			{
+				EditorGUILayout.HelpBox("Table is empty. Please load data from assets. Make sure that all paths below are correct.", MessageType.Warning);
+				return;
+			}
+
+			foldout = EditorGUILayout.Foldout(foldout, "Grades");
+
+			if(foldout)
+			{
+				EditorGUI.indentLevel++;
+				// Debug.Log(gradesGroupProperty.arraySize);
+
+				for(int i = 0; i < gradesListProperty.arraySize; i++)
+				{
+					SerializedProperty gradeGroupProperty = gradesListProperty.GetArrayElementAtIndex(i);
+					SerializedProperty gradeProperty = gradeGroupProperty.FindPropertyRelative("m_grade");
+					string displayedName = gradeProperty.enumDisplayNames[gradeProperty.enumValueIndex];
+					EditorGUILayout.PropertyField(gradeGroupProperty, new GUIContent(displayedName));
+					
+					if(!gradeGroupProperty.isExpanded)
+						continue;
+
+					SerializedProperty sectionsProperty = gradeGroupProperty.FindPropertyRelative("m_sections");
+					if(sectionsProperty.arraySize == 0)
+						continue;
+					
+					EditorGUI.indentLevel++;
+					for(int j = 0; j < sectionsProperty.arraySize; j++)
+					{
+						SerializedProperty sectionGroupProperty = sectionsProperty.GetArrayElementAtIndex(j);
+						SerializedProperty sectionProperty = sectionGroupProperty.FindPropertyRelative("m_section");
+						int sectionCount = sectionGroupProperty.FindPropertyRelative("m_schedules").arraySize;
+
+						if(sectionProperty.objectReferenceValue == null)
+							continue;
+
+						string sectionName = sectionProperty.objectReferenceValue.name;
+
+						if(sectionCount > 1)
+							sectionName += " [@count]".Replace("@count", sectionCount.ToString());
+
+						EditorGUILayout.LabelField(new GUIContent(sectionName));
+					}
+					EditorGUI.indentLevel--;
+				}
+				EditorGUI.indentLevel--;
+			}
+		}
+	}
+	#endif
 }
