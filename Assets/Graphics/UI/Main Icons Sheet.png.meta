@@ -1,35 +1,36 @@
 fileFormatVersion: 2
 guid: 6bfe94c3f20b9f34aa93ae9163bc6179
-timeCreated: 1515550845
+timeCreated: 1517303437
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Arrow
-    21300002: Person
-    21300004: Touch
-    21300006: Navigate
-    21300008: Information
-    21300010: Get Directions
-    21300012: My Location
-    21300014: Destination
-    21300016: Schedule
-    21300018: Building
-    21300020: Search
-    21300022: Clear
+    21300000: Check
+    21300002: Close
+    21300004: Back
+    21300006: Swap
+    21300008: Menu
+    21300010: Location
+    21300012: Pin
+    21300014: Directions
+    21300016: Layer
+    21300018: Map
+    21300020: Swap
+    21300022: Search
     21300024: More Vertical
-    21300026: Settings
-    21300028: Exit
-    21300030: Menu
-    21300032: Map
-    21300034: Check
-    21300036: Menu-to-Back_3
-    21300038: Menu-to-Back_4
-    21300040: Menu-to-Back_5
-    21300042: Menu-to-Back_6
-    21300044: Menu-to-Back_7
-    21300046: Menu-to-Back_8
-    21300048: Back
-    21300050: More
+    21300026: Schedule
+    21300028: Information
+    21300030: School
+    21300032: Dining
+    21300034: Work
+    21300036: Exit
+    21300038: Hospital
+    21300040: Library
+    21300042: Water Closet
+    21300044: Parking
+    21300046: Building
+    21300048: Circle
+    21300050: Settings
+    21300052: Shelter
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -136,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow
+      name: Check
       rect:
         serializedVersion: 2
         x: 0
@@ -150,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Person
+      name: Close
       rect:
         serializedVersion: 2
         x: 192
@@ -164,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Touch
+      name: Back
       rect:
         serializedVersion: 2
         x: 384
@@ -178,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Navigate
+      name: Swap
       rect:
         serializedVersion: 2
         x: 576
@@ -192,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Information
+      name: Menu
       rect:
         serializedVersion: 2
         x: 768
@@ -206,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Get Directions
+      name: Location
       rect:
         serializedVersion: 2
         x: 0
@@ -220,7 +221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: My Location
+      name: Pin
       rect:
         serializedVersion: 2
         x: 192
@@ -234,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Destination
+      name: Directions
       rect:
         serializedVersion: 2
         x: 384
@@ -248,7 +249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Schedule
+      name: Layer
       rect:
         serializedVersion: 2
         x: 576
@@ -262,7 +263,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Building
+      name: Map
       rect:
         serializedVersion: 2
         x: 768
@@ -290,38 +291,10 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Clear
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: More
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Settings
       rect:
         serializedVersion: 2
-        x: 576
+        x: 192
         y: 384
         width: 192
         height: 192
@@ -335,6 +308,34 @@ TextureImporter:
       name: Exit
       rect:
         serializedVersion: 2
+        x: 384
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Schedule
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Information
+      rect:
+        serializedVersion: 2
         x: 768
         y: 384
         width: 192
@@ -346,7 +347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu
+      name: School
       rect:
         serializedVersion: 2
         x: 0
@@ -360,7 +361,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Map
+      name: Dining
       rect:
         serializedVersion: 2
         x: 192
@@ -374,7 +375,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Check
+      name: Work
       rect:
         serializedVersion: 2
         x: 384
@@ -388,7 +389,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_3
+      name: Building
       rect:
         serializedVersion: 2
         x: 576
@@ -402,7 +403,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_4
+      name: Hospital
       rect:
         serializedVersion: 2
         x: 768
@@ -416,7 +417,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_5
+      name: Library
       rect:
         serializedVersion: 2
         x: 0
@@ -430,7 +431,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_6
+      name: Water Closet
       rect:
         serializedVersion: 2
         x: 192
@@ -444,7 +445,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_7
+      name: Parking
       rect:
         serializedVersion: 2
         x: 384
@@ -458,7 +459,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu-to-Back_8
+      name: Shelter
       rect:
         serializedVersion: 2
         x: 576
@@ -472,7 +473,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Back
+      name: Circle
       rect:
         serializedVersion: 2
         x: 768

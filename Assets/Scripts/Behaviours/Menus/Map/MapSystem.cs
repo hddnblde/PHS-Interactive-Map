@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Menus;
+using Databases;
 
 namespace Map
 {
@@ -47,9 +48,6 @@ namespace Map
 		private Transform markerContainer = null;
 
 		[SerializeField]
-		private LocationDatabase locationDatabase = null;
-
-		[SerializeField]
 		private GameObject mapMarkerPrefab = null;
 
 		[Header("Viewing Bounds")]
@@ -59,7 +57,7 @@ namespace Map
 		[SerializeField]
 		private ViewingBounds roomViewingBounds = new ViewingBounds();
 
-		private void Awake()
+		private void Start()
 		{
 			CreateMarkers();
 		}
@@ -72,16 +70,13 @@ namespace Map
 
 		private void CreateMarkers()
 		{
-			if(locationDatabase == null)
-				return;
-
-			for(int i = 0; i < locationDatabase.landmarkCollectionCount; i++)
+			for(int i = 0; i < LocationDatabase.pointsOfInterestCount; i++)
 			{
-				LandmarkCollection landmarkCollection = locationDatabase.GetLandmarkCollection(i);
+				PointOfInterestGroup pointOfInterestGroup = LocationDatabase.GetPointOfInterestGroup(i);
 				
-				for(int j = 0; j < landmarkCollection.placeCollectionCount; j++)
+				for(int j = 0; j < pointOfInterestGroup.placeCollectionCount; j++)
 				{
-					PlaceCollection placeCollection = landmarkCollection.GetPlaceCollection(j);
+					PlaceCollection placeCollection = pointOfInterestGroup.GetPlaceCollection(j);
 					if(placeCollection == null)
 						continue;
 

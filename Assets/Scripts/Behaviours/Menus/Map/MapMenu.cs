@@ -4,50 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using Map;
 using Navigation;
+using Databases;
 
 namespace Menus
 {
-	public class LocationMarker
-	{
-		public LocationMarker(string displayedName, Vector3 position)
-		{
-			m_position = position;
-			m_displayedName = displayedName;
-		}
-
-		public LocationMarker(Location location)
-		{
-			if(location == null)
-				return;
-			
-			m_position = location.position;
-			m_displayedName = location.displayedName;
-		}
-
-		private Vector3 m_position = Vector3.zero;
-		private string m_displayedName = "Marker";
-
-		public Vector3 position
-		{
-			get { return m_position; }
-		}
-
-		public string displayedName
-		{
-			get { return m_displayedName; }
-		}
-	}
-
 	public class MapMenu : MonoBehaviour
 	{
-		public delegate void FloorSelect(int index);
-		public static event FloorSelect OnFloorSelect;
-
+		#region Serialized Fields
 		[SerializeField]
 		private CanvasGroup markerPanel = null;
 
 		[SerializeField]
 		private Button chooseOnMapButton = null;
+
+		[SerializeField]
+		private Button floorButton = null;
+
+		[SerializeField]
+		private Button directionsButton = null;
 
 		[SerializeField]
 		private MapMenuMarkerButton originMarkerButton = null;
@@ -56,38 +30,32 @@ namespace Menus
 		private MapMenuMarkerButton destinationMarkerButton = null;
 
 		[SerializeField]
-		private SearchMenu searchMenu = null;
-
-		[SerializeField]
-		private MarkerMenu markerMenu = null;
-
-		[SerializeField]
-		private LocationDatabase locationDatabase = null;
-
-		[SerializeField]
-		private NavigationSystem navigationSystem = null;
-
-		[SerializeField]
 		private NavigationMenu navigationMenu = null;
+		#endregion
 
-		[SerializeField]
-		private int currentFloor = 1;
 
-		private LocationMarker originMarker = null;
-		private LocationMarker destinationMarker = null;
-		private Context currentContext = Context.SetOrigin;
-
+		#region Hidden Fields
 		private enum Context
 		{
 			SetOrigin,
 			SetDestination
 		}
+		
+		private LocationMarker originMarker = null;
+		private LocationMarker destinationMarker = null;
+		private Context currentContext = Context.SetOrigin;
+		#endregion
 
+		
+		#region MonoBehaviour Implementation
 		private void Awake()
 		{
 			Initialize();
 		}
+		#endregion
 
+
+		#region Initializers
 		private void Initialize()
 		{
 			RegisterButton(originMarkerButton, "Choose starting point", Context.SetOrigin);
@@ -96,25 +64,24 @@ namespace Menus
 			if(chooseOnMapButton != null)
 				chooseOnMapButton.onClick.AddListener(MarkLocation);
 
-			if(locationDatabase != null)
-				locationDatabase.OnResult += OnResult;
+			if(floorButton != null)
+				floorButton.onClick.AddListener(FloorMenu.Open);
+
+			LocationDatabase.OnResult += OnResult;
 			
 		}
+		#endregion
 
+
+		#region Events
 		private void OnSearch(string text)
 		{
-			if(locationDatabase == null)
-				return;
-
-			locationDatabase.Search(text);
+			LocationDatabase.Search(text);
 		}
 
 		private void OnSelect(int index)
 		{
-			if(locationDatabase == null)
-				return;
-			
-			Location location = locationDatabase.GetLocationFromSearch(index);
+            Location location = LocationDatabase.GetLocationFromSearch(index);
 			LocationMarker marker = new LocationMarker(location);
 
 			if(marker == null)
@@ -125,12 +92,9 @@ namespace Menus
 
 		private void OnResult(int count)
 		{
-			if(locationDatabase == null || searchMenu == null)
-				return;
-
 			if(count == 0)
 			{
-				searchMenu.SetContent(null);
+				SearchMenu.SetContents(null);
 				return;
 			}
 
@@ -138,24 +102,16 @@ namespace Menus
 
 			for(int i = 0; i < count; i++)
 			{
-				Location location = locationDatabase.GetLocationFromSearch(i);
+                Location location = LocationDatabase.GetLocationFromSearch(i);
 				contents[i] = new MenuContent(null, location.displayedName);
 			}
 
-			searchMenu.SetContent(contents);
+			SearchMenu.SetContents(contents);
 		}
+		#endregion
 
-		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
-		{
-			if(button == null)
-				return;
 
-			UnityEngine.Events.UnityAction selectAction = () => SearchLocation(context);
-			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
-
-			button.AddListener(selectAction, clearAction, placeholder);
-		}
-
+		#region Actions
 		private void SearchLocation(Context context)
 		{
 			currentContext = context;
@@ -168,7 +124,7 @@ namespace Menus
 			ToggleSearch(false);
 			ShowMarkerPanel(false);
 			string displayedName = "Mark " + (currentContext == Context.SetDestination ? "destination" : "starting point");
-			markerMenu.Open(displayedName, SetMarker, () => ToggleSearch(true));
+			MarkerMenu.Open(displayedName, SetMarker, () => ToggleSearch(true));
 		}
 
 		private void SetMarker(LocationMarker marker)
@@ -183,12 +139,12 @@ namespace Menus
 			if(context == Context.SetDestination)
 			{
 				destinationMarker = marker;
-				destinationMarkerButton.SetDisplayedText(displayedName);
+				destinationMarkerButton.SetDisplayedText(displayedName, false);
 			}
 			else
 			{
 				originMarker = marker;
-				originMarkerButton.SetDisplayedText(displayedName);
+				originMarkerButton.SetDisplayedText(displayedName, false);
 			}
 
 			Navigate();
@@ -203,16 +159,16 @@ namespace Menus
 
 		private void ToggleSearch(bool show)
 		{
-			if(searchMenu == null || navigationMenu == null)
+			if(navigationMenu == null)
 				return;
 
 			if(show)
 			{
 				string placeholder = "Choose " + (currentContext == Context.SetDestination ? "destination" : "starting point");
-				searchMenu.Open(OnSearch, OnSelect, CloseContext, placeholder);
+				SearchMenu.Open(this.OnSearch, this.OnSelect, this.CloseContext, placeholder, true);
 			}
-			else if(searchMenu.isOpen)
-				searchMenu.Close();
+			else if(SearchMenu.isOpen)
+				SearchMenu.Close();
 
 			navigationMenu.ShowBackground(show);
 			chooseOnMapButton.gameObject.SetActive(show);
@@ -230,25 +186,26 @@ namespace Menus
 
 		private void Navigate()
 		{
-			if(navigationSystem == null)
+			if(originMarker == null || destinationMarker == null)
+				NavigationSystem.Clear();
+			else
+				NavigationSystem.Navigate(originMarker.position, destinationMarker.position);
+		}
+		#endregion
+
+
+		#region Helpers
+		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
+		{
+			if(button == null)
 				return;
 
-			if(originMarker == null || destinationMarker == null)
-				navigationSystem.Clear();
-			else
-				navigationSystem.Navigate(originMarker.position, destinationMarker.position);
-		}
+			UnityEngine.Events.UnityAction selectAction = () => SearchLocation(context);
+			UnityEngine.Events.UnityAction clearAction = () => SetMarker(null, context);
 
-		private void FloorSelectEvent()
-		{
-			if(OnFloorSelect != null)
-				OnFloorSelect(currentFloor);
+			button.AddListener(selectAction, clearAction, placeholder);
+			button.SetDisplayedText(placeholder, true);
 		}
-
-		private void Update()
-		{
-			if(Input.GetKeyDown(KeyCode.Space))
-				FloorSelectEvent();
-		}
+		#endregion
 	}
 }
