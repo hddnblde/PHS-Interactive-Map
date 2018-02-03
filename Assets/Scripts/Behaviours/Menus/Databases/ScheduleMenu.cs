@@ -17,9 +17,6 @@ namespace Menus
 		private Text titleText = null;
 
 		[SerializeField]
-		private Schedule schedule = null;
-
-		[SerializeField]
 		private GameObject scheduleItemPrefab = null;
 
 		[SerializeField]
@@ -60,6 +57,7 @@ namespace Menus
 		private static event OpenAction OnOpenMenu;
 		private static event CloseAction OnCloseMenu;
 
+		private Schedule schedule = null;
 		private List<ScheduleItem> items = new List<ScheduleItem>();
 		private Graphic mondayText = null;
 		private Graphic tuesdayText = null;
@@ -84,11 +82,6 @@ namespace Menus
 		{
 			GenerateEntries();
 			SetupButtons();
-		}
-
-		private void Start()
-		{
-			Open(schedule);
 		}
 
 		private void OnEnable()

@@ -167,6 +167,7 @@ namespace Databases
 		#region Functions
 		public static string[] GetGradeItems()
 		{
+			Debug.Log("Getting grades");
 			if(instance == null)
 				return null;
 			else
@@ -175,6 +176,7 @@ namespace Databases
 
 		public static string[] GetSectionItems(Grade grade)
 		{
+			Debug.Log("Getting sections");
 			if(instance == null)
 				return null;
 			else
@@ -183,6 +185,7 @@ namespace Databases
 
 		public static string[] GetScheduleItems(Grade grade, int section)
 		{
+			Debug.Log("Getting schedules");
 			if(instance == null)
 				return null;
 			else
@@ -191,6 +194,7 @@ namespace Databases
 
 		public static Schedule GetSchedule(Grade grade, int section, int index)
 		{
+			Debug.Log(instance != null);
 			if(instance == null)
 				return null;
 			else
@@ -200,14 +204,14 @@ namespace Databases
 		private string[] Internal_GetGradeItems()
 		{
 			if(gradesGroup == null || gradesGroup.Count == 0)
-					return null;
+				return null;
 
-				List<string> grades = new List<string>();
+			List<string> grades = new List<string>();
 
-				foreach(GradeGroup grade in gradesGroup)
-					grades.Add("Grade " + grade.grade);
+			foreach(GradeGroup grade in gradesGroup)
+				grades.Add("Grade " + (int)grade.grade);
 
-				return grades.ToArray();
+			return grades.ToArray();
 		}
 
 		private string[] Internal_GetSectionItems(Grade grade)
@@ -215,7 +219,10 @@ namespace Databases
 			GradeGroup gradeGroup = GetGradeGroup(grade);
 
 			if(gradeGroup == null)
+			{
+				Debug.Log("Failed to get sections");
 				return null;
+			}
 
 			List<string> sections = new List<string>();
 

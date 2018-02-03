@@ -44,6 +44,11 @@ namespace Menus
 			Initialize();
 			CreateItemPool();
 		}
+
+		private void Start()
+		{
+			ShowItems();
+		}
 		#endregion
 
 
@@ -65,7 +70,9 @@ namespace Menus
 				Button itemButton = item.GetComponent<Button>();
 
 				if(itemButton != null)
-					itemButton.onClick.AddListener(() => MoveIn(itemButton.transform.GetSiblingIndex()));
+					itemButton.onClick.AddListener(() => MoveIn(item.transform.GetSiblingIndex()));
+
+				item.SetActive(false);
 			}
 		}
 		#endregion
@@ -80,12 +87,16 @@ namespace Menus
 
 		private void ShowItems()
 		{
-			ClearAll();
 			string[] items = GetItems();
 
 			if(items == null || items.Length == 0)
+			{
+				if(selectedSectionIndex != -1)
+					ScheduleMenu.Open(ClassScheduleDatabase.GetSchedule(selectedGrade, selectedSection, selectedSectionIndex));
 				return;
+			}
 
+			ClearAll();
 			for(int i = 0; i < items.Length; i++)
 				ShowItem(i, items[i]);
 		}
@@ -103,6 +114,8 @@ namespace Menus
 
 			if(text != null)
 				text.text = label;
+
+			item.gameObject.SetActive(true);
 		}
 		#endregion
 
@@ -153,7 +166,7 @@ namespace Menus
 		private void MoveSelection(int direction)
 		{
 			int currentDepth = (int)selectionDepth;
-			currentDepth = Mathf.Clamp(0, 3, currentDepth + direction);
+			currentDepth = Mathf.Clamp(currentDepth + direction, 0, 3);
 			selectionDepth = (SelectionDepth)currentDepth;
 		}
 		#endregion
