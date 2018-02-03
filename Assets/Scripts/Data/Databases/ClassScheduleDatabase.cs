@@ -6,6 +6,8 @@ using PampangaHighSchool.Students;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using System.Text;
+using System.IO;
 #endif
 
 namespace Databases
@@ -17,6 +19,12 @@ namespace Databases
 		[System.Serializable]
 		private class GradeGroup
 		{
+			public GradeGroup(Grade grade)
+			{
+				m_grade = grade;
+				m_sections = new List<SectionGroup>();
+			}
+
 			[SerializeField]
 			private Grade m_grade = Grade.Grade7;
 			
@@ -46,11 +54,42 @@ namespace Databases
 				else
 					return m_sections[index];
 			}
+
+			public SectionGroup GetSectionGroup(Section section)
+			{
+				if(m_sections == null || m_sections.Count == 0)
+					return null;
+					
+				SectionGroup sectionGroup = null;
+
+				foreach(SectionGroup s in m_sections)
+				{
+					if(s.section == section)
+					{
+						sectionGroup = s;
+						break;
+					}
+				}
+
+				return sectionGroup;
+			}
+
+			public void AddSectionGroup(SectionGroup sectionGroup)
+			{
+				if(!m_sections.Contains(sectionGroup))
+					m_sections.Add(sectionGroup);
+			}
 		}
 
 		[System.Serializable]
 		private class SectionGroup
 		{
+			public SectionGroup(Section section, List<Schedule> schedules)
+			{
+				m_section = section;
+				m_schedules = schedules;
+			}
+
 			[SerializeField]
 			private Section m_section = null;
 
@@ -243,6 +282,40 @@ namespace Databases
 			SectionGroup sectionGroup = gradeGroup.GetSectionGroup(section);
 			return sectionGroup;
 		}
+
+		private SectionGroup GetSectionGroup(Grade grade, Section section)
+		{
+			GradeGroup gradeGroup = GetGradeGroup(grade);
+
+			if(gradeGroup == null)
+				return null;
+
+			SectionGroup sectionGroup = gradeGroup.GetSectionGroup(section);
+			return sectionGroup;
+		}
+
+		public void ResetSchedule()
+		{
+			gradesGroup.Clear();
+			List<Grade> grades = new List<Grade> {Grade.Grade7, Grade.Grade8, Grade.Grade9, Grade.Grade10, Grade.Grade11, Grade.Grade12};
+			
+			foreach(Grade grade in grades)
+			{
+				GradeGroup gradeGroup = new GradeGroup(grade);
+				gradesGroup.Add(gradeGroup);
+			}
+		}
+
+		public void AddSchedule(Grade grade, Section section, List<Schedule> schedules)
+		{
+			GradeGroup gradeGroup = GetGradeGroup(grade);			
+			SectionGroup sectionGroup = new SectionGroup(section, schedules);
+
+			if(gradeGroup != null)
+				gradeGroup.AddSectionGroup(sectionGroup);
+			else
+				Debug.Log("Failed to add schedule.");
+		}
 		#endregion
 	}
 
@@ -250,12 +323,15 @@ namespace Databases
 	[CustomEditor(typeof(ClassScheduleDatabase))]
 	public class ClassScheduleDatabaseEditor : Editor
 	{
+		private ClassScheduleDatabase classScheduleDatabase = null;
 		private SerializedProperty gradesListProperty = null;
+		private string sectionsPath;
 		private bool foldout = false;
 
 		private void OnEnable()
 		{
 			Initialize();
+			LoadPrefs();
 		}
 
 		public override void OnInspectorGUI()
@@ -263,8 +339,19 @@ namespace Databases
 			DrawCustomGUI();
 		}
 
+		private void LoadPrefs()
+		{
+			sectionsPath = EditorPrefs.GetString("ClassSchedule_SectionsPath", "Assets/Scriptable Objects/Sections");
+		}
+
+		private void SavePrefs()
+		{
+			EditorPrefs.SetString("ClassSchedule_SectionsPath", sectionsPath);
+		}
+
 		private void Initialize()
 		{
+			classScheduleDatabase = target as ClassScheduleDatabase;
 			gradesListProperty = serializedObject.FindProperty("gradesGroup");
 		}
 
@@ -283,7 +370,6 @@ namespace Databases
 			if(foldout)
 			{
 				EditorGUI.indentLevel++;
-				// Debug.Log(gradesGroupProperty.arraySize);
 
 				for(int i = 0; i < gradesListProperty.arraySize; i++)
 				{
@@ -319,6 +405,85 @@ namespace Databases
 					EditorGUI.indentLevel--;
 				}
 				EditorGUI.indentLevel--;
+			}
+
+			sectionsPath = EditorGUILayout.TextField(new GUIContent("Sections"), sectionsPath);
+
+			if(GUILayout.Button("Load Schedules"))
+			{
+				List<Grade> grades = new List<Grade> {Grade.Grade7, Grade.Grade8, Grade.Grade9, Grade.Grade10, Grade.Grade11, Grade.Grade12};
+				CreateSchedule(grades);
+			}
+
+			if(EditorGUI.EndChangeCheck())
+				SavePrefs();
+		}
+
+		private void CreateSchedule(List<Grade> grades)
+		{
+			classScheduleDatabase.ResetSchedule();
+			List<string> sections = null;
+
+			foreach(Grade g in grades)
+			{
+				GetSections(g, out sections);
+				AddSchedule(g, sections);
+			}
+		}
+
+		private void GetSections(Grade grade, out List<string> sections)
+		{
+			sections = new List<string>();
+			string path = sectionsPath + '/' + "Grade " + (int)grade;
+
+			if(!Directory.Exists(path))
+				return;
+			
+			string[] sectionPaths = Directory.GetFiles(path, "*.asset");
+
+			foreach(string sectionPath in sectionPaths)
+				sections.Add(sectionPath.Replace(path, "").Replace(".asset", ""));
+		}
+
+		private void AddSchedule(Grade grade, List<string> sections)
+		{
+			if(sections == null || sections.Count == 0)
+				return;
+
+			foreach(string sectionName in sections)
+				AddSchedule(grade, sectionName);
+		}
+
+		private void AddSchedule(Grade grade, string sectionName)
+		{
+			sectionName = sectionName.Replace("\\", "");
+			Section section;
+			List<Schedule> schedules;
+			Debug.Log(sectionName);
+			GetSchedules(sectionName, out section, out schedules);
+			classScheduleDatabase.AddSchedule(grade, section, schedules);
+			serializedObject.ApplyModifiedProperties();
+			serializedObject.Update();
+		}
+
+		private void GetSchedules(string name, out Section section, out List<Schedule> schedules)
+		{
+			section = null;
+			schedules = new List<Schedule>();
+			string[] resultGUID = null;
+
+			// Find Section
+			resultGUID = AssetDatabase.FindAssets(name + " t:Section");
+			string sectionPath = (resultGUID.Length > 0 ? AssetDatabase.GUIDToAssetPath(resultGUID[0]) : "");
+			section = AssetDatabase.LoadAssetAtPath(sectionPath, typeof(Section)) as Section;
+
+			// Find Schedules
+			resultGUID = AssetDatabase.FindAssets(name + " t:Schedule");
+			foreach(string scheduleGUID in resultGUID)
+			{
+				string path = AssetDatabase.GUIDToAssetPath(scheduleGUID);
+				Schedule schedule = AssetDatabase.LoadAssetAtPath(path, typeof(Schedule)) as Schedule;
+				schedules.Add(schedule);
 			}
 		}
 	}
