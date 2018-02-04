@@ -22,7 +22,7 @@ namespace Menus
 		private RectTransform contentContainer = null;
 
 		[SerializeField]
-		private Button quitButton = null;
+		private Button cancelButton = null;
 
 		[SerializeField]
 		private Button clearButton = null;
@@ -88,8 +88,8 @@ namespace Menus
 			if(textField != null)
 				textField.onValueChanged.AddListener(OnTextEdit);
 
-			if(quitButton != null)
-				quitButton.onClick.AddListener(OnQuitButtonClicked);
+			if(cancelButton != null)
+				cancelButton.onClick.AddListener(OnQuitButtonClicked);
 
 			if(clearButton != null)
 				clearButton.onClick.AddListener(OnClearButtonClicked);

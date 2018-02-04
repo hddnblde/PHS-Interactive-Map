@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using Map;
 using Navigation;
 using Databases;
+using Menus.MapElement;
+using Menus.New;
 
 namespace Menus
 {
@@ -24,10 +26,10 @@ namespace Menus
 		private Button directionsButton = null;
 
 		[SerializeField]
-		private MapMenuMarkerButton originMarkerButton = null;
+		private MapButton originMarkerButton = null;
 
 		[SerializeField]
-		private MapMenuMarkerButton destinationMarkerButton = null;
+		private MapButton destinationMarkerButton = null;
 
 		[SerializeField]
 		private NavigationMenu navigationMenu = null;
@@ -48,7 +50,7 @@ namespace Menus
 
 		
 		#region MonoBehaviour Implementation
-		private void Awake()
+		private void Start()
 		{
 			Initialize();
 		}
@@ -195,7 +197,7 @@ namespace Menus
 
 
 		#region Helpers
-		private void RegisterButton(MapMenuMarkerButton button, string placeholder, Context context)
+		private void RegisterButton(MapButton button, string placeholder, Context context)
 		{
 			if(button == null)
 				return;

@@ -4,19 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-namespace Menus
+namespace Menus.MapElement
 {
-	public class MapMenuMarkerButton : MonoBehaviour
+	public class MapButton : MonoBehaviour
 	{
-		[SerializeField]
-		private Button selectionButton = null;
-
 		[SerializeField]
 		private Button clearButton = null;
 
 		[SerializeField]
 		private Text displayedText = null;
 
+		private Button selectionButton = null;
 		private string placeholderText = "Choose marker";
 
 		private void Awake()
@@ -26,6 +24,8 @@ namespace Menus
 
 		private void Initialize()
 		{
+			selectionButton = GetComponent<Button>();
+
 			if(clearButton != null)
 				clearButton.onClick.AddListener(() => SetDisplayedText(placeholderText, true));
 		}
