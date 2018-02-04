@@ -16,6 +16,6 @@ MonoBehaviour:
   m_position: {x: -25.041218, y: 0, z: 69.162704}
   m_useDisplayPosition: 0
   m_tags: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300046, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_description: 
   m_mapName: Camia

@@ -93,7 +93,7 @@ Material:
     - _VertexColor: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5411765, g: 0.7607844, b: 0.28627452, a: 1}
+    - _Color: {r: 0.6912958, g: 0.7352941, b: 0.41630623, a: 1}
     - _Color2: {r: 0, g: 0.8000001, b: 0.8000001, a: 1}
     - _Color3: {r: 0, g: 0.8000001, b: 0.8000001, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
