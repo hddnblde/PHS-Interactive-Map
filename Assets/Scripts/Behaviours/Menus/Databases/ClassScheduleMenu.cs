@@ -19,6 +19,9 @@ namespace Menus
 
 		[SerializeField]
 		private Button backButton = null;
+
+		[SerializeField]
+		private Text context = null;
 		#endregion
 
 
@@ -49,8 +52,7 @@ namespace Menus
 
 		private void Start()
 		{
-			ShowItems();
-			// Show(false);
+			Show(false);
 		}
 		#endregion
 
@@ -105,12 +107,22 @@ namespace Menus
 		{
 			string[] items = GetItems();
 
-			if(items == null || items.Length == 0)
+			bool lastItem = (items != null && items.Length == 1) && (selectionDepth == SelectionDepth.Schedules);
+
+			if(lastItem)
 			{
-				if(selectionDepth == SelectionDepth.Schedule && selectedSectionIndex != -1)
+				Debug.Log("Skipping...");
+				selectedSectionIndex = 0;
+				MoveSelection(1);
+				items = GetItems();
+			}
+
+			if(items == null || items.Length == 0 || selectionDepth == SelectionDepth.Schedule)
+			{
+				if(selectedSectionIndex != -1)
 				{
 					ScheduleMenu.Open(ClassScheduleDatabase.GetSchedule(selectedGrade, selectedSection, selectedSectionIndex));
-					selectionDepth = SelectionDepth.Schedules;
+					MoveSelection((lastItem ? -2 : -1));
 				}
 				return;
 			}
@@ -168,6 +180,7 @@ namespace Menus
 
 			MoveSelection(1);
 			ShowItems();
+			SetContext();
 		}
 
 		private void MoveOut()
@@ -186,9 +199,10 @@ namespace Menus
 				selectedSectionIndex = -1;
 				break;
 			}
-
+			
 			MoveSelection(-1);
 			ShowItems();
+			SetContext();
 		}
 
 		private void MoveSelection(int direction)
@@ -200,6 +214,30 @@ namespace Menus
 
 			if(close)
 				Close();
+		}
+
+		private void SetContext()
+		{
+			if(context == null)
+				return;
+
+			string contextMessage = "";
+			switch(selectionDepth)
+			{
+				case SelectionDepth.Grades:
+				contextMessage = "Classes";
+				break;
+
+				case SelectionDepth.Sections:
+				contextMessage = "Grade " + (int)selectedGrade;
+				break;
+
+				case SelectionDepth.Schedules:
+				contextMessage = "Choose Section";
+				break;
+			}
+
+			context.text = contextMessage;
 		}
 		#endregion
 
