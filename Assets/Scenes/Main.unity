@@ -1867,7 +1867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00006979308}
+  m_AnchoredPosition: {x: 0, y: -0.00016415752}
   m_SizeDelta: {x: -8, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -4103,7 +4103,7 @@ MonoBehaviour:
   contentPrefab: {fileID: 114461326808206310, guid: 2a7334adebfc0514e9186025966f6db3,
     type: 2}
   contentContainer: {fileID: 419626836}
-  cancelButton: {fileID: 1868354196}
+  cancelButton: {fileID: 0}
   clearButton: {fileID: 1925659070}
   poolCount: 100
 --- !u!225 &861286733
@@ -8453,7 +8453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1848296492
@@ -8905,7 +8905,7 @@ MonoBehaviour:
   - m_pointOfInterest: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4,
       type: 2}
     m_names: "acacia\r\nanthurium\r\nanthurium 1\r\nanthurium 2\r\nanthurium 3\r\nanthurium
-      4\r\naster\r\naster 101\r\naster 102\r\naus aid\r\naus aid 1\r\naus aid 2\r\naus
+      4\r\naster\r\naster 1\r\naster 2\r\naus aid\r\naus aid 1\r\naus aid 2\r\naus
       aid 3\r\naus aid 4\r\nbaliti\r\ncaballero\r\ncamia\r\ncamia 1\r\ncamia 2\r\ncamia
       3\r\ncattleya\r\ncattleya 1\r\ncattleya 2\r\ncattleya 3\r\ncattleya 4\r\ncattleya
       5\r\ncattleya 6\r\nchrysanthemum\r\nchrysanthemum 1\r\nchrysanthemum 2\r\nchrysanthemum
@@ -8916,21 +8916,23 @@ MonoBehaviour:
       5\r\neuphorbia 6\r\neuphorbia 7\r\neuphorbia 8\r\ngardenia\r\ngardenia 1\r\ngardenia
       2\r\ngardenia 3\r\ngardenia 4\r\ngerbera\r\ngerbera 1\r\ngerbera 2\r\ngladiola\r\ngladiola
       1\r\ngladiola 2\r\ngladiola 3\r\ngladiola 4\r\ngumamela\r\ngumamela 1\r\ngumamela
-      2\r\ngumamela 3\r\ngumamela 4\r\nipil-ipil\r\njasmine\r\njasmine 1\r\njasmine
-      2\r\njasmine 3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine 7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus
-      1\r\nlotus 2\r\nlotus 3\r\nmahogany\r\nmahogany 1\r\nmahogany 2\r\nmahogany
-      3\r\nmain\r\nadmin/finance office\r\nfilipino office\r\nhr/supply office\r\nmain
-      1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain library\r\nprincipal's
+      2\r\ngumamela 3\r\ngumamela 4\r\nilang-ilang\r\nilang-ilang 101\r\nilang-ilang
+      102\r\nilang-ilang 103\r\nilang-ilang 104\r\nilang-ilang 105\r\nilang-ilang
+      106\r\nilang-ilang 201\r\nilang-ilang 202\r\nilang-ilang 203\r\nilang-ilang
+      204\r\nilang-ilang 205\r\nilang-ilang 206\r\nilang-ilang 301\r\nilang-ilang
+      302\r\nilang-ilang 303\r\nilang-ilang 304\r\nilang-ilang 305\r\nilang-ilang
+      306\r\nilang-ilang 401\r\nilang-ilang 402\r\nilang-ilang 403\r\nilang-ilang
+      404\r\nilang-ilang 405\r\nilang-ilang 406\r\nipil-ipil\r\njasmine\r\njasmine
+      1\r\njasmine 2\r\njasmine 3\r\njasmine 4\r\njasmine 5\r\njasmine 6\r\njasmine
+      7\r\nkamagong\r\nlagundi\r\nlotus\r\nlotus 1\r\nlotus 2\r\nlotus 3\r\nmahogany\r\nmahogany
+      1\r\nmahogany 2\r\nmahogany 3\r\nmain\r\nadmin/finance office\r\nfilipino office\r\nhr/supply
+      office\r\nmain 1\r\nmain 2\r\nmain 3\r\nmain 4\r\nmain 5\r\nmain 6\r\nmain library\r\nprincipal's
       office\r\nprinting office\r\npromis office\r\nrecords office\r\nscience lab
       1\r\nscience lab 2\r\nscience lab 3\r\nscience lab 4\r\nscience office\r\nsenior
       high office\r\nvalues office\r\nmolave\r\nmusic room\r\nmusic room 1\r\nmusic
       room 2\r\nmusic room 3\r\nnarra\r\norchids\r\norchids 101\r\norchids 102\r\norchids
       103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids 203\r\norchids 204\r\norchids
-      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor 101\r\npagcor
-      102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor 201\r\npagcor
-      202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor 301\r\npagcor
-      302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor 401\r\npagcor
-      402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
+      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npoinsettia\r\npoinsettia
       1\r\npoinsettia 2\r\npoinsettia 3\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
       1\r\nrodriguez 2\r\nrose\r\nenglish office\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose
       4\r\nrose 5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nspeech laboratory\r\nsampaguita\r\nopen
@@ -9042,6 +9044,32 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 6c31d32fc2ce4634aaf2d10dbdad31d6, type: 2}
       - {fileID: 11400000, guid: c8950cfd6ee09034f8a87ae723030585, type: 2}
       - {fileID: 11400000, guid: 234e05162828d414d88ea86f82181b75, type: 2}
+    - place: {fileID: 11400000, guid: f421cebc1155b7340947e2a1d137399c, type: 2}
+      rooms:
+      - {fileID: 11400000, guid: 63266f4ff99374e429992a32846c1848, type: 2}
+      - {fileID: 11400000, guid: 7771cce9cf4503842bf3b493d4e9980d, type: 2}
+      - {fileID: 11400000, guid: 8a3f31808cc2cd54ba7bbd82676abd59, type: 2}
+      - {fileID: 11400000, guid: cab3e4ddcf243a745ba2de211028f6f7, type: 2}
+      - {fileID: 11400000, guid: 8c820f27008a8f34186550c34a586706, type: 2}
+      - {fileID: 11400000, guid: 69e417076c0e80845acc0a0bb718f545, type: 2}
+      - {fileID: 11400000, guid: 1cbb9158a5e3a6446b6f4a870dc84cea, type: 2}
+      - {fileID: 11400000, guid: 22f246d273074fd4e91e335b2cc8e453, type: 2}
+      - {fileID: 11400000, guid: 4d13eb049f8f1ab41be1ff8a38cbb4b3, type: 2}
+      - {fileID: 11400000, guid: 6ba1e2b62adae074c93df5bbe2787a6f, type: 2}
+      - {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
+      - {fileID: 11400000, guid: 10f1969bed1bc964b824b478684a7715, type: 2}
+      - {fileID: 11400000, guid: 3834b2f54e6b00a499c45b1f4a1403e1, type: 2}
+      - {fileID: 11400000, guid: 67ff8330020e8dc4190099df03b0b2ac, type: 2}
+      - {fileID: 11400000, guid: 61abc5fa60b7ef240a67721c8f4893ba, type: 2}
+      - {fileID: 11400000, guid: 7f22e4cc40ca22d47827d14b56055f88, type: 2}
+      - {fileID: 11400000, guid: 4f34f60a85fda6246ab4fc452b33dd4a, type: 2}
+      - {fileID: 11400000, guid: c4c6c80587f879648be2d3f2c93d8c59, type: 2}
+      - {fileID: 11400000, guid: b7f894384a727dd4180ddb55e76902d7, type: 2}
+      - {fileID: 11400000, guid: 4b89d42434030dc41ac266fae9f8925d, type: 2}
+      - {fileID: 11400000, guid: 8167dc047229f9b4b945eadd2236da90, type: 2}
+      - {fileID: 11400000, guid: 951f291e6ac6bc946bf963f678c4c330, type: 2}
+      - {fileID: 11400000, guid: 5ce7266a12327254fb1c81e43ddead38, type: 2}
+      - {fileID: 11400000, guid: ebe6176b8e32c1246aa1c27682ad9db1, type: 2}
     - place: {fileID: 11400000, guid: c2a668332ccd66742926b507dbd127b8, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: d7e2c81002e592b41b7f5f351c5db5ab, type: 2}
@@ -9113,32 +9141,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: a258e2fd57bc2a04680f6b460a8e05ce, type: 2}
       - {fileID: 11400000, guid: 8a1063989c18efa45a0145005d129697, type: 2}
       - {fileID: 11400000, guid: 56728959b671d764b9e94321170db504, type: 2}
-    - place: {fileID: 11400000, guid: f421cebc1155b7340947e2a1d137399c, type: 2}
-      rooms:
-      - {fileID: 11400000, guid: 63266f4ff99374e429992a32846c1848, type: 2}
-      - {fileID: 11400000, guid: 7771cce9cf4503842bf3b493d4e9980d, type: 2}
-      - {fileID: 11400000, guid: 8a3f31808cc2cd54ba7bbd82676abd59, type: 2}
-      - {fileID: 11400000, guid: cab3e4ddcf243a745ba2de211028f6f7, type: 2}
-      - {fileID: 11400000, guid: 8c820f27008a8f34186550c34a586706, type: 2}
-      - {fileID: 11400000, guid: 69e417076c0e80845acc0a0bb718f545, type: 2}
-      - {fileID: 11400000, guid: 1cbb9158a5e3a6446b6f4a870dc84cea, type: 2}
-      - {fileID: 11400000, guid: 22f246d273074fd4e91e335b2cc8e453, type: 2}
-      - {fileID: 11400000, guid: 4d13eb049f8f1ab41be1ff8a38cbb4b3, type: 2}
-      - {fileID: 11400000, guid: 6ba1e2b62adae074c93df5bbe2787a6f, type: 2}
-      - {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
-      - {fileID: 11400000, guid: 10f1969bed1bc964b824b478684a7715, type: 2}
-      - {fileID: 11400000, guid: 3834b2f54e6b00a499c45b1f4a1403e1, type: 2}
-      - {fileID: 11400000, guid: 67ff8330020e8dc4190099df03b0b2ac, type: 2}
-      - {fileID: 11400000, guid: 61abc5fa60b7ef240a67721c8f4893ba, type: 2}
-      - {fileID: 11400000, guid: 7f22e4cc40ca22d47827d14b56055f88, type: 2}
-      - {fileID: 11400000, guid: 4f34f60a85fda6246ab4fc452b33dd4a, type: 2}
-      - {fileID: 11400000, guid: c4c6c80587f879648be2d3f2c93d8c59, type: 2}
-      - {fileID: 11400000, guid: b7f894384a727dd4180ddb55e76902d7, type: 2}
-      - {fileID: 11400000, guid: 4b89d42434030dc41ac266fae9f8925d, type: 2}
-      - {fileID: 11400000, guid: 8167dc047229f9b4b945eadd2236da90, type: 2}
-      - {fileID: 11400000, guid: 951f291e6ac6bc946bf963f678c4c330, type: 2}
-      - {fileID: 11400000, guid: 5ce7266a12327254fb1c81e43ddead38, type: 2}
-      - {fileID: 11400000, guid: ebe6176b8e32c1246aa1c27682ad9db1, type: 2}
     - place: {fileID: 11400000, guid: 2b8dc06754f56e842ba5443c4048ee17, type: 2}
       rooms:
       - {fileID: 11400000, guid: fa7a205bcc3a5b34186791babc1b3e55, type: 2}

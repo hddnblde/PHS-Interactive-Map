@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: PAGCOR
+  m_Name: Ilang-ilang
   m_EditorClassIdentifier: 
-  m_displayedName: PAGCOR
+  m_displayedName: Ilang-ilang
   m_displayPosition: {x: -129.60472, y: 0, z: -119.79843}
   m_position: {x: -120.74128, y: 0, z: -119.829544}
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
   m_description: 
-  m_mapName: PAGCOR
+  m_mapName: Ilang-ilang

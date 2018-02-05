@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
-  m_Name: PAGCOR 401
+  m_Name: Ilang-ilang 305
   m_EditorClassIdentifier: 
-  m_displayedName: PAGCOR
-  m_displayPosition: {x: -130.65799, y: 0, z: -154.31871}
-  m_position: {x: -130.65799, y: 0, z: -154.31871}
+  m_displayedName: Ilang-ilang
+  m_displayPosition: {x: -128.68535, y: 0, z: -96.83198}
+  m_position: {x: -128.68535, y: 0, z: -96.83198}
   m_useDisplayPosition: 0
   m_tags: 
   m_standaloneName: 0
   m_standaloneNumber: 0
-  m_floor: 4
-  m_room: 1
-  m_mapName: 401
+  m_floor: 3
+  m_room: 5
+  m_mapName: 305

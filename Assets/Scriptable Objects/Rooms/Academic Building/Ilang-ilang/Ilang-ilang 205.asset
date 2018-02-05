@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
-  m_Name: PAGCOR 205
+  m_Name: Ilang-ilang 205
   m_EditorClassIdentifier: 
-  m_displayedName: PAGCOR
+  m_displayedName: Ilang-ilang
   m_displayPosition: {x: -128.68535, y: 0, z: -96.83198}
   m_position: {x: -128.68535, y: 0, z: -96.83198}
   m_useDisplayPosition: 0

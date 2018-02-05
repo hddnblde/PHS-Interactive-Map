@@ -29,7 +29,7 @@ namespace Map
 
 		public int floor
 		{
-			get { return m_floor; }
+			get { return ((m_standaloneNumber || m_standaloneName) ? 0 : m_floor); }
 		}
 
 		public override string displayedName
@@ -183,7 +183,7 @@ namespace Map
 				EditorGUILayout.LabelField("Room", EditorStyles.boldLabel);
 
 				EditorGUILayout.PropertyField(standaloneNumberProperty);
-				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 1);
+				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 0);
 				roomProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField("Room", roomProperty.intValue), 1, 99);
 			}
 
