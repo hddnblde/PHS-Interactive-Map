@@ -110,5 +110,10 @@ namespace Schedules
 			string pattern = header + (!headerIsEmpty ? "\n" : "") + footer;
 			return pattern;
 		}
+
+		public bool isEmpty
+		{
+			get { return m_room == null && string.IsNullOrEmpty(title); }
+		}
 	}
 }

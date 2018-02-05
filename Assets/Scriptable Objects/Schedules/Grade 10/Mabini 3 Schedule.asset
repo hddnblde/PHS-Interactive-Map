@@ -192,11 +192,11 @@ MonoBehaviour:
   - m_period: {fileID: 11400000, guid: 5f41e340c2e191745a799adb73549054, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
+      m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: eb0f26eeee969334a92eba201d2ceb70, type: 2}
       m_subtitle: Aralin
     - m_day: 2
-      m_room: {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
+      m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: eb0f26eeee969334a92eba201d2ceb70, type: 2}
       m_subtitle: Aralin
     - m_day: 3
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_title: {fileID: 0}
       m_subtitle: 
     - m_day: 4
-      m_room: {fileID: 11400000, guid: be8f801e13daaba40b1f1dfd8d746553, type: 2}
+      m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: eb0f26eeee969334a92eba201d2ceb70, type: 2}
       m_subtitle: Aralin
     - m_day: 5

@@ -40,11 +40,11 @@ MonoBehaviour:
     - m_day: 1
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 2
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
     - m_day: 4
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1f3b47317af6af844a5ab8a45793c394, type: 2}
       m_title: {fileID: 11400000, guid: 517a054b9f8394a4f8d68aefc59b0846, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
     - m_day: 1
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 7f565970b3333ee47af4c14fe0fe10d1, type: 2}
       m_title: {fileID: 11400000, guid: 64319aad64131804ebf3c80dc3282de7, type: 2}

@@ -220,15 +220,15 @@ MonoBehaviour:
     - m_day: 2
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 4
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 11400000, guid: 0deb1ecce9e3a9c469a726a427e295e5, type: 2}

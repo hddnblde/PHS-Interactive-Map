@@ -194,7 +194,7 @@ MonoBehaviour:
     - m_day: 1
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 8b0cdb82a33a39240a7217c52076032d, type: 2}
       m_title: {fileID: 11400000, guid: 3912fdc03feca9142b6f89833451fcd3, type: 2}

@@ -9,6 +9,7 @@ using PampangaHighSchool.Students;
 
 namespace Menus
 {
+	[RequireComponent(typeof(CanvasGroup))]
 	public class ScheduleMenu : MonoBehaviour
 	{
 		#region Serialized Fields
@@ -26,6 +27,9 @@ namespace Menus
 		private Day currentDay = Day.Monday;
 
 		[Header("Buttons")]
+		[SerializeField]
+		private Button backButton = null;
+
 		[SerializeField]
 		private Button mondayButton = null;
 
@@ -64,6 +68,7 @@ namespace Menus
 		private Graphic wednesdayText = null;
 		private Graphic thursdayText = null;
 		private Graphic fridayText = null;
+		private CanvasGroup canvasGroup = null;
 
 		private static bool m_isOpen = false;
 		#endregion
@@ -80,8 +85,10 @@ namespace Menus
 		#region MonoBehaviour Implementation
 		private void Awake()
 		{
+			Initialize();
 			GenerateEntries();
 			SetupButtons();
+			Show(false);
 		}
 
 		private void OnEnable()
@@ -97,6 +104,11 @@ namespace Menus
 
 
 		#region Initializers
+		private void Initialize()
+		{
+			canvasGroup = GetComponent<CanvasGroup>();
+		}
+
 		private void GenerateEntries()
 		{
 			if(scheduleItemPrefab == null || entryContainer == null)
@@ -119,16 +131,21 @@ namespace Menus
 			SetupButton(wednesdayButton, ref wednesdayText, Day.Wednesday);
 			SetupButton(thursdayButton, ref thursdayText, Day.Thursday);
 			SetupButton(fridayButton, ref fridayText, Day.Friday);
+
+			if(backButton != null)
+				backButton.onClick.AddListener(Close);
 		}
 
 		private void RegisterInternalEvents()
 		{
 			OnOpenMenu += Internal_Open;
+			OnCloseMenu += Internal_Close;
 		}
 
 		private void DeregisterInternalEvents()
 		{
 			OnOpenMenu -= Internal_Open;
+			OnCloseMenu -= Internal_Close;
 		}
 		#endregion
 
@@ -136,6 +153,12 @@ namespace Menus
 		#region Actions
 		public static void Open(Schedule schedule)
 		{
+			if(schedule == null)
+			{
+				Debug.Log("Schedule is empty!");
+				return;
+			}
+			
 			if(m_isOpen)
 			{
 				Debug.Log("Schedule is already opened.");
@@ -167,17 +190,67 @@ namespace Menus
 			this.schedule = schedule;
 			SetTitle();
 			SetPeriods();
-			SelectDay(currentDay);
+			ValidateDayButtons();
+			Show(true);
+			SelectFirstActive();
 		}
 
 		private void Internal_Close()
 		{
-			
+			ClearSelection();
+			Show(false);
+		}
+
+		private void Show(bool shown)
+		{
+			if(canvasGroup == null)
+				return;
+
+			canvasGroup.alpha = (shown ? 1f : 0f);
+			canvasGroup.blocksRaycasts = shown;
 		}
 		#endregion
 
 
 		#region Helpers
+		private void ValidateDayButtons()
+		{
+			ValidateDayButton(mondayButton, Day.Monday);
+			ValidateDayButton(tuesdayButton, Day.Tuesday);
+			ValidateDayButton(wednesdayButton, Day.Wednesday);
+			ValidateDayButton(thursdayButton, Day.Thursday);
+			ValidateDayButton(fridayButton, Day.Friday);
+		}
+
+		private void ValidateDayButton(Button button, Day day)
+		{
+			if(button != null)
+				button.gameObject.SetActive(!DayIsEmpty(day));
+		}
+
+		private bool DayIsEmpty(Day day)
+		{
+			if(schedule == null || schedule.periods == null || schedule.periods.Length == 0)
+				return true;
+			
+			int emptyPeriodCount = 0;
+			int periodCount = schedule.periods.Length;
+
+			for(int i = 0; i < periodCount; i++)
+			{
+				PeriodGroup period = schedule.periods[i];
+				ScheduleEntry entry = period.GetEntry(day);
+
+				if(entry == null)
+					continue;
+
+				if(entry.isEmpty)
+					emptyPeriodCount++;
+			}
+
+			return emptyPeriodCount >= periodCount;
+		}
+
 		private void SetTitle()
 		{
 			if(schedule == null || titleText == null)
@@ -189,7 +262,7 @@ namespace Menus
 
 		private void SetPeriods()
 		{
-			if(items == null || items.Count == 0)
+			if(items == null || items.Count == 0 || schedule == null)
 				return;
 			
 			for(int i = 0; i < items.Count; i++)
@@ -197,6 +270,36 @@ namespace Menus
 				ScheduleItem item = items[i];
 				PeriodGroup period = schedule.periods[i];
 				item.Set(period);
+			}
+		}
+
+		private void SelectFirstActive()
+		{
+			Debug.Log("Selecting first active...");
+			if(mondayButton.gameObject.activeInHierarchy)
+			{
+				SelectDay(Day.Monday);
+				return;
+			}
+			else if(tuesdayButton.gameObject.activeInHierarchy)
+			{
+				SelectDay(Day.Tuesday);
+				return;
+			}
+			else if(wednesdayButton.gameObject.activeInHierarchy)
+			{
+				SelectDay(Day.Wednesday);
+				return;
+			}
+			else if(thursdayButton.gameObject.activeInHierarchy)
+			{
+				SelectDay(Day.Thursday);
+				return;
+			}
+			else if(fridayButton.gameObject.activeInHierarchy)
+			{
+				SelectDay(Day.Friday);
+				return;
 			}
 		}
 
@@ -209,6 +312,15 @@ namespace Menus
 			SelectButton(thursdayButton, thursdayText, day == Day.Thursday);
 			SelectButton(fridayButton, fridayText, day == Day.Friday);
 			ViewEntries();
+		}
+
+		private void ClearSelection()
+		{
+			SelectButton(mondayButton, mondayText, false);
+			SelectButton(tuesdayButton, tuesdayText, false);
+			SelectButton(wednesdayButton, wednesdayText, false);
+			SelectButton(thursdayButton, thursdayText, false);
+			SelectButton(fridayButton, fridayText, false);
 		}
 
 		private void ViewEntries()

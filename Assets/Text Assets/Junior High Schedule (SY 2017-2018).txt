@@ -514,7 +514,7 @@
 10	02:05 PM	03:00 PM	8	Stargazer 1	Mapeh	Anthurium 1	Ana Carissa Chavez	Mapeh	Anthurium 1	Ana Carissa Chavez	Mapeh	Anthurium 1	Ana Carissa Chavez	Math	Anthurium 1	Katherina Joy Francisco	Mapeh	Anthurium 1	Ana Carissa Chavez
 11	03:00 PM	03:15 PM	8	Stargazer 1															
 12	03:15 PM	04:10 PM	8	Stargazer 1	TLE			TLE			TLE			TLE			TLE		
-13	04:10 PM	05:05 PM	8	Stargazer 1	---			Values	Anthurium 1	Rona Lyn Santos	Aralin	Sampaguita 2	Sylvia Casuga	Aralin	Sampaguita 2	Sylvia Casuga	Values	Anthurium 1	Rona Lyn Santos
+13	04:10 PM	05:05 PM	8	Stargazer 1	@empty			Values	Anthurium 1	Rona Lyn Santos	Aralin	Sampaguita 2	Sylvia Casuga	Aralin	Sampaguita 2	Sylvia Casuga	Values	Anthurium 1	Rona Lyn Santos
 14	05:05 PM	06:00 PM	8	Stargazer 1	Science	Anthurium 1	Christle Bayoneta	Science	Anthurium 1	Christle Bayoneta	Math	Anthurium 1	Katherina Joy Francisco	Science	Anthurium 1	Christle Bayoneta	Science	Anthurium 1	Christle Bayoneta
 1	06:30 AM	07:25 AM	8	Stargazer 2															
 2	07:25 AM	08:20 AM	8	Stargazer 2															
@@ -523,7 +523,7 @@
 5	09:30 AM	10:25 AM	8	Stargazer 2															
 6	10:25 AM	11:20 AM	8	Stargazer 2															
 7	11:20 AM	12:15 PM	8	Stargazer 2	Aralin	Industrial Arts 13	Jannet Laxamana												
-8	12:15 PM	01:10 PM	8	Stargazer 2	---			Values	Lotus 2	Mercedita Tiomico	Values	Lotus 2	Mercedita Tiomico	Aralin	Anthurium 2	Jannet Laxamana	Aralin	Anthurium 2	Jannet Laxamana
+8	12:15 PM	01:10 PM	8	Stargazer 2	@empty			Values	Lotus 2	Mercedita Tiomico	Values	Lotus 2	Mercedita Tiomico	Aralin	Anthurium 2	Jannet Laxamana	Aralin	Anthurium 2	Jannet Laxamana
 9	01:10 PM	02:05 PM	8	Stargazer 2	Filipino	Anthurium 2	Maria Angelica Yumul	Filipino	Anthurium 2	Maria Angelica Yumul	Math	Anthurium 2	Katherina Joy Francisco	Filipino	Anthurium 2	Maria Angelica Yumul	Filipino	Anthurium 2	Maria Angelica Yumul
 10	02:05 PM	03:00 PM	8	Stargazer 2	English	Anthurium 2	Alona Prado	Math	Anthurium 2	Katherina Joy Francisco	English	Anthurium 2	Alona Prado	English	Anthurium 2	Alona Prado	English	Anthurium 2	Alona Prado
 11	03:00 PM	03:15 PM	8	Stargazer 2															
@@ -755,8 +755,8 @@
 13	04:10 PM	05:05 PM	8	Lily 6	Math	Aster 2	Jayvee Morales	English	Aster 2	Ramil Sabado	English	Aster 2	Ramil Sabado	English	Aster 2	Ramil Sabado	English	Aster 2	Ramil Sabado
 14	05:05 PM	06:00 PM	8	Lily 6	TLE			TLE			TLE			TLE			TLE		
 1	06:30 AM	07:25 AM	8	E. Torre				English	Cattleya 5	Mark Rossem Garcia	English	Cattleya 5	Mark Rossem Garcia	English	Cattleya 5	Mark Rossem Garcia	English	Cattleya 5	Mark Rossem Garcia
-2	07:25 AM	08:20 AM	8	E. Torre	Science	Cattleya 5	Maria Kristina Palma	---			Science	Cattleya 5	Maria Kristina Palma	Science	Cattleya 5	Maria Kristina Palma	Science	Cattleya 5	Maria Kristina Palma
-3	08:20 AM	09:15 AM	8	E. Torre	Mapeh	Cattleya 5	Jerico Basilio	Mapeh	Cattleya 5	Jerico Basilio	---			Mapeh	Cattleya 5	Jerico Basilio	Mapeh	Cattleya 5	Jerico Basilio
+2	07:25 AM	08:20 AM	8	E. Torre	Science	Cattleya 5	Maria Kristina Palma	@empty			Science	Cattleya 5	Maria Kristina Palma	Science	Cattleya 5	Maria Kristina Palma	Science	Cattleya 5	Maria Kristina Palma
+3	08:20 AM	09:15 AM	8	E. Torre	Mapeh	Cattleya 5	Jerico Basilio	Mapeh	Cattleya 5	Jerico Basilio	@empty			Mapeh	Cattleya 5	Jerico Basilio	Mapeh	Cattleya 5	Jerico Basilio
 4	09:15 AM	09:30 AM	8	E. Torre															
 5	09:30 AM	10:25 AM	8	E. Torre	Filipino	Cattleya 5	Laila Gomez	Filipino	Cattleya 5	Laila Gomez	Filipino	Cattleya 5	Laila Gomez	Math	Lotus 3	Ramoncito Tagudar	Math	Lotus 3	Ramoncito Tagudar
 6	10:25 AM	11:20 AM	8	E. Torre							Values	Cattleya 5	Herbert Macabali	Values	Cattleya 5	Herbert Macabali	Filipino	Cattleya 5	Laila Gomez
@@ -783,14 +783,14 @@
 13	04:10 PM	05:05 PM	8	L. De Vega															
 14	05:05 PM	06:00 PM	8	L. De Vega															
 1	06:30 AM	07:25 AM	8	F.R. Aquino							Math	Lotus 3	Ramoncito Tagudar						
-2	07:25 AM	08:20 AM	8	F.R. Aquino	---			Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio
+2	07:25 AM	08:20 AM	8	F.R. Aquino	@empty			Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio	Mapeh	Gladiola Lab 1	Jerico Basilio
 3	08:20 AM	09:15 AM	8	F.R. Aquino	Math	Lotus 3	Ramoncito Tagudar	Filipino	Gladiola Lab 1	Laila Gomez	Filipino	Gladiola Lab 1	Laila Gomez	Filipino	Gladiola Lab 1	Laila Gomez	Filipino	Gladiola Lab 1	Laila Gomez
 4	09:15 AM	09:30 AM	8	F.R. Aquino															
 5	09:30 AM	10:25 AM	8	F.R. Aquino	English	Gladiola Lab 1	Carlo Noriega	Math	Lotus 3	Ramoncito Tagudar	English	Gladiola Lab 1	Carlo Noriega	English	Gladiola Lab 1	Carlo Noriega	English	Gladiola Lab 1	Carlo Noriega
 6	10:25 AM	11:20 AM	8	F.R. Aquino	Science	Gladiola Lab 1	Maria Kristina Palma	Science	Gladiola Lab 1	Maria Kristina Palma	Science	Gladiola Lab 1	Maria Kristina Palma	Science	Gladiola Lab 1	Maria Kristina Palma	Math	Lotus 3	Ramoncito Tagudar
 7	11:20 AM	12:15 PM	8	F.R. Aquino	Aralin	Gladiola Lab 1	Jerica Jorge	Values	Gladiola Lab 1	Herbert Macabali	Values	Gladiola Lab 1	Herbert Macabali	Aralin	Gladiola Lab 1	Jerica Jorge	Aralin	Gladiola Lab 1	Jerica Jorge
 8	12:15 PM	01:10 PM	8	F.R. Aquino	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	8	F.R. Aquino	---			---			---			---					
+9	01:10 PM	02:05 PM	8	F.R. Aquino	@empty			@empty			@empty			@empty					
 10	02:05 PM	03:00 PM	8	F.R. Aquino	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:15 PM	8	F.R. Aquino															
 12	03:15 PM	04:10 PM	8	F.R. Aquino															
@@ -825,7 +825,7 @@
 13	04:10 PM	05:05 PM	8	L. Kasilag															
 14	05:05 PM	06:00 PM	8	L. Kasilag															
 1	06:30 AM	07:25 AM	8	Darwin				Filipino	Aus Aid 1	Laila Gomez	Filipino	Aus Aid 1	Laila Gomez	Filipino	Aus Aid 1	Laila Gomez	Filipino	Aus Aid 1	Laila Gomez
-2	07:25 AM	08:20 AM	8	Darwin	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	---		
+2	07:25 AM	08:20 AM	8	Darwin	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	English	Aus Aid 1	Mark Rossem Garcia	@empty		
 3	08:20 AM	09:15 AM	8	Darwin	Math	Aus Aid 1	Dolores Timbang	Math	Aus Aid 1	Dolores Timbang	Math	Aus Aid 1	Dolores Timbang	Math	Aus Aid 1	Dolores Timbang	Math	Aus Aid 1	Dolores Timbang
 4	09:15 AM	09:30 AM	8	Darwin															
 5	09:30 AM	10:25 AM	8	Darwin	Journ.	Aus Aid 1	Girlie Canlas	Journ.	Aus Aid 1	Girlie Canlas	Journ.	Aus Aid 1	Girlie Canlas				Journ.	Aus Aid 1	Girlie Canlas
@@ -854,15 +854,15 @@
 14	05:05 PM	06:00 PM	8	Mendel															
 1	06:30 AM	07:25 AM	8	Pasteur	Science	Aus Aid 4	Roselyn Ramos	Science	Aus Aid 4	Roselyn Ramos	Science	Aus Aid 4	Roselyn Ramos	Science	Aus Aid 4	Roselyn Ramos	Science	Aus Aid 4	Roselyn Ramos
 2	07:25 AM	08:20 AM	8	Pasteur	Math	Aus Aid 4	Dolores Timbang	Math	Aus Aid 4	Dolores Timbang	Math	Aus Aid 4	Dolores Timbang	Math	Aus Aid 4	Dolores Timbang	Math	Aus Aid 4	Dolores Timbang
-3	08:20 AM	09:15 AM	8	Pasteur	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	---		
+3	08:20 AM	09:15 AM	8	Pasteur	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	Journ.	Aus Aid 4	Girlie Canlas	@empty		
 4	09:15 AM	09:30 AM	8	Pasteur															
 5	09:30 AM	10:25 AM	8	Pasteur	Mapeh	Aus Aid 4	Jerico Basilio	Mapeh	Aus Aid 4	Jerico Basilio	Mapeh	Aus Aid 4	Jerico Basilio				Mapeh	Aus Aid 4	Jerico Basilio
 6	10:25 AM	11:20 AM	8	Pasteur	English	Aus Aid 4	Mark Rossem Garcia	English	Aus Aid 4	Mark Rossem Garcia	English	Aus Aid 4	Mark Rossem Garcia	English	Aus Aid 4	Mark Rossem Garcia			
 7	11:20 AM	12:15 PM	8	Pasteur	BT	Aus Aid 4	Maria Teresa Angat	BT	Aus Aid 4	Maria Teresa Angat	BT	Aus Aid 4	Maria Teresa Angat	Values	Aus Aid 4	Herbert Macabali	Values	Aus Aid 4	Herbert Macabali
 8	12:15 PM	01:10 PM	8	Pasteur															
-9	01:10 PM	02:05 PM	8	Pasteur	---			Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez
+9	01:10 PM	02:05 PM	8	Pasteur	@empty			Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez	Filipino	Aus Aid 4	Laila Gomez
 10	02:05 PM	03:00 PM	8	Pasteur	Aralin	Aus Aid 4	Janice Maulion	Aralin	Aus Aid 4	Janice Maulion	Aralin	Aus Aid 4	Janice Maulion	ICT	Aus Aid 4		BT	Aus Aid 4	Maria Teresa Angat
-11	03:00 PM	03:15 PM	8	Pasteur	---			---			---						---		
+11	03:00 PM	03:15 PM	8	Pasteur	@empty			@empty			@empty						@empty		
 12	03:15 PM	04:10 PM	8	Pasteur	ICT	Aus Aid 4		ICT	Aus Aid 4		ICT	Aus Aid 4							
 13	04:10 PM	05:05 PM	8	Pasteur															
 14	05:05 PM	06:00 PM	8	Pasteur															
@@ -876,7 +876,7 @@
 8	12:15 PM	01:10 PM	10	Open High 8										TLE	Open High Room				
 9	01:10 PM	02:05 PM	10	Open High 8										English	Open High Room	Carlo Noriega			
 10	02:05 PM	03:00 PM	10	Open High 8										Values	Open High Room	Rona Lyn Santos			
-11	03:00 PM	03:55 PM	10	Open High 8										---					
+11	03:00 PM	03:55 PM	10	Open High 8										@empty					
 12	03:55 PM	04:10 PM	10	Open High 8										Aralin	Open High Room	Pamela Ramos			
 13	04:10 PM	05:05 PM	10	Open High 8										Science	Open High Room	Roselyn Ramos			
 14	05:05 PM	06:00 PM	10	Open High 8															
@@ -1516,9 +1516,9 @@
 4	09:15 AM	10:10 AM	10	B. Lucero	Aralin	Poinsettia 4	Eunice Galang	Values	Poinsettia 4	Clare Anne Soccorro Dungo	Aralin	Poinsettia 4	Eunice Galang	Values	Poinsettia 4	Clare Anne Soccorro Dungo	Aralin	Poinsettia 4	Eunice Galang
 5	10:10 AM	10:25 AM	10	B. Lucero															
 6	10:25 AM	11:20 AM	10	B. Lucero	Mapeh	Poinsettia 4	Celia Aguilar	Math	Poinsettia 4	Maya Renea Bondoc	Mapeh	Poinsettia 4	Celia Aguilar	Mapeh	Poinsettia 4	Celia Aguilar	Mapeh	Poinsettia 4	Celia Aguilar
-7	11:20 AM	12:15 PM	10	B. Lucero	---			English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque
+7	11:20 AM	12:15 PM	10	B. Lucero	@empty			English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque	English	Poinsettia 4	Richmon Joseph Roque
 8	12:15 PM	01:10 PM	10	B. Lucero	Math	Poinsettia 4	Maya Renea Bondoc				Math	Poinsettia 4	Maya Renea Bondoc	Math	Poinsettia 4	Maya Renea Bondoc			
-9	01:10 PM	02:05 PM	10	B. Lucero													---		
+9	01:10 PM	02:05 PM	10	B. Lucero													@empty		
 10	02:05 PM	03:00 PM	10	B. Lucero	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:55 PM	10	B. Lucero															
 12	03:55 PM	04:10 PM	10	B. Lucero															
@@ -1569,7 +1569,7 @@
 1	06:30 AM	07:25 AM	10	Proton	English	Euphorbia 5	Girlie Canlas				English	Euphorbia 5	Girlie Canlas	English	Euphorbia 5	Girlie Canlas	English	Euphorbia 5	Girlie Canlas
 2	07:25 AM	08:20 AM	10	Proton	Mapeh	Euphorbia 5	Elizer Camaya				Mapeh	Euphorbia 5	Elizer Camaya	Mapeh	Euphorbia 5	Elizer Camaya	Mapeh	Euphorbia 5	Elizer Camaya
 3	08:20 AM	09:15 AM	10	Proton	Math	Euphorbia 5	Precy Bugayong	Math	Euphorbia 5	Precy Bugayong	Math	Euphorbia 5	Precy Bugayong	Math	Euphorbia 5	Precy Bugayong	Math	Euphorbia 5	Precy Bugayong
-4	09:15 AM	10:10 AM	10	Proton	Values	Euphorbia 5	Clare Anne Soccorro Dungo	---			Values	Euphorbia 5	Clare Anne Soccorro Dungo	Aralin	Euphorbia 5	Nancy Fernandez	Aralin	Euphorbia 5	Nancy Fernandez
+4	09:15 AM	10:10 AM	10	Proton	Values	Euphorbia 5	Clare Anne Soccorro Dungo	@empty			Values	Euphorbia 5	Clare Anne Soccorro Dungo	Aralin	Euphorbia 5	Nancy Fernandez	Aralin	Euphorbia 5	Nancy Fernandez
 5	10:10 AM	10:25 AM	10	Proton															
 6	10:25 AM	11:20 AM	10	Proton	Res 2	Euphorbia 5	Elizabeth Canlas	Aralin	Euphorbia 5	Nancy Fernandez	Res 2	Euphorbia 5	Elizabeth Canlas	Res 2	Euphorbia 5	Elizabeth Canlas	Res 2	Euphorbia 5	Elizabeth Canlas
 7	11:20 AM	12:15 PM	10	Proton	Filipino	Euphorbia 5	Alma Pantaleon	Filipino	Euphorbia 5	Alma Pantaleon				Filipino	Euphorbia 5	Alma Pantaleon	Filipino	Euphorbia 5	Alma Pantaleon
@@ -1580,12 +1580,12 @@
 12	03:55 PM	04:10 PM	10	Proton															
 13	04:10 PM	05:05 PM	10	Proton															
 14	05:05 PM	06:00 PM	10	Proton															
-1	06:30 AM	07:25 AM	10	Neutron	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	---		
+1	06:30 AM	07:25 AM	10	Neutron	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	Filipino	Euphorbia 6	Alma Pantaleon	@empty		
 2	07:25 AM	08:20 AM	10	Neutron	Math	Euphorbia 6	Precy Bugayong	Math	Euphorbia 6	Precy Bugayong	Math	Euphorbia 6	Precy Bugayong	Math	Euphorbia 6	Precy Bugayong	Math	Euphorbia 6	Precy Bugayong
-3	08:20 AM	09:15 AM	10	Neutron	Aralin	Euphorbia 6	Nancy Fernandez	Aralin	Euphorbia 6	Nancy Fernandez	---			---			---		
+3	08:20 AM	09:15 AM	10	Neutron	Aralin	Euphorbia 6	Nancy Fernandez	Aralin	Euphorbia 6	Nancy Fernandez	@empty			@empty			@empty		
 4	09:15 AM	10:10 AM	10	Neutron	Mapeh	Euphorbia 6	Elizer Camaya	Mapeh	Euphorbia 6	Elizer Camaya				Mapeh	Euphorbia 6	Elizer Camaya	Mapeh	Euphorbia 6	Elizer Camaya
 5	10:10 AM	10:25 AM	10	Neutron															
-6	10:25 AM	11:20 AM	10	Neutron	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	---		
+6	10:25 AM	11:20 AM	10	Neutron	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	English	Euphorbia 6	Girlie Canlas	@empty		
 7	11:20 AM	12:15 PM	10	Neutron				Values	Euphorbia 6	Clare Anne Soccorro Dungo	Values	Euphorbia 6	Clare Anne Soccorro Dungo						
 8	12:15 PM	01:10 PM	10	Neutron	Res 2	Euphorbia 6	Elizabeth Canlas	Res 2	Euphorbia 6	Elizabeth Canlas	Aralin	Euphorbia 6	Nancy Fernandez	Res 2	Euphorbia 6	Elizabeth Canlas	Res 2	Euphorbia 6	Elizabeth Canlas
 9	01:10 PM	02:05 PM	10	Neutron	Science	Euphorbia 6	Azeneth Romero	Science	Euphorbia 6	Azeneth Romero	Science	Euphorbia 6	Azeneth Romero	Science	Euphorbia 6	Azeneth Romero	Science	Euphorbia 6	Azeneth Romero
@@ -2274,7 +2274,7 @@
 6	10:25 AM	11:20 AM	9	E. Murros	Aralin	Industrial Arts 10	Amelie Anne Santos	Aralin	Industrial Arts 10	Amelie Anne Santos	Aralin	Industrial Arts 10	Amelie Anne Santos	Values	Industrial Arts 10	Arvin Jay Paule	Values	Industrial Arts 10	Arvin Jay Paule
 7	11:20 AM	12:15 PM	9	E. Murros	Filipino	Industrial Arts 10	Filipino Teacher D	Filipino	Industrial Arts 10	Filipino Teacher D	Math	Industrial Arts 10	Ivan Salas	Filipino	Industrial Arts 10	Filipino Teacher D	Filipino	Industrial Arts 10	Filipino Teacher D
 8	12:15 PM	01:10 PM	9	E. Murros	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	9	E. Murros				---											
+9	01:10 PM	02:05 PM	9	E. Murros				@empty											
 10	02:05 PM	03:00 PM	9	E. Murros	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:55 PM	9	E. Murros															
 12	03:55 PM	04:10 PM	9	E. Murros															
@@ -2288,7 +2288,7 @@
 6	10:25 AM	11:20 AM	9	M. Del Rosario	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina			
 7	11:20 AM	12:15 PM	9	M. Del Rosario	Math	Dama 07	Cherill Cunanan	Math	Dama 07	Cherill Cunanan	Math	Dama 07	Cherill Cunanan	Values	Dama 07	Doreen Dayrit	Values	Dama 07	Doreen Dayrit
 8	12:15 PM	01:10 PM	9	M. Del Rosario	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	9	M. Del Rosario				---			---			---			Math	Dama 07	Cherill Cunanan
+9	01:10 PM	02:05 PM	9	M. Del Rosario				@empty			@empty			@empty			Math	Dama 07	Cherill Cunanan
 10	02:05 PM	03:00 PM	9	M. Del Rosario	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:55 PM	9	M. Del Rosario															
 12	03:55 PM	04:10 PM	9	M. Del Rosario															
@@ -2389,7 +2389,7 @@
 9	01:10 PM	02:05 PM	9	Open High 9							Values	Open High Room	Arvin Jay Paule						
 10	02:05 PM	03:00 PM	9	Open High 9							Aralin	Open High Room	Camile Tobias						
 11	03:00 PM	03:55 PM	9	Open High 9							Mapeh	Open High Room	Jeramil Aguas						
-12	03:55 PM	04:10 PM	9	Open High 9	---			---											
+12	03:55 PM	04:10 PM	9	Open High 9	@empty			@empty											
 13	04:10 PM	05:05 PM	9	Open High 9							English	Open High Room	Rossana de Jesus						
 14	05:05 PM	06:00 PM	9	Open High 9															
 1	06:30 AM	07:25 AM	7	Green 1	Aralin	Pagcor 201	Olivia Reyes	Aralin	Pagcor 201	Olivia Reyes	Aralin	Pagcor 201	Olivia Reyes	Values	Pagcor 201	Nestor Solomon Jr.	Values	Pagcor 201	Nestor Solomon Jr.
@@ -3155,7 +3155,7 @@
 5	09:30 AM	10:25 AM	7	C. Loyzaga	Math	MAPEH Multipurpose 4	Vina Reyes	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni	English	MAPEH Multipurpose 4	Jeddalyn Musni
 6	10:25 AM	11:20 AM	7	C. Loyzaga	TLE			TLE			TLE			TLE			TLE		
 7	11:20 AM	12:15 PM	7	C. Loyzaga				Math	MAPEH Multipurpose 4	Vina Reyes	Math	MAPEH Multipurpose 4	Vina Reyes						
-8	12:15 PM	01:10 PM	7	C. Loyzaga	Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C	---			Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C
+8	12:15 PM	01:10 PM	7	C. Loyzaga	Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C	@empty			Filipino	Chrysan 3	Filipino Teacher C	Filipino	Chrysan 3	Filipino Teacher C
 9	01:10 PM	02:05 PM	7	C. Loyzaga															
 10	02:05 PM	03:00 PM	7	C. Loyzaga	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:15 PM	7	C. Loyzaga															
@@ -3170,7 +3170,7 @@
 6	10:25 AM	11:20 AM	7	R. Fernandez	Math	MAPEH Multipurpose 3	Vina Reyes				Math	MAPEH Multipurpose 3	Vina Reyes	Math	MAPEH Multipurpose 3	Vina Reyes	Math	MAPEH Multipurpose 3	Vina Reyes
 7	11:20 AM	12:15 PM	7	R. Fernandez	TLE			TLE			TLE			TLE			TLE		
 8	12:15 PM	01:10 PM	7	R. Fernandez	Science	Rose 9	Rodolfo Eric Angat	Science	Rose 9	Rodolfo Eric Angat	Science	Rose 9	Rodolfo Eric Angat				Science	Rose 9	Rodolfo Eric Angat
-9	01:10 PM	02:05 PM	7	R. Fernandez	---			---			---			---					
+9	01:10 PM	02:05 PM	7	R. Fernandez	@empty			@empty			@empty			@empty					
 10	02:05 PM	03:00 PM	7	R. Fernandez	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:15 PM	7	R. Fernandez															
 12	03:15 PM	04:10 PM	7	R. Fernandez															
@@ -3178,26 +3178,26 @@
 14	05:05 PM	06:00 PM	7	R. Fernandez															
 1	06:30 AM	07:25 AM	7	L. Macuja	Science	MAPEH Multipurpose 2	Adrian Reyes	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni	English	MAPEH Multipurpose 2	Jeddalyn Musni
 2	07:25 AM	08:20 AM	7	L. Macuja	Math	Lotus 3	Ramoncito Tagudar	Math	Lotus 3	Ramoncito Tagudar				Math	Lotus 3	Ramoncito Tagudar	Math	Lotus 3	Ramoncito Tagudar
-3	08:20 AM	09:15 AM	7	L. Macuja	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	---			Science	MAPEH Multipurpose 2	Adrian Reyes
+3	08:20 AM	09:15 AM	7	L. Macuja	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	Aralin	MAPEH Multipurpose 2	Catherine Anicete	@empty			Science	MAPEH Multipurpose 2	Adrian Reyes
 4	09:15 AM	09:30 AM	7	L. Macuja															
 5	09:30 AM	10:25 AM	7	L. Macuja	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus	Science	MAPEH Multipurpose 2	Adrian Reyes	Filipino	MAPEH Multipurpose 2	Marilyn de Jesus
-6	10:25 AM	11:20 AM	7	L. Macuja	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Science	MAPEH Multipurpose 2	Adrian Reyes	---			---		
+6	10:25 AM	11:20 AM	7	L. Macuja	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Values	MAPEH Multipurpose 2	Nestor Solomon Jr.	Science	MAPEH Multipurpose 2	Adrian Reyes	@empty			@empty		
 7	11:20 AM	12:15 PM	7	L. Macuja	TLE			TLE			TLE			TLE			TLE		
-8	12:15 PM	01:10 PM	7	L. Macuja	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	---		
+8	12:15 PM	01:10 PM	7	L. Macuja	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	Mapeh	Anthurium 3	Arlyn Galay	@empty		
 9	01:10 PM	02:05 PM	7	L. Macuja															
 10	02:05 PM	03:00 PM	7	L. Macuja	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:15 PM	7	L. Macuja															
 12	03:15 PM	04:10 PM	7	L. Macuja															
 13	04:10 PM	05:05 PM	7	L. Macuja															
 14	05:05 PM	06:00 PM	7	L. Macuja															
-1	06:30 AM	07:25 AM	7	L. Avellana	---			---						---			Math	Lotus 3	Ramoncito Tagudar
+1	06:30 AM	07:25 AM	7	L. Avellana	@empty			@empty						@empty			Math	Lotus 3	Ramoncito Tagudar
 2	07:25 AM	08:20 AM	7	L. Avellana	English	MAPEH Multipurpose 1	Jeddalyn Musni	English	MAPEH Multipurpose 1	Jeddalyn Musni	Math	Lotus 3	Ramoncito Tagudar	English	MAPEH Multipurpose 1	Jeddalyn Musni	English	MAPEH Multipurpose 1	Jeddalyn Musni
 3	08:20 AM	09:15 AM	7	L. Avellana	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales	Math	Lotus 3	Ramoncito Tagudar	Filipino	MAPEH Multipurpose 1	Gladyz Gonzales
 4	09:15 AM	09:30 AM	7	L. Avellana															
 5	09:30 AM	10:25 AM	7	L. Avellana	TLE			TLE			TLE			TLE			TLE		
 6	10:25 AM	11:20 AM	7	L. Avellana	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Math	Lotus 3	Ramoncito Tagudar	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Mapeh	MAPEH Multipurpose 1	Alma Manalo	Mapeh	MAPEH Multipurpose 1	Alma Manalo
 7	11:20 AM	12:15 PM	7	L. Avellana	Values	MAPEH Multipurpose 1	Nestor Solomon Jr.	Values	MAPEH Multipurpose 1	Nestor Solomon Jr.	Aralin	MAPEH Multipurpose 1	Catherine Anicete	Aralin	MAPEH Multipurpose 1	Catherine Anicete	Aralin	MAPEH Multipurpose 1	Catherine Anicete
-8	12:15 PM	01:10 PM	7	L. Avellana	---			Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes
+8	12:15 PM	01:10 PM	7	L. Avellana	@empty			Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes	Science	Cattleya 5	Adrian Reyes
 9	01:10 PM	02:05 PM	7	L. Avellana															
 10	02:05 PM	03:00 PM	7	L. Avellana	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:15 PM	7	L. Avellana															
@@ -3207,7 +3207,7 @@
 1	06:30 AM	07:25 AM	7	Open High 7													TLE	Open High Room	
 2	07:25 AM	08:20 AM	7	Open High 7													Aralin	Open High Room	Olivia Reyes
 3	08:20 AM	09:15 AM	7	Open High 7													Filipino	Open High Room	Filipino Teacher C
-4	09:15 AM	09:30 AM	7	Open High 7													---		
+4	09:15 AM	09:30 AM	7	Open High 7													@empty		
 5	09:30 AM	10:25 AM	7	Open High 7													Values	Open High Room	Nestor Solomon Jr.
 6	10:25 AM	11:20 AM	7	Open High 7													Mapeh	Open High Room	Arlyn Galay
 7	11:20 AM	12:15 PM	7	Open High 7													Math	Open High Room	Vina Reyes
@@ -3238,7 +3238,7 @@
 4	09:15 AM	09:30 AM	7	Newton															
 5	09:30 AM	10:25 AM	7	Newton													Math	Euphorbia 2	Vina Reyes
 6	10:25 AM	11:20 AM	7	Newton	Aralin	Euphorbia 2	Heidee Roque	Aralin	Euphorbia 2	Heidee Roque	Aralin	Euphorbia 2	Heidee Roque	Values	Euphorbia 2	Nestor Solomon Jr.	Values	Euphorbia 2	Nestor Solomon Jr.
-7	11:20 AM	12:15 PM	7	Newton	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	---		
+7	11:20 AM	12:15 PM	7	Newton	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	Filipino	Euphorbia 2	Gladyz Gonzales	@empty		
 8	12:15 PM	01:10 PM	7	Newton	Mapeh	Euphorbia 2	Joel Gueco	Mapeh	Euphorbia 2	Joel Gueco	Mapeh	Euphorbia 2	Joel Gueco	Mapeh	Euphorbia 2	Joel Gueco			
 9	01:10 PM	02:05 PM	7	Newton															
 10	02:05 PM	03:00 PM	7	Newton	Science	Euphorbia 2	Rodolfo Eric Angat	Science	Euphorbia 2	Rodolfo Eric Angat	Science	Euphorbia 2	Rodolfo Eric Angat	Science	Euphorbia 2	Rodolfo Eric Angat	Science	Euphorbia 2	Rodolfo Eric Angat
@@ -3255,8 +3255,8 @@
 7	11:20 AM	12:15 PM	7	Edison	Aralin	Aus Aid 3	Heidee Roque	Aralin	Aus Aid 3	Heidee Roque				Values	Aus Aid 3	Nestor Solomon Jr.	Values	Aus Aid 3	Nestor Solomon Jr.
 8	12:15 PM	01:10 PM	7	Edison															
 9	01:10 PM	02:05 PM	7	Edison	Science	Aus Aid 3	Rodolfo Eric Angat	Science	Aus Aid 3	Rodolfo Eric Angat	Science	Aus Aid 3	Rodolfo Eric Angat	Science	Aus Aid 3	Rodolfo Eric Angat	Science	Aus Aid 3	Rodolfo Eric Angat
-10	02:05 PM	03:00 PM	7	Edison	ICT	Aus Aid 3		ICT	Aus Aid 3		ICT	Aus Aid 3		ICT	Aus Aid 3		---		
-11	03:00 PM	03:15 PM	7	Edison	---			---			---			---					
+10	02:05 PM	03:00 PM	7	Edison	ICT	Aus Aid 3		ICT	Aus Aid 3		ICT	Aus Aid 3		ICT	Aus Aid 3		@empty		
+11	03:00 PM	03:15 PM	7	Edison	@empty			@empty			@empty			@empty					
 12	03:15 PM	04:10 PM	7	Edison															
 13	04:10 PM	05:05 PM	7	Edison															
 14	05:05 PM	06:00 PM	7	Edison															

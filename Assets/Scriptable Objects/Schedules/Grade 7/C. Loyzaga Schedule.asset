@@ -202,7 +202,7 @@ MonoBehaviour:
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 4
       m_room: {fileID: 11400000, guid: 2a62d131edfe54e4f85bdcf24da7b112, type: 2}
       m_title: {fileID: 0}

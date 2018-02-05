@@ -66,7 +66,7 @@ MonoBehaviour:
     - m_day: 2
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 3
       m_room: {fileID: 11400000, guid: 7f565970b3333ee47af4c14fe0fe10d1, type: 2}
       m_title: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 4
       m_room: {fileID: 11400000, guid: 7f565970b3333ee47af4c14fe0fe10d1, type: 2}
       m_title: {fileID: 11400000, guid: e40c851c79568c4449d6c299d62e049d, type: 2}

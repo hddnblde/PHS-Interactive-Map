@@ -56,7 +56,7 @@ MonoBehaviour:
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: c3505ad2e7df0724e9b0a3355b140657, type: 2}
     m_entries:
     - m_day: 1
@@ -92,15 +92,15 @@ MonoBehaviour:
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 4
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: ed956dff7e733384588c31d4aad395d6, type: 2}
     m_entries:
     - m_day: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: '---'
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
     m_entries:
     - m_day: 1

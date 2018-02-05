@@ -193,7 +193,7 @@ public class ScheduleGenerator : EditorWindow
 	private void GetEntries(string entryText, out Room room, out ScheduleObject title, out string subtitle)
 	{
 		string[] items = entryText.Split("/".ToCharArray());
-		subtitle = items[0];
+		subtitle = items[0].Replace("@empty", "");
 		room = GetRoom(items[1]);
 		title = GetTarget(items[2], typeof(Teacher).ToString());
 	}

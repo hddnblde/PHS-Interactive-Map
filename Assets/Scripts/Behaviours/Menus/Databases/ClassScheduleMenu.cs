@@ -7,6 +7,7 @@ using PampangaHighSchool.Students;
 
 namespace Menus
 {
+	[RequireComponent(typeof(CanvasGroup))]
 	public class ClassScheduleMenu : MonoBehaviour
 	{
 		#region Serialized Fields
@@ -35,6 +36,7 @@ namespace Menus
 		private int selectedSection = -1;
 		private int selectedSectionIndex = -1;
 		private const int ItemPoolCount = 20;
+		private CanvasGroup canvasGroup = null;
 		#endregion
 
 
@@ -48,6 +50,7 @@ namespace Menus
 		private void Start()
 		{
 			ShowItems();
+			// Show(false);
 		}
 		#endregion
 
@@ -57,6 +60,8 @@ namespace Menus
 		{
 			if(backButton != null)
 				backButton.onClick.AddListener(MoveOut);
+
+			canvasGroup = GetComponent<CanvasGroup>();
 		}
 
 		private void CreateItemPool()
@@ -79,6 +84,17 @@ namespace Menus
 
 
 		#region Actions
+		public void Open()
+		{
+			ShowItems();
+			Show(true);
+		}
+
+		public void Close()
+		{
+			Show(false);
+		}
+
 		private void ClearAll()
 		{
 			foreach(Transform item in itemContainer)
@@ -91,8 +107,11 @@ namespace Menus
 
 			if(items == null || items.Length == 0)
 			{
-				if(selectedSectionIndex != -1)
+				if(selectionDepth == SelectionDepth.Schedule && selectedSectionIndex != -1)
+				{
 					ScheduleMenu.Open(ClassScheduleDatabase.GetSchedule(selectedGrade, selectedSection, selectedSectionIndex));
+					selectionDepth = SelectionDepth.Schedules;
+				}
 				return;
 			}
 
@@ -116,6 +135,15 @@ namespace Menus
 				text.text = label;
 
 			item.gameObject.SetActive(true);
+		}
+
+		private void Show(bool shown)
+		{
+			if(canvasGroup == null)
+				return;
+
+			canvasGroup.alpha = (shown ? 1f : 0f);
+			canvasGroup.blocksRaycasts = shown;
 		}
 		#endregion
 
@@ -166,8 +194,12 @@ namespace Menus
 		private void MoveSelection(int direction)
 		{
 			int currentDepth = (int)selectionDepth;
+			bool close = (currentDepth + direction) < 0;
 			currentDepth = Mathf.Clamp(currentDepth + direction, 0, 3);
 			selectionDepth = (SelectionDepth)currentDepth;
+
+			if(close)
+				Close();
 		}
 		#endregion
 
