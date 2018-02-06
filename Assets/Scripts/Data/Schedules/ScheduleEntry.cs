@@ -101,7 +101,7 @@ namespace Schedules
 
 		public override string ToString()
 		{
-			string header = subtitle + (string.IsNullOrEmpty(subtitle) ? "" : " ") + roomName;
+			string header = subtitle + (string.IsNullOrEmpty(roomName) ? "" : " - " + roomName);
 			bool headerIsEmpty = string.IsNullOrEmpty(header);
 			if(!headerIsEmpty)
 				header = "<b>" + header + "</b>";

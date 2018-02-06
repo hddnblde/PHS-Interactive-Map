@@ -142,7 +142,7 @@ public class ScheduleGenerator : EditorWindow
 		if(items != null && items.Length > 0)
 			int.TryParse(items[0], out period);
 
-		return period;
+		return period - 1;
 	}
 
 	private void SetSchedule(SerializedObject schedule, ScheduleObject target, int index, string entryText)
@@ -178,7 +178,6 @@ public class ScheduleGenerator : EditorWindow
 
 	private void SetEntry(SerializedProperty entryProperty, Room room, ScheduleObject title, string subtitle)
 	{
-		// Debug.Log(room + " " + title + " " + subtitle);
 		SerializedProperty roomProperty = entryProperty.FindPropertyRelative("m_room");
 		SerializedProperty titleProperty = entryProperty.FindPropertyRelative("m_title");
 		SerializedProperty subtitleProperty = entryProperty.FindPropertyRelative("m_subtitle");
@@ -198,11 +197,23 @@ public class ScheduleGenerator : EditorWindow
 		title = GetTarget(items[2], typeof(Teacher).ToString());
 	}
 
+	private string CatchFormat(string name)
+	{
+		bool isPseudoTeacher = name.Contains("Teacher A") || name.Contains("Teacher B") || name.Contains("Teacher C") || name.Contains("Teacher D");
+		if(!isPseudoTeacher)
+			return name;
+		else
+			return name.TrimEnd('\n', '\r') + ",\"";
+	}
+
 	private Room GetRoom(string roomName)
 	{
 		string[] result = AssetDatabase.FindAssets(roomName + " t:" + typeof(Room).ToString());
 
 		if(result == null || result.Length != 1)
+			result = AssetDatabase.FindAssets("\"" + roomName + "\"" + " t:" + typeof(Room).ToString());
+
+		if(result == null || result.Length != 1 && !((roomName == "Sampaguita 1") || (roomName == "Industrial Arts 1") || (roomName == "Dama 1")))
 			return null;
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
@@ -244,7 +255,7 @@ public class ScheduleGenerator : EditorWindow
 
 	private ScheduleObject GetTarget(string target, string type)
 	{
-		string[] result = AssetDatabase.FindAssets(target + " t:" + type);
+		string[] result = FindAssets(target, type);
 
 		if(result == null || result.Length != 1)
 			return null;
@@ -252,6 +263,16 @@ public class ScheduleGenerator : EditorWindow
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
 		ScheduleObject scheduleObject = AssetDatabase.LoadAssetAtPath<ScheduleObject>(assetPath);
 		return scheduleObject;
+	}
+
+	private string[] FindAssets(string target, string type)
+	{
+		string[] result = AssetDatabase.FindAssets(target + " t:" + type);
+
+		if(result == null || result.Length != 1)
+			result = AssetDatabase.FindAssets(CatchFormat(target));
+
+		return result;
 	}
 
 	private Day GetDay(string index)

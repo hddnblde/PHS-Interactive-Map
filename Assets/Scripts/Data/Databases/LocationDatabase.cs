@@ -143,6 +143,14 @@ namespace Databases
 				instance.Internal_Search(keyword);
 		}
 
+		public static Place[] GetAllBuildings()
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetAllBuildings();
+		}
+
 		private Location Internal_GetLocationFromSearch(int index)
 		{
 			PointOfInterest pointOfInterest;
@@ -222,6 +230,27 @@ namespace Databases
 			result:
 			if(OnResult != null)
 				OnResult(searchResultCount);
+		}
+
+		private Place[] Internal_GetAllBuildings()
+		{
+			List<Place> buildings = new List<Place>();
+
+			for(int i = 0; i < pointsOfInterestGroup.Count; i++)
+			{
+				PointOfInterestGroup pointOfInterest = pointsOfInterestGroup[i];
+
+				for(int j = 0; j < pointOfInterest.placeCollectionCount; j++)
+				{
+					PlaceCollection placeCollection = pointOfInterest.GetPlaceCollection(i);
+					Place place = placeCollection.GetPlace();
+
+					if(place != null)
+						buildings.Add(place);
+				}
+			}
+
+			return buildings.ToArray();
 		}
 		#endregion
 

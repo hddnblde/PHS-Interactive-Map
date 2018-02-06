@@ -24,6 +24,9 @@ namespace Map
 		[SerializeField]
 		private int m_room = 1;
 
+		[SerializeField]
+		private Room m_inheritedPosition = null;
+
 		[SerializeField, Multiline]
 		private string m_mapName;
 
@@ -35,6 +38,28 @@ namespace Map
 		public override string displayedName
 		{
 			get { return FloorNamingConvention(); }
+		}
+
+		public override Vector3 position
+		{
+			get
+			{
+				if(m_inheritedPosition == null)
+					return base.position;
+				else
+					return m_inheritedPosition.position;
+			}
+		}
+
+		public override Vector3 displayPosition
+		{
+			get
+			{
+				if(m_inheritedPosition == null)
+					return base.displayPosition;
+				else
+					return m_inheritedPosition.displayPosition;
+			}
 		}
 
 		public string mapName
@@ -72,7 +97,8 @@ namespace Map
 		standaloneNameProperty = null,
 		standaloneNumberProperty = null,
 		floorProperty = null,
-		roomProperty = null;
+		roomProperty = null,
+		inheritedPositionProperty = null;
 		#endregion
 
 
@@ -109,6 +135,7 @@ namespace Map
 			standaloneNameProperty = serializedObject.FindProperty("m_standaloneName");
 			floorProperty = serializedObject.FindProperty("m_floor");
 			roomProperty = serializedObject.FindProperty("m_room");
+			inheritedPositionProperty = serializedObject.FindProperty("m_inheritedPosition");
 		}
 
 		private void OnSceneGUI(SceneView sceneView)
@@ -129,21 +156,53 @@ namespace Map
 			Color color = GUI.color;
 
 			GUI.color = Color.red;
-			positionProperty.vector3Value = Handles.PositionHandle(positionProperty.vector3Value, Quaternion.identity);
 
-			string positionLabel = (!useDisplayPositionProperty.boolValue ? "[" + room.displayedName + "]" : "[Position]");
+			bool hasInheritedPosition = inheritedPositionProperty.objectReferenceValue != null;
+
+			positionProperty.vector3Value = Handles.PositionHandle(GetInheritedPosition(), Quaternion.identity);
+
+			string positionLabel = (!useDisplayPositionProperty.boolValue ? "[" + room.displayedName + "]" : "[Position]") + (HasInheritedPosition() ? "\ninherited" : "");
 			Handles.Label(positionProperty.vector3Value, positionLabel);
 			
 			if(useDisplayPositionProperty.boolValue)
 			{
 				GUI.color = Color.magenta;
-				displayPositionProperty.vector3Value = Handles.PositionHandle(displayPositionProperty.vector3Value, Quaternion.identity);
-				Handles.Label(displayPositionProperty.vector3Value, "[" + room.displayedName + "]");
+
+				displayPositionProperty.vector3Value = Handles.PositionHandle(GetInheritedDisplayPosition(), Quaternion.identity);
+
+				Handles.Label(displayPositionProperty.vector3Value, "[" + room.displayedName + "]" + (HasInheritedPosition() ? "\ninherited" : ""));
 			}
 			else
 				displayPositionProperty.vector3Value = positionProperty.vector3Value;
 
-			GUI.color = color;	
+			GUI.color = color;
+		}
+
+		private bool HasInheritedPosition()
+		{
+			return inheritedPositionProperty.objectReferenceValue != null;
+		}
+
+		private Vector3 GetInheritedPosition()
+		{
+			if(!HasInheritedPosition())
+				return positionProperty.vector3Value;
+
+			SerializedObject inheritedRoom = new SerializedObject(inheritedPositionProperty.objectReferenceValue);
+			SerializedProperty inheritedPosition = inheritedRoom.FindProperty("m_position");
+
+			return inheritedPosition.vector3Value;
+		}
+
+		private Vector3 GetInheritedDisplayPosition()
+		{
+			if(inheritedPositionProperty.objectReferenceValue == null)
+				return displayPositionProperty.vector3Value;
+
+			SerializedObject inheritedRoom = new SerializedObject(inheritedPositionProperty.objectReferenceValue);
+			SerializedProperty inheritedDisplayPosition = inheritedRoom.FindProperty("m_displayPosition");
+
+			return inheritedDisplayPosition.vector3Value;
 		}
 
 		private void DrawCustomInspector()
@@ -151,6 +210,7 @@ namespace Map
 			EditorGUI.BeginChangeCheck();
 
 			EditorGUILayout.LabelField("Location", EditorStyles.boldLabel);
+			EditorGUILayout.PropertyField(inheritedPositionProperty);
 
 			string labelString = (standaloneNameProperty.boolValue ? "Room Name" : "Building Name");
 			GUIContent label = new GUIContent(labelString);

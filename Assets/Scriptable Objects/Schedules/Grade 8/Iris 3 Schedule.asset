@@ -170,28 +170,6 @@ MonoBehaviour:
   - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 2
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 3
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 4
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-  - m_period: {fileID: 11400000, guid: 5f41e340c2e191745a799adb73549054, type: 2}
-    m_entries:
-    - m_day: 1
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
       m_title: {fileID: 11400000, guid: 39ddaeef415dafc4b85c65d234273ecb, type: 2}
       m_subtitle: Science
@@ -211,113 +189,135 @@ MonoBehaviour:
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
       m_title: {fileID: 11400000, guid: 39ddaeef415dafc4b85c65d234273ecb, type: 2}
       m_subtitle: Science
+  - m_period: {fileID: 11400000, guid: 5f41e340c2e191745a799adb73549054, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: TLE
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: TLE
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: TLE
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: TLE
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: TLE
   - m_period: {fileID: 11400000, guid: a400d0f174e5d094fbfa4ddf80c8b576, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 0cb0c9a72acc11048a31994d48fa8200, type: 2}
+      m_subtitle: Values
     - m_day: 2
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 0cb0c9a72acc11048a31994d48fa8200, type: 2}
+      m_subtitle: Values
     - m_day: 3
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
+      m_subtitle: Aralin
     - m_day: 4
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
+      m_subtitle: Aralin
     - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
+      m_subtitle: Aralin
   - m_period: {fileID: 11400000, guid: 272d53742c653be45b796b09f93cb78a, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 0cb0c9a72acc11048a31994d48fa8200, type: 2}
-      m_subtitle: Values
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 2
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 0cb0c9a72acc11048a31994d48fa8200, type: 2}
-      m_subtitle: Values
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 3
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
-      m_subtitle: Aralin
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 4
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
-      m_subtitle: Aralin
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 5
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 6e183349cf72e274bb0735402fca2c0d, type: 2}
-      m_subtitle: Aralin
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: 67b68cdcf759d72418e53470143b7e9a, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 1a2c51b30e6308f4ab5d89fc0c0e85c1, type: 2}
+      m_subtitle: Math
     - m_day: 2
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
+      m_subtitle: Filipino
     - m_day: 3
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
+      m_subtitle: Filipino
     - m_day: 4
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
+      m_subtitle: Filipino
     - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
+      m_subtitle: Filipino
   - m_period: {fileID: 11400000, guid: 140366d4f8cb2e7469caa858a63b6528, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 1a2c51b30e6308f4ab5d89fc0c0e85c1, type: 2}
-      m_subtitle: Math
+      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
+      m_subtitle: Mapeh
     - m_day: 2
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
+      m_subtitle: Mapeh
     - m_day: 3
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
+      m_subtitle: Mapeh
     - m_day: 4
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 1a2c51b30e6308f4ab5d89fc0c0e85c1, type: 2}
+      m_subtitle: Math
     - m_day: 5
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: aa6057d78368dd24dabf94a0b51def11, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
+      m_subtitle: Mapeh
   - m_period: {fileID: 11400000, guid: c3635dd6977c38640b44ec090884249c, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
-      m_subtitle: Mapeh
+      m_title: {fileID: 11400000, guid: 9ba9a7b1b0036e34f8b6e72c49c92690, type: 2}
+      m_subtitle: English
     - m_day: 2
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
-      m_subtitle: Mapeh
+      m_title: {fileID: 11400000, guid: 9ba9a7b1b0036e34f8b6e72c49c92690, type: 2}
+      m_subtitle: English
     - m_day: 3
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
-      m_subtitle: Mapeh
+      m_title: {fileID: 11400000, guid: 9ba9a7b1b0036e34f8b6e72c49c92690, type: 2}
+      m_subtitle: English
     - m_day: 4
+      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
+      m_title: {fileID: 11400000, guid: 9ba9a7b1b0036e34f8b6e72c49c92690, type: 2}
+      m_subtitle: English
+    - m_day: 5
       m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
       m_title: {fileID: 11400000, guid: 1a2c51b30e6308f4ab5d89fc0c0e85c1, type: 2}
       m_subtitle: Math
-    - m_day: 5
-      m_room: {fileID: 11400000, guid: 79653612961185048af090111fa7238a, type: 2}
-      m_title: {fileID: 11400000, guid: 22ecfd734dd96ee4ea630f4e82beb424, type: 2}
-      m_subtitle: Mapeh

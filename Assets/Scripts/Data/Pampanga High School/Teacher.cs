@@ -162,16 +162,22 @@ namespace PampangaHighSchool.Faculty
 
 		public override string subtitle
 		{
-			get { return GetFullName(true); }
+			get { return GetFullName(); }
 		}
 		#endregion
 
 
 		#region Functions
-		public string GetFullName(bool useMiddleNameInitials = true)
+		public string GetFullName()
 		{
-			string middle = ((useMiddleNameInitials && !string.IsNullOrEmpty(middleName)) ? (m_middleName.Substring(0, 1) + ".") : m_middleName);
-			return "@f @m @l".Replace("@f", m_firstName).Replace("@l", m_lastName).Replace("@m", middle);
+			string firstName = (string.IsNullOrEmpty(m_firstName) ? "" : m_firstName);
+			string middleName = (string.IsNullOrEmpty(m_middleName) ? "" : (m_middleName.Substring(0, 1) + "."));
+			string lastName = (string.IsNullOrEmpty(m_lastName) ? "" : " " + m_lastName);
+			
+			return "@f@m@l"
+			.Replace("@f", firstName)
+			.Replace("@m", middleName)
+			.Replace("@l", lastName);
 		}
 
 		public string GetAppointmentDate()

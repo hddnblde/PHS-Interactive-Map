@@ -18,146 +18,124 @@ MonoBehaviour:
     - m_day: 1
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: 
+      m_subtitle: TLE
     - m_day: 2
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: 
+      m_subtitle: TLE
     - m_day: 3
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: 
+      m_subtitle: TLE
     - m_day: 4
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: 
+      m_subtitle: TLE
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 0}
-      m_subtitle: 
+      m_subtitle: TLE
   - m_period: {fileID: 11400000, guid: d76a035d50d163d4c82a5cd9e9ef2262, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
+      m_subtitle: Filipino
     - m_day: 2
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
+      m_subtitle: Filipino
     - m_day: 3
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
+      m_subtitle: Filipino
     - m_day: 4
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: 8b0cdb82a33a39240a7217c52076032d, type: 2}
+      m_title: {fileID: 11400000, guid: 9082ca0a8f2d6de4085489055ec539a0, type: 2}
+      m_subtitle: Values
     - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: TLE
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
+      m_subtitle: Filipino
   - m_period: {fileID: 11400000, guid: c3505ad2e7df0724e9b0a3355b140657, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
+      m_subtitle: Mapeh
     - m_day: 2
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
+      m_subtitle: Mapeh
     - m_day: 3
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
+      m_subtitle: Mapeh
     - m_day: 4
-      m_room: {fileID: 11400000, guid: 8b0cdb82a33a39240a7217c52076032d, type: 2}
-      m_title: {fileID: 11400000, guid: 9082ca0a8f2d6de4085489055ec539a0, type: 2}
-      m_subtitle: Values
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 22a7de09a873b2a4a9ef92e4705d051a, type: 2}
-      m_subtitle: Filipino
+      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
+      m_subtitle: Mapeh
   - m_period: {fileID: 11400000, guid: 1bb7006eaa7f80a45a9446d5b5d364ee, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
-      m_subtitle: Mapeh
+      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
+      m_subtitle: Science
     - m_day: 2
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
-      m_subtitle: Mapeh
-    - m_day: 3
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
-      m_subtitle: Mapeh
-    - m_day: 4
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
+      m_subtitle: Science
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
+      m_subtitle: Science
     - m_day: 5
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 09ab886e13df70344a140dc37f6921dd, type: 2}
-      m_subtitle: Mapeh
+      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
+      m_subtitle: Science
   - m_period: {fileID: 11400000, guid: ed956dff7e733384588c31d4aad395d6, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
-      m_subtitle: Science
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 2
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
     - m_day: 3
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
-      m_subtitle: Science
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 4
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
-      m_subtitle: Science
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
     - m_day: 5
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: d0b22f1c09d9f1c49baddcf10b731df7, type: 2}
-      m_subtitle: Science
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: 7b1d5962aa531184899bbff94c681c2d, type: 2}
     m_entries:
     - m_day: 1
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 2
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 3
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 4
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-    - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-  - m_period: {fileID: 11400000, guid: 45395a52893043349ab81122a3a3608d, type: 2}
-    m_entries:
-    - m_day: 1
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: c0f74116ee8d23643aaae1bbea49a883, type: 2}
       m_subtitle: English
     - m_day: 2
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: c0f74116ee8d23643aaae1bbea49a883, type: 2}
       m_subtitle: English
     - m_day: 3
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: c0f74116ee8d23643aaae1bbea49a883, type: 2}
       m_subtitle: English
     - m_day: 4
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
@@ -165,9 +143,9 @@ MonoBehaviour:
       m_subtitle: Math
     - m_day: 5
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: c0f74116ee8d23643aaae1bbea49a883, type: 2}
       m_subtitle: English
-  - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
+  - m_period: {fileID: 11400000, guid: 45395a52893043349ab81122a3a3608d, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
@@ -185,33 +163,33 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: f32ace65831c5d34ba23c6e9ea25dfc6, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
+      m_subtitle: Aralin
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: e728f8b7c1876d049a63ec1915794127, type: 2}
+      m_subtitle: Math
+    - m_day: 3
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
+      m_subtitle: Aralin
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
+      m_subtitle: Aralin
     - m_day: 5
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: 
   - m_period: {fileID: 11400000, guid: 5f41e340c2e191745a799adb73549054, type: 2}
-    m_entries:
-    - m_day: 1
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
-      m_subtitle: Aralin
-    - m_day: 2
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: e728f8b7c1876d049a63ec1915794127, type: 2}
-      m_subtitle: Math
-    - m_day: 3
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
-      m_subtitle: Aralin
-    - m_day: 4
-      m_room: {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
-      m_title: {fileID: 11400000, guid: 60b0035c365d5824baa0ffadd8200633, type: 2}
-      m_subtitle: Aralin
-    - m_day: 5
-      m_room: {fileID: 0}
-      m_title: {fileID: 0}
-      m_subtitle: 
-  - m_period: {fileID: 11400000, guid: a400d0f174e5d094fbfa4ddf80c8b576, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -233,7 +211,7 @@ MonoBehaviour:
       m_room: {fileID: 11400000, guid: 850b58589acc7594c8617b59555dd58b, type: 2}
       m_title: {fileID: 11400000, guid: e728f8b7c1876d049a63ec1915794127, type: 2}
       m_subtitle: Math
-  - m_period: {fileID: 11400000, guid: 272d53742c653be45b796b09f93cb78a, type: 2}
+  - m_period: {fileID: 11400000, guid: a400d0f174e5d094fbfa4ddf80c8b576, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 0}
@@ -255,6 +233,28 @@ MonoBehaviour:
       m_room: {fileID: 0}
       m_title: {fileID: 0}
       m_subtitle: Specialization
+  - m_period: {fileID: 11400000, guid: 272d53742c653be45b796b09f93cb78a, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
   - m_period: {fileID: 11400000, guid: 67b68cdcf759d72418e53470143b7e9a, type: 2}
     m_entries:
     - m_day: 1

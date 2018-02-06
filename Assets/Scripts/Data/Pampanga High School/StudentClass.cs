@@ -55,7 +55,7 @@ namespace PampangaHighSchool.Students
 
 		public override string subtitle
 		{
-			get { return section.name + ' ' + m_rank; }
+			get { return section.name + (m_section.count == 1 ? "" : " " + m_rank); }
 		}
 	}
 

@@ -27,12 +27,12 @@ namespace Map
 			get { return m_displayedName; }
 		}
 
-		public Vector3 position
+		public virtual Vector3 position
 		{
 			get { return m_position; }
 		}
 
-		public Vector3 displayPosition
+		public virtual Vector3 displayPosition
 		{
 			get { return (m_useDisplayPosition ? m_displayPosition : position); }
 		}

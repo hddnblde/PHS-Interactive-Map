@@ -275,7 +275,6 @@ namespace Menus
 
 		private void SelectFirstActive()
 		{
-			Debug.Log("Selecting first active...");
 			if(mondayButton.gameObject.activeInHierarchy)
 			{
 				SelectDay(Day.Monday);
@@ -327,7 +326,7 @@ namespace Menus
 		{
 			if(items == null || items.Count == 0)
 				return;
-			
+
 			foreach(ScheduleItem item in items)
 				item.ViewEntry(currentDay);
 		}

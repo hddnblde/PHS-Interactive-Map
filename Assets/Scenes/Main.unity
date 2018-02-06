@@ -2142,7 +2142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000054969994}
+  m_AnchoredPosition: {x: 0, y: 0.000069930684}
   m_SizeDelta: {x: -8, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -4826,8 +4826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0234375}
-  m_SizeDelta: {x: 0, y: 0.050049}
+  m_AnchoredPosition: {x: 0, y: -56}
+  m_SizeDelta: {x: 0, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853825420
 MonoBehaviour:
@@ -10037,7 +10037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1848296492
@@ -10610,7 +10610,7 @@ MonoBehaviour:
       room 2\r\nmusic room 3\r\nnarra\r\norchids\r\norchids 101\r\norchids 102\r\norchids
       103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids 203\r\norchids 204\r\norchids
       301\r\norchids 302\r\norchids 303\r\norchids 304\r\npoinsettia\r\npoinsettia
-      1\r\npoinsettia 2\r\npoinsettia 3\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
+      1\r\npoinsettia 2\r\npoinsettia 3\r\npoinsettia 4\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
       1\r\nrodriguez 2\r\nrose\r\nenglish office\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose
       4\r\nrose 5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nspeech laboratory\r\nsampaguita\r\nopen
       high\nroom\r\nsampaguita 1\r\nsampaguita 10\r\nsampaguita 11\r\nsampaguita 12\r\nsampaguita
@@ -10625,7 +10625,7 @@ MonoBehaviour:
       angel 201\r\nwhite angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite
       angel 205\r\nwhite angel 206\r"
     m_tags: 
-    cacheCount: 239
+    cacheCount: 240
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -10823,6 +10823,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: fa7a205bcc3a5b34186791babc1b3e55, type: 2}
       - {fileID: 11400000, guid: 850b58589acc7594c8617b59555dd58b, type: 2}
       - {fileID: 11400000, guid: a7fcd9ae197ebb14d98670a9949b38b0, type: 2}
+      - {fileID: 11400000, guid: e70dd0f4c62304c4c9ee191e10392b0b, type: 2}
     - place: {fileID: 11400000, guid: b3c4da3dc2b8e5145a688373462213d9, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: 5f9e6f2cbe2b82e4faa872cbd065fb51, type: 2}
@@ -10910,15 +10911,15 @@ MonoBehaviour:
   - m_pointOfInterest: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d,
       type: 2}
     m_names: "gladiola lab\r\ngladiola lab 1\r\ngladiola lab 2\r\nhome economics lab\r\nindustrial
-      arts 1\r\nindustrial arts 10\r\nindustrial arts 11\r\nindustrial arts 12\r\nindustrial
-      arts 13\r\nindustrial arts 14\r\nindustrial arts 15\r\nindustrial arts 16\r\nindustrial
-      arts 2\r\nindustrial arts 3\r\nindustrial arts 4\r\nindustrial arts 5\r\nindustrial
-      arts 6\r\nindustrial arts 7\r\nindustrial arts 8\r\nindustrial arts 9\r\nmapeh
-      multipurpose\r\nmapeh multipurpose 1\r\nmapeh multipurpose 2\r\nmapeh multipurpose
-      3\r\nshakespearean hall\r\nteatro\r\nvalues multipurpose\r\nvalues multipurpose
-      1\r\nvalues multipurpose 2\r"
+      arts area\r\nindustrial arts 1\r\nindustrial arts 10\r\nindustrial arts 11\r\nindustrial
+      arts 12\r\nindustrial arts 13\r\nindustrial arts 14\r\nindustrial arts 15\r\nindustrial
+      arts 16\r\nindustrial arts 2\r\nindustrial arts 3\r\nindustrial arts 4\r\nindustrial
+      arts 5\r\nindustrial arts 6\r\nindustrial arts 7\r\nindustrial arts 8\r\nindustrial
+      arts 9\r\nmapeh multipurpose\r\nmapeh multipurpose 1\r\nmapeh multipurpose 2\r\nmapeh
+      multipurpose 3\r\nmapeh multipurpose 4\r\nshakespearean hall\r\nshakespear room\r\nteatro\r\nvalues
+      multipurpose\r\nvalues multipurpose 1\r\nvalues multipurpose 2\r"
     m_tags: ia;
-    cacheCount: 29
+    cacheCount: 32
     places:
     - place: {fileID: 11400000, guid: b66b2e40cc7737140b498c9d603084f8, type: 2}
       rooms:
@@ -10927,44 +10928,32 @@ MonoBehaviour:
     - place: {fileID: 11400000, guid: 2455a9734b4b4f446b35d91174187e03, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: c56aa323eb242564685e709a951a001e, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: cd75e81dc369a01469cb7b6db9d4938a, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 4c21e968e389b4a4fa193dd65bcfcf26, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 2de98d2cc547b82419ac8d546177307c, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 37176377dc866084c83670e481b97681, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 32fd7fdb72d2c3d409d0ca34ac09d65f, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 1256a2420f3a134459c7e6611048b6a1, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: ac6996f8c54874d46856c614852d1e19, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 417a5e3178c6cf145b2d8189e340eebd, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: d7404e7eb920b3146b755507c8ff81e3, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 857b75f9e1f9f3348b9b09d9d1e75e06, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 2b982ee6cbcfcf042aaadfb9cb924e7f, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: ab2e0cf11ca619345a733f555bbdb98f, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 19781faab2b9f0b46b5329e7461a0127, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 5420ba362d5d2d44c874231763099087, type: 2}
-      rooms: []
-    - place: {fileID: 11400000, guid: 6119c4fdb3ef12946b0cae89c319387f, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: 5dacb7ef1ee46b046ad65a03351b66ac, type: 2}
+      - {fileID: 11400000, guid: 2241e3be5bd10704cb4eb1c72d18ed9c, type: 2}
+      - {fileID: 11400000, guid: 22fec27cf84037a448eca5a895b569fd, type: 2}
+      - {fileID: 11400000, guid: e536d54dac5d6ca439522689967e54de, type: 2}
+      - {fileID: 11400000, guid: 716d9bdd1991a4c4ebcc392618392d0a, type: 2}
+      - {fileID: 11400000, guid: 037c720a60b0df9439367d0aa02fa633, type: 2}
+      - {fileID: 11400000, guid: 3116fe03b19c8714db3801f030ae8fdb, type: 2}
+      - {fileID: 11400000, guid: 2776ca08e4ea95645a3311f1a0c608e7, type: 2}
+      - {fileID: 11400000, guid: 6ea63a979bbd1e64aa8b9529659d2297, type: 2}
+      - {fileID: 11400000, guid: 90a713b218b84ea4881136c3e83d4775, type: 2}
+      - {fileID: 11400000, guid: 642d8d361a68fa041a2553c29314baac, type: 2}
+      - {fileID: 11400000, guid: 5ebdff18dd27fe640adfe9d409e4ffcb, type: 2}
+      - {fileID: 11400000, guid: dedd3984a7b18554c80b8e5a6803bff9, type: 2}
+      - {fileID: 11400000, guid: acb0bfc49486dee418a0710b42cb618a, type: 2}
+      - {fileID: 11400000, guid: 8f1ef71243457364f987f78a3332d3c7, type: 2}
+      - {fileID: 11400000, guid: ee26cdcaee268884692e8c645dede279, type: 2}
     - place: {fileID: 11400000, guid: b6d192b0d7f4e694e8bc84d051dbff9d, type: 2}
       rooms:
       - {fileID: 11400000, guid: cd1cc31a96b2f8148a176cb9490bb6ee, type: 2}
       - {fileID: 11400000, guid: ec6a8864266628d4abfb8b20052b7b26, type: 2}
       - {fileID: 11400000, guid: b9820228da58fa64abd505dde6672211, type: 2}
+      - {fileID: 11400000, guid: adcb73a98a8ca3349b2a0b1b42eca0b1, type: 2}
     - place: {fileID: 11400000, guid: 2b4916f1866c75f43a6a030a436c294f, type: 2}
-      rooms: []
+      rooms:
+      - {fileID: 11400000, guid: d0cffe0f27558234fa56d365e9078962, type: 2}
     - place: {fileID: 11400000, guid: 03f6a3abf042aaf45a62da8417f7d69d, type: 2}
       rooms: []
     - place: {fileID: 11400000, guid: dda535bc44364a74fa9f699138a34a4a, type: 2}

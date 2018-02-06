@@ -1216,13 +1216,13 @@
 12	03:55 PM	04:10 PM	10	Jacinto 6															
 13	04:10 PM	05:05 PM	10	Jacinto 6															
 14	05:05 PM	06:00 PM	10	Jacinto 6															
-1	06:30 AM	07:25 AM	10	Aguinaldo 1	Math	Dama 03	John Paul Manese	Science	Dama 03	Alvin Dela Cruz	Science	Dama 03	Alvin Dela Cruz	Science	Dama 03	Alvin Dela Cruz	Science	Dama 03	Alvin Dela Cruz
-2	07:25 AM	08:20 AM	10	Aguinaldo 1	Aralin	Dama 03	Nancy Fernandez	Values	Lotus 2	Edna Briones	Values	Lotus 2	Edna Briones	Aralin	Dama 03	Nancy Fernandez	Aralin	Dama 03	Nancy Fernandez
+1	06:30 AM	07:25 AM	10	Aguinaldo 1	Math	Dama 3	John Paul Manese	Science	Dama 3	Alvin Dela Cruz	Science	Dama 3	Alvin Dela Cruz	Science	Dama 3	Alvin Dela Cruz	Science	Dama 3	Alvin Dela Cruz
+2	07:25 AM	08:20 AM	10	Aguinaldo 1	Aralin	Dama 3	Nancy Fernandez	Values	Lotus 2	Edna Briones	Values	Lotus 2	Edna Briones	Aralin	Dama 3	Nancy Fernandez	Aralin	Dama 3	Nancy Fernandez
 3	08:20 AM	09:15 AM	10	Aguinaldo 1	TLE			TLE			TLE			TLE			TLE		
-4	09:15 AM	10:10 AM	10	Aguinaldo 1	Mapeh	Dama 03	Celia Aguilar	Mapeh	Dama 03	Celia Aguilar	Mapeh	Dama 03	Celia Aguilar	Mapeh	Dama 03	Celia Aguilar	Math	Dama 03	John Paul Manese
+4	09:15 AM	10:10 AM	10	Aguinaldo 1	Mapeh	Dama 3	Celia Aguilar	Mapeh	Dama 3	Celia Aguilar	Mapeh	Dama 3	Celia Aguilar	Mapeh	Dama 3	Celia Aguilar	Math	Dama 3	John Paul Manese
 5	10:10 AM	10:25 AM	10	Aguinaldo 1															
-6	10:25 AM	11:20 AM	10	Aguinaldo 1	English	Dama 03	Bernadette Lee	Math	Dama 03	John Paul Manese	English	Dama 03	Bernadette Lee	English	Dama 03	Bernadette Lee	English	Dama 03	Bernadette Lee
-7	11:20 AM	12:15 PM	10	Aguinaldo 1	Filipino	Dama 03	Bernardita Liwag	Filipino	Dama 03	Bernardita Liwag	Filipino	Dama 03	Bernardita Liwag	Math	Dama 03	John Paul Manese	Filipino	Dama 03	Bernardita Liwag
+6	10:25 AM	11:20 AM	10	Aguinaldo 1	English	Dama 3	Bernadette Lee	Math	Dama 3	John Paul Manese	English	Dama 3	Bernadette Lee	English	Dama 3	Bernadette Lee	English	Dama 3	Bernadette Lee
+7	11:20 AM	12:15 PM	10	Aguinaldo 1	Filipino	Dama 3	Bernardita Liwag	Filipino	Dama 3	Bernardita Liwag	Filipino	Dama 3	Bernardita Liwag	Math	Dama 3	John Paul Manese	Filipino	Dama 3	Bernardita Liwag
 8	12:15 PM	01:10 PM	10	Aguinaldo 1															
 9	01:10 PM	02:05 PM	10	Aguinaldo 1															
 10	02:05 PM	03:00 PM	10	Aguinaldo 1															
@@ -1230,13 +1230,13 @@
 12	03:55 PM	04:10 PM	10	Aguinaldo 1															
 13	04:10 PM	05:05 PM	10	Aguinaldo 1															
 14	05:05 PM	06:00 PM	10	Aguinaldo 1															
-1	06:30 AM	07:25 AM	10	Aguinaldo 2	Mapeh	Dama 04	Celia Aguilar	Mapeh	Dama 04	Celia Aguilar	Mapeh	Dama 04	Celia Aguilar	Mapeh	Dama 04	Celia Aguilar	Math	Dama 04	John Paul Manese
+1	06:30 AM	07:25 AM	10	Aguinaldo 2	Mapeh	Dama 4	Celia Aguilar	Mapeh	Dama 4	Celia Aguilar	Mapeh	Dama 4	Celia Aguilar	Mapeh	Dama 4	Celia Aguilar	Math	Dama 4	John Paul Manese
 2	07:25 AM	08:20 AM	10	Aguinaldo 2	TLE			TLE			TLE			TLE			TLE		
-3	08:20 AM	09:15 AM	10	Aguinaldo 2	Math	Dama 04	John Paul Manese	Science	Dama 04	Alvin Dela Cruz	Science	Dama 04	Alvin Dela Cruz	Science	Dama 04	Alvin Dela Cruz	Science	Dama 04	Alvin Dela Cruz
-4	09:15 AM	10:10 AM	10	Aguinaldo 2										Values	Dama 04	Luanne Rivera	Values	Dama 04	Luanne Rivera
+3	08:20 AM	09:15 AM	10	Aguinaldo 2	Math	Dama 4	John Paul Manese	Science	Dama 4	Alvin Dela Cruz	Science	Dama 4	Alvin Dela Cruz	Science	Dama 4	Alvin Dela Cruz	Science	Dama 4	Alvin Dela Cruz
+4	09:15 AM	10:10 AM	10	Aguinaldo 2										Values	Dama 4	Luanne Rivera	Values	Dama 4	Luanne Rivera
 5	10:10 AM	10:25 AM	10	Aguinaldo 2															
-6	10:25 AM	11:20 AM	10	Aguinaldo 2	Filipino	Dama 04	Bernardita Liwag	Filipino	Dama 04	Bernardita Liwag	Filipino	Dama 04	Bernardita Liwag	Math	Dama 04	John Paul Manese	Filipino	Dama 04	Bernardita Liwag
-7	11:20 AM	12:15 PM	10	Aguinaldo 2	English	Dama 04	Bernadette Lee	Math	Dama 04	John Paul Manese	English	Dama 04	Bernadette Lee	English	Dama 04	Bernadette Lee	English	Dama 04	Bernadette Lee
+6	10:25 AM	11:20 AM	10	Aguinaldo 2	Filipino	Dama 4	Bernardita Liwag	Filipino	Dama 4	Bernardita Liwag	Filipino	Dama 4	Bernardita Liwag	Math	Dama 4	John Paul Manese	Filipino	Dama 4	Bernardita Liwag
+7	11:20 AM	12:15 PM	10	Aguinaldo 2	English	Dama 4	Bernadette Lee	Math	Dama 4	John Paul Manese	English	Dama 4	Bernadette Lee	English	Dama 4	Bernadette Lee	English	Dama 4	Bernadette Lee
 8	12:15 PM	01:10 PM	10	Aguinaldo 2							Aralin	Sampaguita 8	Maria Teresa Agbuya	Aralin	Sampaguita 8	Maria Teresa Agbuya	Aralin	Sampaguita 8	Maria Teresa Agbuya
 9	01:10 PM	02:05 PM	10	Aguinaldo 2															
 10	02:05 PM	03:00 PM	10	Aguinaldo 2															
@@ -1244,12 +1244,12 @@
 12	03:55 PM	04:10 PM	10	Aguinaldo 2															
 13	04:10 PM	05:05 PM	10	Aguinaldo 2															
 14	05:05 PM	06:00 PM	10	Aguinaldo 2															
-1	06:30 AM	07:25 AM	10	Aguinaldo 3	English	Dama 05	Bernadette Lee	English	Dama 05	Bernadette Lee	English	Dama 05	Bernadette Lee	Math	Dama 05	John Paul Manese	English	Dama 05	Bernadette Lee
-2	07:25 AM	08:20 AM	10	Aguinaldo 3	Math	Dama 05	John Paul Manese	Science	Dama 05	Alvin Dela Cruz	Science	Dama 05	Alvin Dela Cruz	Science	Dama 05	Alvin Dela Cruz	Science	Dama 05	Alvin Dela Cruz
-3	08:20 AM	09:15 AM	10	Aguinaldo 3	Mapeh	Dama 05	Celia Aguilar	Mapeh	Dama 05	Celia Aguilar	Mapeh	Dama 05	Celia Aguilar	Mapeh	Dama 05	Celia Aguilar	Math	Dama 05	John Paul Manese
-4	09:15 AM	10:10 AM	10	Aguinaldo 3	Filipino	Dama 05	Chandi Santos	Filipino	Dama 05	Chandi Santos	Math	Dama 05	John Paul Manese	Filipino	Dama 05	Chandi Santos	Filipino	Dama 05	Chandi Santos
+1	06:30 AM	07:25 AM	10	Aguinaldo 3	English	Dama 5	Bernadette Lee	English	Dama 5	Bernadette Lee	English	Dama 5	Bernadette Lee	Math	Dama 5	John Paul Manese	English	Dama 5	Bernadette Lee
+2	07:25 AM	08:20 AM	10	Aguinaldo 3	Math	Dama 5	John Paul Manese	Science	Dama 5	Alvin Dela Cruz	Science	Dama 5	Alvin Dela Cruz	Science	Dama 5	Alvin Dela Cruz	Science	Dama 5	Alvin Dela Cruz
+3	08:20 AM	09:15 AM	10	Aguinaldo 3	Mapeh	Dama 5	Celia Aguilar	Mapeh	Dama 5	Celia Aguilar	Mapeh	Dama 5	Celia Aguilar	Mapeh	Dama 5	Celia Aguilar	Math	Dama 5	John Paul Manese
+4	09:15 AM	10:10 AM	10	Aguinaldo 3	Filipino	Dama 5	Chandi Santos	Filipino	Dama 5	Chandi Santos	Math	Dama 5	John Paul Manese	Filipino	Dama 5	Chandi Santos	Filipino	Dama 5	Chandi Santos
 5	10:10 AM	10:25 AM	10	Aguinaldo 3															
-6	10:25 AM	11:20 AM	10	Aguinaldo 3	Aralin	Dama 05	Mark Anthony Sawal	Aralin	Dama 05	Mark Anthony Sawal	Aralin	Dama 05	Mark Anthony Sawal	Values	Dama 05	Mariquita Reyes	Values	Dama 05	Mariquita Reyes
+6	10:25 AM	11:20 AM	10	Aguinaldo 3	Aralin	Dama 5	Mark Anthony Sawal	Aralin	Dama 5	Mark Anthony Sawal	Aralin	Dama 5	Mark Anthony Sawal	Values	Dama 5	Mariquita Reyes	Values	Dama 5	Mariquita Reyes
 7	11:20 AM	12:15 PM	10	Aguinaldo 3	TLE			TLE			TLE			TLE			TLE		
 8	12:15 PM	01:10 PM	10	Aguinaldo 3															
 9	01:10 PM	02:05 PM	10	Aguinaldo 3															
@@ -1258,13 +1258,13 @@
 12	03:55 PM	04:10 PM	10	Aguinaldo 3															
 13	04:10 PM	05:05 PM	10	Aguinaldo 3															
 14	05:05 PM	06:00 PM	10	Aguinaldo 3															
-1	06:30 AM	07:25 AM	10	Aguinaldo 4	Filipino	Dama 08	Chandi Santos	Math	Dama 08	John Paul Manese	Filipino	Dama 08	Chandi Santos	Filipino	Dama 08	Chandi Santos	Filipino	Dama 08	Chandi Santos
-2	07:25 AM	08:20 AM	10	Aguinaldo 4	Mapeh	Dama 08	Celia Aguilar	Mapeh	Dama 08	Celia Aguilar	Mapeh	Dama 08	Celia Aguilar	Math	Dama 08	John Paul Manese	Mapeh	Dama 08	Celia Aguilar
-3	08:20 AM	09:15 AM	10	Aguinaldo 4	English	Dama 08	Bernadette Lee	English	Dama 08	Bernadette Lee	Math	Dama 08	John Paul Manese	English	Dama 08	Bernadette Lee	English	Dama 08	Bernadette Lee
-4	09:15 AM	10:10 AM	10	Aguinaldo 4	Math	Dama 08	John Paul Manese	Science	Dama 08	Danny Manuel	Science	Dama 08	Danny Manuel	Science	Dama 08	Danny Manuel	Science	Dama 08	Danny Manuel
+1	06:30 AM	07:25 AM	10	Aguinaldo 4	Filipino	Dama 8	Chandi Santos	Math	Dama 8	John Paul Manese	Filipino	Dama 8	Chandi Santos	Filipino	Dama 8	Chandi Santos	Filipino	Dama 8	Chandi Santos
+2	07:25 AM	08:20 AM	10	Aguinaldo 4	Mapeh	Dama 8	Celia Aguilar	Mapeh	Dama 8	Celia Aguilar	Mapeh	Dama 8	Celia Aguilar	Math	Dama 8	John Paul Manese	Mapeh	Dama 8	Celia Aguilar
+3	08:20 AM	09:15 AM	10	Aguinaldo 4	English	Dama 8	Bernadette Lee	English	Dama 8	Bernadette Lee	Math	Dama 8	John Paul Manese	English	Dama 8	Bernadette Lee	English	Dama 8	Bernadette Lee
+4	09:15 AM	10:10 AM	10	Aguinaldo 4	Math	Dama 8	John Paul Manese	Science	Dama 8	Danny Manuel	Science	Dama 8	Danny Manuel	Science	Dama 8	Danny Manuel	Science	Dama 8	Danny Manuel
 5	10:10 AM	10:25 AM	10	Aguinaldo 4															
 6	10:25 AM	11:20 AM	10	Aguinaldo 4	TLE			TLE			TLE			TLE			TLE		
-7	11:20 AM	12:15 PM	10	Aguinaldo 4	Aralin	Dama 08	Nancy Fernandez	Aralin	Dama 08	Nancy Fernandez	Aralin	Dama 08	Nancy Fernandez	Values	Dama 08	Mariquita Reyes	Values	Dama 08	Mariquita Reyes
+7	11:20 AM	12:15 PM	10	Aguinaldo 4	Aralin	Dama 8	Nancy Fernandez	Aralin	Dama 8	Nancy Fernandez	Aralin	Dama 8	Nancy Fernandez	Values	Dama 8	Mariquita Reyes	Values	Dama 8	Mariquita Reyes
 8	12:15 PM	01:10 PM	10	Aguinaldo 4															
 9	01:10 PM	02:05 PM	10	Aguinaldo 4															
 10	02:05 PM	03:00 PM	10	Aguinaldo 4															
@@ -1272,13 +1272,13 @@
 12	03:55 PM	04:10 PM	10	Aguinaldo 4															
 13	04:10 PM	05:05 PM	10	Aguinaldo 4															
 14	05:05 PM	06:00 PM	10	Aguinaldo 4															
-1	06:30 AM	07:25 AM	10	Aguinaldo 5	Aralin	Dama 09	Nancy Fernandez	Aralin	Dama 09	Nancy Fernandez	Values	Dama 09	Michelle Lingat	Values	Dama 09	Michelle Lingat	Aralin	Dama 09	Nancy Fernandez
-2	07:25 AM	08:20 AM	10	Aguinaldo 5	English	Dama 09	Bernadette Lee	Math	Dama 09	John Paul Manese	English	Dama 09	Bernadette Lee	English	Dama 09	Bernadette Lee	English	Dama 09	Bernadette Lee
-3	08:20 AM	09:15 AM	10	Aguinaldo 5	Filipino	Dama 09	Chandi Santos	Filipino	Dama 09	Chandi Santos	Filipino	Dama 09	Chandi Santos	Math	Dama 09	John Paul Manese	Filipino	Dama 09	Chandi Santos
+1	06:30 AM	07:25 AM	10	Aguinaldo 5	Aralin	Dama 9	Nancy Fernandez	Aralin	Dama 9	Nancy Fernandez	Values	Dama 9	Michelle Lingat	Values	Dama 9	Michelle Lingat	Aralin	Dama 9	Nancy Fernandez
+2	07:25 AM	08:20 AM	10	Aguinaldo 5	English	Dama 9	Bernadette Lee	Math	Dama 9	John Paul Manese	English	Dama 9	Bernadette Lee	English	Dama 9	Bernadette Lee	English	Dama 9	Bernadette Lee
+3	08:20 AM	09:15 AM	10	Aguinaldo 5	Filipino	Dama 9	Chandi Santos	Filipino	Dama 9	Chandi Santos	Filipino	Dama 9	Chandi Santos	Math	Dama 9	John Paul Manese	Filipino	Dama 9	Chandi Santos
 4	09:15 AM	10:10 AM	10	Aguinaldo 5	TLE			TLE			TLE			TLE			TLE		
 5	10:10 AM	10:25 AM	10	Aguinaldo 5															
-6	10:25 AM	11:20 AM	10	Aguinaldo 5	Science	Dama 09	Alvin Dela Cruz	Science	Dama 09	Alvin Dela Cruz	Science	Dama 09	Alvin Dela Cruz	Science	Dama 09	Alvin Dela Cruz	Math	Dama 09	John Paul Manese
-7	11:20 AM	12:15 PM	10	Aguinaldo 5	Mapeh	Dama 09	Celia Aguilar	Mapeh	Dama 09	Celia Aguilar	Math	Dama 09	John Paul Manese	Mapeh	Dama 09	Celia Aguilar	Mapeh	Dama 09	Celia Aguilar
+6	10:25 AM	11:20 AM	10	Aguinaldo 5	Science	Dama 9	Alvin Dela Cruz	Science	Dama 9	Alvin Dela Cruz	Science	Dama 9	Alvin Dela Cruz	Science	Dama 9	Alvin Dela Cruz	Math	Dama 9	John Paul Manese
+7	11:20 AM	12:15 PM	10	Aguinaldo 5	Mapeh	Dama 9	Celia Aguilar	Mapeh	Dama 9	Celia Aguilar	Math	Dama 9	John Paul Manese	Mapeh	Dama 9	Celia Aguilar	Mapeh	Dama 9	Celia Aguilar
 8	12:15 PM	01:10 PM	10	Aguinaldo 5															
 9	01:10 PM	02:05 PM	10	Aguinaldo 5															
 10	02:05 PM	03:00 PM	10	Aguinaldo 5															
@@ -1287,12 +1287,12 @@
 13	04:10 PM	05:05 PM	10	Aguinaldo 5															
 14	05:05 PM	06:00 PM	10	Aguinaldo 5															
 1	06:30 AM	07:25 AM	10	Aguinaldo 6	TLE			TLE			TLE			TLE			TLE		
-2	07:25 AM	08:20 AM	10	Aguinaldo 6	Filipino	Dama 02	Chandi Santos	Filipino	Dama 02	Chandi Santos	Filipino	Dama 02	Chandi Santos	Filipino	Dama 02	Chandi Santos	Math	Dama 02	John Paul Manese
-3	08:20 AM	09:15 AM	10	Aguinaldo 6	Values	Dama 02	Luanne Rivera	Values	Dama 02	Luanne Rivera	Aralin	Dama 02	Nancy Fernandez	Aralin	Dama 02	Nancy Fernandez	Aralin	Dama 02	Nancy Fernandez
-4	09:15 AM	10:10 AM	10	Aguinaldo 6	English	Dama 02	Bernadette Lee	English	Dama 02	Bernadette Lee	English	Dama 02	Bernadette Lee	Math	Dama 02	John Paul Manese	English	Dama 02	Bernadette Lee
+2	07:25 AM	08:20 AM	10	Aguinaldo 6	Filipino	Dama 2	Chandi Santos	Filipino	Dama 2	Chandi Santos	Filipino	Dama 2	Chandi Santos	Filipino	Dama 2	Chandi Santos	Math	Dama 2	John Paul Manese
+3	08:20 AM	09:15 AM	10	Aguinaldo 6	Values	Dama 2	Luanne Rivera	Values	Dama 2	Luanne Rivera	Aralin	Dama 2	Nancy Fernandez	Aralin	Dama 2	Nancy Fernandez	Aralin	Dama 2	Nancy Fernandez
+4	09:15 AM	10:10 AM	10	Aguinaldo 6	English	Dama 2	Bernadette Lee	English	Dama 2	Bernadette Lee	English	Dama 2	Bernadette Lee	Math	Dama 2	John Paul Manese	English	Dama 2	Bernadette Lee
 5	10:10 AM	10:25 AM	10	Aguinaldo 6															
-6	10:25 AM	11:20 AM	10	Aguinaldo 6	Mapeh	Dama 02	Mark Ian Reyes	Mapeh	Dama 02	Mark Ian Reyes	Math	Dama 02	John Paul Manese	Mapeh	Dama 02	Mark Ian Reyes	Mapeh	Dama 02	Mark Ian Reyes
-7	11:20 AM	12:15 PM	10	Aguinaldo 6	Math	Dama 02	John Paul Manese	Science	Dama 02	Jover Canlas	Science	Dama 02	Jover Canlas	Science	Dama 02	Jover Canlas	Science	Dama 02	Jover Canlas
+6	10:25 AM	11:20 AM	10	Aguinaldo 6	Mapeh	Dama 2	Mark Ian Reyes	Mapeh	Dama 2	Mark Ian Reyes	Math	Dama 2	John Paul Manese	Mapeh	Dama 2	Mark Ian Reyes	Mapeh	Dama 2	Mark Ian Reyes
+7	11:20 AM	12:15 PM	10	Aguinaldo 6	Math	Dama 2	John Paul Manese	Science	Dama 2	Jover Canlas	Science	Dama 2	Jover Canlas	Science	Dama 2	Jover Canlas	Science	Dama 2	Jover Canlas
 8	12:15 PM	01:10 PM	10	Aguinaldo 6															
 9	01:10 PM	02:05 PM	10	Aguinaldo 6															
 10	02:05 PM	03:00 PM	10	Aguinaldo 6															
@@ -1300,13 +1300,13 @@
 12	03:55 PM	04:10 PM	10	Aguinaldo 6															
 13	04:10 PM	05:05 PM	10	Aguinaldo 6															
 14	05:05 PM	06:00 PM	10	Aguinaldo 6															
-1	06:30 AM	07:25 AM	10	Mabini 1	Aralin	Dama 01	Maria Teresa Agbuya	Aralin	Dama 01	Maria Teresa Agbuya	Aralin	Dama 01	Maria Teresa Agbuya	Values	Dama 01	Mariquita Reyes	Values	Dama 01	Mariquita Reyes
-2	07:25 AM	08:20 AM	10	Mabini 1	Math	Dama 01	Arzen Dave Buan	Filipino	Dama 01	Kimberly Manalili	Filipino	Dama 01	Kimberly Manalili	Filipino	Dama 01	Kimberly Manalili	Filipino	Dama 01	Kimberly Manalili
-3	08:20 AM	09:15 AM	10	Mabini 1	English	Dama 01	Mary Rosecoeli Patdu	Math	Dama 01	Arzen Dave Buan	English	Dama 01	Mary Rosecoeli Patdu	English	Dama 01	Mary Rosecoeli Patdu	English	Dama 01	Mary Rosecoeli Patdu
-4	09:15 AM	10:10 AM	10	Mabini 1	Mapeh	Dama 01	Gloria Mendoza	Mapeh	Dama 01	Gloria Mendoza	Math	Dama 01	Arzen Dave Buan	Mapeh	Dama 01	Gloria Mendoza	Mapeh	Dama 01	Gloria Mendoza
+1	06:30 AM	07:25 AM	10	Mabini 1	Aralin	Dama 1	Maria Teresa Agbuya	Aralin	Dama 1	Maria Teresa Agbuya	Aralin	Dama 1	Maria Teresa Agbuya	Values	Dama 1	Mariquita Reyes	Values	Dama 1	Mariquita Reyes
+2	07:25 AM	08:20 AM	10	Mabini 1	Math	Dama 1	Arzen Dave Buan	Filipino	Dama 1	Kimberly Manalili	Filipino	Dama 1	Kimberly Manalili	Filipino	Dama 1	Kimberly Manalili	Filipino	Dama 1	Kimberly Manalili
+3	08:20 AM	09:15 AM	10	Mabini 1	English	Dama 1	Mary Rosecoeli Patdu	Math	Dama 1	Arzen Dave Buan	English	Dama 1	Mary Rosecoeli Patdu	English	Dama 1	Mary Rosecoeli Patdu	English	Dama 1	Mary Rosecoeli Patdu
+4	09:15 AM	10:10 AM	10	Mabini 1	Mapeh	Dama 1	Gloria Mendoza	Mapeh	Dama 1	Gloria Mendoza	Math	Dama 1	Arzen Dave Buan	Mapeh	Dama 1	Gloria Mendoza	Mapeh	Dama 1	Gloria Mendoza
 5	10:10 AM	10:25 AM	10	Mabini 1															
 6	10:25 AM	11:20 AM	10	Mabini 1	TLE			TLE			TLE			TLE			TLE		
-7	11:20 AM	12:15 PM	10	Mabini 1	Science	Dama 01	Danny Manuel	Science	Dama 01	Danny Manuel	Science	Dama 01	Danny Manuel	Science	Dama 01	Danny Manuel	Math	Dama 01	Arzen Dave Buan
+7	11:20 AM	12:15 PM	10	Mabini 1	Science	Dama 1	Danny Manuel	Science	Dama 1	Danny Manuel	Science	Dama 1	Danny Manuel	Science	Dama 1	Danny Manuel	Math	Dama 1	Arzen Dave Buan
 8	12:15 PM	01:10 PM	10	Mabini 1															
 9	01:10 PM	02:05 PM	10	Mabini 1															
 10	02:05 PM	03:00 PM	10	Mabini 1															
@@ -1937,13 +1937,13 @@
 5	10:10 AM	10:25 AM	9	Emerald 1															
 6	10:25 AM	11:20 AM	9	Emerald 1															
 7	11:20 AM	12:15 PM	9	Emerald 1															
-8	12:15 PM	01:10 PM	9	Emerald 1	Science	Dama 03	Nenita Manalo	Science	Dama 03	Nenita Manalo	Science	Dama 03	Nenita Manalo	Science	Dama 03	Nenita Manalo	Math	Dama 03	Christle Marie Rivera
-9	01:10 PM	02:05 PM	9	Emerald 1	Math	Dama 03	Christle Marie Rivera	Mapeh	Dama 03	Mary Anne Lalic	Mapeh	Dama 03	Mary Anne Lalic	Mapeh	Dama 03	Mary Anne Lalic	Mapeh	Dama 03	Mary Anne Lalic
+8	12:15 PM	01:10 PM	9	Emerald 1	Science	Dama 3	Nenita Manalo	Science	Dama 3	Nenita Manalo	Science	Dama 3	Nenita Manalo	Science	Dama 3	Nenita Manalo	Math	Dama 3	Christle Marie Rivera
+9	01:10 PM	02:05 PM	9	Emerald 1	Math	Dama 3	Christle Marie Rivera	Mapeh	Dama 3	Mary Anne Lalic	Mapeh	Dama 3	Mary Anne Lalic	Mapeh	Dama 3	Mary Anne Lalic	Mapeh	Dama 3	Mary Anne Lalic
 10	02:05 PM	03:00 PM	9	Emerald 1	TLE			TLE			TLE			TLE			TLE		
-11	03:00 PM	03:55 PM	9	Emerald 1	English	Dama 03	Elizabeth Balase	English	Dama 03	Elizabeth Balase	Math	Dama 03	Christle Marie Rivera	English	Dama 03	Elizabeth Balase	English	Dama 03	Elizabeth Balase
+11	03:00 PM	03:55 PM	9	Emerald 1	English	Dama 3	Elizabeth Balase	English	Dama 3	Elizabeth Balase	Math	Dama 3	Christle Marie Rivera	English	Dama 3	Elizabeth Balase	English	Dama 3	Elizabeth Balase
 12	03:55 PM	04:10 PM	9	Emerald 1															
-13	04:10 PM	05:05 PM	9	Emerald 1	Filipino	Dama 03	Marilou Villanueva	Filipino	Dama 03	Marilou Villanueva	Filipino	Dama 03	Marilou Villanueva	Math	Dama 03	Christle Marie Rivera	Filipino	Dama 03	Marilou Villanueva
-14	05:05 PM	06:00 PM	9	Emerald 1	Aralin	Dama 03	Mark Anthony Sawal	Aralin	Dama 03	Mark Anthony Sawal	Values	Dama 03	Remedios Burbos	Aralin	Dama 03	Mark Anthony Sawal	Values	Dama 03	Remedios Burbos
+13	04:10 PM	05:05 PM	9	Emerald 1	Filipino	Dama 3	Marilou Villanueva	Filipino	Dama 3	Marilou Villanueva	Filipino	Dama 3	Marilou Villanueva	Math	Dama 3	Christle Marie Rivera	Filipino	Dama 3	Marilou Villanueva
+14	05:05 PM	06:00 PM	9	Emerald 1	Aralin	Dama 3	Mark Anthony Sawal	Aralin	Dama 3	Mark Anthony Sawal	Values	Dama 3	Remedios Burbos	Aralin	Dama 3	Mark Anthony Sawal	Values	Dama 3	Remedios Burbos
 1	06:30 AM	07:25 AM	9	Emerald 2															
 2	07:25 AM	08:20 AM	9	Emerald 2															
 3	08:20 AM	09:15 AM	9	Emerald 2															
@@ -1951,27 +1951,27 @@
 5	10:10 AM	10:25 AM	9	Emerald 2															
 6	10:25 AM	11:20 AM	9	Emerald 2															
 7	11:20 AM	12:15 PM	9	Emerald 2															
-8	12:15 PM	01:10 PM	9	Emerald 2	Mapeh	Dama 04	Mary Anne Lalic	Mapeh	Dama 04	Mary Anne Lalic	Mapeh	Dama 04	Mary Anne Lalic	Math	Dama 04	Christle Marie Rivera	Mapeh	Dama 04	Mary Anne Lalic
-9	01:10 PM	02:05 PM	9	Emerald 2	English	Dama 04	Elizabeth Balase	English	Dama 04	Elizabeth Balase	English	Dama 04	Elizabeth Balase	English	Dama 04	Elizabeth Balase	Math	Dama 04	Christle Marie Rivera
-10	02:05 PM	03:00 PM	9	Emerald 2	Filipino	Dama 04	Marilou Villanueva	Math	Dama 04	Christle Marie Rivera	Filipino	Dama 04	Marilou Villanueva	Filipino	Dama 04	Marilou Villanueva	Filipino	Dama 04	Marilou Villanueva
-11	03:00 PM	03:55 PM	9	Emerald 2	Aralin	Dama 04	Heide Santos	Aralin	Dama 04	Heide Santos	Values	Dama 04	Marites de Leon	Values	Dama 04	Marites de Leon	Aralin	Dama 04	Heide Santos
+8	12:15 PM	01:10 PM	9	Emerald 2	Mapeh	Dama 4	Mary Anne Lalic	Mapeh	Dama 4	Mary Anne Lalic	Mapeh	Dama 4	Mary Anne Lalic	Math	Dama 4	Christle Marie Rivera	Mapeh	Dama 4	Mary Anne Lalic
+9	01:10 PM	02:05 PM	9	Emerald 2	English	Dama 4	Elizabeth Balase	English	Dama 4	Elizabeth Balase	English	Dama 4	Elizabeth Balase	English	Dama 4	Elizabeth Balase	Math	Dama 4	Christle Marie Rivera
+10	02:05 PM	03:00 PM	9	Emerald 2	Filipino	Dama 4	Marilou Villanueva	Math	Dama 4	Christle Marie Rivera	Filipino	Dama 4	Marilou Villanueva	Filipino	Dama 4	Marilou Villanueva	Filipino	Dama 4	Marilou Villanueva
+11	03:00 PM	03:55 PM	9	Emerald 2	Aralin	Dama 4	Heide Santos	Aralin	Dama 4	Heide Santos	Values	Dama 4	Marites de Leon	Values	Dama 4	Marites de Leon	Aralin	Dama 4	Heide Santos
 12	03:55 PM	04:10 PM	9	Emerald 2															
 13	04:10 PM	05:05 PM	9	Emerald 2	TLE			TLE			TLE			TLE			TLE		
-14	05:05 PM	06:00 PM	9	Emerald 2	Math	Dama 04	Christle Marie Rivera	Science	Dama 04	Nenita Manalo	Science	Dama 04	Nenita Manalo	Science	Dama 04	Nenita Manalo	Science	Dama 04	Nenita Manalo
+14	05:05 PM	06:00 PM	9	Emerald 2	Math	Dama 4	Christle Marie Rivera	Science	Dama 4	Nenita Manalo	Science	Dama 4	Nenita Manalo	Science	Dama 4	Nenita Manalo	Science	Dama 4	Nenita Manalo
 1	06:30 AM	07:25 AM	9	Emerald 3															
 2	07:25 AM	08:20 AM	9	Emerald 3															
 3	08:20 AM	09:15 AM	9	Emerald 3															
 4	09:15 AM	10:10 AM	9	Emerald 3															
 5	10:10 AM	10:25 AM	9	Emerald 3															
 6	10:25 AM	11:20 AM	9	Emerald 3															
-7	11:20 AM	12:15 PM	9	Emerald 3													Aralin	Dama 05	Heide Santos
-8	12:15 PM	01:10 PM	9	Emerald 3	English	Dama 05	Elizabeth Balase	Math	Dama 05	Christle Marie Rivera	English	Dama 05	Elizabeth Balase	English	Dama 05	Elizabeth Balase	English	Dama 05	Elizabeth Balase
+7	11:20 AM	12:15 PM	9	Emerald 3													Aralin	Dama 5	Heide Santos
+8	12:15 PM	01:10 PM	9	Emerald 3	English	Dama 5	Elizabeth Balase	Math	Dama 5	Christle Marie Rivera	English	Dama 5	Elizabeth Balase	English	Dama 5	Elizabeth Balase	English	Dama 5	Elizabeth Balase
 9	01:10 PM	02:05 PM	9	Emerald 3	TLE			TLE			TLE			TLE			TLE		
-10	02:05 PM	03:00 PM	9	Emerald 3	Science	Dama 05	Nenita Manalo	Science	Dama 05	Nenita Manalo	Science	Dama 05	Nenita Manalo	Math	Dama 05	Christle Marie Rivera	Science	Dama 05	Nenita Manalo
-11	03:00 PM	03:55 PM	9	Emerald 3	Filipino	Dama 05	Marilou Villanueva	Filipino	Dama 05	Marilou Villanueva	Filipino	Dama 05	Marilou Villanueva	Filipino	Dama 05	Marilou Villanueva	Math	Dama 05	Christle Marie Rivera
+10	02:05 PM	03:00 PM	9	Emerald 3	Science	Dama 5	Nenita Manalo	Science	Dama 5	Nenita Manalo	Science	Dama 5	Nenita Manalo	Math	Dama 5	Christle Marie Rivera	Science	Dama 5	Nenita Manalo
+11	03:00 PM	03:55 PM	9	Emerald 3	Filipino	Dama 5	Marilou Villanueva	Filipino	Dama 5	Marilou Villanueva	Filipino	Dama 5	Marilou Villanueva	Filipino	Dama 5	Marilou Villanueva	Math	Dama 5	Christle Marie Rivera
 12	03:55 PM	04:10 PM	9	Emerald 3															
-13	04:10 PM	05:05 PM	9	Emerald 3	Values	Dama 05	Annabelle Alfaro	Values	Dama 05	Annabelle Alfaro	Aralin	Dama 05	Heide Santos	Aralin	Dama 05	Heide Santos			
-14	05:05 PM	06:00 PM	9	Emerald 3	Mapeh	Dama 05	Mary Anne Lalic	Mapeh	Dama 05	Mary Anne Lalic	Math	Dama 05	Christle Marie Rivera	Mapeh	Dama 05	Mary Anne Lalic	Mapeh	Dama 05	Mary Anne Lalic
+13	04:10 PM	05:05 PM	9	Emerald 3	Values	Dama 5	Annabelle Alfaro	Values	Dama 5	Annabelle Alfaro	Aralin	Dama 5	Heide Santos	Aralin	Dama 5	Heide Santos			
+14	05:05 PM	06:00 PM	9	Emerald 3	Mapeh	Dama 5	Mary Anne Lalic	Mapeh	Dama 5	Mary Anne Lalic	Math	Dama 5	Christle Marie Rivera	Mapeh	Dama 5	Mary Anne Lalic	Mapeh	Dama 5	Mary Anne Lalic
 1	06:30 AM	07:25 AM	9	Emerald 4															
 2	07:25 AM	08:20 AM	9	Emerald 4															
 3	08:20 AM	09:15 AM	9	Emerald 4															
@@ -1979,13 +1979,13 @@
 5	10:10 AM	10:25 AM	9	Emerald 4															
 6	10:25 AM	11:20 AM	9	Emerald 4															
 7	11:20 AM	12:15 PM	9	Emerald 4										Aralin	Gardenia 4	Heide Santos			
-8	12:15 PM	01:10 PM	9	Emerald 4	Filipino	Dama 08	Marilou Villanueva	Filipino	Dama 08	Marilou Villanueva	Math	Dama 08	Christle Marie Rivera	Filipino	Dama 08	Marilou Villanueva	Filipino	Dama 08	Marilou Villanueva
-9	01:10 PM	02:05 PM	9	Emerald 4	Science	Dama 08	Nenita Manalo	Math	Dama 08	Christle Marie Rivera	Science	Dama 08	Nenita Manalo	Science	Dama 08	Nenita Manalo	Science	Dama 08	Nenita Manalo
-10	02:05 PM	03:00 PM	9	Emerald 4	Values	Dama 08	Remedios Burbos	Values	Dama 08	Remedios Burbos	Aralin	Dama 08	Heide Santos				Aralin	Dama 08	Heide Santos
+8	12:15 PM	01:10 PM	9	Emerald 4	Filipino	Dama 8	Marilou Villanueva	Filipino	Dama 8	Marilou Villanueva	Math	Dama 8	Christle Marie Rivera	Filipino	Dama 8	Marilou Villanueva	Filipino	Dama 8	Marilou Villanueva
+9	01:10 PM	02:05 PM	9	Emerald 4	Science	Dama 8	Nenita Manalo	Math	Dama 8	Christle Marie Rivera	Science	Dama 8	Nenita Manalo	Science	Dama 8	Nenita Manalo	Science	Dama 8	Nenita Manalo
+10	02:05 PM	03:00 PM	9	Emerald 4	Values	Dama 8	Remedios Burbos	Values	Dama 8	Remedios Burbos	Aralin	Dama 8	Heide Santos				Aralin	Dama 8	Heide Santos
 11	03:00 PM	03:55 PM	9	Emerald 4	TLE			TLE			TLE			TLE			TLE		
 12	03:55 PM	04:10 PM	9	Emerald 4															
-13	04:10 PM	05:05 PM	9	Emerald 4	Math	Dama 08	Christle Marie Rivera	Mapeh	Dama 08	Mary Anne Lalic	Mapeh	Dama 08	Mary Anne Lalic	Mapeh	Dama 08	Mary Anne Lalic	Mapeh	Dama 08	Mary Anne Lalic
-14	05:05 PM	06:00 PM	9	Emerald 4	English	Dama 08	Elizabeth Balase	English	Dama 08	Elizabeth Balase	English	Dama 08	Elizabeth Balase	Math	Dama 08	Christle Marie Rivera	English	Dama 08	Elizabeth Balase
+13	04:10 PM	05:05 PM	9	Emerald 4	Math	Dama 8	Christle Marie Rivera	Mapeh	Dama 8	Mary Anne Lalic	Mapeh	Dama 8	Mary Anne Lalic	Mapeh	Dama 8	Mary Anne Lalic	Mapeh	Dama 8	Mary Anne Lalic
+14	05:05 PM	06:00 PM	9	Emerald 4	English	Dama 8	Elizabeth Balase	English	Dama 8	Elizabeth Balase	English	Dama 8	Elizabeth Balase	Math	Dama 8	Christle Marie Rivera	English	Dama 8	Elizabeth Balase
 1	06:30 AM	07:25 AM	9	Emerald 5															
 2	07:25 AM	08:20 AM	9	Emerald 5															
 3	08:20 AM	09:15 AM	9	Emerald 5															
@@ -1993,12 +1993,12 @@
 5	10:10 AM	10:25 AM	9	Emerald 5															
 6	10:25 AM	11:20 AM	9	Emerald 5															
 7	11:20 AM	12:15 PM	9	Emerald 5															
-8	12:15 PM	01:10 PM	9	Emerald 5	Values	Dama 09	Doreen Dayrit	Values	Dama 09	Doreen Dayrit	Aralin	Dama 09	Heide Santos	Aralin	Dama 09	Heide Santos	Aralin	Dama 09	Heide Santos
-9	01:10 PM	02:05 PM	9	Emerald 5	Filipino	Dama 09	Marilou Villanueva	Filipino	Dama 09	Marilou Villanueva	Filipino	Dama 09	Marilou Villanueva	Math	Dama 09	Christle Marie Rivera	Filipino	Dama 09	Marilou Villanueva
-10	02:05 PM	03:00 PM	9	Emerald 5	Mapeh	Dama 09	Mary Anne Lalic	Mapeh	Dama 09	Mary Anne Lalic	Mapeh	Dama 09	Mary Anne Lalic	Mapeh	Dama 09	Mary Anne Lalic	Math	Dama 09	Christle Marie Rivera
-11	03:00 PM	03:55 PM	9	Emerald 5	Science	Dama 09	Nenita Manalo	Math	Dama 09	Christle Marie Rivera	Science	Dama 09	Nenita Manalo	Science	Dama 09	Nenita Manalo	Science	Dama 09	Nenita Manalo
+8	12:15 PM	01:10 PM	9	Emerald 5	Values	Dama 9	Doreen Dayrit	Values	Dama 9	Doreen Dayrit	Aralin	Dama 9	Heide Santos	Aralin	Dama 9	Heide Santos	Aralin	Dama 9	Heide Santos
+9	01:10 PM	02:05 PM	9	Emerald 5	Filipino	Dama 9	Marilou Villanueva	Filipino	Dama 9	Marilou Villanueva	Filipino	Dama 9	Marilou Villanueva	Math	Dama 9	Christle Marie Rivera	Filipino	Dama 9	Marilou Villanueva
+10	02:05 PM	03:00 PM	9	Emerald 5	Mapeh	Dama 9	Mary Anne Lalic	Mapeh	Dama 9	Mary Anne Lalic	Mapeh	Dama 9	Mary Anne Lalic	Mapeh	Dama 9	Mary Anne Lalic	Math	Dama 9	Christle Marie Rivera
+11	03:00 PM	03:55 PM	9	Emerald 5	Science	Dama 9	Nenita Manalo	Math	Dama 9	Christle Marie Rivera	Science	Dama 9	Nenita Manalo	Science	Dama 9	Nenita Manalo	Science	Dama 9	Nenita Manalo
 12	03:55 PM	04:10 PM	9	Emerald 5															
-13	04:10 PM	05:05 PM	9	Emerald 5	English	Dama 09	Elizabeth Balase	English	Dama 09	Elizabeth Balase	Math	Dama 09	Christle Marie Rivera	English	Dama 09	Elizabeth Balase	English	Dama 09	Elizabeth Balase
+13	04:10 PM	05:05 PM	9	Emerald 5	English	Dama 9	Elizabeth Balase	English	Dama 9	Elizabeth Balase	Math	Dama 9	Christle Marie Rivera	English	Dama 9	Elizabeth Balase	English	Dama 9	Elizabeth Balase
 14	05:05 PM	06:00 PM	9	Emerald 5	TLE			TLE			TLE			TLE			TLE		
 1	06:30 AM	07:25 AM	9	Emerald 6															
 2	07:25 AM	08:20 AM	9	Emerald 6															
@@ -2008,12 +2008,12 @@
 6	10:25 AM	11:20 AM	9	Emerald 6															
 7	11:20 AM	12:15 PM	9	Emerald 6															
 8	12:15 PM	01:10 PM	9	Emerald 6	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	9	Emerald 6	Aralin	Dama 02	Heide Santos	Aralin	Dama 02	Heide Santos	Aralin	Dama 02	Heide Santos	Values	Dama 02	Marites de Leon	Values	Dama 02	Marites de Leon
-10	02:05 PM	03:00 PM	9	Emerald 6	English	Dama 02	Elizabeth Balase	English	Dama 02	Elizabeth Balase	Math	Dama 02	Christle Marie Rivera	English	Dama 02	Elizabeth Balase	English	Dama 02	Elizabeth Balase
-11	03:00 PM	03:55 PM	9	Emerald 6	Math	Dama 02	Christle Marie Rivera	Mapeh	Dama 02	Mary Anne Lalic	Mapeh	Dama 02	Mary Anne Lalic	Mapeh	Dama 02	Mary Anne Lalic	Mapeh	Dama 02	Mary Anne Lalic
+9	01:10 PM	02:05 PM	9	Emerald 6	Aralin	Dama 2	Heide Santos	Aralin	Dama 2	Heide Santos	Aralin	Dama 2	Heide Santos	Values	Dama 2	Marites de Leon	Values	Dama 2	Marites de Leon
+10	02:05 PM	03:00 PM	9	Emerald 6	English	Dama 2	Elizabeth Balase	English	Dama 2	Elizabeth Balase	Math	Dama 2	Christle Marie Rivera	English	Dama 2	Elizabeth Balase	English	Dama 2	Elizabeth Balase
+11	03:00 PM	03:55 PM	9	Emerald 6	Math	Dama 2	Christle Marie Rivera	Mapeh	Dama 2	Mary Anne Lalic	Mapeh	Dama 2	Mary Anne Lalic	Mapeh	Dama 2	Mary Anne Lalic	Mapeh	Dama 2	Mary Anne Lalic
 12	03:55 PM	04:10 PM	9	Emerald 6															
-13	04:10 PM	05:05 PM	9	Emerald 6	Science	Dama 02	Nenita Manalo	Science	Dama 02	Nenita Manalo	Science	Dama 02	Nenita Manalo	Science	Dama 02	Nenita Manalo	Math	Dama 02	Christle Marie Rivera
-14	05:05 PM	06:00 PM	9	Emerald 6	Filipino	Dama 02	Marilou Villanueva	Math	Dama 02	Christle Marie Rivera	Filipino	Dama 02	Marilou Villanueva	Filipino	Dama 02	Marilou Villanueva	Filipino	Dama 02	Marilou Villanueva
+13	04:10 PM	05:05 PM	9	Emerald 6	Science	Dama 2	Nenita Manalo	Science	Dama 2	Nenita Manalo	Science	Dama 2	Nenita Manalo	Science	Dama 2	Nenita Manalo	Math	Dama 2	Christle Marie Rivera
+14	05:05 PM	06:00 PM	9	Emerald 6	Filipino	Dama 2	Marilou Villanueva	Math	Dama 2	Christle Marie Rivera	Filipino	Dama 2	Marilou Villanueva	Filipino	Dama 2	Marilou Villanueva	Filipino	Dama 2	Marilou Villanueva
 1	06:30 AM	07:25 AM	9	Sapphire 1															
 2	07:25 AM	08:20 AM	9	Sapphire 1															
 3	08:20 AM	09:15 AM	9	Sapphire 1															
@@ -2021,13 +2021,13 @@
 5	10:10 AM	10:25 AM	9	Sapphire 1															
 6	10:25 AM	11:20 AM	9	Sapphire 1															
 7	11:20 AM	12:15 PM	9	Sapphire 1															
-8	12:15 PM	01:10 PM	9	Sapphire 1	Science	Dama 01	Ken Paul Cortez	Science	Dama 01	Ken Paul Cortez	Science	Dama 01	Ken Paul Cortez	Science	Dama 01	Ken Paul Cortez	Math	Dama 01	Richelle Yabut
-9	01:10 PM	02:05 PM	9	Sapphire 1	Mapeh	Dama 01	Daisy Lingat	Math	Dama 01	Richelle Yabut	Mapeh	Dama 01	Daisy Lingat	Mapeh	Dama 01	Daisy Lingat	Mapeh	Dama 01	Daisy Lingat
+8	12:15 PM	01:10 PM	9	Sapphire 1	Science	Dama 1	Ken Paul Cortez	Science	Dama 1	Ken Paul Cortez	Science	Dama 1	Ken Paul Cortez	Science	Dama 1	Ken Paul Cortez	Math	Dama 1	Richelle Yabut
+9	01:10 PM	02:05 PM	9	Sapphire 1	Mapeh	Dama 1	Daisy Lingat	Math	Dama 1	Richelle Yabut	Mapeh	Dama 1	Daisy Lingat	Mapeh	Dama 1	Daisy Lingat	Mapeh	Dama 1	Daisy Lingat
 10	02:05 PM	03:00 PM	9	Sapphire 1	TLE			TLE			TLE			TLE			TLE		
-11	03:00 PM	03:55 PM	9	Sapphire 1	English	Dama 01	Kimberly Malang	English	Dama 01	Kimberly Malang	Math	Dama 01	Richelle Yabut	English	Dama 01	Kimberly Malang	English	Dama 01	Kimberly Malang
+11	03:00 PM	03:55 PM	9	Sapphire 1	English	Dama 1	Kimberly Malang	English	Dama 1	Kimberly Malang	Math	Dama 1	Richelle Yabut	English	Dama 1	Kimberly Malang	English	Dama 1	Kimberly Malang
 12	03:55 PM	04:10 PM	9	Sapphire 1															
-13	04:10 PM	05:05 PM	9	Sapphire 1	Filipino	Dama 01	Annabelle Alburo	Filipino	Dama 01	Annabelle Alburo	Filipino	Dama 01	Annabelle Alburo	Math	Dama 01	Richelle Yabut	Filipino	Dama 01	Annabelle Alburo
-14	05:05 PM	06:00 PM	9	Sapphire 1	Aralin	Dama 01	Mariel Tulabut	Aralin	Dama 01	Mariel Tulabut	Values	Dama 01	Marites de Leon	Values	Dama 01	Marites de Leon	Aralin	Dama 01	Mariel Tulabut
+13	04:10 PM	05:05 PM	9	Sapphire 1	Filipino	Dama 1	Annabelle Alburo	Filipino	Dama 1	Annabelle Alburo	Filipino	Dama 1	Annabelle Alburo	Math	Dama 1	Richelle Yabut	Filipino	Dama 1	Annabelle Alburo
+14	05:05 PM	06:00 PM	9	Sapphire 1	Aralin	Dama 1	Mariel Tulabut	Aralin	Dama 1	Mariel Tulabut	Values	Dama 1	Marites de Leon	Values	Dama 1	Marites de Leon	Aralin	Dama 1	Mariel Tulabut
 1	06:30 AM	07:25 AM	9	Sapphire 2															
 2	07:25 AM	08:20 AM	9	Sapphire 2															
 3	08:20 AM	09:15 AM	9	Sapphire 2															
@@ -2280,15 +2280,15 @@
 12	03:55 PM	04:10 PM	9	E. Murros															
 13	04:10 PM	05:05 PM	9	E. Murros															
 14	05:05 PM	06:00 PM	9	E. Murros															
-1	06:30 AM	07:25 AM	9	M. Del Rosario				Aralin	Dama 07	Francia Reyes	Aralin	Dama 07	Francia Reyes						
-2	07:25 AM	08:20 AM	9	M. Del Rosario	Aralin	Dama 07	Francia Reyes	Mapeh	Dama 07	Mary Antonnette Liscano	Mapeh	Dama 07	Mary Antonnette Liscano	Mapeh	Dama 07	Mary Antonnette Liscano	Mapeh	Dama 07	Mary Antonnette Liscano
-3	08:20 AM	09:15 AM	9	M. Del Rosario				Filipino	Dama 07	Rose Esparas	Filipino	Dama 07	Rose Esparas	Filipino	Dama 07	Rose Esparas	Filipino	Dama 07	Rose Esparas
-4	09:15 AM	10:10 AM	9	M. Del Rosario	Science	Dama 07	Arnel Gomez	Science	Dama 07	Arnel Gomez				Science	Dama 07	Arnel Gomez	Science	Dama 07	Arnel Gomez
+1	06:30 AM	07:25 AM	9	M. Del Rosario				Aralin	Dama 7	Francia Reyes	Aralin	Dama 7	Francia Reyes						
+2	07:25 AM	08:20 AM	9	M. Del Rosario	Aralin	Dama 7	Francia Reyes	Mapeh	Dama 7	Mary Antonnette Liscano	Mapeh	Dama 7	Mary Antonnette Liscano	Mapeh	Dama 7	Mary Antonnette Liscano	Mapeh	Dama 7	Mary Antonnette Liscano
+3	08:20 AM	09:15 AM	9	M. Del Rosario				Filipino	Dama 7	Rose Esparas	Filipino	Dama 7	Rose Esparas	Filipino	Dama 7	Rose Esparas	Filipino	Dama 7	Rose Esparas
+4	09:15 AM	10:10 AM	9	M. Del Rosario	Science	Dama 7	Arnel Gomez	Science	Dama 7	Arnel Gomez				Science	Dama 7	Arnel Gomez	Science	Dama 7	Arnel Gomez
 5	10:10 AM	10:25 AM	9	M. Del Rosario															
-6	10:25 AM	11:20 AM	9	M. Del Rosario	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina	English	Dama 07	Maureen Medina			
-7	11:20 AM	12:15 PM	9	M. Del Rosario	Math	Dama 07	Cherill Cunanan	Math	Dama 07	Cherill Cunanan	Math	Dama 07	Cherill Cunanan	Values	Dama 07	Doreen Dayrit	Values	Dama 07	Doreen Dayrit
+6	10:25 AM	11:20 AM	9	M. Del Rosario	English	Dama 7	Maureen Medina	English	Dama 7	Maureen Medina	English	Dama 7	Maureen Medina	English	Dama 7	Maureen Medina			
+7	11:20 AM	12:15 PM	9	M. Del Rosario	Math	Dama 7	Cherill Cunanan	Math	Dama 7	Cherill Cunanan	Math	Dama 7	Cherill Cunanan	Values	Dama 7	Doreen Dayrit	Values	Dama 7	Doreen Dayrit
 8	12:15 PM	01:10 PM	9	M. Del Rosario	TLE			TLE			TLE			TLE			TLE		
-9	01:10 PM	02:05 PM	9	M. Del Rosario				@empty			@empty			@empty			Math	Dama 07	Cherill Cunanan
+9	01:10 PM	02:05 PM	9	M. Del Rosario				@empty			@empty			@empty			Math	Dama 7	Cherill Cunanan
 10	02:05 PM	03:00 PM	9	M. Del Rosario	Specialization			Specialization			Specialization			Specialization			Specialization		
 11	03:00 PM	03:55 PM	9	M. Del Rosario															
 12	03:55 PM	04:10 PM	9	M. Del Rosario															
