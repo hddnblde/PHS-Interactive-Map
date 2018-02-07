@@ -11,15 +11,15 @@ namespace Menus
 		[SerializeField]
 		private ClassScheduleMenu classMenu = null;
 
-		// [SerializeField]
-		// private BuildingMenu buildingMenu = null;
+		[SerializeField]
+		private BuildingMenu buildingMenu = null;
 
 		[Header("Buttons")]
 		[SerializeField]
 		private Button classScheduleButton = null;
 
-		// [SerializeField]
-		// private Button buildingButton = null;
+		[SerializeField]
+		private Button buildingButton = null;
 
 		private void Awake()
 		{
@@ -31,8 +31,8 @@ namespace Menus
 			if(classMenu != null && classScheduleButton != null)
 				classScheduleButton.onClick.AddListener(classMenu.Open);
 
-			// if(buildingMenu != null && buildingButton != null)
-			// 	buildingButton.onClick.AddListener(buildingMenu.Open);
+			if(buildingMenu != null && buildingButton != null)
+				buildingButton.onClick.AddListener(buildingMenu.Open);
 		}
 	}
 }

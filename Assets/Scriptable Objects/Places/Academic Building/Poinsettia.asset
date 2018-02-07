@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 056f5281751a37844afb2fa31b9e1815, type: 2}
   m_mapName: Poinsettia

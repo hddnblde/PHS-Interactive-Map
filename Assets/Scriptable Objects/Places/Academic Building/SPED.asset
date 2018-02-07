@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Special Education
+  m_Name: SPED
   m_EditorClassIdentifier: 
   m_displayedName: SPED
   m_displayPosition: {x: 16.565859, y: 0, z: 224.00389}
@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 94b5ccb38e945dc409374d096204672c, type: 2}
   m_mapName: SPED

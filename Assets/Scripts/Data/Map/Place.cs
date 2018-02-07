@@ -15,8 +15,8 @@ namespace Map
 		[SerializeField]
 		private Sprite m_thumbnail = null;
 
-		[SerializeField, Multiline]
-		private string m_description;
+		[SerializeField]
+		private PlaceTrivia m_trivia = null;
 
 		[SerializeField, Multiline]
 		private string m_mapName;
@@ -26,9 +26,9 @@ namespace Map
 			get { return m_thumbnail; }
 		}
 
-		public string description
+		public PlaceTrivia trivia
 		{
-			get { return m_description; }
+			get { return m_trivia; }
 		}
 
 		public string mapName
@@ -53,7 +53,7 @@ namespace Map
 		useDisplayPositionProperty = null,
 		tagsProperty = null,
 		thumbnailProperty = null,
-		descriptionProperty = null;
+		triviaProperty = null;
 		#endregion
 
 
@@ -130,7 +130,7 @@ namespace Map
 			positionProperty = serializedObject.FindProperty("m_position");
 			tagsProperty = serializedObject.FindProperty("m_tags");
 			thumbnailProperty = serializedObject.FindProperty("m_thumbnail");
-			descriptionProperty = serializedObject.FindProperty("m_description");
+			triviaProperty = serializedObject.FindProperty("m_trivia");
 		}
 
 		private void DrawCustomInspector()
@@ -157,7 +157,7 @@ namespace Map
 
 			EditorGUILayout.LabelField("Place", EditorStyles.boldLabel);
 			EditorGUILayout.PropertyField(thumbnailProperty);
-			EditorGUILayout.PropertyField(descriptionProperty, true);
+			EditorGUILayout.PropertyField(triviaProperty, true);
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);

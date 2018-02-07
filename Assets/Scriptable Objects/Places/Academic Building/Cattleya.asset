@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 0
   m_tags: 
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 29fafd7ba18dc3141bea856ad5e82b8a, type: 2}
   m_mapName: Cattleya

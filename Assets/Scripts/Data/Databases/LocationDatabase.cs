@@ -79,7 +79,7 @@ namespace Databases
 
 
 		#region MonoBehaviour Implementation
-		private void OnEnable()
+		private void Awake()
 		{
 			InitializeSingleton();
 		}
@@ -242,7 +242,11 @@ namespace Databases
 
 				for(int j = 0; j < pointOfInterest.placeCollectionCount; j++)
 				{
-					PlaceCollection placeCollection = pointOfInterest.GetPlaceCollection(i);
+					PlaceCollection placeCollection = pointOfInterest.GetPlaceCollection(j);
+					
+					if(placeCollection == null)
+						continue;
+
 					Place place = placeCollection.GetPlace();
 
 					if(place != null)

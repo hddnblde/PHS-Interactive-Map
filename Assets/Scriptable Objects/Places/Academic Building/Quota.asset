@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 639b294135a386344ae21776e996e82e, type: 2}
   m_mapName: Quota

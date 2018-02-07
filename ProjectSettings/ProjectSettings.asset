@@ -11,8 +11,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: PHS-iMap
+  companyName: HddnBlde
+  productName: PHS On the Go
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -31,16 +31,14 @@ PlayerSettings:
     x: 0
     y: 0
     width: 1
-    height: 0.99978644
+    height: 1
   m_SplashScreenBackgroundPortraitUvs:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos:
-  - logo: {fileID: 21300004, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
-    duration: 2
+  m_SplashScreenLogos: []
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -539,7 +537,7 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psp2ScriptOptimizationLevel: 0
   psmSplashimage: {fileID: 0}
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 3fa6c2bbbbe1d5042905c1b3d85d633f,
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 9438c4fbdac1e5c47bbc9517b0d79df7,
     type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 

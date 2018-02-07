@@ -32,7 +32,7 @@ namespace Map
 
 		public int floor
 		{
-			get { return ((m_standaloneNumber || m_standaloneName) ? 0 : m_floor); }
+			get { return m_floor; }
 		}
 
 		public override string displayedName
@@ -246,6 +246,11 @@ namespace Map
 				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 0);
 				roomProperty.intValue = Mathf.Clamp(EditorGUILayout.IntField("Room", roomProperty.intValue), 1, 99);
 			}
+			else
+				floorProperty.intValue = Mathf.Max(EditorGUILayout.IntField("Floor", floorProperty.intValue), 0);
+
+			if(floorProperty.intValue > 0 && GUILayout.Button("Ignore Floor Level (Sets Floor to 0)"))
+				floorProperty.intValue = 0;
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);

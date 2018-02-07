@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: cadena de amor;
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: b31e941f90ddb2d4bbab52c49c655340, type: 2}
   m_mapName: PAGCOR

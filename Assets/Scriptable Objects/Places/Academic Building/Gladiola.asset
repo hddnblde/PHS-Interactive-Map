@@ -17,5 +17,5 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: ea84b49219b8e9b4593e4e251d126058, type: 2}
   m_mapName: Gladiola
