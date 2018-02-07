@@ -1447,9 +1447,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 1280}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2142,7 +2142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000069930684}
+  m_AnchoredPosition: {x: 0, y: 0.000012604087}
   m_SizeDelta: {x: -8, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &419626837
@@ -7887,7 +7887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 31.50002, y: 0}
+  m_AnchoredPosition: {x: 31.50002, y: 0.000015258789}
   m_SizeDelta: {x: -64.99996, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1458836471
@@ -10609,7 +10609,11 @@ MonoBehaviour:
       high office\r\nvalues office\r\nmolave\r\nmusic room\r\nmusic room 1\r\nmusic
       room 2\r\nmusic room 3\r\nnarra\r\norchids\r\norchids 101\r\norchids 102\r\norchids
       103\r\norchids 104\r\norchids 201\r\norchids 202\r\norchids 203\r\norchids 204\r\norchids
-      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npoinsettia\r\npoinsettia
+      301\r\norchids 302\r\norchids 303\r\norchids 304\r\npagcor\r\npagcor 101\r\npagcor
+      102\r\npagcor 103\r\npagcor 104\r\npagcor 105\r\npagcor 106\r\npagcor 201\r\npagcor
+      202\r\npagcor 203\r\npagcor 204\r\npagcor 205\r\npagcor 206\r\npagcor 301\r\npagcor
+      302\r\npagcor 303\r\npagcor 304\r\npagcor 305\r\npagcor 306\r\npagcor 401\r\npagcor
+      402\r\npagcor 403\r\npagcor 404\r\npagcor 405\r\npagcor 406\r\npoinsettia\r\npoinsettia
       1\r\npoinsettia 2\r\npoinsettia 3\r\npoinsettia 4\r\nptl\r\nquota\r\nrodriguez\r\nrodriguez
       1\r\nrodriguez 2\r\nrose\r\nenglish office\r\nrose 1\r\nrose 2\r\nrose 3\r\nrose
       4\r\nrose 5\r\nrose 6\r\nrose 7\r\nrose 8\r\nrose 9\r\nspeech laboratory\r\nsampaguita\r\nopen
@@ -10618,14 +10622,14 @@ MonoBehaviour:
       4\r\nsampaguita 5\r\nsampaguita 6\r\nsampaguita 7\r\nsampaguita 8\r\nsampaguita
       9\r\nsantan\r\nsantan 101\r\nsantan 102\r\nsantan 103\r\nsantan 104\r\nsantan
       201\r\nsantan 202\r\nsantan 203\r\nsantan 204\r\nsantan 301\r\nsantan 302\r\nsantan
-      303\r\nsantan 304\r\nsenior high\r\nsped\r\nsped 1\r\nsped 2\r\nsped 3\r\nsunflower\r\nsunflower
+      303\r\nsantan 304\r\nsped\r\nsped 1\r\nsped 2\r\nsped 3\r\nsunflower\r\nsunflower
       1\r\nsunflower 2\r\nsunflower 3\r\nwaling-waling\r\nwaling-waling 1\r\nwaling-waling
       2\r\nwhite angel\r\nphsfec office\r\nwhite angel 101\r\nwhite angel 102\r\nwhite
       angel 103\r\nwhite angel 104\r\nwhite angel 105\r\nwhite angel 106\r\nwhite
       angel 201\r\nwhite angel 202\r\nwhite angel 203\r\nwhite angel 204\r\nwhite
       angel 205\r\nwhite angel 206\r"
-    m_tags: 
-    cacheCount: 240
+    m_tags: cadena de amor;
+    cacheCount: 264
     places:
     - place: {fileID: 11400000, guid: f9e4585b7b6fbb245a2291f22d67dddb, type: 2}
       rooms: []
@@ -10818,6 +10822,32 @@ MonoBehaviour:
       - {fileID: 11400000, guid: a258e2fd57bc2a04680f6b460a8e05ce, type: 2}
       - {fileID: 11400000, guid: 8a1063989c18efa45a0145005d129697, type: 2}
       - {fileID: 11400000, guid: 56728959b671d764b9e94321170db504, type: 2}
+    - place: {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
+      rooms:
+      - {fileID: 11400000, guid: 05384623b68cbfd49b293504727d04ba, type: 2}
+      - {fileID: 11400000, guid: 742b90117914f1c43855b9164cb542f7, type: 2}
+      - {fileID: 11400000, guid: 0378286714831b94aa42784f0571d6f3, type: 2}
+      - {fileID: 11400000, guid: ed0dc0b7c0ff97847bbc86770a271e4f, type: 2}
+      - {fileID: 11400000, guid: ea3fa75cfd4d4e047ae4b555cd35a520, type: 2}
+      - {fileID: 11400000, guid: 28bf5db8fda0b7741a228573996d4b58, type: 2}
+      - {fileID: 11400000, guid: cf6bbe1124087264bb5514c7c2f1ad39, type: 2}
+      - {fileID: 11400000, guid: d4953103401ff7542bde50fa140da21e, type: 2}
+      - {fileID: 11400000, guid: a8c871945f5da654fa7baee69b80f243, type: 2}
+      - {fileID: 11400000, guid: 1024cfc9bba215b40aa48683a4440d11, type: 2}
+      - {fileID: 11400000, guid: 18d50d72b98a08c45ba73575adc90ae6, type: 2}
+      - {fileID: 11400000, guid: 2203c1edf48aeaf43977d8cc672cc85f, type: 2}
+      - {fileID: 11400000, guid: 80c4fd987ff566a40a3aa542f2818721, type: 2}
+      - {fileID: 11400000, guid: 2f6b7adf3819aa7479aad7f62bda28c1, type: 2}
+      - {fileID: 11400000, guid: ab5fa004c01580e4f941e438eea5819f, type: 2}
+      - {fileID: 11400000, guid: 90c0a2f3416a2684bbe9ba045ab2e31e, type: 2}
+      - {fileID: 11400000, guid: c52ad5b95ff62b044b3d06fbb4e8fa9f, type: 2}
+      - {fileID: 11400000, guid: 51ee5d4a648bbf04d8fccc7d1be2fcd8, type: 2}
+      - {fileID: 11400000, guid: 5de2e3f1afe1b9a47805c23b35912a0f, type: 2}
+      - {fileID: 11400000, guid: f3a2c0c0b4ac4eb4b938affab0d39e2f, type: 2}
+      - {fileID: 11400000, guid: 61b32565f6ab3bf40ae63a7cc2e47aef, type: 2}
+      - {fileID: 11400000, guid: 8c6335ab922f6dd4ea7ee6e3d202e1af, type: 2}
+      - {fileID: 11400000, guid: cdace51ec57c16c45b039db71d6b9100, type: 2}
+      - {fileID: 11400000, guid: 9773810d6221b6149a7382eebaa5cbf4, type: 2}
     - place: {fileID: 11400000, guid: 2b8dc06754f56e842ba5443c4048ee17, type: 2}
       rooms:
       - {fileID: 11400000, guid: fa7a205bcc3a5b34186791babc1b3e55, type: 2}
@@ -10877,8 +10907,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
       - {fileID: 11400000, guid: 26000a85512bc294a9863429569b948e, type: 2}
       - {fileID: 11400000, guid: b3b4fcd205dfea54ebf052e19d16ede9, type: 2}
-    - place: {fileID: 11400000, guid: 0dab121cf4a3ccc4dadcd1dbaacbf570, type: 2}
-      rooms: []
     - place: {fileID: 11400000, guid: 32a4b9c20e650964f800afac2c6bc8e9, type: 2}
       rooms:
       - {fileID: 11400000, guid: 585e0f13cb6e1ed4bbf41b788f018cb3, type: 2}

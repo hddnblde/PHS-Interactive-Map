@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Name: Euphorbia 6
   m_EditorClassIdentifier: 
   m_displayedName: Euphorbia
-  m_displayPosition: {x: 100.226524, y: 0, z: 175.07991}
-  m_position: {x: 100.226524, y: 0, z: 175.07991}
+  m_displayPosition: {x: 100.22653, y: 0, z: 175.07991}
+  m_position: {x: 100.22653, y: 0, z: 175.07991}
   m_useDisplayPosition: 0
   m_tags: 
   m_standaloneName: 0
   m_standaloneNumber: 1
   m_floor: 2
   m_room: 6
+  m_inheritedPosition: {fileID: 11400000, guid: 497b4ec354db9b948bd24a87f1ee6448,
+    type: 2}
   m_mapName: 6

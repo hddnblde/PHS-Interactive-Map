@@ -20,4 +20,6 @@ MonoBehaviour:
   m_standaloneNumber: 0
   m_floor: 2
   m_room: 3
+  m_inheritedPosition: {fileID: 11400000, guid: 2cb64fc06c817a84bb825e36b3866425,
+    type: 2}
   m_mapName: 203

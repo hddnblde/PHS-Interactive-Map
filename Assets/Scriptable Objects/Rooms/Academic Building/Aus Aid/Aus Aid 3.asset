@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Aus Aid 3
   m_EditorClassIdentifier: 
   m_displayedName: Aus Aid
-  m_displayPosition: {x: 79.94347, y: 0, z: 184.27869}
+  m_displayPosition: {x: 79.94347, y: 0, z: 188.6853}
   m_position: {x: 79.94347, y: 0, z: 188.6853}
   m_useDisplayPosition: 0
   m_tags: 
@@ -20,4 +20,6 @@ MonoBehaviour:
   m_standaloneNumber: 1
   m_floor: 2
   m_room: 3
-  m_mapName: 
+  m_inheritedPosition: {fileID: 11400000, guid: a0f6dbd20f797ea45bdefa5fd96744a9,
+    type: 2}
+  m_mapName: 3

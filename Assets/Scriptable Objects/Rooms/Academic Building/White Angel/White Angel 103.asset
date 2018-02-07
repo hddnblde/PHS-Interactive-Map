@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Name: White Angel 103
   m_EditorClassIdentifier: 
   m_displayedName: White Angel
-  m_displayPosition: {x: -104.079834, y: 0, z: -138.09232}
-  m_position: {x: -99.6, y: 0, z: -138.09232}
+  m_displayPosition: {x: -103.65065, y: 0, z: -136.37561}
+  m_position: {x: -100.117256, y: 0, z: -136.41125}
   m_useDisplayPosition: 1
   m_tags: 
   m_standaloneName: 0
   m_standaloneNumber: 0
   m_floor: 1
   m_room: 3
+  m_inheritedPosition: {fileID: 0}
   m_mapName: 103

@@ -9,15 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Senior High
+  m_Name: PAGCOR
   m_EditorClassIdentifier: 
-  m_displayedName: Senior High
+  m_displayedName: PAGCOR
   m_displayPosition: {x: -75.268974, y: 0, z: -178.0617}
   m_position: {x: -57.7, y: 0, z: -180.15892}
   m_useDisplayPosition: 1
-  m_tags: 
+  m_tags: cadena de amor;
   m_thumbnail: {fileID: 0}
   m_description: 
-  m_mapName: 'Senior
-
-    High'
+  m_mapName: PAGCOR
