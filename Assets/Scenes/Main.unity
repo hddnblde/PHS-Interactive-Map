@@ -7406,9 +7406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_visible: 1
-  confirmButton: {fileID: 0}
-  cancelButton: {fileID: 0}
-  context: {fileID: 0}
+  backButton: {fileID: 0}
 --- !u!225 &1008708155
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ namespace ModestUI.Behaviour
 		[SerializeField]
 		private bool m_visible = true;
 
-		private CanvasGroup canvasGroup = null;
+		private CanvasGroup m_canvasGroup = null;
 		public delegate void Action();
 		public event Action OnShow;
 		public event Action OnHide;
@@ -19,28 +19,22 @@ namespace ModestUI.Behaviour
 
 
 		#region Property
-		protected bool visible
+		public bool visible
 		{
 			get { return m_visible; }
-			set
-			{
-				m_visible = value;
-				Show(m_visible);
-			}
 		}
 		#endregion
 
 
 		#region MonoBehaviour Implementation
-		private void Start()
+		protected virtual void Awake()
 		{
 			Initialize();
 		}
 
-		private void OnValidate()
+		protected virtual void OnValidate()
 		{
-			visible = m_visible;
-			Debug.Log("Validating");
+			SetVisible(m_visible);
 		}
 		#endregion
 
@@ -48,14 +42,21 @@ namespace ModestUI.Behaviour
 		#region Methods
 		private void Initialize()
 		{
-			canvasGroup = GetComponent<CanvasGroup>();
-			Show(m_visible);
-			Debug.Log("Initializing Panel Behaviour");
+			InitializeCanvasGroup();
+			SetVisible(m_visible);
 		}
 
-		private void Show(bool shown)
+		private void InitializeCanvasGroup()
 		{
-			if(shown)
+			CanvasGroup m_canvasGroup = GetComponent<CanvasGroup>();
+			
+			if(m_canvasGroup == null)
+				m_canvasGroup = gameObject.AddComponent<CanvasGroup>();
+		}
+
+		protected void SetVisible(bool value)
+		{
+			if(value)
 			{
 				if(OnShow != null)
 					OnShow();
@@ -66,11 +67,11 @@ namespace ModestUI.Behaviour
 					OnHide();
 			}
 
-			if(canvasGroup == null)
+			if(m_canvasGroup == null)
 				return;
 
-			canvasGroup.alpha = (shown ? 1f : 0f);
-			canvasGroup.blocksRaycasts = shown;
+			m_canvasGroup.alpha = (value ? 1f : 0f);
+			m_canvasGroup.blocksRaycasts = value;
 		}
 		#endregion
 	}
