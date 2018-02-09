@@ -157,8 +157,6 @@ namespace Map
 
 			GUI.color = Color.red;
 
-			bool hasInheritedPosition = inheritedPositionProperty.objectReferenceValue != null;
-
 			positionProperty.vector3Value = Handles.PositionHandle(GetInheritedPosition(), Quaternion.identity);
 
 			string positionLabel = (!useDisplayPositionProperty.boolValue ? "[" + room.displayedName + "]" : "[Position]") + (HasInheritedPosition() ? "\ninherited" : "");

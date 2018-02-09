@@ -6,7 +6,6 @@ using Map;
 using Navigation;
 using Databases;
 using Menus.MapElement;
-using Menus.New;
 
 namespace Menus
 {
@@ -22,8 +21,8 @@ namespace Menus
 		[SerializeField]
 		private Button floorButton = null;
 
-		[SerializeField]
-		private Button directionsButton = null;
+		// [SerializeField]
+		// private Button directionsButton = null;
 
 		[SerializeField]
 		private MapButton originMarkerButton = null;
