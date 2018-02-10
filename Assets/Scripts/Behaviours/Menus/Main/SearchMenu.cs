@@ -248,6 +248,7 @@ namespace Menus
 			foreach(MenuContent content in contents)
 			{
 				MenuContentLayout layout = GetContentLayout();
+				
 				if(layout == null)
 					break;
 

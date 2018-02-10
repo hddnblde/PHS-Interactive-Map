@@ -11,10 +11,15 @@ namespace ModestUI.Behaviour
 		[SerializeField]
 		private bool m_visible = true;
 
+		[SerializeField]
+		private float m_transitionDuration = 0.15f;
+
 		private CanvasGroup m_canvasGroup = null;
 		public delegate void Action();
 		public event Action OnShow;
 		public event Action OnHide;
+
+		private Coroutine transitionRoutine = null;
 		#endregion
 
 
@@ -22,6 +27,11 @@ namespace ModestUI.Behaviour
 		public bool visible
 		{
 			get { return m_visible; }
+		}
+
+		public float transitionDuration
+		{
+			get { return m_transitionDuration; }
 		}
 		#endregion
 
@@ -34,7 +44,7 @@ namespace ModestUI.Behaviour
 
 		protected virtual void OnValidate()
 		{
-			SetVisible(m_visible);
+			SetVisible(m_visible, true);
 		}
 		#endregion
 
@@ -43,12 +53,12 @@ namespace ModestUI.Behaviour
 		private void Initialize()
 		{
 			InitializeCanvasGroup();
-			SetVisible(m_visible);
+			SetVisible(m_visible, true);
 		}
 
 		private void InitializeCanvasGroup()
 		{
-			CanvasGroup m_canvasGroup = GetComponent<CanvasGroup>();
+			m_canvasGroup = GetComponent<CanvasGroup>();
 			
 			if(m_canvasGroup == null)
 				m_canvasGroup = gameObject.AddComponent<CanvasGroup>();
@@ -56,6 +66,13 @@ namespace ModestUI.Behaviour
 
 		protected void SetVisible(bool value)
 		{
+			SetVisible(value, false);
+		}
+
+		protected void SetVisible(bool value, bool immediately)
+		{
+			m_visible = value;
+			
 			if(value)
 			{
 				if(OnShow != null)
@@ -67,11 +84,43 @@ namespace ModestUI.Behaviour
 					OnHide();
 			}
 
-			if(m_canvasGroup == null)
-				return;
+			BeginTransition(value, immediately);
+		}
 
-			m_canvasGroup.alpha = (value ? 1f : 0f);
-			m_canvasGroup.blocksRaycasts = value;
+		private void BeginTransition(bool shown, bool immediately)
+		{
+			if(transitionRoutine != null)
+				StopCoroutine(transitionRoutine);
+
+			transitionRoutine = StartCoroutine(TransitionRoutine(shown, immediately));
+		}
+
+		private IEnumerator TransitionRoutine(bool shown, bool immediately)
+		{
+			if(m_canvasGroup == null)
+				yield break;
+
+			float a = (shown ? 0f : 1f);
+			float b = (shown ? 1f : 0f);
+
+			if(immediately)
+			{
+				m_canvasGroup.blocksRaycasts = shown;
+				m_canvasGroup.alpha = b;
+				yield break;
+			}
+
+			m_canvasGroup.blocksRaycasts = shown;
+
+			for(float current = m_transitionDuration; current > 0f; current -= Time.deltaTime)
+			{
+				float t = Mathf.InverseLerp(m_transitionDuration, 0f, current);
+				float alpha = Mathf.Lerp(a, b, t);
+				m_canvasGroup.alpha = alpha;
+				yield return null;
+			}
+
+			m_canvasGroup.alpha = b;
 		}
 		#endregion
 	}

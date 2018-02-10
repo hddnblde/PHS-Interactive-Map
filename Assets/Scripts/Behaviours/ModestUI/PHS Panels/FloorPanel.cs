@@ -6,24 +6,38 @@ using ModestUI.Panels;
 
 namespace Menus.PHS
 {
-	public class FloorPanel : SimplePanel
+	public class FloorPanel : SlidingPanel
 	{
 		#region Data Structure
 		[System.Serializable]
 		private class FloorSelectionButton
 		{
 			[SerializeField]
-			private Button button = null;
+			private int m_floor = 1;
 
 			[SerializeField]
-			private int floor = 1;
+			private Button button = null;			
+
+			[SerializeField]
+			private Graphic checkIcon = null;
 
 			public void AddListener(FloorSelect floorSelect)
 			{
 				if(button == null)
 					return;
 
-				button.onClick.AddListener(() => floorSelect(floor));
+				button.onClick.AddListener(() => floorSelect(m_floor));
+			}
+
+			public void SetToggle(bool value)
+			{
+				if(checkIcon != null)
+					checkIcon.enabled = value;
+			}
+
+			public int floor
+			{
+				get { return m_floor; }
 			}
 		}
 		#endregion
@@ -61,6 +75,14 @@ namespace Menus.PHS
 		{
 			if(OnFloorSelect != null)
 				OnFloorSelect(floor);
+
+			SetToggle(floor);
+		}
+
+		private void SetToggle(int floor)
+		{
+			foreach(FloorSelectionButton button in buttons)
+				button.SetToggle(button.floor == floor);
 		}
 		#endregion
 	}
