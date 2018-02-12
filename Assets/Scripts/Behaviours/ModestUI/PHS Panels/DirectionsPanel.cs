@@ -3,16 +3,78 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using ModestUI.Panels;
+using Map;
 
 namespace Menus.PHS
 {
 	public class DirectionsPanel : SimplePanel
 	{
+		#region Data Structure
+		[System.Serializable]
+		private class MarkerButton
+		{
+			[SerializeField]
+			private Button mainButton = null;
+
+			[SerializeField]
+			private Button clearButton = null;
+
+			[SerializeField]
+			private Text displayedText = null;
+
+			[SerializeField]
+			private string label;
+
+			public void AddListener(Action onClick, Action onClear)
+			{
+				if(mainButton != null)
+					mainButton.onClick.AddListener(() => onClick());
+
+				if(clearButton != null)
+					clearButton.onClick.AddListener(() => onClear());
+			}
+
+			public void Set(LocationMarker marker)
+			{
+				string displayedText = (marker == null ? "" : marker.displayedName);
+				SetDisplayedText(displayedText);
+			}
+
+			private void SetDisplayedText(string text)
+			{
+				if(displayedText == null)
+					return;
+
+				bool isEmpty = string.IsNullOrEmpty(text);
+
+				if(isEmpty)
+					text = "<i>@label</i>".Replace("@label", label);
+				
+				ShowClearButton(!isEmpty);
+				displayedText.text = text;
+			}
+
+			private void ShowClearButton(bool shown)
+			{
+				if(clearButton != null)
+					clearButton.gameObject.SetActive(shown);
+			}
+		}
+
+		private enum Context
+		{
+			SearchStartingPoint,
+			SearchDestination
+		}
+		#endregion
+
+
+		#region Serialized Fields
 		[SerializeField]
-		private Button startLocationButton = null;
+		private MarkerButton startLocationButton = null;
 
 		[SerializeField]
-		private Button destinationButton = null;
+		private MarkerButton destinationButton = null;
 
 		[SerializeField]
 		private SearchLocationPanel searchLocationPanel = null;
@@ -22,82 +84,75 @@ namespace Menus.PHS
 
 		[SerializeField]
 		private MapMarkerPanel mapMarkerPanel = null;
+		#endregion
 
-		private Context context = Context.SearchStartLocation;
 
-		private enum Context
-		{
-			SearchStartLocation,
-			SearchDestination
-		}
+		#region Unserialized Fields
+		private Context context = Context.SearchStartingPoint;
+		private LocationMarker startLocationMarker = null;
+		private LocationMarker destinationMarker = null;
+		#endregion
 
+
+		#region MonoBehaviour Implementation
 		protected override void Awake()
 		{
 			base.Awake();
 			Initialize();
 		}
-		
-		private void OnEnable()
-		{
-			RegisterEvents();
-		}
+		#endregion
 
-		private void OnDisable()
-		{
-			DeregisterEvents();
-		}
 
+		#region Initializers
 		private void Initialize()
 		{
-			if(startLocationButton != null)
-				startLocationButton.onClick.AddListener(() => OpenSearch(Context.SearchStartLocation));
-
-			if(destinationButton != null)
-				destinationButton.onClick.AddListener(() => OpenSearch(Context.SearchDestination));
-		}
-
-		private void RegisterEvents()
-		{
-			if(searchLocationPanel != null)
-			{
-				searchLocationPanel.OnOpen += OnSearchOpen;
-				searchLocationPanel.OnClose += OnSearchClose;
-			}
-		}
-
-		private void DeregisterEvents()
-		{
-			if(searchLocationPanel != null)
-			{
-				searchLocationPanel.OnOpen -= OnSearchOpen;
-				searchLocationPanel.OnClose -= OnSearchClose;
-			}
+			SetupMarkerButton(startLocationButton, Context.SearchStartingPoint);
+			SetupMarkerButton(destinationButton, Context.SearchDestination);
 
 			if(mapMarkerPanel != null)
 			{
-				// mapMarkerPanel.OnOpen -= ;
+				mapMarkerPanel.OnMark += SetMarkerByContext;
+				mapMarkerPanel.OnCancel += OnMapMarkerCancel;
 			}
 		}
 
+		private void SetupMarkerButton(MarkerButton markerButton, Context context)
+		{
+			if(markerButton == null)
+				return;
+
+			Action onClick = () => OpenSearch(context);
+			Action onClear = () => ClearMarker(context);
+			markerButton.AddListener(onClick, onClear);
+			markerButton.Set(null);
+		}
+		#endregion
+
+
+		#region Actions
 		private void OpenSearch(Context context)
 		{
+			if(searchLocationPanel == null)
+				return;
+			
 			this.context = context;
-			string displayedContext = "Search " + (context == Context.SearchStartLocation ? "Start Location" : "Destination");
-
-			if(searchLocationPanel != null)
-				searchLocationPanel.Open(displayedContext, SelectLocation);
+			string displayedContext = "Where " + (context == Context.SearchStartingPoint ? "from" : "to") + '?';
+			
+			searchLocationPanel.Open(displayedContext, OnSelectLocation, OnSearchClose);
+			OnSearchOpen();
 		}
 
-		private void SelectLocation(int index)
+		private void ClearMarker(Context context)
 		{
-			if(context == Context.SearchStartLocation)
-			{
+			SetMarker(context, null);
+		}
+		#endregion
 
-			}
-			else
-			{
 
-			}
+		#region Events
+		private void OnSelectLocation(Location location)
+		{
+			SetMarkerByContext(location);
 		}
 
 		private void OnMapMarkerOpen()
@@ -114,13 +169,7 @@ namespace Menus.PHS
 			ShowMapMarkerButton(true);
 		}
 
-		private void OnMapMarkerMark(LocationMarker marker)
-		{
-			Open();
-			//do stuff
-		}
-
-		private void OnMapMarkerCloseCancel()
+		private void OnMapMarkerCancel()
 		{
 			OpenSearch(context);
 		}
@@ -130,11 +179,49 @@ namespace Menus.PHS
 			Open();
 			ShowMapMarkerButton(false);
 		}
+		#endregion
 
+
+		#region Helpers
 		private void ShowMapMarkerButton(bool shown)
 		{
 			if(mapMarkerButton != null)
 				mapMarkerButton.gameObject.SetActive(shown);
 		}
+
+		private void SetMarkerByContext(Location location)
+		{
+			SetMarkerByContext(new LocationMarker(location));
+		}
+
+		private void SetMarkerByContext(LocationMarker locationMarker)
+		{
+			SetMarker(context, locationMarker);
+		}
+
+		private void SetMarker(Context context, LocationMarker marker)
+		{
+			if(context == Context.SearchStartingPoint)
+			{
+				startLocationButton.Set(marker);
+				startLocationMarker = marker;
+			}
+			else
+			{
+				destinationButton.Set(marker);
+				destinationMarker = marker;
+			}
+
+			Navigate();
+		}
+
+		private void Navigate()
+		{
+			Navigation.NavigationSystem.Clear();
+
+			if(startLocationMarker != null && destinationMarker != null)
+				Navigation.NavigationSystem.Navigate(startLocationMarker.position, destinationMarker.position);
+		}
+		#endregion		
 	}
 }

@@ -1216,9 +1216,9 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405355524}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &405355530
 MonoBehaviour:
@@ -1231,13 +1231,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b79ee693131244ca009af735ca6145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_visible: 1
+  m_visible: 0
   m_transitionDuration: 0.15
   openButton: {fileID: 1669024958}
   closeButton: {fileID: 1647932462}
-  startLocationButton: {fileID: 1850049405}
-  destinationButton: {fileID: 386177726}
+  startLocationButton:
+    mainButton: {fileID: 1850049405}
+    clearButton: {fileID: 883602542}
+    displayedText: {fileID: 671437625}
+    label: Where from?
+  destinationButton:
+    mainButton: {fileID: 386177726}
+    clearButton: {fileID: 1851438638}
+    displayedText: {fileID: 1814669156}
+    label: Where to?
   searchLocationPanel: {fileID: 1708393415}
+  mapMarkerButton: {fileID: 0}
+  mapMarkerPanel: {fileID: 0}
 --- !u!1 &422644692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,7 +2697,7 @@ GameObject:
   - component: {fileID: 671437626}
   - component: {fileID: 671437625}
   m_Layer: 5
-  m_Name: Placeholder
+  m_Name: Displayed Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2739,11 +2749,11 @@ MonoBehaviour:
     m_MaxSize: 64
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start Location?
+  m_Text: Start Location
 --- !u!222 &671437626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9580,7 +9590,7 @@ GameObject:
   - component: {fileID: 1814669157}
   - component: {fileID: 1814669156}
   m_Layer: 5
-  m_Name: Placeholder
+  m_Name: Displayed Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9632,11 +9642,11 @@ MonoBehaviour:
     m_MaxSize: 64
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Destination?
+  m_Text: Destination
 --- !u!222 &1814669157
 CanvasRenderer:
   m_ObjectHideFlags: 0
