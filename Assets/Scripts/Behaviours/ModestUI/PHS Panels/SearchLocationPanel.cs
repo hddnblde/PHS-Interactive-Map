@@ -13,8 +13,8 @@ namespace Menus.PHS
 	{
 		#region Serialized Fields
 		[Header("References")]
-		// [SerializeField]
-		// private BuildingInfoPanel infoPanel = null;
+		[SerializeField]
+		private LocationDetailPanel locationDetailPanel = null;
 
 		[SerializeField]
 		private Text displayedContext = null;
@@ -27,9 +27,6 @@ namespace Menus.PHS
 
 		[SerializeField]
 		private Button clearButton = null;
-
-		[SerializeField]
-		private Button buildingInfoButton = null;
 
 		[SerializeField]
 		private Graphic searchIcon = null;
@@ -45,7 +42,6 @@ namespace Menus.PHS
 
 		#region Unserialized Fields
 		private bool focusOnSelectedLocation = true;
-		private Location selectedLocation = null;
 		private const string DefaultContext = "Where to?";
 		public delegate void LocationSelect(Location location);
 		private List<MenuContentLayout> contentLayoutList = new List<MenuContentLayout>();
@@ -82,9 +78,6 @@ namespace Menus.PHS
 
 			if(clearButton != null)
 				clearButton.onClick.AddListener(OnClearButtonClicked);
-
-			if(buildingInfoButton != null)
-				buildingInfoButton.onClick.AddListener(OnBuildingInfoButtonClicked);
 		}
 
 		private void RegisterEvent()
@@ -145,15 +138,6 @@ namespace Menus.PHS
 				textField.text = null;
 		}
 
-		private void OnBuildingInfoButtonClicked()
-		{
-			if(selectedLocation == null)
-				return;
-
-			// buildingInfoPanel.Open(selectedLocation);
-			Close();
-		}
-
 		private void OnTextEdit(string text)
 		{
 			LocationDatabase.Search(text);
@@ -172,15 +156,15 @@ namespace Menus.PHS
 			if(!visible)
 				return;
 			
-			selectedLocation = LocationDatabase.GetLocationFromSearch(index);
+			Location location = LocationDatabase.GetLocationFromSearch(index);
 
 			if(LocationSelectCallback != null)
-				LocationSelectCallback(selectedLocation);
+				LocationSelectCallback(location);
 
 			LocationSelectCallback = null;
 
 			if(focusOnSelectedLocation)
-				FocusOnSelectedLocation();
+				FocusOnSelectedLocation(location);
 
 			Close();			
 		}
@@ -207,7 +191,6 @@ namespace Menus.PHS
 			LocationSelectCallback = locationSelectCallback;
 			CloseCallback = closeCallback;
 			this.focusOnSelectedLocation = focusOnSelectedLocation;
-			UnfocusOnSelectedLocation();
 			return true;
 		}
 
@@ -275,17 +258,12 @@ namespace Menus.PHS
 				displayedContext.text = context;
 		}
 
-		private void FocusOnSelectedLocation()
+		private void FocusOnSelectedLocation(Location location)
 		{
-			if(selectedLocation == null)
+			if(location == null || locationDetailPanel == null)
 				return;
 
-			NavigationCamera.FocusTo(selectedLocation.position);
-		}
-
-		private void UnfocusOnSelectedLocation()
-		{
-
+			locationDetailPanel.Open(location);
 		}
 		#endregion
 	}

@@ -63,8 +63,8 @@ namespace Menus.PHS
 
 		private enum Context
 		{
-			SearchStartingPoint,
-			SearchDestination
+			StartLocation,
+			Destination
 		}
 		#endregion
 
@@ -88,7 +88,7 @@ namespace Menus.PHS
 
 
 		#region Unserialized Fields
-		private Context context = Context.SearchStartingPoint;
+		private Context context = Context.StartLocation;
 		private LocationMarker startLocationMarker = null;
 		private LocationMarker destinationMarker = null;
 		#endregion
@@ -106,8 +106,8 @@ namespace Menus.PHS
 		#region Initializers
 		private void Initialize()
 		{
-			SetupMarkerButton(startLocationButton, Context.SearchStartingPoint);
-			SetupMarkerButton(destinationButton, Context.SearchDestination);
+			SetupMarkerButton(startLocationButton, Context.StartLocation);
+			SetupMarkerButton(destinationButton, Context.Destination);
 
 			if(mapMarkerPanel != null)
 			{
@@ -130,15 +130,33 @@ namespace Menus.PHS
 
 
 		#region Actions
+		public void SetStartLocation(Location location)
+		{
+			if(destinationMarker != null && destinationMarker.displayedName == location.displayedName)
+				ClearMarker(Context.Destination);
+
+			SetMarker(Context.StartLocation, new LocationMarker(location));
+			Open();
+		}
+
+		public void SetDestination(Location location)
+		{
+			if(startLocationMarker != null && startLocationMarker.displayedName == location.displayedName)
+				ClearMarker(Context.StartLocation);
+			
+			SetMarker(Context.Destination, new LocationMarker(location));
+			Open();
+		}
+
 		private void OpenSearch(Context context)
 		{
 			if(searchLocationPanel == null)
 				return;
 			
 			this.context = context;
-			string displayedContext = "Where " + (context == Context.SearchStartingPoint ? "from" : "to") + '?';
+			string displayedContext = "Where " + (context == Context.StartLocation ? "from" : "to") + '?';
 			
-			searchLocationPanel.Open(displayedContext, OnSelectLocation, OnSearchClose);
+			searchLocationPanel.Open(displayedContext, OnSelectLocation, OnSearchClose, false);
 			OnSearchOpen();
 		}
 
@@ -191,7 +209,7 @@ namespace Menus.PHS
 
 		private void SetMarkerByContext(Location location)
 		{
-			SetMarkerByContext(new LocationMarker(location));
+			SetMarker(context, new LocationMarker(location));
 		}
 
 		private void SetMarkerByContext(LocationMarker locationMarker)
@@ -201,7 +219,7 @@ namespace Menus.PHS
 
 		private void SetMarker(Context context, LocationMarker marker)
 		{
-			if(context == Context.SearchStartingPoint)
+			if(context == Context.StartLocation)
 			{
 				startLocationButton.Set(marker);
 				startLocationMarker = marker;

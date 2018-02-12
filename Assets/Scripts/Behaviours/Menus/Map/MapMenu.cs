@@ -65,8 +65,8 @@ namespace Menus
 			if(chooseOnMapButton != null)
 				chooseOnMapButton.onClick.AddListener(MarkLocation);
 
-			if(floorButton != null)
-				floorButton.onClick.AddListener(FloorMenu.Open);
+			// if(floorButton != null)
+			// 	floorButton.onClick.AddListener(FloorMenu.Open);
 
 			LocationDatabase.OnResult += OnResult;
 			

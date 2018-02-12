@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Navigation;
+using Menus.PHS;
 
 namespace Menus
 {
@@ -35,13 +36,13 @@ namespace Menus
 		private void OnEnable()
 		{
 			NavigationCamera.OnViewAdjust += OnViewAdjust;
-			FloorMenu.OnFloorSelect += OnFloorSelect;
+			FloorPanel.OnFloorSelect += OnFloorSelect;
 		}
 
 		private void OnDisable()
 		{
 			NavigationCamera.OnViewAdjust -= OnViewAdjust;
-			FloorMenu.OnFloorSelect -= OnFloorSelect;
+			FloorPanel.OnFloorSelect -= OnFloorSelect;
 		}
 
 		private void OnFloorSelect(int index)

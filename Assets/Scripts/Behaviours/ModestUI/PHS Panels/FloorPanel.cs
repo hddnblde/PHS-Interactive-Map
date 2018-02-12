@@ -51,7 +51,7 @@ namespace Menus.PHS
 
 		#region Unserialized Fields
 		public delegate void FloorSelect(int floor);
-		public event FloorSelect OnFloorSelect;
+		public static event FloorSelect OnFloorSelect;
 		#endregion
 
 

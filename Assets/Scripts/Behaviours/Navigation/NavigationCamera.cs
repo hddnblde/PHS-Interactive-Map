@@ -14,7 +14,7 @@ namespace Navigation
 		#region Static Implementation
 		private static Camera navigationCamera = null;
 		private static LayerMask groundLayer;
-		private delegate void FocusAction(Vector3 position);
+		private delegate void FocusAction(Vector3 position, float zoom);
 		private delegate void FrameAction(Bounds frame);
 		private static event FocusAction OnFocus;
 		private static event FrameAction OnFrame;
@@ -22,10 +22,10 @@ namespace Navigation
 		/// <summary>
 		/// Focuses the navigation camera to a specified position on the map.
 		/// </summary>
-		public static void FocusTo(Vector3 position)
+		public static void FocusTo(Vector3 position, float zoom = ZoomDefault)
 		{
 			if(OnFocus != null)
-				OnFocus(position);
+				OnFocus(position, zoom);
 		}
 
 		public static void FrameTo(Bounds frame)
