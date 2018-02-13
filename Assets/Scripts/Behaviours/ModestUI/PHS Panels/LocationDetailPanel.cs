@@ -15,8 +15,8 @@ namespace Menus.PHS
 		[SerializeField]
 		private DirectionsPanel directionsPanel = null;
 
-		// [SerializeField]
-		// private BuildingInformationPanel buildingInformationPanel = null;
+		[SerializeField]
+		private BuildingInformationPanel buildingInformationPanel = null;
 
 		[Header("UI Elements")]
 		[SerializeField]
@@ -110,7 +110,6 @@ namespace Menus.PHS
 			{
 				float zoom = (selectedLocationIsBuilding ? 0.5f : 0.75f);
 				NavigationCamera.FocusTo(selectedLocation.position, zoom);
-				// NavigationCamera.zoom
 			}
 		}
 
@@ -119,7 +118,7 @@ namespace Menus.PHS
 			if(!selectedLocationIsBuilding)
 				return;
 
-			// buildingInformationPanel.Open(selectedLocation as Place);
+			buildingInformationPanel.Open(selectedLocation as Place);
 		}
 
 		private void SetDisplayedTextWithSelectedLocation()

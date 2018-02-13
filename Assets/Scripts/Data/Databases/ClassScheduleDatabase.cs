@@ -167,7 +167,6 @@ namespace Databases
 		#region Functions
 		public static string[] GetGradeItems()
 		{
-			Debug.Log("Getting grades");
 			if(instance == null)
 				return null;
 			else
@@ -176,7 +175,6 @@ namespace Databases
 
 		public static string[] GetSectionItems(Grade grade)
 		{
-			Debug.Log("Getting sections");
 			if(instance == null)
 				return null;
 			else
@@ -185,7 +183,6 @@ namespace Databases
 
 		public static string[] GetScheduleItems(Grade grade, int section)
 		{
-			Debug.Log("Getting schedules");
 			if(instance == null)
 				return null;
 			else
@@ -194,7 +191,6 @@ namespace Databases
 
 		public static Schedule GetSchedule(Grade grade, int section, int index)
 		{
-			Debug.Log(instance != null);
 			if(instance == null)
 				return null;
 			else
@@ -466,7 +462,6 @@ namespace Databases
 			sectionName = sectionName.Replace("\\", "");
 			Section section;
 			List<Schedule> schedules;
-			Debug.Log(sectionName);
 			GetSchedules(sectionName, out section, out schedules);
 			classScheduleDatabase.AddSchedule(grade, section, schedules);
 			serializedObject.ApplyModifiedProperties();

@@ -20,6 +20,12 @@ namespace ModestUI.Behaviour
 		public event Action OnHide;
 
 		private Coroutine transitionRoutine = null;
+
+		private static int visiblePanels = 0;
+		public static int VisiblePanels
+		{
+			get { return visiblePanels; }
+		}
 		#endregion
 
 
@@ -40,6 +46,7 @@ namespace ModestUI.Behaviour
 		protected virtual void Awake()
 		{
 			Initialize();
+			visiblePanels = 0;
 		}
 
 		protected virtual void OnValidate()
@@ -72,6 +79,7 @@ namespace ModestUI.Behaviour
 		protected void SetVisible(bool value, bool immediately)
 		{
 			m_visible = value;
+			visiblePanels += (value ? 1 : -1);
 			
 			if(value)
 			{

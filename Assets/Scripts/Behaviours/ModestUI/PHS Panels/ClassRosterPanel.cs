@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ModestUI.Panels;
 using Databases;
+using Schedules;
 using PampangaHighSchool.Students;
 
-namespace Menus
+namespace Menus.PHS
 {
-	[RequireComponent(typeof(CanvasGroup))]
-	public class ClassScheduleMenu : MonoBehaviour
+	public class ClassRosterPanel : SimplePanel
 	{
 		#region Serialized Fields
+		[Header("Reference")]
+		[SerializeField]
+		private SchedulePanel schedulePanel = null;
+
+		[Header("UI Elements")]
 		[SerializeField]
 		private GameObject itemPrefab = null;
 
@@ -18,14 +24,11 @@ namespace Menus
 		private RectTransform itemContainer = null;
 
 		[SerializeField]
-		private Button backButton = null;
-
-		[SerializeField]
 		private Text context = null;
 		#endregion
 
 
-		#region Hidden Fields
+		#region Unserialized Fields
 		private enum SelectionDepth
 		{
 			Grades = 0,
@@ -39,33 +42,19 @@ namespace Menus
 		private int selectedSection = -1;
 		private int selectedSectionIndex = -1;
 		private const int ItemPoolCount = 20;
-		private CanvasGroup canvasGroup = null;
 		#endregion
 
 
 		#region MonoBehaviour Implementation
-		private void Awake()
+		protected override void Awake()
 		{
-			Initialize();
+			base.Awake();
 			CreateItemPool();
-		}
-
-		private void Start()
-		{
-			Show(false);
 		}
 		#endregion
 
 
 		#region Initializers
-		private void Initialize()
-		{
-			if(backButton != null)
-				backButton.onClick.AddListener(MoveOut);
-
-			canvasGroup = GetComponent<CanvasGroup>();
-		}
-
 		private void CreateItemPool()
 		{
 			if(itemPrefab == null)
@@ -86,23 +75,23 @@ namespace Menus
 
 
 		#region Actions
-		public void Open()
+		public override bool Open()
 		{
+			if(!base.Open())
+				return false;
+
 			ShowItems();
-			Show(true);
+			return true;
 		}
 
-		public void Close()
+		protected override void CloseButtonClicked()
 		{
-			Show(false);
+			MoveOut();
 		}
+		#endregion
 
-		private void ClearAll()
-		{
-			foreach(Transform item in itemContainer)
-				item.gameObject.SetActive(false);
-		}
 
+		#region Methods
 		private void ShowItems()
 		{
 			string[] items = GetItems();
@@ -120,15 +109,23 @@ namespace Menus
 			{
 				if(selectedSectionIndex != -1)
 				{
-					ScheduleMenu.Open(ClassScheduleDatabase.GetSchedule(selectedGrade, selectedSection, selectedSectionIndex));
+					Schedule schedule = ClassScheduleDatabase.GetSchedule(selectedGrade, selectedSection, selectedSectionIndex);
+					schedulePanel.Open(schedule);
 					MoveSelection((lastItem ? -2 : -1));
 				}
 				return;
 			}
 
 			ClearAll();
+
 			for(int i = 0; i < items.Length; i++)
 				ShowItem(i, items[i]);
+		}
+
+		private void ClearAll()
+		{
+			foreach(Transform item in itemContainer)
+				item.gameObject.SetActive(false);
 		}
 
 		private void ShowItem(int index, string label)
@@ -147,19 +144,7 @@ namespace Menus
 
 			item.gameObject.SetActive(true);
 		}
-
-		private void Show(bool shown)
-		{
-			if(canvasGroup == null)
-				return;
-
-			canvasGroup.alpha = (shown ? 1f : 0f);
-			canvasGroup.blocksRaycasts = shown;
-		}
-		#endregion
-
-
-		#region Methods
+		
 		private void MoveIn(int selectedIndex)
 		{
 			switch(selectionDepth)

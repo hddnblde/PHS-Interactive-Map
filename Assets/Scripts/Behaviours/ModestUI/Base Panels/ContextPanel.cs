@@ -91,10 +91,7 @@ namespace ModestUI.Panels
 		public virtual bool Open(string context)
 		{
 			if(visible)
-			{
-				Debug.Log("Already open.");
 				return false;
-			}
 
 			SetContext(context);
 			SetVisible(true);
@@ -108,10 +105,7 @@ namespace ModestUI.Panels
 		public virtual bool Close()
 		{
 			if(!visible)
-			{
-				Debug.Log("Already closed.");
 				return false;
-			}
 
 			SetVisible(false);
 

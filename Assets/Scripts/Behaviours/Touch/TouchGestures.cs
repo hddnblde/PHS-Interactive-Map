@@ -44,6 +44,7 @@ namespace Gestures
 
 		private bool canPress = true;
 		private bool pressed = false;
+		private bool wasBlocked = false;
 		private float currentTouchTime = 0f;
 
 		private Coroutine dragInertia = null;
@@ -105,6 +106,12 @@ namespace Gestures
 		#region Main Activities
 		private void EvaluateTouches()
 		{
+			if(wasBlocked)
+			{
+				wasBlocked = false;
+				return;
+			}
+
 			if(OnEvaluate != null)
 				OnEvaluate(Input.touchCount, Time.deltaTime);
 		}
@@ -278,7 +285,10 @@ namespace Gestures
 			if(eventSystem == null)
 				return false;
 			else
-				return eventSystem.IsPointerOverGameObject(touchID);
+			{
+				wasBlocked |= eventSystem.IsPointerOverGameObject(touchID);
+				return wasBlocked;
+			}
 		}
 		#endregion
 	}

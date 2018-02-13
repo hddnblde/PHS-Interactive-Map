@@ -18,8 +18,8 @@ namespace Menus
 		[SerializeField]
 		private Button chooseOnMapButton = null;
 
-		[SerializeField]
-		private Button floorButton = null;
+		// [SerializeField]
+		// private Button floorButton = null;
 
 		// [SerializeField]
 		// private Button directionsButton = null;

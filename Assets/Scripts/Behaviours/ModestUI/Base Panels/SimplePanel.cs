@@ -10,6 +10,9 @@ namespace ModestUI.Panels
 	{
 		#region Serialized Field
 		[SerializeField]
+		private bool subscribeToBackButton = false;
+
+		[SerializeField]
 		private Button openButton = null;
 
 		[SerializeField]
@@ -36,22 +39,32 @@ namespace ModestUI.Panels
 		private void Initialize()
 		{
 			if(openButton != null)
-				openButton.onClick.AddListener(() => Open());
+				openButton.onClick.AddListener(OpenButtonClicked);
 				
 			if(closeButton != null)
-				closeButton.onClick.AddListener(() => Close());
+				closeButton.onClick.AddListener(CloseButtonClicked);
+
+			if(subscribeToBackButton)
+				MobileInput.OnBackButtonPressed += CloseButtonClicked;
 		}
 		#endregion
 
 
 		#region Actions
+		protected virtual void OpenButtonClicked()
+		{
+			Open();
+		}
+
+		protected virtual void CloseButtonClicked()
+		{
+			Close();
+		}
+
 		public virtual bool Open()
 		{
 			if(visible)
-			{
-				Debug.Log("Already open.");
 				return false;
-			}
 
 			SetVisible(true);
 
@@ -64,10 +77,7 @@ namespace ModestUI.Panels
 		public virtual bool Close()
 		{
 			if(!visible)
-			{
-				Debug.Log("Already closed.");
 				return false;
-			}
 
 			SetVisible(false);
 
@@ -76,6 +86,6 @@ namespace ModestUI.Panels
 
 			return true;
 		}
-		#endregion	
+		#endregion
 	}
 }
