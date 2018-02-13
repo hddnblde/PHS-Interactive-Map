@@ -42,6 +42,13 @@ namespace ModestUI.Behaviour
 
 
 		#region MonoBehaviour Implementation
+		protected override void OnEnable()
+		{
+			base.OnEnable();
+			TransitionGraphics(0f);
+			TransitionPressHighlight(1f);
+		}
+
 		#if UNITY_EDITOR
 		protected override void OnValidate()
 		{

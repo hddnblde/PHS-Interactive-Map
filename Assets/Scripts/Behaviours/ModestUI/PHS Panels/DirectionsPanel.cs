@@ -56,8 +56,11 @@ namespace Menus.PHS
 
 			private void ShowClearButton(bool shown)
 			{
-				if(clearButton != null)
-					clearButton.gameObject.SetActive(shown);
+				if(clearButton == null)
+					return;
+
+				clearButton.gameObject.SetActive(shown);
+				clearButton.enabled = shown;
 			}
 		}
 
