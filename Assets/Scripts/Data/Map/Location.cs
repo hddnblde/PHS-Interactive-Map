@@ -21,6 +21,9 @@ namespace Map
 		[SerializeField, Multiline]
 		private string m_tags;
 
+		[SerializeField]
+		private bool m_isHidden = false;
+
 		#region Properties
 		public virtual string displayedName
 		{
@@ -40,6 +43,11 @@ namespace Map
 		public string tags
 		{
 			get { return m_tags; }
+		}
+
+		public bool isHidden
+		{
+			get { return m_isHidden; }
 		}
 		#endregion
 	}

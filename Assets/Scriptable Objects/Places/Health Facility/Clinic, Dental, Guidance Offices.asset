@@ -9,13 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
-  m_Name: Industrial Arts
+  m_Name: Clinic, Dental, Guidance Offices
   m_EditorClassIdentifier: 
-  m_displayedName: Industrial Arts Area
-  m_displayPosition: {x: -108.44182, y: 0, z: 42.460445}
-  m_position: {x: -119.6, y: 0, z: -2.3146203}
+  m_displayedName: Clinic, Dental, Guidance Office
+  m_displayPosition: {x: -104.820404, y: 0, z: -175.1078}
+  m_position: {x: -104.688255, y: 0, z: -167.22047}
   m_useDisplayPosition: 1
-  m_tags: ia;
+  m_tags: 
+  m_isHidden: 1
   m_thumbnail: {fileID: 0}
-  m_description: 
-  m_mapName: Industrial Arts Area
+  m_trivia: {fileID: 0}
+  m_mapName: 'Clinic, Dental,
+
+    Guidance Office'

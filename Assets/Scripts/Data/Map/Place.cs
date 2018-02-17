@@ -53,7 +53,8 @@ namespace Map
 		useDisplayPositionProperty = null,
 		tagsProperty = null,
 		thumbnailProperty = null,
-		triviaProperty = null;
+		triviaProperty = null,
+		isHiddenProperty = null;
 		#endregion
 
 
@@ -131,6 +132,7 @@ namespace Map
 			tagsProperty = serializedObject.FindProperty("m_tags");
 			thumbnailProperty = serializedObject.FindProperty("m_thumbnail");
 			triviaProperty = serializedObject.FindProperty("m_trivia");
+			isHiddenProperty = serializedObject.FindProperty("m_isHidden");
 		}
 
 		private void DrawCustomInspector()
@@ -161,6 +163,9 @@ namespace Map
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);
+
+			EditorGUILayout.Space();
+			EditorGUILayout.PropertyField(isHiddenProperty);
 
 			if(EditorGUI.EndChangeCheck())
 				serializedObject.ApplyModifiedProperties();

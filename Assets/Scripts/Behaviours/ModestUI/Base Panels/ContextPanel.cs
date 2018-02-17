@@ -6,12 +6,9 @@ using ModestUI.Behaviour;
 
 namespace ModestUI.Panels
 {
-	public class ContextPanel : PanelBehaviour
+	public class ContextPanel : SimplePanel
 	{
 		#region Serialized Fields
-		[SerializeField]
-		private Button openButton = null;
-
 		[SerializeField]
 		private Button cancelButton = null;
 
@@ -24,7 +21,6 @@ namespace ModestUI.Panels
 
 
 		#region Unserialized Fields
-		public event Action OnOpen;
 		public event Action OnConfirm;
 		public event Action OnCancel;
 		#endregion
@@ -41,10 +37,7 @@ namespace ModestUI.Panels
 
 		#region Context Implementation
 		private void Initialize()
-		{
-			if(openButton != null)
-				openButton.onClick.AddListener(() => Open());
-				
+		{				
 			if(confirmButton != null)
 				confirmButton.onClick.AddListener(() => ConfirmResponse());
 
@@ -54,7 +47,7 @@ namespace ModestUI.Panels
 
 		protected virtual bool ConfirmResponse()
 		{
-			if(!Close())
+			if(!base.Close())
 				return false;
 
 			if(OnConfirm != null)
@@ -65,7 +58,7 @@ namespace ModestUI.Panels
 
 		protected virtual bool CancelResponse()
 		{
-			if(!Close())
+			if(!base.Close())
 				return false;
 			
 			if(OnCancel != null)
@@ -83,31 +76,17 @@ namespace ModestUI.Panels
 
 
 		#region Actions
-		public virtual bool Open()
+		public override bool Open()
 		{
 			return Open("");
 		}
 
-		public virtual bool Open(string context)
+		public bool Open(string context)
 		{
-			if(visible)
+			if(!base.Open())
 				return false;
 
 			SetContext(context);
-			SetVisible(true);
-
-			if(OnOpen != null)
-				OnOpen();
-
-			return true;
-		}
-
-		public virtual bool Close()
-		{
-			if(!visible)
-				return false;
-
-			SetVisible(false);
 
 			return true;
 		}

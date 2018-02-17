@@ -43,9 +43,6 @@ namespace ModestUI.Panels
 				
 			if(closeButton != null)
 				closeButton.onClick.AddListener(CloseButtonClicked);
-
-			if(subscribeToBackButton)
-				MobileInput.OnBackButtonPressed += CloseButtonClicked;
 		}
 		#endregion
 
@@ -71,6 +68,8 @@ namespace ModestUI.Panels
 			if(OnOpen != null)
 				OnOpen();
 
+			if(subscribeToBackButton)
+				MobileBackButton.AddListenerToStack(CloseButtonClicked);
 			return true;
 		}
 
@@ -84,6 +83,8 @@ namespace ModestUI.Panels
 			if(OnClose != null)
 				OnClose();
 
+			if(subscribeToBackButton)
+				MobileBackButton.RemoveListenerFromStack(CloseButtonClicked);
 			return true;
 		}
 		#endregion

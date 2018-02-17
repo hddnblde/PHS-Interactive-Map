@@ -83,7 +83,12 @@ namespace Map
 					PlaceCollection place = places[secondaryIndex];
 					for(int tertiaryIndex = 0; tertiaryIndex < place.count; tertiaryIndex++)
 					{
-						GetTargetAndKeyFromLocationByCategory(place.GetLocation(tertiaryIndex), category, keyword, ref target, ref key);;
+						Location location = place.GetLocation(tertiaryIndex);
+
+						if(location.isHidden)
+							continue;
+						
+						GetTargetAndKeyFromLocationByCategory(location, category, keyword, ref target, ref key);
 
 						if(target.Contains(key))
 						{
@@ -182,6 +187,10 @@ namespace Map
 				for(int i = 0; i < place.count; i++)
 				{
 					Location location = place.GetLocation(i);
+					
+					if(location.isHidden)
+						continue;
+					
 					string name = location.displayedName.ToLower();
 					nameBuilder.AppendLine(name);
 

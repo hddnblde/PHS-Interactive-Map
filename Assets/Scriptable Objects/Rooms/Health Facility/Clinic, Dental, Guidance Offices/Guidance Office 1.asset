@@ -8,16 +8,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
   m_Name: Guidance Office 1
   m_EditorClassIdentifier: 
   m_displayedName: Guidance Office 1
-  m_displayPosition: {x: -113.77232, y: 0, z: -175.67546}
-  m_position: {x: -113.77232, y: 0, z: -166.9}
+  m_displayPosition: {x: -114.327675, y: 0, z: -174.77591}
+  m_position: {x: -114.00619, y: 0, z: -167.90851}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_isHidden: 0
+  m_standaloneName: 1
+  m_standaloneNumber: 1
+  m_floor: 1
+  m_room: 1
+  m_inheritedPosition: {fileID: 0}
   m_mapName: 'Guidance
 
-    Office 1'
+    Office'

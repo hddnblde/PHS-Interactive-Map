@@ -191,6 +191,7 @@ namespace Menus.PHS
 			LocationSelectCallback = locationSelectCallback;
 			CloseCallback = closeCallback;
 			this.focusOnSelectedLocation = focusOnSelectedLocation;
+			FocusOnTextField();
 			return true;
 		}
 
@@ -224,6 +225,12 @@ namespace Menus.PHS
 
 				layout.Set(content.thumbnail, content.text);
 			}
+		}
+
+		private void FocusOnTextField()
+		{
+			if(textField != null)
+				textField.Select();
 		}
 
 		private void ClearContentLayout()

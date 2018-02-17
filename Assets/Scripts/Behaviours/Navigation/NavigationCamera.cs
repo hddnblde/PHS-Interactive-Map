@@ -300,6 +300,8 @@ namespace Navigation
 
 		private IEnumerator FocusFrameRoutine(Vector3 frame, float targetZoom)
 		{
+			TouchGestures.StopDrag();
+
 			Vector3 currentPosition = transform.position;
 			float currentZoom = view;
 			for(float current = TransitionDuration; current > 0f; current -= Time.deltaTime)

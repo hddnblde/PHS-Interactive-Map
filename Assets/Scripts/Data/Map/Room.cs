@@ -98,7 +98,8 @@ namespace Map
 		standaloneNumberProperty = null,
 		floorProperty = null,
 		roomProperty = null,
-		inheritedPositionProperty = null;
+		inheritedPositionProperty = null,
+		isHiddenProperty = null;
 		#endregion
 
 
@@ -136,6 +137,7 @@ namespace Map
 			floorProperty = serializedObject.FindProperty("m_floor");
 			roomProperty = serializedObject.FindProperty("m_room");
 			inheritedPositionProperty = serializedObject.FindProperty("m_inheritedPosition");
+			isHiddenProperty = serializedObject.FindProperty("m_isHidden");
 		}
 
 		private void OnSceneGUI(SceneView sceneView)
@@ -252,6 +254,9 @@ namespace Map
 
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(tagsProperty);
+
+			EditorGUILayout.Space();
+			EditorGUILayout.PropertyField(isHiddenProperty);
 
 			EditorGUILayout.HelpBox(room.displayedName, MessageType.Info);
 

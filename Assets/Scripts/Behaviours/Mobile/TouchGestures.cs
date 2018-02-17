@@ -12,6 +12,14 @@ namespace Gestures
 	[DisallowMultipleComponent]
 	public class TouchGestures : MonoBehaviour
 	{
+		private static TouchGestures instance = null;
+		
+		public static void StopDrag()
+		{
+			if(instance != null)
+				instance.StopDragInertia();
+		}
+
 		#region Serialized Fields
 		[Header("Single Touch Activities")]
 		[SerializeField]
@@ -73,11 +81,13 @@ namespace Gestures
 		#region MonoBehaviour Implementation
 		private void OnEnable()
 		{
+			InitializeSingleton();
 			RegisterEvents();
 		}
 
 		private void OnDisable()
 		{
+			UninitializeSingleton();
 			DeregisterEvents();
 		}
 
@@ -89,6 +99,23 @@ namespace Gestures
 
 
 		#region Methods
+		private void InitializeSingleton()
+		{
+			if(instance == this)
+			{
+				Destroy(gameObject);
+				return;
+			}
+
+			instance = this;
+		}
+
+		private void UninitializeSingleton()
+		{
+			if(instance == this)
+				instance = null;
+		}
+
 		private void RegisterEvents()
 		{
 			OnEvaluate += SingleTouchActivity;

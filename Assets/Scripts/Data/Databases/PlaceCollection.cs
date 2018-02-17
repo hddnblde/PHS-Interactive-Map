@@ -45,8 +45,6 @@ namespace Map
 
 
 		#region Functions
-		
-
 		public Location GetPlaceLocation()
 		{
 			return place as Location;
@@ -74,7 +72,6 @@ namespace Map
 				return room as Location;
 		}
 
-		// TODO: Remove
 		public Location GetLocation(int index)
 		{
 			if(index < 0)
@@ -88,6 +85,14 @@ namespace Map
 				else
 					return rooms[index - 1] as Location;
 			}
+		}
+
+		public bool HasRoom(Room room)
+		{
+			if(room == null)
+				return false;
+			else
+				return rooms.Contains(room);
 		}
 		#endregion
 	}

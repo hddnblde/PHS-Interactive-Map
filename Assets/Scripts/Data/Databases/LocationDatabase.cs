@@ -151,6 +151,40 @@ namespace Databases
 				return instance.Internal_GetAllBuildings();
 		}
 
+		public static Place GetBuildingFromRoom(Room room)
+		{
+			if(instance == null)
+				return null;
+			else
+				return instance.Internal_GetBuildingFromRoom(room);
+		}
+
+		private Place Internal_GetBuildingFromRoom(Room room)
+		{
+			Place building = null;
+
+			for(int i = 0; i < pointsOfInterestGroup.Count; i++)
+			{
+				PointOfInterestGroup pointOfInterest = pointsOfInterestGroup[i];
+
+				for(int j = 0; j < pointOfInterest.placeCollectionCount; j++)
+				{
+					PlaceCollection placeCollection = pointOfInterest.GetPlaceCollection(j);
+					
+					if(placeCollection == null)
+						continue;
+
+					if(placeCollection.HasRoom(room))
+					{
+						building = placeCollection.GetPlace();
+						break;
+					}
+				}
+			}
+
+			return building;
+		}
+
 		private Location Internal_GetLocationFromSearch(int index)
 		{
 			PointOfInterest pointOfInterest;

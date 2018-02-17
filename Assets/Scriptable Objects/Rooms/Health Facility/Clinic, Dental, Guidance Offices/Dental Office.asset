@@ -8,16 +8,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
   m_Name: Dental Office
   m_EditorClassIdentifier: 
   m_displayedName: Dental Office
-  m_displayPosition: {x: -105.966896, y: 0, z: -175.63948}
-  m_position: {x: -105.96689, y: 0, z: -166.67033}
+  m_displayPosition: {x: -105.42831, y: 0, z: -175.05843}
+  m_position: {x: -104.78534, y: 0, z: -168.34271}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_isHidden: 0
+  m_standaloneName: 1
+  m_standaloneNumber: 1
+  m_floor: 1
+  m_room: 1
+  m_inheritedPosition: {fileID: 0}
   m_mapName: 'Dental
 
     Office'

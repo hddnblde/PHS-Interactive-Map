@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using ModestUI.Panels;
 using Map;
 using Navigation;
+using Databases;
 
 namespace Menus.PHS
 {
@@ -38,7 +39,6 @@ namespace Menus.PHS
 
 		#region Unserialized Fields
 		private Location selectedLocation = null;
-		private bool selectedLocationIsBuilding = false;
 		#endregion
 
 		public override bool Open()
@@ -55,7 +55,6 @@ namespace Menus.PHS
 			
 			FocusToSelectedLocation();
 			SetDisplayedTextWithSelectedLocation();
-			SetDetails();
 
 			if(!visible)
 				base.Open();
@@ -84,12 +83,6 @@ namespace Menus.PHS
 				buildingInformationButton.onClick.AddListener(ShowSelectedLocationInfo);
 		}
 
-		private void SetDetails()
-		{
-			selectedLocationIsBuilding = selectedLocation is Place;
-			buildingInformationButton.gameObject.SetActive(selectedLocationIsBuilding);
-		}
-
 		private void SetSelectedLocationAsStart()
 		{
 			if(selectedLocation == null || directionsPanel == null)
@@ -112,17 +105,19 @@ namespace Menus.PHS
 		{
 			if(selectedLocation != null)
 			{
-				float zoom = (selectedLocationIsBuilding ? 0.5f : 0.75f);
+				float zoom = (selectedLocation is Place ? 0.5f : 0.75f);
 				NavigationCamera.FocusTo(selectedLocation.position, zoom);
 			}
 		}
 
 		private void ShowSelectedLocationInfo()
 		{
-			if(!selectedLocationIsBuilding)
+			Place building = GetBuilding();
+
+			if(building == null)
 				return;
 
-			buildingInformationPanel.Open(selectedLocation as Place);
+			buildingInformationPanel.Open(building);
 		}
 
 		private void SetDisplayedTextWithSelectedLocation()
@@ -131,6 +126,14 @@ namespace Menus.PHS
 				return;
 
 			displayedText.text = selectedLocation.displayedName;
+		}
+
+		private Place GetBuilding()
+		{
+			if(selectedLocation as Place)
+				return selectedLocation as Place;
+			else
+				return LocationDatabase.GetBuildingFromRoom(selectedLocation as Room);
 		}
 	}
 }
