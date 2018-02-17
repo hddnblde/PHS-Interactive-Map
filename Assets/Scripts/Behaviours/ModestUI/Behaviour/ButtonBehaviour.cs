@@ -38,6 +38,7 @@ namespace ModestUI.Behaviour
 		#region Unserialized Fields
 		private Coroutine transitionRoutine = null;
 		private Coroutine highlightPressRoutine = null;
+		private bool pressed = false;
 		#endregion
 
 
@@ -60,16 +61,43 @@ namespace ModestUI.Behaviour
 
 
 		#region Pointer Implementation
-		public override void OnPointerDown(PointerEventData pointerEventData)
+		public override void OnPointerDown(PointerEventData eventData)
 		{
-			base.OnPointerDown(pointerEventData);
+			pressed = true;			
+			base.OnPointerDown(eventData);			
 			BeginTransitionGraphicsRoutine(true);
 		}
 
-		public override void OnPointerUp(PointerEventData pointerEventData)
+		public override void OnPointerUp(PointerEventData eventData)
    		{
-			base.OnPointerUp(pointerEventData);
+			pressed = false;
+			base.OnPointerUp(eventData);
+
+			if(!PointerIsWithinRect(eventData.position))
+				return;
+			
 			BeginTransitionGraphicsRoutine(false);
+		}
+
+		public override void OnPointerEnter(PointerEventData eventData)
+		{
+			base.OnPointerEnter(eventData);
+
+			if(pressed)
+				TransitionGraphics(1f);
+			else
+				TransitionGraphics(0f);
+		}
+
+		public override void OnPointerExit(PointerEventData eventData)
+		{
+			base.OnPointerExit(eventData);			
+			TransitionGraphics(0f);
+		}
+
+		public override void OnPointerClick(PointerEventData eventData)
+		{
+			base.OnPointerClick(eventData);
 			BeginHighlightPressRoutine();
 		}
 		#endregion	
@@ -81,6 +109,9 @@ namespace ModestUI.Behaviour
 			if(transitionRoutine != null)
 				StopCoroutine(transitionRoutine);
 
+			if(!gameObject.activeInHierarchy)
+				return;
+
 			transitionRoutine = StartCoroutine(TransitionGraphicsRoutine(pressed));
 		}
 
@@ -88,6 +119,9 @@ namespace ModestUI.Behaviour
 		{
 			if(highlightPressRoutine != null)
 				StopCoroutine(highlightPressRoutine);
+
+			if(!gameObject.activeInHierarchy)
+				return;
 
 			highlightPressRoutine = StartCoroutine(HighlightPressRoutine());
 		}
@@ -126,6 +160,11 @@ namespace ModestUI.Behaviour
 
 
 		#region Helpers
+		private bool PointerIsWithinRect(Vector2 position)
+		{
+			return RectTransformUtility.RectangleContainsScreenPoint(transform as RectTransform, position);
+		}
+
 		private void TransitionGraphics(float t)
 		{
 			t = curve.Evaluate(t);

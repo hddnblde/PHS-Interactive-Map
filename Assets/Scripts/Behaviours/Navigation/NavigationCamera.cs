@@ -83,7 +83,7 @@ namespace Navigation
 		private const float GroundHeight = 0f;
 		private const float ViewLowerLimit = 10f;
 		private const float ViewUpperLimit = 300f;
-		private const float TransitionDuration = 0.25f;
+		private const float TransitionDuration = 0.85f;
 		private const float TranslateSpeed = 7f;
 		private const float ZoomDefault = 0.5f;
 		private const float ZoomDampTime = 0.15f;
@@ -305,11 +305,15 @@ namespace Navigation
 			for(float current = TransitionDuration; current > 0f; current -= Time.deltaTime)
 			{
 				float t = Mathf.InverseLerp(TransitionDuration, 0f, current);
-				transform.position = Vector3.LerpUnclamped(currentPosition, frame, t);
+				float curvedT = transitionCurve.Evaluate(t);
+				transform.position = Vector3.LerpUnclamped(currentPosition, frame, curvedT);
 
-				view = Mathf.LerpUnclamped(currentZoom, targetZoom, transitionCurve.Evaluate(t));
+				view = Mathf.LerpUnclamped(currentZoom, targetZoom, curvedT);
 				yield return null;
 			}
+
+			transform.position = Vector3.LerpUnclamped(currentPosition, frame, 1f);
+			view = Mathf.LerpUnclamped(currentZoom, targetZoom, transitionCurve.Evaluate(1f));
 		}
 		#endregion
 	

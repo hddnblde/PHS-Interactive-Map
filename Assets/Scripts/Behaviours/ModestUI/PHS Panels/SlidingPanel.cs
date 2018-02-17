@@ -7,6 +7,15 @@ namespace Menus.PHS
 {
 	public class SlidingPanel : SimplePanel
 	{
+		private enum Axis
+		{
+			Horizontal,
+			Vertical
+		}
+
+		[SerializeField]
+		private Axis axis = Axis.Horizontal;
+
 		[SerializeField]
 		private RectTransform container = null;
 
@@ -63,10 +72,15 @@ namespace Menus.PHS
 				return;
 
 			t = slidingCurve.Evaluate(t);
+			container.anchoredPosition = CalculateAnchoredPosition(t);
+		}
 
-			float x = Mathf.Lerp(-container.rect.width, 0f, t);
-			Vector2 anchoredPosition = new Vector2(x, container.anchoredPosition.y);
-			container.anchoredPosition = anchoredPosition;
+		private Vector2 CalculateAnchoredPosition(float t)
+		{
+			float target = (axis == Axis.Horizontal ? container.rect.width : container.rect.height);
+			float value = Mathf.Lerp(-target, 0f, t);
+
+			return (axis == Axis.Horizontal ? Vector2.right * value : Vector2.up * value);
 		}
 	}
 }

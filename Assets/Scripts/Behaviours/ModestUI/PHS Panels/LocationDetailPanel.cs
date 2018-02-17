@@ -8,7 +8,7 @@ using Navigation;
 
 namespace Menus.PHS
 {
-	public class LocationDetailPanel : SimplePanel
+	public class LocationDetailPanel : SlidingPanel
 	{
 		#region Serialized Fields
 		[Header("References")]
@@ -55,6 +55,7 @@ namespace Menus.PHS
 			
 			FocusToSelectedLocation();
 			SetDisplayedTextWithSelectedLocation();
+			SetDetails();
 
 			if(!visible)
 				base.Open();
@@ -78,11 +79,14 @@ namespace Menus.PHS
 
 			if(focusButton != null)
 				focusButton.onClick.AddListener(FocusToSelectedLocation);
+
+			if(buildingInformationButton != null)
+				buildingInformationButton.onClick.AddListener(ShowSelectedLocationInfo);
 		}
 
-		private void SetDetails(Location location)
+		private void SetDetails()
 		{
-			selectedLocationIsBuilding = location is Place;
+			selectedLocationIsBuilding = selectedLocation is Place;
 			buildingInformationButton.gameObject.SetActive(selectedLocationIsBuilding);
 		}
 
