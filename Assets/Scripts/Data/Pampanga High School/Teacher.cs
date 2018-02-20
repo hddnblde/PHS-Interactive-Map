@@ -19,7 +19,8 @@ namespace PampangaHighSchool.Faculty
 		MAPEH,
 		Math,
 		Science,
-		Values
+		Values,
+		SeniorHigh
 	}
 
 	[CreateAssetMenu(menuName = "Faculty/Teacher", order = 0, fileName = "Teacher")]

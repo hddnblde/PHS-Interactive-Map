@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bd777a146ed8e45a9e4754a9d7cc67, type: 3}
+  m_Name: ABM 206 Schedule
+  m_EditorClassIdentifier: 
+  target: {fileID: 11400000, guid: 59d5eac070eab4f488432667ad51a6fd, type: 2}
+  m_periods:
+  - m_period: {fileID: 11400000, guid: a2d08b40958f22643ab8a76bd15e8e0f, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: fe3b74ec810267d43b81499fc76b40b0, type: 2}
+      m_subtitle: Fun.ABM2
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: fe3b74ec810267d43b81499fc76b40b0, type: 2}
+      m_subtitle: Fun.ABM2
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Etech
+  - m_period: {fileID: 11400000, guid: 6cfd7785f5a96b946b55318ca543f882, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: fe3b74ec810267d43b81499fc76b40b0, type: 2}
+      m_subtitle: Fun.ABM2
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: fe3b74ec810267d43b81499fc76b40b0, type: 2}
+      m_subtitle: Fun.ABM2
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Etech
+  - m_period: {fileID: 11400000, guid: f8654c0be2960f54fae0f00e5f7afb90, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: a72b898e98a6c2744a2427d4d9a96178, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9a8e9313bda0df2438e7127e31f91b7a, type: 2}
+      m_subtitle: BusMath
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9e44d4fac9c27284faf52f4ac4263118, type: 2}
+      m_subtitle: Etech
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Pagbasa
+  - m_period: {fileID: 11400000, guid: a92de413519245f43af7095cf7f265af, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9a8e9313bda0df2438e7127e31f91b7a, type: 2}
+      m_subtitle: BusMath
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9e44d4fac9c27284faf52f4ac4263118, type: 2}
+      m_subtitle: Etech
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Pagbasa
+  - m_period: {fileID: 11400000, guid: 8609a7e248048884ea78fe2c76b49c53, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: 0811e15ec1097854cbd46d90e8b2ea22, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 6b4c6a4c526f433478aa61d0c8c596e8, type: 2}
+      m_subtitle: Entrep
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9a8e9313bda0df2438e7127e31f91b7a, type: 2}
+      m_subtitle: BusMath
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Entrep
+  - m_period: {fileID: 11400000, guid: f8d64ce3dd494ab429c747011db05950, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 6b4c6a4c526f433478aa61d0c8c596e8, type: 2}
+      m_subtitle: Entrep
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 9a8e9313bda0df2438e7127e31f91b7a, type: 2}
+      m_subtitle: BusMath
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Entrep
+  - m_period: {fileID: 11400000, guid: 0a89de478e26f3e47a7c4646a01d9129, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: HOPE
+  - m_period: {fileID: 11400000, guid: f4f42ec7bdc8b6546a0c969b2784f547, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
+      m_subtitle: Philo
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
+      m_subtitle: Philo
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Res 2
+  - m_period: {fileID: 11400000, guid: b23979cfd6f8d6748814b5cb582ada31, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: 3ab08aa09ea4de844a0d9a76f289775c, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 349e4aca7be8e034c81156449c113478, type: 2}
+      m_subtitle: Philo
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 349e4aca7be8e034c81156449c113478, type: 2}
+      m_subtitle: Philo
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Res 2
+  - m_period: {fileID: 11400000, guid: 319ad1e69d97b544f8895fe0f14369db, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 317f81a4a5d62714d9709f43a51cf7bc, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Res 2
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: ReadWrite
+  - m_period: {fileID: 11400000, guid: addf8a5747c7a4346b51040acd00ed19, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 11400000, guid: 317f81a4a5d62714d9709f43a51cf7bc, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: Res 2
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: ec0f01d646a3493469b9713621be8b5c, type: 2}
+      m_title: {fileID: 0}
+      m_subtitle: ReadWrite

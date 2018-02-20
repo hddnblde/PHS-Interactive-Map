@@ -112,7 +112,7 @@ public class ScheduleGenerator : EditorWindow
 	{
 		string[] items = scheduleText.Split("~".ToCharArray());
 
-		if(items == null || items.Length != 4)
+		if(items == null || items.Length < 4)
 		{
 			Debug.Log("Failed to generate schedule.");
 			return;
@@ -171,7 +171,7 @@ public class ScheduleGenerator : EditorWindow
 			ScheduleObject title;
 			string subtitle;
 
-			GetEntries(entryPerDay[i], out room, out title, out subtitle);
+			GetEntries(entryPerDay[i], out room, out title, out subtitle);			
 			SetEntry(entry, room, title, subtitle);
 		}
 	}
@@ -194,7 +194,15 @@ public class ScheduleGenerator : EditorWindow
 		string[] items = entryText.Split("/".ToCharArray());
 		subtitle = items[0].Replace("@empty", "");
 		room = GetRoom(items[1]);
-		title = GetTarget(items[2], typeof(Teacher).ToString());
+		title = GetTarget(FilterOutMiddleInitial(items[2]), typeof(Teacher).ToString());
+	}
+
+	private string FilterOutMiddleInitial(string name)
+	{
+		if(name.Contains("."))
+			return name.TrimEnd(System.Environment.NewLine.ToCharArray()).TrimEnd('\t').Trim().TrimEnd().Substring(0, name.Length - 3);
+		else
+			return name;
 	}
 
 	private string CatchFormat(string name)
@@ -208,12 +216,15 @@ public class ScheduleGenerator : EditorWindow
 
 	private Room GetRoom(string roomName)
 	{
+		if(string.IsNullOrEmpty(roomName))
+			return null;
+		
 		string[] result = AssetDatabase.FindAssets(roomName + " t:" + typeof(Room).ToString());
 
-		if(result == null)// || result.Length != 1)
+		if(result == null || result.Length == 0)
 			result = AssetDatabase.FindAssets("\"" + roomName + "\"" + " t:" + typeof(Room).ToString());
 
-		if(result == null)
+		if(result == null || result.Length == 0)
 			return null;
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
@@ -223,10 +234,20 @@ public class ScheduleGenerator : EditorWindow
 	
 	private Schedule GetSchedule(string section, string grade)
 	{
-		string[] result = AssetDatabase.FindAssets(section + " t:" + typeof(Schedule).ToString());
+		string[] result = AssetDatabase.FindAssets("\"" + section + "\"" + " t:" + typeof(Schedule).ToString());
 
-		if(result == null || result.Length != 1)
-			return CreateNewSchedule(GetTarget(section, typeof(StudentClass).ToString()), grade);
+		if(result == null || result.Length == 0)
+		{
+			ScheduleObject studentClass = GetTarget(section, typeof(StudentClass).ToString());
+
+			if(studentClass == null)
+			{
+				Debug.Log("Failed to get " + section);
+				return null;
+			}
+
+			return CreateNewSchedule(studentClass, grade);
+		}
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
 		Schedule schedule = AssetDatabase.LoadAssetAtPath<Schedule>(assetPath);
@@ -236,7 +257,10 @@ public class ScheduleGenerator : EditorWindow
 	private Schedule CreateNewSchedule(ScheduleObject target, string grade)
 	{
 		if(target == null)
+		{
+			Debug.Log("Failed to create new schedule because target is empty.");
 			return null;
+		}
 		
 		string path = "Assets/Scriptable Objects/Schedules/" + grade + '/';
 		string name = target.name + " Schedule";
@@ -255,22 +279,41 @@ public class ScheduleGenerator : EditorWindow
 
 	private ScheduleObject GetTarget(string target, string type)
 	{
+		if(string.IsNullOrEmpty(target))
+			return null;
+
 		string[] result = FindAssets(target, type);
 
-		if(result == null || result.Length != 1)
+		if(result == null || result.Length == 0)
+		{
+			Debug.Log(target);
 			return null;
+		}
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
 		ScheduleObject scheduleObject = AssetDatabase.LoadAssetAtPath<ScheduleObject>(assetPath);
+
+		if(scheduleObject == null)
+		{
+			// Debug.Log("Failed to get " + target + " with result of " + result.Length);
+			Debug.Log(assetPath);
+			// scheduleObject = AssetDatabase.LoadAssetAtPath<ScheduleObject>(result[0]);
+
+			// if(scheduleObject == null)
+			// 	Debug.Log("Really failed hard.");
+		}
 		return scheduleObject;
 	}
 
 	private string[] FindAssets(string target, string type)
 	{
-		string[] result = AssetDatabase.FindAssets(target + " t:" + type);
+		// string[] result = AssetDatabase.FindAssets(target + " t:" + type);
+		string[] result = AssetDatabase.FindAssets("\"" + target + "\"" + " t:" + type);
 
-		if(result == null || result.Length != 1)
-			result = AssetDatabase.FindAssets(CatchFormat(target));
+		// if(result == null || result.Length != 1)
+		// 	result = AssetDatabase.FindAssets(CatchFormat(target));
+		// else if(result == null)
+		// 	result = AssetDatabase.FindAssets("\"" + target + "\"" + " t:" + type);
 
 		return result;
 	}
