@@ -210,10 +210,10 @@ public class ScheduleGenerator : EditorWindow
 	{
 		string[] result = AssetDatabase.FindAssets(roomName + " t:" + typeof(Room).ToString());
 
-		if(result == null || result.Length != 1)
+		if(result == null)// || result.Length != 1)
 			result = AssetDatabase.FindAssets("\"" + roomName + "\"" + " t:" + typeof(Room).ToString());
 
-		if(result == null || result.Length != 1 && !((roomName == "Sampaguita 1") || (roomName == "Industrial Arts 1") || (roomName == "Dama 1")))
+		if(result == null)
 			return null;
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);

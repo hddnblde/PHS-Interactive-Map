@@ -8,9 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f08923b630c8b6478bd0f3ee38eca27, type: 3}
-  m_Name: Open High 12
+  m_Script: {fileID: 11500000, guid: b404768abeaebca4d9f8ccc0a296218c, type: 3}
+  m_Name: HUMSS 1
   m_EditorClassIdentifier: 
-  m_grade: 12
-  m_order: 0
-  m_count: 1
+  m_section: {fileID: 11400000, guid: 9be76acd14b8a68478ca79ac93dc0cb8, type: 2}
+  m_rank: 1
+  m_adviser: {fileID: 0}
+  m_room: {fileID: 0}

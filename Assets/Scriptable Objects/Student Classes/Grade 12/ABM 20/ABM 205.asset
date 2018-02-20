@@ -8,9 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f08923b630c8b6478bd0f3ee38eca27, type: 3}
-  m_Name: Open High 11
+  m_Script: {fileID: 11500000, guid: b404768abeaebca4d9f8ccc0a296218c, type: 3}
+  m_Name: ABM 205
   m_EditorClassIdentifier: 
-  m_grade: 11
-  m_order: 0
-  m_count: 1
+  m_section: {fileID: 11400000, guid: be600892e25a5a543bba303b3b1242cd, type: 2}
+  m_rank: 5
+  m_adviser: {fileID: 0}
+  m_room: {fileID: 0}

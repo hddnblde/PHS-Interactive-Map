@@ -52,14 +52,47 @@ namespace PampangaHighSchool.Students
 	[CustomEditor(typeof(Section))]
 	public class SectionEditor : Editor
 	{
+		private bool hasSpaceBeforeNumber = true;
+		private bool alwaysIncludeNumber = false;
+
 		public override void OnInspectorGUI()
 		{
 			DrawDefaultInspector();
 			DrawTool();
 		}
 
+		private void OnEnable()
+		{
+			LoadPrefs();
+		}
+
+		private void OnDisable()
+		{
+			SavePrefs();
+		}
+
+		private void LoadPrefs()
+		{
+			hasSpaceBeforeNumber = EditorPrefs.GetBool("Section_HasSpaceBeforeNumber", true);
+			alwaysIncludeNumber = EditorPrefs.GetBool("Section_AlwaysIncludeNumber", false);
+		}
+
+		private void SavePrefs()
+		{
+			EditorPrefs.SetBool("Section_HasSpaceBeforeNumber", hasSpaceBeforeNumber);
+			EditorPrefs.SetBool("Section_AlwaysIncludeNumber", alwaysIncludeNumber);
+		}
+
 		private void DrawTool()
 		{
+			EditorGUILayout.Space();
+
+			EditorGUILayout.LabelField("Naming Options", EditorStyles.boldLabel);
+			hasSpaceBeforeNumber = EditorGUILayout.Toggle("Has Space Before Number", hasSpaceBeforeNumber);
+			alwaysIncludeNumber = EditorGUILayout.Toggle("Always Include Number", alwaysIncludeNumber);
+			
+			EditorGUILayout.Space();
+			EditorGUILayout.Space();
 			if(GUILayout.Button("Generate Classes"))
 			{
 				SerializedProperty countProperty = serializedObject.FindProperty("m_count");
@@ -67,13 +100,13 @@ namespace PampangaHighSchool.Students
 				if(countProperty == null)
 					return;
 
-				bool isMany = countProperty.intValue > 1;
+				bool isMany = countProperty.intValue > 1 || alwaysIncludeNumber;
 
 				for(int i = 0; i < countProperty.intValue; i++)
 				{
 					int rank = i + 1;
 					string path = AssetDatabase.GetAssetPath(target).Replace(".asset", "/");
-					string name = target.name + ' ' + (isMany ? rank.ToString() : "");
+					string name = target.name + (hasSpaceBeforeNumber ? " " : "") + (isMany ? rank.ToString() : "");
 
 					StudentClass studentClass = ScriptableObject.CreateInstance<StudentClass>();
 					SetUpClass(new SerializedObject(studentClass), rank);
