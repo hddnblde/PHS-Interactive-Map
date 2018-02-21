@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: -5.209944, y: 0, z: -154.75415}
   m_useDisplayPosition: 0
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 9ed76f0e837526f40a947a9fadf4948b, type: 2}
   m_mapName: Main

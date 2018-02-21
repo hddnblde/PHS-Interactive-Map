@@ -99,7 +99,7 @@ public class PlaceTriviaManager : EditorWindow
 		if(trivia == null)
 			return false;
 
-		string filter = trivia.name.Replace(" Trivia", "");
+		string filter = "\"" + trivia.name.Replace(" Trivia", "") + "\" t: Place";
 		string[] GUIDResult = AssetDatabase.FindAssets(filter);
 
 		if(GUIDResult == null || GUIDResult.Length == 0)
@@ -110,6 +110,12 @@ public class PlaceTriviaManager : EditorWindow
 
 		string path = AssetDatabase.GUIDToAssetPath(GUIDResult[0]);
 		Place place = AssetDatabase.LoadAssetAtPath<Place>(path);
+
+		if(place == null)
+		{
+			Debug.Log("Failed : " + path);
+			return false;
+		}
 
 		return SetTrivia(place, trivia);
 	}

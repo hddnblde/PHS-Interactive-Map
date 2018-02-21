@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 70.1125, y: 0, z: 44.72108}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 18ea086e37e58e448878f4f2fa03813d, type: 2}
   m_mapName: Narra

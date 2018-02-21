@@ -159,6 +159,14 @@ namespace Databases
 				return instance.Internal_GetBuildingFromRoom(room);
 		}
 
+		public static bool PlaceHasTrivia(Place place)
+		{
+			if(instance == null)
+				return false;
+			else
+				return instance.Internal_PlaceHasTrivia(place);
+		}
+
 		private Place Internal_GetBuildingFromRoom(Room room)
 		{
 			Place building = null;
@@ -289,6 +297,32 @@ namespace Databases
 			}
 
 			return buildings.ToArray();
+		}
+
+		private bool Internal_PlaceHasTrivia(Place place)
+		{
+			bool evaluation = false;
+
+			for(int i = 0; i < pointsOfInterestGroup.Count; i++)
+			{
+				PointOfInterestGroup pointOfInterest = pointsOfInterestGroup[i];
+
+				for(int j = 0; j < pointOfInterest.placeCollectionCount; j++)
+				{
+					PlaceCollection placeCollection = pointOfInterest.GetPlaceCollection(j);
+					
+					if(placeCollection == null)
+						continue;
+
+					if(placeCollection.GetPlace() == place)
+					{
+						evaluation = place.trivia != null;
+						break;
+					}
+				}
+			}
+
+			return evaluation;
 		}
 		#endregion
 

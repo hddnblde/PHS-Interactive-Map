@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 87.22, y: 0, z: 179.44516}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: c7c79a0c38a21d54594b55f799b5841e, type: 2}
   m_mapName: Aus Aid

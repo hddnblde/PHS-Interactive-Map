@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 15.335478, y: 0, z: 10.392271}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 34d0168b34da28643bcab98f0a8667a9, type: 2}
   m_mapName: Caballero

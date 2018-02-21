@@ -18,5 +18,5 @@ MonoBehaviour:
   m_tags: ia;
   m_isHidden: 1
   m_thumbnail: {fileID: 0}
-  m_trivia: {fileID: 0}
+  m_trivia: {fileID: 11400000, guid: 36a72b9cfdb652b4ca23e592020569c4, type: 2}
   m_mapName: Industrial Arts Area

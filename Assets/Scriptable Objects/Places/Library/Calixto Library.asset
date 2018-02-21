@@ -16,8 +16,9 @@ MonoBehaviour:
   m_position: {x: -20.867773, y: 0, z: 22.589258}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: d8977084efb246749ae96614546a238e, type: 2}
   m_mapName: 'Calixto
 
     Library'

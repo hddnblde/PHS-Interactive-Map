@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 29.936766, y: 0, z: 10.392271}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: c76956a35412b944e85c6a6f533a8cb6, type: 2}
   m_mapName: Baliti

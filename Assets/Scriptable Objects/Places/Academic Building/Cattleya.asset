@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: -43.42635, y: 0, z: 213.86829}
   m_useDisplayPosition: 0
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_trivia: {fileID: 11400000, guid: 29fafd7ba18dc3141bea856ad5e82b8a, type: 2}
+  m_trivia: {fileID: 11400000, guid: fd22193faf8c9914183cf5e6713c2588, type: 2}
   m_mapName: Cattleya

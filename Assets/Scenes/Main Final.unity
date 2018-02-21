@@ -2918,12 +2918,12 @@ MonoBehaviour:
     mainButton: {fileID: 1850049405}
     clearButton: {fileID: 883602542}
     displayedText: {fileID: 671437625}
-    label: Where from?
+    label: Starting Location
   destinationButton:
     mainButton: {fileID: 386177726}
     clearButton: {fileID: 1851438638}
     displayedText: {fileID: 1814669156}
-    label: Where to?
+    label: Destination
   searchLocationPanel: {fileID: 1708393415}
   mapMarkerButton: {fileID: 0}
   mapMarkerPanel: {fileID: 0}
@@ -25153,7 +25153,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060976423}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -25173,8 +25173,8 @@ MonoBehaviour:
   subscribeToBackButton: 1
   openButton: {fileID: 0}
   closeButton: {fileID: 1701343335}
-  axis: 0
-  container: {fileID: 0}
+  axis: 1
+  container: {fileID: 2060976424}
   slidingCurve:
     serializedVersion: 2
     m_Curve:

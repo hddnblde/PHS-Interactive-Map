@@ -55,6 +55,7 @@ namespace Menus.PHS
 			
 			FocusToSelectedLocation();
 			SetDisplayedTextWithSelectedLocation();
+			ValidateBuildingInfoButton();
 
 			if(!visible)
 				base.Open();
@@ -126,6 +127,20 @@ namespace Menus.PHS
 				return;
 
 			displayedText.text = selectedLocation.displayedName;
+		}
+
+		private void ValidateBuildingInfoButton()
+		{
+			if(buildingInformationButton == null)
+				return;
+			
+			bool hasBuildingInformation = SelectedBuildingHasTrivia();
+			buildingInformationButton.gameObject.SetActive(hasBuildingInformation);
+		}
+
+		private bool SelectedBuildingHasTrivia()
+		{
+			return LocationDatabase.PlaceHasTrivia(GetBuilding());
 		}
 
 		private Place GetBuilding()

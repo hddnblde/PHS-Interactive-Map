@@ -9,8 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
-  m_Name: MRF Trivia
+  m_Name: Values Multipurpose
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 21300006, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: The MAPEH Multipurpose building is a one-storey building with 4 rooms.
-    It is located near the Open Field area. It has one comfort room nearby.
+  m_thumbnail: {fileID: 21300048, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
+  m_details: 'The SPED building is a one-storey building with 3 rooms.
+
+    Facilitates deaf and mute students. It has one comfort room next to it.'

@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 87.07749, y: 0, z: -0.8}
   m_useDisplayPosition: 1
   m_tags: 
+  m_isHidden: 0
   m_thumbnail: {fileID: 0}
-  m_description: 
+  m_trivia: {fileID: 11400000, guid: 07e8077250e7b65428a56345197c6658, type: 2}
   m_mapName: Lotus
