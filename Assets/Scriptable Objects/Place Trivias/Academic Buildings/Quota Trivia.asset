@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: Quota Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300024, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
   m_details: 'The Quota building is a one-storey building with only 1 room.
 
     Facilitates deaf and mute students.'

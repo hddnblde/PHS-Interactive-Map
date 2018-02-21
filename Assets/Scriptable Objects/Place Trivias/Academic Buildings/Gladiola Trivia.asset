@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: Gladiola Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300034, guid: 7dce65d485252884a95d83969f79d659, type: 3}
   m_details: The Gladiola building is a two-storey building with 4 rooms, 2 in each
     storey. It has its own laboratory building with 3 rooms that sits next to it.

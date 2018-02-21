@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: Ilang-ilang Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300046, guid: 7dce65d485252884a95d83969f79d659, type: 3}
   m_details: Ilang-ilang building is a 4 storey building with 24 rooms.

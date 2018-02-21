@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: SPED Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300038, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
   m_details: 'The SPED building is a one-storey building with 3 rooms.
 
     Facilitates deaf and mute students. It has one comfort room next to it.'

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: Gumamela Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300042, guid: 7dce65d485252884a95d83969f79d659, type: 3}
   m_details: The Gumamela building is a one-storey building with 4 rooms. It is located
     near the Open Field area. It also has a closed gate nearby that leads to Bren
     Z. Guiao Convention Center.

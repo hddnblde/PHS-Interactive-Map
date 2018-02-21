@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
   m_Name: Cattleya Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300020, guid: 7dce65d485252884a95d83969f79d659, type: 3}
   m_details: The Cattleya building is a one-storey building with 6 rooms. It has two
     comfort rooms in its vicinity, one close by and one farther.
