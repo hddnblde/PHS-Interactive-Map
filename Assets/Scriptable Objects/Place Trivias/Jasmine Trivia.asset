@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Jasmine Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300054, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: Ilang-ilang building is a 4 storey building with 24 rooms.
+  m_details: 

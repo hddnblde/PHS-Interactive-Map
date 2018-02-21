@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Name: Agri Lagoon Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300002, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: The Anthurium building is a one-storey building with 4 rooms. It is located
-    near the Open Field area. It also has a closed gate nearby that leads to Bren
-    Z. Guiao Convention Center.
+  m_details: 

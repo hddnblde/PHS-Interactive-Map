@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Name: PAGCOR Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300022, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: The PAGCOR building is a four-storey building with 6 rooms in each storey.
-    The building was formerly Cadena de Amor.
+  m_details: 

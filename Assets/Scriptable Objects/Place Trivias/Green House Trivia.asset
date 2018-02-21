@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Name: Green House Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300008, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: The Gladiola building is a two-storey building with 4 rooms, 2 in each
-    storey. It has its own laboratory building with 3 rooms that sits next to it.
+  m_details: 
