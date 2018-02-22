@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9615fb628027a2547843f72ea00639a3, type: 3}
-  m_Name: Violeta Hall Trivia
+  m_Name: Dama De Noche 2 Trivia
   m_EditorClassIdentifier: 
-  m_thumbnail: {fileID: 21300050, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: Violeta Hall is a single storey building with 1 Faculty office (Dress
-    Making, Culinary), Infornt of the Hall is the Home Economics Laboratory. And a
-    shed.
+  m_thumbnail: {fileID: 21300026, guid: 7dce65d485252884a95d83969f79d659, type: 3}
+  m_details: Dama De Noche II building is a single storey building with 4 rooms. Infornt
+    of the building is the Gardenia building. And backside of the building is the
+    Lotus building.

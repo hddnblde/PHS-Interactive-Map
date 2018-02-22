@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Sampaguita Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300032, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Sampaguita building is a single storey building with 15 rooms. Infront
+    of the building it is the Gardenia, Jasmine Buildings.

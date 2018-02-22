@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Aster Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300006, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Aster building is a single storey building with 2 rooms. Infront of the
+    building it is the Infirmary and the Guidance Rooms. And besides of the buildings
+    it is the Waling-Waling building.

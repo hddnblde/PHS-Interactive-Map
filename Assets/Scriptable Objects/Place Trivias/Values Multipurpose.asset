@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Values Multipurpose
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300048, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Values Multi-Purpose building is a single storey building with 2 rooms.
+    Besides of the building is the Santan building for Senior High School Students.

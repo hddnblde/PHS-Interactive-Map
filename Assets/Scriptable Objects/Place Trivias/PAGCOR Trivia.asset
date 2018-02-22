@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Name: PAGCOR Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300022, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Cadena de Amor building is a 4 storey building with 20 rooms. Donated
+    by PAGCOR for the Senior High School Students. Besides of the building it is the
+    Gate 2, Back of the building it is the Guidance,Clinic,Dental rooms, PTL room
+    and Music Room.

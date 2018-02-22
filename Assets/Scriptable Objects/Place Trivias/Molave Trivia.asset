@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Molave Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300010, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Molave is a Nipa Hut (exclusively for the Agriculture students). Besides
+    of the Nipa Hut are Lagundi and Kamagong.

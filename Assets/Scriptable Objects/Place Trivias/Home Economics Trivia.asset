@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Home Economics Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300044, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Home Economics Laboratory. Has a shed beside of the building and Jasmine
+    building.

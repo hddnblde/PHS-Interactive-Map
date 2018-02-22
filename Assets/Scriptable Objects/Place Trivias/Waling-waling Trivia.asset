@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Waling-waling Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300052, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Waling-Waling building is a single storey building with 2 rooms. Infront
+    of the building it is the Infirmary and the Guidance Rooms. And besides of the
+    building it is the Aster building.

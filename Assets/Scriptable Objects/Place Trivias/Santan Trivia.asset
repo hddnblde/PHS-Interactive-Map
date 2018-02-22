@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Santan Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300034, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Santan building is a 3 storey building with 12 rooms (4 rooms each floor).
+    For Senior High School Students. Besides of the building is the Orchids building.

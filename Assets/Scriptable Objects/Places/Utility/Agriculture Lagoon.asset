@@ -16,8 +16,9 @@ MonoBehaviour:
   m_position: {x: 41.101635, y: 0, z: 33.439964}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 9d7e7dc398dabbc40b286b741f3b737e, type: 2}
   m_mapName: 'Agriculture
 
     Lagoon'

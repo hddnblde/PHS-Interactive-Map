@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Rodriguez Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300028, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Rodriguez building is a single storey building with 2 rooms. From the
+    left side of the building it is the Chrysanthemum Building, and the right side
+    is the Pump House.

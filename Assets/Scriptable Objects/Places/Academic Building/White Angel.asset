@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: -96.91203, y: 0, z: -113.86796}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: 091491e5beed3ed40844f00ed89570ab, type: 2}
   m_mapName: White Angel

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Shakespearean Hall Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300036, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: The Shakespearean Hall is a special classroom for students attending
+    the special section for arts.

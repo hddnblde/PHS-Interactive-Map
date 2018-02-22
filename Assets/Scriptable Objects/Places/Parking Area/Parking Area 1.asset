@@ -16,8 +16,9 @@ MonoBehaviour:
   m_position: {x: -75, y: 0, z: -89}
   m_useDisplayPosition: 0
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300044, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 0}
   m_mapName: 'Parking
 
     Area 1'

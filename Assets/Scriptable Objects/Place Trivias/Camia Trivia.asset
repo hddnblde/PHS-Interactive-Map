@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Camia Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300018, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Camia building is a single storey building with 3 rooms. In side of the
+    building has a canteen, and at the back of the building it is the Calixto Library.

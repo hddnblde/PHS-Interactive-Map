@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Agri Lagoon Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300002, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Agri Lagoon is a Nipa Hut (exclusively for the Agriculture students).
+    Has a fish fund. Infront of the Nipa hut is the Caballero, Balita and Acacia Rooms.

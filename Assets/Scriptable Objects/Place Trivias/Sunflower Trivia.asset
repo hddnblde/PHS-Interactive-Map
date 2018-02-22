@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Sunflower Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300042, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Sunflower building is a single storey building with 3 rooms (exclusively
+    for the dress making students). Infront of the building is the Gardenia building.

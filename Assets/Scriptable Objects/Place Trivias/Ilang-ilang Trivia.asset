@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Ilang-ilang Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300046, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: "Ilang-ilang building is a 4 storey building with 20 rooms, it is for
+    the Senior High School Students. Front of the building is the White Angel Building,
+    besides of the building is the teatro room\r."

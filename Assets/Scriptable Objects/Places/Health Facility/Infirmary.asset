@@ -17,6 +17,6 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_isHidden: 0
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300038, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: 2bed6b139b410824a8e9f7f01e2b3e36, type: 2}
   m_mapName: Infirmary

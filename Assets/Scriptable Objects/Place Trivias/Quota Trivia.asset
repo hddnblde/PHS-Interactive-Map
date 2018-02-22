@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Quota Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300024, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Quota building is a single storey building with 1 room exclusively for
+    mute and deaf students. Just like the Sped building.

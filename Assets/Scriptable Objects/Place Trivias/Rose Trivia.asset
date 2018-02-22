@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Name: Rose Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300030, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Rose Building is a single storey building with 9 rooms, 1 office and
+    1 Speech Laboratory. At the back side of the building is the I.A Rooms from I.A
+    9-14 rooms. While at the front side are the Canteen 3, Camia, Calixto Library
+    and Shakespearean Hall.

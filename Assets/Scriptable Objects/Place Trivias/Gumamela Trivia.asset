@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Gumamela Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300042, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: "Gumamela building is a single storey building with 4 rooms. Back side
+    of the building it is the IA 7 \u2013 10 Rooms. In front of the building it is
+    the Anthurium Building. "

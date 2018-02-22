@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: -106.72168, y: 0, z: 126.6}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: bfda27cc41e150c47813efa9b53daa01, type: 2}
   m_mapName: Gumamela

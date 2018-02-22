@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Gladiola Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300034, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Gladiola building is a 2 storey building with 4 rooms & 3 Laboratory.
+    In front of the building is the Aus Aid and Euphorbia Buildings

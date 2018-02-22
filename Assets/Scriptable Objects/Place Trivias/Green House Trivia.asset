@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Green House Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300008, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Green House (exclusively for Agriculture students) available for planting.

@@ -116,6 +116,7 @@ namespace Menus.PHS
 			{
 				mapMarkerPanel.OnMark += SetMarkerByContext;
 				mapMarkerPanel.OnCancel += OnMapMarkerCancel;
+				mapMarkerPanel.OnOpen += OnMapMarkerOpen;
 			}
 		}
 
@@ -159,7 +160,7 @@ namespace Menus.PHS
 			this.context = context;
 			string displayedContext = "Where " + (context == Context.StartLocation ? "from" : "to") + '?';
 			
-			searchLocationPanel.Open(displayedContext, OnSelectLocation, OnSearchClose, false);
+			searchLocationPanel.Open(displayedContext, OnSelectLocation, OnSearchClose, false, true);
 			OnSearchOpen();
 		}
 
@@ -218,6 +219,7 @@ namespace Menus.PHS
 		private void SetMarkerByContext(LocationMarker locationMarker)
 		{
 			SetMarker(context, locationMarker);
+			Open();
 		}
 
 		private void SetMarker(Context context, LocationMarker marker)

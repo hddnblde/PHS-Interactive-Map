@@ -17,6 +17,6 @@ MonoBehaviour:
   m_useDisplayPosition: 0
   m_tags: 
   m_isHidden: 0
-  m_thumbnail: {fileID: 21300046, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: 29fafd7ba18dc3141bea856ad5e82b8a, type: 2}
   m_mapName: Camia

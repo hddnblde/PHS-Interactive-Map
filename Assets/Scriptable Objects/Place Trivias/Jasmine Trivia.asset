@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Jasmine Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300054, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Jasmine building is a single storey building with 7 rooms exclusively
+    for the culinary students. Infornt of the building is the Sampaguita Building.
+    Beside is the Home Economics Laboratory.

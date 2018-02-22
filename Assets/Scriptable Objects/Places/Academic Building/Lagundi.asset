@@ -17,6 +17,6 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_isHidden: 0
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: b30681005a6969e48a3fd119c84b52ea, type: 2}
   m_mapName: Lagundi

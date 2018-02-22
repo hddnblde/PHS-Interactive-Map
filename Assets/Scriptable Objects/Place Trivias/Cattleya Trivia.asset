@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Cattleya Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300020, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: Cattleya building is a single storey building with 6 rooms. Has a Mapeh
+    office.

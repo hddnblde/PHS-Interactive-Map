@@ -16,6 +16,7 @@ MonoBehaviour:
   m_position: {x: 69.9, y: 0, z: -209.00941}
   m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: Canteen 1
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300032, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 0}
   m_mapName: Canteen 1

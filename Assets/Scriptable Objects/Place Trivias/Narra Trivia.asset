@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Narra Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300014, guid: 1af52c37616c50d45b55c4119065adc9, type: 3}
-  m_details: 
+  m_details: Narra is a Nipa Hut (exclusively for the Agriculture students). Besides
+    of the Nipa Hut is the Ipil-ipil, agri lagoon rooms. And besides of the nipa hut
+    is the Green House.

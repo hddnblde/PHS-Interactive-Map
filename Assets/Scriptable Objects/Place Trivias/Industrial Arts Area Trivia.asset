@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Industrial Arts Area Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300048, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: The Industrial Arts Area are a collection of buildings exclusively for
+    Handicraft, Automotive, & Drafting Students.

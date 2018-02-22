@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Clinic, Dental, Guidance Offices Trivia
   m_EditorClassIdentifier: 
   m_thumbnail: {fileID: 21300040, guid: 7dce65d485252884a95d83969f79d659, type: 3}
-  m_details: 
+  m_details: It is a single storey building with 2 rooms, and 1 office

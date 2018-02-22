@@ -174,15 +174,15 @@ namespace Menus.PHS
 		#region Actions
 		public override bool Open()
 		{
-			return Open(DefaultContext, null, null, true);
+			return Open(DefaultContext, null, null, true, false);
 		}
 
-		public bool Open(string context, LocationSelect locationSelectCallback, bool focusOnSelectedLocation = true)
+		public bool Open(string context, LocationSelect locationSelectCallback, bool focusOnSelectedLocation = true, bool canDropPin = false)
 		{
-			return Open(context, locationSelectCallback, null, focusOnSelectedLocation);
+			return Open(context, locationSelectCallback, null, focusOnSelectedLocation, canDropPin);
 		}
 
-		public bool Open(string context, LocationSelect locationSelectCallback, Action closeCallback, bool focusOnSelectedLocation = true)
+		public bool Open(string context, LocationSelect locationSelectCallback, Action closeCallback, bool focusOnSelectedLocation = true, bool canDropPin = false)
 		{
 			if(!base.Open())
 				return false;
