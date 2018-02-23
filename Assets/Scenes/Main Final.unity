@@ -986,7 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markerContainer: {fileID: 92544644}
-  mapMarkerPrefab: {fileID: 1325977398379466, guid: de97993b52609f84cbbefc4d0fe63dca,
+  mapMarkerPrefab: {fileID: 1315369299646338, guid: a39181ada671fa84db37a9e28033508b,
     type: 2}
   placeViewingBounds:
     m_lowerLimit: 0.35
@@ -5468,6 +5468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1595601247}
   icon: {fileID: 1357476981}
+  pin: {fileID: 0}
 --- !u!1 &628195280
 GameObject:
   m_ObjectHideFlags: 0
@@ -19157,6 +19158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 480410582}
   icon: {fileID: 552745934}
+  pin: {fileID: 0}
 --- !u!1 &1645615927
 GameObject:
   m_ObjectHideFlags: 0
