@@ -429,15 +429,16 @@ namespace Databases
 
 			foreach(Grade g in grades)
 			{
-				GetSections(g, out sections);
-				AddSchedule(g, sections);
+				string folderPath;
+				GetSections(g, out sections, out folderPath);
+				AddSchedule(g, sections, folderPath);
 			}
 		}
 
-		private void GetSections(Grade grade, out List<string> sections)
+		private void GetSections(Grade grade, out List<string> sections, out string path)
 		{
 			sections = new List<string>();
-			string path = sectionsPath + '/' + "Grade " + (int)grade;
+			path = sectionsPath + '/' + "Grade " + (int)grade;
 
 			if(!Directory.Exists(path))
 				return;
@@ -445,42 +446,48 @@ namespace Databases
 			string[] sectionPaths = Directory.GetFiles(path, "*.asset");
 
 			foreach(string sectionPath in sectionPaths)
-				sections.Add(sectionPath.Replace(path, "").Replace(".asset", ""));
+			{
+				string p = sectionPath.Replace(path, "").Replace(".asset", "").Replace("\\", "");
+				// Debug.Log(p);
+				sections.Add(p);
+			}
 		}
 
-		private void AddSchedule(Grade grade, List<string> sections)
+		private void AddSchedule(Grade grade, List<string> sections, string folderPath)
 		{
 			if(sections == null || sections.Count == 0)
 				return;
 
 			foreach(string sectionName in sections)
-				AddSchedule(grade, sectionName);
+				AddSchedule(grade, sectionName, folderPath);
 		}
 
-		private void AddSchedule(Grade grade, string sectionName)
+		private void AddSchedule(Grade grade, string sectionName, string folderPath)
 		{
 			sectionName = sectionName.Replace("\\", "");
 			Section section;
 			List<Schedule> schedules;
-			GetSchedules(sectionName, out section, out schedules);
+			GetSchedules(sectionName, folderPath, out section, out schedules);
 			classScheduleDatabase.AddSchedule(grade, section, schedules);
 			serializedObject.ApplyModifiedProperties();
 			serializedObject.Update();
 		}
 
-		private void GetSchedules(string name, out Section section, out List<Schedule> schedules)
+		private void GetSchedules(string name, string folderPath, out Section section, out List<Schedule> schedules)
 		{
+			string[] folderSearchPath = { folderPath.Replace("Sections", "Schedules") };
 			section = null;
 			schedules = new List<Schedule>();
 			string[] resultGUID = null;
 
+			Debug.Log("Searching in ... " + folderSearchPath[0]);
 			// Find Section
-			resultGUID = AssetDatabase.FindAssets(name + " t:Section");
+			resultGUID = AssetDatabase.FindAssets("\"" + name + "\"" + " t:Section");
 			string sectionPath = (resultGUID.Length > 0 ? AssetDatabase.GUIDToAssetPath(resultGUID[0]) : "");
 			section = AssetDatabase.LoadAssetAtPath(sectionPath, typeof(Section)) as Section;
 
 			// Find Schedules
-			resultGUID = AssetDatabase.FindAssets(name + " t:Schedule");
+			resultGUID = AssetDatabase.FindAssets(name + " t:Schedule", folderSearchPath);
 			foreach(string scheduleGUID in resultGUID)
 			{
 				string path = AssetDatabase.GUIDToAssetPath(scheduleGUID);

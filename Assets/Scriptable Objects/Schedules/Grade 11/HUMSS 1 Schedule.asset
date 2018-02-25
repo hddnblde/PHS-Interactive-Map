@@ -161,7 +161,7 @@ MonoBehaviour:
       m_subtitle: World Religion
     - m_day: 4
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6f3e30459f3ece64a92baef5f569e536, type: 2}
       m_subtitle: World Religion
     - m_day: 5
       m_room: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
       m_subtitle: World Religion
     - m_day: 4
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6f3e30459f3ece64a92baef5f569e536, type: 2}
       m_subtitle: World Religion
     - m_day: 5
       m_room: {fileID: 0}

@@ -293,7 +293,7 @@ MonoBehaviour:
       m_subtitle: Gen Math
     - m_day: 4
       m_room: {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: cba4bba2bc5037a4c8ff2d8dc4ab7c80, type: 2}
       m_subtitle: HOPE
     - m_day: 5
       m_room: {fileID: 0}

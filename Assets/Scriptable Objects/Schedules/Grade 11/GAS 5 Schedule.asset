@@ -33,7 +33,7 @@ MonoBehaviour:
       m_subtitle: CreativeW
     - m_day: 5
       m_room: {fileID: 11400000, guid: 069fb718e2d832e4ab64dec67e13970c, type: 2}
-      m_title: {fileID: 11400000, guid: 87694ae638fd31f42a8e62edb6e4108d, type: 2}
+      m_title: {fileID: 0}
       m_subtitle: World Religion
   - m_period: {fileID: 11400000, guid: 6cfd7785f5a96b946b55318ca543f882, type: 2}
     m_entries:
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_subtitle: CreativeW
     - m_day: 5
       m_room: {fileID: 11400000, guid: 069fb718e2d832e4ab64dec67e13970c, type: 2}
-      m_title: {fileID: 11400000, guid: 87694ae638fd31f42a8e62edb6e4108d, type: 2}
+      m_title: {fileID: 0}
       m_subtitle: World Religion
   - m_period: {fileID: 11400000, guid: f8654c0be2960f54fae0f00e5f7afb90, type: 2}
     m_entries:

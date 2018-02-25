@@ -289,7 +289,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 3
       m_room: {fileID: 11400000, guid: 2072ede11245b274d9a7c60c438d8fef, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: cba4bba2bc5037a4c8ff2d8dc4ab7c80, type: 2}
       m_subtitle: HOPE
     - m_day: 4
       m_room: {fileID: 0}

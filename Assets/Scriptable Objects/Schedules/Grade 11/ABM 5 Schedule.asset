@@ -201,7 +201,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 3
       m_room: {fileID: 11400000, guid: 230c23afcff01b8449c1d43edd4e429b, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6bc5217a73273a640b4e1795ab7b3496, type: 2}
       m_subtitle: Org Mgmt
     - m_day: 4
       m_room: {fileID: 0}
@@ -223,7 +223,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 3
       m_room: {fileID: 11400000, guid: 230c23afcff01b8449c1d43edd4e429b, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6bc5217a73273a640b4e1795ab7b3496, type: 2}
       m_subtitle: Org Mgmt
     - m_day: 4
       m_room: {fileID: 0}
