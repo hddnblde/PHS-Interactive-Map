@@ -234,7 +234,7 @@ public class ScheduleGenerator : EditorWindow
 	
 	private Schedule GetSchedule(string section, string grade)
 	{
-		string[] result = AssetDatabase.FindAssets("\"" + section + "\"" + " t:" + typeof(Schedule).ToString());
+		string[] result = AssetDatabase.FindAssets("\"" + section + " \"" + " t:" + typeof(Schedule).ToString());
 
 		if(result == null || result.Length == 0)
 		{
@@ -279,18 +279,24 @@ public class ScheduleGenerator : EditorWindow
 
 	private ScheduleObject GetTarget(string target, string type)
 	{
-		target = target.TrimEnd().TrimStart();
+		// target = target.TrimEnd().TrimStart();
 
-		if(string.IsNullOrEmpty(target))
+		if(string.IsNullOrEmpty(target.TrimEnd().TrimStart()))
 			return null;
 
 		string[] result = FindAssets(target, type);
 
 		if(result == null || result.Length == 0)
 		{
+			target = target.TrimEnd().TrimStart();
+			result = FindAssets(target, type);
+			Debug.Log("Attempting to search again.");
+		}
+
+		if(result == null || result.Length == 0)
+		{
 			Debug.Log("Cannot get schedule object for : " + target + " end of line.");
 			return null;
-			
 		}
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
@@ -310,14 +316,7 @@ public class ScheduleGenerator : EditorWindow
 
 	private string[] FindAssets(string target, string type)
 	{
-		// string[] result = AssetDatabase.FindAssets(target + " t:" + type);
 		string[] result = AssetDatabase.FindAssets("\"" + target + "\"" + " t:" + type);
-
-		// if(result == null || result.Length != 1)
-		// 	result = AssetDatabase.FindAssets(CatchFormat(target));
-		// else if(result == null)
-		// 	result = AssetDatabase.FindAssets("\"" + target + "\"" + " t:" + type);
-
 		return result;
 	}
 

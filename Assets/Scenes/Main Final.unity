@@ -24334,6 +24334,8 @@ MonoBehaviour:
     m_sections:
     - m_section: {fileID: 11400000, guid: 481f62560ffbbab408e46b094f51b4d4, type: 2}
       m_schedules:
+      - {fileID: 11400000, guid: 804596c1f5b09314ca03daf048489538, type: 2}
+      - {fileID: 11400000, guid: f7cafff46b6be0a4eae0245b6f3d5c28, type: 2}
       - {fileID: 11400000, guid: 59c40404e24ac8042aa7801397ed98c5, type: 2}
       - {fileID: 11400000, guid: 2964f293d02fb9e42877146b58dfa361, type: 2}
       - {fileID: 11400000, guid: 33286bf3d9f0199469456745960326a6, type: 2}
@@ -24345,6 +24347,7 @@ MonoBehaviour:
     - m_section: {fileID: 11400000, guid: 969161c02efc62b4082e6a2079a3fcb6, type: 2}
       m_schedules:
       - {fileID: 11400000, guid: 16dbfbc0b73c7b54b9dbbd48e43fff5b, type: 2}
+      - {fileID: 11400000, guid: e3f8a7fa3851bef479c5c7ba22fdbc59, type: 2}
       - {fileID: 11400000, guid: 89d2708708ca84040a22e036959c202b, type: 2}
       - {fileID: 11400000, guid: b7517feef1c465249a78dab61e8a953d, type: 2}
       - {fileID: 11400000, guid: bbeeeb16b7129b34bb3d7a77c769de9e, type: 2}
@@ -24353,11 +24356,13 @@ MonoBehaviour:
     - m_section: {fileID: 11400000, guid: 9be76acd14b8a68478ca79ac93dc0cb8, type: 2}
       m_schedules:
       - {fileID: 11400000, guid: 865275f6c931227449d28fb3d00f4755, type: 2}
+      - {fileID: 11400000, guid: e53105b01c4334345b198b5b48c5aab9, type: 2}
       - {fileID: 11400000, guid: a97d286a101c01d41b9dd9a3aca82296, type: 2}
       - {fileID: 11400000, guid: 4a1ee938e1b751441825aad95ecb1c76, type: 2}
     - m_section: {fileID: 11400000, guid: 071ed78b6d50af540bcfc7e9882a9894, type: 2}
       m_schedules:
       - {fileID: 11400000, guid: c75673985fea65f48ba24aa1bb0350df, type: 2}
+      - {fileID: 11400000, guid: ffbde78eb8e0c874c98b75a225a3b6c7, type: 2}
       - {fileID: 11400000, guid: 638236afc8709ba4193193df2ad38735, type: 2}
       - {fileID: 11400000, guid: 6b4b8587c47943048a7425799b13f1a5, type: 2}
       - {fileID: 11400000, guid: 1d886e24a3696c24a87ca18c70e7fbec, type: 2}
@@ -24365,6 +24370,7 @@ MonoBehaviour:
     - m_section: {fileID: 11400000, guid: 982e25f8cc105124787fd80e056e6b0b, type: 2}
       m_schedules:
       - {fileID: 11400000, guid: af2c74e6103cbdc4ab2cdd50f234961d, type: 2}
+      - {fileID: 11400000, guid: da69b8744f88cf748b08e5a18e5652b5, type: 2}
   - m_grade: 12
     m_sections:
     - m_section: {fileID: 11400000, guid: be600892e25a5a543bba303b3b1242cd, type: 2}
