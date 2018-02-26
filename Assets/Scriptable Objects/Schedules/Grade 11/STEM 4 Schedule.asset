@@ -29,7 +29,7 @@ MonoBehaviour:
       m_subtitle: Gen Bio
     - m_day: 4
       m_room: {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d9603b2a84102614bbd72a22e8109a05, type: 2}
       m_subtitle: Fil1
     - m_day: 5
       m_room: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
       m_subtitle: Gen Bio
     - m_day: 4
       m_room: {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d9603b2a84102614bbd72a22e8109a05, type: 2}
       m_subtitle: Fil1
     - m_day: 5
       m_room: {fileID: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d9603b2a84102614bbd72a22e8109a05, type: 2}
       m_subtitle: Fil1
     - m_day: 3
       m_room: {fileID: 11400000, guid: 68eff396ca8e56442ad7a2b453aaea10, type: 2}
@@ -285,7 +285,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: a8fc658f200b19d49a04a658897eac2a, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d9603b2a84102614bbd72a22e8109a05, type: 2}
       m_subtitle: Fil1
     - m_day: 3
       m_room: {fileID: 11400000, guid: 68eff396ca8e56442ad7a2b453aaea10, type: 2}

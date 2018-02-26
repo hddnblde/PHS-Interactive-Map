@@ -193,7 +193,7 @@ MonoBehaviour:
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: aa9ba3ff54e10e84fbe633bc0ef02fe1, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 4a8abf3ae54a626439b1a84934485e25, type: 2}
       m_subtitle: Gen Math
     - m_day: 2
       m_room: {fileID: 11400000, guid: 230c23afcff01b8449c1d43edd4e429b, type: 2}
@@ -215,7 +215,7 @@ MonoBehaviour:
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: aa9ba3ff54e10e84fbe633bc0ef02fe1, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 4a8abf3ae54a626439b1a84934485e25, type: 2}
       m_subtitle: Gen Math
     - m_day: 2
       m_room: {fileID: 11400000, guid: 230c23afcff01b8449c1d43edd4e429b, type: 2}

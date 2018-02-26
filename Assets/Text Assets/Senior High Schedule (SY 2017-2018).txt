@@ -90,8 +90,8 @@
 6	10:30 AM	11:00 AM	11	ABM 6															
 7	11:00 AM	11:55 AM	11	ABM 6				Org Mgmt	Santan 203	Carreon, Arnold				Earth Sci	Santan 203	Munar, Marie June			
 8	11:55 AM	12:50 PM	11	ABM 6	HOPE	Science Lab 2	Dizon, Cherry	Org Mgmt	Santan 203	Carreon, Arnold				Earth Sci	Santan 203	Munar, Marie June			
-9	12:50 PM	1:45 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel R	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
-10	1:45 PM	2:40 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel R	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
+9	12:50 PM	1:45 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
+10	1:45 PM	2:40 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
 11	2:40 PM	2:55 PM	11	ABM 6															
 12	2:55 PM	3:50 PM	11	ABM 6	Org Mgmt	Science Lab 2	Carreon, Arnold	Per Dev	Santan 203	Magno, Editha				Per Dev	Santan 203	Magno, Editha			
 13	3:50 PM	4:45 PM	11	ABM 6	Org Mgmt	Science Lab 2	Carreon, Arnold	Per Dev	Santan 203	Magno, Editha				Per Dev	Santan 203	Magno, Editha			
@@ -244,8 +244,8 @@
 6	10:30 AM	11:00 AM	11	HUMSS 1															
 7	11:00 AM	11:55 AM	11	HUMSS 1				CreativeW	Main 3	VILLEZA, Regienald	World Religion	Main 3	Liwanag, Rhodel	World Religion	Main 3	Liwanag, Rhodel			
 8	11:55 AM	12:50 PM	11	HUMSS 1				CreativeW	Main 3	VILLEZA, Regienald	World Religion	Main 3	Liwanag, Rhodel	World Religion	Main 3	Liwanag, Rhodel			
-9	12:50 PM	1:45 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy L	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
-10	1:45 PM	2:40 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy L	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
+9	12:50 PM	1:45 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
+10	1:45 PM	2:40 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
 11	2:40 PM	2:55 PM	11	HUMSS 1															
 12	2:55 PM	3:50 PM	11	HUMSS 1				Per Dev	Main 3	Gueco, Benedict V.	Gen Math	Main 3	Peñarubia, Merylin	HOPE	Main 3	Dizon, Cherry			
 13	3:50 PM	4:45 PM	11	HUMSS 1				Per Dev	Main 3	Gueco, Benedict V.	Gen Math	Main 3	Peñarubia, Merylin						
@@ -261,8 +261,8 @@
 9	12:50 PM	1:45 PM	11	HUMSS 2				Earth Sci	Main 4	Rosete, Analiza	Gen Math	Main 4	Peñarubia, Merylin	World Religion	Main 4	Sanchez, Richard			
 10	1:45 PM	2:40 PM	11	HUMSS 2				Earth Sci	Main 4	Rosete, Analiza	Gen Math	Main 4	Peñarubia, Merylin	World Religion	Main 4	Sanchez, Richard			
 11	2:40 PM	2:55 PM	11	HUMSS 2															
-12	2:55 PM	3:50 PM	11	HUMSS 2							CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy L			
-13	3:50 PM	4:45 PM	11	HUMSS 2				HOPE	Main 4	Dizon, Cherry	CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy L			
+12	2:55 PM	3:50 PM	11	HUMSS 2							CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy			
+13	3:50 PM	4:45 PM	11	HUMSS 2				HOPE	Main 4	Dizon, Cherry	CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy			
 14	4:45 PM	5:40 PM	11	HUMSS 2															
 1	6:35 AM	7:30 AM	11	HUMSS 3	Oral Com	Main 4	Basa, Beverly Joy							World Religion	Science Lab 3	Magno, Editha	CreativeW	Main 4	Basa, Beverly Joy
 2	7:30 AM	8:25 AM	11	HUMSS 3	Oral Com	Main 4	Basa, Beverly Joy							World Religion	Science Lab 3	Magno, Editha	CreativeW	Main 4	Basa, Beverly Joy
@@ -278,16 +278,16 @@
 12	2:55 PM	3:50 PM	11	HUMSS 3										Per Dev	Science Lab 3	Rosete, Analiza	Per Dev	Main 4	Rosete, Analiza
 13	3:50 PM	4:45 PM	11	HUMSS 3	HOPE	Main 4	Dizon, Cherry							Per Dev	Science Lab 3	Rosete, Analiza	Per Dev	Main 4	Rosete, Analiza
 14	4:45 PM	5:40 PM	11	HUMSS 3															
-1	6:35 AM	7:30 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn A	Oral Com	Main 5	Basa, Beverly Joy			
-2	7:30 AM	8:25 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn A	Oral Com	Main 5	Basa, Beverly Joy			
+1	6:35 AM	7:30 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn	Oral Com	Main 5	Basa, Beverly Joy			
+2	7:30 AM	8:25 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn	Oral Com	Main 5	Basa, Beverly Joy			
 3	8:25 AM	8:40 AM	11	HUMSS 4															
 4	8:40 AM	9:35 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June						
-5	9:35 AM	10:30 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June	HOPE	Main 5	AIME, Mark David M			
+5	9:35 AM	10:30 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June	HOPE	Main 5	Aime, Mark David			
 6	10:30 AM	11:00 AM	11	HUMSS 4															
-7	11:00 AM	11:55 AM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy L	Per Dev	Main 5	Syhuat, J-Lyn A.			
-8	11:55 AM	12:50 PM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy L	Per Dev	Main 5	Syhuat, J-Lyn A.			
-9	12:50 PM	1:45 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy L	Gen Math	Main 5	Peñarubia, Merylin			
-10	1:45 PM	2:40 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy L	Gen Math	Main 5	Peñarubia, Merylin			
+7	11:00 AM	11:55 AM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy	Per Dev	Main 5	Syhuat, J-Lyn			
+8	11:55 AM	12:50 PM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy	Per Dev	Main 5	Syhuat, J-Lyn			
+9	12:50 PM	1:45 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy	Gen Math	Main 5	Peñarubia, Merylin			
+10	1:45 PM	2:40 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy	Gen Math	Main 5	Peñarubia, Merylin			
 11	2:40 PM	2:55 PM	11	HUMSS 4															
 12	2:55 PM	3:50 PM	11	HUMSS 4				CreativeW	Main 5	Basa, Beverly Joy	World Religion	Main 5	Liwanag, Rhodel	Fil1	Main 5	Yumang, Ana Marie			
 13	3:50 PM	4:45 PM	11	HUMSS 4				CreativeW	Main 5	Basa, Beverly Joy	World Religion	Main 5	Liwanag, Rhodel	Fil1	Main 5	Yumang, Ana Marie			
@@ -295,13 +295,13 @@
 1	6:35 AM	7:30 AM	11	STEM 1	Earth Sci	Santan 301	Dizon, Ma. Gracia				Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail
 2	7:30 AM	8:25 AM	11	STEM 1	Earth Sci	Santan 301	Dizon, Ma. Gracia				Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail
 3	8:25 AM	8:40 AM	11	STEM 1															
-4	8:40 AM	9:35 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	DE CASTRO, Raquel T
-5	9:35 AM	10:30 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	DE CASTRO, Raquel T
+4	8:40 AM	9:35 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	De Castro, Raquel
+5	9:35 AM	10:30 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	De Castro, Raquel
 6	10:30 AM	11:00 AM	11	STEM 1															
 7	11:00 AM	11:55 AM	11	STEM 1	Gen Math	Santan 301	QUIZON, Jay Vincent				Fil1	Santan 301	Claros, Katherine				Gen Math	Santan 301	QUIZON, Jay Vincent
 8	11:55 AM	12:50 PM	11	STEM 1	Gen Math	Santan 301	QUIZON, Jay Vincent				Fil1	Santan 301	Claros, Katherine				Gen Math	Santan 301	QUIZON, Jay Vincent
-9	12:50 PM	1:45 PM	11	STEM 1	Pre Calc	Santan 301	CARREON, Peter Paul C				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
-10	1:45 PM	2:40 PM	11	STEM 1	Pre Calc	Santan 301	CARREON, Peter Paul C				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
+9	12:50 PM	1:45 PM	11	STEM 1	Pre Calc	Santan 301	Carreon, Peter Paul				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
+10	1:45 PM	2:40 PM	11	STEM 1	Pre Calc	Santan 301	Carreon, Peter Paul				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
 11	2:40 PM	2:55 PM	11	STEM 1															
 12	2:55 PM	3:50 PM	11	STEM 1	HOPE	Santan 301	Dizon, Cherry				Per Dev	Santan 301	Guina, Abigail				Oral Com	Santan 301	Briones, Eduard
 13	3:50 PM	4:45 PM	11	STEM 1							Per Dev	Santan 301	Guina, Abigail				Oral Com	Santan 301	Briones, Eduard
@@ -317,8 +317,8 @@
 9	12:50 PM	1:45 PM	11	STEM 2	Oral Com	Santan 201	Briones, Eduard	Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail			
 10	1:45 PM	2:40 PM	11	STEM 2	Oral Com	Santan 201	Briones, Eduard	Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail			
 11	2:40 PM	2:55 PM	11	STEM 2															
-12	2:55 PM	3:50 PM	11	STEM 2	Pre Calc	Santan 201	CARREON, Peter Paul C	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
-13	3:50 PM	4:45 PM	11	STEM 2	Pre Calc	Santan 201	CARREON, Peter Paul C	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
+12	2:55 PM	3:50 PM	11	STEM 2	Pre Calc	Santan 201	Carreon, Peter Paul	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
+13	3:50 PM	4:45 PM	11	STEM 2	Pre Calc	Santan 201	Carreon, Peter Paul	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
 14	4:45 PM	5:40 PM	11	STEM 2															
 1	6:35 AM	7:30 AM	11	STEM 3	Gen Math	Santan 302	QUIZON, Jay Vincent				Fil1	Santan 302	Claros, Katherine				Earth Sci	Santan 302	Dizon, Ma. Gracia
 2	7:30 AM	8:25 AM	11	STEM 3	Gen Math	Santan 302	QUIZON, Jay Vincent				Fil1	Santan 302	Claros, Katherine				Earth Sci	Santan 302	Dizon, Ma. Gracia
@@ -328,8 +328,8 @@
 6	10:30 AM	11:00 AM	11	STEM 3															
 7	11:00 AM	11:55 AM	11	STEM 3	Per Dev	Santan 302	Guina, Abigail				Oral Com	Santan 302	Briones, Eduard				Pre Calc	Santan 302	Carreon, Peter Paul
 8	11:55 AM	12:50 PM	11	STEM 3	Per Dev	Santan 302	Guina, Abigail				Oral Com	Santan 302	Briones, Eduard				Pre Calc	Santan 302	Carreon, Peter Paul
-9	12:50 PM	1:45 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	DE CASTRO, Raquel T				Fil1	Santan 302	Claros, Katherine
-10	1:45 PM	2:40 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	DE CASTRO, Raquel T				Fil1	Santan 302	Claros, Katherine
+9	12:50 PM	1:45 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	De Castro, Raquel				Fil1	Santan 302	Claros, Katherine
+10	1:45 PM	2:40 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	De Castro, Raquel				Fil1	Santan 302	Claros, Katherine
 11	2:40 PM	2:55 PM	11	STEM 3															
 12	2:55 PM	3:50 PM	11	STEM 3	Oral Com	Santan 302	Briones, Eduard				HOPE	Santan 302	Dizon, Cherry				Gen Math	Santan 302	QUIZON, Jay Vincent
 13	3:50 PM	4:45 PM	11	STEM 3	Oral Com	Santan 302	Briones, Eduard										Gen Math	Santan 302	QUIZON, Jay Vincent
@@ -351,13 +351,13 @@
 1	6:35 AM	7:30 AM	11	STEM 5				Gen Bio	Santan 303	De Castro, Raquel				Oral Com	Santan 303	Briones, Eduard	Fil1	Santan 201	Claros, Katherine
 2	7:30 AM	8:25 AM	11	STEM 5				Gen Bio	Santan 303	De Castro, Raquel				Oral Com	Santan 303	Briones, Eduard	Fil1	Santan 201	Claros, Katherine
 3	8:25 AM	8:40 AM	11	STEM 5															
-4	8:40 AM	9:35 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	CARREON, Peter Paul C	Oral Com	Santan 201	Briones, Eduard A
-5	9:35 AM	10:30 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	CARREON, Peter Paul C	Oral Com	Santan 201	Briones, Eduard A
+4	8:40 AM	9:35 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	Carreon, Peter Paul	Oral Com	Santan 201	Briones, Eduard
+5	9:35 AM	10:30 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	Carreon, Peter Paul	Oral Com	Santan 201	Briones, Eduard
 6	10:30 AM	11:00 AM	11	STEM 5															
 7	11:00 AM	11:55 AM	11	STEM 5				HOPE	Santan 303	Dizon, Cherry				Earth Sci	Santan 303	Dizon, Ma. Gracia	Earth Sci	Santan 201	DIZON, Ma. Gracia C
 8	11:55 AM	12:50 PM	11	STEM 5										Earth Sci	Santan 303	Dizon, Ma. Gracia	Earth Sci	Santan 201	DIZON, Ma. Gracia C
-9	12:50 PM	1:45 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	DE CASTRO, Raquel T	Gen Math	Santan 201	QUIZON, Jay Vincent I
-10	1:45 PM	2:40 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	DE CASTRO, Raquel T	Gen Math	Santan 201	QUIZON, Jay Vincent I
+9	12:50 PM	1:45 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	De Castro, Raquel	Gen Math	Santan 201	Quizon, Jay Vincent
+10	1:45 PM	2:40 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	De Castro, Raquel	Gen Math	Santan 201	Quizon, Jay Vincent
 11	2:40 PM	2:55 PM	11	STEM 5															
 12	2:55 PM	3:50 PM	11	STEM 5				Pre Calc	Santan 303	Carreon, Peter Paul				Per Dev	Santan 303	Guina, Abigail	Per Dev	Santan 201	Guina, Abigail
 13	3:50 PM	4:45 PM	11	STEM 5				Pre Calc	Santan 303	Carreon, Peter Paul				Per Dev	Santan 303	Guina, Abigail	Per Dev	Santan 201	Guina, Abigail
@@ -365,19 +365,19 @@
 1	6:35 AM	7:30 AM	11	STEM 6	Gen Bio	Santan 303	De Castro, Raquel				Pre Calc	Santan 303	Carreon, Peter Paul				Pre Calc	Santan 303	Carreon, Peter Paul
 2	7:30 AM	8:25 AM	11	STEM 6	Gen Bio	Santan 303	De Castro, Raquel				Pre Calc	Santan 303	Carreon, Peter Paul				Pre Calc	Santan 303	Carreon, Peter Paul
 3	8:25 AM	8:40 AM	11	STEM 6															
-4	8:40 AM	9:35 AM	11	STEM 6	Gen Math	Santan 303	QUIZON, Jay Vincent I				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
-5	9:35 AM	10:30 AM	11	STEM 6	Gen Math	Santan 303	QUIZON, Jay Vincent I				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
+4	8:40 AM	9:35 AM	11	STEM 6	Gen Math	Santan 303	Quizon, Jay Vincent				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
+5	9:35 AM	10:30 AM	11	STEM 6	Gen Math	Santan 303	Quizon, Jay Vincent				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
 6	10:30 AM	11:00 AM	11	STEM 6															
 7	11:00 AM	11:55 AM	11	STEM 6	Oral Com	Santan 303	Briones, Eduard				Gen Bio	Santan 303	De Castro, Raquel				Per Dev	Santan 303	Guina, Abigail
 8	11:55 AM	12:50 PM	11	STEM 6	Oral Com	Santan 303	Briones, Eduard				Gen Bio	Santan 303	De Castro, Raquel				Per Dev	Santan 303	Guina, Abigail
 9	12:50 PM	1:45 PM	11	STEM 6	Earth Sci	Santan 303	Dizon, Ma. Gracia				Gen Math	Santan 303	QUIZON, Jay Vincent				HOPE	Santan 303	Dizon, Cherry
 10	1:45 PM	2:40 PM	11	STEM 6	Earth Sci	Santan 303	Dizon, Ma. Gracia				Gen Math	Santan 303	QUIZON, Jay Vincent				Earth Sci	Santan 303	DIZON, Ma. Gracia C
 11	2:40 PM	2:55 PM	11	STEM 6															
-12	2:55 PM	3:50 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard A				Earth Sci	Santan 303	DIZON, Ma. Gracia C
-13	3:50 PM	4:45 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard A						
+12	2:55 PM	3:50 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard				Earth Sci	Santan 303	DIZON, Ma. Gracia C
+13	3:50 PM	4:45 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard						
 14	4:45 PM	5:40 PM	11	STEM 6															
-1	6:35 AM	7:30 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna S
-2	7:30 AM	8:25 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna S
+1	6:35 AM	7:30 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna
+2	7:30 AM	8:25 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna
 3	8:25 AM	8:40 AM	11	TVL 1															
 4	8:40 AM	9:35 AM	11	TVL 1	Per Dev	Science Lab 1	Wijangco, Joshua				Fil1	Science Lab 1	Yumang, Ana Marie				Earth Sci	Science Lab 1	Rosete, Analiza
 5	9:35 AM	10:30 AM	11	TVL 1	Per Dev	Science Lab 1	Wijangco, Joshua				Fil1	Science Lab 1	Yumang, Ana Marie				Earth Sci	Science Lab 1	Rosete, Analiza
@@ -482,8 +482,8 @@
 6	10:30 AM	11:00 AM	11	ABM 6															
 7	11:00 AM	11:55 AM	11	ABM 6				Org Mgmt	Santan 203	Carreon, Arnold				Earth Sci	Santan 203	Munar, Marie June			
 8	11:55 AM	12:50 PM	11	ABM 6	HOPE	Science Lab 2	Dizon, Cherry	Org Mgmt	Santan 203	Carreon, Arnold				Earth Sci	Santan 203	Munar, Marie June			
-9	12:50 PM	1:45 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel R	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
-10	1:45 PM	2:40 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel R	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
+9	12:50 PM	1:45 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
+10	1:45 PM	2:40 PM	11	ABM 6	Gen Math	Science Lab 2	Verzosa, Rodel	Fil1	Santan 203	Calicdan, Arlene				Oral Com	Santan 203	Maniago, Von Claudine			
 11	2:40 PM	2:55 PM	11	ABM 6															
 12	2:55 PM	3:50 PM	11	ABM 6	Org Mgmt	Science Lab 2	Carreon, Arnold	Per Dev	Santan 203	Magno, Editha				Per Dev	Santan 203	Magno, Editha			
 13	3:50 PM	4:45 PM	11	ABM 6	Org Mgmt	Science Lab 2	Carreon, Arnold	Per Dev	Santan 203	Magno, Editha				Per Dev	Santan 203	Magno, Editha			
@@ -636,8 +636,8 @@
 6	10:30 AM	11:00 AM	11	HUMSS 1															
 7	11:00 AM	11:55 AM	11	HUMSS 1				CreativeW	Main 3	VILLEZA, Regienald	World Religion	Main 3	Liwanag, Rhodel	World Religion	Main 3	Liwanag, Rhodel			
 8	11:55 AM	12:50 PM	11	HUMSS 1				CreativeW	Main 3	VILLEZA, Regienald	World Religion	Main 3	Liwanag, Rhodel	World Religion	Main 3	Liwanag, Rhodel			
-9	12:50 PM	1:45 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy L	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
-10	1:45 PM	2:40 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy L	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
+9	12:50 PM	1:45 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
+10	1:45 PM	2:40 PM	11	HUMSS 1				Oral Com	Main 3	Basa, Beverly Joy	Per Dev	Main 3	Gueco, Benedict V.	Oral Com	Main 3	Basa, Beverly Joy			
 11	2:40 PM	2:55 PM	11	HUMSS 1															
 12	2:55 PM	3:50 PM	11	HUMSS 1				Per Dev	Main 3	Gueco, Benedict V.	Gen Math	Main 3	Peñarubia, Merylin	HOPE	Main 3	Dizon, Cherry			
 13	3:50 PM	4:45 PM	11	HUMSS 1				Per Dev	Main 3	Gueco, Benedict V.	Gen Math	Main 3	Peñarubia, Merylin						
@@ -653,8 +653,8 @@
 9	12:50 PM	1:45 PM	11	HUMSS 2				Earth Sci	Main 4	Rosete, Analiza	Gen Math	Main 4	Peñarubia, Merylin	World Religion	Main 4	Sanchez, Richard			
 10	1:45 PM	2:40 PM	11	HUMSS 2				Earth Sci	Main 4	Rosete, Analiza	Gen Math	Main 4	Peñarubia, Merylin	World Religion	Main 4	Sanchez, Richard			
 11	2:40 PM	2:55 PM	11	HUMSS 2															
-12	2:55 PM	3:50 PM	11	HUMSS 2							CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy L			
-13	3:50 PM	4:45 PM	11	HUMSS 2				HOPE	Main 4	Dizon, Cherry	CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy L			
+12	2:55 PM	3:50 PM	11	HUMSS 2							CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy			
+13	3:50 PM	4:45 PM	11	HUMSS 2				HOPE	Main 4	Dizon, Cherry	CreativeW	Main 4	Bacani, Maria Victoria	Oral Com	Main 4	Basa, Beverly Joy			
 14	4:45 PM	5:40 PM	11	HUMSS 2															
 1	6:35 AM	7:30 AM	11	HUMSS 3	Oral Com	Main 4	Basa, Beverly Joy							World Religion	Science Lab 3	Magno, Editha	CreativeW	Main 4	Basa, Beverly Joy
 2	7:30 AM	8:25 AM	11	HUMSS 3	Oral Com	Main 4	Basa, Beverly Joy							World Religion	Science Lab 3	Magno, Editha	CreativeW	Main 4	Basa, Beverly Joy
@@ -670,16 +670,16 @@
 12	2:55 PM	3:50 PM	11	HUMSS 3										Per Dev	Science Lab 3	Rosete, Analiza	Per Dev	Main 4	Rosete, Analiza
 13	3:50 PM	4:45 PM	11	HUMSS 3	HOPE	Main 4	Dizon, Cherry							Per Dev	Science Lab 3	Rosete, Analiza	Per Dev	Main 4	Rosete, Analiza
 14	4:45 PM	5:40 PM	11	HUMSS 3															
-1	6:35 AM	7:30 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn A	Oral Com	Main 5	Basa, Beverly Joy			
-2	7:30 AM	8:25 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn A	Oral Com	Main 5	Basa, Beverly Joy			
+1	6:35 AM	7:30 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn	Oral Com	Main 5	Basa, Beverly Joy			
+2	7:30 AM	8:25 AM	11	HUMSS 4				Fil1	Main 5	Yumang, Ana Marie	Per Dev	Main 5	Syhuat, J-Lyn	Oral Com	Main 5	Basa, Beverly Joy			
 3	8:25 AM	8:40 AM	11	HUMSS 4															
 4	8:40 AM	9:35 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June						
-5	9:35 AM	10:30 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June	HOPE	Main 5	AIME, Mark David M			
+5	9:35 AM	10:30 AM	11	HUMSS 4				World Religion	Main 5	Liwanag, Rhodel	Earth Sci	Main 5	Munar, Marie June	HOPE	Main 5	Aime, Mark David			
 6	10:30 AM	11:00 AM	11	HUMSS 4															
-7	11:00 AM	11:55 AM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy L	Per Dev	Main 5	Syhuat, J-Lyn A.			
-8	11:55 AM	12:50 PM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy L	Per Dev	Main 5	Syhuat, J-Lyn A.			
-9	12:50 PM	1:45 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy L	Gen Math	Main 5	Peñarubia, Merylin			
-10	1:45 PM	2:40 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy L	Gen Math	Main 5	Peñarubia, Merylin			
+7	11:00 AM	11:55 AM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy	Per Dev	Main 5	Syhuat, J-Lyn			
+8	11:55 AM	12:50 PM	11	HUMSS 4				Gen Math	Main 5	Peñarubia, Merylin	CreativeW	Main 5	Basa, Beverly Joy	Per Dev	Main 5	Syhuat, J-Lyn			
+9	12:50 PM	1:45 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy	Gen Math	Main 5	Peñarubia, Merylin			
+10	1:45 PM	2:40 PM	11	HUMSS 4				Earth Sci	Main 5	Munar, Marie June	Oral Com	Main 5	Basa, Beverly Joy	Gen Math	Main 5	Peñarubia, Merylin			
 11	2:40 PM	2:55 PM	11	HUMSS 4															
 12	2:55 PM	3:50 PM	11	HUMSS 4				CreativeW	Main 5	Basa, Beverly Joy	World Religion	Main 5	Liwanag, Rhodel	Fil1	Main 5	Yumang, Ana Marie			
 13	3:50 PM	4:45 PM	11	HUMSS 4				CreativeW	Main 5	Basa, Beverly Joy	World Religion	Main 5	Liwanag, Rhodel	Fil1	Main 5	Yumang, Ana Marie			
@@ -687,13 +687,13 @@
 1	6:35 AM	7:30 AM	11	STEM 1	Earth Sci	Santan 301	Dizon, Ma. Gracia				Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail
 2	7:30 AM	8:25 AM	11	STEM 1	Earth Sci	Santan 301	Dizon, Ma. Gracia				Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail
 3	8:25 AM	8:40 AM	11	STEM 1															
-4	8:40 AM	9:35 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	DE CASTRO, Raquel T
-5	9:35 AM	10:30 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	DE CASTRO, Raquel T
+4	8:40 AM	9:35 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	De Castro, Raquel
+5	9:35 AM	10:30 AM	11	STEM 1	Fil1	Santan 301	Claros, Katherine				Gen Bio	Santan 301	De Castro, Raquel				Gen Bio	Santan 301	De Castro, Raquel
 6	10:30 AM	11:00 AM	11	STEM 1															
 7	11:00 AM	11:55 AM	11	STEM 1	Gen Math	Santan 301	QUIZON, Jay Vincent				Fil1	Santan 301	Claros, Katherine				Gen Math	Santan 301	QUIZON, Jay Vincent
 8	11:55 AM	12:50 PM	11	STEM 1	Gen Math	Santan 301	QUIZON, Jay Vincent				Fil1	Santan 301	Claros, Katherine				Gen Math	Santan 301	QUIZON, Jay Vincent
-9	12:50 PM	1:45 PM	11	STEM 1	Pre Calc	Santan 301	CARREON, Peter Paul C				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
-10	1:45 PM	2:40 PM	11	STEM 1	Pre Calc	Santan 301	CARREON, Peter Paul C				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
+9	12:50 PM	1:45 PM	11	STEM 1	Pre Calc	Santan 301	Carreon, Peter Paul				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
+10	1:45 PM	2:40 PM	11	STEM 1	Pre Calc	Santan 301	Carreon, Peter Paul				Oral Com	Santan 301	Briones, Eduard				Pre Calc	Santan 301	Carreon, Peter Paul
 11	2:40 PM	2:55 PM	11	STEM 1															
 12	2:55 PM	3:50 PM	11	STEM 1	HOPE	Santan 301	Dizon, Cherry				Per Dev	Santan 301	Guina, Abigail				Oral Com	Santan 301	Briones, Eduard
 13	3:50 PM	4:45 PM	11	STEM 1							Per Dev	Santan 301	Guina, Abigail				Oral Com	Santan 301	Briones, Eduard
@@ -709,8 +709,8 @@
 9	12:50 PM	1:45 PM	11	STEM 2	Oral Com	Santan 201	Briones, Eduard	Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail			
 10	1:45 PM	2:40 PM	11	STEM 2	Oral Com	Santan 201	Briones, Eduard	Earth Sci	Santan 301	Dizon, Ma. Gracia				Per Dev	Santan 301	Guina, Abigail			
 11	2:40 PM	2:55 PM	11	STEM 2															
-12	2:55 PM	3:50 PM	11	STEM 2	Pre Calc	Santan 201	CARREON, Peter Paul C	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
-13	3:50 PM	4:45 PM	11	STEM 2	Pre Calc	Santan 201	CARREON, Peter Paul C	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
+12	2:55 PM	3:50 PM	11	STEM 2	Pre Calc	Santan 201	Carreon, Peter Paul	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
+13	3:50 PM	4:45 PM	11	STEM 2	Pre Calc	Santan 201	Carreon, Peter Paul	Gen Math	Santan 301	QUIZON, Jay Vincent				Gen Math	Santan 301	QUIZON, Jay Vincent			
 14	4:45 PM	5:40 PM	11	STEM 2															
 1	6:35 AM	7:30 AM	11	STEM 3	Gen Math	Santan 302	QUIZON, Jay Vincent				Fil1	Santan 302	Claros, Katherine				Earth Sci	Santan 302	Dizon, Ma. Gracia
 2	7:30 AM	8:25 AM	11	STEM 3	Gen Math	Santan 302	QUIZON, Jay Vincent				Fil1	Santan 302	Claros, Katherine				Earth Sci	Santan 302	Dizon, Ma. Gracia
@@ -720,8 +720,8 @@
 6	10:30 AM	11:00 AM	11	STEM 3															
 7	11:00 AM	11:55 AM	11	STEM 3	Per Dev	Santan 302	Guina, Abigail				Oral Com	Santan 302	Briones, Eduard				Pre Calc	Santan 302	Carreon, Peter Paul
 8	11:55 AM	12:50 PM	11	STEM 3	Per Dev	Santan 302	Guina, Abigail				Oral Com	Santan 302	Briones, Eduard				Pre Calc	Santan 302	Carreon, Peter Paul
-9	12:50 PM	1:45 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	DE CASTRO, Raquel T				Fil1	Santan 302	Claros, Katherine
-10	1:45 PM	2:40 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	DE CASTRO, Raquel T				Fil1	Santan 302	Claros, Katherine
+9	12:50 PM	1:45 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	De Castro, Raquel				Fil1	Santan 302	Claros, Katherine
+10	1:45 PM	2:40 PM	11	STEM 3	Gen Bio	Santan 302	De Castro, Raquel				Gen Bio	Santan 302	De Castro, Raquel				Fil1	Santan 302	Claros, Katherine
 11	2:40 PM	2:55 PM	11	STEM 3															
 12	2:55 PM	3:50 PM	11	STEM 3	Oral Com	Santan 302	Briones, Eduard				HOPE	Santan 302	Dizon, Cherry				Gen Math	Santan 302	QUIZON, Jay Vincent
 13	3:50 PM	4:45 PM	11	STEM 3	Oral Com	Santan 302	Briones, Eduard										Gen Math	Santan 302	QUIZON, Jay Vincent
@@ -743,13 +743,13 @@
 1	6:35 AM	7:30 AM	11	STEM 5				Gen Bio	Santan 303	De Castro, Raquel				Oral Com	Santan 303	Briones, Eduard	Fil1	Santan 201	Claros, Katherine
 2	7:30 AM	8:25 AM	11	STEM 5				Gen Bio	Santan 303	De Castro, Raquel				Oral Com	Santan 303	Briones, Eduard	Fil1	Santan 201	Claros, Katherine
 3	8:25 AM	8:40 AM	11	STEM 5															
-4	8:40 AM	9:35 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	CARREON, Peter Paul C	Oral Com	Santan 201	Briones, Eduard A
-5	9:35 AM	10:30 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	CARREON, Peter Paul C	Oral Com	Santan 201	Briones, Eduard A
+4	8:40 AM	9:35 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	Carreon, Peter Paul	Oral Com	Santan 201	Briones, Eduard
+5	9:35 AM	10:30 AM	11	STEM 5				Gen Math	Santan 303	QUIZON, Jay Vincent				Pre Calc	Santan 303	Carreon, Peter Paul	Oral Com	Santan 201	Briones, Eduard
 6	10:30 AM	11:00 AM	11	STEM 5															
 7	11:00 AM	11:55 AM	11	STEM 5				HOPE	Santan 303	Dizon, Cherry				Earth Sci	Santan 303	Dizon, Ma. Gracia	Earth Sci	Santan 201	DIZON, Ma. Gracia C
 8	11:55 AM	12:50 PM	11	STEM 5										Earth Sci	Santan 303	Dizon, Ma. Gracia	Earth Sci	Santan 201	DIZON, Ma. Gracia C
-9	12:50 PM	1:45 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	DE CASTRO, Raquel T	Gen Math	Santan 201	QUIZON, Jay Vincent I
-10	1:45 PM	2:40 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	DE CASTRO, Raquel T	Gen Math	Santan 201	QUIZON, Jay Vincent I
+9	12:50 PM	1:45 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	De Castro, Raquel	Gen Math	Santan 201	Quizon, Jay Vincent
+10	1:45 PM	2:40 PM	11	STEM 5				Fil1	Santan 303	Claros, Katherine				Gen Bio	Santan 303	De Castro, Raquel	Gen Math	Santan 201	Quizon, Jay Vincent
 11	2:40 PM	2:55 PM	11	STEM 5															
 12	2:55 PM	3:50 PM	11	STEM 5				Pre Calc	Santan 303	Carreon, Peter Paul				Per Dev	Santan 303	Guina, Abigail	Per Dev	Santan 201	Guina, Abigail
 13	3:50 PM	4:45 PM	11	STEM 5				Pre Calc	Santan 303	Carreon, Peter Paul				Per Dev	Santan 303	Guina, Abigail	Per Dev	Santan 201	Guina, Abigail
@@ -757,19 +757,19 @@
 1	6:35 AM	7:30 AM	11	STEM 6	Gen Bio	Santan 303	De Castro, Raquel				Pre Calc	Santan 303	Carreon, Peter Paul				Pre Calc	Santan 303	Carreon, Peter Paul
 2	7:30 AM	8:25 AM	11	STEM 6	Gen Bio	Santan 303	De Castro, Raquel				Pre Calc	Santan 303	Carreon, Peter Paul				Pre Calc	Santan 303	Carreon, Peter Paul
 3	8:25 AM	8:40 AM	11	STEM 6															
-4	8:40 AM	9:35 AM	11	STEM 6	Gen Math	Santan 303	QUIZON, Jay Vincent I				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
-5	9:35 AM	10:30 AM	11	STEM 6	Gen Math	Santan 303	QUIZON, Jay Vincent I				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
+4	8:40 AM	9:35 AM	11	STEM 6	Gen Math	Santan 303	Quizon, Jay Vincent				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
+5	9:35 AM	10:30 AM	11	STEM 6	Gen Math	Santan 303	Quizon, Jay Vincent				Per Dev	Santan 303	Guina, Abigail				Fil1	Santan 303	Claros, Katherine
 6	10:30 AM	11:00 AM	11	STEM 6															
 7	11:00 AM	11:55 AM	11	STEM 6	Oral Com	Santan 303	Briones, Eduard				Gen Bio	Santan 303	De Castro, Raquel				Per Dev	Santan 303	Guina, Abigail
 8	11:55 AM	12:50 PM	11	STEM 6	Oral Com	Santan 303	Briones, Eduard				Gen Bio	Santan 303	De Castro, Raquel				Per Dev	Santan 303	Guina, Abigail
 9	12:50 PM	1:45 PM	11	STEM 6	Earth Sci	Santan 303	Dizon, Ma. Gracia				Gen Math	Santan 303	QUIZON, Jay Vincent				HOPE	Santan 303	Dizon, Cherry
 10	1:45 PM	2:40 PM	11	STEM 6	Earth Sci	Santan 303	Dizon, Ma. Gracia				Gen Math	Santan 303	QUIZON, Jay Vincent				Earth Sci	Santan 303	DIZON, Ma. Gracia C
 11	2:40 PM	2:55 PM	11	STEM 6															
-12	2:55 PM	3:50 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard A				Earth Sci	Santan 303	DIZON, Ma. Gracia C
-13	3:50 PM	4:45 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard A						
+12	2:55 PM	3:50 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard				Earth Sci	Santan 303	DIZON, Ma. Gracia C
+13	3:50 PM	4:45 PM	11	STEM 6	Fil1	Santan 303	Claros, Katherine				Oral Com	Santan 303	Briones, Eduard						
 14	4:45 PM	5:40 PM	11	STEM 6															
-1	6:35 AM	7:30 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna S
-2	7:30 AM	8:25 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna S
+1	6:35 AM	7:30 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna
+2	7:30 AM	8:25 AM	11	TVL 1	Fil1	Science Lab 1	Yumang, Ana Marie				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna
 3	8:25 AM	8:40 AM	11	TVL 1															
 4	8:40 AM	9:35 AM	11	TVL 1	Per Dev	Science Lab 1	Wijangco, Joshua				Fil1	Science Lab 1	Yumang, Ana Marie				Earth Sci	Science Lab 1	Rosete, Analiza
 5	9:35 AM	10:30 AM	11	TVL 1	Per Dev	Science Lab 1	Wijangco, Joshua				Fil1	Science Lab 1	Yumang, Ana Marie				Earth Sci	Science Lab 1	Rosete, Analiza
@@ -785,11 +785,11 @@
 1	6:35 AM	7:30 AM	11	TVL 2				Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna			
 2	7:30 AM	8:25 AM	11	TVL 2	HOPE	Main 5	Dizon, Cherry	Hairdressing	Science Lab 1	Austria, Vienna				Hairdressing	Science Lab 1	Austria, Vienna			
 3	8:25 AM	8:40 AM	11	TVL 2															
-4	8:40 AM	9:35 AM	11	TVL 2	Wellness	Main 5	Austria, Vienna S	Per Dev	Science Lab 1	Cabrera, Raymond A				Fil1	Science Lab 1	Cabrera, Alicia			
-5	9:35 AM	10:30 AM	11	TVL 2	Wellness	Main 5	Austria, Vienna S	Per Dev	Science Lab 1	Cabrera, Raymond A				Fil1	Science Lab 1	Cabrera, Alicia			
+4	8:40 AM	9:35 AM	11	TVL 2	Wellness	Main 5	Austria, Vienna	Per Dev	Science Lab 1	Cabrera, Raymond				Fil1	Science Lab 1	Cabrera, Alicia			
+5	9:35 AM	10:30 AM	11	TVL 2	Wellness	Main 5	Austria, Vienna	Per Dev	Science Lab 1	Cabrera, Raymond				Fil1	Science Lab 1	Cabrera, Alicia			
 6	10:30 AM	11:00 AM	11	TVL 2															
-7	11:00 AM	11:55 AM	11	TVL 2	Fil1	Main 5	Cabrera, Alicia	Oral Com	Science Lab 1	Lingat, Diza				Per Dev	Science Lab 1	Cabrera, Raymond A.			
-8	11:55 AM	12:50 PM	11	TVL 2	Fil1	Main 5	Cabrera, Alicia	Oral Com	Science Lab 1	Lingat, Diza				Per Dev	Science Lab 1	Cabrera, Raymond A.			
+7	11:00 AM	11:55 AM	11	TVL 2	Fil1	Main 5	Cabrera, Alicia	Oral Com	Science Lab 1	Lingat, Diza				Per Dev	Science Lab 1	Cabrera, Raymond			
+8	11:55 AM	12:50 PM	11	TVL 2	Fil1	Main 5	Cabrera, Alicia	Oral Com	Science Lab 1	Lingat, Diza				Per Dev	Science Lab 1	Cabrera, Raymond			
 9	12:50 PM	1:45 PM	11	TVL 2	Gen Math	Main 5	Peñarubia, Merylin	Gen Math	Main 5	Peñarubia, Merylin				Wellness	Science Lab 1	Austria, Vienna			
 10	1:45 PM	2:40 PM	11	TVL 2	Gen Math	Main 5	Peñarubia, Merylin	Gen Math	Main 5	Peñarubia, Merylin				Wellness	Science Lab 1	Austria, Vienna			
 11	2:40 PM	2:55 PM	11	TVL 2															
@@ -804,24 +804,24 @@
 6	10:30 AM	11:00 AM	12	ABM 201															
 7	11:00 AM	11:55 AM	12	ABM 201	Fun.ABM2	Orchids 202	Baluyut, Aphrodite				Pagbasa	Orchids 202	VILLANUEVA, Julius B.				Fun.ABM2	Orchids 202	Baluyut, Aphrodite
 8	11:55 AM	12:50 PM	12	ABM 201	Fun.ABM2	Orchids 202	Baluyut, Aphrodite				Pagbasa	Orchids 202	VILLANUEVA, Julius B.				Pagbasa	Orchids 202	VILLANUEVA, Julius B.
-9	12:50 PM	1:45 PM	12	ABM 201	Etech	Orchids 202	Cabrera, Raymond A.				Fun.ABM2	Orchids 202	Baluyut, Aphrodite				Pagbasa	Orchids 202	VILLANUEVA, Julius B.
+9	12:50 PM	1:45 PM	12	ABM 201	Etech	Orchids 202	Cabrera, Raymond				Fun.ABM2	Orchids 202	Baluyut, Aphrodite				Pagbasa	Orchids 202	VILLANUEVA, Julius B.
 10	1:45 PM	2:40 PM	12	ABM 201	Philo	Orchids 202	VILLEZA, Regienald.				Fun.ABM2	Orchids 202	Baluyut, Aphrodite				Entrep	Orchids 202	Corpuz, Carmel Mary G.
 11	2:40 PM	2:55 PM	12	ABM 201															
-12	2:55 PM	3:50 PM	12	ABM 201	Philo	Orchids 202	VILLEZA, Regienald.				Etech	Orchids 202	Cabrera, Raymond A.				Entrep	Orchids 202	Corpuz, Carmel Mary G.
-13	3:50 PM	4:45 PM	12	ABM 201	HOPE	Orchids 202	JAIME, Mark David M.				Etech	Orchids 202	Cabrera, Raymond A.				Res 2	Orchids 202	Madlambayan, Raquel 
+12	2:55 PM	3:50 PM	12	ABM 201	Philo	Orchids 202	VILLEZA, Regienald.				Etech	Orchids 202	Cabrera, Raymond				Entrep	Orchids 202	Corpuz, Carmel Mary G.
+13	3:50 PM	4:45 PM	12	ABM 201	HOPE	Orchids 202	JAime, Mark David				Etech	Orchids 202	Cabrera, Raymond				Res 2	Orchids 202	Madlambayan, Raquel 
 14	4:45 PM	5:40 PM	12	ABM 201	Res 2	Orchids 202	Madlambayan, Raquel 				Res 2	Orchids 202	Madlambayan, Raquel 				Res 2	Orchids 202	Madlambayan, Raquel 
-1	6:35 AM	7:30 AM	12	ABM 202	Entrep	Orchids 201	Corpuz, Carmel Mary G.	Etech	Orchids 202	Cabrera, Raymond A.				ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.			
-2	7:30 AM	8:25 AM	12	ABM 202	Entrep	Orchids 201	Corpuz, Carmel Mary G.	Etech	Orchids 202	Cabrera, Raymond A.				ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.			
+1	6:35 AM	7:30 AM	12	ABM 202	Entrep	Orchids 201	Corpuz, Carmel Mary G.	Etech	Orchids 202	Cabrera, Raymond				ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.			
+2	7:30 AM	8:25 AM	12	ABM 202	Entrep	Orchids 201	Corpuz, Carmel Mary G.	Etech	Orchids 202	Cabrera, Raymond				ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.			
 3	8:25 AM	8:40 AM	12	ABM 202															
 4	8:40 AM	9:35 AM	12	ABM 202	Fun.ABM2	Orchids 201	Baluyut, Aphrodite	ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.				Fun.ABM2	Orchids 202	Baluyut, Aphrodite			
 5	9:35 AM	10:30 AM	12	ABM 202	Fun.ABM2	Orchids 201	Baluyut, Aphrodite	ReadWrite	Orchids 202	RAGOS, Rachelle Ann N.				Fun.ABM2	Orchids 202	Baluyut, Aphrodite			
 6	10:30 AM	11:00 AM	12	ABM 202															
-7	11:00 AM	11:55 AM	12	ABM 202	HOPE	Orchids 201	JAIME, Mark David M.	BusMath	Orchids 202	Salazar, Noel Jr				Pagbasa	Orchids 202	VILLANUEVA, Julius B.			
+7	11:00 AM	11:55 AM	12	ABM 202	HOPE	Orchids 201	JAime, Mark David	BusMath	Orchids 202	Salazar, Noel Jr				Pagbasa	Orchids 202	VILLANUEVA, Julius B.			
 8	11:55 AM	12:50 PM	12	ABM 202	Res 2	Orchids 201	Madlambayan, Raquel 	BusMath	Orchids 202	Salazar, Noel Jr				Pagbasa	Orchids 202	VILLANUEVA, Julius B.			
 9	12:50 PM	1:45 PM	12	ABM 202	Res 2	Orchids 201	Madlambayan, Raquel 	Res 2	Orchids 202	Madlambayan, Raquel 				BusMath	Orchids 202	Salazar, Noel Jr			
-10	1:45 PM	2:40 PM	12	ABM 202	Etech	Orchids 201	Cabrera, Raymond A.	Entrep	Orchids 202	Corpuz, Carmel Mary G.				BusMath	Orchids 202	Salazar, Noel Jr			
+10	1:45 PM	2:40 PM	12	ABM 202	Etech	Orchids 201	Cabrera, Raymond	Entrep	Orchids 202	Corpuz, Carmel Mary G.				BusMath	Orchids 202	Salazar, Noel Jr			
 11	2:40 PM	2:55 PM	12	ABM 202															
-12	2:55 PM	3:50 PM	12	ABM 202	Etech	Orchids 201	Cabrera, Raymond A.	Entrep	Orchids 202	Corpuz, Carmel Mary G.				Res 2	Orchids 202	Madlambayan, Raquel 			
+12	2:55 PM	3:50 PM	12	ABM 202	Etech	Orchids 201	Cabrera, Raymond	Entrep	Orchids 202	Corpuz, Carmel Mary G.				Res 2	Orchids 202	Madlambayan, Raquel 			
 13	3:50 PM	4:45 PM	12	ABM 202	Pagbasa	Orchids 201	VILLANUEVA, Julius B.	Philo	Orchids 202	VILLEZA, Regienald.				Philo	Orchids 202	VILLEZA, Regienald.			
 14	4:45 PM	5:40 PM	12	ABM 202	Pagbasa	Orchids 201	VILLANUEVA, Julius B.	Philo	Orchids 202	VILLEZA, Regienald.				Philo	Orchids 202	VILLEZA, Regienald.			
 1	6:35 AM	7:30 AM	12	ABM 203	Philo	Orchids 203	VILLEZA, Regienald.				Fun.ABM2	Orchids 203	Baluyut, Aphrodite				Fun.ABM2	Orchids 203	Baluyut, Aphrodite
@@ -832,12 +832,12 @@
 6	10:30 AM	11:00 AM	12	ABM 203															
 7	11:00 AM	11:55 AM	12	ABM 203	Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Philo	Orchids 203	VILLEZA, Regienald.				BusMath	Orchids 203	Salazar, Noel Jr
 8	11:55 AM	12:50 PM	12	ABM 203	Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Philo	Orchids 203	VILLEZA, Regienald.				BusMath	Orchids 203	Salazar, Noel Jr
-9	12:50 PM	1:45 PM	12	ABM 203	BusMath	Orchids 203	Salazar, Noel Jr				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.				Etech	Orchids 203	Cabrera, Raymond A.
-10	1:45 PM	2:40 PM	12	ABM 203	BusMath	Orchids 203	Salazar, Noel Jr				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.				Etech	Orchids 203	Cabrera, Raymond A.
+9	12:50 PM	1:45 PM	12	ABM 203	BusMath	Orchids 203	Salazar, Noel Jr				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.				Etech	Orchids 203	Cabrera, Raymond
+10	1:45 PM	2:40 PM	12	ABM 203	BusMath	Orchids 203	Salazar, Noel Jr				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.				Etech	Orchids 203	Cabrera, Raymond
 11	2:40 PM	2:55 PM	12	ABM 203															
-12	2:55 PM	3:50 PM	12	ABM 203	Entrep	Orchids 203	Corpuz, Carmel Mary G.				Entrep	Orchids 203	Corpuz, Carmel Mary G.				HOPE	Orchids 203	JAIME, Mark David M.
-13	3:50 PM	4:45 PM	12	ABM 203	Etech	Orchids 203	Cabrera, Raymond A.				Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Entrep	Orchids 203	Corpuz, Carmel Mary G.
-14	4:45 PM	5:40 PM	12	ABM 203	Etech	Orchids 203	Cabrera, Raymond A.				Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Entrep	Orchids 203	Corpuz, Carmel Mary G.
+12	2:55 PM	3:50 PM	12	ABM 203	Entrep	Orchids 203	Corpuz, Carmel Mary G.				Entrep	Orchids 203	Corpuz, Carmel Mary G.				HOPE	Orchids 203	JAime, Mark David
+13	3:50 PM	4:45 PM	12	ABM 203	Etech	Orchids 203	Cabrera, Raymond				Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Entrep	Orchids 203	Corpuz, Carmel Mary G.
+14	4:45 PM	5:40 PM	12	ABM 203	Etech	Orchids 203	Cabrera, Raymond				Pagbasa	Orchids 203	VILLANUEVA, Julius B.				Entrep	Orchids 203	Corpuz, Carmel Mary G.
 1	6:35 AM	7:30 AM	12	ABM 204				Pagbasa	Orchids 203	VILLANUEVA, Julius B.	BusMath	Orchids 201	Salazar, Noel Jr	BusMath	Orchids 203	Salazar, Noel Jr			
 2	7:30 AM	8:25 AM	12	ABM 204				Pagbasa	Orchids 203	VILLANUEVA, Julius B.	BusMath	Orchids 201	Salazar, Noel Jr	BusMath	Orchids 203	Salazar, Noel Jr			
 3	8:25 AM	8:40 AM	12	ABM 204															
@@ -846,49 +846,49 @@
 6	10:30 AM	11:00 AM	12	ABM 204															
 7	11:00 AM	11:55 AM	12	ABM 204				Res 2	Orchids 203	Madlambayan, Raquel 	Res 2	Orchids 201	Madlambayan, Raquel 	Fun.ABM2	Orchids 203	Baluyut, Aphrodite			
 8	11:55 AM	12:50 PM	12	ABM 204				Res 2	Orchids 203	Madlambayan, Raquel 	Res 2	Orchids 201	Madlambayan, Raquel 	Philo	Orchids 203	VILLEZA, Regienald.			
-9	12:50 PM	1:45 PM	12	ABM 204				Fun.ABM2	Orchids 203	Baluyut, Aphrodite	Etech	Orchids 201	Cabrera, Raymond A.	Philo	Orchids 203	VILLEZA, Regienald.			
-10	1:45 PM	2:40 PM	12	ABM 204				Fun.ABM2	Orchids 203	Baluyut, Aphrodite	Etech	Orchids 201	Cabrera, Raymond A.	Etech	Orchids 203	Cabrera, Raymond A.			
+9	12:50 PM	1:45 PM	12	ABM 204				Fun.ABM2	Orchids 203	Baluyut, Aphrodite	Etech	Orchids 201	Cabrera, Raymond	Philo	Orchids 203	VILLEZA, Regienald.			
+10	1:45 PM	2:40 PM	12	ABM 204				Fun.ABM2	Orchids 203	Baluyut, Aphrodite	Etech	Orchids 201	Cabrera, Raymond	Etech	Orchids 203	Cabrera, Raymond			
 11	2:40 PM	2:55 PM	12	ABM 204															
-12	2:55 PM	3:50 PM	12	ABM 204				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.	HOPE	Orchids 201	JAIME, Mark David M.	Etech	Orchids 203	Cabrera, Raymond A.			
+12	2:55 PM	3:50 PM	12	ABM 204				ReadWrite	Orchids 203	RAGOS, Rachelle Ann N.	HOPE	Orchids 201	JAime, Mark David	Etech	Orchids 203	Cabrera, Raymond			
 13	3:50 PM	4:45 PM	12	ABM 204				Entrep	Orchids 203	RAGOS, Rachelle Ann N.	Fun.ABM2	Orchids 201	Baluyut, Aphrodite	Entrep	Orchids 203	Corpuz, Carmel Mary G.			
 14	4:45 PM	5:40 PM	12	ABM 204				Entrep	Orchids 203	Corpuz, Carmel Mary G.	Fun.ABM2	Orchids 201	Baluyut, Aphrodite	Entrep	Orchids 203	Corpuz, Carmel Mary G.			
 1	6:35 AM	7:30 AM	12	ABM 205	ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.				Philo	Orchids 101	VILLEZA, Regienald.				Philo	Orchids 101	VILLEZA, Regienald.
 2	7:30 AM	8:25 AM	12	ABM 205	ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.				Philo	Orchids 101	VILLEZA, Regienald.				Philo	Orchids 101	VILLEZA, Regienald.
 3	8:25 AM	8:40 AM	12	ABM 205															
-4	8:40 AM	9:35 AM	12	ABM 205	Etech	Orchids 101	Cabrera, Raymond A.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Entrep	Orchids 101	Corpuz, Carmel Mary G.
-5	9:35 AM	10:30 AM	12	ABM 205	Etech	Orchids 101	Cabrera, Raymond A.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Entrep	Orchids 101	Corpuz, Carmel Mary G.
+4	8:40 AM	9:35 AM	12	ABM 205	Etech	Orchids 101	Cabrera, Raymond				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Entrep	Orchids 101	Corpuz, Carmel Mary G.
+5	9:35 AM	10:30 AM	12	ABM 205	Etech	Orchids 101	Cabrera, Raymond				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Entrep	Orchids 101	Corpuz, Carmel Mary G.
 6	10:30 AM	11:00 AM	12	ABM 205															
-7	11:00 AM	11:55 AM	12	ABM 205	BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.				Res 2	Orchids 101	Madlambayan, Raquel 
-8	11:55 AM	12:50 PM	12	ABM 205	BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.				Res 2	Orchids 101	Madlambayan, Raquel 
+7	11:00 AM	11:55 AM	12	ABM 205	BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond				Res 2	Orchids 101	Madlambayan, Raquel 
+8	11:55 AM	12:50 PM	12	ABM 205	BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond				Res 2	Orchids 101	Madlambayan, Raquel 
 9	12:50 PM	1:45 PM	12	ABM 205	Fun.ABM2	Orchids 101	Baluyut, Aphrodite				BusMath	Orchids 101	Salazar, Noel Jr				ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.
 10	1:45 PM	2:40 PM	12	ABM 205	Fun.ABM2	Orchids 101	Baluyut, Aphrodite				BusMath	Orchids 101	Salazar, Noel Jr				ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.
 11	2:40 PM	2:55 PM	12	ABM 205															
 12	2:55 PM	3:50 PM	12	ABM 205	Res 2	Orchids 101	Madlambayan, Raquel 				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite
 13	3:50 PM	4:45 PM	12	ABM 205	Res 2	Orchids 101	Madlambayan, Raquel 				Entrep	Orchids 101	Corpuz, Carmel Mary G.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.
-14	4:45 PM	5:40 PM	12	ABM 205	HOPE	Orchids 101	JAIME, Mark David M.				Entrep	Orchids 101	Corpuz, Carmel Mary G.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.
-1	6:35 AM	7:30 AM	12	ABM 205				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond A.
-2	7:30 AM	8:25 AM	12	ABM 205				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond A.
+14	4:45 PM	5:40 PM	12	ABM 205	HOPE	Orchids 101	JAime, Mark David				Entrep	Orchids 101	Corpuz, Carmel Mary G.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.
+1	6:35 AM	7:30 AM	12	ABM 205				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond
+2	7:30 AM	8:25 AM	12	ABM 205				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond
 3	8:25 AM	8:40 AM	12	ABM 205															
-4	8:40 AM	9:35 AM	12	ABM 205				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.	Pagbasa	Dama 10	VILLANUEVA, Julius B.
-5	9:35 AM	10:30 AM	12	ABM 205				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.	Pagbasa	Dama 10	VILLANUEVA, Julius B.
+4	8:40 AM	9:35 AM	12	ABM 205				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond	Pagbasa	Dama 10	VILLANUEVA, Julius B.
+5	9:35 AM	10:30 AM	12	ABM 205				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond	Pagbasa	Dama 10	VILLANUEVA, Julius B.
 6	10:30 AM	11:00 AM	12	ABM 205															
 7	11:00 AM	11:55 AM	12	ABM 205				Entrep	Orchids 101	Corpuz, Carmel Mary G.				BusMath	Orchids 101	Salazar, Noel Jr	Entrep	Dama 10	Corpuz, Carmel Mary G.
 8	11:55 AM	12:50 PM	12	ABM 205				Entrep	Orchids 101	Corpuz, Carmel Mary G.				BusMath	Orchids 101	Salazar, Noel Jr	Entrep	Dama 10	Corpuz, Carmel Mary G.
-9	12:50 PM	1:45 PM	12	ABM 205				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.	HOPE	Dama 10	JAIME, Mark David M.
+9	12:50 PM	1:45 PM	12	ABM 205				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.	HOPE	Dama 10	JAime, Mark David
 10	1:45 PM	2:40 PM	12	ABM 205				Philo	Orchids 101	VILLANUEVA, Julius B.				Philo	Orchids 101	VILLANUEVA, Julius B.	Res 2	Dama 10	Madlambayan, Raquel 
 11	2:40 PM	2:55 PM	12	ABM 205															
 12	2:55 PM	3:50 PM	12	ABM 205				Philo	Orchids 101	VILLEZA, Regienald.				Philo	Orchids 101	VILLEZA, Regienald.	Res 2	Dama 10	Madlambayan, Raquel 
 13	3:50 PM	4:45 PM	12	ABM 205				ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.				Res 2	Orchids 101	Madlambayan, Raquel 	ReadWrite	Dama 10	RAGOS, Rachelle Ann N.
 14	4:45 PM	5:40 PM	12	ABM 205				ReadWrite	Orchids 101	RAGOS, Rachelle Ann N.				Res 2	Orchids 101	Madlambayan, Raquel 	ReadWrite	Dama 10	RAGOS, Rachelle Ann N.
-1	6:35 AM	7:30 AM	12	ABM 206				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond A.
-2	7:30 AM	8:25 AM	12	ABM 206				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond A.
+1	6:35 AM	7:30 AM	12	ABM 206				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond
+2	7:30 AM	8:25 AM	12	ABM 206				Fun.ABM2	Orchids 101	Baluyut, Aphrodite				Fun.ABM2	Orchids 101	Baluyut, Aphrodite	Etech	Dama 10	Cabrera, Raymond
 3	8:25 AM	8:40 AM	12	ABM 206															
-4	8:40 AM	9:35 AM	12	ABM 206				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.	Pagbasa	Dama 10	VILLANUEVA, Julius B.
-5	9:35 AM	10:30 AM	12	ABM 206				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond A.	Pagbasa	Dama 10	VILLANUEVA, Julius B.
+4	8:40 AM	9:35 AM	12	ABM 206				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond	Pagbasa	Dama 10	VILLANUEVA, Julius B.
+5	9:35 AM	10:30 AM	12	ABM 206				BusMath	Orchids 101	Salazar, Noel Jr				Etech	Orchids 101	Cabrera, Raymond	Pagbasa	Dama 10	VILLANUEVA, Julius B.
 6	10:30 AM	11:00 AM	12	ABM 206															
 7	11:00 AM	11:55 AM	12	ABM 206				Entrep	Orchids 101	Corpuz, Carmel Mary G.				BusMath	Orchids 101	Salazar, Noel Jr	Entrep	Dama 10	Corpuz, Carmel Mary G.
 8	11:55 AM	12:50 PM	12	ABM 206				Entrep	Orchids 101	Corpuz, Carmel Mary G.				BusMath	Orchids 101	Salazar, Noel Jr	Entrep	Dama 10	Corpuz, Carmel Mary G.
-9	12:50 PM	1:45 PM	12	ABM 206				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.	HOPE	Dama 10	JAIME, Mark David M.
+9	12:50 PM	1:45 PM	12	ABM 206				Pagbasa	Orchids 101	VILLANUEVA, Julius B.				Pagbasa	Orchids 101	VILLANUEVA, Julius B.	HOPE	Dama 10	JAime, Mark David
 10	1:45 PM	2:40 PM	12	ABM 206				Philo	Orchids 101	VILLANUEVA, Julius B.				Philo	Orchids 101	VILLANUEVA, Julius B.	Res 2	Dama 10	Madlambayan, Raquel 
 11	2:40 PM	2:55 PM	12	ABM 206															
 12	2:55 PM	3:50 PM	12	ABM 206				Philo	Orchids 101	VILLEZA, Regienald.				Philo	Orchids 101	VILLEZA, Regienald.	Res 2	Dama 10	Madlambayan, Raquel 
@@ -905,7 +905,7 @@
 9	12:50 PM	1:45 PM	12	GAS 201	ReadWrite	Orchids 102	Ramos, Reynaldo Jr	Pagbasa	Dama 10	FLORES, Jerica Nicole R.							Etech	Orchids 102	Gueco, Benedict V.
 10	1:45 PM	2:40 PM	12	GAS 201	ReadWrite	Orchids 102	Ramos, Reynaldo Jr	Pagbasa	Dama 10	FLORES, Jerica Nicole R.							Etech	Orchids 102	Gueco, Benedict V.
 11	2:40 PM	2:55 PM	12	GAS 201															
-12	2:55 PM	3:50 PM	12	GAS 201	Entrep	Orchids 102	Rodriguez, Cristina	HOPE	Dama 10	JAIME, Mark David M.							Etech	Orchids 102	Gueco, Benedict V.
+12	2:55 PM	3:50 PM	12	GAS 201	Entrep	Orchids 102	Rodriguez, Cristina	HOPE	Dama 10	JAime, Mark David							Etech	Orchids 102	Gueco, Benedict V.
 13	3:50 PM	4:45 PM	12	GAS 201	Entrep	Orchids 102	Rodriguez, Cristina	Entrep	Dama 10	Rodriguez, Cristina							ReadWrite	Orchids 102	Ramos, Reynaldo Jr
 14	4:45 PM	5:40 PM	12	GAS 201	Etech	Orchids 102	Gueco, Benedict V.	Entrep	Dama 10	Rodriguez, Cristina							ReadWrite	Orchids 102	Ramos, Reynaldo Jr
 1	6:35 AM	7:30 AM	12	GAS 202				Gen Chem	Orchids 102	Rosete, Analiza	Econ	Orchids 102	Laodenio, Charlyn	Econ	Orchids 102	Laodenio, Charlyn			
@@ -914,7 +914,7 @@
 4	8:40 AM	9:35 AM	12	GAS 202				ReadWrite	Orchids 102	Ramos, Reynaldo Jr	Gen Chem	Orchids 102	Rosete, Analiza		Orchids 102	ENRIQUEZ, Ma Joseph Patrick M.			
 5	9:35 AM	10:30 AM	12	GAS 202				ReadWrite	Orchids 102	Ramos, Reynaldo Jr	Gen Chem	Orchids 102	Rosete, Analiza		Orchids 102	ENRIQUEZ, Ma Joseph Patrick M.			
 6	10:30 AM	11:00 AM	12	GAS 202															
-7	11:00 AM	11:55 AM	12	GAS 202				Entrep	Orchids 102	Rodriguez, Cristina	HOPE	Orchids 102	JAIME, Mark David M.	Pagbasa	Orchids 102	FLORES, Jerica Nicole R.			
+7	11:00 AM	11:55 AM	12	GAS 202				Entrep	Orchids 102	Rodriguez, Cristina	HOPE	Orchids 102	JAime, Mark David	Pagbasa	Orchids 102	FLORES, Jerica Nicole R.			
 8	11:55 AM	12:50 PM	12	GAS 202				Entrep	Orchids 102	Rodriguez, Cristina	Pagbasa	Orchids 102	FLORES, Jerica Nicole R.	Pagbasa	Orchids 102	FLORES, Jerica Nicole R.			
 9	12:50 PM	1:45 PM	12	GAS 202				Entrep	Orchids 102	Gueco, Benedict V.	Pagbasa	Orchids 102	FLORES, Jerica Nicole R.	Etech	Orchids 102	Gueco, Benedict V.			
 10	1:45 PM	2:40 PM	12	GAS 202				Res 2	Orchids 102	Yosuico, Jacinto Jay	Entrep	Orchids 102	Rodriguez, Cristina	ReadWrite	Orchids 102	Ramos, Reynaldo Jr			
@@ -933,7 +933,7 @@
 9	12:50 PM	1:45 PM	12	GAS 203				ReadWrite	Santan 101	Ramos, Reynaldo Jr	Entrep	Dama 10	Rodriguez, Cristina	Econ	Santan 101	Laodenio, Charlyn			
 10	1:45 PM	2:40 PM	12	GAS 203				ReadWrite	Santan 101	Ramos, Reynaldo Jr	Pagbasa	Dama 10	FLORES, Jerica Nicole R.	Econ	Santan 101	Laodenio, Charlyn			
 11	2:40 PM	2:55 PM	12	GAS 203															
-12	2:55 PM	3:50 PM	12	GAS 203				Entrep	Santan 101	Rodriguez, Cristina	Pagbasa	Dama 10	FLORES, Jerica Nicole R.	HOPE	Santan 101	JAIME, Mark David M.			
+12	2:55 PM	3:50 PM	12	GAS 203				Entrep	Santan 101	Rodriguez, Cristina	Pagbasa	Dama 10	FLORES, Jerica Nicole R.	HOPE	Santan 101	JAime, Mark David			
 13	3:50 PM	4:45 PM	12	GAS 203				Etech	Santan 101	Culala, Jelord	Gen Chem	Dama 10	Rosete, Analiza	Entrep	Santan 101	Rodriguez, Cristina			
 14	4:45 PM	5:40 PM	12	GAS 203				Etech	Santan 101	Culala, Jelord	Gen Chem	Dama 10	Rosete, Analiza	Entrep	Santan 101	Rodriguez, Cristina			
 1	6:35 AM	7:30 AM	12	HUMSS 201		Orchids 103	ENRIQUEZ, Ma Joseph Patrick M.								Dama 10	ENRIQUEZ, Ma Joseph Patrick M.	CNF	Orchids 103	Liwanag, Rhodel
@@ -949,7 +949,7 @@
 11	2:40 PM	2:55 PM	12	HUMSS 201															
 12	2:55 PM	3:50 PM	12	HUMSS 201	Etech	Orchids 103	Gueco, Benedict V.							DIAS	Dama 10	Liwanag, Rhodel	Entrep	Orchids 103	Rodriguez, Cristina
 13	3:50 PM	4:45 PM	12	HUMSS 201	ReadWrite	Orchids 103	Ramos, Reynaldo Jr							ReadWrite	Dama 10	Ramos, Reynaldo Jr	Entrep	Orchids 103	Rodriguez, Cristina
-14	4:45 PM	5:40 PM	12	HUMSS 201	ReadWrite	Orchids 103	Ramos, Reynaldo Jr							ReadWrite	Dama 10	Ramos, Reynaldo Jr	HOPE	Orchids 103	JAIME, Mark David M.
+14	4:45 PM	5:40 PM	12	HUMSS 201	ReadWrite	Orchids 103	Ramos, Reynaldo Jr							ReadWrite	Dama 10	Ramos, Reynaldo Jr	HOPE	Orchids 103	JAime, Mark David
 1	6:35 AM	7:30 AM	12	HUMSS 202				Pagbasa	Orchids 103	FLORES, Jerica Nicole R.	Etech	Orchids 103	Culala, Jelord	CNF	Orchids 103	Liwanag, Rhodel			
 2	7:30 AM	8:25 AM	12	HUMSS 202				Pagbasa	Orchids 103	FLORES, Jerica Nicole R.	Etech	Orchids 103	Culala, Jelord	CNF	Orchids 103	Liwanag, Rhodel			
 3	8:25 AM	8:40 AM	12	HUMSS 202															
@@ -963,42 +963,42 @@
 11	2:40 PM	2:55 PM	12	HUMSS 202															
 12	2:55 PM	3:50 PM	12	HUMSS 202				CNF	Orchids 103	Liwanag, Rhodel	Philo	Orchids 103	MENDOZA, Jim D.	Entrep	Orchids 103	Rodriguez, Cristina			
 13	3:50 PM	4:45 PM	12	HUMSS 202				CNF	Orchids 103	Liwanag, Rhodel	Philo	Orchids 103	MENDOZA, Jim D.	Philo	Orchids 103	MENDOZA, Jim D.			
-14	4:45 PM	5:40 PM	12	HUMSS 202				HOPE	Orchids 103	JAIME, Mark David M.	Entrep	Orchids 103	Rodriguez, Cristina	Philo	Orchids 103	MENDOZA, Jim D.			
-1	6:35 AM	7:30 AM	12	STEM 201	Physics	Orchids 301	Syhuat, J-Lyn A.	Res 2	Orchids 301	Luzung, Ma. Belinda R.							Philo	Orchids 301	ABAD SANTOS, Exequel P.
-2	7:30 AM	8:25 AM	12	STEM 201	Physics	Orchids 301	Syhuat, J-Lyn A.	Res 2	Orchids 301	Luzung, Ma. Belinda R.							Philo	Orchids 301	ABAD SANTOS, Exequel P.
+14	4:45 PM	5:40 PM	12	HUMSS 202				HOPE	Orchids 103	JAime, Mark David	Entrep	Orchids 103	Rodriguez, Cristina	Philo	Orchids 103	MENDOZA, Jim D.			
+1	6:35 AM	7:30 AM	12	STEM 201	Physics	Orchids 301	Syhuat, J-Lyn	Res 2	Orchids 301	Luzung, Ma. Belinda							Philo	Orchids 301	ABAD SANTOS, Exequel P.
+2	7:30 AM	8:25 AM	12	STEM 201	Physics	Orchids 301	Syhuat, J-Lyn	Res 2	Orchids 301	Luzung, Ma. Belinda							Philo	Orchids 301	ABAD SANTOS, Exequel P.
 3	8:25 AM	8:40 AM	12	STEM 201															
-4	8:40 AM	9:35 AM	12	STEM 201	Res 2	Orchids 301	Luzung, Ma. Belinda R.	Pagbasa	Orchids 301	Cabrera, Alicia							Gen Chem	Orchids 301	LUMBA, Christopher O.
-5	9:35 AM	10:30 AM	12	STEM 201	Res 2	Orchids 301	Luzung, Ma. Belinda R.	Pagbasa	Orchids 301	Cabrera, Alicia							Gen Chem	Orchids 301	LUMBA, Christopher O.
+4	8:40 AM	9:35 AM	12	STEM 201	Res 2	Orchids 301	Luzung, Ma. Belinda	Pagbasa	Orchids 301	Cabrera, Alicia							Gen Chem	Orchids 301	LUMBA, Christopher O.
+5	9:35 AM	10:30 AM	12	STEM 201	Res 2	Orchids 301	Luzung, Ma. Belinda	Pagbasa	Orchids 301	Cabrera, Alicia							Gen Chem	Orchids 301	LUMBA, Christopher O.
 6	10:30 AM	11:00 AM	12	STEM 201															
-7	11:00 AM	11:55 AM	12	STEM 201	ReadWrite	Orchids 301	Bacani, Maria Victoria	Etech	Orchids 301	Quizon, Reymon S.							Physics	Orchids 301	Syhuat, J-Lyn A.
-8	11:55 AM	12:50 PM	12	STEM 201	ReadWrite	Orchids 301	Bacani, Maria Victoria	Etech	Orchids 301	Quizon, Reymon S.							Physics	Orchids 301	Syhuat, J-Lyn A.
-9	12:50 PM	1:45 PM	12	STEM 201	HOPE	Orchids 301	JAIME, Mark David M.	ReadWrite	Orchids 301	Bacani, Maria Victoria							Etech	Orchids 301	Quizon, Reymon S.
+7	11:00 AM	11:55 AM	12	STEM 201	ReadWrite	Orchids 301	Bacani, Maria Victoria	Etech	Orchids 301	Quizon, Reymon S.							Physics	Orchids 301	Syhuat, J-Lyn
+8	11:55 AM	12:50 PM	12	STEM 201	ReadWrite	Orchids 301	Bacani, Maria Victoria	Etech	Orchids 301	Quizon, Reymon S.							Physics	Orchids 301	Syhuat, J-Lyn
+9	12:50 PM	1:45 PM	12	STEM 201	HOPE	Orchids 301	JAime, Mark David	ReadWrite	Orchids 301	Bacani, Maria Victoria							Etech	Orchids 301	Quizon, Reymon S.
 10	1:45 PM	2:40 PM	12	STEM 201	Pagbasa	Orchids 301	Cabrera, Alicia	ReadWrite	Orchids 301	Bacani, Maria Victoria							Etech	Orchids 301	Quizon, Reymon S.
 11	2:40 PM	2:55 PM	12	STEM 201															
 12	2:55 PM	3:50 PM	12	STEM 201	Pagbasa	Orchids 301	Cabrera, Alicia	Entrep	Orchids 301	Morales, Jasmin							ReadWrite	Orchids 301	Bacani, Maria Victoria
 13	3:50 PM	4:45 PM	12	STEM 201	Philo	Orchids 301	ABAD SANTOS, Exequel P.	Gen Chem	Orchids 301	LUMBA, Christopher O.							Entrep	Orchids 301	Morales, Jasmin
 14	4:45 PM	5:40 PM	12	STEM 201	Philo	Orchids 301	ABAD SANTOS, Exequel P.	Gen Chem	Orchids 301	LUMBA, Christopher O.							Entrep	Orchids 301	Morales, Jasmin
-1	6:35 AM	7:30 AM	12	STEM 202				Physics	Orchids 201	Syhuat, J-Lyn A.	Pagbasa	Orchids 301	Cabrera, Alicia	Gen Chem	Orchids 201	LUMBA, Christopher O.			
-2	7:30 AM	8:25 AM	12	STEM 202				Physics	Orchids 201	Syhuat, J-Lyn A.	Pagbasa	Orchids 301	Cabrera, Alicia	Gen Chem	Orchids 201	LUMBA, Christopher O.			
+1	6:35 AM	7:30 AM	12	STEM 202				Physics	Orchids 201	Syhuat, J-Lyn	Pagbasa	Orchids 301	Cabrera, Alicia	Gen Chem	Orchids 201	LUMBA, Christopher O.			
+2	7:30 AM	8:25 AM	12	STEM 202				Physics	Orchids 201	Syhuat, J-Lyn	Pagbasa	Orchids 301	Cabrera, Alicia	Gen Chem	Orchids 201	LUMBA, Christopher O.			
 3	8:25 AM	8:40 AM	12	STEM 202															
-4	8:40 AM	9:35 AM	12	STEM 202				Entrep	Orchids 201	Morales, Jasmin	Physics	Orchids 201	Syhuat, J-Lyn A.	Etech	Orchids 201	Quizon, Reymon S.			
-5	9:35 AM	10:30 AM	12	STEM 202				Philo	Orchids 201	ABAD SANTOS, Exequel P.	Physics	Orchids 201	Syhuat, J-Lyn A.	Etech	Orchids 201	Quizon, Reymon S.			
+4	8:40 AM	9:35 AM	12	STEM 202				Entrep	Orchids 201	Morales, Jasmin	Physics	Orchids 201	Syhuat, J-Lyn	Etech	Orchids 201	Quizon, Reymon S.			
+5	9:35 AM	10:30 AM	12	STEM 202				Philo	Orchids 201	ABAD SANTOS, Exequel P.	Physics	Orchids 201	Syhuat, J-Lyn	Etech	Orchids 201	Quizon, Reymon S.			
 6	10:30 AM	11:00 AM	12	STEM 202															
-7	11:00 AM	11:55 AM	12	STEM 202				Philo	Orchids 201	ABAD SANTOS, Exequel P.	ReadWrite	Orchids 201	Bacani, Maria Victoria	Res 2	Orchids 201	Luzung, Ma. Belinda R.			
-8	11:55 AM	12:50 PM	12	STEM 202				Res 2	Orchids 201	Luzung, Ma. Belinda R.	ReadWrite	Orchids 201	Bacani, Maria Victoria	Res 2	Orchids 201	Luzung, Ma. Belinda R.			
-9	12:50 PM	1:45 PM	12	STEM 202				Res 2	Orchids 201	Luzung, Ma. Belinda R.	Etech	Orchids 201	Quizon, Reymon S.	Pagbasa	Orchids 301	Cabrera, Alicia			
+7	11:00 AM	11:55 AM	12	STEM 202				Philo	Orchids 201	ABAD SANTOS, Exequel P.	ReadWrite	Orchids 201	Bacani, Maria Victoria	Res 2	Orchids 201	Luzung, Ma. Belinda			
+8	11:55 AM	12:50 PM	12	STEM 202				Res 2	Orchids 201	Luzung, Ma. Belinda	ReadWrite	Orchids 201	Bacani, Maria Victoria	Res 2	Orchids 201	Luzung, Ma. Belinda			
+9	12:50 PM	1:45 PM	12	STEM 202				Res 2	Orchids 201	Luzung, Ma. Belinda	Etech	Orchids 201	Quizon, Reymon S.	Pagbasa	Orchids 301	Cabrera, Alicia			
 10	1:45 PM	2:40 PM	12	STEM 202				Gen Chem	Orchids 201	LUMBA, Christopher O.	Etech	Orchids 201	Quizon, Reymon S.	Pagbasa	Orchids 301	Cabrera, Alicia			
 11	2:40 PM	2:55 PM	12	STEM 202															
 12	2:55 PM	3:50 PM	12	STEM 202				Gen Chem	Orchids 201	LUMBA, Christopher O.	Philo	Orchids 201	ABAD SANTOS, Exequel P.	Philo	Orchids 201	ABAD SANTOS, Exequel P.			
 13	3:50 PM	4:45 PM	12	STEM 202				ReadWrite	Orchids 201	Bacani, Maria Victoria	Entrep	Orchids 201	Morales, Jasmin	Entrep	Orchids 201	Morales, Jasmin			
-14	4:45 PM	5:40 PM	12	STEM 202				ReadWrite	Orchids 201	Bacani, Maria Victoria	HOPE	Orchids 201	JAIME, Mark David M.	Entrep	Orchids 201	Morales, Jasmin			
-1	6:35 AM	7:30 AM	12	STEM 203	Res 2	Orchids 302	Luzung, Ma. Belinda R.							Pagbasa	Orchids 302	Cabrera, Alicia	Physics	Orchids 302	Syhuat, J-Lyn A.
-2	7:30 AM	8:25 AM	12	STEM 203	Res 2	Orchids 302	Luzung, Ma. Belinda R.							Pagbasa	Orchids 302	Cabrera, Alicia	Physics	Orchids 302	Syhuat, J-Lyn A.
+14	4:45 PM	5:40 PM	12	STEM 202				ReadWrite	Orchids 201	Bacani, Maria Victoria	HOPE	Orchids 201	JAime, Mark David	Entrep	Orchids 201	Morales, Jasmin			
+1	6:35 AM	7:30 AM	12	STEM 203	Res 2	Orchids 302	Luzung, Ma. Belinda							Pagbasa	Orchids 302	Cabrera, Alicia	Physics	Orchids 302	Syhuat, J-Lyn
+2	7:30 AM	8:25 AM	12	STEM 203	Res 2	Orchids 302	Luzung, Ma. Belinda							Pagbasa	Orchids 302	Cabrera, Alicia	Physics	Orchids 302	Syhuat, J-Lyn
 3	8:25 AM	8:40 AM	12	STEM 203															
-4	8:40 AM	9:35 AM	12	STEM 203	HOPE	Orchids 302	JAIME, Mark David M.							Res 2	Orchids 302	Luzung, Ma. Belinda R.	Philo	Orchids 302	ABAD SANTOS, Exequel P.
-5	9:35 AM	10:30 AM	12	STEM 203	Physics	Orchids 302	Syhuat, J-Lyn A.							Res 2	Orchids 302	Luzung, Ma. Belinda R.	Philo	Orchids 302	ABAD SANTOS, Exequel P.
+4	8:40 AM	9:35 AM	12	STEM 203	HOPE	Orchids 302	JAime, Mark David							Res 2	Orchids 302	Luzung, Ma. Belinda	Philo	Orchids 302	ABAD SANTOS, Exequel P.
+5	9:35 AM	10:30 AM	12	STEM 203	Physics	Orchids 302	Syhuat, J-Lyn							Res 2	Orchids 302	Luzung, Ma. Belinda	Philo	Orchids 302	ABAD SANTOS, Exequel P.
 6	10:30 AM	11:00 AM	12	STEM 203															
-7	11:00 AM	11:55 AM	12	STEM 203	Physics	Orchids 302	Syhuat, J-Lyn A.							ReadWrite	Orchids 302	Bacani, Maria Victoria	Etech	Orchids 302	Quizon, Reymon S.
+7	11:00 AM	11:55 AM	12	STEM 203	Physics	Orchids 302	Syhuat, J-Lyn							ReadWrite	Orchids 302	Bacani, Maria Victoria	Etech	Orchids 302	Quizon, Reymon S.
 8	11:55 AM	12:50 PM	12	STEM 203	Gen Chem	Orchids 302	LUMBA, Christopher O.							ReadWrite	Orchids 302	Bacani, Maria Victoria	Etech	Orchids 302	Quizon, Reymon S.
 9	12:50 PM	1:45 PM	12	STEM 203	Gen Chem	Orchids 302	LUMBA, Christopher O.							Entrep	Orchids 302	Morales, Jasmin	Pagbasa	Orchids 302	Cabrera, Alicia
 10	1:45 PM	2:40 PM	12	STEM 203	Etech	Orchids 302	Quizon, Reymon S.							Gen Chem	Orchids 302	LUMBA, Christopher O.	Pagbasa	Orchids 302	Cabrera, Alicia
@@ -1006,59 +1006,59 @@
 12	2:55 PM	3:50 PM	12	STEM 203	Etech	Orchids 302	Quizon, Reymon S.							Gen Chem	Orchids 302	LUMBA, Christopher O.	Entrep	Orchids 302	Morales, Jasmin
 13	3:50 PM	4:45 PM	12	STEM 203	Entrep	Orchids 302	Morales, Jasmin							Philo	Orchids 302	ABAD SANTOS, Exequel P.	ReadWrite	Orchids 302	Bacani, Maria Victoria
 14	4:45 PM	5:40 PM	12	STEM 203	Entrep	Orchids 302	Morales, Jasmin							Philo	Orchids 302	ABAD SANTOS, Exequel P.	ReadWrite	Orchids 302	Bacani, Maria Victoria
-1	6:35 AM	7:30 AM	12	STEM 204				Etech	Orchids 302	Quizon, Reymon S.	Gen Chem	Orchids 302	LUMBA, Christopher O.	Res 2	Orchids 201	Luzung, Ma. Belinda R.			
-2	7:30 AM	8:25 AM	12	STEM 204				Etech	Orchids 302	Quizon, Reymon S.	Gen Chem	Orchids 302	LUMBA, Christopher O.	Res 2	Orchids 201	Luzung, Ma. Belinda R.			
+1	6:35 AM	7:30 AM	12	STEM 204				Etech	Orchids 302	Quizon, Reymon S.	Gen Chem	Orchids 302	LUMBA, Christopher O.	Res 2	Orchids 201	Luzung, Ma. Belinda			
+2	7:30 AM	8:25 AM	12	STEM 204				Etech	Orchids 302	Quizon, Reymon S.	Gen Chem	Orchids 302	LUMBA, Christopher O.	Res 2	Orchids 201	Luzung, Ma. Belinda			
 3	8:25 AM	8:40 AM	12	STEM 204															
-4	8:40 AM	9:35 AM	12	STEM 204				Physics	Orchids 302	Syhuat, J-Lyn A.	Res 2	Orchids 302	Luzung, Ma. Belinda R.	ReadWrite	Orchids 302	Bacani, Maria Victoria			
-5	9:35 AM	10:30 AM	12	STEM 204				Physics	Orchids 302	Syhuat, J-Lyn A.	Res 2	Orchids 302	Luzung, Ma. Belinda R.	ReadWrite	Orchids 302	Bacani, Maria Victoria			
+4	8:40 AM	9:35 AM	12	STEM 204				Physics	Orchids 302	Syhuat, J-Lyn	Res 2	Orchids 302	Luzung, Ma. Belinda	ReadWrite	Orchids 302	Bacani, Maria Victoria			
+5	9:35 AM	10:30 AM	12	STEM 204				Physics	Orchids 302	Syhuat, J-Lyn	Res 2	Orchids 302	Luzung, Ma. Belinda	ReadWrite	Orchids 302	Bacani, Maria Victoria			
 6	10:30 AM	11:00 AM	12	STEM 204															
-7	11:00 AM	11:55 AM	12	STEM 204				HOPE	Orchids 302	JAIME, Mark David M.	Pagbasa	Orchids 302	Cabrera, Alicia	Gen Chem	Orchids 302	LUMBA, Christopher O.			
+7	11:00 AM	11:55 AM	12	STEM 204				HOPE	Orchids 302	JAime, Mark David	Pagbasa	Orchids 302	Cabrera, Alicia	Gen Chem	Orchids 302	LUMBA, Christopher O.			
 8	11:55 AM	12:50 PM	12	STEM 204				Pagbasa	Orchids 302	Cabrera, Alicia	Pagbasa	Orchids 302	Cabrera, Alicia	Gen Chem	Orchids 302	LUMBA, Christopher O.			
 9	12:50 PM	1:45 PM	12	STEM 204				Pagbasa	Orchids 302	Cabrera, Alicia	Philo	Orchids 302	ABAD SANTOS, Exequel P.	Philo	Orchids 302	ABAD SANTOS, Exequel P.			
 10	1:45 PM	2:40 PM	12	STEM 204				ReadWrite	Orchids 302	Bacani, Maria Victoria	Philo	Orchids 302	ABAD SANTOS, Exequel P.	Philo	Orchids 302	ABAD SANTOS, Exequel P.			
 11	2:40 PM	2:55 PM	12	STEM 204															
 12	2:55 PM	3:50 PM	12	STEM 204				ReadWrite	Orchids 302	Bacani, Maria Victoria	Etech	Orchids 302	Quizon, Reymon S.	Entrep	Orchids 302	Morales, Jasmin			
-13	3:50 PM	4:45 PM	12	STEM 204				Entrep	Orchids 302	Morales, Jasmin	Etech	Orchids 302	Quizon, Reymon S.	Physics	Orchids 302	Syhuat, J-Lyn A.			
-14	4:45 PM	5:40 PM	12	STEM 204				Entrep	Orchids 302	Morales, Jasmin	Entrep	Orchids 302	Morales, Jasmin	Physics	Orchids 302	Syhuat, J-Lyn A.			
+13	3:50 PM	4:45 PM	12	STEM 204				Entrep	Orchids 302	Morales, Jasmin	Etech	Orchids 302	Quizon, Reymon S.	Physics	Orchids 302	Syhuat, J-Lyn			
+14	4:45 PM	5:40 PM	12	STEM 204				Entrep	Orchids 302	Morales, Jasmin	Entrep	Orchids 302	Morales, Jasmin	Physics	Orchids 302	Syhuat, J-Lyn			
 1	6:35 AM	7:30 AM	12	STEM 205				Pagbasa	Orchids 303	Cabrera, Alicia				Etech	Orchids 303	Quizon, Reymon S.	Gen Chem	Orchids 201	LUMBA, Christopher O.
 2	7:30 AM	8:25 AM	12	STEM 205				Pagbasa	Orchids 303	Cabrera, Alicia				Etech	Orchids 303	Quizon, Reymon S.	Gen Chem	Orchids 201	LUMBA, Christopher O.
 3	8:25 AM	8:40 AM	12	STEM 205															
-4	8:40 AM	9:35 AM	12	STEM 205				Etech	Orchids 303	Quizon, Reymon S.				Physics	Orchids 303	Syhuat, J-Lyn A.	ReadWrite	Orchids 201	Bacani, Maria Victoria
-5	9:35 AM	10:30 AM	12	STEM 205				Etech	Orchids 303	Quizon, Reymon S.				Physics	Orchids 303	Syhuat, J-Lyn A.	ReadWrite	Orchids 201	Bacani, Maria Victoria
+4	8:40 AM	9:35 AM	12	STEM 205				Etech	Orchids 303	Quizon, Reymon S.				Physics	Orchids 303	Syhuat, J-Lyn	ReadWrite	Orchids 201	Bacani, Maria Victoria
+5	9:35 AM	10:30 AM	12	STEM 205				Etech	Orchids 303	Quizon, Reymon S.				Physics	Orchids 303	Syhuat, J-Lyn	ReadWrite	Orchids 201	Bacani, Maria Victoria
 6	10:30 AM	11:00 AM	12	STEM 205															
-7	11:00 AM	11:55 AM	12	STEM 205				Entrep	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin	Res 2	Orchids 201	Luzung, Ma. Belinda R.
-8	11:55 AM	12:50 PM	12	STEM 205				Gen Chem	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin	Res 2	Orchids 201	Luzung, Ma. Belinda R.
+7	11:00 AM	11:55 AM	12	STEM 205				Entrep	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin	Res 2	Orchids 201	Luzung, Ma. Belinda
+8	11:55 AM	12:50 PM	12	STEM 205				Gen Chem	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin	Res 2	Orchids 201	Luzung, Ma. Belinda
 9	12:50 PM	1:45 PM	12	STEM 205				Gen Chem	Orchids 303	LUMBA, Christopher O.				ReadWrite	Orchids 303	Bacani, Maria Victoria	Entrep	Orchids 201	Morales, Jasmin
 10	1:45 PM	2:40 PM	12	STEM 205				Physics	Orchids 303	LUMBA, Christopher O.				ReadWrite	Orchids 303	Bacani, Maria Victoria	Philo	Orchids 201	ABAD SANTOS, Exequel P.
 11	2:40 PM	2:55 PM	12	STEM 205															
-12	2:55 PM	3:50 PM	12	STEM 205				Physics	Orchids 303	Syhuat, J-Lyn A.				Res 2	Orchids 303	Luzung, Ma. Belinda R.	Philo	Orchids 201	ABAD SANTOS, Exequel P.
-13	3:50 PM	4:45 PM	12	STEM 205				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda R.	Pagbasa	Orchids 201	Cabrera, Alicia
-14	4:45 PM	5:40 PM	12	STEM 205				Philo	Orchids 303	ABAD SANTOS, Exequel P.				HOPE	Orchids 303	JAIME, Mark David M.	Pagbasa	Orchids 201	Cabrera, Alicia
+12	2:55 PM	3:50 PM	12	STEM 205				Physics	Orchids 303	Syhuat, J-Lyn				Res 2	Orchids 303	Luzung, Ma. Belinda	Philo	Orchids 201	ABAD SANTOS, Exequel P.
+13	3:50 PM	4:45 PM	12	STEM 205				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda	Pagbasa	Orchids 201	Cabrera, Alicia
+14	4:45 PM	5:40 PM	12	STEM 205				Philo	Orchids 303	ABAD SANTOS, Exequel P.				HOPE	Orchids 303	JAime, Mark David	Pagbasa	Orchids 201	Cabrera, Alicia
 1	6:35 AM	7:30 AM	12	STEM 206	Gen Chem	Orchids 303	LUMBA, Christopher O.				Etech	Orchids 303	Quizon, Reymon S.				Etech	Orchids 303	Quizon, Reymon S.
 2	7:30 AM	8:25 AM	12	STEM 206	Gen Chem	Orchids 303	LUMBA, Christopher O.				Etech	Orchids 303	Quizon, Reymon S.				Etech	Orchids 303	Quizon, Reymon S.
 3	8:25 AM	8:40 AM	12	STEM 206															
 4	8:40 AM	9:35 AM	12	STEM 206	ReadWrite	Orchids 303	Bacani, Maria Victoria				Pagbasa	Orchids 303	Cabrera, Alicia				Pagbasa	Orchids 303	Cabrera, Alicia
-5	9:35 AM	10:30 AM	12	STEM 206	ReadWrite	Orchids 303	Bacani, Maria Victoria				HOPE	Orchids 303	JAIME, Mark David M.				Pagbasa	Orchids 303	Morales, Jasmin
+5	9:35 AM	10:30 AM	12	STEM 206	ReadWrite	Orchids 303	Bacani, Maria Victoria				HOPE	Orchids 303	JAime, Mark David				Pagbasa	Orchids 303	Morales, Jasmin
 6	10:30 AM	11:00 AM	12	STEM 206															
-7	11:00 AM	11:55 AM	12	STEM 206	Res 2	Orchids 303	Luzung, Ma. Belinda R.				Gen Chem	Orchids 303	LUMBA, Christopher O.				Entrep	Orchids 303	Morales, Jasmin
-8	11:55 AM	12:50 PM	12	STEM 206	Res 2	Orchids 303	Luzung, Ma. Belinda R.				Gen Chem	Orchids 303	LUMBA, Christopher O.				Philo	Orchids 303	ABAD SANTOS, Exequel P.
-9	12:50 PM	1:45 PM	12	STEM 206	Physics	Orchids 303	Syhuat, J-Lyn A.				ReadWrite	Orchids 303	Bacani, Maria Victoria				Philo	Orchids 303	ABAD SANTOS, Exequel P.
-10	1:45 PM	2:40 PM	12	STEM 206	Physics	Orchids 303	Syhuat, J-Lyn A.				ReadWrite	Orchids 303	Bacani, Maria Victoria				Physics	Orchids 303	Syhuat, J-Lyn A.
+7	11:00 AM	11:55 AM	12	STEM 206	Res 2	Orchids 303	Luzung, Ma. Belinda				Gen Chem	Orchids 303	LUMBA, Christopher O.				Entrep	Orchids 303	Morales, Jasmin
+8	11:55 AM	12:50 PM	12	STEM 206	Res 2	Orchids 303	Luzung, Ma. Belinda				Gen Chem	Orchids 303	LUMBA, Christopher O.				Philo	Orchids 303	ABAD SANTOS, Exequel P.
+9	12:50 PM	1:45 PM	12	STEM 206	Physics	Orchids 303	Syhuat, J-Lyn				ReadWrite	Orchids 303	Bacani, Maria Victoria				Philo	Orchids 303	ABAD SANTOS, Exequel P.
+10	1:45 PM	2:40 PM	12	STEM 206	Physics	Orchids 303	Syhuat, J-Lyn				ReadWrite	Orchids 303	Bacani, Maria Victoria				Physics	Orchids 303	Syhuat, J-Lyn
 11	2:40 PM	2:55 PM	12	STEM 206															
-12	2:55 PM	3:50 PM	12	STEM 206	Entrep	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin				Physics	Orchids 303	Syhuat, J-Lyn A.
-13	3:50 PM	4:45 PM	12	STEM 206	Pagbasa	Orchids 303	Cabrera, Alicia				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda R.
-14	4:45 PM	5:40 PM	12	STEM 206	Pagbasa	Orchids 303	Cabrera, Alicia				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda R.
-1	6:35 AM	7:30 AM	12	TVL 201	BCare	Santan 101	Austria, Vienna				Res 2	Santan 101	Luzung, Ma. Belinda R.				Etech	Santan 101	Culala, Jelord
-2	7:30 AM	8:25 AM	12	TVL 201	BCare	Santan 101	Austria, Vienna				Res 2	Santan 101	Luzung, Ma. Belinda R.				Etech	Santan 101	Culala, Jelord
+12	2:55 PM	3:50 PM	12	STEM 206	Entrep	Orchids 303	Morales, Jasmin				Entrep	Orchids 303	Morales, Jasmin				Physics	Orchids 303	Syhuat, J-Lyn
+13	3:50 PM	4:45 PM	12	STEM 206	Pagbasa	Orchids 303	Cabrera, Alicia				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda
+14	4:45 PM	5:40 PM	12	STEM 206	Pagbasa	Orchids 303	Cabrera, Alicia				Philo	Orchids 303	ABAD SANTOS, Exequel P.				Res 2	Orchids 303	Luzung, Ma. Belinda
+1	6:35 AM	7:30 AM	12	TVL 201	BCare	Santan 101	Austria, Vienna				Res 2	Santan 101	Luzung, Ma. Belinda				Etech	Santan 101	Culala, Jelord
+2	7:30 AM	8:25 AM	12	TVL 201	BCare	Santan 101	Austria, Vienna				Res 2	Santan 101	Luzung, Ma. Belinda				Etech	Santan 101	Culala, Jelord
 3	8:25 AM	8:40 AM	12	TVL 201															
-4	8:40 AM	9:35 AM	12	TVL 201	ReadWrite	Santan 101	Ramos, Reynaldo Jr				Philo	Santan 101	MENDOZA, Jim D.				Res 2	Santan 101	Luzung, Ma. Belinda R.
-5	9:35 AM	10:30 AM	12	TVL 201	ReadWrite	Santan 101	Ramos, Reynaldo Jr				Philo	Santan 101	MENDOZA, Jim D.				Res 2	Santan 101	Luzung, Ma. Belinda R.
+4	8:40 AM	9:35 AM	12	TVL 201	ReadWrite	Santan 101	Ramos, Reynaldo Jr				Philo	Santan 101	MENDOZA, Jim D.				Res 2	Santan 101	Luzung, Ma. Belinda
+5	9:35 AM	10:30 AM	12	TVL 201	ReadWrite	Santan 101	Ramos, Reynaldo Jr				Philo	Santan 101	MENDOZA, Jim D.				Res 2	Santan 101	Luzung, Ma. Belinda
 6	10:30 AM	11:00 AM	12	TVL 201															
 7	11:00 AM	11:55 AM	12	TVL 201	Etech	Santan 101	Culala, Jelord				BCare	Santan 101	Austria, Vienna				ReadWrite	Santan 101	Ramos, Reynaldo Jr
 8	11:55 AM	12:50 PM	12	TVL 201	Etech	Santan 101	Culala, Jelord				BCare	Santan 101	Austria, Vienna				Philo	Santan 101	MENDOZA, Jim D.
 9	12:50 PM	1:45 PM	12	TVL 201	Hairdressing	Santan 101	Austria, Vienna				Entrep	Santan 101	Corpuz, Carmel Mary G.				Philo	Santan 101	MENDOZA, Jim D.
-10	1:45 PM	2:40 PM	12	TVL 201	Hairdressing	Santan 101	Austria, Vienna				Entrep	Santan 101	Corpuz, Carmel Mary G.				Hairdressing	Santan 101	
+10	1:45 PM	2:40 PM	12	TVL 201	Hairdressing	Santan 101	Austria, Vienna				Entrep	Santan 101	Corpuz, Carmel Mary G.				Hairdressing	Santan 101	Austria, Vienna
 11	2:40 PM	2:55 PM	12	TVL 201															
-12	2:55 PM	3:50 PM	12	TVL 201	HOPE	Santan 101	JAIME, Mark David M.				ReadWrite	Santan 101	Ramos, Reynaldo Jr				Hairdressing	Santan 101	Austria, Vienna
+12	2:55 PM	3:50 PM	12	TVL 201	HOPE	Santan 101	JAime, Mark David				ReadWrite	Santan 101	Ramos, Reynaldo Jr				Hairdressing	Santan 101	Austria, Vienna
 13	3:50 PM	4:45 PM	12	TVL 201	Entrep	Santan 101	Corpuz, Carmel Mary G.				Pagbasa	Santan 101	FLORES, Jerica Nicole R.				Pagbasa	Santan 101	FLORES, Jerica Nicole R.
 14	4:45 PM	5:40 PM	12	TVL 201	Entrep	Santan 101	Corpuz, Carmel Mary G.				Pagbasa	Santan 101	FLORES, Jerica Nicole R.				Pagbasa	Santan 101	FLORES, Jerica Nicole R.

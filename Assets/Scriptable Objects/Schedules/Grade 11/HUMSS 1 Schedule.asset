@@ -197,7 +197,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 7ab9b1d7fb525e749b4e33cd42f33a06, type: 2}
       m_subtitle: Oral Com
     - m_day: 3
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
@@ -219,7 +219,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 7ab9b1d7fb525e749b4e33cd42f33a06, type: 2}
       m_subtitle: Oral Com
     - m_day: 3
       m_room: {fileID: 11400000, guid: 8fb10d1bb3ce6944bafe37169c6b44e6, type: 2}

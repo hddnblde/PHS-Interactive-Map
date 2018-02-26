@@ -33,7 +33,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 317f81a4a5d62714d9709f43a51cf7bc, type: 2}
       m_subtitle: ReadWrite
   - m_period: {fileID: 11400000, guid: 6cfd7785f5a96b946b55318ca543f882, type: 2}
     m_entries:
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 317f81a4a5d62714d9709f43a51cf7bc, type: 2}
       m_subtitle: ReadWrite
   - m_period: {fileID: 11400000, guid: f8654c0be2960f54fae0f00e5f7afb90, type: 2}
     m_entries:
@@ -165,7 +165,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: fe3b74ec810267d43b81499fc76b40b0, type: 2}
       m_subtitle: Fun.ABM2
   - m_period: {fileID: 11400000, guid: f8d64ce3dd494ab429c747011db05950, type: 2}
     m_entries:
@@ -187,7 +187,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
       m_subtitle: Pagbasa
   - m_period: {fileID: 11400000, guid: 0a89de478e26f3e47a7c4646a01d9129, type: 2}
     m_entries:
@@ -209,7 +209,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d168d0e29a0359347887d25ed8cd4eaa, type: 2}
       m_subtitle: Pagbasa
   - m_period: {fileID: 11400000, guid: f4f42ec7bdc8b6546a0c969b2784f547, type: 2}
     m_entries:
@@ -231,7 +231,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6b4c6a4c526f433478aa61d0c8c596e8, type: 2}
       m_subtitle: Entrep
   - m_period: {fileID: 11400000, guid: b23979cfd6f8d6748814b5cb582ada31, type: 2}
     m_entries:
@@ -275,7 +275,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: 6b4c6a4c526f433478aa61d0c8c596e8, type: 2}
       m_subtitle: Entrep
   - m_period: {fileID: 11400000, guid: 319ad1e69d97b544f8895fe0f14369db, type: 2}
     m_entries:
@@ -297,13 +297,13 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
   - m_period: {fileID: 11400000, guid: addf8a5747c7a4346b51040acd00ed19, type: 2}
     m_entries:
     - m_day: 1
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 2
       m_room: {fileID: 0}
@@ -311,7 +311,7 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 3
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 4
       m_room: {fileID: 0}
@@ -319,5 +319,5 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 5
       m_room: {fileID: 11400000, guid: 1422f15e2935b9942a93d074d1c3bd8d, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2

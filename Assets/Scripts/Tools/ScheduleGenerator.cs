@@ -279,6 +279,8 @@ public class ScheduleGenerator : EditorWindow
 
 	private ScheduleObject GetTarget(string target, string type)
 	{
+		target = target.TrimEnd().TrimStart();
+
 		if(string.IsNullOrEmpty(target))
 			return null;
 
@@ -286,8 +288,9 @@ public class ScheduleGenerator : EditorWindow
 
 		if(result == null || result.Length == 0)
 		{
-			Debug.Log(target);
+			Debug.Log("Cannot get schedule object for : " + target + " end of line.");
 			return null;
+			
 		}
 
 		string assetPath = AssetDatabase.GUIDToAssetPath(result[0]);
@@ -296,7 +299,7 @@ public class ScheduleGenerator : EditorWindow
 		if(scheduleObject == null)
 		{
 			// Debug.Log("Failed to get " + target + " with result of " + result.Length);
-			Debug.Log(assetPath);
+			Debug.Log("asset path ? " + assetPath);
 			// scheduleObject = AssetDatabase.LoadAssetAtPath<ScheduleObject>(result[0]);
 
 			// if(scheduleObject == null)

@@ -153,11 +153,11 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 1b152fad3d9bb444fa4ad4a50229ee4c, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 3
       m_room: {fileID: 11400000, guid: 315f4422591a28a4ba1bdd3156180608, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 4
       m_room: {fileID: 11400000, guid: 1b152fad3d9bb444fa4ad4a50229ee4c, type: 2}
@@ -175,11 +175,11 @@ MonoBehaviour:
       m_subtitle: 
     - m_day: 2
       m_room: {fileID: 11400000, guid: 1b152fad3d9bb444fa4ad4a50229ee4c, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 3
       m_room: {fileID: 11400000, guid: 315f4422591a28a4ba1bdd3156180608, type: 2}
-      m_title: {fileID: 0}
+      m_title: {fileID: 11400000, guid: d62ee7b20069bfb4e9df966d45fbf9e9, type: 2}
       m_subtitle: Res 2
     - m_day: 4
       m_room: {fileID: 11400000, guid: 1b152fad3d9bb444fa4ad4a50229ee4c, type: 2}
