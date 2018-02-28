@@ -16,15 +16,20 @@ namespace Menus
 		private Image icon = null;
 
 		[SerializeField]
-		private CanvasGroup pin = null;
+		private GameObject pin = null;
+
+		[SerializeField]
+		private List<Graphic> pinComponents = new List<Graphic>();
 
 		private bool textIsVisible = true;
 		private bool pinIsVisible = true;
+		private bool rotateWithCamera = true;
 
 		private float viewLowerBounds = 0f;
 		private float viewUpperBounds = 1f;
 		private float currentView = 0f;
 		private int assignedFloor = 0;
+		private int highestFloor = 1;
 		private int selectedFloor = 1;
 
 		private const float MinScale = 0.29f;
@@ -59,20 +64,21 @@ namespace Menus
 			ShowText();
 		}
 
-		public void Set(Sprite icon, string text, Vector3 position, int floor = 0)
+		public void Set(Sprite icon, string text, Vector3 position, bool rotateWithCamera, int totalFloors, int floor = 0)
 		{
-			Set(icon, text, position, 0f, 1f, floor);
+			Set(icon, text, position, 0f, 1f, rotateWithCamera, floor);
 		}
 
-		public void Set(Sprite icon, string text, Vector3 position, float viewLowerBounds, float viewUpperBounds, int floor = 0)
+		public void Set(Sprite icon, string text, Vector3 position, float viewLowerBounds, float viewUpperBounds, bool rotateWithCamera, int highestFloor, int floor = 0)
 		{
 			this.assignedFloor = floor;
+			this.highestFloor = highestFloor;
 
 			if(this.icon != null)
 				this.icon.sprite = icon;
 
 			if(pin != null)
-				pin.gameObject.SetActive(HasIcon());
+				pin.SetActive(HasIcon());
 
 			if(this.text != null)
 				this.text.text = text;
@@ -81,6 +87,8 @@ namespace Menus
 
 			this.viewLowerBounds = viewLowerBounds;
 			this.viewUpperBounds = viewUpperBounds;
+
+			this.rotateWithCamera = rotateWithCamera;
 		}
 
 		private void OnViewAdjust(float view)
@@ -92,12 +100,14 @@ namespace Menus
 
 			ScaleByView();
 			ShowText();
-			// ShowPin();
+			ShowPin();
 		}
 
 		private void ScaleByView()
 		{
-			transform.rotation = cameraTransform.rotation;
+			if(rotateWithCamera)
+				transform.rotation = cameraTransform.rotation;
+
 			Vector3 scale = Vector3.Lerp(Vector3.one * MinScale, Vector3.one * MaxScale, currentView);
 			transform.localScale = scale;
 		}
@@ -115,13 +125,15 @@ namespace Menus
 
 		private void ShowPin()
 		{
-			bool shown = HasIcon() && AboveViewingBounds();
+			bool shown = HasIcon() && (AboveViewingBounds() || WithinViewingBounds());
 
-			if(pin == null || shown == pinIsVisible || !pin.gameObject.activeInHierarchy)
+			if(pin == null || shown == pinIsVisible || !pin.activeInHierarchy)
 				return;
 
 			pinIsVisible = shown;
-			pin.alpha = (shown ? 1f : 0f);	
+			
+			foreach(Graphic pinComponent in pinComponents)
+				pinComponent.CrossFadeAlpha((pinIsVisible ? 1f : 0f), 0.1f, true);
 		}
 
 		private bool WithinViewingBounds()
@@ -139,7 +151,7 @@ namespace Menus
 			if(assignedFloor == 0)
 				return true;
 			else
-				return selectedFloor == assignedFloor;
+				return (selectedFloor == assignedFloor) || ((selectedFloor > highestFloor) && (highestFloor == assignedFloor));
 		}
 		
 		private bool HasIcon()

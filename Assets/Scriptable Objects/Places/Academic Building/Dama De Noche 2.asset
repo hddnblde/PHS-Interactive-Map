@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Dama De Noche 2
   m_EditorClassIdentifier: 
   m_displayedName: Dama De Noche 2
-  m_displayPosition: {x: 85.83513, y: 0, z: -14.094383}
+  m_displayPosition: {x: 86.276855, y: 0, z: -13.505423}
   m_position: {x: 85.83513, y: 0, z: -22.199554}
   m_useDisplayPosition: 1
   m_tags: 

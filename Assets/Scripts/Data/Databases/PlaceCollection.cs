@@ -94,6 +94,22 @@ namespace Map
 			else
 				return rooms.Contains(room);
 		}
+
+		public int highestFloorLevel
+		{
+			get
+			{
+				int highestFloor = 1;
+
+				foreach(Room room in rooms)
+				{
+					if(room.floor > highestFloor)
+						highestFloor = room.floor;
+				}
+
+				return highestFloor;
+			}
+		}
 		#endregion
 	}
 }

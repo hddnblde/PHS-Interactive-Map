@@ -16,9 +16,10 @@ MonoBehaviour:
   m_position: {x: -25.376778, y: 0, z: 9.330278}
   m_useDisplayPosition: 0
   m_tags: 
+  m_isHidden: 0
   m_standaloneName: 1
   m_standaloneNumber: 1
   m_floor: 1
   m_room: 1
   m_inheritedPosition: {fileID: 0}
-  m_mapName: Shakespear
+  m_mapName: Shakespear Room

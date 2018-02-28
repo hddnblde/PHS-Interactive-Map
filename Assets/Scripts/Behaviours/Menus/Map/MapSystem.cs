@@ -83,21 +83,24 @@ namespace Map
 					bool hasRooms = placeCollection.hasRooms;
 
 					Place place = placeCollection.GetPlace();
-					CreateMarker(place.thumbnail, place.displayedName, place.mapName, place.displayPosition, (hasRooms ? placeViewingBounds : ViewingBounds.Default), 0);
-
+					CreateMarker(place.thumbnail, place.displayedName, place.mapName, place.displayPosition, (hasRooms ? placeViewingBounds : ViewingBounds.Default), true, 1, 0);
+					// CreateMarker(place.thumbnail, place.displayedName, place.mapName, place.displayPosition, ViewingBounds.Default, 0);
+					
 					if(!hasRooms)
 						continue;
+
+					int highestFloor = placeCollection.highestFloorLevel;
 
 					for(int k = 0; k < placeCollection.roomCount; k++)
 					{
 						Room room = placeCollection.GetRoom(k);
-						CreateMarker(null, room.displayedName, room.mapName, room.displayPosition, roomViewingBounds, room.floor);
+						CreateMarker(null, room.displayedName, room.mapName, room.displayPosition, roomViewingBounds, true, highestFloor, room.floor);
 					}					
 				}
 			}
 		}
 
-		private void CreateMarker(Sprite thumbnail, string displayedName, string mapName, Vector3 position, ViewingBounds viewingBounds, int floor)
+		private void CreateMarker(Sprite thumbnail, string displayedName, string mapName, Vector3 position, ViewingBounds viewingBounds, bool willRotateWithCamera, int highestFloor, int floor)
 		{
 			if(mapMarkerPrefab == null)
 				return;
@@ -107,7 +110,7 @@ namespace Map
 			MapMarker marker = markerObject.GetComponent<MapMarker>();
 
 			if(marker != null)
-				marker.Set(thumbnail, mapName, position, viewingBounds.lowerLimit, viewingBounds.upperLimit, floor);
+				marker.Set(thumbnail, mapName, position, viewingBounds.lowerLimit, viewingBounds.upperLimit, willRotateWithCamera, highestFloor, floor);
 		}
 
 		private Sprite GetThumbnailFromLocation(Location location)
@@ -116,7 +119,6 @@ namespace Map
 				return null;
 
 			Sprite thumbnail = null;
-
 			Place place = location as Place;
 
 			if(place != null)

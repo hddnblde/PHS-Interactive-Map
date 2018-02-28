@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: White Angel
   m_EditorClassIdentifier: 
   m_displayedName: White Angel
-  m_displayPosition: {x: -102.9914, y: 0, z: -119.32402}
+  m_displayPosition: {x: -101.51074, y: 0, z: -117.684135}
   m_position: {x: -96.91203, y: 0, z: -113.86796}
   m_useDisplayPosition: 1
   m_tags: 

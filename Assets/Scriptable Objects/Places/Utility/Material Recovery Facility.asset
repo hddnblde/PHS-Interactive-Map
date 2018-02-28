@@ -17,6 +17,6 @@ MonoBehaviour:
   m_useDisplayPosition: 1
   m_tags: 
   m_isHidden: 0
-  m_thumbnail: {fileID: 0}
+  m_thumbnail: {fileID: 21300046, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
   m_trivia: {fileID: 11400000, guid: 478548b1524fc9946a470a0f4af207d4, type: 2}
   m_mapName: MRF
