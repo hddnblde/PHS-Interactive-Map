@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Daisy
   m_EditorClassIdentifier: 
   m_displayedName: Daisy
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: 133.45776, y: 0, z: -10.3119755}
+  m_position: {x: 125.148575, y: 0, z: -10.166199}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 18fae841793c4c340bea75643058ebc8, type: 2}
+  m_mapName: Daisy

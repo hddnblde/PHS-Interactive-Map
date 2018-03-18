@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: Ilang-ilang 202
+  m_EditorClassIdentifier: 
+  m_displayedName: Ilang-ilang
+  m_displayPosition: {x: -130.08879, y: 0, z: -140.90721}
+  m_position: {x: -130.08879, y: 0, z: -140.90721}
+  m_useDisplayPosition: 0
+  m_tags: 
+  m_standaloneName: 0
+  m_standaloneNumber: 0
+  m_floor: 2
+  m_room: 2
+  m_inheritedPosition: {fileID: 11400000, guid: 7771cce9cf4503842bf3b493d4e9980d,
+    type: 2}
+  m_mapName: 202

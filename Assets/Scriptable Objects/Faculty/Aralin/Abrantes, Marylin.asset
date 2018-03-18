@@ -23,4 +23,20 @@ MonoBehaviour:
     m_month: 2
     m_day: 1
     m_year: 1900
-  m_scheduleTable: {fileID: 0}
+  m_scheduleTable:
+  - m_period: {fileID: 0}
+    m_monday:
+      m_room: {fileID: 0}
+      m_sectionCluster: {fileID: 0}
+    m_tuesday:
+      m_room: {fileID: 0}
+      m_sectionCluster: {fileID: 0}
+    m_wednesday:
+      m_room: {fileID: 0}
+      m_sectionCluster: {fileID: 0}
+    m_thursday:
+      m_room: {fileID: 0}
+      m_sectionCluster: {fileID: 0}
+    m_friday:
+      m_room: {fileID: 0}
+      m_sectionCluster: {fileID: 0}

@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: PAGCOR
   m_EditorClassIdentifier: 
   m_displayedName: PAGCOR
-  m_position: {x: 0, y: 0, z: 0}
-  m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_displayPosition: {x: -74.46598, y: 0, z: -177.41931}
+  m_position: {x: -57.7, y: 0, z: -180.15892}
+  m_useDisplayPosition: 1
+  m_tags: cadena de amor;
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: b31e941f90ddb2d4bbab52c49c655340, type: 2}
+  m_mapName: PAGCOR

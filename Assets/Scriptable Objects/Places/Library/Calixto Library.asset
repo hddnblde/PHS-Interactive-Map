@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Name: Calixto Library
   m_EditorClassIdentifier: 
   m_displayedName: Calixto Library
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 25d8e6bc41604c64489c93351f32d816, type: 2}
-  m_rooms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_displayPosition: {x: -20.578516, y: 0, z: 31.157032}
+  m_position: {x: -20.867773, y: 0, z: 22.589258}
+  m_useDisplayPosition: 1
+  m_tags: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300040, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: d8977084efb246749ae96614546a238e, type: 2}
+  m_mapName: 'Calixto
+
+    Library'

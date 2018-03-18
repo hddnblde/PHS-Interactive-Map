@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Teatro
   m_EditorClassIdentifier: 
   m_displayedName: Teatro
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -134.32137, y: 0, z: -171.45935}
+  m_position: {x: -125.64704, y: 0, z: -172.4299}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 0}
+  m_trivia: {fileID: 11400000, guid: fdffd7d4377c9e041967d0a8701b74b9, type: 2}
+  m_mapName: Teatro

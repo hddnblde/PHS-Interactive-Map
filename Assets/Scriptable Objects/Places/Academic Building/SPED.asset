@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
+  m_Name: SPED
+  m_EditorClassIdentifier: 
+  m_displayedName: SPED
+  m_displayPosition: {x: 16.565859, y: 0, z: 224.00389}
+  m_position: {x: 18.286829, y: 0, z: 215.08293}
+  m_useDisplayPosition: 1
+  m_tags: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 94b5ccb38e945dc409374d096204672c, type: 2}
+  m_mapName: SPED

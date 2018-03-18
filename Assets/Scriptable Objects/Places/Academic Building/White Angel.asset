@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: White Angel
   m_EditorClassIdentifier: 
   m_displayedName: White Angel
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -101.51074, y: 0, z: -117.684135}
+  m_position: {x: -96.91203, y: 0, z: -113.86796}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 091491e5beed3ed40844f00ed89570ab, type: 2}
+  m_mapName: White Angel

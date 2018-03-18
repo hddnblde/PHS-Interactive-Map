@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Name: Music Room
   m_EditorClassIdentifier: 
   m_displayedName: Music Room
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -100.40749, y: 0, z: -228.55177}
+  m_position: {x: -93.053215, y: 0, z: -229.28975}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 2f4555a940fd39f4a8265715f91793a6, type: 2}
+  m_mapName: 'Music
+
+    Room'

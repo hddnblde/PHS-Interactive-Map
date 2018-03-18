@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 22365a766ee06df40b9340e0e6a6b29f
+timeCreated: 1515914779
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Borders
+    100002: Buildings
+    100004: //RootNode
+    100006: Roads
+    100008: Walkable
+    100010: PHS
+    100012: AgricultureArea
+    100014: AcademicBuildings
+    100016: Canteens
+    100018: Courts
+    100020: Gates
+    100022: Laboratories
+    100024: Offices
+    100026: polySurface115
+    100028: Sheds
+    100030: Utility
+    100032: Vegetation
+    100034: WaterClosets
+    100036: Halls
+    400000: Borders
+    400002: Buildings
+    400004: //RootNode
+    400006: Roads
+    400008: Walkable
+    400010: PHS
+    400012: AgricultureArea
+    400014: AcademicBuildings
+    400016: Canteens
+    400018: Courts
+    400020: Gates
+    400022: Laboratories
+    400024: Offices
+    400026: polySurface115
+    400028: Sheds
+    400030: Utility
+    400032: Vegetation
+    400034: WaterClosets
+    400036: Halls
+    2100000: lambert1
+    2300000: Borders
+    2300002: Buildings
+    2300004: Roads
+    2300006: Walkable
+    2300008: AgricultureArea
+    2300010: AcademicBuildings
+    2300012: Canteens
+    2300014: Courts
+    2300016: Gates
+    2300018: Laboratories
+    2300020: Offices
+    2300022: polySurface115
+    2300024: Sheds
+    2300026: Utility
+    2300028: Vegetation
+    2300030: WaterClosets
+    2300032: Halls
+    3300000: Borders
+    3300002: Buildings
+    3300004: Roads
+    3300006: Walkable
+    3300008: AgricultureArea
+    3300010: AcademicBuildings
+    3300012: Canteens
+    3300014: Courts
+    3300016: Gates
+    3300018: Laboratories
+    3300020: Offices
+    3300022: polySurface115
+    3300024: Sheds
+    3300026: Utility
+    3300028: Vegetation
+    3300030: WaterClosets
+    3300032: Halls
+    4300000: Roads
+    4300002: Borders
+    4300004: Buildings
+    4300006: Walkable
+    4300008: AgricultureArea
+    4300010: Vegetation
+    4300012: polySurface115
+    4300014: Courts
+    4300016: Sheds
+    4300018: Canteens
+    4300020: Gates
+    4300022: Utility
+    4300024: Offices
+    4300026: Laboratories
+    4300028: AcademicBuildings
+    4300030: WaterClosets
+    4300032: Halls
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 2
+    tangentImportMode: 2
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

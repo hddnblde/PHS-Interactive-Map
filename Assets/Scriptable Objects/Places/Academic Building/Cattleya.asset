@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Cattleya
   m_EditorClassIdentifier: 
   m_displayedName: Cattleya
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -43.42635, y: 0, z: 213.86829}
+  m_position: {x: -43.42635, y: 0, z: 213.86829}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: fd22193faf8c9914183cf5e6713c2588, type: 2}
+  m_mapName: Cattleya

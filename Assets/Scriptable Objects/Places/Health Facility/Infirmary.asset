@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Name: Infirmary
   m_EditorClassIdentifier: 
   m_displayedName: Infirmary
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: ff8832e4fdd08664eb91a54ba1c35176, type: 2}
-  m_rooms: []
+  m_displayPosition: {x: 17.082497, y: 0, z: 188.4862}
+  m_position: {x: 21.650766, y: 0, z: 194.01935}
+  m_useDisplayPosition: 1
+  m_tags: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300038, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 2bed6b139b410824a8e9f7f01e2b3e36, type: 2}
+  m_mapName: Infirmary

@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bd777a146ed8e45a9e4754a9d7cc67, type: 3}
+  m_Name: STEM 201 Schedule
+  m_EditorClassIdentifier: 
+  target: {fileID: 11400000, guid: 709327ee949ade3428b228cb4159cba4, type: 2}
+  m_periods:
+  - m_period: {fileID: 11400000, guid: a2d08b40958f22643ab8a76bd15e8e0f, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 0593e500a9c0276438772e46f5c3666a, type: 2}
+      m_subtitle: Physics
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 7466c9af753fc30468ad7140480b48a0, type: 2}
+      m_subtitle: Res 2
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: fe7ffee10380bcc41b0e4f6d3bdf2476, type: 2}
+      m_subtitle: Philo
+  - m_period: {fileID: 11400000, guid: 6cfd7785f5a96b946b55318ca543f882, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 0593e500a9c0276438772e46f5c3666a, type: 2}
+      m_subtitle: Physics
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 7466c9af753fc30468ad7140480b48a0, type: 2}
+      m_subtitle: Res 2
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: fe7ffee10380bcc41b0e4f6d3bdf2476, type: 2}
+      m_subtitle: Philo
+  - m_period: {fileID: 11400000, guid: f8654c0be2960f54fae0f00e5f7afb90, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: a72b898e98a6c2744a2427d4d9a96178, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 7466c9af753fc30468ad7140480b48a0, type: 2}
+      m_subtitle: Res 2
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: cc9660f674e7eb1499c10fdfc27e336f, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 627caa5b076b8364999b34ea9228e69c, type: 2}
+      m_subtitle: Gen Chem
+  - m_period: {fileID: 11400000, guid: a92de413519245f43af7095cf7f265af, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 7466c9af753fc30468ad7140480b48a0, type: 2}
+      m_subtitle: Res 2
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: cc9660f674e7eb1499c10fdfc27e336f, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 627caa5b076b8364999b34ea9228e69c, type: 2}
+      m_subtitle: Gen Chem
+  - m_period: {fileID: 11400000, guid: 8609a7e248048884ea78fe2c76b49c53, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: 0811e15ec1097854cbd46d90e8b2ea22, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: a9396f681bf181347a7ba8c88d6218b2, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: e0240d80baf6fde43b520ef19408bf5e, type: 2}
+      m_subtitle: Etech
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 0593e500a9c0276438772e46f5c3666a, type: 2}
+      m_subtitle: Physics
+  - m_period: {fileID: 11400000, guid: f8d64ce3dd494ab429c747011db05950, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: a9396f681bf181347a7ba8c88d6218b2, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: e0240d80baf6fde43b520ef19408bf5e, type: 2}
+      m_subtitle: Etech
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 0593e500a9c0276438772e46f5c3666a, type: 2}
+      m_subtitle: Physics
+  - m_period: {fileID: 11400000, guid: 0a89de478e26f3e47a7c4646a01d9129, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: d148be3a58cf1734e8a437e146bc264f, type: 2}
+      m_subtitle: HOPE
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: a9396f681bf181347a7ba8c88d6218b2, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: e0240d80baf6fde43b520ef19408bf5e, type: 2}
+      m_subtitle: Etech
+  - m_period: {fileID: 11400000, guid: f4f42ec7bdc8b6546a0c969b2784f547, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: cc9660f674e7eb1499c10fdfc27e336f, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: a9396f681bf181347a7ba8c88d6218b2, type: 2}
+      m_subtitle: ReadWrite
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: e0240d80baf6fde43b520ef19408bf5e, type: 2}
+      m_subtitle: Etech
+  - m_period: {fileID: 11400000, guid: b23979cfd6f8d6748814b5cb582ada31, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 2
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+  - m_period: {fileID: 11400000, guid: 3ab08aa09ea4de844a0d9a76f289775c, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: cc9660f674e7eb1499c10fdfc27e336f, type: 2}
+      m_subtitle: Pagbasa
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 37bd139a89b0fe64ba527dc3b0799ec1, type: 2}
+      m_subtitle: Entrep
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: a9396f681bf181347a7ba8c88d6218b2, type: 2}
+      m_subtitle: ReadWrite
+  - m_period: {fileID: 11400000, guid: 319ad1e69d97b544f8895fe0f14369db, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: fe7ffee10380bcc41b0e4f6d3bdf2476, type: 2}
+      m_subtitle: Philo
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 627caa5b076b8364999b34ea9228e69c, type: 2}
+      m_subtitle: Gen Chem
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 37bd139a89b0fe64ba527dc3b0799ec1, type: 2}
+      m_subtitle: Entrep
+  - m_period: {fileID: 11400000, guid: addf8a5747c7a4346b51040acd00ed19, type: 2}
+    m_entries:
+    - m_day: 1
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: fe7ffee10380bcc41b0e4f6d3bdf2476, type: 2}
+      m_subtitle: Philo
+    - m_day: 2
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 627caa5b076b8364999b34ea9228e69c, type: 2}
+      m_subtitle: Gen Chem
+    - m_day: 3
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 4
+      m_room: {fileID: 0}
+      m_title: {fileID: 0}
+      m_subtitle: 
+    - m_day: 5
+      m_room: {fileID: 11400000, guid: 05226a98e815975409c1a68ce4b5516b, type: 2}
+      m_title: {fileID: 11400000, guid: 37bd139a89b0fe64ba527dc3b0799ec1, type: 2}
+      m_subtitle: Entrep

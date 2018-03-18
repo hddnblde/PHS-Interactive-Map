@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Name: Values Multipurpose
   m_EditorClassIdentifier: 
   m_displayedName: Values Multipurpose
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: 133.71944, y: 0, z: 19.336096}
+  m_position: {x: 126.6, y: 0, z: 19.336096}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 53aa9a5fb8c7fd041a82177e643cf304, type: 2}
+  m_mapName: 'Values
+
+    Multipurpose'

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: Guidance Office 1
+  m_EditorClassIdentifier: 
+  m_displayedName: Guidance Office 1
+  m_displayPosition: {x: -114.327675, y: 0, z: -174.77591}
+  m_position: {x: -114.00619, y: 0, z: -167.90851}
+  m_useDisplayPosition: 1
+  m_tags: 
+  m_isHidden: 0
+  m_standaloneName: 1
+  m_standaloneNumber: 1
+  m_floor: 1
+  m_room: 1
+  m_inheritedPosition: {fileID: 0}
+  m_mapName: 'Guidance
+
+    Office'

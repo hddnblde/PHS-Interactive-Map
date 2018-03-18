@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f0a1c6743f7664cb54debfe0914aa8, type: 3}
+  m_Name: Orchids 301
+  m_EditorClassIdentifier: 
+  m_displayedName: Orchids
+  m_displayPosition: {x: 133.311, y: 0, z: 179.705}
+  m_position: {x: 133.311, y: 0, z: 179.705}
+  m_useDisplayPosition: 0
+  m_tags: 
+  m_standaloneName: 0
+  m_standaloneNumber: 0
+  m_floor: 3
+  m_room: 1
+  m_inheritedPosition: {fileID: 11400000, guid: 00257df61627c224a8bd338b4b04509e,
+    type: 2}
+  m_mapName: 301

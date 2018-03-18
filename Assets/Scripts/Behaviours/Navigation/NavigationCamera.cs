@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Gestures;
+using Menus;
 
 namespace Navigation
 {
@@ -13,16 +14,24 @@ namespace Navigation
 		#region Static Implementation
 		private static Camera navigationCamera = null;
 		private static LayerMask groundLayer;
-		private delegate void FocusAction(Vector3 position);
+		private delegate void FocusAction(Vector3 position, float zoom);
+		private delegate void FrameAction(Bounds frame);
 		private static event FocusAction OnFocus;
+		private static event FrameAction OnFrame;
 
 		/// <summary>
 		/// Focuses the navigation camera to a specified position on the map.
 		/// </summary>
-		public static void FocusTo(Vector3 position)
+		public static void FocusTo(Vector3 position, float zoom = ZoomDefault)
 		{
 			if(OnFocus != null)
-				OnFocus(position);
+				OnFocus(position, zoom);
+		}
+
+		public static void FrameTo(Bounds frame)
+		{
+			if(OnFrame != null)
+				OnFrame(frame);
 		}
 
 		/// <summary>
@@ -53,12 +62,6 @@ namespace Navigation
 		private float m_view = 0.5f;
 
 		[Header("Settings")]
-		[SerializeField, Range(1f, 3f)]
-		private float rotationSpeed = 1.25f;
-
-		[SerializeField, Range(0.25f, 2f)]
-		private float zoomSpeed = 1f;
-
 		[SerializeField]
 		private AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
@@ -76,18 +79,18 @@ namespace Navigation
 		public static event ViewAdjust OnViewAdjust;
 
 		private const float RaycastDistance = 100f;
-		private const float CameraHeight = 30f;
+		public const float CameraHeight = 30f;
 		private const float GroundHeight = 0f;
-		private const float MovementSpeedLowerLimit = 1f;
-		private const float MovementSpeedUpperLimit = 10f;
 		private const float ViewLowerLimit = 10f;
-		private const float ViewUpperLimit = 170f;
-		private const float TransitionDuration = 0.25f;
+		private const float ViewUpperLimit = 300f;
+		private const float TransitionDuration = 0.85f;
+		private const float TranslateSpeed = 7f;
 		private const float ZoomDefault = 0.5f;
 		private const float ZoomDampTime = 0.15f;
 
 		private Coroutine transitionRoutine = null;
 		private float zoomVelocity = 0f;
+		private float currentView = 0f;
 		#endregion
 
 
@@ -98,7 +101,7 @@ namespace Navigation
 			set
 			{
 				m_view = value;
-				ViewAdjustEvent();
+				// ViewAdjustEvent();
 			}
 		}
 		#endregion
@@ -127,18 +130,20 @@ namespace Navigation
 
 		private void OnEnable()
 		{
-			RegisterEvents();
+			RegisterGestureEvents();
+			RegisterMenuContextEvent();
 		}
 
 		private void OnDisable()
 		{
-			DeregisterEvents();
+			DeregisterGestureEvents();
+			DeregisterMenuContextEvent();
 		}
 		#endregion
 
 
 		#region Gestures Implementation
-		private void RegisterEvents()
+		private void RegisterGestureEvents()
 		{
 			TouchGestures.OnDoubleTap += OnDoubleTap;
 			TouchGestures.OnDrag += OnDrag;
@@ -146,9 +151,10 @@ namespace Navigation
 			TouchGestures.OnPinch += OnPinch;
 
 			OnFocus += FocusFrame;
+			OnFrame += FrameByBounds;
 		}
 
-		private void DeregisterEvents()
+		private void DeregisterGestureEvents()
 		{
 			TouchGestures.OnDoubleTap -= OnDoubleTap;
 			TouchGestures.OnDrag -= OnDrag;
@@ -156,25 +162,38 @@ namespace Navigation
 			TouchGestures.OnPinch -= OnPinch;
 
 			OnFocus -= FocusFrame;
+			OnFrame -= FrameByBounds;
 		}
 
 		private void OnDoubleTap(Vector2 screenPoint)
 		{
+			if(!listenToGestures)
+				return;
+
 			ResetView();
 		}
 
 		private void OnDrag(Vector2 deltaPosition)
 		{
+			if(!listenToGestures)
+				return;
+
 			Pan(deltaPosition);
 		}
 
 		private void OnRotate(float delta)
 		{
+			if(!listenToGestures)
+				return;
+
 			Rotate(delta);
 		}
 
 		private void OnPinch(float delta)
 		{
+			if(!listenToGestures)
+				return;
+
 			Zoom(delta);
 		}
 		#endregion
@@ -189,8 +208,10 @@ namespace Navigation
 
 		private void Pan(Vector2 delta)
 		{
-			delta *= -Mathf.Lerp(MovementSpeedUpperLimit, MovementSpeedLowerLimit, view);
-			transform.Translate(delta.x, delta.y, 0f);
+			float speedRatio = (navigationCamera.orthographicSize / ViewLowerLimit) * Time.deltaTime;
+			Vector3 translation = new Vector3(delta.x, delta.y, 0f) * -(speedRatio * TranslateSpeed);
+
+			transform.Translate(translation);
 
 			Vector3 clampedPosition =
 				new Vector3(Mathf.Clamp(transform.position.x, -boundary.x, boundary.x),
@@ -203,14 +224,14 @@ namespace Navigation
 		private void Rotate(float delta)
 		{
 			StopTransition();
-			float yaw = transform.eulerAngles.y - (delta * rotationSpeed);
+			float yaw = transform.eulerAngles.y - delta;
 			transform.eulerAngles = (Vector3.up * yaw) + (Vector3.right * 90f);
 		}
 
 		private void Zoom(float delta)
 		{
 			StopTransition();
-			view = Mathf.Clamp01(view + (delta * zoomSpeed));
+			view = Mathf.Clamp01(view + delta);
 		}
 
 		private void ResetView()
@@ -221,8 +242,20 @@ namespace Navigation
 
 		private void FocusFrame(Vector3 frame)
 		{
+			FocusFrame(frame, ZoomDefault);
+		}
+		
+		private void FocusFrame(Vector3 frame, float targetZoom)
+		{
+			frame = new Vector3(frame.x, CameraHeight, frame.z);
 			StopTransition();
-			transitionRoutine = StartCoroutine(FocusFrameRoutine(frame));
+			transitionRoutine = StartCoroutine(FocusFrameRoutine(frame, targetZoom));
+		}
+
+		private void FrameByBounds(Bounds frame)
+		{
+			float targetView = Mathf.Lerp(1f, 0f, frame.size.magnitude / ViewUpperLimit) - 0.25f;
+			FocusFrame(frame.center, targetView);
 		}
 
 		private void StopTransition()
@@ -236,15 +269,19 @@ namespace Navigation
 			if(navigationCamera == null)
 				return;
 
-			float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, m_view);
+			if(!Mathf.Approximately(currentView, m_view))
+				ViewAdjustEvent();
 
-			navigationCamera.orthographicSize = Mathf.SmoothDamp(navigationCamera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
+			currentView = Mathf.SmoothDamp(currentView, m_view, ref zoomVelocity, ZoomDampTime);
+			float targetView = Mathf.Lerp(ViewUpperLimit, ViewLowerLimit, currentView);
+
+			navigationCamera.orthographicSize = targetView;// Mathf.SmoothDamp(navigationCamera.orthographicSize, targetView, ref zoomVelocity, ZoomDampTime);
 		}
 
 		private void ViewAdjustEvent()
 		{
 			if(OnViewAdjust != null)
-				OnViewAdjust(m_view);
+				OnViewAdjust(currentView); //OnViewAdjust(m_view);
 		}
 		#endregion
 
@@ -261,19 +298,44 @@ namespace Navigation
 			}
 		}
 
-		private IEnumerator FocusFrameRoutine(Vector3 frame, bool resetView = true)
+		private IEnumerator FocusFrameRoutine(Vector3 frame, float targetZoom)
 		{
+			TouchGestures.StopDrag();
+
 			Vector3 currentPosition = transform.position;
 			float currentZoom = view;
 			for(float current = TransitionDuration; current > 0f; current -= Time.deltaTime)
 			{
 				float t = Mathf.InverseLerp(TransitionDuration, 0f, current);
-				transform.position = Vector3.LerpUnclamped(currentPosition, frame, t);
+				float curvedT = transitionCurve.Evaluate(t);
+				transform.position = Vector3.LerpUnclamped(currentPosition, frame, curvedT);
 
-				if(resetView)
-					view = Mathf.LerpUnclamped(currentZoom, ZoomDefault, transitionCurve.Evaluate(t));
+				view = Mathf.LerpUnclamped(currentZoom, targetZoom, curvedT);
 				yield return null;
 			}
+
+			transform.position = Vector3.LerpUnclamped(currentPosition, frame, 1f);
+			view = Mathf.LerpUnclamped(currentZoom, targetZoom, transitionCurve.Evaluate(1f));
+		}
+		#endregion
+	
+
+		#region Menu Context Implementation
+		private bool listenToGestures = true;
+
+		private void RegisterMenuContextEvent()
+		{
+			NavigationMenu.OnContextSelect += OnContextSelect;
+		}
+
+		private void DeregisterMenuContextEvent()
+		{
+			NavigationMenu.OnContextSelect -= OnContextSelect;
+		}
+
+		private void OnContextSelect(NavigationMenu.Context context)
+		{
+			listenToGestures = context == NavigationMenu.Context.Map;
 		}
 		#endregion
 	}

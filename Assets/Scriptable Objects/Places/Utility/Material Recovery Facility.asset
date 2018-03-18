@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Material Recovery Facility
   m_EditorClassIdentifier: 
   m_displayedName: MRF
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: 38.10889, y: 0, z: 103.96034}
+  m_position: {x: 37.897568, y: 0, z: 95.19049}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: 7b0e7625768341547a37906dd90ddf3e, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300046, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 478548b1524fc9946a470a0f4af207d4, type: 2}
+  m_mapName: MRF

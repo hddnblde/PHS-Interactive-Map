@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Camia
   m_EditorClassIdentifier: 
   m_displayedName: Camia
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -25.041218, y: 0, z: 69.162704}
+  m_position: {x: -25.041218, y: 0, z: 69.162704}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 29fafd7ba18dc3141bea856ad5e82b8a, type: 2}
+  m_mapName: Camia

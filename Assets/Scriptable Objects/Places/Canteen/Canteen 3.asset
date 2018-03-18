@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Canteen 3
   m_EditorClassIdentifier: 
   m_displayedName: Canteen 3
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: -17.860834, y: 0, z: 108.747536}
+  m_position: {x: -17.860834, y: 0, z: 121.6}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_thumbnail: {fileID: 0}
-  m_description: Canteen 3
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300032, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 0}
+  m_mapName: Canteen 3

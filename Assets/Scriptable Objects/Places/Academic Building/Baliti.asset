@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: Baliti
   m_EditorClassIdentifier: 
   m_displayedName: Baliti
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: 30.036274, y: 0, z: 6.246483}
+  m_position: {x: 29.936766, y: 0, z: 10.392271}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: bb6c403ce0139884db98c1623a9aa0a4, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: c76956a35412b944e85c6a6f533a8cb6, type: 2}
+  m_mapName: Baliti

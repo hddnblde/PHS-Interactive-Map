@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Name: Gladiola Lab
   m_EditorClassIdentifier: 
   m_displayedName: Gladiola Lab
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayPosition: {x: 98.8566, y: 0, z: 229.01949}
+  m_position: {x: 89.10442, y: 0, z: 220.39609}
+  m_useDisplayPosition: 1
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: 2e7878517b6bc914fa2309040931884d, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300030, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 0}
+  m_mapName: 'Gladiola
+
+    Lab'

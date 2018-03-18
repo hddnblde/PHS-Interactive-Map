@@ -11,8 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca46644db55e1b0479ba3f4f2f232b1f, type: 3}
   m_Name: CR 3
   m_EditorClassIdentifier: 
-  m_displayedName: CR
-  m_position: {x: 0, y: 0, z: 0}
+  m_displayedName: CR (Rene Medina Hall)
+  m_displayPosition: {x: 141.09451, y: 0, z: -210.12518}
+  m_position: {x: 141.09451, y: 0, z: -210.12518}
+  m_useDisplayPosition: 0
   m_tags: 
-  m_landmark: {fileID: 11400000, guid: 096317cb47da83e4dbebe977c6284a03, type: 2}
-  m_rooms: []
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300042, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 0}
+  m_mapName: CR

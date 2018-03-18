@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Name: Guidance Office 2
   m_EditorClassIdentifier: 
   m_displayedName: Guidance Office 2
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 1d9290f433bd6a34cb94c99cc46126d0, type: 2}
-  m_rooms: []
+  m_displayPosition: {x: 30.39914, y: 0, z: 179.7523}
+  m_position: {x: 36.3, y: 0, z: 183.83937}
+  m_useDisplayPosition: 1
+  m_tags: 
+  m_isHidden: 0
+  m_thumbnail: {fileID: 21300034, guid: 6bfe94c3f20b9f34aa93ae9163bc6179, type: 3}
+  m_trivia: {fileID: 11400000, guid: 9f9451900024dcb418a15d34351fa367, type: 2}
+  m_mapName: 'Guidance
+
+    Office 2'

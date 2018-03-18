@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Name: Rene Medina Hall
   m_EditorClassIdentifier: 
   m_displayedName: Rene Medina Hall
-  m_position: {x: 0, y: 0, z: 0}
-  m_landmark: {fileID: 11400000, guid: 04a7cf7af39653c45b1c3a0e25a52b01, type: 2}
-  m_rooms: []
+  m_displayPosition: {x: 116.58193, y: 0, z: -222.50258}
+  m_position: {x: 115.4141, y: 0, z: -250.30196}
+  m_useDisplayPosition: 1
+  m_tags: bulwagan; stage; court; hall;
+  m_isHidden: 0
+  m_thumbnail: {fileID: 0}
+  m_trivia: {fileID: 11400000, guid: e787de8e384335240b74ce562aa98bc8, type: 2}
+  m_mapName: 'Rene Medina
+
+    Hall'
