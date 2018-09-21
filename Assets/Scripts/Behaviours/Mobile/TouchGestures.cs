@@ -13,7 +13,7 @@ namespace Gestures
 	public class TouchGestures : MonoBehaviour
 	{
 		private static TouchGestures instance = null;
-		
+
 		public static void StopDrag()
 		{
 			if(instance != null)
@@ -93,6 +93,9 @@ namespace Gestures
 
 		private void Update()
 		{
+			if (Application.platform == RuntimePlatform.WindowsPlayer)
+            	EvaluatePCInput();
+
 			EvaluateTouches();
 		}
 		#endregion
@@ -131,6 +134,33 @@ namespace Gestures
 
 
 		#region Main Activities
+		private Vector2 previousMousePosition = Vector2.zero;
+		private void EvaluatePCInput()
+		{
+			const float MouseWheelSmoothing = 0.03f;
+			const float MouseDragSmoothing = 0.35f;
+
+			float mouseWheelValue = Input.mouseScrollDelta.y;
+
+			if (Mathf.Abs(mouseWheelValue) > 0f)
+				OnPinch(mouseWheelValue * MouseWheelSmoothing);
+
+			bool isMouseDown = Input.GetMouseButtonDown(0);
+			bool isMouseDrag = Input.GetMouseButton(0);
+			Vector2 currentMousePosition = Input.mousePosition;
+
+			if (isMouseDown)
+				previousMousePosition = currentMousePosition;
+
+			if (isMouseDrag)
+			{
+				Vector2 delta = currentMousePosition - previousMousePosition;
+				OnDrag(delta * MouseDragSmoothing);
+				previousMousePosition = currentMousePosition;
+			}
+
+		}
+
 		private void EvaluateTouches()
 		{
 			if(wasBlocked)
@@ -161,7 +191,7 @@ namespace Gestures
 
 			if(press && canPress && !pressed)
 				DetectPress(touch.phase, touch.position);
-		
+
 			if(drag)
 				DetectDrag(touch.phase, touch.deltaPosition, deltaTime);
 		}
@@ -303,7 +333,7 @@ namespace Gestures
 			}
 		}
 		#endregion
-	
+
 
 		#region Helper
 		private bool TouchIsOverGameObject(int touchID)
